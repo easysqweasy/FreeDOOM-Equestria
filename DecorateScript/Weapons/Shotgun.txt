@@ -20,5 +20,9 @@ actor DEShotgun : Shotgun replaces Shotgun
     SHTG A 3
     SHTG A 7 A_ReFire
     Goto Ready
+  Flash:
+    SHTF A 3 Bright A_Light1
+    TNT1 A 3 Bright A_Light2
+    Goto LightDone
   }
 }
