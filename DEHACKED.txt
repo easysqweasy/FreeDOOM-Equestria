@@ -1,0 +1,14 @@
+[STRINGS]
+
+GOTHTHBONUS = Picked up Health Potion / +1 HP
+GOTARMBONUS = Picked up Spiritual Armor / +1 Armor
+GOTSTIM = Picked up StimPack
+GOTMEDIKIT = Picked up Medikit
+GOTMEDINEED = A Medikit you really need / +25 HP
+GOTSUPER = SOULSPHERE! / +100 HP
+GOTARMOR = Picked Up Security Armor
+GOTMEGA = Picked Up Combat Armor
+GOTMSPHERE = MEGASPHERE!! Full Health and Armor
+GOTBERSERK = Lets punch out some demons
+
+CC_ZOMBIE = Zombie Pony

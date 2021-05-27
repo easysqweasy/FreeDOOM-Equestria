@@ -1,0 +1,24 @@
+ACTOR DEExploBarrel : ExplosiveBarrel replaces ExplosiveBarrel
+{
+  States
+  {
+  Spawn:
+    BAR1 AB 6
+    Loop
+  Death:
+    BEXP A 5 Bright
+    BEXP B 5 Bright A_Scream
+    BEXP C 5 Bright
+    BEXP D 5 Bright 
+	{
+		A_Explode;
+		A_Quake(3, 4, 0, 100);
+		A_Quake(2, 3, 0, 200);
+		A_Quake(1, 2, 0, 300);
+	}
+    BEXP E 10 Bright
+    TNT1 A 1050 Bright A_BarrelDestroy
+    TNT1 A 5 A_Respawn
+    Wait
+  }
+}

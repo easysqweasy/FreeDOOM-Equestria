@@ -1,0 +1,12 @@
+actor Flag 91
+{
+  Height 40
+  Radius 20
+  +SOLID
+  States
+  {
+  Spawn:
+	FLAG A -1
+	Stop
+  }
+}

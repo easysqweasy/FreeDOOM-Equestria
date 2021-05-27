@@ -1,0 +1,5 @@
+tech/groan "Sounds/Zombies/TechWeaponDudette/TECHGROAN"
+tech/act
+tech/death
+tech/pain
+tech/sti 

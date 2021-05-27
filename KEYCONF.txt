@@ -1,0 +1,9 @@
+clearplayerclasses
+addplayerclass Shainer
+
+ addkeysection "Doom Equestria - Kick" BrutalDoomActions
+   
+   addmenukey "Kick" kickem
+   alias kickem "pukename kick"
+   defaultbind Q kickem
+   

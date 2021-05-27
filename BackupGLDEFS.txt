@@ -1,0 +1,96 @@
+
+pointlight SoulSphere1
+{
+    color 0.0 0.0 1.0
+    size 36
+    offset 0 16 0
+}
+
+pointlight SoulSphere2
+{
+    color 0.0 0.0 1.0
+    size 37
+    offset 0 16 0
+}
+
+pointlight SoulSphere3
+{
+    color 0.0 0.0 1.0
+    size 38
+    offset 0 16 0
+} 
+
+pointlight SoulSphere4
+{
+    color 0.0 0.0 1.0
+    size 39
+    offset 0 16 0
+}
+
+pointlight SoulSphere5
+{
+    color 0.0 0.0 1.0
+    size 40
+    offset 0 16 0
+} 
+
+object DESoulSphere
+{
+    frame SOUL { light SoulSphere1 }
+    frame SOULA { light SoulSphere2 }
+    frame SOULB { light SoulSphere3 }
+    frame SOULC { light SoulSphere4 }
+    frame SOULD { light SoulSphere5 }
+}
+
+//Invulnerability Sphere
+
+//pointlight InvulSphere1
+{
+    color 0.0 1.0 0.0
+    size 30
+    offset 0 16 0
+}
+
+pointlight InvulSphere2
+{
+    color 0.0 1.0 0.0
+    size 31
+    offset 0 16 0
+}
+
+pointlight InvulSphere3
+{
+    color 0.0 1.0 0.0
+    size 32
+    offset 0 16 0
+} 
+
+pointlight InvulSphere4
+{
+    color 0.0 1.0 0.0
+    size 33
+    offset 0 16 0
+}
+
+pointlight InvulSphere5
+{
+    color 0.0 1.0 0.0
+    size 34
+    offset 0 16 0
+} 
+
+object DEInvulSphere
+{
+    frame PINV { light InvulSphere1 }
+    frame PINVA { light InvulSphere2 }
+    frame PINVB { light InvulSphere3 }
+    frame PINVC { light InvulSphere4 }
+    frame PINVD { light InvulSphere5 }
+	frame PINVE { light InvulSphere5 }
+	frame PINVF { light InvulSphere4 }
+	frame PINVG { light InvulSphere3 }
+	frame PINVH { light InvulSphere2 }
+}
+
+//InvisibiitySphere

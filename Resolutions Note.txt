@@ -1,0 +1,8 @@
+Walls/Doors Resolutions
+
+Most Doors can be 720 pixels height
+
+144PXH 128PXH 96PXH > 720PXH
+64PXH 72PXH > 480PXH
+32PXH > 360PXH
+16PXH > 240PXH

@@ -1,0 +1,4 @@
+STARTUPTITLE = "Doom Equestria" 
+StartupSong = ""
+StartupType = "Hexen"
+StartupColors = "#3C4651", "#3C4651"

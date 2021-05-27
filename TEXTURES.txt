@@ -1,0 +1,4 @@
+Flat MLPWater, 64, 64
+{
+	Patch FWATER1, 0, 0
+}

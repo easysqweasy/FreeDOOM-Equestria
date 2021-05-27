@@ -1,0 +1,10 @@
+//Green Blood
+actor BaronofHell2 : BaronOfHell replaces BaronOfHell
+ {
+ BloodColor "darkgreen"
+ }
+ 
+actor HellKnight2 : HellKnight replaces HellKnight
+ {
+ BloodColor "darkgreen"
+ }

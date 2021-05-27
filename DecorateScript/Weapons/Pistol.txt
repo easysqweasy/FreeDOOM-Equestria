@@ -1,0 +1,30 @@
+ACTOR DEPistol : Pistol replaces Pistol
+{
+  Weapon.BobStyle smooth
+  States
+  {
+  Select:
+    PISG A 0 A_SetCrosshair(8)
+	PISG A 1 A_Raise
+	Loop
+  }
+}
+
+actor BulletPistol
+{
+  PROJECTILE
+  +FORCEXYBILLBOARD
+  +NOEXTREMEDEATH
+  Speed 125
+  RenderStyle Add
+  Damage 0
+  States
+  {
+  Spawn:
+	BLET A 1 Bright
+	Loop
+  Death:
+    TNT1 A 0 
+	Stop
+  }
+}  

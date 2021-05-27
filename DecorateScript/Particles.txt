@@ -1,0 +1,63 @@
+actor DEParticles
+{
+  +FLOORCLIP
+  +FORCEXYBILLBOARD
+  +NOTELEPORT
+  +NOGRAVITY
+  +NOBLOCKMAP
+  +MOVEWITHSECTOR
+  +THRUACTORS
+  damage 0
+}
+
+actor FirePieces : DEParticles
+{
+  RenderStyle add
+  alpha 0.90
+  States
+  {
+  Spawn:
+	FIRP ABCDEFGHIJKLMNO 1 Bright A_FadeOut (0, FTF_REMOVE)
+	Stop
+  }
+}	
+
+actor BFGPieces : DEParticles
+{
+  RenderStyle add
+  alpha 1
+  States
+  {
+  Spawn:
+	BFGP ABCD 3 Bright 
+	BFGP EFGH 1 Bright A_FadeOut (0, FTF_REMOVE)
+	Stop
+  }
+}
+
+actor BFGTrail : DEParticles
+{
+  RenderStyle add
+  Alpha 0.50
+  Scale 0.25
+  States
+  {
+  Spawn:
+  	TNT1 A 0 A_SpawnItemEx("BFGPieces",random(8,12),random(-3,3),random(-3,3),random(1,0),0,0,180,0)
+    BFEF QPONMLKJIHGFEDCBA 2 Bright A_FadeOut (0, FTF_REMOVE)
+	Stop
+  }
+}
+
+actor BulletTrail : DEParticles
+{
+  Renderstyle add
+  Alpha 0.50
+  Speed 90
+  States
+  {
+  Spawn:
+	TRAI A 1 Bright
+	Stop
+  }
+}	

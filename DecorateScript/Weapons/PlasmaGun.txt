@@ -1,0 +1,11 @@
+actor DEPlasmaGun : PlasmaRifle replaces PlasmaRifle
+{
+  Weapon.BobStyle alpha
+  States
+  {
+  Select:
+	PLSG A 0 A_SetCrossHair(12)
+	PLSG A 1 A_Raise
+	Loop
+  }
+}

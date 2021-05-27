@@ -1,0 +1,4 @@
+actor DEHealthPotion : HealthBonus replaces HealthBonus
+{
+  Inventory.PickupSound "pickup/potion"
+}
