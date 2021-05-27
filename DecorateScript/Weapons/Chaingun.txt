@@ -20,5 +20,10 @@ actor DEChaingun : Chaingun replaces Chaingun
 		A_ReFire;
 	}
     Goto Ready
+  Flash:
+     CHGF A 3 Bright A_Light1
+     Goto LightDone
+     TNT1 A 4 Bright A_Light1
+     Goto LightDone
   }
 }
