@@ -10,12 +10,14 @@ actor Shainer : DoomPlayer
   Player.StartItem "DEPistol" 
   Player.StartItem "Fist"
   Player.StartItem "Clip", 20
+  Player.WeaponSlot 1, "Fist", "DEChainsaw"
   Player.WeaponSlot 2, "DEPistol"
-  Player.WeaponSlot 3, "DEShotgun", "DESuperShotgun"
-  Player.WeaponSlot 4, "DEChaingun"
-  Player.WeaponSlot 5, "DEPlasmaGun"
-  Player.WeaponSlot 6, "DERocketLauncher"
-  Player.WeaponSlot 7, "DEBFG9000"
+  Player.WeaponSlot 3, "DEShotgun"
+  Player.WeaponSlot 4, "DESuperShotgun"
+  Player.WeaponSlot 5, "DEChaingun"
+  Player.WeaponSlot 6, "DEPlasmaGun"
+  Player.WeaponSlot 7, "DERocketLauncher"
+  Player.WeaponSlot 8, "DEBFG9000"
 }
 
 ////Monsters
@@ -52,6 +54,7 @@ actor Shainer : DoomPlayer
 #Include "DecorateScript/Weapons/RocketLauncher.txt"
 #Include "DecorateScript/Weapons/BFG9000.txt"
 #Include "DecorateScript/Weapons/FistAndBerserk.txt"
+#Include "DecorateScript/Weapons/Chainsaw.txt"
 
 ////Decorations
 

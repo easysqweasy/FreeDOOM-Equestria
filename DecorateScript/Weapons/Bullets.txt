@@ -1,3 +1,10 @@
+/*
+
+
+UNUSED
+
+*/
+
 actor BulletPistol
 {
   PROJECTILE
@@ -16,3 +23,10 @@ actor BulletPistol
 	Stop
   }
 }  
+
+/*
+
+
+UNUSED
+
+*/
