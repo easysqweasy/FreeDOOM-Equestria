@@ -1,0 +1,22 @@
+ACTOR Spectre : Demon
+{
+  +SHADOW
+  RenderStyle OptFuzzy
+  Alpha 0.5
+  SeeSound "spectre/sight"
+  AttackSound "spectre/melee"
+  PainSound "spectre/pain"
+  DeathSound "spectre/death"
+  ActiveSound "spectre/active"
+  HitObituary "$OB_SPECTREHIT" // "%o was eaten by a spectre."
+  States
+  {
+  Death:
+    SARG I 8 A_SetRenderStyle(0, STYLE_Normal)
+    SARG J 8 A_Scream
+    SARG K 4
+    SARG L 4 A_NoBlocking
+    SARG M 4 
+    SARG N -1
+    Stop
+}
