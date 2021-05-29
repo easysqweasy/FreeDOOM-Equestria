@@ -11,7 +11,7 @@ actor DESuperShotgun : SuperShotgun replaces SuperShotgun
     SHT2 A 3
     SHT2 A 7
 	{
-		A_WeaponOffset(0, 40, WOF_KEEPX | WOF_INTERPOLATE);
+		A_WeaponOffset(0, 42, WOF_KEEPX | WOF_INTERPOLATE);
 		A_QuakeEx(0, 0, 1, 2, 0, 1, "", QF_RELATIVE);
 		A_FireShotgun2;
 	}
