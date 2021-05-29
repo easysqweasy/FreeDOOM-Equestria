@@ -5,5 +5,5 @@ generator DESuperShotgun BulletChip
 generator DEChaingun BulletChip
 
 generator DEPlasmaBall PlasmaScorch
-//generator Rocket Scorch
+generator Rocket Scorch
 generator DEBFGBall BFGLightning
