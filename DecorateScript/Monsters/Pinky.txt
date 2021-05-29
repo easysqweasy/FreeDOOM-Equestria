@@ -1,8 +1,7 @@
-ACTOR Spectre : Demon
+ACTOR DESpectre : Spectre replaces Spectre
 {
   +SHADOW
-  RenderStyle OptFuzzy
-  Alpha 0.5
+  RenderStyle Shaded
   SeeSound "spectre/sight"
   AttackSound "spectre/melee"
   PainSound "spectre/pain"
@@ -12,11 +11,28 @@ ACTOR Spectre : Demon
   States
   {
   Death:
-    SARG I 8 A_SetRenderStyle(0, STYLE_Normal)
-    SARG J 8 A_Scream
-    SARG K 4
-    SARG L 4 A_NoBlocking
+    SARG I 8 
+	{
+		A_FadeIn(0.5, FTF_CLAMP);
+		A_SetRenderStyle(0.25, STYLE_Translucent);
+	}
+    SARG J 8 
+	{
+		A_SetRenderStyle(0.50, STYLE_Translucent);
+		A_Scream;
+	}
+    SARG K 4 
+	{
+		A_FadeIn(1, FTF_CLAMP);
+		A_SetRenderStyle(0.75, STYLE_Translucent);
+	}
+    SARG L 4 
+	{
+		A_SetRenderStyle(1, STYLE_Normal);
+		A_NoBlocking;
+	}
     SARG M 4 
     SARG N -1
     Stop
+  }
 }
