@@ -1,5 +1,5 @@
 generator DEPistol BulletChip
-generator DEChainsaw BulletChip
+//generator DEChainsaw BulletChip
 generator DEShotgun BulletChip
 generator DESuperShotgun BulletChip
 generator DEChaingun BulletChip

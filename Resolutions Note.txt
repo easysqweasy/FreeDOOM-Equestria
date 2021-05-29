@@ -6,5 +6,3 @@ Most Doors can be 720 pixels height
 64PXH 72PXH > 480PXH
 32PXH > 360PXH
 16PXH > 240PXH
-
-*Unused HD Textures*
