@@ -29,6 +29,9 @@ ACTOR DEPistol : Pistol replaces Pistol
   }
 }
 
+////////////////////V
+//Unused, Incomplete
+////////////////////V
 actor BulletPistol
 {
   PROJECTILE
