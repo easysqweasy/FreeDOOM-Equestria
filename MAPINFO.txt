@@ -2,3 +2,15 @@ GameInfo
 {
 	AddEventHandlers = "SpriteShadowHandler"
 }
+
+//Change "I'm Too Young To Die" to "I'm a Little Pony"
+skill baby
+{
+   AutoUseHealth
+   AmmoFactor = 2
+   DamageFactor = 0.5
+   EasyBossBrain
+   SpawnFilter = Baby
+   Name = "I'm a Little Pony"
+   Key = "i"
+}
