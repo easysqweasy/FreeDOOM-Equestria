@@ -11,28 +11,28 @@ ACTOR DESpectre : Spectre replaces Spectre
   States
   {
   Death:
-    SARG I 8 
+    SPEC I 8 
 	{
 		A_FadeIn(0.5, FTF_CLAMP);
 		A_SetRenderStyle(0.25, STYLE_Translucent);
 	}
-    SARG J 8 
+    SPEC J 8 
 	{
 		A_SetRenderStyle(0.50, STYLE_Translucent);
 		A_Scream;
 	}
-    SARG K 4 
+    SPEC K 4 
 	{
 		A_FadeIn(1, FTF_CLAMP);
 		A_SetRenderStyle(0.75, STYLE_Translucent);
 	}
-    SARG L 4 
+    SPEC L 4 
 	{
 		A_SetRenderStyle(1, STYLE_Normal);
 		A_NoBlocking;
 	}
-    SARG M 4 
-    SARG N -1
+    SPEC M 4 
+    SPEC N -1
     Stop
   }
 }
