@@ -17,7 +17,7 @@ actor FirePieces : DEParticles
   States
   {
   Spawn:
-	FIRP ABCDEFGHIJKLMNO 1 Bright A_FadeOut (0, FTF_REMOVE)
+	FIRP ABCDEFGHIJKLMNO 1 Bright A_FadeOut (0.1, FTF_REMOVE)
 	Stop
   }
 }	
