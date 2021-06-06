@@ -1,5 +1,5 @@
-tech/groan "Sounds/Zombies/TechWeaponDudette/TECHGROAN"
-tech/act
-tech/death
-tech/pain
-tech/sti 
+tech/groan "Sounds/Zombies/TechWeaponDudette/TECHGROAN.ogg"
+tech/active "Sounds/Zombies/TechWeaponDudette/TECHACT.ogg"
+tech/death "Sounds/Zombies/TechWeaponDudette/TECHDHT.ogg"
+tech/pain "Sounds/Zombies/TechWeaponDudette/TECHPAIN.ogg"
+tech/sight "Sounds/Zombies/TechWeaponDudette/TECHSIT.ogg"

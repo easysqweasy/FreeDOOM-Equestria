@@ -11,3 +11,8 @@ $Limit world/lavasizzle 4
 $Limit world/sludgegloop 4*/
 
 pickup/potion "Sounds/PotionPickup.wav"
+tech/groan "Sounds/Zombies/TechWeaponDudette/TECHGROAN.ogg"
+tech/active "Sounds/Zombies/TechWeaponDudette/TECHACT.ogg"
+tech/death "Sounds/Zombies/TechWeaponDudette/TECHDHT.ogg"
+tech/pain "Sounds/Zombies/TechWeaponDudette/TECHPAIN.ogg"
+tech/sight "Sounds/Zombies/TechWeaponDudette/TECHSIT.ogg"
