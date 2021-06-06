@@ -3,7 +3,7 @@ ACTOR DEExploBarrel : ExplosiveBarrel replaces ExplosiveBarrel
   States
   {
   Spawn:
-    BAR1 AB 6
+    BAR1 AB 8
     Loop
   Death:
     BEXP A 5 Bright
@@ -11,6 +11,10 @@ ACTOR DEExploBarrel : ExplosiveBarrel replaces ExplosiveBarrel
     BEXP C 5 Bright
     BEXP D 5 Bright 
 	{
+		A_SpawnItemEx(BarrelDebris, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
+		A_SpawnItemEx(BarrelDebris2, 0, 0, 10, random(6, -6), random(6, -6), 10);
+		A_SpawnItemEx(BarrelDebris, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
+		A_SpawnItemEx(BarrelDebris2, 0, 0, 10, random(6, -6), random(6, -6), 10);
 		A_Explode;
 		A_Quake(3, 4, 0, 100);
 		A_Quake(2, 3, 0, 200);
@@ -20,5 +24,98 @@ ACTOR DEExploBarrel : ExplosiveBarrel replaces ExplosiveBarrel
     TNT1 A 1050 Bright A_BarrelDestroy
     TNT1 A 5 A_Respawn
     Wait
+  XDeath:
+	BEXP D 5 Bright
+	{
+		A_SpawnItemEx(BarrelDebris, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
+		A_SpawnItemEx(BarrelDebris2, 0, 0, 10, random(6, -6), random(6, -6), 10);
+		A_SpawnItemEx(BarrelDebris, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
+		A_SpawnItemEx(BarrelDebris2, 0, 0, 10, random(6, -6), random(6, -6), 10);
+		A_SpawnItemEx(BarrelTiny, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
+		A_SpawnItemEx(BarrelTiny2, 0, 0, 10, random(6, -6), random(6, -6), 10);
+		A_SpawnItemEx(BarrelTiny, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
+		A_SpawnItemEx(BarrelTiny2, 0, 0, 10, random(6, -6), random(6, -6), 10);
+		A_SpawnItemEx(BarrelTiny, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
+		A_SpawnItemEx(BarrelTiny2, 0, 0, 10, random(6, -6), random(6, -6), 10);
+		A_SpawnItemEx(BarrelTiny, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
+		A_SpawnItemEx(BarrelTiny2, 0, 0, 10, random(6, -6), random(6, -6), 10);
+		A_Explode;
+		A_Quake(3, 4, 0, 100);
+		A_Quake(2, 3, 0, 200);
+		A_Quake(1, 2, 0, 300);
+	}
+	BEXP E 10 Bright
+	TNT1 A 1050 Bright A_BarrelDestroy
+    TNT1 A 5 A_Respawn
+    Wait
+  }
+}
+
+actor BarrelDebris : DebrisGeneral
+{
+  +MISSILE
+  +BOUNCEONWALLS
+  +BOUNCEONCEILINGS
+  +BOUNCEONFLOORS
+  +BOUNCEONACTORS
+  BounceCount 5
+  BounceType Doom
+  States
+  {
+  Spawn:
+	EXD1 ABCD 4
+	Loop
+  Death:
+	EXD1 "#" 350
+	EXD1 "#" 10 A_FadeOut(0.1, FTF_REMOVE)
+	Wait
+  }
+}
+
+actor BarrelDebris2 : BarrelDebris
+{
+  BounceType Doom
+  States
+  {
+  Spawn:
+	EXD2 ABCD 4
+	Loop
+  Death:
+	EXD2 "#" 350
+	EXD2 "#" 10 A_FadeOut(0.1, FTF_REMOVE)
+	Wait
+  }
+}
+
+actor BarrelTiny : BarrelDebris
+{
+  Scale 0.5
+  Height 10
+  Radius 10
+  BounceCount 15
+  BounceType Doom
+  States
+  {
+  Spawn:
+	EXD1 ABCD 2
+	Loop
+  Death:
+	EXD1 "#" 350
+	EXD1 "#" 10 A_FadeOut(0.1, FTF_REMOVE)
+	Wait
+  }
+}
+
+actor BarrelTiny2 : BarrelTiny
+{
+  States
+  {
+  Spawn:
+	EXD2 ABCD 2
+	Loop
+  Death:
+	EXD2 "#" 350
+	EXD2 "#" 10 A_FadeOut(0.1, FTF_REMOVE)
+	Wait
   }
 }
