@@ -22,3 +22,24 @@ actor DERocketLauncher : RocketLauncher replaces RocketLauncher
     Goto Ready
   }
 }
+
+actor DERocket : Rocket replaces Rocket
+{
+  States
+  {
+  Spawn:
+    MISL A 1 Bright
+    Loop
+  Death:
+	MISL B 8 Bright 
+	{
+		A_Explode;
+		A_Quake(3, 4, 0, 100);
+		A_Quake(2, 3, 0, 200);
+		A_Quake(1, 2, 0, 300);
+	}
+    MISL C 6 Bright
+    MISL D 4 Bright
+	Stop
+  }
+}

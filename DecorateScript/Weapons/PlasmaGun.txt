@@ -27,3 +27,15 @@ actor DEPlasmaGun : PlasmaRifle replaces PlasmaRifle
 	Goto LightDone
   }
 }
+
+actor DEPlasmaBall : PlasmaBall replaces PlasmaBall
+{
+  Alpha 0.65
+  +FORCEXYBILLBOARD
+  States
+  {
+  Spawn:
+	PLSS ABCDEFGHIJKLMNOPQRSTUV 2 Bright
+	Loop
+  }
+}
