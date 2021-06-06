@@ -1,23 +1,20 @@
-actor PlasmaKirin
+ACTOR ShotgunGuy
 {
-  Monster
   Health 30
   Radius 20
   Height 56
   Mass 100
-  Speed 12
+  Speed 8
   PainChance 170
+  Monster
   +FLOORCLIP
-  SeeSound "tech/sight"
+  SeeSound "shotguy/sight"
   AttackSound "shotguy/attack"
-  PainSound "tech/pain"
-  DeathSound "tech/death"
-  ActiveSound "tech/active"
+  PainSound "shotguy/pain"
+  DeathSound "shotguy/death"
+  ActiveSound "shotguy/active"
   Obituary "$OB_SHOTGUY"
-  DropItem "ArmorBonus"
-  DropItem "Cell", 64 //25% Chance of drop Cells
-  DropItem "PlasmaGun", 13 //(Almost) 5% Chance of drop Plasma Gun
-  MissileType "PlasmaBall"
+  DropItem "Shotgun"
   States
   {
   Spawn:
@@ -27,32 +24,24 @@ actor PlasmaKirin
     SPOS AABBCCDD 3 A_Chase
     Loop
   Missile:
-    Missile:
     SPOS E 10 A_FaceTarget
-    SPOS F 5 A_MissileAttack
-    SPOS E 5 A_FaceTarget
-    SPOS F 5 A_MissileAttack
-    SPOS E 5 A_FaceTarget
-    SPOS F 5 A_MissileAttack
+    SPOS F 10 Bright A_SPosAttackUseAtkSound
+    SPOS E 10
     Goto See
   Pain:
     SPOS G 3
     SPOS G 3 A_Pain
     Goto See
   Death:
-    SPOS H 5 
-    SPOS I 5 
-	{
-		A_AlertMonsters;
-		A_Scream;
-	}
+    SPOS H 5
+    SPOS I 5 A_Scream
     SPOS J 5 A_NoBlocking
     SPOS K 5
     SPOS L -1
     Stop
   XDeath:
     SPOS M 5
-    SPOS N 5 
+    SPOS N 5
 	{
 		A_SpawnItemEX(GibGore1, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
 		A_SpawnItemEX(GibGore2, 0, 0, 10, random(-6, 6), random(-6, 6), 10);

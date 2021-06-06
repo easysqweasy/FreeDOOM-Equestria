@@ -1,0 +1,181 @@
+actor GibGore1 : DebrisGeneral
+{
+  +FORCEXYBILLBOARD
+  +BOUNCEONFLOORS
+  +BOUNCEONACTORS
+  +THRUACTORS
+  Health 1
+  BounceFactor 0.7
+  BounceCount 4
+  BounceType None
+  States
+  {
+  Spawn:
+	GORE A 4 A_SpawnItemEX(Blood)
+	Loop
+  Death:
+	TNT1 A 1 A_SpawnItemEx(Heart)
+	Stop
+  }
+}
+
+Actor Heart
+{
+  +THRUGHOST
+  +THRUACTORS
+  +FORCEXYBILLBOARD
+  +DONTHARMSPECIES
+  Monster
+  Speed 0
+  Health 1
+  States
+  {
+  Spawn:
+	GORE A 1 A_SetScale(0.8)
+	GORE A 1 A_SetScale(0.9)
+	GORE A 1 A_SetScale(1.0)
+	GORE A 2 A_SetScale(0.9)
+	GORE A 3 A_SetScale(0.8)
+	GORE A 4 A_SetScale(0.9)
+	GORE A 5 A_SetScale(1.0)
+	GORE A 4 A_SetScale(0.9)
+	GORE A 3 A_SetScale(0.8)
+	GORE A 2 A_SetScale(0.9)
+	Loop
+  Death:
+	TNT1 A 1
+	{
+		A_SpawnItemEx(GibGore4, 0, 0, 10, random(-6, 6), random(-6, 6), random(5, 10));
+		A_SpawnItemEx(GibGore4, 0, 0, 10, random(-6, 6), random(-6, 6), random(5, 10));
+		A_SpawnItemEx(GibGore4, 0, 0, 10, random(-6, 6), random(-6, 6), random(5, 10));
+		A_SpawnItemEx(GibGore4, 0, 0, 10, random(-6, 6), random(-6, 6), random(5, 10));
+	}
+	Stop
+  }
+}
+
+actor GibGore2 : GibGore1
+{
+  States
+  {
+  Spawn:
+    GORE B 8 A_SpawnItemEX(Blood)
+	Loop
+  Death:
+    GORE B 350
+	GORE B 10 A_FadeOut(0.1, FTF_REMOVE)
+	Wait
+  }
+}
+
+actor GibGore3 : GibGore1
+{
+  States
+  {
+  Spawn:
+	GORE C 8 A_SpawnItemEX(Blood)
+	Loop
+  Death:
+	GORE C 350
+	GORE C 10 A_FadeOut(0.1, FTF_REMOVE)
+	Wait
+  }
+}
+
+actor GibGore4 : GibGore1
+{
+  States
+  {
+  Spawn:
+	GORE E 8 A_SpawnItemEX(Blood)
+	Loop
+  Death:
+	GORE E 350
+	GORE E 10 A_FadeOut(0.1, FTF_REMOVE)
+	Wait
+  }
+}
+
+actor GibGore5 : GibGore1
+{
+  States
+  {
+  Spawn:
+	GORE F 8 A_SpawnItemEX(Blood)
+	Loop
+  Death:
+	GORE F 350
+	GORE F 10 A_FadeOut(0.1, FTF_REMOVE)
+	Wait
+  }
+}
+
+actor BigGibGore1 : GibGore1
+{
+  BounceType None
+  BounceFactor 0.5
+  BounceCount 2
+  States
+  {
+  Spawn:
+	BGOR AB 4 NoDelay A_SpawnItemEX(Blood)
+	BGOR CD 4 NoDelay A_SpawnItemEX(Blood)
+	Loop
+  Death:
+	BGOR E 350 A_SetScale(random(1.0, -1.0), random(1.5, 0.5))
+	BGOR E 10 A_FadeOut(0.1, FTF_REMOVE)
+	Wait
+  }
+}
+
+actor BigGibGore2 : GibGore1
+{
+  BounceType None
+  BounceFactor 0.5
+  BounceCount 2
+  States
+  {
+  Spawn:
+	BGO2 A 2 NoDelay A_SpawnItemEX(Blood)
+	BGO2 B 2 NoDelay A_SpawnItemEX(Blood)
+	BGO2 C 2 NoDelay A_SpawnItemEX(Blood)
+	BGO2 D 2 NoDelay A_SpawnItemEX(Blood)
+	Loop
+  Death:
+	BGO2 E 350 A_SetScale(random(1.0, -1.0), random(1.5, 0.5))
+	BGO2 E 10 A_FadeOut(0.1, FTF_REMOVE)
+	Wait
+  }
+}
+actor XDeathGoreSpawn : GibGore1
+{
+  States
+  {
+  Spawn:
+	TNT1 A 1
+	{
+		A_SpawnItemEX(GibGore1, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
+		A_SpawnItemEX(GibGore2, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
+		A_SpawnItemEX(GibGore2, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
+		A_SpawnItemEX(GibGore2, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
+		A_SpawnItemEX(GibGore3, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
+		A_SpawnItemEX(GibGore3, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
+		A_SpawnItemEX(GibGore4, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
+		A_SpawnItemEX(GibGore4, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
+		A_SpawnItemEX(GibGore4, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
+		A_SpawnItemEX(GibGore4, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
+		A_SpawnItemEX(GibGore4, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
+		A_SpawnItemEX(GibGore4, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
+		A_SpawnItemEX(GibGore4, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
+		A_SpawnItemEX(GibGore5, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
+		A_SpawnItemEX(GibGore5, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
+		A_SpawnItemEX(GibGore5, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
+		A_SpawnItemEX(GibGore5, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
+		A_SpawnItemEX(GibGore5, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
+	}
+	Goto Death
+  Death:
+	TNTA A 0
+	Stop
+  }
+}

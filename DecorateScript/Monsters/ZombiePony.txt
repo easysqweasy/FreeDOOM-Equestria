@@ -1,58 +1,46 @@
-actor PlasmaKirin
+ACTOR ZombiePony : ZombieMan Replaces ZombieMan
 {
-  Monster
-  Health 30
+  Health 20
   Radius 20
   Height 56
-  Mass 100
-  Speed 12
-  PainChance 170
+  Speed 8
+  PainChance 200
+  Monster
   +FLOORCLIP
-  SeeSound "tech/sight"
-  AttackSound "shotguy/attack"
-  PainSound "tech/pain"
-  DeathSound "tech/death"
-  ActiveSound "tech/active"
-  Obituary "$OB_SHOTGUY"
-  DropItem "ArmorBonus"
-  DropItem "Cell", 64 //25% Chance of drop Cells
-  DropItem "PlasmaGun", 13 //(Almost) 5% Chance of drop Plasma Gun
-  MissileType "PlasmaBall"
+  SeeSound "grunt/sight"
+  AttackSound "grunt/attack"
+  PainSound "grunt/pain"
+  DeathSound "grunt/death"
+  ActiveSound "grunt/active"
+  Obituary "$OB_ZOMBIE" // "%o was killed by a zombieman."
+  DropItem "Clip"
   States
   {
   Spawn:
-    SPOS AB 10 A_Look
+    POSS AB 10 A_Look
     Loop
   See:
-    SPOS AABBCCDD 3 A_Chase
+    POSS AABBCCDD 4 A_Chase
     Loop
   Missile:
-    Missile:
-    SPOS E 10 A_FaceTarget
-    SPOS F 5 A_MissileAttack
-    SPOS E 5 A_FaceTarget
-    SPOS F 5 A_MissileAttack
-    SPOS E 5 A_FaceTarget
-    SPOS F 5 A_MissileAttack
+    POSS E 10 A_FaceTarget
+    POSS F 8 A_PosAttack
+    POSS E 8
     Goto See
   Pain:
-    SPOS G 3
-    SPOS G 3 A_Pain
+    POSS G 3
+    POSS G 3 A_Pain
     Goto See
   Death:
-    SPOS H 5 
-    SPOS I 5 
-	{
-		A_AlertMonsters;
-		A_Scream;
-	}
-    SPOS J 5 A_NoBlocking
-    SPOS K 5
-    SPOS L -1
+    POSS H 5
+    POSS I 5 A_Scream
+    POSS J 5 A_NoBlocking
+    POSS K 5
+    POSS L -1
     Stop
   XDeath:
-    SPOS M 5
-    SPOS N 5 
+    POSS M 5
+    POSS N 5
 	{
 		A_SpawnItemEX(GibGore1, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
 		A_SpawnItemEX(GibGore2, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
@@ -74,13 +62,13 @@ actor PlasmaKirin
 		A_SpawnItemEX(GibGore5, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
 		A_XScream;
 	}
-    SPOS O 5 A_NoBlocking
-    SPOS PQRST 5
-    SPOS U -1
+    POSS O 5 A_NoBlocking
+    POSS PQRST 5
+    POSS U -1
     Stop
   Raise:
-    SPOS L 5
-    SPOS KJIH 5
+    POSS K 5
+    POSS JIH 5
     Goto See
   }
 }

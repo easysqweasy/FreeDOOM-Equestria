@@ -1,58 +1,40 @@
-actor PlasmaKirin
+ACTOR ChaingunDude : ChaingunGuy replaces ChaingunGuy
 {
-  Monster
-  Health 30
+  Health 70
   Radius 20
   Height 56
   Mass 100
-  Speed 12
+  Speed 8
   PainChance 170
+  Monster
   +FLOORCLIP
-  SeeSound "tech/sight"
-  AttackSound "shotguy/attack"
-  PainSound "tech/pain"
-  DeathSound "tech/death"
-  ActiveSound "tech/active"
-  Obituary "$OB_SHOTGUY"
-  DropItem "ArmorBonus"
-  DropItem "Cell", 64 //25% Chance of drop Cells
-  DropItem "PlasmaGun", 13 //(Almost) 5% Chance of drop Plasma Gun
-  MissileType "PlasmaBall"
+  SeeSound "chainguy/sight"
+  PainSound "chainguy/pain"
+  DeathSound "chainguy/death"
+  ActiveSound "chainguy/active"
+  AttackSound "chainguy/attack"
+  Obituary "$OB_CHAINGUY"
+  Dropitem "Chaingun"
   States
   {
   Spawn:
-    SPOS AB 10 A_Look
+    CPOS AB 10 A_Look
     Loop
   See:
-    SPOS AABBCCDD 3 A_Chase
+    CPOS AABBCCDD 3 A_Chase
     Loop
   Missile:
-    Missile:
-    SPOS E 10 A_FaceTarget
-    SPOS F 5 A_MissileAttack
-    SPOS E 5 A_FaceTarget
-    SPOS F 5 A_MissileAttack
-    SPOS E 5 A_FaceTarget
-    SPOS F 5 A_MissileAttack
-    Goto See
+    CPOS E 10 A_FaceTarget
+    CPOS FE 4 Bright A_CPosAttack
+    CPOS F 1 A_CPosRefire
+    Goto Missile+1
   Pain:
-    SPOS G 3
-    SPOS G 3 A_Pain
+    CPOS G 3
+    CPOS G 3 A_Pain
     Goto See
   Death:
-    SPOS H 5 
-    SPOS I 5 
-	{
-		A_AlertMonsters;
-		A_Scream;
-	}
-    SPOS J 5 A_NoBlocking
-    SPOS K 5
-    SPOS L -1
-    Stop
-  XDeath:
-    SPOS M 5
-    SPOS N 5 
+    CPOS H 5
+    CPOS I 5
 	{
 		A_SpawnItemEX(GibGore1, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
 		A_SpawnItemEX(GibGore2, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
@@ -74,13 +56,20 @@ actor PlasmaKirin
 		A_SpawnItemEX(GibGore5, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
 		A_XScream;
 	}
-    SPOS O 5 A_NoBlocking
-    SPOS PQRST 5
-    SPOS U -1
+    CPOS J 5 A_NoBlocking
+    CPOS KLM 5
+    CPOS N -1
+    Stop
+  XDeath:
+    CPOS O 5 
+    CPOS P 5 A_XScream
+    CPOS Q 5 A_NoBlocking
+    CPOS RS 5
+    CPOS T -1
     Stop
   Raise:
-    SPOS L 5
-    SPOS KJIH 5
+    CPOS N 5
+    CPOS MLKJIH 5
     Goto See
   }
 }
