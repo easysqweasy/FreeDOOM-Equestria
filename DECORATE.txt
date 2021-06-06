@@ -1,5 +1,19 @@
 
-////Theses are here if we want to change anything with them
+Actor DebrisGeneral
+{
+  +MISSILE
+  +NOBLOCKMAP
+  +DROPOFF
+  +NOTELEPORT
+  +GHOST
+  +FORCEXYBILLBOARD
+  +FLOORCLIP
+  +MOVEWITHSECTOR
+  Radius 10
+  Height 10
+  Mass 1
+  Damage 0
+}
 
 ////PlayerCharacters
 
@@ -25,19 +39,24 @@ actor Shainer : DoomPlayer
 #include "DecorateScript/Monsters/BaronHellKnight.txt"
 #include "DecorateScript/Monsters/Cacodemon.txt"
 //#include "DecorateScript/Monsters/LostSoul.txt"
-//#include "DecorateScript/Monsters/Imp.txt"
+#include "DecorateScript/Monsters/Imp.txt"
+#include "DecorateScript/Monsters/ZombiePony.txt"
+#include "DecorateScript/Monsters/ShotgunGuy.txt"
+#include "DecorateScript/Monsters/HeavyWeaponDude.txt"
 #include "DecorateScript/Monsters/TechWeaponDudette.txt"
 #include "DecorateScript/Monsters/Pinky.txt"
+#include "DecorateScript/Monsters/Cyberdemon.txt"
 
 ////Items/PowerUps
 
 #include "DecorateScript/SpheresPowerUps.txt"
 #include "DecorateScript/HealthPotion.txt"
 
-////Effects, Plarticles
+////Effects, Plarticles, Debris
 
 #include "DecorateScript/Terrains.txt"
 #include "DecorateScript/Particles.txt"
+#include "DecorateScript/Gore.txt"
 
 ////Projectiles
 
