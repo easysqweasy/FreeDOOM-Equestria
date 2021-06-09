@@ -1,10 +1,10 @@
 //Green Blood
-actor BaronofHell2 : BaronOfHell replaces BaronOfHell
+actor EquestriaBaronofHell : BaronOfHell replaces BaronOfHell
  {
- BloodColor "darkgreen"
+  BloodColor "darkgreen"
  }
  
-actor HellKnight2 : HellKnight replaces HellKnight
+actor EquestriaHellKnight2 : HellKnight replaces HellKnight
  {
- BloodColor "darkgreen"
+   BloodColor "darkgreen"
  }

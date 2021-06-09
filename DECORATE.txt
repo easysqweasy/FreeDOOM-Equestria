@@ -49,8 +49,7 @@ actor Shainer : DoomPlayer
 
 ////Items/PowerUps
 
-#include "DecorateScript/SpheresPowerUps.txt"
-#include "DecorateScript/HealthPotion.txt"
+#include "DecorateScript/Pickups.txt"
 
 ////Effects, Plarticles, Debris
 
@@ -75,6 +74,7 @@ actor Shainer : DoomPlayer
 #Include "DecorateScript/Weapons/BFG9000.txt"
 #Include "DecorateScript/Weapons/FistAndBerserk.txt"
 #Include "DecorateScript/Weapons/Chainsaw.txt"
+#Include "DecorateScript/Weapons/Ammo.txt"
 
 ////Decorations
 

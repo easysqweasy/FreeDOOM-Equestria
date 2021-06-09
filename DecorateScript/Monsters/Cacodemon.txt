@@ -1,5 +1,5 @@
 //Blue Blood, Minor Improvements
-actor Cacodemon2 : Cacodemon replaces Cacodemon
+actor EquestriaCacodemon : Cacodemon replaces Cacodemon
 {
  BloodColor "blue"
  +FLOATBOB

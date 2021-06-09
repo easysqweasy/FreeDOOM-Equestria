@@ -118,8 +118,8 @@ actor BigGibGore1 : GibGore1
   States
   {
   Spawn:
-	BGOR AB 4 NoDelay A_SpawnItemEX(Blood)
-	BGOR CD 4 NoDelay A_SpawnItemEX(Blood)
+	BGOR AB 4 A_SpawnItemEX(Blood)
+	BGOR CD 4 A_SpawnItemEX(Blood)
 	Loop
   Death:
 	BGOR E 350 A_SetScale(random(1.0, -1.0), random(1.5, 0.5))
@@ -136,10 +136,10 @@ actor BigGibGore2 : GibGore1
   States
   {
   Spawn:
-	BGO2 A 2 NoDelay A_SpawnItemEX(Blood)
-	BGO2 B 2 NoDelay A_SpawnItemEX(Blood)
-	BGO2 C 2 NoDelay A_SpawnItemEX(Blood)
-	BGO2 D 2 NoDelay A_SpawnItemEX(Blood)
+	BGO2 A 2 A_SpawnItemEX(Blood)
+	BGO2 B 2 A_SpawnItemEX(Blood)
+	BGO2 C 2 A_SpawnItemEX(Blood)
+	BGO2 D 2 A_SpawnItemEX(Blood)
 	Loop
   Death:
 	BGO2 E 350 A_SetScale(random(1.0, -1.0), random(1.5, 0.5))

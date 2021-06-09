@@ -16,7 +16,7 @@ actor PlasmaKirin
   Obituary "$OB_SHOTGUY"
   DropItem "ArmorBonus"
   DropItem "Cell", 64 //25% Chance of drop Cells
-  DropItem "PlasmaGun", 13 //(Almost) 5% Chance of drop Plasma Gun
+  DropItem "DEPlasmaGun", 13 //(Almost) 5% Chance of drop Plasma Gun
   MissileType "PlasmaBall"
   States
   {

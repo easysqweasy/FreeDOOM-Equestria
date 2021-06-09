@@ -1,4 +1,4 @@
-ACTOR DESpectre : Spectre replaces Spectre
+ACTOR EquestriaSpectre : Spectre replaces Spectre
 {
   +SHADOW
   RenderStyle Shaded

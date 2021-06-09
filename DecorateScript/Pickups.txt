@@ -1,0 +1,140 @@
+actor DEHealthPotion : HealthBonus replaces HealthBonus
+{
+  Inventory.PickupSound "pickup/potion"
+}
+
+//Invisibility Sphere
+
+ACTOR DEBlurSphere : BlurSphere replaces BlurSphere
+{	
+  +FLOATBOB
+  +NOGRAVITY
+  +FORCEXYBILLBOARD
+  States
+  {
+  Spawn:
+     PINS ABCDCBA 6 Bright
+     Loop
+  }
+}
+
+//Invulnerability Sphere
+
+ACTOR DEInvulSphere : InvulnerabilitySphere replaces InvulnerabilitySphere
+{
+  +FLOATBOB
+  +NOGRAVITY
+  +FORCEXYBILLBOARD
+  States
+  {
+  Spawn:
+	PINV ABCDCBA 6 Bright
+	Loop
+  }
+}
+
+//SoulSphere
+
+ACTOR DESoulSphere : SoulSphere replaces SoulSphere
+{
+  +FLOATBOB
+  +NOGRAVITY
+  +FORCEXYBILLBOARD
+  States
+  {
+  Spawn:
+	SOUL ABCDCBA 6 Bright
+	Loop
+  }
+}
+
+//MegaSphere
+
+ACTOR DEMegaSphere : MegaSphere replaces Megasphere
+{
+  +FLOATBOB
+  +NOGRAVITY
+  +FORCEXYBILLBOARD
+  States
+  {
+  Spawn:
+	MEGA ABCDCBA 6 Bright
+  }
+}  
+
+ACTOR FirstAidKit : Health
+{
+  Inventory.Amount 15
+  Inventory.PickupMessage "Picked up a first aid kit."
+  Health.LowMessage 25, "Picked up a first aid kit that you REALLY need!"
+  States
+  {
+  Spawn:
+    STIN A -1
+    Stop
+  }
+}
+
+ACTOR HealthPack : Health
+{
+  Inventory.Amount 20
+  Inventory.PickupMessage "Picked up a health pack."
+  Health.LowMessage 25, "Picked up a health pack that you REALLY need!"
+  States
+  {
+  Spawn:
+    MEDJ A -1
+    Stop
+  }
+}
+
+ACTOR BigHealthBonus : Health
+{
+  +COUNTITEM
+  +INVENTORY.ALWAYSPICKUP
+  scale .75
+  Inventory.Amount 5
+  Inventory.MaxAmount 300
+  Inventory.PickupMessage "Picked up a big health bonus."
+  Inventory.PickupSound "pickup/potion"
+  States
+  {
+  Spawn:
+    PINW ABCDCB 6
+    Loop
+  }
+}
+
+Actor BigArmorBonus : BasicArmorBonus
+{
+  Radius 20
+  Height 16
+  scale .75
+  Inventory.PickupMessage "Picked up a demon armor bonus."
+  Inventory.Icon "ARM2A0"
+  Armor.SavePercent 50
+  Armor.SaveAmount 5
+  Armor.MaxSaveAmount 300
+  +COUNTITEM
+  +INVENTORY.ALWAYSPICKUP
+  States
+  {
+  Spawn:
+	LARM A 48
+	LARM BC 6
+	LARM D 12
+	LARM CB 6
+	Loop
+  }
+}
+
+ACTOR GreenArmor2 : GreenArmor
+{
+  States
+  {
+  Spawn:
+    ARM3 A 6
+	ARM3 A 7 Bright
+    Loop
+  }
+}
