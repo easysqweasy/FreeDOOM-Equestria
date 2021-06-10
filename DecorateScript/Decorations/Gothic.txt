@@ -1,0 +1,97 @@
+ACTOR SkullGem 136
+{
+  States
+  {
+  Spawn:
+    bon3 A -1
+    Stop
+  }
+}
+
+ACTOR Bible 137
+{
+  States
+  {
+  Spawn:
+    bon4 A -1
+    Stop
+  }
+}
+
+ACTOR Chalice 138
+{
+  States
+  {
+  Spawn:
+    bon5 A -1
+    Stop
+  }
+}
+
+ACTOR Dagger 139
+{
+  +FloorClip
+  +Solid
+  ProjectilePassHeight -16
+  Height 36
+  Radius 7
+  States
+  {
+  Spawn:
+    bon6 A -1
+    Stop
+  }
+}
+
+ACTOR DoomStaff 140
+{
+  +FloorClip
+  +Solid
+  ProjectilePassHeight -16
+  Height 51
+  Radius 5
+  States
+  {
+  Spawn:
+    bon7 A -1
+    Stop
+  }
+}
+
+ACTOR Chest 141
+{
+  +FloorClip
+  +Solid
+  Height 16
+  States
+  {
+  Spawn:
+    bon8 A -1
+    Stop
+  }
+}
+
+ACTOR book 142
+{
+  States
+  {
+  Spawn:
+    bon9 A -1
+    Stop
+  }
+}
+
+Actor FlamingPillar 143
+{
+  +FloorClip
+  +Solid
+  ProjectilePassHeight -16
+  Height 32
+  Radius 19
+  States
+  {
+  Spawn:
+    FBBQ ABC 6 Bright
+    LOOP
+  }
+}

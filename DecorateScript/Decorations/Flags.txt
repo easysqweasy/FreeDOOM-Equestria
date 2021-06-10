@@ -1,5 +1,6 @@
-actor Flag 91
+actor Flag 92
 {
+//$Category EquestriaDecorations
   Height 40
   Radius 20
   +SOLID

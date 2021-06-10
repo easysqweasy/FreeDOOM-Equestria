@@ -1,0 +1,154 @@
+ACTOR EvilEye2 121
+{
+  Radius 16
+  Height 54
+  ProjectilePassHeight -16
+  +SOLID
+  States
+  {
+  Spawn:
+    DEYE ABCB 6 Bright
+    Loop
+  }
+}
+
+ACTOR DemonSkull1 122
+{
+  States
+  {
+  Spawn:
+    heda A -1
+    Stop
+  }
+}
+ACTOR DemonSkull2 123
+{
+  States
+  {
+  Spawn:
+    hedb A -1
+    Stop
+  }
+}
+ACTOR DemonSkull3 124
+{
+  States
+  {
+  Spawn:
+    hedc A -1
+    Stop
+  }
+}
+ACTOR DemonSkull4 125
+{
+  States
+  {
+  Spawn:
+    hedd A -1
+    Stop
+  }
+}
+ACTOR DemonSkull5 126
+{
+  States
+  {
+  Spawn:
+    hede A -1
+    Stop
+  }
+}
+ACTOR DemonSkull6 127
+{
+  States
+  {
+  Spawn:
+    hedf A -1
+    Stop
+  }
+}
+ACTOR DemonSkull7 128
+{
+  States
+  {
+  Spawn:
+    MSKL A -1
+    Stop
+  }
+}
+ACTOR DemonSkull8 129
+{
+  States
+  {
+  Spawn:
+    MSKL B -1
+    Stop
+  }
+}
+ACTOR DemonSkull9 130
+{
+  States
+  {
+  Spawn:
+    MSKL C -1
+    Stop
+  }
+}
+ACTOR DemonSkull10 131
+{
+  States
+  {
+  Spawn:
+    MSKL D -1
+    Stop
+  }
+}
+
+Actor BaronStatue1 132
+{
+  +FloorClip
+  +Solid
+  ProjectilePassHeight -16
+  Height 86
+  Radius 26
+  States
+  {
+  Spawn:
+    BRST A -1
+    Stop
+  }
+}
+
+Actor BaronStatue2 133
+{
+  +FloorClip
+  +Solid
+  ProjectilePassHeight -16
+  Height 86
+  Radius 26
+  States
+  {
+  Spawn:
+    BRSM A -1
+    Stop
+  }
+}
+Actor DemonArm 134
+{
+  +FloorClip
+  States
+  {
+  Spawn:
+    DARM A -1
+    Stop
+  }
+}
+ACTOR TallPinkColumn : TallRedColumn 135
+{
+
+  States
+  {
+  Spawn:
+    COL7 A -1
+    Stop
+  }
+}

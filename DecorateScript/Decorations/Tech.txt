@@ -1,0 +1,202 @@
+//$Category TechDecorations
+
+Actor Zapper 93
+{
+//$Category TechDecorations
+  +SpawnCeiling
+  +NoGravity
+  +Solid
+  Radius 12
+  Height 32
+  States
+  {
+  Spawn:
+    ZAPR A 42
+	ZAPR BCDEDCDEDCDEDCDEDCDEDCB 4
+    Loop
+  
+  }
+}
+
+Actor Chair 94
+{
+//$Category TechDecorations
+  +FloorClip
+  +Solid
+  ProjectilePassHeight -16
+  Height 30
+  Radius 15
+  States
+  {
+  Spawn:
+    CHAI A -1
+    Stop
+  }
+}
+
+Actor lamp1 95
+{
+//$Category TechDecorations
+  Radius 9
+  Height 55
+  ProjectilePassHeight -16
+  +SOLID
+  States
+  {
+  Spawn:
+	lam2 A -1 bright
+	Stop
+  }
+}
+
+Actor lamp2 97
+  {
+//$Category TechDecorations
+  Radius 11
+  Height 32
+  ProjectilePassHeight -16
+  +SOLID
+  States
+  {
+  Spawn:
+	lamp A -1 bright
+	Stop
+  }
+}
+Actor lamp3 98
+{
+//$Category TechDecorations
+Radius 9
+Height 55
++SOLID
++NOGRAVITY
++SPAWNCEILING
+States
+{
+Spawn:
+	lam3 A -1 bright
+	Stop
+}
+}
+
+Actor lamp4 99
+{
+//$Category TechDecorations
+ProjectilePassHeight -16
+Radius 11
+Height 46
++SOLID
+States
+{
+Spawn:
+	lam4 A -1 bright
+	Stop
+}
+}
+
+Actor lamp5 100
+{
+//$Category TechDecorations
+Radius 11
+Height 76
+ProjectilePassHeight -16
++SOLID
+States
+{
+Spawn:
+	lam5 A -1 bright
+	Stop
+}
+}
+
+Actor lamp6 101
+{
+//$Category TechDecorations
+Radius 11
+Height 80
+ProjectilePassHeight -16
++SOLID
+States
+{
+Spawn:
+	lam6 A -1 bright
+	Stop
+}
+}
+
+Actor TechPillar2: TechPillar 102
+{
+//$Category TechDecorations
+Height 144
+States
+{
+Spawn:
+	elec B -1 bright
+	Stop
+}
+}
+
+Actor equipment1 103
+{
+//$Category TechDecorations
+Radius 8
+Height 24
+ProjectilePassHeight -16
++SOLID
+States
+{
+Spawn:
+	equ1 A -1
+	Stop
+}
+}
+
+Actor equipment2 104
+{
+//$Category TechDecorations
+Radius 16
+Height 24
+ProjectilePassHeight -16
++SOLID
+States
+{
+Spawn:
+	equ2 A -1
+	Stop
+}
+}
+
+Actor equipment3 105
+{
+//$Category TechDecorations
+Radius 15
+Height 14
+ProjectilePassHeight -16
++SOLID
+States
+{
+Spawn:
+	equ3 A 90
+	equ3 B 8
+	equ3 A 70
+	equ3 B 8
+	equ3 A 100
+	equ3 B 8
+	equ3 A 20
+	equ3 b 8
+	equ3 a 200
+	equ3 b 8
+	LOOP
+}
+}
+
+Actor Spark2 106
+{
+//$Category TechDecorations
+States
+{
+Spawn:
+	SPAR abcdcBDACDABDCADACDBCAD 3 bright
+	loop
+}
+}
