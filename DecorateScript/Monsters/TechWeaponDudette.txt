@@ -1,4 +1,4 @@
-actor PlasmaKirin
+actor PlasmaKirin 91
 {
   Monster
   Health 30
