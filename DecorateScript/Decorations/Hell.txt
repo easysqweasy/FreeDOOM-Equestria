@@ -1,5 +1,6 @@
 ACTOR EvilEye2 121
 {
+//$Category Hell
   Radius 16
   Height 54
   ProjectilePassHeight -16
@@ -14,6 +15,7 @@ ACTOR EvilEye2 121
 
 ACTOR DemonSkull1 122
 {
+//$Category Hell
   States
   {
   Spawn:
@@ -21,7 +23,7 @@ ACTOR DemonSkull1 122
     Stop
   }
 }
-ACTOR DemonSkull2 123
+ACTOR DemonSkull2 : DemonSkull1 123
 {
   States
   {
@@ -30,7 +32,7 @@ ACTOR DemonSkull2 123
     Stop
   }
 }
-ACTOR DemonSkull3 124
+ACTOR DemonSkull3 : DemonSkull1 124
 {
   States
   {
@@ -39,7 +41,7 @@ ACTOR DemonSkull3 124
     Stop
   }
 }
-ACTOR DemonSkull4 125
+ACTOR DemonSkull4 : DemonSkull1 125
 {
   States
   {
@@ -48,7 +50,7 @@ ACTOR DemonSkull4 125
     Stop
   }
 }
-ACTOR DemonSkull5 126
+ACTOR DemonSkull5 : DemonSkull1 126
 {
   States
   {
@@ -57,7 +59,7 @@ ACTOR DemonSkull5 126
     Stop
   }
 }
-ACTOR DemonSkull6 127
+ACTOR DemonSkull6 : DemonSkull1 127
 {
   States
   {
@@ -66,7 +68,7 @@ ACTOR DemonSkull6 127
     Stop
   }
 }
-ACTOR DemonSkull7 128
+ACTOR DemonSkull7 : DemonSkull1 128
 {
   States
   {
@@ -75,7 +77,7 @@ ACTOR DemonSkull7 128
     Stop
   }
 }
-ACTOR DemonSkull8 129
+ACTOR DemonSkull8 : DemonSkull1 129
 {
   States
   {
@@ -84,7 +86,7 @@ ACTOR DemonSkull8 129
     Stop
   }
 }
-ACTOR DemonSkull9 130
+ACTOR DemonSkull9  : DemonSkull1 130
 {
   States
   {
@@ -93,7 +95,7 @@ ACTOR DemonSkull9 130
     Stop
   }
 }
-ACTOR DemonSkull10 131
+ACTOR DemonSkull10 : DemonSkull1 131
 {
   States
   {
@@ -105,6 +107,7 @@ ACTOR DemonSkull10 131
 
 Actor BaronStatue1 132
 {
+//$Category Hell
   +FloorClip
   +Solid
   ProjectilePassHeight -16
@@ -118,13 +121,8 @@ Actor BaronStatue1 132
   }
 }
 
-Actor BaronStatue2 133
+Actor BaronStatue2 : BaronStatue1 133
 {
-  +FloorClip
-  +Solid
-  ProjectilePassHeight -16
-  Height 86
-  Radius 26
   States
   {
   Spawn:
@@ -134,6 +132,7 @@ Actor BaronStatue2 133
 }
 Actor DemonArm 134
 {
+//$Category Hell
   +FloorClip
   States
   {
@@ -144,7 +143,7 @@ Actor DemonArm 134
 }
 ACTOR TallPinkColumn : TallRedColumn 135
 {
-
+//$Category Hell
   States
   {
   Spawn:

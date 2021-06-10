@@ -1,5 +1,6 @@
 actor PlasmaKirin 91
 {
+//$Category Monsters
   Monster
   Health 30
   Radius 20

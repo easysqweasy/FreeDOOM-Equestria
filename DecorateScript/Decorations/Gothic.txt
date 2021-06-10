@@ -1,5 +1,6 @@
 ACTOR SkullGem 136
 {
+//$Category Gothic
   States
   {
   Spawn:
@@ -10,6 +11,7 @@ ACTOR SkullGem 136
 
 ACTOR Bible 137
 {
+//$Category Gothic
   States
   {
   Spawn:
@@ -20,6 +22,7 @@ ACTOR Bible 137
 
 ACTOR Chalice 138
 {
+//$Category Gothic
   States
   {
   Spawn:
@@ -30,6 +33,7 @@ ACTOR Chalice 138
 
 ACTOR Dagger 139
 {
+//$Category Gothic
   +FloorClip
   +Solid
   ProjectilePassHeight -16
@@ -45,6 +49,7 @@ ACTOR Dagger 139
 
 ACTOR DoomStaff 140
 {
+//$Category Gothic
   +FloorClip
   +Solid
   ProjectilePassHeight -16
@@ -60,6 +65,7 @@ ACTOR DoomStaff 140
 
 ACTOR Chest 141
 {
+//$Category Gothic
   +FloorClip
   +Solid
   Height 16
@@ -73,6 +79,7 @@ ACTOR Chest 141
 
 ACTOR book 142
 {
+//$Category Gothic
   States
   {
   Spawn:
@@ -83,6 +90,7 @@ ACTOR book 142
 
 Actor FlamingPillar 143
 {
+//$Category Gothic
   +FloorClip
   +Solid
   ProjectilePassHeight -16
