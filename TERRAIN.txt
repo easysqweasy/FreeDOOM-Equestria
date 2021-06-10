@@ -36,7 +36,7 @@ splash DoomWater
 terrain DoomWater
 {
 	splash			DoomWater
-	//footclip		10
+	footclip		10
 	liquid
 }
 
@@ -61,7 +61,7 @@ splash DoomSludge
 terrain DoomSludge
 {
 	splash			DoomSludge
-	//footclip		10
+	footclip		10
 	liquid
 	
 	//damageamount	5
@@ -91,7 +91,7 @@ splash DoomLava
 terrain DoomLava
 {
 	splash			DoomLava
-	//footclip		10
+	footclip		10
 	liquid
 	
 	//damageamount	10
@@ -121,7 +121,7 @@ splash DoomBlood
 terrain DoomBlood
 {
 	splash			DoomBlood
-	//footclip		10
+	footclip		10
 	liquid
 	}
 
@@ -146,7 +146,7 @@ splash DoomSlime
 terrain DoomSlime
 {
 	splash			DoomSlime
-	//footclip		10
+	footclip		10
 	liquid
 	
 	//damageamount	5
@@ -176,7 +176,7 @@ splash DoomMud
 terrain DoomMud
 {
 	splash			DoomMud
-	//footclip		10
+	footclip		10
 	liquid
 }
 

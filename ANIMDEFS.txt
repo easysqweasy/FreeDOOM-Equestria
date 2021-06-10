@@ -1,1 +1,49 @@
-Warp2	Flat	MLPWater
+Warp2 Flat FWater1 0.5
+flat FWater1
+pic FWater1 tics 8
+pic FWater1 tics 8
+pic FWater1 tics 8
+flat FWater2
+pic FWater1 tics 8
+pic FWater1 tics 8
+pic FWater1 tics 8
+flat FWater3
+pic FWater1 tics 8
+pic FWater1 tics 8
+pic FWater1 tics 8
+flat FWater4
+pic FWater1 tics 8
+pic FWater1 tics 8
+pic FWater1 tics 8
+
+Warp Flat Lava1 0.5
+flat Lava1
+pic Lava1 tics 8
+pic Lava1 tics 8
+pic Lava1 tics 8
+flat Lava2
+pic Lava1 tics 8
+pic Lava1 tics 8
+pic Lava1 tics 8
+flat Lava3
+pic Lava1 tics 8
+pic Lava1 tics 8
+pic Lava1 tics 8
+flat Lava4
+pic Lava1 tics 8
+pic Lava1 tics 8
+pic Lava1 tics 8
+
+warp flat NUKAGE1 0.5
+flat NUKAGE1
+pic NUKAGE1 tics 8
+pic NUKAGE1 tics 8
+pic NUKAGE1 tics 8
+flat NUKAGE2
+pic NUKAGE1 tics 8
+pic NUKAGE1 tics 8
+pic NUKAGE1 tics 8
+flat NUKAGE3
+pic NUKAGE1 tics 8
+pic NUKAGE1 tics 8
+pic NUKAGE1 tics 8

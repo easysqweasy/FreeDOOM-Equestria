@@ -1496,3 +1496,77 @@ object TeleportFog
     frame TFOGI { light DTFOG4 }
     frame TFOGJ { light DTFOG3 }
 }
+
+Glow
+{
+	Flats
+	{
+		lava1
+		lava2
+		lava3
+		lava4
+	}
+	Texture "doomlava1", orange, 75, fullbright
+}
+
+Glow
+{
+	Flats
+	{
+		nukage1
+		nukage2
+		nukage3
+		nukage4
+	}
+	Walls
+	{
+		SFALL1
+		SFALL2
+		SFALL3
+		SFALL4
+	}
+	Texture "nukage1", green, 25, fullbright
+}
+
+Glow
+{
+	Flats
+	{
+		SLIME09
+		SLIME10
+		SLIME11
+		SLIME12
+	}
+	Texture "SLIME09", red, 15, fullbright
+}
+
+Glow
+{
+	Flats
+	{
+		RROCK04
+		RROCK05
+		RROCK06
+		RROCK07
+		RROCK08
+	}
+	Texture "RROCK04", red, 15, fullbright
+}
+
+Glow
+{
+	Walls
+	{
+		CRACKLE2
+	}
+	Texture "CRACKLE2", orange, 15
+}
+
+Glow
+{
+	Walls
+	{
+		CRACKLE3
+	}
+	Texture "CRACKLE3", Yellow, 15
+}
