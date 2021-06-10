@@ -51,15 +51,11 @@ actor Shainer : DoomPlayer
 
 #include "DecorateScript/Pickups.txt"
 
-////Effects, Plarticles, Debris
+////Effects, Particles, Debris
 
 #include "DecorateScript/Terrains.txt"
 #include "DecorateScript/Particles.txt"
 #include "DecorateScript/Gore.txt"
-
-////Projectiles
-
-#include "DecorateScript/Projectiles.txt"
 
 ////Weapons
 
@@ -79,12 +75,17 @@ actor Shainer : DoomPlayer
 ////Decorations
 
 #include "DecorateScript/Decorations/Flags.txt"
+#include "DecorateScript/Decorations/Tech.txt"
+#include "DecorateScript/Decorations/Nature.txt"
+#include "DecorateScript/Decorations/Hell.txt"
+#include "DecorateScript/Decorations/Gothic.txt"
 
 ////Misc
 
 #include "DecorateScript/ExplosiveBarrel.txt"
 
-/*ACTOR DEMedikit : Medikit replaces Medikit { 
+/*
+ACTOR DEMedikit : Medikit replaces Medikit { 
   scale 1
 }
 
@@ -115,5 +116,5 @@ ACTOR DERadSuit : PowerupGiver replaces PowerupGiver
 {
 XScale 1.5
 YScale 1.3
-}*/
-
+}
+*/
