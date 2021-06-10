@@ -8,7 +8,6 @@ actor DESuperShotgun : SuperShotgun replaces SuperShotgun
 	SHT2 A 1 A_Raise
     Loop
   Fire:
-    SHT2 A 3
     SHT2 A 7
 	{
 		A_WeaponOffset(0, 42, WOF_KEEPX | WOF_INTERPOLATE);

@@ -8,7 +8,6 @@ actor DEShotgun : Shotgun replaces Shotgun
 	SHTG A 1 A_Raise
     Loop
   Fire:
-    SHTG A 3
     SHTG A 7 
 	{
 		A_WeaponOffset(0, 40, WOF_KEEPX | WOF_INTERPOLATE);

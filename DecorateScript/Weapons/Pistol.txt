@@ -8,13 +8,13 @@ ACTOR DEPistol : Pistol replaces Pistol
 	PISG A 1 A_Raise
 	Loop
   Fire:
-	PISG B 3 
+	PISG A 4
 	PISG B 6 
 	{
 		A_WeaponOffset(0, 30, WOF_KEEPX | WOF_INTERPOLATE);
 		A_FirePistol;
 	}
-	PISG C 5 A_WeaponOffset(0, 29, WOF_KEEPX | WOF_INTERPOLATE)
+	PISG C 4 A_WeaponOffset(0, 29, WOF_KEEPX | WOF_INTERPOLATE)
 	PISG B 5 
 	{
 		A_WeaponOffset(0, 32, WOF_KEEPX | WOF_INTERPOLATE);
