@@ -47,3 +47,9 @@ flat NUKAGE3
 pic NUKAGE1 tics 8
 pic NUKAGE1 tics 8
 pic NUKAGE1 tics 8
+
+texture MISSINGT1
+pic MISSINGT1 tics 32
+pic MISSINGT2 tics 2
+pic MISSINGT3 tics 3
+pic MISSINGT2 tics 2

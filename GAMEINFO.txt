@@ -1,4 +1,4 @@
-STARTUPTITLE = "DOOM Equestria PRE-ALPHA V1" 
+STARTUPTITLE = "DOOM Equestria - Early DevBuild" 
 StartupSong = ""
 StartupType = "Hexen"
 StartupColors = "#3C4651", "#3C4651"
