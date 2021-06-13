@@ -2,15 +2,15 @@ actor PlasmaKirin 91
 {
 //$Category Monsters
   Monster
-  Health 30
+  Health 40
   Radius 20
   Height 56
   Mass 100
-  Speed 12
+  Speed 16
   PainChance 170
   +FLOORCLIP
   SeeSound "tech/sight"
-  AttackSound "shotguy/attack"
+  AttackSound ""
   PainSound "tech/pain"
   DeathSound "tech/death"
   ActiveSound "tech/active"
