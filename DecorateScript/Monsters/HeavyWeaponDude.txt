@@ -12,7 +12,7 @@ ACTOR ChaingunDude : ChaingunGuy replaces ChaingunGuy
   PainSound "chainguy/pain"
   DeathSound "chainguy/death"
   ActiveSound "chainguy/active"
-  AttackSound "chainguy/attack"
+  AttackSound "weapons/chngun"
   Obituary "$OB_CHAINGUY"
   Dropitem "Chaingun"
   States
