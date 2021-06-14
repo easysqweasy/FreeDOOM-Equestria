@@ -26,6 +26,7 @@ Actor Chair 94
   ProjectilePassHeight -16
   Height 30
   Radius 15
+  Mass 20
   States
   {
   Spawn:
