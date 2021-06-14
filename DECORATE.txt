@@ -46,6 +46,7 @@ actor Shainer : DoomPlayer
 #include "DecorateScript/Monsters/TechWeaponDudette.txt"
 #include "DecorateScript/Monsters/Pinky.txt"
 #include "DecorateScript/Monsters/Cyberdemon.txt"
+#include "DecorateScript/Monsters/Revenant.txt"
 
 ////Items/PowerUps
 
