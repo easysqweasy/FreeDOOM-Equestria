@@ -15,3 +15,8 @@ skill baby
    Key = "i"
 }
 
+episode s1e1
+{
+   picname = "M_EPI1"
+   key = "k"
+}
