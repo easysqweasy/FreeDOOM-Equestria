@@ -8,7 +8,6 @@ Actor DebrisGeneral
   +GHOST
   +FORCEXYBILLBOARD
   +FLOORCLIP
-  +MOVEWITHSECTOR
   Radius 10
   Height 10
   Mass 1
@@ -38,7 +37,7 @@ actor Shainer : DoomPlayer
 
 #include "DecorateScript/Monsters/BaronHellKnight.txt"
 #include "DecorateScript/Monsters/Cacodemon.txt"
-//#include "DecorateScript/Monsters/LostSoul.txt"
+#include "DecorateScript/Monsters/LostSoul.txt"
 #include "DecorateScript/Monsters/Imp.txt"
 #include "DecorateScript/Monsters/ZombiePony.txt"
 #include "DecorateScript/Monsters/ShotgunGuy.txt"
