@@ -1,8 +1,8 @@
 //splashes (duped from Heretic and Hexen, since they don't load in Doom natively by default)
-world/drip gloop
-world/watersplash gloop
-world/lavasizzle acid5
-world/sludgegloop muck5
+world/drip "Sounds/DoomTerrains/GLOOP.oog"
+world/watersplash "Sounds/DoomTerrains/GLOOP.oog"
+world/lavasizzle "Sounds/DoomTerrains/ACID5.oog"
+world/sludgegloop "Sounds/DoomTerrains/MUCK5.oog"
 //you can override the limit values so multiple splashes can play simultaneously
 //note that this sounds bad if multiple splashes play all at once (such as when firing a shotgun into liquid), so override these values at your own discretion
 /*$Limit world/drip 4
@@ -10,9 +10,18 @@ $Limit world/watersplash 4
 $Limit world/lavasizzle 4
 $Limit world/sludgegloop 4*/
 
+$pitchshiftrange 2
+
 pickup/potion "Sounds/PotionPickup.wav"
+
 tech/groan "Sounds/Zombies/TechWeaponDudette/TECHGROAN.ogg"
 tech/active "Sounds/Zombies/TechWeaponDudette/TECHACT.ogg"
 tech/death "Sounds/Zombies/TechWeaponDudette/TECHDHT.ogg"
 tech/pain "Sounds/Zombies/TechWeaponDudette/TECHPAIN.ogg"
 tech/sight "Sounds/Zombies/TechWeaponDudette/TECHSIT.ogg"
+
+FloorImpact "Sounds/FloorImpact.ogg"
+$pitchshift "Sounds/FloorImpact.ogg" 7
+
+$playeralias player male *land FloorImpact
+$playeralias player female *land FloorImpact
