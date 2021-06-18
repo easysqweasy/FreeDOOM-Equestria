@@ -32,12 +32,13 @@ actor DEPlasmaBall : PlasmaBall replaces PlasmaBall
 {
   Radius 8
   Height 13
-  Alpha 0.65
+  Alpha 0.75
+  RenderStyle Add
   +FORCEXYBILLBOARD
-  States
+  /*States
   {
   Spawn:
 	PLSS ABCDEFGHIJKLMNOPQRSTUV 2 Bright
 	Loop
-  }
+  }*/
 }
