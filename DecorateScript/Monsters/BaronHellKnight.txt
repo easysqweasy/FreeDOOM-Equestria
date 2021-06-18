@@ -1,10 +1,30 @@
 //Green Blood
 actor EquestriaBaronofHell : BaronOfHell replaces BaronOfHell
- {
+{
   BloodColor "darkgreen"
- }
+  States
+  {
+  Missile:
+	BOSS EF 8 A_FaceTarget
+    BOSS G 8 A_SpawnProjectile(BaronHellBall)
+    Goto See
+  }
+}
  
 actor EquestriaHellKnight2 : HellKnight replaces HellKnight
  {
    BloodColor "darkgreen"
  }
+ 
+actor BaronHellBall : BaronBall
+{
+  States
+  {
+  Spawn:
+	BBAL AB 4 Bright
+	Loop
+  Death:
+	BBAL CDE 6 Bright
+	Stop
+  }
+}
