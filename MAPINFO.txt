@@ -1,8 +1,3 @@
-GameInfo
-{
-	AddEventHandlers = "SpriteShadowHandler"
-}
-
 //Change "I'm Too Young To Die" to "I'm a Little Pony"
 skill baby
 {
