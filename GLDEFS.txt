@@ -1525,7 +1525,7 @@ Glow
 		SFALL3
 		SFALL4
 	}
-	Texture "nukage1", green, 25, fullbright
+	Texture "nukage1", green, 10, fullbright
 }
 
 Glow
@@ -1537,7 +1537,7 @@ Glow
 		SLIME11
 		SLIME12
 	}
-	Texture "SLIME09", red, 15, fullbright
+	Texture "SLIME09", red, 5, fullbright
 }
 
 Glow
@@ -1550,7 +1550,7 @@ Glow
 		RROCK07
 		RROCK08
 	}
-	Texture "RROCK04", red, 15, fullbright
+	Texture "RROCK04", red, 5, fullbright
 }
 
 Glow
