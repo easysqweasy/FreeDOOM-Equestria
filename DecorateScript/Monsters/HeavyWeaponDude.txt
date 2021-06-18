@@ -6,14 +6,7 @@ ACTOR ChaingunDude : ChaingunGuy replaces ChaingunGuy
   Mass 100
   Speed 8
   PainChance 170
-  Monster
-  +FLOORCLIP
-  SeeSound "chainguy/sight"
-  PainSound "chainguy/pain"
-  DeathSound "chainguy/death"
-  ActiveSound "chainguy/active"
   AttackSound "weapons/chngun"
-  Obituary "$OB_CHAINGUY"
   Dropitem "Chaingun"
   States
   {
