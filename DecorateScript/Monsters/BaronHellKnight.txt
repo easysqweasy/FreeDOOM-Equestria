@@ -11,20 +11,74 @@ actor EquestriaBaronofHell : BaronOfHell replaces BaronOfHell
   }
 }
  
-actor EquestriaHellKnight2 : HellKnight replaces HellKnight
+actor EquestriaHellKnight : HellKnight replaces HellKnight
  {
-   BloodColor "darkgreen"
- }
+  BloodColor "darkgreen"
+  States
+   {
+  Missile:
+    BOS2 EF 8 A_FaceTarget
+    BOS2 G 8 A_SpawnProjectile(KnightBall)
+    Goto See
+  }
+}
  
-actor BaronHellBall : BaronBall
+actor EquestriaBaronBall : BaronBall replaces BaronBall
+{
+  +ForceXYBillBoard
+}
+
+actor KnightBall : EquestriaBaronBall
 {
   States
   {
   Spawn:
-	BBAL AB 4 Bright
+	BAL7 A 2 Bright 
+	{
+		A_SpawnItemEx("BaronBallPiece",random(8,12),random(-3,3),random(-3,3),random(1,0),0,0,180,0);
+		A_SpawnItemEx("BaronBallPiece2",random(8,12),random(-3,3),random(-3,3),random(1,0),0,0,180,0);
+		A_SpawnItemEx("BaronBallPiece",random(8,12),random(-3,3),random(-3,3),random(1,0),0,0,180,0);
+		A_SpawnItemEx("BaronBallPiece2",random(8,12),random(-3,3),random(-3,3),random(1,0),0,0,180,0);
+
+	}
+	BAL7 B 2 Bright
+	{
+		A_SpawnItemEx("BaronBallPiece",random(8,12),random(-3,3),random(-3,3),random(1,0),0,0,180,0);
+		A_SpawnItemEx("BaronBallPiece2",random(8,12),random(-3,3),random(-3,3),random(1,0),0,0,180,0);
+		A_SpawnItemEx("BaronBallPiece",random(8,12),random(-3,3),random(-3,3),random(1,0),0,0,180,0);
+		A_SpawnItemEx("BaronBallPiece2",random(8,12),random(-3,3),random(-3,3),random(1,0),0,0,180,0);
+	}
 	Loop
   Death:
-	BBAL CDE 6 Bright
+	BAL7 CD 6 Bright
+	BAL7 EEEEEEEEEE 1 Bright A_FadeOut(0.1)
+	Stop
+  }
+}
+	
+actor BaronHellBall : EquestriaBaronBall
+{
+  States
+  {
+  Spawn:
+	BBAL A 2 Bright
+	{
+		A_SpawnItemEx("BaronBallPiece",random(8,12),random(-3,3),random(-3,3),random(1,0),0,0,180,0);
+		A_SpawnItemEx("BaronBallPiece2",random(8,12),random(-3,3),random(-3,3),random(1,0),0,0,180,0);
+		A_SpawnItemEx("BaronBallPiece",random(8,12),random(-3,3),random(-3,3),random(1,0),0,0,180,0);
+		A_SpawnItemEx("BaronBallPiece2",random(8,12),random(-3,3),random(-3,3),random(1,0),0,0,180,0);
+	}
+	BBAL B 2 Bright
+	{
+		A_SpawnItemEx("BaronBallPiece",random(8,12),random(-3,3),random(-3,3),random(1,0),0,0,180,0);
+		A_SpawnItemEx("BaronBallPiece2",random(8,12),random(-3,3),random(-3,3),random(1,0),0,0,180,0);
+		A_SpawnItemEx("BaronBallPiece",random(8,12),random(-3,3),random(-3,3),random(1,0),0,0,180,0);
+		A_SpawnItemEx("BaronBallPiece2",random(8,12),random(-3,3),random(-3,3),random(1,0),0,0,180,0);
+	}
+	Loop
+  Death:
+	BBAL CD 6 Bright
+	BBAL EEEEEEEEEE 1 Bright A_FadeOut(0.1)
 	Stop
   }
 }
