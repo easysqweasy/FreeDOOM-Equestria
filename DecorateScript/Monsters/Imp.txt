@@ -1,19 +1,42 @@
 actor DEImpBall : DoomImpBall replaces DoomImpBall
 {
-  RenderStyle add
-  Alpha 1
+  +ForceXYBillBoard
+  RenderStyle Translucent
+  Alpha 0.75
   States
   {
   Spawn:
-	TNT1 A 0 A_SpawnItemEx("FirePieces",random(8,12),random(-3,3),random(-3,3),random(1,0),0,0,180,0)
-	FIRB ABC 1 Bright
-	TNT1 A 0 A_SpawnItemEx("FirePieces",random(8,12),random(-3,3),random(-3,3),random(1,0),0,0,180,0)
-	FIRB DEF 1 Bright 
-	TNT1 A 0 A_SpawnItemEx("FirePieces",random(8,12),random(-3,3),random(-3,3),random(1,0),0,0,180,0)
-    FIRB GHI 1 Bright 
-	TNT1 A 0 A_SpawnItemEx("FirePieces",random(8,12),random(-3,3),random(-3,3),random(1,0),0,0,180,0)
-	FIRB JKLM 1 Bright
+	FIRB B 2 Bright A_SpawnItemEx("FireBallTrail")
+	FIRB A 2 Bright
+	{
+		A_SpawnItemEx("FirePieceSpawn",random(8,12),random(-3,3),random(-3,3),random(1,0),0,0,180,0);
+		A_SpawnItemEx("FirePieceSpawn",random(8,12),random(-3,3),random(-3,3),random(1,0),0,0,180,0);
+	}
+	FIRB B 2 Bright 
+	{
+		A_SpawnItemEx("FirePieceSpawn",random(8,12),random(-3,3),random(-3,3),random(1,0),0,0,180,0);
+		A_SpawnItemEx("FirePieceSpawn",random(8,12),random(-3,3),random(-3,3),random(1,0),0,0,180,0);
+	}
 	Loop
+  Death:
+	BAL1 CD 6 Bright
+	BAL1 EEEEEEEEEE 1 Bright A_FadeOut(0.1)
+	Stop
+  }
+}
+
+actor FireBallTrail : DEImpBall
+{
+  Speed 0
+  Damage 0
+  Alpha 0.5
+  States
+  {
+  Spawn:
+	TNT1 A 6
+	BAL1 CD 4 Bright
+	BAL1 EEEEEEEEEE 1 Bright A_FadeOut(0.1)
+	Stop
   }
 }
 
