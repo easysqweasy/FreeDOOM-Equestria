@@ -20,11 +20,11 @@ ACTOR DEExploBarrel : ExplosiveBarrel replaces ExplosiveBarrel
 		A_Quake(2, 3, 0, 200);
 		A_Quake(1, 2, 0, 300);
 	}
-    BEXP E 10 Bright
+    BEXP EEEEEEEEEE 1 Bright A_FadeOut(0.1)
     TNT1 A 1050 Bright A_BarrelDestroy
     TNT1 A 5 A_Respawn
     Wait
-  XDeath:
+/*XDeath:
 	BEXP D 5 Bright
 	{
 		A_SpawnItemEx(BarrelDebris, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
@@ -47,7 +47,7 @@ ACTOR DEExploBarrel : ExplosiveBarrel replaces ExplosiveBarrel
 	BEXP E 10 Bright
 	TNT1 A 1050 Bright A_BarrelDestroy
     TNT1 A 5 A_Respawn
-    Wait
+    Wait*/
   }
 }
 
