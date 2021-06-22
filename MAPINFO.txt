@@ -1,3 +1,5 @@
+clearskills
+
 //Change "I'm Too Young To Die" to "I'm a Little Pony"
 skill baby
 {
@@ -10,7 +12,53 @@ skill baby
    Key = "i"
 }
 
-episode s1e1
+skill easy
+{
+	EasyBossBrain
+	SpawnFilter = Easy
+	PicName = "M_ROUGH"
+	Name = "$SKILL_EASY"
+	Key = "h"
+}
+
+skill normal
+{
+	SpawnFilter = Normal
+	PicName = "M_HURT"
+	Key = "h"
+	Name = "$SKILL_NORMAL"
+	DefaultSkill
+}
+
+skill hard
+{
+	SpawnFilter = Hard
+	PicName = "M_ULTRA"
+	Name = "$SKILL_HARD"
+	Key = "u"
+}
+
+skill hardplus
+{
+   SpawnFilter = Hard
+   Name = "Ultra-Violence+"
+   Key = "u"
+   FastMonsters
+}
+
+skill nightmare
+{
+   AmmoFactor = 2
+   FastMonsters
+   DisableCheats
+   RespawnTime = 12
+   SpawnFilter = Nightmare
+   PicName = "M_NMARE"
+   MustConfirm
+   Key = "n"
+}
+
+episode S1E1
 {
    picname = "M_EPI1"
    key = "k"
