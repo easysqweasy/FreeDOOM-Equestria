@@ -1,5 +1,6 @@
 actor EquestriaCyberdemon : Cyberdemon replaces Cyberdemon
 {
+  Health 5000
   States
   {
   Death:
@@ -139,5 +140,24 @@ actor CyberdemonBlood : DebrisGeneral
   XDeath: 
 	EXD1 "A" 35 A_FadeOut(0.1)
 	Wait
+  }
+}
+
+actor CyberdemonImpact
+{
+  PROJECTILE
+  Gravity 1
+  Speed 0
+  Damage 10
+  Height 10
+  Radius 40
+  States
+  {
+  Spawn:
+	TNT1 A 8
+	Goto Death
+  Death:
+	TNT1 A 0
+	Stop
   }
 }
