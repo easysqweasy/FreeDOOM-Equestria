@@ -13,9 +13,10 @@ actor DEShotgun : Shotgun replaces Shotgun
 		A_WeaponOffset(0, 40, WOF_KEEPX | WOF_INTERPOLATE);
 		A_FireShotgun;
 	}
-    SHTG BC 5 A_WeaponOffset(0, 32, WOF_KEEPX | WOF_INTERPOLATE)
-    SHTG D 4
-    SHTG CB 5
+    SHTG BC 2 A_WeaponOffset(0, 32, WOF_KEEPX | WOF_INTERPOLATE)
+    SHTG DEFGHIJ 1
+    SHTG IH 4
+	SHTG GFEDCB 1
     SHTG A 3
     SHTG A 7 A_ReFire
     Goto Ready
@@ -24,4 +25,4 @@ actor DEShotgun : Shotgun replaces Shotgun
     TNT1 A 3 Bright A_Light2
     Goto LightDone
   }
-}
+} //25 24
