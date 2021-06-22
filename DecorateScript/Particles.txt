@@ -10,17 +10,59 @@ actor DEParticles
   damage 0
 }
 
-actor FirePieces : DEParticles
+actor FirePieceSpawn : RandomSpawner
 {
-  RenderStyle add
-  alpha 0.90
+	DropItem FirePiece
+	DropItem FirePiece2
+	DropItem FirePiece3
+}
+
+actor Pieces : DEParticles
+{
+  RenderStyle AddStencil
+  Alpha 1.0
   States
   {
   Spawn:
-	FIRP ABCDEFGHIJKLMNO 1 Bright A_FadeOut (0.1, FTF_REMOVE)
+	PIEC A 5 Bright
+	PIEC AAAAAAAAAA 1 Bright A_FadeOut(0.1)
 	Stop
   }
+}
+
+actor FirePiece : Pieces
+{
+  RenderStyle AddStencil
+  StencilColor Yellow
 }	
+
+actor FirePiece2 : FirePiece
+{
+  RenderStyle AddStencil
+  StencilColor Orange
+}
+
+actor FirePiece3 : FirePiece
+{
+  Scale 1.5
+  RenderStyle AddStencil
+  StencilColor Red
+}
+
+actor BaronBallPiece : Pieces
+{
+  RenderStyle Stencil
+  Alpha 1.0
+  StencilColor DarkGreen
+}
+
+actor BaronBallPiece2 : Pieces
+{
+  RenderStyle Stencil
+  Alpha 1.0
+  StencilColor Green
+  Scale 1.5
+}
 
 actor BFGPieces : DEParticles
 {
