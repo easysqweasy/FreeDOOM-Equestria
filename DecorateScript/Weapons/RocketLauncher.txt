@@ -1,6 +1,7 @@
 actor DERocketLauncher : RocketLauncher replaces RocketLauncher
 {
   Weapon.BobStyle alpha
+  Inventory.PickupSound "pickup/rocklauncher"
   States
   {
   Select:
@@ -25,6 +26,7 @@ actor DERocketLauncher : RocketLauncher replaces RocketLauncher
 
 actor DERocket : Rocket replaces Rocket
 {
+  +ForceXYBillBoard
   States
   {
   Spawn:
@@ -39,7 +41,7 @@ actor DERocket : Rocket replaces Rocket
 		A_Quake(1, 2, 0, 300);
 	}
     MISL C 6 Bright
-    MISL D 4 Bright
+    MISL DDDDDDDDDD 1 Bright A_FadeOut(0.1)
 	Stop
   }
 }
