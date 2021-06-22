@@ -11,12 +11,17 @@ actor GibGore1 : DebrisGeneral
   States
   {
   Spawn:
-	GORE A 4 A_SpawnItemEX(Blood)
+	GORE B 4 A_SpawnItemEX(Blood)
 	Loop
   Death:
 	TNT1 A 1 A_SpawnItemEx(Heart)
 	Stop
   }
+}
+
+ACTOR EquestriaBlood : Blood replaces Blood
+{
+  +ForceXYBillBoard
 }
 
 Actor Heart
@@ -31,16 +36,16 @@ Actor Heart
   States
   {
   Spawn:
-	GORE A 1 A_SetScale(0.8)
-	GORE A 1 A_SetScale(0.9)
-	GORE A 1 A_SetScale(1.0)
-	GORE A 2 A_SetScale(0.9)
-	GORE A 3 A_SetScale(0.8)
-	GORE A 4 A_SetScale(0.9)
-	GORE A 5 A_SetScale(1.0)
-	GORE A 4 A_SetScale(0.9)
-	GORE A 3 A_SetScale(0.8)
-	GORE A 2 A_SetScale(0.9)
+	GORE B 1 A_SetScale(0.8)
+	GORE B 1 A_SetScale(0.9)
+	GORE B 1 A_SetScale(1.0)
+	GORE B 2 A_SetScale(0.9)
+	GORE B 3 A_SetScale(0.8)
+	GORE B 4 A_SetScale(0.9)
+	GORE B 5 A_SetScale(1.0)
+	GORE B 4 A_SetScale(0.9)
+	GORE B 3 A_SetScale(0.8)
+	GORE B 2 A_SetScale(0.9)
 	Loop
   Death:
 	TNT1 A 1
@@ -59,11 +64,11 @@ actor GibGore2 : GibGore1
   States
   {
   Spawn:
-    GORE B 8 A_SpawnItemEX(Blood)
+    GORE A 8 A_SpawnItemEX(Blood)
 	Loop
   Death:
-    GORE B 350
-	GORE B 10 A_FadeOut(0.1, FTF_REMOVE)
+    GORE A 350
+	GORE A 10 A_FadeOut(0.1, FTF_REMOVE)
 	Wait
   }
 }
