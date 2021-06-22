@@ -3,6 +3,11 @@ actor DEHealthPotion : HealthBonus replaces HealthBonus
   Inventory.PickupSound "pickup/potion"
 }
 
+ACTOR DEBackpack : Backpack replaces Backpack
+{
+  Inventory.PickupSound "pickup/backpack"
+}
+
 //Invisibility Sphere
 
 ACTOR DEBlurSphere : BlurSphere replaces BlurSphere

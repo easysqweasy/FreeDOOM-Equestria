@@ -1,6 +1,7 @@
 actor DEChaingun : Chaingun replaces Chaingun
 {
   Weapon.BobStyle alpha
+  Inventory.PickupSound "pickup/chaingun"
   States
   {
   Select:
