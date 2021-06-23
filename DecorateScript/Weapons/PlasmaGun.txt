@@ -16,7 +16,7 @@ actor DEPlasmaGun : PlasmaRifle replaces PlasmaRifle
 	PLSG EDCB 1
 	Goto Ready
   Flash:
-	PLSF A 4 Bright 
+	PLSF A 4 Bright
 	{
 		A_WeaponOffset(0, 40, WOF_KEEPX | WOF_INTERPOLATE);
 		A_Light1;
