@@ -28,8 +28,9 @@ actor DESuperShotgun : SuperShotgun replaces SuperShotgun
     SHT2 A 3
     Goto Deselect
   Flash:
-    SHT2 J 4 Bright A_Light1
-    TNT1 A 3 Bright A_Light2
+    SHT2 I 1 Bright A_Light1
+	SHT2 J 3 Bright A_Light2
+    SHT2 I 2 Bright A_Light1
     Goto LightDone
   }
 }
