@@ -45,3 +45,17 @@ actor DERocket : Rocket replaces Rocket
 	Stop
   }
 }
+
+ACTOR DERocketSmoke : RocketSmokeTrail replaces RocketSmokeTrail
+{
+  RenderStyle Translucent
+  Alpha 0.5
+  +ForceXYBillBoard
+  States
+  {
+  Spawn:
+    RSMK ABCD 5
+	RSMK EEEEEEEEEE 5 A_FadeOut(0.1)
+    Stop
+  }
+}
