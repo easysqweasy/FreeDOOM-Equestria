@@ -13,12 +13,12 @@ actor DEChainsaw : Chainsaw replaces Chainsaw
     SAWG B 1 A_Lower
     Loop
   Ready:
-	SAWG C 3
+	SAWG C 4
 	{
 		A_WeaponOffset(frandom(-1,1), frandom(30, 40), WOF_INTERPOLATE);
 		A_WeaponReady;
 	}
-	SAWG D 3 
+	SAWG D 4
 	{
 		A_WeaponOffset(frandom(-1,1), frandom(30, 38), WOF_INTERPOLATE);
 		A_WeaponReady;
