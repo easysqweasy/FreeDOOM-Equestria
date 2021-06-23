@@ -8,7 +8,7 @@ actor DEShotgun : Shotgun replaces Shotgun
 	SHTG A 1 A_Raise
     Loop
   Fire:
-    SHTG A 7 
+    SHTG A 7
 	{
 		A_WeaponOffset(0, 40, WOF_KEEPX | WOF_INTERPOLATE);
 		A_FireShotgun;
@@ -21,8 +21,9 @@ actor DEShotgun : Shotgun replaces Shotgun
     SHTG A 7 A_ReFire
     Goto Ready
   Flash:
-    SHTF B 4 Bright A_Light1
-    TNT1 A 3 Bright A_Light2
+    SHTF A 1 Bright A_Light1
+	SHTF B 3 Bright A_Light2
+    SHTF A 2 Bright A_Light1
     Goto LightDone
   }
 } //25 24
