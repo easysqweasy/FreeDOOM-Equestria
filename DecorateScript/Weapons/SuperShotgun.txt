@@ -14,23 +14,28 @@ actor DESuperShotgun : SuperShotgun replaces SuperShotgun
 		A_QuakeEx(0, 0, 1, 2, 0, 1, "", QF_RELATIVE);
 		A_FireShotgun2;
 	}
-    SHT2 B 7 A_WeaponOffset(0, 32, WOF_KEEPX | WOF_INTERPOLATE)
-    SHT2 C 7 A_CheckReload
-    SHT2 D 7 A_OpenShotgun2
-    SHT2 E 7
-    SHT2 F 7 A_LoadShotgun2
-    SHT2 G 6
-    SHT2 H 6 A_CloseShotgun2
+    SHT2 B 1 A_WeaponOffset(0, 32, WOF_KEEPX | WOF_INTERPOLATE)
+	SHT2 C 1
+	SHT2 D 3
+    SHT2 E 4
+	SHT2 F 4
+	SHT2 G 5 A_CheckReload
+    SHT2 H 5 A_OpenShotgun2
+    SHT2 IJ 4
+    SHT2 K 6 A_LoadShotgun2
+    SHT2 LM 4
+    SHT2 NO 3
+	SHT2 P 6 A_CloseShotgun2
     SHT2 A 5 A_ReFire
     Goto Ready
     // unused states
     SHT2 B 7
-    SHT2 A 3
-    Goto Deselect
+    SHT2 C 3
+    Goto Deselect //62OG, 59, 64
   Flash:
-    SHT2 I 1 Bright A_Light1
-	SHT2 J 3 Bright A_Light2
-    SHT2 I 2 Bright A_Light1
+    SHT2 Q 1 Bright A_Light1
+	SHT2 R 3 Bright A_Light2
+    SHT2 Q 2 Bright A_Light1
     Goto LightDone
   }
 }
