@@ -26,6 +26,7 @@ ACTOR EquestriaBlood : Blood replaces Blood
 
 Actor Heart
 {
+  -COUNTKILL
   +THRUGHOST
   +THRUACTORS
   +FORCEXYBILLBOARD
