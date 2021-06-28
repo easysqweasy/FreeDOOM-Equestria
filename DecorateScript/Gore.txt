@@ -69,7 +69,7 @@ actor GibGore2 : GibGore1
 	Loop
   Death:
     GORE A 350
-	GORE A 10 A_FadeOut(0.1, FTF_REMOVE)
+	GORE AAAAAAAAAA 1 A_FadeOut(0.1, FTF_REMOVE)
 	Wait
   }
 }
@@ -83,7 +83,7 @@ actor GibGore3 : GibGore1
 	Loop
   Death:
 	GORE C 350
-	GORE C 10 A_FadeOut(0.1, FTF_REMOVE)
+	GORE CCCCCCCCCC 1 A_FadeOut(0.1, FTF_REMOVE)
 	Wait
   }
 }
@@ -97,7 +97,7 @@ actor GibGore4 : GibGore1
 	Loop
   Death:
 	GORE E 350
-	GORE E 10 A_FadeOut(0.1, FTF_REMOVE)
+	GORE EEEEEEEEEE 1 A_FadeOut(0.1)
 	Wait
   }
 }
@@ -111,7 +111,7 @@ actor GibGore5 : GibGore1
 	Loop
   Death:
 	GORE F 350
-	GORE F 10 A_FadeOut(0.1, FTF_REMOVE)
+	GORE FFFFFFFFFF 1 A_FadeOut(0.1)
 	Wait
   }
 }
@@ -129,7 +129,7 @@ actor BigGibGore1 : GibGore1
 	Loop
   Death:
 	BGOR E 350 A_SetScale(random(1.0, -1.0), random(1.5, 0.5))
-	BGOR E 10 A_FadeOut(0.1, FTF_REMOVE)
+	BGOR E 10 A_FadeOut(0.1)
 	Wait
   }
 }
@@ -149,7 +149,7 @@ actor BigGibGore2 : GibGore1
 	Loop
   Death:
 	BGO2 E 350 A_SetScale(random(1.0, -1.0), random(1.5, 0.5))
-	BGO2 E 10 A_FadeOut(0.1, FTF_REMOVE)
+	BGO2 EEEEEEEEEE 1 A_FadeOut(0.1, FTF_REMOVE)
 	Wait
   }
 }
