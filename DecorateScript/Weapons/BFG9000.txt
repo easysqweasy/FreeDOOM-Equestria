@@ -81,8 +81,8 @@ actor BFGEEffect
   States
   {
   Spawn:
-	BFEF ABCDEFGHIJKLMNOPQRSTUVWXYZ 1 Bright
-	BFEF ZZZZZZ 1 Bright A_FadeOut (0, FTF_REMOVE)
+	BFEF ABCDEFGHIJKLMNOPQRSTUVWXY 1 Bright
+	BFEF ZZZZZZZZZZ 1 Bright A_FadeOut (0, FTF_REMOVE)
 	Stop
   }
 }
