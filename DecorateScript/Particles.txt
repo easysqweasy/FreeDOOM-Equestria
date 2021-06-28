@@ -20,7 +20,7 @@ ACTOR DEBulletPuff : BulletPuff replaces BulletPuff
   {
   Melee:
     PUFF C 4
-	PUFF DDDDDDDDDD 1 A_FadeOut(0.1)
+	PUFF DDDDDDDDDD 4 A_FadeOut(0.1)
     Stop
   }
 }
@@ -64,12 +64,12 @@ actor FirePiece3 : FirePiece
   StencilColor Red
 }
 
-actor BaronBallPiece : Pieces
+actor AcidPiece : Pieces
 {
   StencilColor DarkGreen
 }
 
-actor BaronBallPiece2 : Pieces
+actor AcidPiece2 : Pieces
 {
   StencilColor Green
   Scale 1.5
@@ -83,7 +83,7 @@ actor BFGPieces : DEParticles
   {
   Spawn:
 	BFGP ABCD 3 Bright 
-	BFGP EFGH 1 Bright A_FadeOut (0, FTF_REMOVE)
+	BFGP EFGH 1 Bright A_FadeOut(0.1)
 	Stop
   }
 }
@@ -97,7 +97,7 @@ actor BFGTrail : DEParticles
   {
   Spawn:
   	TNT1 A 0 A_SpawnItemEx("BFGPieces",random(8,12),random(-3,3),random(-3,3),random(1,0),0,0,180,0)
-    BFEF QPONMLKJIHGFEDCBA 2 Bright A_FadeOut (0, FTF_REMOVE)
+    BFEF QPONMLKJIHGFEDCBA 2 Bright A_FadeOut(0.1)
 	Stop
   }
 }
