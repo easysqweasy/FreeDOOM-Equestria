@@ -1506,7 +1506,7 @@ Glow
 		lava3
 		lava4
 	}
-	Texture "doomlava1", orange, 75, fullbright
+	//Texture "doomlava1", orange, 75, fullbright
 }
 
 Glow
@@ -1525,7 +1525,7 @@ Glow
 		SFALL3
 		SFALL4
 	}
-	Texture "nukage1", green, 10, fullbright
+	//Texture "nukage1", green, 10, fullbright
 }
 
 Glow
