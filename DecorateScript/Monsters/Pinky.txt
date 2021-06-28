@@ -10,6 +10,9 @@ ACTOR EquestriaSpectre : Spectre replaces Spectre
   HitObituary "$OB_SPECTREHIT" // "%o was eaten by a spectre."
   States
   {
+  Spawn:
+	IDLP AB 10 A_Look
+	Loop
   Death:
     SPEC I 8 
 	{
