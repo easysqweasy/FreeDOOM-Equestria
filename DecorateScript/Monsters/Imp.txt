@@ -1,3 +1,42 @@
+actor EquestriaImp : DoomImp Replaces DoomImp
+{
+  States
+  {
+  Spawn:
+	IDLI AB 10 A_Look
+	Loop
+  XDeath:
+    TROO N 5
+    TROO O 5 
+	{
+		A_SpawnItemEX(GibGore1, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
+		A_SpawnItemEX(GibGore2, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
+		A_SpawnItemEX(GibGore2, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
+		A_SpawnItemEX(GibGore2, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
+		A_SpawnItemEX(GibGore3, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
+		A_SpawnItemEX(GibGore3, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
+		A_SpawnItemEX(GibGore4, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
+		A_SpawnItemEX(GibGore4, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
+		A_SpawnItemEX(GibGore4, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
+		A_SpawnItemEX(GibGore4, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
+		A_SpawnItemEX(GibGore4, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
+		A_SpawnItemEX(GibGore4, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
+		A_SpawnItemEX(GibGore4, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
+		A_SpawnItemEX(GibGore5, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
+		A_SpawnItemEX(GibGore5, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
+		A_SpawnItemEX(GibGore5, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
+		A_SpawnItemEX(GibGore5, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
+		A_SpawnItemEX(GibGore5, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
+		A_XScream;
+	}
+    TROO P 5
+    TROO Q 5 A_NoBlocking
+    TROO RST 5
+    TROO U -1
+    Stop
+  }
+}
+
 actor DEImpBall : DoomImpBall replaces DoomImpBall
 {
   +ForceXYBillBoard
@@ -37,41 +76,5 @@ actor FireBallTrail : DEImpBall
 	BAL1 CD 4 Bright
 	BAL1 EEEEEEEEEE 1 Bright A_FadeOut(0.1)
 	Stop
-  }
-}
-
-actor EquestriaImp : DoomImp Replaces DoomImp
-{
-  States
-  {
-  XDeath:
-    TROO N 5
-    TROO O 5 
-	{
-		A_SpawnItemEX(GibGore1, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
-		A_SpawnItemEX(GibGore2, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
-		A_SpawnItemEX(GibGore2, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
-		A_SpawnItemEX(GibGore2, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
-		A_SpawnItemEX(GibGore3, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
-		A_SpawnItemEX(GibGore3, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
-		A_SpawnItemEX(GibGore4, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
-		A_SpawnItemEX(GibGore4, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
-		A_SpawnItemEX(GibGore4, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
-		A_SpawnItemEX(GibGore4, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
-		A_SpawnItemEX(GibGore4, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
-		A_SpawnItemEX(GibGore4, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
-		A_SpawnItemEX(GibGore4, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
-		A_SpawnItemEX(GibGore5, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
-		A_SpawnItemEX(GibGore5, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
-		A_SpawnItemEX(GibGore5, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
-		A_SpawnItemEX(GibGore5, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
-		A_SpawnItemEX(GibGore5, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
-		A_XScream;
-	}
-    TROO P 5
-    TROO Q 5 A_NoBlocking
-    TROO RST 5
-    TROO U -1
-    Stop
   }
 }
