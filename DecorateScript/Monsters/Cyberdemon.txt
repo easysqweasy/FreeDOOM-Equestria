@@ -3,6 +3,9 @@ actor EquestriaCyberdemon : Cyberdemon replaces Cyberdemon
   Health 5000
   States
   {
+  Spawn:
+	IDLY AB 10 A_Look
+	Loop
   Death:
     CYBR H 10
     CYBR I 10
