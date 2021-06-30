@@ -9,7 +9,8 @@ actor DERocketLauncher : RocketLauncher replaces RocketLauncher
 	MISG A 1 A_Raise
 	Loop
   Fire:
-    MISG B 8 A_GunFlash
+    MISG A 4 A_GunFlash
+	MISG B 4 
     MISG B 12 
 	{
 		A_WeaponOffset(0, 40, WOF_KEEPX | WOF_INTERPOLATE);
@@ -21,6 +22,12 @@ actor DERocketLauncher : RocketLauncher replaces RocketLauncher
 		A_ReFire;
 	}
     Goto Ready
+  Flash:
+	MISF A 4 A_Light1
+	MISF B 4 Bright A_Light2
+	MISF C 4 Bright A_Light2
+	MISF D 4 A_Light1
+	Goto LightDone
   }
 }
 
@@ -43,19 +50,5 @@ actor DERocket : Rocket replaces Rocket
     MISL C 6 Bright
     MISL DDDDDDDDDD 1 Bright A_FadeOut(0.1)
 	Stop
-  }
-}
-
-ACTOR DERocketSmoke : RocketSmokeTrail replaces RocketSmokeTrail
-{
-  RenderStyle Translucent
-  Alpha 0.5
-  +ForceXYBillBoard
-  States
-  {
-  Spawn:
-    RSMK ABCD 5
-	RSMK EEEEEEEEEE 5 A_FadeOut(0.1)
-    Stop
   }
 }
