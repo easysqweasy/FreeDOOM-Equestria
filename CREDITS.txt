@@ -1,12 +1,1 @@
-
-= DoomTerrains (Realm667) =
-
-Submitted: MagicWazard
-Decorate: MagicWazard
-GLDefs: MagicWazard
-Sounds: Raven Software
-Sprites: Raven Software
-Sprite Edit: MagicWazard
-Idea Base: Heretic/Hexen splashes
-
 = Lostres 2.1 by NaturalTvventy
