@@ -2,6 +2,7 @@
 actor EquestriaCacodemon : Cacodemon replaces Cacodemon
 {
  BloodColor "blue"
+ FloatBobStrength 0.5
  +FLOATBOB
  states
  {
