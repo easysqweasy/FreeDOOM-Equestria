@@ -8,6 +8,19 @@ ACTOR DEBackpack : Backpack replaces Backpack
   Inventory.PickupSound "pickup/backpack"
 }
 
+Actor DEBlueCard : BlueCard replaces YellowCard
+{
+  Inventory.PickupSound "pickup/keycard"
+}
+Actor DEYellowCard : YellowCard replaces YellowCard
+{
+  Inventory.PickupSound "pickup/keycard"
+}
+Actor DERedCard : RedCard replaces RedCard
+{
+  Inventory.PickupSound "pickup/keycard"
+}
+
 //Invisibility Sphere
 
 ACTOR DEBlurSphere : BlurSphere replaces BlurSphere
