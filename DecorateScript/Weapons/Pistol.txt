@@ -15,16 +15,14 @@ ACTOR DEPistol : Pistol replaces Pistol
 		A_FirePistol;
 	}
 	PISG C 4 A_WeaponOffset(0, 29, WOF_KEEPX | WOF_INTERPOLATE)
-	PISG B 5 
+	PISG D 5 
 	{
 		A_WeaponOffset(0, 32, WOF_KEEPX | WOF_INTERPOLATE);
 		A_ReFire;
 	}
 	Goto Ready
   Flash:
-	PISF A 4 Bright A_Light1
-	Goto LightDone
-	TNT1 A 3 Bright A_Light1
+	PISF A 3 Bright A_Light1
 	Goto LightDone
   }
 }
