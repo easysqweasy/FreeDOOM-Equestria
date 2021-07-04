@@ -91,7 +91,7 @@ ACTOR KickAttack : FastProjectile
 ACTOR SuperKickAttack : KickAttack
 {
 	-NOEXTREMEDEATH
-    Damage 20
+    Damage 30
 	DamageType ExtremePunches
 }
 
@@ -99,7 +99,7 @@ ACTOR AirKickAttack: KickAttack
 {
 	Radius 12
 	Height 12
-    Damage 10
+    Damage 5
  }
 
 ACTOR SuperAirKickAttack: KickAttack
@@ -108,7 +108,7 @@ ACTOR SuperAirKickAttack: KickAttack
 	Height 12
 	-NOEXTREMEDEATH
 	DamageType ExtremePunches
-    Damage 30
+    Damage 40
 }
 
 ACTOR Kicking : Inventory
