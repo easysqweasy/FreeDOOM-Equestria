@@ -64,15 +64,25 @@ actor FirePiece3 : FirePiece
   StencilColor Red
 }
 
+actor AcidPieceSpawn : RandomSpawner
+{
+	DropItem AcidPiece
+	DropItem AcidPiece2
+}
+
 actor AcidPiece : Pieces
 {
   StencilColor DarkGreen
+  -NOGRAVITY
+  Gravity 0.05
 }
 
 actor AcidPiece2 : Pieces
 {
   StencilColor Green
+  -NOGRAVITY
   Scale 1.5
+  Gravity 0.10
 }
 
 actor BFGPieces : DEParticles
@@ -111,9 +121,39 @@ ACTOR DERocketSmoke : RocketSmokeTrail replaces RocketSmokeTrail
   States
   {
   Spawn:
-    RSMK ABCD 5
-	RSMK EEEEEEEEEE 5 A_FadeOut(0.1)
+    RSMK ABCDE 5 A_FadeOut(0.1)
+	//RSMK DDEEE 5 A_FadeOut(0.1)
     Stop
+  }
+}
+
+Actor PlasmaTrail : DEParticles
+{
+   Scale 0.75
+   RenderStyle Add
+   Alpha 0.50
+   -MOVEWITHSECTOR
+   States
+   {
+   Spawn:
+     PLSS AAAAAABBBBBB 1 Bright A_FadeOut(0.1)
+     Loop
+   }
+}
+
+actor FireBallTrail : DEParticles
+{
+  -MOVEWITHSECTOR
+  RenderStyle Translucent
+  Alpha 0.50
+  Scale 0.75
+  States
+  {
+  Spawn:
+	TNT1 A 4
+	BAL1 CD 4 Bright
+	BAL1 EEEEEEEEEE 1 Bright A_FadeOut(0.1)
+	Stop
   }
 }
 
@@ -128,4 +168,4 @@ actor BulletTrail : DEParticles
 	TRAI A 1 Bright
 	Stop
   }
-}	
+}
