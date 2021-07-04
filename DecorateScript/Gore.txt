@@ -11,7 +11,7 @@ actor GibGore1 : DebrisGeneral
   States
   {
   Spawn:
-	GORE B 4 A_SpawnItemEX(Blood)
+	GORE B 4 A_SpawnItemEX(EquestriaBlood,random(-2,-2),random(-2,2),random(-2,2))
 	Loop
   Death:
 	TNT1 A 1 A_SpawnItemEx(Heart)
@@ -65,7 +65,7 @@ actor GibGore2 : GibGore1
   States
   {
   Spawn:
-    GORE A 8 A_SpawnItemEX(Blood)
+    GORE A 8 A_SpawnItemEX(EquestriaBlood,random(-2,-2),random(-2,2),random(-2,2))
 	Loop
   Death:
     GORE A 350
@@ -79,7 +79,7 @@ actor GibGore3 : GibGore1
   States
   {
   Spawn:
-	GORE C 8 A_SpawnItemEX(Blood)
+	GORE C 8 A_SpawnItemEX(EquestriaBlood,random(-2,-2),random(-2,2),random(-2,2))
 	Loop
   Death:
 	GORE C 350
@@ -93,7 +93,7 @@ actor GibGore4 : GibGore1
   States
   {
   Spawn:
-	GORE E 8 A_SpawnItemEX(Blood)
+	GORE E 8 A_SpawnItemEX(EquestriaBlood,random(-2,-2),random(-2,2),random(-2,2))
 	Loop
   Death:
 	GORE E 350
@@ -107,7 +107,7 @@ actor GibGore5 : GibGore1
   States
   {
   Spawn:
-	GORE F 8 A_SpawnItemEX(Blood)
+	GORE F 8 A_SpawnItemEX(EquestriaBlood,random(-2,-2),random(-2,2),random(-2,2))
 	Loop
   Death:
 	GORE F 350
@@ -124,8 +124,8 @@ actor BigGibGore1 : GibGore1
   States
   {
   Spawn:
-	BGOR AB 4 A_SpawnItemEX(Blood)
-	BGOR CD 4 A_SpawnItemEX(Blood)
+	BGOR AB 4 A_SpawnItemEX(EquestriaBlood,random(-2,-2),random(-2,2),random(-2,2))
+	BGOR CD 4 A_SpawnItemEX(EquestriaBlood,random(-2,-2),random(-2,2),random(-2,2))
 	Loop
   Death:
 	BGOR E 350 A_SetScale(random(1.0, -1.0), random(1.5, 0.5))
@@ -142,10 +142,10 @@ actor BigGibGore2 : GibGore1
   States
   {
   Spawn:
-	BGO2 A 2 A_SpawnItemEX(Blood)
-	BGO2 B 2 A_SpawnItemEX(Blood)
-	BGO2 C 2 A_SpawnItemEX(Blood)
-	BGO2 D 2 A_SpawnItemEX(Blood)
+	BGO2 A 2 A_SpawnItemEX(EquestriaBlood,random(-2,-2),random(-2,2),random(-2,2))
+	BGO2 B 2 A_SpawnItemEX(EquestriaBlood,random(-2,-2),random(-2,2),random(-2,2))
+	BGO2 C 2 A_SpawnItemEX(EquestriaBlood,random(-2,-2),random(-2,2),random(-2,2))
+	BGO2 D 2 A_SpawnItemEX(EquestriaBlood,random(-2,-2),random(-2,2),random(-2,2))
 	Loop
   Death:
 	BGO2 E 350 A_SetScale(random(1.0, -1.0), random(1.5, 0.5))
