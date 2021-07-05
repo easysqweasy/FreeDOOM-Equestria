@@ -7,7 +7,7 @@ GOTMEDIKIT = Picked up Medikit
 GOTMEDINEED = A Medikit you really need / +25 HP
 GOTSUPER = SOULSPHERE! / +100 HP
 GOTARMOR = Picked Up Security Armor
-GOTMEGA = Picked Up Combat Armor
+GOTMEGA = Picked up Combat Armor
 GOTMSPHERE = MEGASPHERE!! Full Health and Armor
 GOTBERSERK = Lets punch out some demons
 
