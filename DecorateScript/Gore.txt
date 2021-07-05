@@ -6,6 +6,7 @@ actor GibGore1 : DebrisGeneral
   +BOUNCEONFLOORS
   +BOUNCEONACTORS
   +THRUACTORS
+  -COUNTKILL
   BounceFactor 0.7
   BounceCount 4
   BounceType None
