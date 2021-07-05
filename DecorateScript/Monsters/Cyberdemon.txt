@@ -66,7 +66,8 @@ actor EquestriaCyberdemon : Cyberdemon replaces Cyberdemon
 		A_SpawnItemEX(Blood, 0, 0, 50, random(-10, 10), random(-10, 10), 15);
 		A_Scream;
 	}
-    CYBR JKL 10
+    CYBR J 10
+	CYBR KL 10
 	{
 		A_Quake(4, 35, 0, 500, "world/quake");
 		A_Quake(3, 30, 0, 600, "world/quake");
