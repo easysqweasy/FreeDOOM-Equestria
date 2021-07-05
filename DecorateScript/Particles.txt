@@ -136,7 +136,7 @@ Actor PlasmaTrail : DEParticles
    States
    {
    Spawn:
-     PLSS AAAAAABBBBBB 1 Bright A_FadeOut(0.1)
+     PLST AAAAAABBBBBB 1 Bright A_FadeOut(0.1)
      Loop
    }
 }
@@ -153,6 +153,25 @@ actor FireBallTrail : DEParticles
 	TNT1 A 4
 	BAL1 CD 4 Bright
 	BAL1 EEEEEEEEEE 1 Bright A_FadeOut(0.1)
+	Stop
+  }
+}
+
+actor ExplosionWave : DEParticles
+{
+  RenderStyle Translucent
+  Alpha 1
+  States
+  {
+  Spawn:
+	BFGE A 1 Bright A_SetScale(0.4)
+	BFGE A 1 Bright A_SetScale(0.6)
+	BFGE A 1 Bright A_SetScale(0.8)
+	BFGE A 1 Bright A_SetScale(1)
+	BFGE A 1 Bright A_SetScale(1.2)
+	BFGE A 1 Bright A_SetScale(1.4)
+	BFGE A 1 Bright A_SetScale(1.6)
+	BFGE AAAAA 1 Bright A_Fadeout(0.1)
 	Stop
   }
 }
