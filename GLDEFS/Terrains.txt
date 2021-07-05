@@ -1,0 +1,123 @@
+//slime (nukage) splash actors
+//without these, they're hard to see against the nukage flat if used in gzDoom with brightmap support
+BrightMap Sprite SLIMA0
+{
+Map BMSLIMA0
+DisableFullBright
+}
+
+BrightMap Sprite SLIMB0
+{
+Map BMSLIMB0
+DisableFullBright
+}
+
+BrightMap Sprite SLIMC0
+{
+Map BMSLIMC0
+DisableFullBright
+}
+
+BrightMap Sprite SLIMD0
+{
+Map BMSLIMD0
+DisableFullBright
+}
+
+BrightMap Sprite SLIME0
+{
+Map BMSLIME0
+DisableFullBright
+}
+
+BrightMap Sprite SLIMF0
+{
+Map BMSLIMF0
+DisableFullBright
+}
+
+BrightMap Sprite SLIMG0
+{
+Map BMSLIMG0
+DisableFullBright
+}
+
+BrightMap Sprite SLIMH0
+{
+Map BMSLIMH0
+DisableFullBright
+}
+
+Glow
+{
+	Flats
+	{
+		lava1
+		lava2
+		lava3
+		lava4
+	}
+	//Texture "doomlava1", orange, 75, fullbright
+}
+
+Glow
+{
+	Flats
+	{
+		nukage1
+		nukage2
+		nukage3
+		nukage4
+	}
+	Walls
+	{
+		SFALL1
+		SFALL2
+		SFALL3
+		SFALL4
+	}
+	//Texture "nukage1", green, 10, fullbright
+}
+
+Glow
+{
+	Flats
+	{
+		SLIME09
+		SLIME10
+		SLIME11
+		SLIME12
+	}
+	Texture "SLIME09", red, 5, fullbright
+}
+
+Glow
+{
+	Flats
+	{
+		RROCK04
+		RROCK05
+		RROCK06
+		RROCK07
+		RROCK08
+	}
+	Texture "RROCK04", red, 5, fullbright
+}
+
+Glow
+{
+	Walls
+	{
+		CRACKLE2
+	}
+	Texture "CRACKLE2", orange, 15
+}
+
+Glow
+{
+	Walls
+	{
+		CRACKLE3
+	}
+	Texture "CRACKLE3", Yellow, 15
+}

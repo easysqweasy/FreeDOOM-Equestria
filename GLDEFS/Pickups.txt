@@ -1,0 +1,229 @@
+// Soul Sphere
+pulselight SOULSPHERE
+{
+    color 0.3 0.3 1.0
+    size 60
+    secondarySize 63
+    interval 2.0
+    offset 0 16 0
+	attenuate 1
+}
+
+object DESoulSphere
+{
+    frame SOUL { light SOULSPHERE }
+}
+
+pulselight MEGASPHERE
+{
+    color 0.5 0.5 0.4
+    size 60
+    secondarySize 63
+    interval 2.0
+    offset 0 16 0
+	attenuate 1
+}
+
+object DEMegaSphere
+{
+    frame MEGA { light MEGASPHERE }
+}
+
+// Invulnerability Sphere
+pulselight INVULN
+{
+    color 0.3 1.0 0.3
+    size 60
+    secondarySize 63
+    interval 2.0
+    offset 0 16 0
+	attenuate 1
+}
+
+object DEInvulSphere
+{
+    frame PINV { light INVULN }
+}
+
+// Blur Sphere
+pointlight BLURSPHERE1
+{
+    color 1.0 0.0 0.0
+    size 60
+    offset 0 16 0
+	attenuate 1
+}
+
+pointlight BLURSPHERE2
+{
+    color 0.0 0.0 1.0
+    size 48
+    offset 0 16 0
+	attenuate 1
+}
+
+pointlight BLURSPHERE3
+{
+    color 0.0 0.0 1.0
+    size 36
+    offset 0 16 0
+	attenuate 1
+}
+
+pointlight BLURSPHERE4
+{
+    color 0.0 0.0 1.0
+    size 24
+    offset 0 16 0
+	attenuate 1
+}
+
+pointlight BLURSPHERE5
+{
+    color 0.0 0.0 1.0
+    size 12
+    offset 0 16 0
+	attenuate 1
+}
+
+object DEBlurSphere
+{
+    frame PINS { light BLURSPHERE1 }
+
+    frame PINSA { light BLURSPHERE2 }
+    frame PINSB { light BLURSPHERE3 }
+    frame PINSC { light BLURSPHERE4 }
+    frame PINSD { light BLURSPHERE5 }
+}
+
+// Health Potion
+pulselight HEALTHPOTION
+{
+    color 0.0 0.0 0.3
+    size 16
+    secondarySize 20
+    interval 2.0
+	attenuate 1
+    offset 0 10 0
+}
+
+object HealthBonus
+{
+    frame BON1 { light HEALTHPOTION }
+}
+
+// Armour Helmet
+pulselight ARMORBONUS
+{
+    color 0.1 0.3 0.1
+    size 16
+    secondarySize 20
+    interval 1.0
+	dontlightself 1
+	attenuate 1
+    offset 0 10 0
+}
+
+object ArmorBonus
+{
+    frame BON2 { light ARMORBONUS }
+}
+
+// Blue Keys
+object BlueCard
+{
+    frame BKEY { light HEALTHPOTION }
+}
+
+object BlueSkull
+{
+    frame BSKU { light HEALTHPOTION }
+}
+
+// Yellow Keys
+pulselight YELLOWKEY
+{
+    color 0.6 0.6 0.0
+    size 24
+    secondarySize 27
+    interval 2.0
+	attenuate 1
+    offset 0 10 0
+}
+
+object YellowCard
+{
+    frame YKEY { light YELLOWKEY }
+}
+
+object YellowSkull
+{
+    frame YSKU { light YELLOWKEY }
+}
+
+// Red Keys
+pulselight REDKEY
+{
+    color 0.6 0.0 0.0
+    size 24
+    secondarySize 27
+    interval 2.0
+	attenuate 1
+    offset 0 10 0
+}
+
+object RedCard
+{
+    frame RKEY { light REDKEY }
+}
+
+object RedSkull
+{
+    frame RSKU { light REDKEY }
+}
+
+// Green armour
+pointlight GREENARMOR1
+{
+    color 0.0 0.3 0.0
+    size 40
+	attenuate 1
+    offset 0 10 0
+}
+
+pointlight GREENARMOR2
+{
+    color 0.0 0.3 0.0
+    size 30
+	attenuate 1
+    offset 0 10 0
+}
+
+object GreenArmor
+{
+    frame ARM1A { light GREENARMOR1 }
+    frame ARM1B { light GREENARMOR2 }
+}
+
+// Blue armour
+pointlight BLUEARMOR1
+{
+    color 0.0 0.0 0.3
+    size 40
+	attenuate 1
+    offset 0 10 0
+}
+
+pointlight BLUEARMOR2
+{
+    color 0.0 0.0 0.3
+    size 30
+	attenuate 1
+    offset 0 10 0
+}
+
+object BlueArmor
+{
+    frame ARM2A { light BLUEARMOR1 }
+    frame ARM2B { light BLUEARMOR2 }
+}
