@@ -23,10 +23,10 @@ actor DERocketLauncher : RocketLauncher replaces RocketLauncher
 	}
     Goto Ready
   Flash:
-	MISF A 4 A_Light1
-	MISF B 4 Bright A_Light2
-	MISF C 4 Bright A_Light2
-	MISF D 4 A_Light1
+	MISF A 4 
+	MISF B 4 Bright
+	MISF C 4 Bright 
+	MISF D 4 
 	Goto LightDone
   }
 }

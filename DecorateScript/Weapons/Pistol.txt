@@ -22,7 +22,7 @@ ACTOR DEPistol : Pistol replaces Pistol
 	}
 	Goto Ready
   Flash:
-	PISF A 3 Bright A_Light1
+	PISF A 3 Bright
 	Goto LightDone
   }
 }
