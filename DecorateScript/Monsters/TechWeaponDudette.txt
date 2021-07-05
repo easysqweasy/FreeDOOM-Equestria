@@ -18,7 +18,7 @@ actor PlasmaKirin 91
   DropItem "ArmorBonus"
   DropItem "Cell", 64 //25% Chance of drop Cells
   DropItem "DEPlasmaGun", 13 //(Almost) 5% Chance of drop Plasma Gun
-  MissileType "PlasmaBall"
+  MissileType "DEPlasmaBall"
   States
   {
   Spawn:
@@ -28,13 +28,12 @@ actor PlasmaKirin 91
     SPOS AABBCCDD 3 A_Chase
     Loop
   Missile:
-    Missile:
     SPOS E 10 A_FaceTarget
-    SPOS F 5 A_MissileAttack
+    SPOS F 5 Bright A_MissileAttack
     SPOS E 5 A_FaceTarget
-    SPOS F 5 A_MissileAttack
+    SPOS F 5 Bright A_MissileAttack
     SPOS E 5 A_FaceTarget
-    SPOS F 5 A_MissileAttack
+    SPOS F 5 Bright A_MissileAttack
     Goto See
   Pain:
     SPOS G 3
