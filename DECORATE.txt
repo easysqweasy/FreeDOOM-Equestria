@@ -17,7 +17,7 @@ Actor DebrisGeneral
 
 ////PlayerCharacters
 
-actor Shainer : DoomPlayer
+actor EquestriaDoomPlayer : DoomPlayer
 {
   Player.DisplayName "Shainer"
   Player.DamageScreenColor red

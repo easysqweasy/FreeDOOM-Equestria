@@ -1,5 +1,5 @@
 clearplayerclasses
-addplayerclass Shainer
+addplayerclass EquestriaDoomPlayer
 
  addkeysection "Doom Equestria - Kick" BrutalDoomActions
    
