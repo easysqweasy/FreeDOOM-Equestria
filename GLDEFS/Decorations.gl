@@ -10,7 +10,7 @@ pulselight BARREL
 	attenuate 1
 }
 
-object DEExplosiveBarrel
+object DEExploBarrel
 {
     frame BAR1  { light BARREL    }
 
