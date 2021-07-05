@@ -8,7 +8,7 @@ ACTOR DEBackpack : Backpack replaces Backpack
   Inventory.PickupSound "pickup/backpack"
 }
 
-Actor DEBlueCard : BlueCard replaces YellowCard
+Actor DEBlueCard : BlueCard replaces BlueCard
 {
   Inventory.PickupSound "pickup/keycard"
 }
