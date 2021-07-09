@@ -3,11 +3,6 @@ actor DEHealthPotion : HealthBonus replaces HealthBonus
   Inventory.PickupSound "pickup/potion"
 }
 
-ACTOR DEBackpack : Backpack replaces Backpack
-{
-  Inventory.PickupSound "pickup/backpack"
-}
-
 Actor DEBlueCard : BlueCard replaces BlueCard
 {
   Inventory.PickupSound "pickup/keycard"
@@ -20,65 +15,6 @@ Actor DERedCard : RedCard replaces RedCard
 {
   Inventory.PickupSound "pickup/keycard"
 }
-
-//Invisibility Sphere
-
-ACTOR DEBlurSphere : BlurSphere replaces BlurSphere
-{	
-  +FLOATBOB
-  +NOGRAVITY
-  +FORCEXYBILLBOARD
-  States
-  {
-  Spawn:
-     PINS ABCDCBA 6 Bright
-     Loop
-  }
-}
-
-//Invulnerability Sphere
-
-ACTOR DEInvulSphere : InvulnerabilitySphere replaces InvulnerabilitySphere
-{
-  +FLOATBOB
-  +NOGRAVITY
-  +FORCEXYBILLBOARD
-  States
-  {
-  Spawn:
-	PINV ABCDCBA 6 Bright
-	Loop
-  }
-}
-
-//SoulSphere
-
-ACTOR DESoulSphere : SoulSphere replaces SoulSphere
-{
-  +FLOATBOB
-  +NOGRAVITY
-  +FORCEXYBILLBOARD
-  States
-  {
-  Spawn:
-	SOUL ABCDCBA 6 Bright
-	Loop
-  }
-}
-
-//MegaSphere
-
-ACTOR DEMegaSphere : MegaSphere replaces Megasphere
-{
-  +FLOATBOB
-  +NOGRAVITY
-  +FORCEXYBILLBOARD
-  States
-  {
-  Spawn:
-	MEGA ABCDCBA 6 Bright
-  }
-}  
 
 ACTOR FirstAidKit : Health
 {
