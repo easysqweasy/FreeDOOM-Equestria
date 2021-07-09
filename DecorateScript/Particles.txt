@@ -32,6 +32,13 @@ actor FirePieceSpawn : RandomSpawner
 	DropItem FirePiece3
 }
 
+actor GravityFirePieceSpawn : RandomSpawner
+{
+	DropItem GFirePiece
+	DropItem GFirePiece2
+	DropItem GFirePiece3
+}
+
 actor Pieces : DEParticles
 {
   RenderStyle AddStencil
@@ -62,6 +69,21 @@ actor FirePiece3 : FirePiece
   Scale 1.5
   RenderStyle AddStencil
   StencilColor Red
+}
+
+actor GFirePiece : FirePiece
+{
+  -NOGRAVITY
+}
+
+actor GFirePiece2 : FirePiece2
+{
+  -NOGRAVITY
+}
+
+actor GFirePiece3 : FirePiece3
+{
+  -NOGRAVITY
 }
 
 actor AcidPieceSpawn : RandomSpawner
