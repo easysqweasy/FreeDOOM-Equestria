@@ -9,6 +9,7 @@ world/sludgegloop "Sounds/Terrains/MUCK5.oog"
 //$Limit world/watersplash 4
 //$Limit world/lavasizzle 4
 //$Limit world/sludgegloop 4
+//StartupTick "Sounds/Tick.ogg"
 
 pickup/potion "Sounds/Pickups/PotionPickup.wav"
 pickup/plasmagun "Sounds/Pickups/PlasmaPickup.wav"
