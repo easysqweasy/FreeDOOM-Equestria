@@ -1,0 +1,553 @@
+Texture "COMP2", 256, 128
+{
+	Patch "COMP02_1", 0, 0
+	Patch "COMP02_2", 64, 0
+	Patch "COMP02_4", 128, 0
+	Patch "COMP02_3", 192, 0
+	Patch "COMP02_6", 0, 64
+	Patch "COMP02_8", 64, 64
+	Patch "COMP02_7", 128, 64
+	Patch "COMP02_5", 192, 64
+	Patch "STEP08", 0, 56
+	Patch "STEP08", 32, 56
+	Patch "STEP08", 64, 56
+	Patch "STEP08", 96, 56
+	Patch "STEP08", 128, 56
+	Patch "STEP08", 160, 56
+	Patch "STEP08", 192, 56
+	Patch "STEP08", 224, 56
+	Patch "STEP08", 0, 120
+	Patch "STEP08", 32, 120
+	Patch "STEP08", 64, 120
+	Patch "STEP08", 96, 120
+	Patch "STEP08", 128, 120
+	Patch "STEP08", 160, 120
+	Patch "STEP08", 192, 120
+	Patch "STEP08", 224, 120
+}
+
+Texture "COMPBLUE", 64, 128
+{
+	Patch "COMP03_1", 0, 0
+	Patch "COMP03_2", 0, 64
+}
+
+Texture "COMPOHSO", 128, 128
+{
+	Patch "WALL21_1", 64, 70
+	Patch "WALL21_5", 0, 70
+	Patch "WALL21_3", 0, -2
+	Patch "WALL21_1", 64, -2
+}
+
+Texture "COMPSPAN", 32, 128
+{
+	Patch "COMP03_4", 0, 0
+	Patch "COMP03_4", 0, 64
+}
+
+Texture "COMPSTA1", 128, 128
+{
+	Patch "TOMW2_1", 0, 0
+	Patch "AG128_2", 0, 72
+	Patch "AG128_2", 64, 72
+}
+
+Texture "COMPSTA2", 128, 128
+{
+	Patch "TOMW2_2", 0, 0
+	Patch "AG128_2", 0, 72
+	Patch "AG128_2", 64, 72
+}
+
+Texture "COMPTALL", 256, 128
+{
+	Patch "COMP04_5", 32, 0
+	Patch "COMP04_8", 96, 0
+	Patch "COMP03_8", 160, 0
+	Patch "COMP04_6", 0, 64
+	Patch "COMP04_7", 64, 64
+	Patch "COMP04_2", 128, 64
+	Patch "COMP03_5", 192, 0
+	Patch "COMP04_1", 192, 64
+	Patch "COMP03_8", 0, 0
+}
+
+Texture "COMPTILE", 128, 128
+{
+	Patch "COMP03_7", 0, 0
+	Patch "COMP03_1", 32, 0
+	Patch "COMP03_6", 96, 0
+	Patch "COMP03_7", 0, 64
+	Patch "COMP03_1", 32, 64
+	Patch "COMP03_6", 96, 64
+}
+
+Texture "COMPUTE1", 128, 128
+{
+	Patch "COMP01_5", 26, 64
+	Patch "COMP01_1", 0, 64
+	Patch "W33_8", 0, 56
+	Patch "W33_8", 64, 56
+	Patch "W33_8", 0, 120
+	Patch "W33_8", 64, 120
+	Patch "COMP01_5", 28, 0
+	Patch "COMP1C_6", 72, 64
+	Patch "COMP01_6", 72, 0
+	Patch "COMP1B_4", 0, 0
+}
+
+Texture "COMPUTE2", 256, 56
+{
+	Patch "COMP02_1", 0, 0
+	Patch "COMP02_2", 64, 0
+	Patch "COMP02_3", 128, 0
+	Patch "COMP02_7", 192, 0
+}
+
+Texture "COMPUTE3", 128, 128
+{
+	Patch "SW11_4", 0, 4
+	Patch "SW11_5", 32, 4
+	Patch "SW11_4", 64, 4
+	Patch "COMP02_1", 0, 0
+	Patch "SW11_5", 96, 4
+	Patch "COMP02_2", 64, 0
+	Patch "STEP08", 0, 56
+	Patch "STEP08", 32, 56
+	Patch "STEP08", 64, 56
+	Patch "STEP08", 96, 56
+}
+
+Texture "COMP1", 256, 128
+{
+	Patch "COMP01_5", -20, 0
+	Patch "COMP01_5", 51, 0
+	Patch "COMP01_5", 116, 0
+	Patch "COMP01_5", 180, 0
+	Patch "COMP01_5", 244, 0
+	Patch "COMP01_5", -20, 64
+	Patch "COMP01_5", 44, 64
+	Patch "COMP01_5", 108, 64
+	Patch "COMP01_5", 172, 64
+	Patch "COMP01_5", 236, 64
+	Patch "COMP01_1", 4, 0
+	Patch "COMP01_2", 68, 0
+	Patch "COMP01_3", 132, 0
+	Patch "COMP01_4", 196, 0
+	Patch "COMP01_5", 4, 64
+	Patch "COMP01_6", 68, 64
+	Patch "COMP01_7", 132, 64
+	Patch "COMP01_8", 196, 64
+	Patch "W33_8", 0, 56
+	Patch "W33_8", 64, 56
+	Patch "W33_8", 128, 56
+	Patch "W33_8", 192, 56
+	Patch "W33_8", 0, 120
+	Patch "W33_8", 64, 120
+	Patch "W33_8", 128, 120
+	Patch "W33_8", 192, 120
+}
+
+Texture "COMP1ON1", 256, 128
+{
+	Patch "COMP01_5", -20, 0
+	Patch "COMP01_5", 51, 0
+	Patch "COMP01_5", 116, 0
+	Patch "COMP01_5", 180, 0
+	Patch "COMP01_5", 244, 0
+	Patch "COMP01_5", -20, 64
+	Patch "COMP01_5", 44, 64
+	Patch "COMP01_5", 108, 64
+	Patch "COMP01_5", 172, 64
+	Patch "COMP01_5", 236, 64
+	Patch "COMP01_1", 4, 0
+	Patch "COMP01_2", 68, 0
+	Patch "COMP01_3", 132, 0
+	Patch "COMP01_4", 196, 0
+	Patch "COMP01_5", 4, 64
+	Patch "COMP01_6", 68, 64
+	Patch "COMP01_7", 132, 64
+	Patch "COMP01_8", 196, 64
+	Patch "W33_8", 0, 56
+	Patch "W33_8", 64, 56
+	Patch "W33_8", 128, 56
+	Patch "W33_8", 192, 56
+	Patch "W33_8", 0, 120
+	Patch "W33_8", 64, 120
+	Patch "W33_8", 128, 120
+	Patch "W33_8", 192, 120
+}
+
+Texture "COMP1ON2", 256, 128
+{
+	Patch "COMP01_5", -20, 0
+	Patch "COMP01_5", 51, 0
+	Patch "COMP01_5", 116, 0
+	Patch "COMP01_5", 180, 0
+	Patch "COMP01_5", 244, 0
+	Patch "COMP01_5", -20, 64
+	Patch "COMP01_5", 44, 64
+	Patch "COMP01_5", 108, 64
+	Patch "COMP01_5", 172, 64
+	Patch "COMP01_5", 236, 64
+	Patch "COMP1B_1", 4, 0
+	Patch "COMP1B_2", 68, 0
+	Patch "COMP1B_3", 132, 0
+	Patch "COMP1B_4", 196, 0
+	Patch "COMP01_5", 4, 64
+	Patch "COMP1B_5", 68, 64
+	Patch "COMP1B_6", 132, 64
+	Patch "COMP01_8", 196, 64
+	Patch "W33_8", 0, 56
+	Patch "W33_8", 64, 56
+	Patch "W33_8", 128, 56
+	Patch "W33_8", 192, 56
+	Patch "W33_8", 0, 120
+	Patch "W33_8", 64, 120
+	Patch "W33_8", 128, 120
+	Patch "W33_8", 192, 120
+}
+
+Texture "COMP1OFF", 256, 128
+{
+	Patch "COMP01_5", -20, 0
+	Patch "COMP01_5", 51, 0
+	Patch "COMP01_5", 116, 0
+	Patch "COMP01_5", 180, 0
+	Patch "COMP01_5", 244, 0
+	Patch "COMP01_5", -20, 64
+	Patch "COMP01_5", 44, 64
+	Patch "COMP01_5", 108, 64
+	Patch "COMP01_5", 172, 64
+	Patch "COMP01_5", 236, 64
+	Patch "COMP1C_1", 4, 0
+	Patch "COMP1C_2", 68, 0
+	Patch "COMP1C_3", 132, 0
+	Patch "COMP1C_4", 196, 0
+	Patch "COMP01_5", 4, 64
+	Patch "COMP1C_5", 68, 64
+	Patch "COMP1C_6", 132, 64
+	Patch "COMP01_8", 196, 64
+	Patch "W33_8", 0, 56
+	Patch "W33_8", 64, 56
+	Patch "W33_8", 128, 56
+	Patch "W33_8", 192, 56
+	Patch "W33_8", 0, 120
+	Patch "W33_8", 64, 120
+	Patch "W33_8", 128, 120
+	Patch "W33_8", 192, 120
+	Patch "P004A0", 200, 82
+}
+
+Texture "COMP2ON1", 256, 128
+{
+	Patch "COMP02_1", 0, 0
+	Patch "COMP02_2", 64, 0
+	Patch "COMP02_4", 128, 0
+	Patch "COMP02_3", 192, 0
+	Patch "COMP02_6", 0, 64
+	Patch "COMP02_8", 64, 64
+	Patch "COMP02_7", 128, 64
+	Patch "COMP02_5", 192, 64
+	Patch "STEP08", 0, 56
+	Patch "STEP08", 32, 56
+	Patch "STEP08", 64, 56
+	Patch "STEP08", 96, 56
+	Patch "STEP08", 128, 56
+	Patch "STEP08", 160, 56
+	Patch "STEP08", 192, 56
+	Patch "STEP08", 224, 56
+	Patch "STEP08", 0, 120
+	Patch "STEP08", 32, 120
+	Patch "STEP08", 64, 120
+	Patch "STEP08", 96, 120
+	Patch "STEP08", 128, 120
+	Patch "STEP08", 160, 120
+	Patch "STEP08", 192, 120
+	Patch "STEP08", 224, 120
+}
+
+Texture "COMP2ON2", 256, 128
+{
+	Patch "COMP2B_1", 0, 0
+	Patch "COMP2B_2", 64, 0
+	Patch "COMP2B_4", 128, 0
+	Patch "COMP2B_3", 192, 0
+	Patch "COMP2B_6", 0, 64
+	Patch "COMP2B_8", 64, 64
+	Patch "COMP2B_7", 128, 64
+	Patch "COMP2B_5", 192, 64
+	Patch "STEP08", 0, 56
+	Patch "STEP08", 32, 56
+	Patch "STEP08", 64, 56
+	Patch "STEP08", 96, 56
+	Patch "STEP08", 128, 56
+	Patch "STEP08", 160, 56
+	Patch "STEP08", 192, 56
+	Patch "STEP08", 224, 56
+	Patch "STEP08", 0, 120
+	Patch "STEP08", 32, 120
+	Patch "STEP08", 64, 120
+	Patch "STEP08", 96, 120
+	Patch "STEP08", 128, 120
+	Patch "STEP08", 160, 120
+	Patch "STEP08", 192, 120
+	Patch "STEP08", 224, 120
+}
+
+Texture "COMP2OFF", 256, 128
+{
+	Patch "COMP2C_1", 0, 0
+	Patch "COMP2C_2", 64, 0
+	Patch "COMP2C_4", 128, 0
+	Patch "COMP2C_3", 192, 0
+	Patch "COMP2C_6", 0, 64
+	Patch "COMP2C_8", 64, 64
+	Patch "COMP2C_7", 128, 64
+	Patch "COMP2C_5", 192, 64
+	Patch "STEP08", 0, 56
+	Patch "STEP08", 32, 56
+	Patch "STEP08", 64, 56
+	Patch "STEP08", 96, 56
+	Patch "STEP08", 128, 56
+	Patch "STEP08", 160, 56
+	Patch "STEP08", 192, 56
+	Patch "STEP08", 224, 56
+	Patch "STEP08", 0, 120
+	Patch "STEP08", 32, 120
+	Patch "STEP08", 64, 120
+	Patch "STEP08", 96, 120
+	Patch "STEP08", 128, 120
+	Patch "STEP08", 160, 120
+	Patch "STEP08", 192, 120
+	Patch "STEP08", 224, 120
+}
+
+Texture "COMP3", 256, 128
+{
+	Patch "COMP03_7", 0, 0
+	Patch "COMP03_7", 0, 64
+	Patch "COMP03_1", 32, 0
+	Patch "COMP03_3", 96, 0
+	Patch "COMP03_2", 32, 64
+	Patch "COMP03_1", 96, 64
+	Patch "COMP03_6", 160, 0
+	Patch "COMP03_6", 160, 64
+	Patch "COMP03_9", 192, 0
+	Patch "COMP03_5", 192, 64
+}
+
+Texture "COMP3ON1", 256, 128
+{
+	Patch "COMP03_7", 0, 0
+	Patch "COMP03_7", 0, 64
+	Patch "COMP03_1", 32, 0
+	Patch "COMP03_3", 96, 0
+	Patch "COMP03_2", 32, 64
+	Patch "COMP03_1", 96, 64
+	Patch "COMP03_6", 160, 0
+	Patch "COMP03_6", 160, 64
+	Patch "COMP03_9", 192, 0
+	Patch "COMP03_5", 192, 64
+}
+
+Texture "COMP3ON2", 256, 128
+{
+	Patch "COMP3B_7", 0, 0
+	Patch "COMP3B_7", 0, 64
+	Patch "COMP3B_1", 32, 0
+	Patch "COMP3B_3", 96, 0
+	Patch "COMP3B_2", 32, 64
+	Patch "COMP3B_1", 96, 64
+	Patch "COMP3B_6", 160, 0
+	Patch "COMP3B_6", 160, 64
+	Patch "COMP3B_9", 192, 0
+	Patch "COMP3B_5", 192, 64
+}
+
+Texture "COMP3ON3", 256, 128
+{
+	Patch "COMP3C_7", 0, 0
+	Patch "COMP3C_7", 0, 64
+	Patch "COMP3C_1", 32, 0
+	Patch "COMP3C_3", 96, 0
+	Patch "COMP3C_2", 32, 64
+	Patch "COMP3C_1", 96, 64
+	Patch "COMP3C_6", 160, 0
+	Patch "COMP3C_6", 160, 64
+	Patch "COMP03_9", 192, 0
+	Patch "COMP03_5", 192, 64
+}
+
+Texture "COMP3ON4", 256, 128
+{
+	Patch "COMP3B_7", 0, 0
+	Patch "COMP3B_7", 0, 64
+	Patch "COMP3B_1", 32, 0
+	Patch "COMP3B_3", 96, 0
+	Patch "COMP3B_2", 32, 64
+	Patch "COMP3B_1", 96, 64
+	Patch "COMP3B_6", 160, 0
+	Patch "COMP3B_6", 160, 64
+	Patch "COMP3B_9", 192, 0
+	Patch "COMP3B_5", 192, 64
+}
+
+Texture "COMP3OFF", 256, 128
+{
+	Patch "COMP3C_7", 0, 0
+	Patch "COMP3C_7", 0, 64
+	Patch "COMP3C_1", 32, 0
+	Patch "COMP3C_3", 96, 0
+	Patch "COMP3C_2", 32, 64
+	Patch "COMP3C_1", 96, 64
+	Patch "COMP3C_6", 160, 0
+	Patch "COMP3C_6", 160, 64
+	Patch "COMP3C_9", 192, 0
+	Patch "COMP3C_5", 192, 64
+}
+
+Texture "COMP4", 256, 128
+{
+	Patch "COMP04_1", 0, 0
+	Patch "COMP04_3", 64, 0
+	Patch "COMP04_2", 128, 0
+	Patch "COMP04_4", 192, 0
+	Patch "COMP04_7", 0, 64
+	Patch "COMP04_5", 64, 64
+	Patch "COMP04_6", 128, 64
+	Patch "COMP04_8", 192, 64
+}
+
+Texture "COMP4ON1", 256, 128
+{
+	Patch "COMP04_1", 0, 0
+	Patch "COMP04_3", 64, 0
+	Patch "COMP04_2", 128, 0
+	Patch "COMP04_4", 192, 0
+	Patch "COMP04_7", 0, 64
+	Patch "COMP04_5", 64, 64
+	Patch "COMP04_6", 128, 64
+	Patch "COMP04_8", 192, 64
+}
+
+Texture "COMP4ON2", 256, 128
+{
+	Patch "COMP4B_1", 0, 0
+	Patch "COMP4B_3", 64, 0
+	Patch "COMP4B_2", 128, 0
+	Patch "COMP4B_4", 192, 0
+	Patch "COMP04_7", 0, 64
+	Patch "COMP04_5", 64, 64
+	Patch "COMP04_6", 128, 64
+	Patch "COMP04_8", 192, 64
+}
+
+Texture "COMP4OFF", 256, 128
+{
+	Patch "COMP4C_1", 0, 0
+	Patch "COMP4C_3", 64, 0
+	Patch "COMP4C_2", 128, 0
+	Patch "COMP4C_4", 192, 0
+	Patch "COMP04_7", 0, 64
+	Patch "COMP04_5", 64, 64
+	Patch "COMP04_6", 128, 64
+	Patch "COMP04_8", 192, 64
+}
+
+Texture "COMPBON1", 128, 128
+{
+	Patch "COMP03_1", 0, 0
+	Patch "COMP03_3", 64, 0
+	Patch "COMP03_2", 0, 64
+	Patch "COMP03_1", 64, 64
+}
+
+Texture "COMPBON2", 128, 128
+{
+	Patch "COMP3B_1", 0, 0
+	Patch "COMP3B_3", 64, 0
+	Patch "COMP3B_2", 0, 64
+	Patch "COMP3B_1", 64, 64
+}
+
+Texture "COMPBON3", 128, 128
+{
+	Patch "COMP3C_1", 0, 0
+	Patch "COMP3C_3", 64, 0
+	Patch "COMP3C_2", 0, 64
+	Patch "COMP3C_1", 64, 64
+}
+
+Texture "COMPBON4", 128, 128
+{
+	Patch "COMP3B_1", 0, 0
+	Patch "COMP3B_3", 64, 0
+	Patch "COMP3B_2", 0, 64
+	Patch "COMP3B_1", 64, 64
+}
+
+Texture "COMPBOFF", 128, 128
+{
+	Patch "COMP3C_1", 0, 0
+	Patch "COMP3C_3", 64, 0
+	Patch "COMP3C_2", 0, 64
+	Patch "COMP3C_1", 64, 64
+}
+
+Texture "COMPLOW1", 256, 72
+{
+	Patch "WALL11_5", 192, 0
+	Patch "WALL11_3", 0, 0
+	Patch "WALL11_4", 64, 0
+	Patch "WALL11_7", 128, 0
+}
+
+Texture "COMPLOW2", 256, 72
+{
+	Patch "WALL11_7", 192, 0
+	Patch "WALL11_5", 0, 0
+	Patch "WALL11_4", 64, 0
+	Patch "WALL11_5", 128, 0
+}
+
+Texture "COMPLOW3", 256, 72
+{
+	Patch "WALL11_7", 192, 0
+	Patch "WALL11_6", 0, 0
+	Patch "WALL11_4", 64, 0
+	Patch "WALL11_3", 128, 0
+}
+
+Texture "COMPLOW4", 256, 72
+{
+	Patch "WALL11_2", 0, 0
+	Patch "WALL11_3", 64, 0
+	Patch "WALL11_8", 128, 0
+	Patch "WALL11_1", 192, 0
+}
+
+Texture "COMPLOW5", 256, 72
+{
+	Patch "WALL11_2", 0, 0
+	Patch "WALL11_8", 192, 0
+	Patch "WALL11_4", 64, 0
+	Patch "WALL11_7", 128, 0
+}
+
+Texture "COMPLOW6", 256, 72
+{
+	Patch "WALL11_2", 0, 0
+	Patch "WALL11_8", 192, 0
+	Patch "WALL11_3", 64, 0
+	Patch "WALL11_6", 128, 0
+}
+
+Texture "COMPOHSP", 128, 128
+{
+	Patch "WALL21_4", 64, -2
+	Patch "WALL21_4", 0, 70
+	Patch "WALL21_5", 64, 70
+	Patch "WALL21_2", 0, -2
+}
