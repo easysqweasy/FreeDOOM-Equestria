@@ -13,7 +13,8 @@ actor DEShotgun : Shotgun replaces Shotgun
 		A_WeaponOffset(0, 40, WOF_KEEPX | WOF_INTERPOLATE);
 		A_FireShotgun;
 	}
-    SHTG BC 2 A_WeaponOffset(0, 32, WOF_KEEPX | WOF_INTERPOLATE)
+    SHTG B 2 A_WeaponOffset(0, 32, WOF_KEEPX | WOF_INTERPOLATE)
+	SHTG C 2 A_WeaponReady(WRF_NOFIRE | WRF_NOSWITCH)
     SHTG DEFGHIJ 1
     SHTG IH 4
 	SHTG GFEDCB 1
