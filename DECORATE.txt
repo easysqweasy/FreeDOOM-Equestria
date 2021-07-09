@@ -51,6 +51,7 @@ actor EquestriaDoomPlayer : DoomPlayer
 ////Items/PowerUps
 
 #include "DecorateScript/Pickups.txt"
+#include "DecorateScript/Powerups.txt"
 
 ////Effects, Particles, Debris
 
