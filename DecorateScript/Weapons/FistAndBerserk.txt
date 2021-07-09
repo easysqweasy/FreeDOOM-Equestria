@@ -2,7 +2,7 @@
 
 //Berserk
 
-actor DEBerserk : Berserk replaces Berserk
+/*actor DEBerserk : Berserk replaces Berserk
 {
   Inventory.PickupSound "*xdeath"
   States
@@ -14,7 +14,7 @@ actor DEBerserk : Berserk replaces Berserk
 	TNT1 A 1 A_SpawnItemEx("BerserkTransform", 0, 0, 28, 0, 0, 0, 0, SXF_TRANSFERPOINTERS)
 	Stop
   }
-}
+}*/
 
 actor BerserkTransform
 {
