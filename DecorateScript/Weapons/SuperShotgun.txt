@@ -3,6 +3,10 @@ actor DESuperShotgun : SuperShotgun replaces SuperShotgun
   Weapon.BobStyle smooth
   States
   {
+  Ready:
+	Ready:
+    SHT2 A 1 A_WeaponReady
+    Loop
   Select:
 	SHT2 A 0 A_SetCrossHair(10)
 	SHT2 A 1 A_Raise
@@ -11,15 +15,16 @@ actor DESuperShotgun : SuperShotgun replaces SuperShotgun
     SHT2 A 7
 	{
 		A_WeaponOffset(0, 42, WOF_KEEPX | WOF_INTERPOLATE);
-		A_QuakeEx(0, 0, 1, 2, 0, 1, "", QF_RELATIVE);
+		A_QuakeEx(2, 0, 1, 2, 0, 1, "", QF_RELATIVE);
 		A_FireShotgun2;
 	}
     SHT2 B 1 A_WeaponOffset(0, 32, WOF_KEEPX | WOF_INTERPOLATE)
-	SHT2 C 1
-	SHT2 D 3
+	SHT2 C 1 
+	TNT1 A 0 A_WeaponReady(WRF_NOFIRE | WRF_NOSWITCH)
+	SHT2 D 3 
     SHT2 E 4
 	SHT2 F 4
-	SHT2 G 5 A_CheckReload
+	SHT2 G 5 A_CheckReload 
     SHT2 H 5 A_OpenShotgun2
     SHT2 IJ 4
     SHT2 K 6 A_LoadShotgun2
@@ -33,7 +38,7 @@ actor DESuperShotgun : SuperShotgun replaces SuperShotgun
     SHT2 C 3
     Goto Deselect //62OG, 59, 64
   Flash:
-    SHT2 Q 1 Bright
+    SHT2 Q 1 Bright 
 	SHT2 R 3 Bright
     SHT2 Q 2 Bright
     Goto LightDone

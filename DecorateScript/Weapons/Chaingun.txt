@@ -12,7 +12,7 @@ actor DEChaingun : Chaingun replaces Chaingun
 	CHGG AB 4 
 	{
 		A_FireCGun;
-		A_QuakeEx(0, 0, 1, 2, 0, 1, "", QF_RELATIVE | QF_SCALEDOWN);
+		A_QuakeEx(1, 0, 1, 4, 0, 1, "", QF_RELATIVE | QF_SCALEDOWN | QF_SCALEUP);
 	}
 	CHGG B 0 A_ReFire
     Goto Ready
