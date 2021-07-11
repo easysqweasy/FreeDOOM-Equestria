@@ -9,6 +9,8 @@ Actor EquestriaLostSoul: LostSoul replaces LostSoul
 
 Actor EquestriaPain : PainElemental replaces PainElemental
 {
+  FloatBobStrength 0.5
+  +FLOATBOB
   States
   {
   Death:
