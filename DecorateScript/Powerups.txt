@@ -161,7 +161,7 @@ ACTOR DEBerserk : Berserk replaces Berserk
   Pickup:
     TNT1 A 0 A_StartSound("misc/p_pkup")
 	TNT1 A 0 A_QuakeEX(4, 4, 4, 20, 0, 100, "", QF_RELATIVE | QF_SCALEDOWN)
-	TNT1 A 0 A_SetBlend(Orange, 0.5, 160, Red)
+	TNT1 A 0 A_SetBlend(Red, 0.5, 160, Orange)
 	TNT1 A 0 A_GiveInventory("BerserkEffect")
     TNT1 A 0 HealThing(100, 0)
     TNT1 A 0 A_SelectWeapon("Fist")
