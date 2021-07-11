@@ -149,6 +149,19 @@ ACTOR DERocketSmoke : RocketSmokeTrail replaces RocketSmokeTrail
   }
 }
 
+Actor Smoke : DEParticles
+{
+  RenderStyle Translucent
+  Alpha 0.5
+  VSpeed 0.5
+  States
+  {
+  Spawn:
+	SMOK ABCD 80 A_FadeOut(0.1)
+	Stop
+  }
+}
+
 Actor PlasmaTrail : DEParticles
 {
    Scale 0.75
