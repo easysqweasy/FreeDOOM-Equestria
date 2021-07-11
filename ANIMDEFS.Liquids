@@ -1,4 +1,4 @@
-Warp2 Flat FWater1 0.5
+Warp2 Flat FWater1 1
 flat FWater1
 pic FWater1 tics 8
 pic FWater1 tics 8
@@ -34,7 +34,7 @@ pic Lava1 tics 8
 pic Lava1 tics 8
 pic Lava1 tics 8
 
-warp flat NUKAGE1 0.5
+warp flat NUKAGE1 0.25
 flat NUKAGE1
 pic NUKAGE1 tics 8
 pic NUKAGE1 tics 8
@@ -47,6 +47,64 @@ flat NUKAGE3
 pic NUKAGE1 tics 8
 pic NUKAGE1 tics 8
 pic NUKAGE1 tics 8
+
+warp2 flat SLIME01 0.50
+flat SLIME01
+pic SLIME01 tics 8
+pic SLIME01 tics 8
+pic SLIME01 tics 8
+pic SLIME01 tics 8
+flat SLIME02
+pic SLIME01 tics 8
+pic SLIME01 tics 8
+pic SLIME01 tics 8
+pic SLIME01 tics 8
+flat SLIME03
+pic SLIME01 tics 8
+pic SLIME01 tics 8
+pic SLIME01 tics 8
+pic SLIME01 tics 8
+flat SLIME04
+pic SLIME01 tics 8
+pic SLIME01 tics 8
+pic SLIME01 tics 8
+pic SLIME01 tics 8
+
+warp2 flat SLIME05 0.25
+flat SLIME05
+pic SLIME05 tics 8
+pic SLIME05 tics 8
+pic SLIME05 tics 8
+pic SLIME05 tics 8
+flat SLIME06
+pic SLIME05 tics 8
+pic SLIME05 tics 8
+pic SLIME05 tics 8
+pic SLIME05 tics 8
+flat SLIME07
+pic SLIME05 tics 8
+pic SLIME05 tics 8
+pic SLIME05 tics 8
+pic SLIME05 tics 8
+flat SLIME08 
+pic SLIME05 tics 8
+pic SLIME05 tics 8
+pic SLIME05 tics 8
+pic SLIME05 tics 8
+
+warp flat BLOOD1 0.50
+flat BLOOD1
+pic BLOOD1 tics 8
+pic BLOOD1 tics 8
+pic BLOOD1 tics 8
+flat BLOOD2
+pic BLOOD1 tics 8
+pic BLOOD1 tics 8
+pic BLOOD1 tics 8
+flat BLOOD3
+pic BLOOD1 tics 8
+pic BLOOD1 tics 8
+pic BLOOD1 tics 8
 
 flat MSSINGT1
 allowdecals
