@@ -1,7 +1,26 @@
 OptionMenu "EquestriaOptions"
 {
-	Title "Doom Equestria Options"
-    Option "HUD color", "chud_hudcolor", "CHUD_HUDColors"
+Title "Doom Equestria Options"
+
+StaticText ""
+StaticText ""
+
+StaticText "Video Settings", "Brick"
+StaticText ""
+
+Option "Bobbing on Fire", "BobToggle", "onoff"
+Option "Magic Auras on Weapons", "AuraToggle", "onoff"
+StaticText "To change the FOV (Field Of View) open the Console and put 'Fov [Desired Quantity]'", "Yellow"
+
+StaticText ""
+StaticText ""
+
+StaticText "High Quality Sprites Settings*", "Brick"
+StaticText "*May decrease performance on weaker computers", "White"
+StaticText ""
+
+Option "High Quality Guns Pickups", "HDGunsToggle", "onfoff"
+Option "High Quality Pickups", "HDPickToggle", "onoff"
 }
 
 
@@ -28,14 +47,14 @@ LISTMENU "MainMenu"
 		Position 97, 45
 	}
 	
-	TextItem "$MNU_NEWGAME", "n", "PlayerclassMenu"
-	TextItem "$MNU_OPTIONS", "o", "OptionsMenu"
-	//TextItem "Equestria Options", "e", "EquestriaMenu"
-	TextItem "$MNU_LOADGAME", "l", "LoadGameMenu"
-	TextItem "$MNU_SAVEGAME", "s", "SaveGameMenu"
+	TextItem "$MNU_NEWGAME", "1", "PlayerclassMenu"
+	TextItem "$MNU_OPTIONS", "2", "OptionsMenu"
+	TextItem "Equestria Options", "3", "EquestriaOptions"
+	TextItem "$MNU_LOADGAME", "4", "LoadGameMenu"
+	TextItem "$MNU_SAVEGAME", "5", "SaveGameMenu"
 	IfOption(ReadThis)
 	{
-		TextItem "$MNU_INFO", "i", "ReadThisMenu"
+		TextItem "$MNU_INFO", "r", "ReadThisMenu"
 	}
 	TextItem "$MNU_QUITGAME", "q", "QuitMenu"
 }
