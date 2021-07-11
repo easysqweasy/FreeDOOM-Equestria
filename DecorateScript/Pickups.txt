@@ -2,7 +2,7 @@ actor DEHealthPotion : HealthBonus replaces HealthBonus
 {
   Inventory.PickupSound "pickup/potion"
 }
-
+/*
 Actor DEBlueCard : BlueCard replaces BlueCard
 {
   Inventory.PickupSound "pickup/keycard"
@@ -15,7 +15,7 @@ Actor DERedCard : RedCard replaces RedCard
 {
   Inventory.PickupSound "pickup/keycard"
 }
-
+*/
 ACTOR FirstAidKit : Health
 {
   Inventory.Amount 15
