@@ -1,8 +1,8 @@
 //splashes (duped from Heretic and Hexen, since they don't load in Doom natively by default)
-world/drip "Sounds/Terrains/GLOOP.oog"
-world/watersplash "Sounds/Terrains/GLOOP.oog"
-world/lavasizzle "Sounds/Terrains/ACID5.oog"
-world/sludgegloop "Sounds/Terrains/MUCK5.oog"
+world/drip "Sounds/Terrains/GLOOP.ogg"
+world/watersplash "Sounds/Terrains/GLOOP.ogg"
+world/lavasizzle "Sounds/Terrains/ACID5.ogg"
+world/sludgegloop "Sounds/Terrains/MUCK5.ogg"
 //you can override the limit values so multiple splashes can play simultaneously
 //note that this sounds bad if multiple splashes play all at once (such as when firing a shotgun into liquid), so override these values at your own discretion
 //$Limit world/drip 4
@@ -16,7 +16,7 @@ pickup/plasmagun "Sounds/Pickups/PlasmaPickup.wav"
 pickup/rocklauncher "Sounds/Pickups/RckLaunPickup.wav"
 pickup/chaingun "Sounds/Pickups/ChainGPickup.wav"
 pickup/backpack "Sounds/Pickups/BackpackPickup.ogg"
-pickup/keycard	"Sounds/Pickups/KeyPickup.ogg"
+misc/k_pkup "Sounds/Pickups/KeyPickup.ogg"
 
 tech/groan "Sounds/Zombies/TechWeaponDudette/TECHGROAN.ogg"
 tech/active "Sounds/Zombies/TechWeaponDudette/TECHACT.ogg"
