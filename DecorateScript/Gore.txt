@@ -1,29 +1,166 @@
-actor GibGore1 : DebrisGeneral
+Actor XDeathGoreSpawn
 {
-  Height 16
-  Radius 20
+  Radius 1
+  Height 1
+  Speed 0
+  Mass 1
+  +MISSILE
+  +NOBLOCKMAP
+  +NOTELEPORT
+  +MOVEWITHSECTOR
+  +NOGRAVITY
+  +NOCLIP
+  +DONTSPLASH
+  States
+  {
+  Spawn:
+    TNT1 A 0
+	TNT1 A 0
+	{
+		A_CustomMissile(GibGore2, 32, 0, random (0, 360), 2, random (10, 90));
+		A_CustomMissile(GibGore2, 32, 0, random (0, 360), 2, random (10, 90));
+		A_CustomMissile(GibGore2, 32, 0, random (0, 360), 2, random (10, 90));
+		A_CustomMissile(GibGore2, 32, 0, random (0, 360), 2, random (10, 90));
+		A_CustomMissile(GibGore2, 32, 0, random (0, 360), 2, random (10, 90));
+		A_CustomMissile(GibGore3, 32, 0, random (0, 360), 2, random (10, 90));
+		A_CustomMissile(GibGore3, 32, 0, random (0, 360), 2, random (10, 90));
+		A_CustomMissile(GibGore3, 32, 0, random (0, 360), 2, random (10, 90));
+		A_CustomMissile(GibGore3, 32, 0, random (0, 360), 2, random (10, 90));
+		A_CustomMissile(GibGore3, 32, 0, random (0, 360), 2, random (10, 90));
+		A_CustomMissile(GibGore4, 32, 0, random (0, 360), 2, random (10, 90));
+		A_CustomMissile(GibGore4, 32, 0, random (0, 360), 2, random (10, 90));
+		A_CustomMissile(GibGore4, 32, 0, random (0, 360), 2, random (10, 90));
+		A_CustomMissile(GibGore4, 32, 0, random (0, 360), 2, random (10, 90));
+		A_CustomMissile(GibGore4, 32, 0, random (0, 360), 2, random (10, 90));
+		A_CustomMissile(GibGore5, 32, 0, random (0, 360), 2, random (10, 90));
+		A_CustomMissile(GibGore5, 32, 0, random (0, 360), 2, random (10, 90));
+		A_CustomMissile(GibGore5, 32, 0, random (0, 360), 2, random (10, 90));
+		A_CustomMissile(GibGore5, 32, 0, random (0, 360), 2, random (10, 90));
+		A_CustomMissile(GibGore5, 32, 0, random (0, 360), 2, random (10, 90));
+	}
+	Stop
+  }
+}
+
+Actor BigGoreSpawn : XDeathGoreSpawn
+{
+  States
+  {
+  Spawn:
+	TNT1 A 0
+	TNT1 A 0
+	{
+		A_CustomMissile(BigGibGore1, 50, 0, random (0, 360), 2, random (10, 180));
+		A_CustomMissile(BigGibGore1, 50, 0, random (0, 360), 2, random (10, 180));
+		A_CustomMissile(BigGibGore1, 50, 0, random (0, 360), 2, random (10, 180));
+		A_CustomMissile(BigGibGore1, 50, 0, random (0, 360), 2, random (10, 180));
+		A_CustomMissile(BigGibGore1, 50, 0, random (0, 360), 2, random (10, 180));
+		A_CustomMissile(BigGibGore2, 50, 0, random (0, 360), 2, random (10, 180));
+		A_CustomMissile(BigGibGore2, 50, 0, random (0, 360), 2, random (10, 180));
+		A_CustomMissile(BigGibGore2, 50, 0, random (0, 360), 2, random (10, 180));
+		A_CustomMissile(BigGibGore2, 50, 0, random (0, 360), 2, random (10, 180));
+		A_CustomMissile(BigGibGore2, 50, 0, random (0, 360), 2, random (10, 180));
+	}
+	Stop
+  }
+}
+
+Actor BloodExplosionSpawn : XDeathGoreSpawn
+{
+  States
+  {
+  Spawn:
+	TNT1 A 0
+	TNT1 A 0
+	{
+		A_CustomMissile(EquestriaBlood, 32, 0, random (0, 360), 2, random (10, 100));
+		A_CustomMissile(EquestriaBlood, 32, 0, random (0, 360), 2, random (10, 100));
+		A_CustomMissile(EquestriaBlood, 32, 0, random (0, 360), 2, random (10, 100));
+		A_CustomMissile(EquestriaBlood, 32, 0, random (0, 360), 2, random (10, 100));
+		A_CustomMissile(EquestriaBlood, 32, 0, random (0, 360), 2, random (10, 100));
+		A_CustomMissile(EquestriaBlood, 32, 0, random (0, 360), 2, random (10, 100));
+		A_CustomMissile(EquestriaBlood, 32, 0, random (0, 360), 2, random (10, 100));
+		A_CustomMissile(EquestriaBlood, 32, 0, random (0, 360), 2, random (10, 100));
+		A_CustomMissile(EquestriaBlood, 32, 0, random (0, 360), 2, random (10, 100));
+		A_CustomMissile(EquestriaBlood, 32, 0, random (0, 360), 2, random (10, 100));
+	}
+	Stop
+  }
+}
+
+actor GibGoreBase : DebrisGeneral
+{
+  Height 1
+  Radius 1
+  Mass 2
+  Speed 8
   +FORCEXYBILLBOARD
   +BOUNCEONFLOORS
   +BOUNCEONACTORS
+  +NOTELEPORT
+  +NOBLOCKMAP
+  +GHOST
   +THRUACTORS
+  +THRUGHOST
   -COUNTKILL
+  +FLOORCLIP
+  +MISSILE
   BounceFactor 0.7
   BounceCount 4
   BounceType None
+}
+
+actor GibGore1 : GibGoreBase
+{
   States
   {
   Spawn:
 	GORE B 4 A_SpawnItemEX(EquestriaBlood,random(-2,-2),random(-2,2),random(-2,2))
 	Loop
-  Death:
+  /*Death:
 	TNT1 A 1 A_SpawnItemEx(Heart)
-	Stop
+	Stop*/
   }
 }
 
 ACTOR EquestriaBlood : Blood replaces Blood
 {
+  Height 1
+  Radius 1
+  Mass 5
+  Speed 8
   +ForceXYBillBoard
+  +DONTSPLASH
+  +NOTELEPORT
+  +NOBLOCKMAP
+  +GHOST
+  +THRUACTORS
+  +THRUGHOST
+  -COUNTKILL
+  +FLOORCLIP
+  +MISSILE
+  States
+  {
+  Spawn:
+    BLUD CCC 8
+    Stop
+  Death: 
+	BLUD C 0 A_SpawnItemEX(SmallBloodPool, 0, 0, 0, 0, 0, 0, 0, SXF_TRANSFERTRANSLATION)
+	BLUD BA 8
+  Spray:
+    SPRY ABCDEF 3
+    SPRY G 2
+    Stop
+  }
+}
+
+ACTOR DESmallBloodPoolSpawn : SmallBloodPool replaces SmallBloodPool
+{
+  +ForceXYBillBoard
+}
+ACTOR BloodTrail : EquestriaBlood
+{
+  Scale 0.5
 }
 
 Actor Heart
@@ -62,12 +199,13 @@ Actor Heart
   }
 }
 
-actor GibGore2 : GibGore1
+actor GibGore2 : GibGoreBase
 {
   States
   {
   Spawn:
-    GORE A 8 A_SpawnItemEX(EquestriaBlood,random(-2,-2),random(-2,2),random(-2,2))
+	TNT1 A 0 A_ChangeFlag("SPRITEFLIP", random(0,1))
+    GORE A 8 A_SpawnItemEX(BloodTrail,random(-2,-2),random(-2,2),random(-2,2))
 	Loop
   Death:
     GORE A 350
@@ -76,12 +214,13 @@ actor GibGore2 : GibGore1
   }
 }
 
-actor GibGore3 : GibGore1
+actor GibGore3 : GibGoreBase
 {
   States
   {
   Spawn:
-	GORE C 8 A_SpawnItemEX(EquestriaBlood,random(-2,-2),random(-2,2),random(-2,2))
+	TNT1 A 0 A_ChangeFlag("SPRITEFLIP", random(0,1))
+	GORE C 8 A_SpawnItemEX(BloodTrail,random(-2,-2),random(-2,2),random(-2,2))
 	Loop
   Death:
 	GORE C 350
@@ -90,12 +229,13 @@ actor GibGore3 : GibGore1
   }
 }
 
-actor GibGore4 : GibGore1
+actor GibGore4 : GibGoreBase
 {
   States
   {
   Spawn:
-	GORE E 8 A_SpawnItemEX(EquestriaBlood,random(-2,-2),random(-2,2),random(-2,2))
+    TNT1 A 0 A_ChangeFlag("SPRITEFLIP", random(0,1))
+	GORE E 8 A_SpawnItemEX(BloodTrail,random(-2,-2),random(-2,2),random(-2,2))
 	Loop
   Death:
 	GORE E 350
@@ -104,12 +244,13 @@ actor GibGore4 : GibGore1
   }
 }
 
-actor GibGore5 : GibGore1
+actor GibGore5 : GibGoreBase
 {
   States
   {
   Spawn:
-	GORE F 8 A_SpawnItemEX(EquestriaBlood,random(-2,-2),random(-2,2),random(-2,2))
+	TNT1 A 0 A_ChangeFlag("SPRITEFLIP", random(0,1))
+	GORE F 8 A_SpawnItemEX(BloodTrail,random(-2,-2),random(-2,2),random(-2,2))
 	Loop
   Death:
 	GORE F 350
@@ -118,11 +259,13 @@ actor GibGore5 : GibGore1
   }
 }
 
-actor BigGibGore1 : GibGore1
+actor BigGibGore1 : GibGoreBase
 {
   BounceType None
   BounceFactor 0.5
   BounceCount 2
+  Speed 15
+  Mass 10
   States
   {
   Spawn:
@@ -137,7 +280,7 @@ actor BigGibGore1 : GibGore1
   }
 }
 
-actor BigGibGore2 : GibGore1
+actor BigGibGore2 : BigGibGore1
 {
   BounceType None
   BounceFactor 0.5
@@ -157,7 +300,7 @@ actor BigGibGore2 : GibGore1
 	Wait
   }
 }
-actor XDeathGoreSpawn : GibGore1
+/*actor XDeathGoreSpawn : GibGoreBase
 {
   States
   {
@@ -185,4 +328,4 @@ actor XDeathGoreSpawn : GibGore1
 	}
 	Stop
   }
-}
+}*/

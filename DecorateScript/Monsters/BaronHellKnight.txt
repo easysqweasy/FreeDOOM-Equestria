@@ -43,18 +43,18 @@ actor KnightBall : EquestriaBaronBall
   Spawn:
 	BAL7 A 2 Bright 
 	{
-		A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5));
-		A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5));
-		A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5));
-		A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5));
+		A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1), 0);
+		A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1), 0);
+		A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1), 0);
+		A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1), 0);
 
 	}
 	BAL7 B 2 Bright
 	{
-		A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5));
-		A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5));
-		A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5));
-		A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5));
+		A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1), 0);
+		A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1), 0);
+		A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1), 0);
+		A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1), 0);
 	}
 	Loop
   Death:
@@ -71,17 +71,17 @@ actor BaronHellBall : EquestriaBaronBall
   Spawn:
 	BBAL A 2 Bright
 	{
-		A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5));
-		A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5));
-		A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5));
-		A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5));
+		A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1), 0);
+		A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1), 0);
+		A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1), 0);
+		A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1), 0);
 	}
 	BBAL B 2 Bright
 	{
-		A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5));
-		A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5));
-		A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5));
-		A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5));
+		A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1), 0);
+		A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1), 0);
+		A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1), 0);
+		A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1), 0);
 	}
 	Loop
   Death:

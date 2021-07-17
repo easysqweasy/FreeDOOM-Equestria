@@ -39,31 +39,36 @@ ACTOR ZombiePony : ZombieMan Replaces ZombieMan
     POSS L -1
     Stop
   XDeath:
-    POSS M 5
-    POSS N 5
+    POSS M 3
+    POSS N 5 
 	{
-		A_SpawnItemEX(GibGore1, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
-		A_SpawnItemEX(GibGore2, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
-		A_SpawnItemEX(GibGore2, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
-		A_SpawnItemEX(GibGore2, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
-		A_SpawnItemEX(GibGore3, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
-		A_SpawnItemEX(GibGore3, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
-		A_SpawnItemEX(GibGore4, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
-		A_SpawnItemEX(GibGore4, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
-		A_SpawnItemEX(GibGore4, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
-		A_SpawnItemEX(GibGore4, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
-		A_SpawnItemEX(GibGore4, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
-		A_SpawnItemEX(GibGore4, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
-		A_SpawnItemEX(GibGore4, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
-		A_SpawnItemEX(GibGore5, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
-		A_SpawnItemEX(GibGore5, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
-		A_SpawnItemEX(GibGore5, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
-		A_SpawnItemEX(GibGore5, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
-		A_SpawnItemEX(GibGore5, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
+		A_CustomMissile(XDeathGoreSpawn, 2);
 		A_XScream;
 	}
-    POSS O 5 A_NoBlocking
-    POSS PQRST 5
+		
+	/*{
+		A_SpawnItemEX(GibGore2, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
+		A_SpawnItemEX(GibGore2, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
+		A_SpawnItemEX(GibGore2, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
+		A_SpawnItemEX(GibGore3, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
+		A_SpawnItemEX(GibGore3, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
+		A_SpawnItemEX(GibGore4, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
+		A_SpawnItemEX(GibGore4, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
+		A_SpawnItemEX(GibGore4, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
+		A_SpawnItemEX(GibGore4, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
+		A_SpawnItemEX(GibGore4, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
+		A_SpawnItemEX(GibGore4, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
+		A_SpawnItemEX(GibGore4, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
+		A_SpawnItemEX(GibGore5, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
+		A_SpawnItemEX(GibGore5, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
+		A_SpawnItemEX(GibGore5, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
+		A_SpawnItemEX(GibGore5, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
+		A_SpawnItemEX(GibGore5, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
+		//A_SpawnItemEX(GibGore5, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
+		A_XScream;
+	}*/
+    POSS O 3 A_NoBlocking
+    POSS PQRST 3
     POSS U -1
     Stop
   Raise:

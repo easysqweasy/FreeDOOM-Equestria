@@ -40,31 +40,14 @@ ACTOR ShotgunPony : ShotgunGuy replaces ShotgunGuy
     SPOS L -1
     Stop
   XDeath:
-    SPOS M 5
+    SPOS M 3
     SPOS N 5
 	{
-		A_SpawnItemEX(GibGore1, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
-		A_SpawnItemEX(GibGore2, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
-		A_SpawnItemEX(GibGore2, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
-		A_SpawnItemEX(GibGore2, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
-		A_SpawnItemEX(GibGore3, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
-		A_SpawnItemEX(GibGore3, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
-		A_SpawnItemEX(GibGore4, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
-		A_SpawnItemEX(GibGore4, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
-		A_SpawnItemEX(GibGore4, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
-		A_SpawnItemEX(GibGore4, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
-		A_SpawnItemEX(GibGore4, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
-		A_SpawnItemEX(GibGore4, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
-		A_SpawnItemEX(GibGore4, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
-		A_SpawnItemEX(GibGore5, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
-		A_SpawnItemEX(GibGore5, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
-		A_SpawnItemEX(GibGore5, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
-		A_SpawnItemEX(GibGore5, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
-		A_SpawnItemEX(GibGore5, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
+		A_CustomMissile(XDeathGoreSpawn, 2);
 		A_XScream;
 	}
-    SPOS O 5 A_NoBlocking
-    SPOS PQRST 5
+    SPOS O 3 A_NoBlocking
+    SPOS PQRST 3
     SPOS U -1
     Stop
   Raise:

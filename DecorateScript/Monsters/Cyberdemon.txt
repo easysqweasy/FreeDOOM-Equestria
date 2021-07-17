@@ -10,24 +10,7 @@ actor EquestriaCyberdemon : Cyberdemon replaces Cyberdemon
     CYBR H 10
     CYBR I 10
 	{
-		A_SpawnItemEX(GibGore2, 0, 0, 25, random(-6, 6), random(-6, 6), 10);
-		A_SpawnItemEX(GibGore2, 0, 0, 25, random(-6, 6), random(-6, 6), 10);
-		A_SpawnItemEX(GibGore2, 0, 0, 25, random(-6, 6), random(-6, 6), 10);
-		A_SpawnItemEX(GibGore2, 0, 0, 25, random(-6, 6), random(-6, 6), 10);
-		A_SpawnItemEX(GibGore3, 0, 0, 25, random(-6, 6), random(-6, 6), 10);
-		A_SpawnItemEX(GibGore3, 0, 0, 25, random(-6, 6), random(-6, 6), 10);
-		A_SpawnItemEX(GibGore4, 0, 0, 25, random(-6, 6), random(-6, 6), 10);
-		A_SpawnItemEX(GibGore4, 0, 0, 25, random(-6, 6), random(-6, 6), 10);
-		A_SpawnItemEX(GibGore4, 0, 0, 25, random(-6, 6), random(-6, 6), 10);
-		A_SpawnItemEX(GibGore4, 0, 0, 25, random(-6, 6), random(-6, 6), 10);
-		A_SpawnItemEX(GibGore4, 0, 0, 25, random(-6, 6), random(-6, 6), 10);
-		A_SpawnItemEX(GibGore4, 0, 0, 25, random(-6, 6), random(-6, 6), 10);
-		A_SpawnItemEX(GibGore4, 0, 0, 25, random(-6, 6), random(-6, 6), 10);
-		A_SpawnItemEX(GibGore5, 0, 0, 25, random(-6, 6), random(-6, 6), 10);
-		A_SpawnItemEX(GibGore5, 0, 0, 25, random(-6, 6), random(-6, 6), 10);
-		A_SpawnItemEX(GibGore5, 0, 0, 25, random(-6, 6), random(-6, 6), 10);
-		A_SpawnItemEX(GibGore5, 0, 0, 25, random(-6, 6), random(-6, 6), 10);
-		A_SpawnItemEX(GibGore5, 0, 0, 25, random(-6, 6), random(-6, 6), 10);
+		A_CustomMissile(XDeathGoreSpawn, 35);
 		A_SpawnItemEX(Blood, 0, 0, 50, random(-10, 10), random(-10, 10), 15);
 		A_SpawnItemEX(Blood, 0, 0, 50, random(-10, 10), random(-10, 10), 15);
 		A_SpawnItemEX(Blood, 0, 0, 50, random(-10, 10), random(-10, 10), 15);
@@ -73,18 +56,7 @@ actor EquestriaCyberdemon : Cyberdemon replaces Cyberdemon
 		A_Quake(3, 30, 0, 600, "world/quake");
 		A_Quake(2, 25, 0, 700, "world/quake");
 		A_Quake(1, 20, 0, 800, "world/quake");
-		A_SpawnItemEX(BigGibGore1, 0, 0, 50, random(-6, 6), random(-6, 6), 15);
-		A_SpawnItemEX(BigGibGore1, 0, 0, 50, random(-6, 6), random(-6, 6), 15);
-		A_SpawnItemEX(BigGibGore1, 0, 0, 50, random(-6, 6), random(-6, 6), 15);
-		A_SpawnItemEX(BigGibGore1, 0, 0, 50, random(-6, 6), random(-6, 6), 15);
-		A_SpawnItemEX(BigGibGore1, 0, 0, 50, random(-6, 6), random(-6, 6), 15);
-		A_SpawnItemEX(BigGibGore1, 0, 0, 50, random(-6, 6), random(-6, 6), 15);
-		A_SpawnItemEX(BigGibGore2, 0, 0, 50, random(-6, 6), random(-6, 6), 15);
-		A_SpawnItemEX(BigGibGore2, 0, 0, 50, random(-6, 6), random(-6, 6), 15);
-		A_SpawnItemEX(BigGibGore2, 0, 0, 50, random(-6, 6), random(-6, 6), 15);
-		A_SpawnItemEX(BigGibGore2, 0, 0, 50, random(-6, 6), random(-6, 6), 15);
-		A_SpawnItemEX(BigGibGore2, 0, 0, 50, random(-6, 6), random(-6, 6), 15);
-		A_SpawnItemEX(BigGibGore2, 0, 0, 50, random(-6, 6), random(-6, 6), 15);
+		A_CustomMissile(BigGoreSpawn);
 		A_SpawnItemEX(Blood, 0, 0, 50, random(-10, 10), random(-10, 10), 15);
 		A_SpawnItemEX(Blood, 0, 0, 50, random(-10, 10), random(-10, 10), 15);
 		A_SpawnItemEX(Blood, 0, 0, 50, random(-10, 10), random(-10, 10), 15);

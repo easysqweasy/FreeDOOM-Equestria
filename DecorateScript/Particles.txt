@@ -7,6 +7,7 @@ actor DEParticles
   +NOBLOCKMAP
   +MOVEWITHSECTOR
   +THRUACTORS
+  +MISSILE
   damage 0
 }
 
@@ -73,17 +74,21 @@ actor FirePiece3 : FirePiece
 
 actor GFirePiece : FirePiece
 {
+  Speed 8
+  Mass 1
   -NOGRAVITY
 }
 
-actor GFirePiece2 : FirePiece2
+actor GFirePiece2 : GFirePiece
 {
-  -NOGRAVITY
+  Speed 8
+  Mass 1
 }
 
-actor GFirePiece3 : FirePiece3
+actor GFirePiece3 : GFirePiece
 {
-  -NOGRAVITY
+  Speed 8
+  Mass 1
 }
 
 actor AcidPieceSpawn : RandomSpawner
@@ -143,7 +148,7 @@ ACTOR DERocketSmoke : RocketSmokeTrail replaces RocketSmokeTrail
   States
   {
   Spawn:
-    RSMK ABCDE 5 A_FadeOut(0.1)
+    RSMK ABCDE 4 A_FadeOut(0.1)
 	//RSMK DDEEE 5 A_FadeOut(0.1)
     Stop
   }
