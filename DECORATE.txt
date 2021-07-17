@@ -1,3 +1,5 @@
+Actor DeadCheck : Inventory  //the token
+{ Inventory.MaxAmount 1 }
 
 Actor DebrisGeneral
 {
@@ -9,8 +11,8 @@ Actor DebrisGeneral
   +FORCEXYBILLBOARD
   +FLOORCLIP
   +MOVEWITHSECTOR
-  Radius 10
-  Height 10
+  Radius 1
+  Height 1
   Mass 1
   Damage 0
 }
@@ -47,6 +49,7 @@ actor EquestriaDoomPlayer : DoomPlayer
 #include "DecorateScript/Monsters/Pinky.txt"
 #include "DecorateScript/Monsters/Cyberdemon.txt"
 #include "DecorateScript/Monsters/Revenant.txt"
+#include "DecorateScript/Monsters/Dogs.txt"
 
 ////Items/PowerUps
 
