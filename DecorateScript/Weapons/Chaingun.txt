@@ -19,7 +19,7 @@ actor DEChaingun : Chaingun replaces Chaingun
   Flash:
     CHGF A 2 Bright A_WeaponOffset(0, 38, WOF_KEEPX | WOF_INTERPOLATE)
     Goto LightDone
-	TNT1 A 3 Bright 
+	TNT1 A 2 Bright 
 	CHGF B 2 Bright A_WeaponOffset(0, 40, WOF_KEEPX | WOF_INTERPOLATE)
     Goto LightDone
   }
