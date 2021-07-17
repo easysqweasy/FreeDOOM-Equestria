@@ -11,14 +11,14 @@ ACTOR DEExploBarrel : ExplosiveBarrel replaces ExplosiveBarrel
     BEXP C 5 Bright
     BEXP D 5 Bright 
 	{
-		A_SpawnItemEx(BarrelDebris, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
-		A_SpawnItemEx(BarrelDebris2, 0, 0, 10, random(6, -6), random(6, -6), 10);
-		A_SpawnItemEx(BarrelDebris, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
-		A_SpawnItemEx(BarrelDebris2, 0, 0, 10, random(6, -6), random(6, -6), 10);
-		A_SpawnItemEx(BarrelTiny, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
-		A_SpawnItemEx(BarrelTiny2, 0, 0, 10, random(6, -6), random(6, -6), 10);
-		A_SpawnItemEx(BarrelTiny, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
-		A_SpawnItemEx(BarrelTiny2, 0, 0, 10, random(6, -6), random(6, -6), 10);
+		A_CustomMissile(BarrelDebris, 32, 0, random (0, 360), 2, random (10, 90));
+		A_CustomMissile(BarrelDebris2, 32, 0, random (0, 360), 2, random (10, 90));
+		A_CustomMissile(BarrelDebris, 32, 0, random (0, 360), 2, random (10, 90));
+		A_CustomMissile(BarrelDebris2, 32, 0, random (0, 360), 2, random (10, 90));
+		A_CustomMissile(BarrelTiny, 32, 0, random (0, 360), 2, random (10, 90));
+		A_CustomMissile(BarrelTiny2, 32, 0, random (0, 360), 2, random (10, 90));
+		A_CustomMissile(BarrelTiny, 32, 0, random (0, 360), 2, random (10, 90));
+		A_CustomMissile(BarrelTiny2, 32, 0, random (0, 360), 2, random (10, 90));
 		A_Explode;
 		A_Quake(3, 4, 0, 100);
 		A_Quake(2, 3, 0, 200);
@@ -34,18 +34,18 @@ ACTOR DEExploBarrel : ExplosiveBarrel replaces ExplosiveBarrel
 	BEXP C 5 Bright
 	BEXP D 5 Bright
 	{
-		A_SpawnItemEx(BarrelDebris, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
-		A_SpawnItemEx(BarrelDebris2, 0, 0, 10, random(6, -6), random(6, -6), 10);
-		A_SpawnItemEx(BarrelDebris, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
-		A_SpawnItemEx(BarrelDebris2, 0, 0, 10, random(6, -6), random(6, -6), 10);
-		A_SpawnItemEx(BarrelTiny, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
-		A_SpawnItemEx(BarrelTiny2, 0, 0, 10, random(6, -6), random(6, -6), 10);
-		A_SpawnItemEx(BarrelTiny, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
-		A_SpawnItemEx(BarrelTiny2, 0, 0, 10, random(6, -6), random(6, -6), 10);
-		A_SpawnItemEx(BarrelTiny, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
-		A_SpawnItemEx(BarrelTiny2, 0, 0, 10, random(6, -6), random(6, -6), 10);
-		A_SpawnItemEx(BarrelTiny, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
-		A_SpawnItemEx(BarrelTiny2, 0, 0, 10, random(6, -6), random(6, -6), 10);
+		A_CustomMissile(BarrelDebris, 32, 0, random (0, 360), 2, random (10, 90));
+		A_CustomMissile(BarrelDebris2, 32, 0, random (0, 360), 2, random (10, 90));
+		A_CustomMissile(BarrelDebris, 32, 0, random (0, 360), 2, random (10, 90));
+		A_CustomMissile(BarrelDebris2, 32, 0, random (0, 360), 2, random (10, 90));
+		A_CustomMissile(BarrelTiny, 32, 0, random (0, 360), 2, random (10, 90));
+		A_CustomMissile(BarrelTiny2, 32, 0, random (0, 360), 2, random (10, 90));
+		A_CustomMissile(BarrelTiny, 32, 0, random (0, 360), 2, random (10, 90));
+		A_CustomMissile(BarrelTiny2, 32, 0, random (0, 360), 2, random (10, 90));
+		A_CustomMissile(BarrelTiny, 32, 0, random (0, 360), 2, random (10, 90));
+		A_CustomMissile(BarrelTiny2, 32, 0, random (0, 360), 2, random (10, 90));
+		A_CustomMissile(BarrelTiny, 32, 0, random (0, 360), 2, random (10, 90));
+		A_CustomMissile(BarrelTiny2, 32, 0, random (0, 360), 2, random (10, 90));
 		A_Explode;
 		A_Quake(3, 4, 0, 100);
 		A_Quake(2, 3, 0, 200);
@@ -60,11 +60,15 @@ ACTOR DEExploBarrel : ExplosiveBarrel replaces ExplosiveBarrel
 
 actor BarrelDebris : DebrisGeneral
 {
+  Radius 10
+  Height 10
   +MISSILE
   +BOUNCEONWALLS
   +BOUNCEONCEILINGS
   +BOUNCEONFLOORS
   +BOUNCEONACTORS
+  Mass 50
+  Speed 10
   BounceCount 5
   BounceType Doom
   States
@@ -72,23 +76,23 @@ actor BarrelDebris : DebrisGeneral
   Spawn:
 	EXD1 A 4
 	{
-		A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5));
-		A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5));
+		A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1));
+		A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1));
 	}
 	EXD1 B 4
 	{
-		A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5));
-		A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5));
+		A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1));
+		A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1));
 	}
 	EXD1 C 4
 	{
-		A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5));
-		A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5));
+		A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1));
+		A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1));
 	}
 	EXD1 D 4
 	{
-		A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5));
-		A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5));
+		A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1));
+		A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1));
 	}
 	Loop
   Death:
@@ -100,29 +104,28 @@ actor BarrelDebris : DebrisGeneral
 
 actor BarrelDebris2 : BarrelDebris
 {
-  BounceType Doom
   States
   {
   Spawn:
 	EXD2 A 4
 	{
-		A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5));
-		A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5));
+		A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1));
+		A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1));
 	}
 	EXD2 B 4
 	{
-		A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5));
-		A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5));
+		A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1));
+		A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1));
 	}
 	EXD2 C 4
 	{
-		A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5));
-		A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5));
+		A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1));
+		A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1));
 	}
 	EXD2 D 4
 	{
-		A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5));
-		A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5));
+		A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1));
+		A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1));
 	}
 	Loop
   Death:
@@ -135,9 +138,11 @@ actor BarrelDebris2 : BarrelDebris
 actor BarrelTiny : BarrelDebris
 {
   Scale 0.5
-  Height 10
-  Radius 10
-  BounceCount 15
+  Height 5
+  Radius 5
+  Mass 25
+  Speed 15
+  BounceCount 10
   BounceType Doom
   States
   {
