@@ -9,6 +9,7 @@ StaticText "Video Settings", "Brick"
 StaticText ""
 
 Option "Bobbing on Fire", "BobToggle", "onoff"
+Option "Shake Screen on Fire", "ShakeToggle", "onoff"
 Option "Magic Auras on Weapons", "AuraToggle", "onoff"
 StaticText "To change the FOV (Field Of View) open the Console and put 'Fov [Desired Quantity]'", "Yellow"
 
@@ -19,8 +20,9 @@ StaticText "High Quality Sprites Settings*", "Brick"
 StaticText "*May decrease performance on weaker computers", "White"
 StaticText ""
 
-Option "High Quality Guns Pickups", "HDGunsToggle", "onfoff"
-Option "High Quality Pickups", "HDPickToggle", "onoff"
+Option "Hi-Res Guns Pickups", "HDGunsToggle", "onfoff"
+Option "Hi-Res Quality Pickups", "HDPickToggle", "onoff"
+Option "Hi-Res Projectiles", "HDProjectileToggle", "onoff"
 }
 
 
