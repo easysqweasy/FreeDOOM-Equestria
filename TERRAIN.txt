@@ -2,15 +2,11 @@
 splash DoomWater
 {
    smallclass     	WaterSplashBase
-   smallclip      	0
+   smallclip		0
    smallsound     	world/drip
 
    baseclass      	WaterSplashBase
    chunkclass     	WaterSplash
-   chunkxvelshift 	8
-   chunkyvelshift 	8
-   chunkzvelshift 	8
-   chunkbasezvel  	2
    sound          	world/watersplash
    noalert
 }
@@ -18,7 +14,7 @@ splash DoomWater
 terrain DoomWater
 {
 	splash			DoomWater
-	footclip		10
+	footclip		6
 	liquid
 }
 
@@ -32,10 +28,6 @@ splash DoomSludge
 
 	baseclass		SludgeSplash
 	chunkclass		SludgeChunk
-	chunkxvelshift	8
-	chunkyvelshift	8
-	chunkzvelshift	8
-	chunkbasezvel	1
 	sound			world/sludgegloop
 	noalert
 }
@@ -43,7 +35,7 @@ splash DoomSludge
 terrain DoomSludge
 {
 	splash			DoomSludge
-	footclip		10
+	footclip		6
 	liquid
 	
 	damageamount	5
@@ -73,7 +65,7 @@ splash DoomLava
 terrain DoomLava
 {
 	splash			DoomLava
-	footclip		10
+	footclip		6
 	liquid
 	
 	damageamount	10
@@ -92,10 +84,6 @@ splash DoomBlood
 
 	baseclass		BloodSplashBase
 	chunkclass		BloodSplash
-	chunkxvelshift	8
-	chunkyvelshift	8
-	chunkzvelshift	8
-	chunkbasezvel	2
 	sound			world/watersplash
 	noalert
 }
@@ -117,10 +105,6 @@ splash DoomSlime
 
    baseclass      	SlimeSplash
    chunkclass      	SlimeChunk
-   chunkxvelshift   8
-   chunkyvelshift   8
-   chunkzvelshift   8
-   chunkbasezvel   	1
    sound         	world/sludgegloop
    noalert
 }
@@ -128,7 +112,7 @@ splash DoomSlime
 terrain DoomSlime
 {
 	splash			DoomSlime
-	footclip		10
+	footclip		6
 	liquid
 	
 	damageamount	5
@@ -147,10 +131,6 @@ splash DoomMud
 
    baseclass      	MudSplash
    chunkclass      	MudChunk
-   chunkxvelshift   8
-   chunkyvelshift   8
-   chunkzvelshift   8
-   chunkbasezvel   	1
    sound         	world/sludgegloop
    noalert
 }
@@ -158,7 +138,7 @@ splash DoomMud
 terrain DoomMud
 {
 	splash			DoomMud
-	footclip		10
+	footclip		6
 	liquid
 }
 
