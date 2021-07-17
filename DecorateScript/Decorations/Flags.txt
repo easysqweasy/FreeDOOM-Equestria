@@ -1,4 +1,4 @@
-actor Flag 92
+actor Flag
 {
 //$Category EquestriaDecorations
   Height 40

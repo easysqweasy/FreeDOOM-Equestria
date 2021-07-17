@@ -14,7 +14,6 @@ Actor Zapper 93
     ZAPR A 42
 	ZAPR BCDEDCDEDCDEDCDEDCDEDCB 4
     Loop
-  
   }
 }
 
