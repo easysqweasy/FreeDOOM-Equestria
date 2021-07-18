@@ -1,3 +1,4 @@
 // Global ACS
 KICK
 BobToggle
+ShakeToggle
