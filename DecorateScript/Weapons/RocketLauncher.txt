@@ -48,14 +48,14 @@ actor DERocket : Rocket replaces Rocket
 	}
     Loop
   Death:
-	BAL2 C 5 Bright 
+	BAL2 C 6 Bright 
 	{
 		A_Explode;
 		A_Quake(3, 4, 0, 100);
 		A_Quake(2, 3, 0, 200);
 		A_Quake(1, 2, 0, 300);
 	}
-    MISL B 5 Bright
+    MISL B 4 Bright
 	MISL C 6 Bright
     MISL DDDDDDDDDD 1 Bright A_FadeOut(0.1)
 	Stop
