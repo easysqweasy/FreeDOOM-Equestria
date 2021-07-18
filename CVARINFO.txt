@@ -1,1 +1,3 @@
-user int BobToggle = 0;
+user int BobToggle = 1;
+user int ShakeToggle = 1;
+user int AuraToggle = 1;
