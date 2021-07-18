@@ -7,7 +7,7 @@ ACTOR ChaingunDude : ChaingunGuy replaces ChaingunGuy
   Speed 8
   PainChance 170
   AttackSound "weapons/chngun"
-  Dropitem "Chaingun"
+  Dropitem "DEChaingun"
   States
   {
   Spawn:
