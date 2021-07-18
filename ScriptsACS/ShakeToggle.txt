@@ -1,0 +1,7 @@
+#library "ShakeToggle.acs"
+#include "zcommon.acs"
+
+script "ShakeToggle" (void)
+{
+    SetResultValue(GetCVar("ShakeToggle"));
+}
