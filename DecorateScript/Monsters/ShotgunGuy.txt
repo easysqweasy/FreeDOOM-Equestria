@@ -14,7 +14,7 @@ ACTOR ShotgunPony : ShotgunGuy replaces ShotgunGuy
   DeathSound "shotguy/death"
   ActiveSound "shotguy/active"
   Obituary "$OB_SHOTGUY"
-  DropItem "Shotgun"
+  DropItem "DEShotgun"
   States
   {
   Spawn:
