@@ -1,8 +1,10 @@
 // Doom Imp Fireball
-PointLight DEIMPBALL
+Pulselight DEIMPBALL
 {
     color 1.0 0.7 0.4
-    size 96
+    size 60
+	secondarysize 80
+	interval 1
 	attenuate 1
 }
 
@@ -58,12 +60,12 @@ object DEImpBall
 
 
 // Cacodemon fireball
-flickerlight CACOBALL
+Pulselight CACOBALL
 {
     color 1.0 0.5 0.8
-    size 84
-    secondarySize 96
-    chance 0.5
+    size 80
+    secondarySize 90
+    interval 1.5
 	attenuate 1
 }
 
@@ -105,10 +107,12 @@ object CacodemonBall
 }
 
 // Baron / Hell Knight fireball
-pointlight BARONBALL
+Pulselight BARONBALL
 {
     color 0.0 1.0 0.0
-    size 30
+    size 15
+	secondarysize 30
+	interval 2
 	attenuate 1
 }
 

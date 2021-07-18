@@ -1,0 +1,48 @@
+FlickerLight FireParticle
+{
+	color 1.0 1.0 0.0
+	size 4
+	secondarysize 5
+	Chance 0.5
+}
+
+FlickerLight FireParticle2
+{
+	color 1.0 0.0 0.0
+	size 4
+	secondarysize 5
+	Chance 0.5
+}
+
+FlickerLight AcidParticle
+{
+	color 0.0 1.0 0.0
+	size 4
+	secondarysize 5
+	Chance 0.5
+}
+
+object FirePiece
+{
+	frame PIEC { light FireParticle }
+}
+
+object FirePiece2
+{
+	frame PIEC { light FireParticle2 }
+}
+
+object FirePiece3
+{
+	frame PIEC { light FireParticle2 }
+}
+
+object AcidPiece
+{
+	frame PIEC { light AcidParticle }
+}
+
+object AcidPiece2
+{
+	frame PIEC { light AcidParticle }
+}

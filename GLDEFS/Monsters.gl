@@ -1,10 +1,10 @@
 // Lost Soul
-flickerlight LOSTSOUL
+pulselight LOSTSOUL
 {
     color 1.0 0.6 0.3
-    size 84
-    secondarysize 64
-    chance 0.1
+    size 40
+    secondarysize 60
+	interval 5
 	attenuate 1
 }
 
@@ -69,24 +69,61 @@ pointlight SPECTRE
 	attenuate 1
 }
 
-/*
-object Spectre
+
+/*object EquestriaSpectre
 {
-    frame SARG { light SPECTRE }
-}
-*/
+    frame SPEC { light SPECTRE }
+}*/
+
 
 // Zombies
 flickerlight2 ZOMBIEATK
 {
     color 1.0 0.8 0.2
-    size 72
-    secondarySize 84
+    size 40
+    secondarySize 50
     interval 1
     offset 0 40 0
 	attenuate 1
 }
 
+pointlight PLASMATK
+{
+    color 0.5 0.5 1.0
+    size 40
+	attenuate 1
+	offset 0 40 0
+}
+
+pulselight PLASMATK2
+{
+    color 0.5 0.5 1.0
+    size 60
+	secondarySize 80
+	interval 0.05
+	attenuate 1
+	offset 0 40 0
+}
+
+pulselight DemonNirik
+{
+	color 0.5 0.0 0.0
+	offset 0 20 0
+	size 60
+	secondarySize 80
+	interval 1
+	attenuate 1
+}
+
+pulselight DemonNirik2
+{
+	color 0.5 0.5 0.5
+	offset 0 16 0
+	size 40
+	secondarySize 60
+	interval 0.5
+	attenuate 1
+}
 object ZombiePony
 {
     frame POSSF { light ZOMBIEATK }
@@ -101,6 +138,18 @@ object ChaingunDude
 {
     frame CPOSE { light ZOMBIEATK }
     frame CPOSF { light ZOMBIEATK }
+}
+
+object PlasmaKirin
+{
+    frame TECHF { light PLASMATK2 }
+    frame TECHE { light PLASMATK }
+}
+
+object DemonNirik
+{
+	frame NRIK { light DemonNirik }
+	frame NRIK { light DemonNirik/*2*/ }
 }
 
 // Arch-vile
