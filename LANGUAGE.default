@@ -1,11 +1,23 @@
 [enu default] 
+
+DOOMEQUESTRIAOPTIONS = "DOOM Equestria Options";
+EQUESTRIAOPTIONS = "Mod Options";
+
+VIDEOSETTINGS = "Video Settings";
+
+BOBTOGGLE = "Bobbing on Fire";
+SHAKETOGGLE = "Shake Screen on Fire";
+AURATOGGLE = "Magic Auras on Weapons";
+FOVTOGGLE = "To change the FOV (Field Of View) open the Console and put 'Fov [Desired Quantity]'";
+
+HIRESETTINGS = "High Quality Sprites Settings*";
+HIRESWARNING = "*May decrease performance on weaker computers";
+
 BABYSKILL = "I'm a Little Pony";
 EASYSKILL = "Hey, not too rough";
 NORMALSKILL = "Hurt me plenty";
 HARDSKILL = "Ultra-Violence";
 PLUSSKILL = "Instant-Violence";
-
-EQUESTRIAOPTIONS = "Mod Options";
 
 //QUITMSG4 = "you're trying to say you like Brutal Doom\nbetter than me, right?";
 QUITMSG10 = "Get out of here and\ngo back to your\ninfantile cartoon";
@@ -14,10 +26,17 @@ QUITMSG13 = "just leave.\nwhen you come back, i'll be waiting with \na naughty b
 TECHKILL = "%o turned to dust by Tech Weapon Dudette.";
 NIRIKILL = "%o was bitten by the Demonic Nirik.";
 
+/*
 CC_ZOMBIE = "Former Soldier";
+CC_SHOTGUN = "Former Sergeant";
+FN_HEAVY = "Heavy Weapon Dude";
+*/
 
 OTARMBONUS = "Picked up a Spiritual Armor.";
 GOTARMOR = "Picked up a Security Armor.";
 GOTMEGA = "Picked up a Combat Armor.";
 
 GOTBERSERK = "Let's punch out some demons!";
+
+TECHDUDE = "Tech Weapon Dudette";
+DEMONIRIK = "Demonic Nirik";

@@ -1,26 +1,45 @@
 [ptb pt br]
 
+DOOMEQUESTRIAOPTIONS = "Opções do DOOM Equestria";
+EQUESTRIAOPTIONS = "Opções do Mod";
+
+VIDEOSETTINGS = "Configurações de Vídeo";
+
+BOBTOGGLE = "Movimentação no disparo";
+SHAKETOGGLE = "Tremida no disparo";
+AURATOGGLE = "Aura mágica nas armas";
+FOVTOGGLE = "Para mudar o seu FOV (Campo de Visão) abra o console e coloque 'Fov [Quantidade Desejada]'";
+
+HIRESETTINGS = "Opções de Alta Qualidade*";
+HIRESWARNING = "*Pode reduzir o desempenho em computadores fracos";
+
+MNU_CHOOSESKILL = "Nível de Dificuldade:";
+
 BABYSKILL = "Eu sou um Pequeno Ponêi";
-EASYSKILL = "Ei, não seja rude";
+EASYSKILL = "Opa, pega leve ai";
 NORMALSKILL = "Um tapinha não dói";
 HARDSKILL = "UltraViolento";
 PLUSSKILL = "Violência instantânea";
 
-EQUESTRIAOPTIONS = "Opções do Mod";
-MNU_CHOOSESKILL = "Nível de Dificuldade:";
-
 //QUITMSG4 = "então você gosta mais de Brutal Doom\ndo que de mim, né?";
-QUITMSG7 = "vá em frente, saia.\nvem cá ver se eu ligo.";
-QUITMSG10 = "Saia daqui e\nvolte para o seu\ndesenho animado infantil";
+QUITMSG7 = "Vai, pode ir embora. Tô nem aí.";
+QUITMSG10 = "Se manda daqui e\nvolte para o seu\ndesenho animado infantil";
 QUITMSG13 = "Só vá embora.\nQuando você voltar, eu te estarei esperando com uma \nmorcega safada!";
 
 TECHKILL = "%o virou pó pela Moça da Arma Tecnológica.";
 NIRIKILL = "%o foi mordido pela Nirik Demoníaca.";
 
+/*
 CC_ZOMBIE = "Soldado Possuído";
+CC_SHOTGUN = "Sargento Possuído";
+CC_HEAVY = "Comandante Possuído";
+*/
 
 OTARMBONUS = "Pegou uma Armadura Espiritual.";
 GOTARMOR = "Pegou uma Armadura de Segurança.";
 GOTMEGA = "Pegou uma Armadura de Combate.";
 
 GOTBERSERK = "Vamos esmurrar alguns demônios!";
+
+TECHDUDE = "Moça da Arma Tecnológica";
+DEMONIRIK = "Nirik Demoníaca";

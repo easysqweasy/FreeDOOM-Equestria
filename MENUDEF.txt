@@ -1,28 +1,27 @@
 OptionMenu "EquestriaOptions"
 {
-Title "Doom Equestria Options"
+Title "$DOOMEQUESTRIAOPTIONS"
 
 StaticText ""
 StaticText ""
 
-StaticText "Video Settings", "Brick"
+StaticText "$VIDEOSETTINGS", "Brick"
 StaticText ""
 
-Option "Bobbing on Fire", "BobToggle", "onoff"
-Option "Shake Screen on Fire", "ShakeToggle", "onoff"
-Option "Magic Auras on Weapons", "AuraToggle", "onoff"
-StaticText "To change the FOV (Field Of View) open the Console and put 'Fov [Desired Quantity]'", "Yellow"
-
+Option "$BOBTOGGLE", "BobToggle", "onoff"
+Option "$SHAKETOGGLE", "ShakeToggle", "onoff"
+Option "$AURATOGGLE", "AuraToggle", "onoff"
+StaticText "$FOVTOGGLE"
 StaticText ""
 StaticText ""
-
-StaticText "High Quality Sprites Settings*", "Brick"
-StaticText "*May decrease performance on weaker computers", "White"
+/*
+StaticText "$HIRESETTINGS", "Brick"
+StaticText "$HIRESWARNING", "White"
 StaticText ""
 
 Option "Hi-Res Guns Pickups", "HDGunsToggle", "onfoff"
 Option "Hi-Res Quality Pickups", "HDPickToggle", "onoff"
-Option "Hi-Res Projectiles", "HDProjectileToggle", "onoff"
+Option "Hi-Res Projectiles", "HDProjectileToggle", "onoff"*/
 }
 
 
