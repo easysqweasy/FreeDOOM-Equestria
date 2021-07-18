@@ -67,3 +67,26 @@ actor DEPlasmaBall : PlasmaBall replaces PlasmaBall
 	Stop
   }
 }
+
+actor TechPlasmaBall : DEPlasmaBall
+{
+  Radius 10
+  Height 13
+  Alpha 0.75
+  FastSpeed 30
+  RenderStyle Add
+  +FORCEXYBILLBOARD
+  States
+  {
+  /*Spawn:
+	PLSS ABCDEFGHIJKLMNOPQRSTUV 2 Bright
+	Loop*/
+  Spawn:
+	PLSS AAAAAABBBBBB 1 Bright A_SpawnItemEx("PlasmaTrail")
+	Loop
+  Death:
+    PLSE ABC 4 Bright
+	PLSE DE 4 A_FadeOut(0.1)
+	Stop
+  }
+}
