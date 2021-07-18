@@ -8,7 +8,7 @@ skill baby
    DamageFactor = 0.5
    EasyBossBrain
    SpawnFilter = Baby
-   Name = "I'm a Little Pony"
+   Name = "$BABYSKILL"
    Key = "i"
 }
 
@@ -16,7 +16,7 @@ skill easy
 {
 	EasyBossBrain
 	SpawnFilter = Easy
-	Name = "Hey, not too rough"
+	Name = "$EASYSKILL"
 	Key = "h"
 }
 
@@ -24,21 +24,21 @@ skill normal
 {
 	SpawnFilter = Normal
 	Key = "h"
-	Name = "Hurt me plenty"
+	Name = "$NORMALSKILL"
 	DefaultSkill
 }
 
 skill hard
 {
 	SpawnFilter = Hard
-	Name = "Ultra-Violence"
+	Name = "$HARDSKILL"
 	Key = "u"
 }
 
 skill hardplus
 {
    SpawnFilter = Hard
-   Name = "Fast-Violence"
+   Name = "$PLUSSKILL"
    Key = "f"
    FastMonsters
 }

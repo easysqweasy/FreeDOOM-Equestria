@@ -38,6 +38,7 @@ LISTMENU "MainMenu"
 	{
 		StaticPatch 94, 2, "M_DOOM"
 		Position 97, 72
+		//Postion 0, 72 (A Morden Look, maybe for a future Doom Equestria
 		IfOption(ReadThis)
 		{
 			Position 97, 64
@@ -51,7 +52,7 @@ LISTMENU "MainMenu"
 	
 	TextItem "$MNU_NEWGAME", "1", "PlayerclassMenu"
 	TextItem "$MNU_OPTIONS", "2", "OptionsMenu"
-	TextItem "Equestria Options", "3", "EquestriaOptions"
+	TextItem "$EQUESTRIAOPTIONS", "3", "EquestriaOptions"
 	TextItem "$MNU_LOADGAME", "4", "LoadGameMenu"
 	TextItem "$MNU_SAVEGAME", "5", "SaveGameMenu"
 	IfOption(ReadThis)
@@ -60,3 +61,16 @@ LISTMENU "MainMenu"
 	}
 	TextItem "$MNU_QUITGAME", "q", "QuitMenu"
 }
+
+/*ListMenu "SkillMenu"
+{
+	IfGame(Doom, Chex)
+	{
+		StaticPatch 96, 14, "M_NEWG", 0, "$MNU_NEWGAME"
+	}
+	IfGame(Doom, Strife, Chex)
+	{
+		//StaticPatch 0, 38, "M_SKILL", 0, "$MNU_CHOOSESKILL"
+		Position 48, 63
+	}
+}*/

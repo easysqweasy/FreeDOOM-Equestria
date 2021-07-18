@@ -1,0 +1,23 @@
+[enu default] 
+BABYSKILL = "I'm a Little Pony";
+EASYSKILL = "Hey, not too rough";
+NORMALSKILL = "Hurt me plenty";
+HARDSKILL = "Ultra-Violence";
+PLUSSKILL = "Instant-Violence";
+
+EQUESTRIAOPTIONS = "Mod Options";
+
+//QUITMSG4 = "you're trying to say you like Brutal Doom\nbetter than me, right?";
+QUITMSG10 = "Get out of here and\ngo back to your\ninfantile cartoon";
+QUITMSG13 = "just leave.\nwhen you come back, i'll be waiting with \na naughty bat!";
+
+TECHKILL = "%o turned to dust by Tech Weapon Dudette.";
+NIRIKILL = "%o was bitten by the Demonic Nirik.";
+
+CC_ZOMBIE = "Former Soldier";
+
+OTARMBONUS = "Picked up a Spiritual Armor.";
+GOTARMOR = "Picked up a Security Armor.";
+GOTMEGA = "Picked up a Combat Armor.";
+
+GOTBERSERK = "Let's punch out some demons!";
