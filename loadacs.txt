@@ -2,3 +2,4 @@
 KICK
 BobToggle
 ShakeToggle
+EquestriaThings
