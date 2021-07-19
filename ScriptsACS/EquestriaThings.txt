@@ -1,0 +1,28 @@
+#library "EquestriaThings.acs"
+#include "zcommon.acs"
+
+#define MIN_TID (-32768)
+#define MAX_TID 32767
+
+//Ragedox says: Hands off!
+
+script "Checker" enter
+{
+	if (GameType() == GAME_TITLE_MAP)
+		terminate;
+	if (ClassExists("HDoomPlayer") && ClassExists("HDoomMonster"))
+	{
+		print(s:"What is this place?...");
+	}
+}
+
+function bool ClassExists(str class)
+{
+	int tid = UniqueTID(MIN_TID, 0);
+	if (SpawnForced(class, 0, 0, 0, tid))
+	{
+		Thing_Remove(tid);
+		return true;
+	}
+	return false;
+}
