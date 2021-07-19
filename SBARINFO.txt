@@ -51,7 +51,7 @@ statusbar normal // Standard Doom Status bar
 	}
 	drawselectedinventory alternateonempty, INDEXFONT, 143, 168
 	{
-		drawmugshot "STF", 5, xdeathface, 143, 168;
+		drawmugshot "STF", 5, xdeathface, animatedgodmode, 143, 168;
 	}
 }
 
@@ -62,6 +62,11 @@ mugshot "xdeath"
 	XDTH2 2;
 	XDTH3 2;
 	XDTH4 -1;
+}
+
+mugshot "GodAnimated"
+{
+	{GOD0, GOD1, GOD2} 17;
 }
 
 statusbar fullscreen, fullscreenoffsets // ZDoom HUD
