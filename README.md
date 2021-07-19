@@ -1,6 +1,6 @@
 # DOOM Equestria for GZDoom
 
-This is the Github DevBuild version, updates can come out at any time;
+This is the development version, updates can come at any time, this version does NOT represent the final version;
 
 # Credits
 See "CREDITS.txt" for more detailed credits;
