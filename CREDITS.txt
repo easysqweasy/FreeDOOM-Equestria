@@ -18,7 +18,7 @@ Ragedox, SuperWillGaming
 Ragedox, JoeyTD
 
 = Textures =
-Lostres 2.1 by NaturalTvventy
+Lostres 2.1 by NaturalTvventy (Unused Doom Content by ID Software)
 
 = Season 1 : Knee-Deep in the Dead (Reimagined) =
 Ragedox
@@ -31,6 +31,7 @@ SuperWillGaming, Lincoln
 
 = Forums used:
 https://forum.zdoom.org/viewtopic.php?f=3&t=23478
+https://www.doomworld.com/forum/topic/113992-lostres-21-doom-unused-sprites-flats-and-textures/
 
 IsaacPony( Twitter: @Isaac_Pony)
 Ragedox (Twitter: @TheRagedox)
