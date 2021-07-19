@@ -18,7 +18,7 @@ Ragedox, SuperWillGaming
 Ragedox, JoeyTD
 
 = Textures =
-Lostres 2.1 by NaturalTvventy
+Lostres 2.1 by NaturalTvventy (Unused Doom Content by ID Software)
 
 = Season 1 : Knee-Deep in the Dead (Reimagined) =
 Ragedox
