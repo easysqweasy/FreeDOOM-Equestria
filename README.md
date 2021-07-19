@@ -20,9 +20,6 @@ Ragedox, SuperWillGaming
 = Sprites =
 Ragedox, JoeyTD
 
-= Textures =
-Lostres 2.1 by NaturalTvventy
-
 = Season 1 : Knee-Deep in the Dead (Reimagined) =
 Ragedox
 
