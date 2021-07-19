@@ -3,6 +3,8 @@
 DOOMEQUESTRIAOPTIONS = "DOOM Equestria Options";
 EQUESTRIAOPTIONS = "Mod Options";
 
+WIPWARNING = "^Not yet implemented";
+
 VIDEOSETTINGS = "Video Settings";
 
 BOBTOGGLE = "Bobbing on Fire";

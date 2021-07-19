@@ -3,6 +3,8 @@
 DOOMEQUESTRIAOPTIONS = "Opções do DOOM Equestria";
 EQUESTRIAOPTIONS = "Opções do Mod";
 
+WIPWARNING = "^Ainda não implementado";
+
 VIDEOSETTINGS = "Configurações de Vídeo";
 
 BOBTOGGLE = "Movimentação no disparo";
