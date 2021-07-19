@@ -29,6 +29,8 @@ Cinny!
 = Special Thanks to =
 SuperWillGaming, Lincoln
 
+# If you want to use something, you will have to ask Isaac Pony or Ragedox for permission;
+
 # Running
 
 Download repository as a ZIP file and drag it over gzdoom.exe.
