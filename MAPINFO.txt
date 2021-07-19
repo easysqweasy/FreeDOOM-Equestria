@@ -112,6 +112,11 @@ episode e4m1
 	optional
 } 
 
+episode DoomTest
+{
+	name = "Test Map"
+}
+
 /*///////////////////
 Season 1: Kee-Deep in the Dead
 *////////////////////
