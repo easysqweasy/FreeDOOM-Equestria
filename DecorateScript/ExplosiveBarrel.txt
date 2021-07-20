@@ -6,10 +6,10 @@ ACTOR DEExploBarrel : ExplosiveBarrel replaces ExplosiveBarrel
     BAR1 AB 8
     Loop
   Death:
-    BEXP A 5 Bright
-    BEXP B 5 Bright A_Scream
-    BEXP C 5 Bright
-    BEXP D 5 Bright 
+	BEXP A 5 Bright
+	BEXP B 5 Bright A_Scream
+	BEXP C 5 Bright
+	BEXP D 5 Bright 
 	{
 		A_CustomMissile(BarrelDebris, 32, 0, random (0, 360), 2, random (10, 90));
 		A_CustomMissile(BarrelDebris2, 32, 0, random (0, 360), 2, random (10, 90));
@@ -24,9 +24,9 @@ ACTOR DEExploBarrel : ExplosiveBarrel replaces ExplosiveBarrel
 		A_Quake(2, 3, 0, 200);
 		A_Quake(1, 2, 0, 300);
 	}
-    BEXP EEEEEEEEEE 1 Bright A_FadeOut(0.1)
-    TNT1 A 1050 Bright A_BarrelDestroy
-    TNT1 A 5 A_Respawn
+	BEXP EEEEEEEEEE 1 Bright A_FadeOut(0.1)
+	TNT1 A 1050 Bright A_BarrelDestroy
+	TNT1 A 5 A_Respawn
     Wait
   XDeath:
 	BEXP A 5 Bright
