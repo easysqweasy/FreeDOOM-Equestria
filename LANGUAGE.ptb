@@ -23,10 +23,12 @@ NORMALSKILL = "Um tapinha não dói";
 HARDSKILL = "UltraViolento";
 PLUSSKILL = "Violência instantânea";
 
+QUITMSG = "Você em certeza que quer sair deste ótimo mod?";
 //QUITMSG4 = "então você gosta mais de Brutal Doom\ndo que de mim, né?";
+QUITMSG9 = "Não vá agora, tem um vírus da Kirin te esperando no computador!";
 QUITMSG7 = "Vai, pode ir embora. Tô nem aí.";
 QUITMSG10 = "Se manda daqui e\nvolte para o seu\ndesenho animado infantil";
-QUITMSG13 = "Só vá embora.\nQuando você voltar, eu te estarei esperando com uma \nmorcega safada!";
+QUITMSG13 = "Só vá embora.\nQuando você voltar, vai ter uma \nmorcega safada te esperando!";
 
 TECHKILL = "%o virou pó pela Moça da Arma Tecnológica.";
 NIRIKILL = "%o foi mordido pela Nirik Demoníaca.";
