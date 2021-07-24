@@ -16,6 +16,8 @@
   }
 }*/
 
+//Make Kick with fire in the hooves (fazer chute com fogo nos cascos
+
 actor BerserkTransform
 {
   Monster
