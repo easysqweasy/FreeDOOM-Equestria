@@ -41,7 +41,7 @@ ACTOR ShotgunPony : ShotgunGuy replaces ShotgunGuy
     Stop
   XDeath:
     SPOS M 3
-    SPOS N 5
+    SPOS N 5 
 	{
 		A_CustomMissile(XDeathGoreSpawn, 2);
 		A_XScream;
