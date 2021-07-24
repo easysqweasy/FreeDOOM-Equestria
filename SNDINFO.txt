@@ -18,6 +18,12 @@ pickup/chaingun "Sounds/Pickups/ChainGPickup.wav"
 pickup/backpack "Sounds/Pickups/BackpackPickup.ogg"
 misc/k_pkup "Sounds/Pickups/KeyPickup.ogg"
 
+$random gore/bloodsplats { gore/bloodsplats1 gore/bloodsplats2 gore/bloodsplats3 gore/bloodsplats4 }
+gore/bloodsplats1 "Sounds/Gore/BSSPLAT1.ogg"
+gore/bloodsplats2 "Sounds/Gore/BSSPLAT2.ogg"
+gore/bloodsplats3 "Sounds/Gore/BSSPLAT3.ogg"
+gore/bloodsplats4 "Sounds/Gore/BSSPLAT4.ogg"
+
 tech/groan "Sounds/Zombies/TechWeaponDudette/TECHGROAN.ogg"
 tech/active "Sounds/Zombies/TechWeaponDudette/TECHACT.ogg"
 
