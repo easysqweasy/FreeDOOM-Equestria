@@ -56,7 +56,7 @@ actor DERocket : Rocket replaces Rocket
 		A_Quake(1, 2, 0, 300);
 	}
     MISL B 4 Bright
-	MISL C 6 Bright
+	MISL C 4 Bright
     MISL DDDDDDDDDD 1 Bright A_FadeOut(0.1)
 	Stop
   }
