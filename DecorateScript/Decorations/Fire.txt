@@ -1,0 +1,15 @@
+Actor BaseFire 
+{
+	RenderStyle Add
+	DamageType Fire
+}
+
+Actor SmallFire1 : BaseFire
+{
+	States
+	{
+	Spawn:
+		FIR2 ABC 4 Bright
+		Loop
+	}
+}
