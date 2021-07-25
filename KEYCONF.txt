@@ -1,9 +1,8 @@
 clearplayerclasses
 addplayerclass EquestriaDoomPlayer
 
- addkeysection "Doom Equestria - Kick" DoomEquestriaActions
-   
-   addmenukey "Kick" kickem
-   alias kickem "pukename kick"
-   defaultbind Q kickem
-   
+addkeysection "DOOM Equestria" DoomEquestriaActions
+
+addmenukey "Kick" kickem
+alias kickem "pukename kick"
+defaultbind Q kickem
