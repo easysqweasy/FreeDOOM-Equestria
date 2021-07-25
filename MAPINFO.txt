@@ -121,10 +121,14 @@ episode DoomTest
 Season 1: Kee-Deep in the Dead
 *////////////////////
 
-
+gameinfo 
+{
+	intermissionmusic = "Music/Doom1Musics/D_INTER"   
+}
 
 map S1E1 lookup "S1E1: Hangar"
 {
+	Music = "Music/Doom1Musics/S1E1"
 	levelnum = 1
 	titlepatch = "WILV00"
 	next = "S1E2"
@@ -132,11 +136,11 @@ map S1E1 lookup "S1E1: Hangar"
 	sky1 = "patches/Skys/RSKY4.png"
 	cluster = 1
 	//par = 30
-	//music = "$MUSIC_E1M1"
 }
 
 map S1E2 lookup "S1E2: Nuclear Plant"
 {
+	Music = "Music/Doom1Musics/S1E2"
 	levelnum = 2
 	titlepatch = "WILV01"
 	next = "S1E3"
@@ -144,5 +148,4 @@ map S1E2 lookup "S1E2: Nuclear Plant"
 	sky1 = "SKY1"
 	cluster = 1
 	//par = 75
-	//music = "$MUSIC_E1M2"
 }
