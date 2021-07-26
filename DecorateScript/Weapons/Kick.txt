@@ -4,6 +4,10 @@ Actor QuickPuff : BulletPuff
 {
     AttackSound "*fist"
     +NODECAL
+	+FLOORCLIP
+	+NOTELEPORT
+	+FORCEXYBILLBOARD
+	+NOBLOCKMAP
 }
 
 /*
