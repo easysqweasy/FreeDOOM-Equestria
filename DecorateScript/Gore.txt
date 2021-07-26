@@ -20,9 +20,6 @@ Actor XDeathGoreSpawn
 		A_CustomMissile(GibGore2, 32, 0, random (0, 360), 2, random (10, 90));
 		A_CustomMissile(GibGore2, 32, 0, random (0, 360), 2, random (10, 90));
 		A_CustomMissile(GibGore2, 32, 0, random (0, 360), 2, random (10, 90));
-		A_CustomMissile(GibGore2, 32, 0, random (0, 360), 2, random (10, 90));
-		A_CustomMissile(GibGore2, 32, 0, random (0, 360), 2, random (10, 90));
-		A_CustomMissile(GibGore3, 32, 0, random (0, 360), 2, random (10, 90));
 		A_CustomMissile(GibGore3, 32, 0, random (0, 360), 2, random (10, 90));
 		A_CustomMissile(GibGore3, 32, 0, random (0, 360), 2, random (10, 90));
 		A_CustomMissile(GibGore3, 32, 0, random (0, 360), 2, random (10, 90));
@@ -32,8 +29,10 @@ Actor XDeathGoreSpawn
 		A_CustomMissile(GibGore4, 32, 0, random (0, 360), 2, random (10, 90));
 		A_CustomMissile(GibGore4, 32, 0, random (0, 360), 2, random (10, 90));
 		A_CustomMissile(GibGore4, 32, 0, random (0, 360), 2, random (10, 90));
-		A_CustomMissile(GibGore5, 32, 0, random (0, 360), 2, random (10, 90));
-		A_CustomMissile(GibGore5, 32, 0, random (0, 360), 2, random (10, 90));
+		A_CustomMissile(GibGore4, 32, 0, random (0, 360), 2, random (10, 90));
+		A_CustomMissile(GibGore4, 32, 0, random (0, 360), 2, random (10, 90));
+		A_CustomMissile(GibGore4, 32, 0, random (0, 360), 2, random (10, 90));
+		A_CustomMissile(GibGore4, 32, 0, random (0, 360), 2, random (10, 90));
 		A_CustomMissile(GibGore5, 32, 0, random (0, 360), 2, random (10, 90));
 		A_CustomMissile(GibGore5, 32, 0, random (0, 360), 2, random (10, 90));
 		A_CustomMissile(GibGore5, 32, 0, random (0, 360), 2, random (10, 90));
