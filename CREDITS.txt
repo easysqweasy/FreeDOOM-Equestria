@@ -39,10 +39,11 @@ GitHub Repository: https://github.com/Ragedox/DOOM-Equestria
 
 = Other Credits =
 
-Lostres 2.1 by NaturalTvventy* (Unused Doom Content by ID Software)
+Lostres 2.1 by NaturalTvventy (Unused Doom Content by ID Software)
 
 Some kick codes are from Brutal Doom, adapted by Ragedox
 
 = Forums used:
 https://forum.zdoom.org/viewtopic.php?f=3&t=23478
-*https://www.doomworld.com/forum/topic/113992-lostres-21-doom-unused-sprites-flats-and-textures/
+Lostres: https://www.doomworld.com/forum/topic/113992-lostres-21-doom-unused-sprites-flats-and-textures/
+NashDecals: https://forum.zdoom.org/viewtopic.php?f=46&t=69770
