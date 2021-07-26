@@ -1,0 +1,5 @@
+Actor DeadCheck : Inventory
+{	Inventory.MaxAmount 1	}
+
+Actor KickCheck : Inventory
+{	Inventory.MaxAmount 1	}
