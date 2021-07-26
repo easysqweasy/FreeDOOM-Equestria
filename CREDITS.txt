@@ -17,9 +17,6 @@ Ragedox, SuperWillGaming
 = Sprites =
 Ragedox, JoeyTD
 
-= Textures =
-Lostres 2.1 by NaturalTvventy* (Unused Doom Content by ID Software)
-
 = Season 1 : Knee-Deep in the Dead (Reimagined) =
 Ragedox
 
@@ -28,10 +25,6 @@ Cinny!
 
 = Special Thanks to =
 SuperWillGaming, Lincoln
-
-= Forums used:
-https://forum.zdoom.org/viewtopic.php?f=3&t=23478
-*https://www.doomworld.com/forum/topic/113992-lostres-21-doom-unused-sprites-flats-and-textures/
 
 IsaacPony( Twitter: @Isaac_Pony)
 Ragedox (Twitter: @TheRagedox)
@@ -43,3 +36,13 @@ SuperWillGaming (No longer in the project, Twitter: @njsw88)
 If you want to use something, you will have to ask Isaac Pony or Ragedox for permission;
 Discord Server: https://discord.gg/xgzkMmayMz
 GitHub Repository: https://github.com/Ragedox/DOOM-Equestria
+
+= Other Credits =
+
+Lostres 2.1 by NaturalTvventy* (Unused Doom Content by ID Software)
+
+Some kick codes are from Brutal Doom, adapted by Ragedox
+
+= Forums used:
+https://forum.zdoom.org/viewtopic.php?f=3&t=23478
+*https://www.doomworld.com/forum/topic/113992-lostres-21-doom-unused-sprites-flats-and-textures/
