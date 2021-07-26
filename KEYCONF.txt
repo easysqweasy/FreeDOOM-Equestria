@@ -4,5 +4,5 @@ addplayerclass EquestriaDoomPlayer
 addkeysection "DOOM Equestria" DoomEquestriaActions
 
 addmenukey "Kick" kickem
-alias kickem "pukename kick"
+alias kickem "pukename KickAttack"
 defaultbind Q kickem

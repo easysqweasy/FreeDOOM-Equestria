@@ -1,5 +1,6 @@
 // Global ACS
-KICK
+//KICK
+KickAttack
 BobToggle
 ShakeToggle
 //EquestriaThings

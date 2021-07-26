@@ -6,12 +6,16 @@ actor DEChainsaw : Chainsaw replaces Chainsaw
   States
 	{
   Select:
+	TNT1 A 0 A_TakeInventory("KickCheck", 999)
+	
 	TNT1 A 0 A_StartSound("weapons/sawup")
 	SAWG A 1 A_Raise
 	Loop
   Deselect:
-    SAWG B 1 A_Lower
-    Loop
+    TNT1 A 0 A_TakeInventory("KickCheck", 999)
+	
+	SAWG B 1 A_Lower
+    Wait
   Ready:
 	SAWG C 3
 	{
