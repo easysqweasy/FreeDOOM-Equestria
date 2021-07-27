@@ -75,7 +75,6 @@ actor EquestriaDoomPlayer : DoomPlayer
 #Include "DecorateScript/Weapons/PlasmaGun.txt"
 #Include "DecorateScript/Weapons/RocketLauncher.txt"
 #Include "DecorateScript/Weapons/BFG9000.txt"
-#Include "DecorateScript/Weapons/FistAndBerserk.txt"
 #Include "DecorateScript/Weapons/Chainsaw.txt"
 #Include "DecorateScript/Weapons/Ammo.txt"
 
