@@ -34,3 +34,16 @@ tech/death3 "Sounds/Zombies/TechWeaponDudette/TECHDTH3.ogg"
 
 tech/pain "Sounds/Zombies/TechWeaponDudette/TECHPAIN.ogg"
 tech/sight "Sounds/Zombies/TechWeaponDudette/TECHSIT.ogg"
+
+//Sound limit removal
+
+$Limit misc/i_pkup	0
+$Limit misc/k_pkup	0
+$Limit misc/w_pkup	0
+$Limit misc/p_pkup	0
+
+$Limit pickup/plasmagun	0
+$Limit pickup/rocklauncher	0
+$Limit pickup/chaingun	0
+$Limit pickup/backpack	0
+$Limit misc/k_pkup	0
