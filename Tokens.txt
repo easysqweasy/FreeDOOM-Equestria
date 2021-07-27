@@ -3,3 +3,6 @@ Actor DeadCheck : Inventory
 
 Actor KickCheck : Inventory
 {	Inventory.MaxAmount 1	}
+
+Actor HChecker : Inventory
+{	Inventory.MaxAmount 1	}
