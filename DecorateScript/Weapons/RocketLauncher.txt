@@ -44,8 +44,8 @@ actor DERocketLauncher : RocketLauncher replaces RocketLauncher
 	MISF D 4 
 	Goto LightDone
 	
-		KickAttack:
-		TNT1 A 0 A_OverlayFlags("KickAttack", PSPF_INTERPOLATE, true)
+	KickAttack:
+		TNT1 A 0 A_OverlayFlags(0, PSPF_INTERPOLATE, true)
 		
 		TNT1 A 0 A_TakeInventory("KickCheck", 999)
 		
@@ -63,13 +63,13 @@ actor DERocketLauncher : RocketLauncher replaces RocketLauncher
 		TNT1 A 0 SetPlayerProperty(0, 0, 0)
 		KICK IGFEDCB 2
 		
-		TNT1 A 0 A_OverlayFlags("KickAttack", PSPF_INTERPOLATE, false)
+		TNT1 A 0 A_OverlayFlags(0, PSPF_INTERPOLATE, false)
 		
 		TNT1 A 0 A_TakeInventory("KickCheck", 999)
 		Goto Ready
 		
 	BerserkerKick:
-		TNT1 A 0 A_OverlayFlags("KickAttack", PSPF_INTERPOLATE, true)
+		TNT1 A 0 A_OverlayFlags(0, PSPF_INTERPOLATE, true)
 		
 		TNT1 A 0 A_TakeInventory("KickCheck", 999)
 		
@@ -80,13 +80,13 @@ actor DERocketLauncher : RocketLauncher replaces RocketLauncher
         KICK H 2
 		KICK IGFEDCB 2
 		
-		TNT1 A 0 A_OverlayFlags("KickAttack", PSPF_INTERPOLATE, false)
+		TNT1 A 0 A_OverlayFlags(0, PSPF_INTERPOLATE, false)
 		
 		TNT1 A 0 A_TakeInventory("KickCheck", 999)
 		Goto Ready
 		
 	AirKick:
-		TNT1 A 0 A_OverlayFlags("KickAttack", PSPF_INTERPOLATE, true)
+		TNT1 A 0 A_OverlayFlags(0, PSPF_INTERPOLATE, true)
 		
 		TNT1 A 0 A_TakeInventory("KickCheck", 999)
 	   
@@ -101,7 +101,7 @@ actor DERocketLauncher : RocketLauncher replaces RocketLauncher
         KICK O 2 A_AlertMonsters (500, 0)
 		KICK PQRST 2
 		
-		TNT1 A 0 A_OverlayFlags("KickAttack", PSPF_INTERPOLATE, false)
+		TNT1 A 0 A_OverlayFlags(0, PSPF_INTERPOLATE, false)
 		
 		TNT1 A 0 SetPlayerProperty(0, 0, 0)
 		
@@ -109,7 +109,7 @@ actor DERocketLauncher : RocketLauncher replaces RocketLauncher
 		Goto Ready
 		
 	BerserkAirKick:
-		TNT1 A 0 A_OverlayFlags("KickAttack", PSPF_INTERPOLATE, true)
+		TNT1 A 0 A_OverlayFlags(0, PSPF_INTERPOLATE, true)
 		
 		TNT1 A 0 A_TakeInventory("KickCheck", 999)
 		
@@ -120,7 +120,7 @@ actor DERocketLauncher : RocketLauncher replaces RocketLauncher
         KICK O 2 A_AlertMonsters (500, 0)
 		KICK PQRST 2
 		
-		TNT1 A 0 A_OverlayFlags("KickAttack", PSPF_INTERPOLATE, false)
+		TNT1 A 0 A_OverlayFlags(0, PSPF_INTERPOLATE, false)
 		
 		TNT1 A 0 A_TakeInventory("KickCheck", 999)
 		Goto Ready
