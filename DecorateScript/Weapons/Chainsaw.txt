@@ -2,7 +2,7 @@ actor DEChainsaw : Chainsaw replaces Chainsaw
 {
   Weapon.UpSound ""
   Weapon.ReadySound "weapons/sawidle"
-  Weapon.BobStyle Smooth
+  Weapon.BobStyle alpha
   States
 	{
   Select:
