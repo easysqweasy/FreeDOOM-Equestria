@@ -48,6 +48,31 @@ pic NUKAGE1 tics 8
 pic NUKAGE1 tics 8
 pic NUKAGE1 tics 8
 
+warp flat SFALL1 0.50
+warp flat SFALL2 0.50
+warp flat SFALL3 0.50
+warp flat SFALL4 0.50
+flat SFALL1
+pic SFALL1 tics 4
+pic SFALL2 tics 4
+pic SFALL3 tics 4
+pic SFALL4 tics 4
+flat SFALL2
+pic SFALL1 tics 4
+pic SFALL2 tics 4
+pic SFALL3 tics 4
+pic SFALL4 tics 4
+flat SFALL3
+pic SFALL1 tics 4
+pic SFALL2 tics 4
+pic SFALL3 tics 4
+pic SFALL4 tics 4
+flat SFALL4
+pic SFALL1 tics 4
+pic SFALL2 tics 4
+pic SFALL3 tics 4
+pic SFALL4 tics 4
+
 warp2 flat SLIME01 0.50
 flat SLIME01
 pic SLIME01 tics 8
