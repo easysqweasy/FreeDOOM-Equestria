@@ -107,7 +107,7 @@ pulselight HEALTHPOTION
     offset 0 10 0
 }
 
-object HealthBonus
+object DEHealthPotion
 {
     frame BON1 { light HEALTHPOTION }
 }
