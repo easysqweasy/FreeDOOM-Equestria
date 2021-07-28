@@ -33,10 +33,6 @@ actor EquestriaDoomPlayer : DoomPlayer
   Player.WeaponSlot 8, "DEBFG9000"
 }
 
-////Tokens/Checkers
-
-#include "Tokens.txt"
-
 ////Monsters
 
 #include "DecorateScript/Monsters/ArchVile.txt"
@@ -66,7 +62,6 @@ actor EquestriaDoomPlayer : DoomPlayer
 
 ////Weapons
 
-#Include "DecorateScript/Weapons/Kick.txt"
 #Include "DecorateScript/Weapons/Broom.txt"
 #Include "DecorateScript/Weapons/Pistol.txt"
 #Include "DecorateScript/Weapons/Shotgun.txt"
@@ -88,39 +83,6 @@ actor EquestriaDoomPlayer : DoomPlayer
 
 ////Misc
 
+#include "Tokens.txt"
+#include "DecorateScript/Puffs.txt"
 #include "DecorateScript/ExplosiveBarrel.txt"
-
-/*
-ACTOR DEMedikit : Medikit replaces Medikit { 
-  scale 1
-}
-
-ACTOR DEYellowSkull : YellowSkull replaces YellowSkull {
-  XScale 1.5
-  YScale 1.3
-}
-ACTOR DERedSkull : RedSkull replaces RedSkull {
-  XScale 1.5
-  YScale 1.3
-}
-ACTOR DEBlueSkull : BlueSkull replaces BlueSkull {
-  XScale 1.5
-  YScale 1.3
-}
-
-ACTOR DEExplosiveBarrel : ExplosiveBarrel replaces ExplosiveBarrel {
-  
-  states
-  {
-  Spawn:
-    BAR1 ABC 10
-    Loop
-   }
-}
-
-ACTOR DERadSuit : PowerupGiver replaces PowerupGiver
-{
-XScale 1.5
-YScale 1.3
-}
-*/
