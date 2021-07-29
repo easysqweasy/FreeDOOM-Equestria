@@ -11,21 +11,6 @@ actor DEParticles
   damage 0
 }
 
-ACTOR DEBulletPuff : BulletPuff replaces BulletPuff
-{
-  +FLOORCLIP
-  +NOTELEPORT
-  +FORCEXYBILLBOARD
-  +NOBLOCKMAP
-  States
-  {
-  Melee:
-    PUFF C 4
-	PUFF DDDDDDDDDD 1 A_FadeOut(0.1)
-    Stop
-  }
-}
-
 actor FirePieceSpawn : RandomSpawner
 {
 	DropItem FirePiece
