@@ -22,20 +22,22 @@ actor DEChaingun : Chaingun replaces Chaingun
 		
 		CHGG A 1 A_Lower
 		Wait
-  Fire:
-	CHGG AB 4 
-	{
-		A_FireCGun;
-		A_QuakeEx(1, 0, 1, 4, 0, 1, "", QF_RELATIVE | QF_SCALEDOWN | QF_SCALEUP);
-	}
-	CHGG B 0 A_ReFire
-    Goto Ready
-  Flash:
-    CHGF A 2 Bright A_WeaponOffset(0, 38, WOF_KEEPX | WOF_INTERPOLATE)
-    Goto LightDone
-	TNT1 A 2 Bright 
-	CHGF B 2 Bright A_WeaponOffset(0, 40, WOF_KEEPX | WOF_INTERPOLATE)
-    Goto LightDone
+	
+	Fire:
+		CHGG AB 4 
+		{
+			A_FireCGun;
+			A_QuakeEx(1, 0, 1, 4, 0, 1, "", QF_RELATIVE | QF_SCALEDOWN | QF_SCALEUP);
+		}
+		CHGG B 0 A_ReFire
+		Goto Ready
+	
+	Flash:
+		CHGF A 2 Bright A_WeaponOffset(0, 38, WOF_KEEPX | WOF_INTERPOLATE)
+		Goto LightDone
+		TNT1 A 2 Bright 
+		CHGF B 2 Bright A_WeaponOffset(0, 40, WOF_KEEPX | WOF_INTERPOLATE)
+		Goto LightDone
 	
 	KickAttack:
 		TNT1 A 0 A_OverlayFlags(0, PSPF_INTERPOLATE, true)
