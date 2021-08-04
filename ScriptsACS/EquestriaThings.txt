@@ -1,28 +1,39 @@
 #library "EquestriaThings.acs"
 #include "zcommon.acs"
 
-#define MIN_TID (-32768)
-#define MAX_TID 32767
-
 //Ragedox says: Hands off!
 
-script "Checker" enter
+script "ClopperChecker" enter
 {
 	if (GameType() == GAME_TITLE_MAP)
-		terminate;
-	if (ClassExists("HDoomPlayer") && ClassExists("HDoomMonster"))
+	
+	terminate;
+	if (CheckInventory("DEPistol") && CheckClass("HDoomPlayer") && CheckClass("HDoomMonster"))
 	{
-		print(s:"What is this place?...");
+		Delay(120);
+		
+		TakeInventory("DEPistol", 999);
+		HudMessage(s:"What..!?"; HUDMSG_TYPEON | HUDMSG_PLAIN, 1, CR_ICE, 1.5, 0.8, 0, 0.05);
+		
+		Delay (10);
+		
+		FadeTo (255, 0, 255, 1.0, 1.0); //Fade to Pink
+		
+		Delay (35);
+		
+		FadeTo (255, 255, 255, 1.0, 0.5); //Fade to White
+		
+		Delay (13);
+		{
+			/*GiveInventory ("HPistol", 1);
+			
+			Delay(1);*/
+			
+			ChangeLevel ("Map32", 0, CHANGELEVEL_NOINTERMISSION);
+		}
 	}
 }
 
-function bool ClassExists(str class)
-{
-	int tid = UniqueTID(MIN_TID, 0);
-	if (SpawnForced(class, 0, 0, 0, tid))
-	{
-		Thing_Remove(tid);
-		return true;
-	}
-	return false;
-}
+//Script "BrutalChecker" enter
+//{
+//	if (CheckClass("Doomer") && CheckClass("Melee_Attacks")
