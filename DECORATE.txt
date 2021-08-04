@@ -59,6 +59,7 @@ actor EquestriaDoomPlayer : DoomPlayer
 #include "DecorateScript/Terrains.txt"
 #include "DecorateScript/Particles.txt"
 #include "DecorateScript/Gore.txt"
+#include "DecorateScript/Puffs.txt"
 
 ////Weapons
 
@@ -83,6 +84,5 @@ actor EquestriaDoomPlayer : DoomPlayer
 
 ////Misc
 
-#include "Tokens.txt"
-#include "DecorateScript/Puffs.txt"
+#include "DecorateScript/Tokens.txt"
 #include "DecorateScript/ExplosiveBarrel.txt"
