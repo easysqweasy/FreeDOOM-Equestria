@@ -1,5 +1,8 @@
 ACTOR DEExploBarrel : ExplosiveBarrel replaces ExplosiveBarrel
 {
+	-NOBLOOD
+	//-OLDRADIUSDMG
+	BloodColor "66 a2 66"
   States
   {
   Spawn:
