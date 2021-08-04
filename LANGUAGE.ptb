@@ -17,6 +17,8 @@ HIRESWARNING = "*Pode reduzir o desempenho em computadores fracos";
 
 MNU_CHOOSESKILL = "Nível de Dificuldade:";
 
+LOWHEALTH = "Saúde Baixa";
+
 BABYSKILL = "Eu sou um Pequeno Ponêi";
 EASYSKILL = "Opa, pega leve ai";
 NORMALSKILL = "Um tapinha não dói";

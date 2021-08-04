@@ -40,15 +40,28 @@ script "CheckClopper" enter
 
 Script "LowHealth" ENTER
 {
-	if (GetActorProperty (0, APROP_HEALTH) <= 25)
+	if (GetActorProperty (0, APROP_HEALTH) <= 25 && !CheckInventory("LowHealthCheck"))
 	{
-		SetHudSize(320,200,1);
+		GiveInventory("LowHealthCheck", 1);
 		
-		SetFont("SmallFont");
+		SetHudSize(640,400,1);
 		
-		HudMessage(l:"$LOWHEALTH"; HUDMSG_FADEINOUT, 99, CR_RED, 160.0, 155.0, 1.0, 0.01, 1.0);
+		SetFont("BIGFONT");
+		
+		HudMessage(l:"LOWHEALTH"; HUDMSG_TYPEON, 99, CR_RED, 320.0, 310.0, 5.0, 0.05, 1.0);
 	}
-	Delay(1);
+	Delay (1);
+	
+	Restart;
+}
+
+Script "LowHealthClear" ENTER
+{
+	if (GetActorProperty (0, APROP_HEALTH) > 25 && CheckInventory("LowHealthCheck"))
+	{
+		TakeInventory("LowHealthCheck", 999);
+	}
+	Delay (1);
 	
 	Restart;
 }

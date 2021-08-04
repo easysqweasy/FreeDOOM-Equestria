@@ -15,6 +15,8 @@ FOVTOGGLE = "To change the FOV (Field Of View) open the Console and put 'Fov [De
 HIRESETTINGS = "High Quality Sprites Settings*";
 HIRESWARNING = "*May decrease performance on weaker computers";
 
+LOWHEALTH = "Low Health";
+
 BABYSKILL = "I'm a Little Pony";
 EASYSKILL = "Hey, not too rough";
 NORMALSKILL = "Hurt me plenty";

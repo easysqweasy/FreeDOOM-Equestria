@@ -6,3 +6,6 @@ Actor KickCheck : Inventory
 
 Actor HCheck : Inventory
 {	Inventory.MaxAmount 1	}
+
+Actor LowHealthCheck : Inventory
+{	Inventory.MaxAmount 1	}
