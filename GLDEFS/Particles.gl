@@ -4,6 +4,7 @@ FlickerLight FireParticle
 	size 4
 	secondarysize 5
 	Chance 0.5
+	dontlightactors 1
 }
 
 FlickerLight FireParticle2
@@ -12,6 +13,7 @@ FlickerLight FireParticle2
 	size 4
 	secondarysize 5
 	Chance 0.5
+	dontlightactors 1
 }
 
 FlickerLight AcidParticle
@@ -20,6 +22,7 @@ FlickerLight AcidParticle
 	size 4
 	secondarysize 5
 	Chance 0.5
+	dontlightactors 1
 }
 
 object FirePiece
