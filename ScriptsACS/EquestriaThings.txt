@@ -3,7 +3,7 @@
 
 //Ragedox says: Hands off!
 
-script "ClopperChecker" enter
+script "CheckClopper" enter
 {
 	if (GameType() == GAME_TITLE_MAP)
 	
@@ -34,6 +34,26 @@ script "ClopperChecker" enter
 	}
 }
 
-//Script "BrutalChecker" enter
+//Script "CheckBrutal" enter
 //{
 //	if (CheckClass("Doomer") && CheckClass("Melee_Attacks")
+
+Script "HealthWarning_Warn" ENTER
+{
+	if (GetActorProperty (0, APROP_HEALTH) <= 25 && !CheckInventory("PlayerHealthWarning"))
+	{
+		LocalAmbientSound("player/healthwarning", 127);
+		GiveInventory("PlayerHealthWarning", 1);
+		SetHudSize(320,200,1);
+		SetFont("SmallFont");
+		HudMessage(l:"LOWHEALTHWARNING"; HUDMSG_FADEINOUT, 99, CR_RED, 160.0, 155.0, 1.0, 0.01, 1.0);
+		delay(1);
+		HudMessage(l:"LOWHEALTHWARNING"; HUDMSG_FADEINOUT, 99, CR_RED, 160.0, 145.0, 1.0, 0.01, 1.0);
+		delay(1);
+		HudMessage(l:"LOWHEALTHWARNING"; HUDMSG_FADEINOUT, 99, CR_RED, 160.0, 153.0, 1.0, 0.01, 1.0);
+		delay(1);
+		HudMessage(l:"LOWHEALTHWARNING"; HUDMSG_FADEINOUT, 99, CR_RED, 160.0, 150.0, 1.0, 0.01, 1.0);
+	}
+	delay(1);
+	restart;
+}
