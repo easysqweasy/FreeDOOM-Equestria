@@ -1,9 +1,89 @@
-generator DEPistol BulletChip
-generator DEChainsaw BulletChip
-generator DEShotgun BulletChip
-generator DESuperShotgun BulletChip
-generator DEChaingun BulletChip
+fader FadeOut
+{
+	DecayStart	0.5
+	DecayTime	1.0
+}
 
-generator DEPlasmaBall PlasmaScorch
-generator DERocket Scorch
-generator DEBFGBall BFGLightning
+Fader FadeOut2
+{
+	DecayStart	1.0
+	DecayTime	3.0
+}
+
+Decal ChipDecal
+{
+	Pic BulletDecal
+	Shade "00 00 00"
+	Y-Scale 0.75 X-Scale 0.75
+	RandomFlipY RandomFlipX
+}
+
+Decal ShellLowerDecal
+{
+	Pic BulletDecal
+	Shade "00 00 00"
+	RandomFlipY RandomFlipX
+}
+
+Decal ShellDecal
+{
+	Pic ShtGunDecal2
+	Add 1
+	Animator FadeOut
+	Shade "FF 34 03"
+	RandomFlipY RandomFlipX
+	FullBright
+	Y-Scale 0.75 X-Scale 0.75
+	LowerDecal ShellLowerDecal
+}
+
+Decal FireBallScorch1
+{
+	Pic CBALSCR1
+	Shade "FF 34 03"
+	FullBright
+	Y-Scale 0.75 X-Scale 0.75
+	RandomFlipY RandomFlipX
+	Animator ToBlack
+}
+
+Decal FireBallScorch2
+{
+	Pic CBALSCR2
+	Shade "FF 34 03"
+	FullBright
+	Y-Scale 0.75 X-Scale 0.75
+	RandomFlipY RandomFlipX
+	Animator ToBlack
+}
+
+decalgroup FireBallScorch
+{
+	FireBallScorch1	1
+	FireBallScorch2	1
+}
+
+////Weapons
+
+generator DEPistol			ChipDecal
+generator DEChainsaw		BulletChip
+generator DEShotgun			ShellDecal
+generator DESuperShotgun	ShellDecal
+generator DEChaingun		ChipDecal
+
+////Projectiles
+
+generator DEPlasmaBall 			PlasmaScorch
+generator DERocket				Scorch
+generator DEBFGBall				BFGLightning
+generator DEImpBall				FireBallScorch
+generator EquestriaBaronBall	BaronScorch
+generator KnightBall			BaronScorch
+
+////Monsters
+
+generator ZombiePony		ChipDecal
+generator ShotgunPony		ShellDecal
+generator ChaingunDude		ChipDecal
+generator WolfensteinSS		ChipDecal
+generator SpiderMastermind	ChipDecal
