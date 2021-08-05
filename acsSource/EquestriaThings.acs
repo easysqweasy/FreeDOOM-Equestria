@@ -44,11 +44,11 @@ Script "LowHealth" ENTER
 	{
 		GiveInventory("LowHealthCheck", 1);
 		
-		SetHudSize(640,400,1);
+		SetHudSize(430,300,0);
 		
 		SetFont("BIGFONT");
 		
-		HudMessage(l:"LOWHEALTH"; HUDMSG_TYPEON, 99, CR_RED, 320.0, 310.0, 5.0, 0.05, 1.0);
+		HudMessage(l:"LOWHEALTH"; HUDMSG_TYPEON, 99, CR_RED, 215.0, 250.0, 5.0, 0.05, 1.0);
 	}
 	Delay (1);
 	
