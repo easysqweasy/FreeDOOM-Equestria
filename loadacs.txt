@@ -3,3 +3,4 @@
 KickAttack
 CVARs
 EquestriaThings
+BossBar
