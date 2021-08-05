@@ -16,7 +16,7 @@ actor EquestriaBaronofHell : BaronOfHell replaces BaronOfHell
 }
  
 actor EquestriaHellKnight : HellKnight replaces HellKnight
- {
+{
   BloodColor "green"
   States
   {
@@ -30,6 +30,20 @@ actor EquestriaHellKnight : HellKnight replaces HellKnight
     Goto See
   }
 }
+
+actor BossBaronofHell : EquestriaBaronofHell
+{
+	States
+	{
+	See:
+		BOSS A 1
+		BOSS C 0 ACS_ExecuteAlways(123)
+	Chase:
+		BOSS AABBCCDD 3 A_Chase
+		Loop
+	}
+}
+
  
 actor EquestriaBaronBall : BaronBall replaces BaronBall
 {
