@@ -1,0 +1,46 @@
+#library "BossBar"
+#include "zcommon.acs"
+
+Script 123 (void)
+{
+	int hdisp;
+    int BossHealth = GetActorProperty (0, APROP_HEALTH);
+	int mmaxhp = GetActorProperty (0, APROP_SPAWNHEALTH);
+	
+	SetFont ("NORMAL");
+    hdisp = (BossHealth * 100 / mmaxhp);
+    if (hdisp <= 0)
+        hdisp = 0;
+	
+	Setfont("BIGFONT");
+    HudMessageBold (d:BossHealth; HUDMSG_FADEOUT, 101, CR_WHITE, 0, 0, 0.1, 1.0);
+	
+	int acounter;
+    int bcounter;
+    SetFont ("BOSSHPBAR"); //Boss Bar Graphic
+    HudMessageBold (s:"a"; HUDMSG_FADEOUT, 102, CR_GREEN, 0, 0, 0.1, 1.0);
+
+	for (acounter = 0; acounter <= hdisp; acounter++)
+    {
+        if (BossHealth <= 0)
+            break;
+
+        bcounter = bcounter + 2.0;
+        SetFont ("Graphics/FILLNORM"); //By default, the bar shows as a blue bar.
+
+        if (BossHealth < 75) //If the hp is at a caution level (75%) Display a yellow bar.
+            SetFont ("Graphics/FILLCAUT");
+
+        if (BossHealth < 50) //If the hp is at a danger level (50%) Display an orange bar.
+            SetFont ("Graphics/FILLDANG");
+
+        if (BossHealth < 25) // If the hp is at a critical level (25%) Display a red bar.
+            SetFont ("Graphics/FILLCRIT");
+
+        HudMessage (s:"a"; HUDMSG_FADEOUT, acounter, CR_GREEN, 23.1 + bcounter, 7.1, 0.1, 1.0);
+    }
+    bcounter = 0;
+    acounter = 0;
+    Delay (1);
+    Restart;
+}
