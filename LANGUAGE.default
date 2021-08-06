@@ -15,8 +15,6 @@ FOVTOGGLE = "To change the FOV (Field Of View) open the Console and put 'Fov [De
 HIRESETTINGS = "High Quality Sprites Settings*";
 HIRESWARNING = "*May decrease performance on weaker computers";
 
-LOWHEALTH = "Low Health";
-
 BABYSKILL = "I'm a Little Pony";
 EASYSKILL = "Hey, not too rough";
 NORMALSKILL = "Hurt me plenty";
@@ -29,20 +27,24 @@ QUITMSG9 = "Don't go now, there's a \nKirinware waiting at your computer!";
 QUITMSG10 = "Get out of here and\ngo back to your\ninfantile cartoon.";
 QUITMSG13 = "just leave.\nwhen you come back, there will be a \nnaughty bat waiting for you!";
 
-TECHKILL = "%o turned to dust by Tech Weapon Dudette.";
-NIRIKILL = "%o was bitten by the Demonic Nirik.";
-
 /*
 CC_ZOMBIE = "Former Soldier";
 CC_SHOTGUN = "Former Sergeant";
 FN_HEAVY = "Heavy Weapon Dude";
 */
 
+LOWHEALTH = "Low Health";
+
+TAGREPEATER = "Repeater";
+GOTREPEATER = "You got the Repeater!";
+
 OTARMBONUS = "Picked up a Spiritual Armor.";
 GOTARMOR = "Picked up a Security Armor.";
 GOTMEGA = "Picked up a Combat Armor.";
 
-GOTBERSERK = "Let's punch out some demons!";
+GOTBERSERK = "Berserk! Let's punch out some demons!";
 
 TECHDUDE = "Tech Weapon Dudette";
 DEMONIRIK = "Demonic Nirik";
+TECHKILL = "%o turned to dust by Tech Weapon Dudette.";
+NIRIKILL = "%o was bitten by the Demonic Nirik.";
