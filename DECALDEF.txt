@@ -69,6 +69,7 @@ generator DEPistol			ChipDecal
 generator DEChainsaw		BulletChip
 generator DEShotgun			ShellDecal
 generator DESuperShotgun	ShellDecal
+generator Repeater			ChipDecal
 generator DEChaingun		ChipDecal
 
 ////Projectiles
