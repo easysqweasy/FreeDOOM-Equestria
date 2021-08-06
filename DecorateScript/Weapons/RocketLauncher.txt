@@ -143,8 +143,8 @@ actor DERocket : Rocket replaces Rocket
 	}
     Loop
   Death:
-	TNT0 A 1 A_SpawnItemEx("ScorchFloorCheck", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION)
-	BAL2 C 6 Bright 
+	TNT0 A 0 A_SpawnItemEx("ScorchFloorCheck", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION)
+	BAL2 C 4 Bright 
 	{
 		A_Explode;
 		A_Quake(3, 4, 0, 100);
