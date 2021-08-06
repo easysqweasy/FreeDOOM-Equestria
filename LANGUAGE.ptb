@@ -17,8 +17,6 @@ HIRESWARNING = "*Pode reduzir o desempenho em computadores fracos";
 
 MNU_CHOOSESKILL = "Nível de Dificuldade:";
 
-LOWHEALTH = "Saúde Baixa";
-
 BABYSKILL = "Eu sou um Pequeno Ponêi";
 EASYSKILL = "Opa, pega leve ai";
 NORMALSKILL = "Um tapinha não dói";
@@ -32,20 +30,24 @@ QUITMSG7 = "Vai, pode ir embora. Tô nem aí.";
 QUITMSG10 = "Se manda daqui e\nvolte para o seu\ndesenho animado infantil";
 QUITMSG13 = "Só vá embora.\nQuando você voltar, vai ter uma \nmorcega safada te esperando!";
 
-TECHKILL = "%o virou pó pela Moça da Arma Tecnológica.";
-NIRIKILL = "%o foi mordido pela Nirik Demoníaca.";
-
 /*
 CC_ZOMBIE = "Soldado Possuído";
 CC_SHOTGUN = "Sargento Possuído";
 CC_HEAVY = "Comandante Possuído";
 */
 
+LOWHEALTH = "Saúde Baixa";
+
+TAGREPEATER = "Repetidora";
+GOTREPEATER = "Você pegou a Repetidora!";
+
 OTARMBONUS = "Pegou uma Armadura Espiritual.";
 GOTARMOR = "Pegou uma Armadura de Segurança.";
 GOTMEGA = "Pegou uma Armadura de Combate.";
 
-GOTBERSERK = "Vamos esmurrar alguns demônios!";
+GOTBERSERK = "Berserk! Vamos esmurrar alguns demônios!";
 
 TECHDUDE = "Moça da Arma Tecnológica";
 DEMONIRIK = "Nirik Demoníaca";
+TECHKILL = "%o virou pó pela Moça da Arma Tecnológica.";
+NIRIKILL = "%o foi mordido pela Nirik Demoníaca.";
