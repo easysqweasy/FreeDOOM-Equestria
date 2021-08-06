@@ -8,6 +8,7 @@ ACTOR ChaingunDude : ChaingunGuy replaces ChaingunGuy
   PainChance 170
   AttackSound "weapons/chngun"
   Dropitem "DEChaingun"
+  Species "Couple"
   States
   {
   Spawn:
