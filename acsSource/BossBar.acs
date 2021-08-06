@@ -1,6 +1,12 @@
 #library "BossBar"
 #include "zcommon.acs"
 
+Script "BossBarTest" Enter
+{
+	SetFont ("BossBar"); //Boss Bar Graphic
+    HudMessageBold (s:"a"; HUDMSG_PLAIN, 0, 0, 0.1, 0.8, 3.7);
+}
+
 Script 123 (void)
 {
 	int hdisp;
@@ -17,7 +23,7 @@ Script 123 (void)
 	
 	int acounter;
     int bcounter;
-    SetFont ("BOSSHPBAR"); //Boss Bar Graphic
+    SetFont ("BossBar"); //Boss Bar Graphic
     HudMessageBold (s:"a"; HUDMSG_FADEOUT, 102, CR_GREEN, 0, 0, 0.1, 1.0);
 
 	for (acounter = 0; acounter <= hdisp; acounter++)
@@ -26,16 +32,16 @@ Script 123 (void)
             break;
 
         bcounter = bcounter + 2.0;
-        SetFont ("Graphics/FILLNORM"); //By default, the bar shows as a blue bar.
+        SetFont ("FILLNORM"); //By default, the bar shows as a blue bar.
 
         if (BossHealth < 75) //If the hp is at a caution level (75%) Display a yellow bar.
-            SetFont ("Graphics/FILLCAUT");
+            SetFont ("FILLCAUT");
 
         if (BossHealth < 50) //If the hp is at a danger level (50%) Display an orange bar.
-            SetFont ("Graphics/FILLDANG");
+            SetFont ("FILLDANG");
 
         if (BossHealth < 25) // If the hp is at a critical level (25%) Display a red bar.
-            SetFont ("Graphics/FILLCRIT");
+            SetFont ("FILLCRIT");
 
         HudMessage (s:"a"; HUDMSG_FADEOUT, acounter, CR_GREEN, 23.1 + bcounter, 7.1, 0.1, 1.0);
     }
