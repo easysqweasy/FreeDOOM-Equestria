@@ -60,6 +60,7 @@ actor EquestriaDoomPlayer : DoomPlayer
 #include "DecorateScript/Particles.txt"
 #include "DecorateScript/Gore.txt"
 #include "DecorateScript/Puffs.txt"
+#include "DecorateScript/FloorDecals.txt"
 
 ////Weapons
 
