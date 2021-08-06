@@ -61,8 +61,8 @@ Actor ScorchFloorCheck : FloorCheck
 
 Actor FloorDecal
 {
-	Radius 5
-	Height 5
+	Radius 1
+	Height 1
 	
 	+MISSILE
 	+FLOORCLIP
