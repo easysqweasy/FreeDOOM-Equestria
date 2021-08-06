@@ -59,13 +59,10 @@ Actor ScorchFloorCheck : FloorCheck
 	}
 }
 
-Actor ScorchDecal
+Actor FloorDecal
 {
-	Radius 20
-	Height 20
-	
-	RenderStyle Shaded
-	StencilColor "Black"
+	Radius 5
+	Height 5
 	
 	+MISSILE
 	+FLOORCLIP
@@ -76,6 +73,31 @@ Actor ScorchDecal
 	+NODAMAGETHRUST
 	+GHOST
 	+NOGRAVITY
+}
+
+Actor ScorchDecal : FloorDecal
+{
+
+	RenderStyle Shaded
+	StencilColor "Black"
+
+	States
+	{
+	
+	Spawn:
+		TNT1 A 1
+		NULL A -1
+		Stop
+		
+	}
+}
+
+Actor BulletDecal : FloorDecal
+{
+
+	RenderStyle Shaded
+	StencilColor "Black"
+
 	States
 	{
 	
