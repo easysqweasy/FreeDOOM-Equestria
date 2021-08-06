@@ -1,6 +1,6 @@
 ACTOR Repeater : DoomWeapon
 {
-	Tag "Repeater"
+	Tag "$TAGREPEATER"
 	
 	Weapon.MinSelectionAmmo1 2
 	Weapon.AmmoUse 3
@@ -8,9 +8,9 @@ ACTOR Repeater : DoomWeapon
 	Weapon.AmmoGive 20
 	Weapon.AmmoType "Clip"
 	
-	Inventory.PickupMessage "$GOTBURST" // "You got the chaingun"
+	Inventory.PickupMessage "$GOTREPEATER" // "You got the Repeater"
 	
-	Obituary "$OB_MPCHAINGUN" // "%o was mowed down by %k's chaingun."
+	Obituary "$OB_MPCHAINGUN"
 	States
 	{
 	
