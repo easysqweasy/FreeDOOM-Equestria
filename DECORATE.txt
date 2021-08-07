@@ -43,6 +43,7 @@ actor EquestriaDoomPlayer : DoomPlayer
 #include "DecorateScript/Monsters/ZombiePony.txt"
 #include "DecorateScript/Monsters/ShotgunGuy.txt"
 #include "DecorateScript/Monsters/HeavyWeaponDude.txt"
+#include "DecorateScript/Monsters/BurstPegasus.txt"
 #include "DecorateScript/Monsters/TechWeaponDudette.txt"
 #include "DecorateScript/Monsters/Pinky.txt"
 #include "DecorateScript/Monsters/Cyberdemon.txt"
