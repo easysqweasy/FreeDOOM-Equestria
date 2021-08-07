@@ -40,7 +40,7 @@ terrain DoomSludge
 	
 	damageamount	5
 	damagetype		slime
-	damagetimemask	34
+	damagetimemask	31
 	allowprotection
 }
 
@@ -70,7 +70,7 @@ terrain DoomLava
 	
 	damageamount	10
 	damagetype		lava
-	damagetimemask	34
+	damagetimemask	31
 	allowprotection
 }
 
@@ -117,7 +117,7 @@ terrain DoomSlime
 	
 	damageamount	5
 	damagetype		slime
-	damagetimemask	34
+	damagetimemask	31
 	allowprotection
 }
 
@@ -166,7 +166,7 @@ terrain DoomSizzle
 		
 	damageamount	5
 	damagetype		lava
-	damagetimemask	34
+	damagetimemask	31
 	allowprotection
 }
 
