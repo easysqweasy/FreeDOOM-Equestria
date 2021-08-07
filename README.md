@@ -32,6 +32,9 @@ SuperWillGaming, Lincoln
 
 # If you want to use something, you will have to ask Isaac Pony or Ragedox for permission;
 
+IsaacPony: https://twitter.com/isaac_pony
+Ragedox: https://twitter.com/TheRagedox
+
 Discord Server: https://discord.gg/xgzkMmayMz
 
 # Running
