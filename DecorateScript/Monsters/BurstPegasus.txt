@@ -1,0 +1,57 @@
+ACTOR BurstPegasus
+{
+  Health 70
+  Radius 20
+  Height 56
+  Mass 80
+  Speed 10
+  PainChance 170
+  Monster
+  +FLOORCLIP
+  SeeSound "chainguy/sight"
+  PainSound "chainguy/pain"
+  DeathSound "chainguy/death"
+  ActiveSound "chainguy/active"
+  AttackSound "chainguy/attack"
+  Obituary "$OB_CHAINGUY"
+  Dropitem "Repeater"
+  States
+  {
+  Spawn:
+    CPOS AB 10 A_Look
+    Loop
+  See:
+    CPOS AABBCCDD 3 A_Chase
+    Loop
+  Missile:
+    CPOS E 3 A_FaceTarget
+    CPOS F 4 Bright A_CustomBulletAttack(15, 0, 1, random(1,5)*3, "BulletPuff", 0, CBAF_NORANDOM)
+    CPOS E 3 A_FaceTarget
+    CPOS F 4 Bright A_CustomBulletAttack(15, 0, 1, random(1,5)*3, "BulletPuff", 0, CBAF_NORANDOM)
+	CPOS E 5 A_FaceTarget
+    CPOS F 4 Bright A_CustomBulletAttack(15, 0, 1, random(1,5)*3, "BulletPuff", 0, CBAF_NORANDOM)
+    Goto See
+  Pain:
+    CPOS G 3
+    CPOS G 3 A_Pain
+    Goto See
+  Death:
+    CPOS H 5
+    CPOS I 5 A_Scream
+    CPOS J 5 A_NoBlocking
+    CPOS KLM 5
+    CPOS N -1
+    Stop
+  XDeath:
+    CPOS O 5 
+    CPOS P 5 A_XScream
+    CPOS Q 5 A_NoBlocking
+    CPOS RS 5
+    CPOS T -1
+    Stop
+  Raise:
+    CPOS N 5
+    CPOS MLKJIH 5
+    Goto See
+  }
+}
