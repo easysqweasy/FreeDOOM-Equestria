@@ -47,3 +47,4 @@ Some kick codes are from Brutal Doom, adapted by Ragedox
 https://forum.zdoom.org/viewtopic.php?f=3&t=23478
 Lostres: https://www.doomworld.com/forum/topic/113992-lostres-21-doom-unused-sprites-flats-and-textures/
 NashDecals: https://forum.zdoom.org/viewtopic.php?f=46&t=69770
+David G Sprites: https://forum.zdoom.org/viewtopic.php?f=37&t=25657&hilit=Death
