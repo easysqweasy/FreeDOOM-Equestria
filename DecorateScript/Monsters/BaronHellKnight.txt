@@ -20,14 +20,33 @@ actor EquestriaHellKnight : HellKnight replaces HellKnight
   BloodColor "green"
   States
   {
-  Spawn:
-	IDLB AB 10 A_Look
-	Loop
-  Melee:
-  Missile:
-    BOS2 EF 8 A_FaceTarget
-    BOS2 G 8 A_CustomComboAttack("KnightBall", 32, 10 * random(1, 8), "baron/melee")
-    Goto See
+	
+	Spawn:
+		IDLB AB 10 A_Look
+		Loop
+ 
+	Melee:
+	Missile:
+		BOS2 EF 8 A_FaceTarget
+		BOS2 G 8 A_CustomComboAttack("KnightBall", 32, 10 * random(1, 8), "baron/melee")
+		Goto See
+	
+	Death:
+		BOS2 I 8
+		BOS2 J 8 A_Scream
+		BOS2 K 8
+		BOS2 L 8 A_NoBlocking
+		BOS2 MN 8
+		BOS2 O -1
+		Stop
+		
+	XDeath:
+		BOS2 P 5 A_Scream
+		BOS2 Q 5 A_NoBlocking
+		BOS2 R 5 A_XScream
+		BOS2 STUVW 5 
+		BOS2 X -1
+		Stop
   }
 }
 
