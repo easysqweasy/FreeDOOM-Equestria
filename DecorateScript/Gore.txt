@@ -144,7 +144,7 @@ ACTOR EquestriaBlood : Blood replaces Blood
   Spawn:
     BLUD CCC 8
     Stop
-  Death: 
+  Death:
 	BLUD C 0 A_SpawnItemEX(DESmallBloodPoolSpawn, 0, 0, 0, 0, 0, 0, 0, SXF_TRANSFERTRANSLATION)
 	BLUD BA 8
   Spray:
