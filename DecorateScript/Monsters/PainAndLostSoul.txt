@@ -7,6 +7,7 @@ Actor LostSoulVariants : RandomSpawner
 
 Actor PonyLostSoul : LostSoul
 {
+	+FORCEXYBILLBOARD
 	+FLOATBOB
 	-COUNTKILL
 	+NOBLOOD
@@ -27,11 +28,8 @@ Actor PonyLostSoul : LostSoul
 	}
 }
 
-Actor UnicornLostSoul : LostSoul
+Actor UnicornLostSoul : PonyLostSoul
 {
-	+FLOATBOB
-	-COUNTKILL
-	+NOBLOOD
 	RenderStyle Normal
 	//Height 40
 	States
@@ -49,11 +47,8 @@ Actor UnicornLostSoul : LostSoul
 	}
 }
 
-Actor NirikLostSoul: LostSoul replaces LostSoul
+Actor NirikLostSoul : PonyLostSoul
 {
-	+FLOATBOB
-	-COUNTKILL
-	+NOBLOOD
 	RenderStyle Normal
 	//Height 40
 	States
@@ -69,28 +64,6 @@ Actor NirikLostSoul: LostSoul replaces LostSoul
 		SKUL KKKKKKKKKK 1 A_FadeOut(0.1)
 		Stop
 	}
-}
-
-Actor EquestriaLostSoul: LostSoul
-{
-  +FLOATBOB
-  -COUNTKILL
-  +NOBLOOD
-  RenderStyle Normal
-  //Height 40
-  States
-  {
-  Death:
-	SKUL F 6 Bright
-    SKUL G 6 Bright A_Scream
-    SKUL H 6 Bright
-    SKUL I 6 Bright A_NoBlocking
-    SKUL J 3
-	TNT1 A 0 A_SpawnItemEX("DeathLostSoul")
-	SKUL J 3
-	SKUL KKKKKKKKKK 1 A_FadeOut(0.1)
-	Stop
-  }
 }
 
 Actor DeathLostSoul replaces DeadLostSoul
@@ -107,6 +80,7 @@ Actor EquestriaPain : PainElemental replaces PainElemental
 {
   FloatBobStrength 0.5
   +FLOATBOB
+  +FORCEXYBILLBOARD
   States
   {
   Death:
