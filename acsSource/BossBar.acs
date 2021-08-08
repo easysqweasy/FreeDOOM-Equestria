@@ -28,7 +28,7 @@ Script "BossHealthBar" (void)
             break;
 
         bcounter = bcounter + 2.0;
-        SetFont ("Normal"); //By default, the bar shows as a blue bar.
+        SetFont ("Normal"); //Shows a Green Bar
 
         if (hdisp < 75) //If the hp is at a caution level (75%) Display a yellow bar.
             SetFont ("Caution");
