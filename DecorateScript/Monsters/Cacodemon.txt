@@ -13,12 +13,12 @@ actor EquestriaCacodemon : Cacodemon replaces Cacodemon
 	
 	Melee:
 		HEAD DC 3 A_FaceTarget
-		HEAD C 2 A_Recoil(-5)
+		HEAD C 3 A_Recoil(-6)
 		HEAD B 4 A_CustomMeleeAttack(10 * random(1, 6))
 		Goto See
 	
 	Missile:
-		HEAD D 0 A_JumpIfCloser(140, "Melee")
+		HEAD D 0 A_JumpIfCloser(150, "Melee")
 		HEAD BC 5 A_FaceTarget
 		HEAD D 5 Bright A_CustomMissile("CacodemonBall", 32)
 		Goto See
