@@ -47,3 +47,50 @@ Script "BossHealthBar" (void)
 	if (BossHealth > 1)
     restart;
 }
+
+Script "BaronBrothersBar" (void)
+{
+	int hdisp;
+    int BossHealth = GetActorProperty (0, APROP_HEALTH);
+	int mmaxhp = GetActorProperty (0, APROP_SPAWNHEALTH);
+	
+	SetFont ("BIGFONT");
+    hdisp = (BossHealth * 100 / mmaxhp);
+    if (hdisp <= 0)
+        hdisp = 0;
+	if (BossHealth <= 0)
+        BossHealth = 0;
+	
+	SetHudSize (300,200, 0);
+    HudMessageBold (i:BossHealth; 0, 0, CR_WHITE, 150.0, 27.0, 0.1, 1.0);
+	
+	int acounter;
+    int bcounter;
+    SetFont ("BossBar"); //Boss Bar Graphic
+    HudMessageBold (s:"a"; HUDMSG_FADEOUT, 101, CR_GREEN, 150.0, 25.0, 0.1, 1.0);
+
+	for (acounter = 0; acounter <= hdisp; acounter++)
+    {
+        if (hdisp <= 0)
+            break;
+
+        bcounter = bcounter + 2.0;
+        SetFont ("Normal"); //By default, the bar shows as a blue bar.
+
+        if (hdisp < 75) //If the hp is at a caution level (75%) Display a yellow bar.
+            SetFont ("Caution");
+
+        if (hdisp < 50) //If the hp is at a danger level (50%) Display an orange bar.
+            SetFont ("Danger");
+
+        if (hdisp < 25) // If the hp is at a critical level (25%) Display a red bar.
+            SetFont ("Critical");
+
+        HudMessageBold (s:"a"; HUDMSG_FADEOUT, acounter, CR_GREEN, 53.0 + bcounter, 25.0, 0.1, 1.0);
+    }
+    bcounter = 0;
+    acounter = 0;
+    Delay (1);
+	if (BossHealth > 1)
+    restart;
+}
