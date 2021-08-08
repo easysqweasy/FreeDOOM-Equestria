@@ -1,7 +1,7 @@
 #library "BossBar"
 #include "zcommon.acs"
 
-Script 123 (void)
+Script "BossHealthBar" (void)
 {
 	int hdisp;
     int BossHealth = GetActorProperty (0, APROP_HEALTH);
@@ -44,5 +44,6 @@ Script 123 (void)
     bcounter = 0;
     acounter = 0;
     Delay (1);
-    Restart;
+	if (BossHealth > 1)
+    restart;
 }
