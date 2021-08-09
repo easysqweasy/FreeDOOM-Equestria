@@ -1,4 +1,3 @@
-//Blue Blood, Minor Improvements
 actor EquestriaCacodemon : Cacodemon replaces Cacodemon
 {
 	BloodColor "blue"
