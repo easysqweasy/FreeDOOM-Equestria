@@ -1,4 +1,3 @@
-//Green Blood
 actor EquestriaBaronofHell : BaronOfHell replaces BaronOfHell
 {
   BloodColor "darkgreen"
