@@ -12,8 +12,10 @@ actor EquestriaCacodemon : Cacodemon replaces Cacodemon
 	{
 	
 	Melee:
+		HEAD ABC 2 A_Chase
+		HEAD D 3 A_Chase
 		HEAD DC 3 A_FaceTarget
-		HEAD C 3 A_Recoil(-6)
+		HEAD C 3 A_Recoil(-8)
 		HEAD B 4 A_CustomMeleeAttack(10 * random(1, 6))
 		Goto See
 	
@@ -45,5 +47,5 @@ actor EquestriaCacodemon : Cacodemon replaces Cacodemon
 		HEAD KJIHG 8
 		Goto See
 
- }
+	}
 }
