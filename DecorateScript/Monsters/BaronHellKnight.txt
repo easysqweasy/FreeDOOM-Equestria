@@ -17,9 +17,12 @@ actor EquestriaBaronofHell : BaronOfHell replaces BaronOfHell
  
 actor EquestriaHellKnight : HellKnight replaces HellKnight
 {
-  BloodColor "green"
-  States
-  {
+	Speed 10
+	PainChance 75
+	BloodColor "green"
+	
+	States
+	{
 	
 	Spawn:
 		IDLB AB 10 A_Look
