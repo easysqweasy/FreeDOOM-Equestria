@@ -5,12 +5,14 @@ Script "BossHealthBar" (void)
 {
 	int hdisp;
     int BossHealth = GetActorProperty (0, APROP_HEALTH);
-	int mmaxhp = GetActorProperty (0, APROP_SPAWNHEALTH);
+	int BossMaxHP = GetActorProperty (0, APROP_SPAWNHEALTH);
 	
 	SetFont ("BIGFONT");
-    hdisp = (BossHealth * 100 / mmaxhp);
-    if (hdisp <= 0)
+    hdisp = (BossHealth * 100 / BossMaxHP);
+    
+	if (hdisp <= 0)
         hdisp = 0;
+	
 	if (BossHealth <= 0)
         BossHealth = 0;
 	
@@ -20,7 +22,7 @@ Script "BossHealthBar" (void)
 	int acounter;
     int bcounter;
     SetFont ("BossBar"); //Boss Bar Graphic
-    HudMessageBold (s:"a"; HUDMSG_FADEOUT, 101, CR_GREEN, 150.0, 25.0, 0.1, 1.0);
+    HudMessageBold (s:"a"; HUDMSG_FADEOUT, 101, CR_GREEN, 150.0, 25.0, 0.1, 1.0);	
 
 	for (acounter = 0; acounter <= hdisp; acounter++)
     {
@@ -39,11 +41,14 @@ Script "BossHealthBar" (void)
         if (hdisp < 25) // If the hp is at a critical level (25%) Display a red bar.
             SetFont ("Critical");
 
-        HudMessageBold (s:"a"; HUDMSG_FADEOUT, acounter, CR_GREEN, 53.0 + bcounter, 25.0, 0.1, 1.0);
+        HudMessageBold (s:"a"; HUDMSG_FADEOUT, acounter, CR_GREEN, 53.0 + bcounter, 25.0, 0.1, 1.25);
     }
-    bcounter = 0;
+    
+	bcounter = 0;
     acounter = 0;
-    Delay (1);
+    
+	Delay (1);
+	
 	if (BossHealth > 1)
     restart;
 }
@@ -51,18 +56,22 @@ Script "BossHealthBar" (void)
 Script "BaronBrothersBar" (void)
 {
 	int hdisp;
-    int BossHealth = GetActorProperty (0, APROP_HEALTH);
-	int mmaxhp = GetActorProperty (0, APROP_SPAWNHEALTH);
+    int BaronHealth1 = GetActorProperty (1200, APROP_HEALTH);
+	int BaronHealth2 = GetActorProperty (1201, APROP_HEALTH);
+	int BaronMaxHP1 = GetActorProperty (1200, APROP_SPAWNHEALTH);
+	int BaronMaxHP2 = GetActorProperty (1201, APROP_SPAWNHEALTH);
 	
 	SetFont ("BIGFONT");
-    hdisp = (BossHealth * 100 / mmaxhp);
-    if (hdisp <= 0)
+    hdisp = (BaronHealth1 * 100 / BaronMaxHP1);
+    
+	if (hdisp <= 0)
         hdisp = 0;
-	if (BossHealth <= 0)
-        BossHealth = 0;
+	
+	if (BaronHealth1 <= 0)
+        BaronHealth1 = 0;
 	
 	SetHudSize (300,200, 0);
-    HudMessageBold (i:BossHealth; 0, 0, CR_WHITE, 150.0, 27.0, 0.1, 1.0);
+    HudMessageBold (i:BaronHealth1; 0, 0, CR_WHITE, 150.0, 27.0, 0.1, 1.0);
 	
 	int acounter;
     int bcounter;
@@ -86,11 +95,24 @@ Script "BaronBrothersBar" (void)
         if (hdisp < 25) // If the hp is at a critical level (25%) Display a red bar.
             SetFont ("Critical");
 
-        HudMessageBold (s:"a"; HUDMSG_FADEOUT, acounter, CR_GREEN, 53.0 + bcounter, 25.0, 0.1, 1.0);
+        HudMessageBold (s:"a"; HUDMSG_FADEOUT, acounter, CR_GREEN, 53.0 + bcounter, 25.0, 0.1, 1.25);
     }
-    bcounter = 0;
+    
+	bcounter = 0;
     acounter = 0;
-    Delay (1);
-	if (BossHealth > 1)
+    
+	Delay (1);
+	
+	if (BaronHealth1 > 1)
     restart;
+}
+
+Script "BaronBrother1" (Void)
+{
+	Thing_ChangeTID (0, 1200);
+}
+
+Script "BaronBrother2" (Void)
+{
+	Thing_ChangeTID (0, 1201);
 }
