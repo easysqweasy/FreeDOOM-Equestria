@@ -66,7 +66,7 @@ Script "LowHealthClear" ENTER
 	Restart;
 }
 
-function int UniqueTID (void)
+function int NextTID (void)
 {
     for ( ; GiveTID < 0; GiveTID++)
     {
@@ -76,10 +76,10 @@ function int UniqueTID (void)
     return 0;
 }
 
-Script 999 (void)
+Script "UnusedTID" (void)
 {
     if (!ActivatorTID ())
     {
-        Thing_ChangeTID (0, UniqueTID ());
+        Thing_ChangeTID (0, NextTID ());
     }
 }
