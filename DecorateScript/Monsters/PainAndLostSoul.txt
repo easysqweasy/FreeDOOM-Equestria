@@ -9,12 +9,14 @@ Actor PonyLostSoul : LostSoul
 {
 	Health 75
 	Species "PainSoul"
+	RenderStyle Normal
+	//Height 40
+	
 	+FORCEXYBILLBOARD
 	+FLOATBOB
 	-COUNTKILL
 	+NOBLOOD
-	RenderStyle Normal
-	//Height 40
+	
 	States
 	{
 	Death:
@@ -78,6 +80,7 @@ Actor EquestriaPain : PainElemental replaces PainElemental
 {
 	Species "PainSoul"
 	FloatBobStrength 0.5
+	
 	+FLOATBOB
 	+FORCEXYBILLBOARD
 	+DONTHARMSPECIES
