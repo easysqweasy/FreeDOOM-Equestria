@@ -87,7 +87,8 @@ Actor EquestriaPain : PainElemental replaces PainElemental
 	Death:
 		PAIN H 8 Bright
 		PAIN I 8 Bright A_Scream
-		PAIN JK 8 Bright
+		PAIN J 8 Bright
+		PAIN K 8 Bright
 		{
 			A_Explode(10, 200);
 			A_Quake(2, 4, 0, 500);
