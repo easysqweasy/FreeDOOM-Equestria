@@ -65,21 +65,3 @@ Script "LowHealthClear" ENTER
 	
 	Restart;
 }
-
-function int NextTID (void)
-{
-    for ( ; GiveTID < 0; GiveTID++)
-    {
-        if (!ThingCount (T_NONE, GiveTID))
-            return GiveTID;
-    }
-    return 0;
-}
-
-Script "UnusedTID" (void)
-{
-    if (!ActivatorTID ())
-    {
-        Thing_ChangeTID (0, NextTID ());
-    }
-}
