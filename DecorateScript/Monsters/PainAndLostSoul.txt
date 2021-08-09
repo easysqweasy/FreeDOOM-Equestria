@@ -7,6 +7,8 @@ Actor LostSoulVariants : RandomSpawner
 
 Actor PonyLostSoul : LostSoul
 {
+	Health 75
+	Species "PainSoul"
 	+FORCEXYBILLBOARD
 	+FLOATBOB
 	-COUNTKILL
@@ -30,8 +32,6 @@ Actor PonyLostSoul : LostSoul
 
 Actor UnicornLostSoul : PonyLostSoul
 {
-	RenderStyle Normal
-	//Height 40
 	States
 	{
 	Death:
@@ -49,8 +49,6 @@ Actor UnicornLostSoul : PonyLostSoul
 
 Actor NirikLostSoul : PonyLostSoul
 {
-	RenderStyle Normal
-	//Height 40
 	States
 	{
 	Death:
@@ -78,22 +76,26 @@ Actor DeathLostSoul replaces DeadLostSoul
 
 Actor EquestriaPain : PainElemental replaces PainElemental
 {
-  FloatBobStrength 0.5
-  +FLOATBOB
-  +FORCEXYBILLBOARD
-  States
-  {
-  Death:
-    PAIN H 8 Bright
-    PAIN I 8 Bright A_Scream
-    PAIN JK 8 Bright
+	Species "PainSoul"
+	FloatBobStrength 0.5
+	+FLOATBOB
+	+FORCEXYBILLBOARD
+	+DONTHARMSPECIES
+	
+	States
 	{
-		A_Quake(2, 4, 0, 500);
-		A_CustomMissile(BloodExplosionSpawn);
-	}
-    PAIN L 8 Bright A_PainDie
-    PAIN M 8 Bright
-    Stop
+	Death:
+		PAIN H 8 Bright
+		PAIN I 8 Bright A_Scream
+		PAIN JK 8 Bright
+		{
+			A_Explode(10, 200);
+			A_Quake(2, 4, 0, 500);
+			A_CustomMissile(BloodExplosionSpawn);
+		}
+		PAIN L 8 Bright A_PainDie
+		PAIN M 8 Bright
+		Stop
   }
 }
 
