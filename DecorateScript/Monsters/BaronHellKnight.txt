@@ -58,7 +58,7 @@ actor BossBaronofHell : EquestriaBaronofHell
 	{
 	See:
 		BOSS A 1
-		BOSS C 0 ACS_NamedExecuteAlways("BaronBrothersBar")
+		BOSS C 0 ACS_NamedExecuteAlways("BossHealthBar")
 	Chase:
 		BOSS AABBCCDD 3 A_Chase
 		Loop
