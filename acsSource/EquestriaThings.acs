@@ -75,3 +75,11 @@ function int UniqueTID (void)
     }
     return 0;
 }
+
+Script 999 (void)
+{
+    if (!ActivatorTID ())
+    {
+        Thing_ChangeTID (0, UniqueTID ());
+    }
+}
