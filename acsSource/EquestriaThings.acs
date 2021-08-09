@@ -1,9 +1,9 @@
 #library "EquestriaThings.acs"
 #include "zcommon.acs"
 
-//Ragedox says: Hands off!
+int GiveTID = -40000;
 
-script "CheckClopper" enter
+script "CheckClopper" enter //Ragedox says: Hands off!
 {
 	if (GameType() == GAME_TITLE_MAP)
 	
@@ -64,4 +64,14 @@ Script "LowHealthClear" ENTER
 	Delay (1);
 	
 	Restart;
+}
+
+function int UniqueTID (void)
+{
+    for ( ; GiveTID < 0; GiveTID++)
+    {
+        if (!ThingCount (T_NONE, GiveTID))
+            return GiveTID;
+    }
+    return 0;
 }
