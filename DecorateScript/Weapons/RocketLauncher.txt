@@ -130,6 +130,7 @@ actor DERocketLauncher : RocketLauncher replaces RocketLauncher
 actor DERocket : Rocket replaces Rocket
 {
   +ForceXYBillBoard
+  -Randomize
   States
   {
   Spawn:
