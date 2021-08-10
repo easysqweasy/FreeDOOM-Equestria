@@ -110,20 +110,6 @@ actor BFGPieces : DEParticles
   }
 }
 
-actor BFGTrail : DEParticles
-{
-  RenderStyle add
-  Alpha 0.50
-  Scale 0.25
-  States
-  {
-  Spawn:
-  	TNT1 A 0 A_SpawnItemEx("BFGPieces",random(8,12),random(-3,3),random(-3,3),random(1,0),0,0,180,0)
-    BFEF QPONMLKJIHGFEDCBA 2 Bright A_FadeOut(0.1)
-	Stop
-  }
-}
-
 ACTOR DERocketSmoke : RocketSmokeTrail replaces RocketSmokeTrail
 {
   RenderStyle Translucent
@@ -156,27 +142,28 @@ Actor PlasmaTrail : DEParticles
 {
    Scale 0.75
    RenderStyle Add
-   Alpha 0.50
+   Alpha 0.60
    -MOVEWITHSECTOR
    States
    {
    Spawn:
-     PLST AAAAAABBBBBB 1 Bright A_FadeOut
+     PLST AAAAAABBBBBB 1 Bright A_FadeOut(0.1)
      Loop
    }
 }
 
 Actor BFGTrail : PlasmaTrail
 {
-   Scale 0.75
-   RenderStyle Add
-   Alpha 0.50
-   -MOVEWITHSECTOR
-   States
-   {
-   Spawn:
-     PLST AAAAAABBBBBB 1 Bright A_FadeOut
-     Loop
+	Alpha 0.50
+	
+	States
+	{
+	Spawn:
+		BFS1 A random(2,4) Bright A_FadeOut(0.1)
+		BFS1 B random(2,4) Bright A_FadeOut(0.1)
+		BFS1 C random(2,4) Bright A_FadeOut(0.1)
+		BFS1 D random(2,4) Bright A_FadeOut(0.1)
+		Loop
    }
 }
 
