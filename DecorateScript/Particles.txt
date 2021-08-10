@@ -161,7 +161,21 @@ Actor PlasmaTrail : DEParticles
    States
    {
    Spawn:
-     PLST AAAAAABBBBBB 1 Bright A_FadeOut(0.1)
+     PLST AAAAAABBBBBB 1 Bright A_FadeOut
+     Loop
+   }
+}
+
+Actor BFGTrail : PlasmaTrail
+{
+   Scale 0.75
+   RenderStyle Add
+   Alpha 0.50
+   -MOVEWITHSECTOR
+   States
+   {
+   Spawn:
+     PLST AAAAAABBBBBB 1 Bright A_FadeOut
      Loop
    }
 }
