@@ -13,6 +13,63 @@ Actor FloorCheck
 	+NOGRAVITY
 }
 
+Actor FloorDecal
+{
+	Radius 1
+	Height 1
+	
+	+MISSILE
+	+FLOORCLIP
+	+NOTELEPORT
+	+NOBLOCKMAP
+	+THRUACTORS
+	+MOVEWITHSECTOR
+	+NODAMAGETHRUST
+	+GHOST
+	+NOGRAVITY
+}
+
+Actor ScorchFloorCheck : FloorCheck
+{
+	States
+	{
+	
+	Spawn:
+		TNT1 A 0
+		TNT1 A 0 A_CheckFloor("DecalFloor")
+		TNT1 A 0 A_CheckCeiling("DecalCeiling")
+		Stop
+	
+	DecalFloor:
+		TNT1 A 0
+		TNT1 A 0 A_SpawnItemEX("ScorchDecal", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION)
+		Stop
+	
+	DecalCeiling:
+		TNT1 A 0
+		TNT1 A 0 A_SpawnItemEX("ScorchDecal", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION)
+		Stop
+	}
+}
+
+Actor ScorchDecal : FloorDecal
+{
+
+	RenderStyle Shaded
+	StencilColor "Black"
+
+	States
+	{
+	
+	Spawn:
+		TNT1 A 0
+		NULL A 2100
+		NULL AAAAAAAAAA 1 A_FadeOut(0.1)
+		Stop
+		
+	}
+}
+
 Actor BulletSpawn : FastProjectile
 {
 	Projectile
@@ -56,63 +113,6 @@ Actor BulletFloorCheck : FloorCheck
 	}
 }
 
-Actor ScorchFloorCheck : FloorCheck
-{
-	States
-	{
-	
-	Spawn:
-		TNT1 A 0
-		TNT1 A 0 A_CheckFloor("DecalFloor")
-		TNT1 A 0 A_CheckCeiling("DecalCeiling")
-		Stop
-	
-	DecalFloor:
-		TNT1 A 0
-		TNT1 A 0 A_SpawnItemEX("ScorchDecal", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION)
-		Stop
-	
-	DecalCeiling:
-		TNT1 A 0
-		TNT1 A 0 A_SpawnItemEX("ScorchDecal", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION)
-		Stop
-	}
-}
-
-Actor FloorDecal
-{
-	Radius 1
-	Height 1
-	
-	+MISSILE
-	+FLOORCLIP
-	+NOTELEPORT
-	+NOBLOCKMAP
-	+THRUACTORS
-	+MOVEWITHSECTOR
-	+NODAMAGETHRUST
-	+GHOST
-	+NOGRAVITY
-}
-
-Actor ScorchDecal : FloorDecal
-{
-
-	RenderStyle Shaded
-	StencilColor "Black"
-
-	States
-	{
-	
-	Spawn:
-		TNT1 A 1
-		NULL A 2100
-		NULL AAAAAAAAAA 1 A_FadeOut(0.1)
-		Stop
-		
-	}
-}
-
 Actor BulletDecal : FloorDecal
 {
 
@@ -123,7 +123,7 @@ Actor BulletDecal : FloorDecal
 	{
 	
 	Spawn:
-		TNT1 A 1
+		TNT1 A 0
 		NULL A 2100
 		NULL AAAAAAAAAA 1 A_FadeOut(0.1)
 		Stop
@@ -164,7 +164,7 @@ Actor PlasmaScorchLower : FloorDecal
 	{
 	
 	Spawn:
-		TNT1 A 1
+		TNT1 A 0
 		TNT1 A 0 A_SpawnItemEX("PlasmaScorch", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION)
 		NULL A 2100
 		NULL AAAAAAAAAA 1 A_FadeOut(0.1)
@@ -182,7 +182,7 @@ Actor PlasmaScorch : FloorDecal
 	{
 	
 	Spawn:
-		TNT1 A 1
+		TNT1 A 0
 		NULL A 14
 		NULL AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA 1 A_FadeOut(0.035)
 		Stop
