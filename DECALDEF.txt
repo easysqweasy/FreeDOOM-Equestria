@@ -113,6 +113,13 @@ decalgroup PlasmaScorch
 	PlasmaScorch2	1
 }
 
+decal Scorch
+{
+	pic SCORCH1
+	shade "00 00 00"
+	randomflipx
+	randomflipy
+}
 
 ////Weapons
 
