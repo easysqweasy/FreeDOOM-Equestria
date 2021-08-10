@@ -23,7 +23,7 @@ Model "PlasmaScorchLower"
 	Path "Models"
 	Model 0 "PlaneSquare.md3"
 	Skin 0 "PLASMA2"
-	Scale 0.75 0.75 0.75
+	Scale 0.50 0.50 0.50
 	ZOffset 0.1
 	FrameIndex NULL A 0 0
 }
@@ -33,6 +33,7 @@ Model "PlasmaScorch"
 	Path "Models"
 	Model 0 "PlaneSquare.md3"
 	Skin 0 "PLSSA0"
-	ZOffset 0.4
+	Scale 0.25 0.25 0.25
+	ZOffset 0.5
 	FrameIndex NULL A 0 0
 }
