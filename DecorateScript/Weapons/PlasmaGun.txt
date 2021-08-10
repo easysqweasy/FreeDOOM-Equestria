@@ -163,6 +163,7 @@ actor DEPlasmaBall : PlasmaBall replaces PlasmaBall
 	PLSS AAAAAABBBBBB 1 Bright A_SpawnItemEx("PlasmaTrail")
 	Loop
   Death:
+	PLSE A 0 A_SpawnItemEx("PlasmaFloorCheck", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION)
     PLSE ABC 4 Bright
 	PLSE DE 4 A_FadeOut(0.1)
 	Stop
@@ -173,21 +174,5 @@ actor TechPlasmaBall : DEPlasmaBall
 {
   Radius 10
   Height 13
-  Alpha 0.75
   FastSpeed 30
-  RenderStyle Add
-  +FORCEXYBILLBOARD
-  States
-  {
-  /*Spawn:
-	PLSS ABCDEFGHIJKLMNOPQRSTUV 2 Bright
-	Loop*/
-  Spawn:
-	PLSS AAAAAABBBBBB 1 Bright A_SpawnItemEx("PlasmaTrail")
-	Loop
-  Death:
-    PLSE ABC 4 Bright
-	PLSE DE 4 A_FadeOut(0.1)
-	Stop
-  }
 }

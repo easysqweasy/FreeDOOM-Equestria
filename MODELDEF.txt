@@ -17,3 +17,22 @@ Model "BulletDecal" // Name of actor in DECORATE
 	ZOffset 0.1
 	FrameIndex NULL A 0 0         //Sprite sprite lump, sprite frame, model index, frame number
 }
+
+Model "PlasmaScorchLower"
+{
+	Path "Models"
+	Model 0 "PlaneSquare.md3"
+	Skin 0 "PLASMA2"
+	Scale 0.75 0.75 0.75
+	ZOffset 0.1
+	FrameIndex NULL A 0 0
+}
+
+Model "PlasmaScorch"
+{
+	Path "Models"
+	Model 0 "PlaneSquare.md3"
+	Skin 0 "PLSSA0"
+	ZOffset 0.4
+	FrameIndex NULL A 0 0
+}
