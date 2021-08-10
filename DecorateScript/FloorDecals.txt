@@ -173,11 +173,31 @@ Actor PlasmaScorchLower : FloorDecal
 	}
 }
 
-Actor PlasmaScorch : FloorDecal
+Actor PlasmaScorch : RandomSpawner
+{
+	DropItem "PlasmaScorch1"
+	DropItem "PlasmaScorch2"
+}
+
+Actor PlasmaScorch1 : FloorDecal
 {
 
 	RenderStyle Add
 
+	States
+	{
+	
+	Spawn:
+		TNT1 A 0
+		NULL A 14
+		NULL AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA 1 A_FadeOut(0.035)
+		Stop
+		
+	}
+}
+
+Actor PlasmaScorch2 : PlasmaScorch1
+{
 	States
 	{
 	
