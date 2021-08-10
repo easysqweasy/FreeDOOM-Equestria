@@ -47,3 +47,33 @@ Model "PlasmaScorch2"
 	ZOffset 0.2
 	FrameIndex NULL A 0 0
 }
+
+Model "BFGScorch"
+{
+	Path "Models"
+	Model 0 "PlaneSquare.md3"
+	Skin 0 "BFGSCRC1"
+	Scale 1.75 1.75 1.75
+	ZOffset 0.1
+	FrameIndex NULL A 0 0
+}
+
+Model "BFGLightning1"
+{
+	Path "Models"
+	Model 0 "PlaneSquare.md3"
+	Skin 0 "BFGLITE1"
+	Scale 2 2 2
+	ZOffset 0.2
+	FrameIndex NULL A 0 0
+}
+
+Model "BFGLightning2"
+{
+	Path "Models"
+	Model 0 "PlaneSquare.md3"
+	Skin 0 "BFGLITE2"
+	Scale 2 2 2
+	ZOffset 0.2
+	FrameIndex NULL A 0 0
+}

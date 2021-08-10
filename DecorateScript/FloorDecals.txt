@@ -209,3 +209,83 @@ Actor PlasmaScorch2 : PlasmaScorch1
 		
 	}
 }
+
+Actor BFGFloorCheck : FloorCheck
+{
+	States
+	{
+	
+	Spawn:
+		TNT1 A 0
+		TNT1 A 0 A_CheckFloor("DecalFloor")
+		TNT1 A 0 A_CheckCeiling("DecalCeiling")
+		Stop
+	
+	DecalFloor:
+		TNT1 A 0
+		TNT1 A 0 A_SpawnItemEX("BFGScorch", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION)
+		Stop
+	
+	DecalCeiling:
+		TNT1 A 0
+		TNT1 A 0 A_SpawnItemEX("BFGScorch", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION)
+		Stop
+	}
+}
+
+Actor BFGScorch : FloorDecal
+{
+
+	RenderStyle Shaded
+	StencilColor "Black"
+
+	States
+	{
+	
+	Spawn:
+		TNT1 A 0
+		TNT1 A 0 A_SpawnItemEX("BFGLightning", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION)
+		NULL A 2100
+		NULL AAAAAAAAAA 1 A_FadeOut(0.1)
+		Stop
+		
+	}
+}
+
+Actor BFGLightning : RandomSpawner
+{
+	DropItem "BFGLightning1"
+	DropItem "BFGLightning2"
+}
+
+Actor BFGLightning1 : FloorDecal
+{
+
+	RenderStyle Shaded
+	StencilColor "80 ff 80"
+
+	States
+	{
+	
+	Spawn:
+		TNT1 A 0
+		NULL A 35
+		NULL AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA 1 A_FadeOut(0.014)
+		Stop
+		
+	}
+}
+
+Actor BFGLightning2 : BFGLightning
+{
+	States
+	{
+	
+	Spawn:
+		TNT1 A 0
+		NULL A 35
+		NULL AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA 1 A_FadeOut(0.014)
+		Stop
+		
+	}
+}
