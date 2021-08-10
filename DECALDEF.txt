@@ -1,15 +1,3 @@
-fader FadeOut
-{
-	DecayStart	0.5
-	DecayTime	1.0
-}
-
-Fader FadeOut2
-{
-	DecayStart	1.0
-	DecayTime	3.0
-}
-
 Decal ChipDecal
 {
 	Pic BulletDecal
@@ -29,7 +17,7 @@ Decal ShellDecal
 {
 	Pic ShtGunDecal2
 	Add 1
-	Animator FadeOut
+	Animator GoAway
 	Shade "FF 34 03"
 	RandomFlipY RandomFlipX
 	FullBright
