@@ -130,7 +130,6 @@ actor DERocketLauncher : RocketLauncher replaces RocketLauncher
 actor DERocket : Rocket replaces Rocket
 {
   +ForceXYBillBoard
-  -RocketTrail
   States
   {
   Spawn:
@@ -143,7 +142,7 @@ actor DERocket : Rocket replaces Rocket
 	}
     Loop
   Death:
-	TNT0 A 0 A_SpawnItemEx("ScorchFloorCheck", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION)
+	TNT1 A 0 A_SpawnItemEx("ScorchFloorCheck", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION)
 	BAL2 C 4 Bright 
 	{
 		A_Explode;
