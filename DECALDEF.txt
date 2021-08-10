@@ -67,8 +67,8 @@ decal PlasmaScorchLower1
 {
 	pic PLASMA1
 	shade "00 00 00"
-	x-scale 0.5
-	y-scale 0.5
+	x-scale 0.6
+	y-scale 0.6
 	randomflipx
 	randomflipy
 }
@@ -86,8 +86,8 @@ decal PlasmaScorchLower2
 {
 	pic PLASMA2
 	shade "00 00 00"
-	x-scale 0.5
-	y-scale 0.5
+	x-scale 0.6
+	y-scale 0.6
 	randomflipx
 	randomflipy
 }
