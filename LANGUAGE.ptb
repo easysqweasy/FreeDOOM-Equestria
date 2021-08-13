@@ -30,6 +30,7 @@ QUITMSG7 = "Vai, pode ir embora. Tô nem aí.";
 QUITMSG10 = "Se manda daqui e\nvolte para o seu\ndesenho animado infantil";
 QUITMSG13 = "Só vá embora.\nQuando você voltar, vai ter uma \nmorcega safada te esperando!";
 
+CC_ZOMBIE = "Zumbi Pônei";
 /*
 CC_ZOMBIE = "Soldado Possuído";
 CC_SHOTGUN = "Sargento Possuído";
