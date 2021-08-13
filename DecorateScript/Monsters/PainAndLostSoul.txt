@@ -80,6 +80,7 @@ Actor EquestriaPain : PainElemental replaces PainElemental
 {
 	Species "PainSoul"
 	FloatBobStrength 0.5
+	PainChance 100
 	
 	+FLOATBOB
 	+FORCEXYBILLBOARD
@@ -87,6 +88,7 @@ Actor EquestriaPain : PainElemental replaces PainElemental
 	
 	States
 	{
+
 	Death:
 		PAIN H 8 Bright
 		PAIN I 8 Bright A_Scream
