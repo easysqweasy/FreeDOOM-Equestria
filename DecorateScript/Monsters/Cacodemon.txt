@@ -14,8 +14,9 @@ actor EquestriaCacodemon : Cacodemon replaces Cacodemon
 		HEAD ABC 2 A_Chase
 		HEAD D 3 A_Chase
 		HEAD DC 3 A_FaceTarget
-		HEAD C 3 A_Recoil(-6)
+		HEAD C 3 A_Recoil(-10)
 		HEAD B 4 A_CustomMeleeAttack(10 * random(1, 6))
+		HEAD B 0 A_Stop
 		Goto See
 	
 	Missile:
