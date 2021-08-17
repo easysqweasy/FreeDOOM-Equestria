@@ -11,7 +11,7 @@ See "CREDITS.txt" for more detailed credits;
 
 = Main idea by Isaac Pony, Reformulated by Ragedox =
 
-= Owners =
+= Project Lead =
 IsaacPony
 Ragedox
 
