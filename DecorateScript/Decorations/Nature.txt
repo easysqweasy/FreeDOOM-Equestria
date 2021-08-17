@@ -173,4 +173,30 @@ States
     tre2 D -1
     Stop
   }
-}	
+}
+
+Actor BaseFire 
+{
+	RenderStyle Add
+	DamageType Fire
+}
+
+Actor SmallFire1 : BaseFire
+{
+	States
+	{
+	Spawn:
+		FIR2 ABC 4 Bright
+		Loop
+	}
+}
+
+Actor SmallFire2 : BaseFire
+{
+	States
+	{
+	Spawn:
+		FIR3 ABC 4 Bright
+		Loop
+	}
+}
