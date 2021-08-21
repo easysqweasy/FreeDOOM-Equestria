@@ -135,27 +135,29 @@ actor Broom : Weapon 90
 
 actor BroomProjectile
 {
-  PROJECTILE
-  +NOEXTREMEDEATH
-  +FORCEXYBILLBOARD
-  -NOGRAVITY
-  -NOICEDEATH
-  Radius 10
-  Height 20
-  Speed 40
-  Damage 8
-  States
-  {
-  Spawn:
-	//TNT1 A 0 A_SpawnItemEx ("BroomMotion", 0, 0, 0)
-	BROM BCDC 2
-	Loop
-  Death:
-    BBRK ABCDE 1 A_NoBlocking
-	BBRK FGHIJ 1 A_UnSetShootable
-	BBRK K -1 A_SetFloorClip
-	Stop
-  }
+	PROJECTILE
+	+NOEXTREMEDEATH
+	+FORCEXYBILLBOARD
+	-NOGRAVITY
+	-NOICEDEATH
+	
+	ProjectileKickBack 100
+	Radius 10
+	Height 20
+	Speed 40
+	Damage 8
+	States
+	{
+	Spawn:
+		//TNT1 A 0 A_SpawnItemEx ("BroomMotion", 0, 0, 0)
+		BROM BCDC 2
+		Loop
+	Death:
+		BBRK ABCDE 1 A_NoBlocking
+		BBRK FGHIJ 1 A_UnSetShootable
+		BBRK K -1 A_SetFloorClip
+		Stop
+	}
 }
 
 
