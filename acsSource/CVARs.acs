@@ -10,3 +10,6 @@ script "ShakeToggle" (void)
 {
     SetResultValue(GetCVar("ShakeToggle"));
 }
+
+////Classic Weapons
+//ragedox is lazy
