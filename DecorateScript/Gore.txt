@@ -100,10 +100,9 @@ actor GibGoreBase : DebrisGeneral
 	
 	+FORCEXYBILLBOARD
   
-	+DOOMBOUNCE
 	+BOUNCEONFLOORS
 	+BOUNCEONACTORS
-	
+	BounceType Doom
 	BounceFactor 0.25
 	
 	+NOTELEPORT
