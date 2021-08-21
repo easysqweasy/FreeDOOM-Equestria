@@ -145,6 +145,9 @@ actor BarrelTiny : BarrelDebris
 	Radius 5
 	Mass 25
 	Speed 15
+	
+	BounceFactor 0.75
+	
 	States
 	{
 	
