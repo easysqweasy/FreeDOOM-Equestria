@@ -63,19 +63,22 @@ ACTOR DEExploBarrel : ExplosiveBarrel replaces ExplosiveBarrel
 
 actor BarrelDebris : DebrisGeneral
 {
-  Radius 10
-  Height 10
-  +MISSILE
-  +BOUNCEONWALLS
-  +BOUNCEONCEILINGS
-  +BOUNCEONFLOORS
-  +BOUNCEONACTORS
-  Mass 50
-  Speed 10
-  BounceCount 5
-  BounceType Doom
-  States
-  {
+	Radius 10
+	Height 10
+	Mass 50
+	Speed 10
+  
+	+MISSILE
+	
+	+DOOMBOUNCE
+	+BOUNCEONWALLS
+	+BOUNCEONCEILINGS
+	+BOUNCEONFLOORS
+	+BOUNCEONACTORS
+	
+	BounceFactor 0.5
+	States
+	{
 	Spawn:
 		EXD1 A 4
 		{
