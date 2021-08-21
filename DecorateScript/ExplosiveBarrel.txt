@@ -76,32 +76,33 @@ actor BarrelDebris : DebrisGeneral
   BounceType Doom
   States
   {
-  Spawn:
-	EXD1 A 4
-	{
-		A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1));
-		A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1));
-	}
-	EXD1 B 4
-	{
-		A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1));
-		A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1));
-	}
-	EXD1 C 4
-	{
-		A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1));
-		A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1));
-	}
-	EXD1 D 4
-	{
-		A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1));
-		A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1));
-	}
-	Loop
-  Death:
-	EXD1 "#" 350
-	EXD1 "##########" 1 A_FadeOut(0.1, FTF_REMOVE)
-	Wait
+	Spawn:
+		EXD1 A 4
+		{
+			A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1));
+			A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1));
+		}
+		EXD1 B 4
+		{
+			A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1));
+			A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1));
+		}
+		EXD1 C 4
+		{
+			A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1));
+			A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1));
+		}
+		EXD1 D 4
+		{
+			A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1));
+			A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1));
+		}
+		Loop
+	
+	Death:
+		EXD1 "#" 350
+		EXD1 "##########" 1 A_FadeOut(0.1, FTF_REMOVE)
+		Wait
   }
 }
 
@@ -109,32 +110,33 @@ actor BarrelDebris2 : BarrelDebris
 {
   States
   {
-  Spawn:
-	EXD2 A 4
-	{
+	Spawn:
+		EXD2 A 4
+		{
+			A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1));
+			A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1));
+		}
+		EXD2 B 4
+		{
+			A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1));
+			A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1));
+		}
+		EXD2 C 4
+		{
 		A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1));
-		A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1));
-	}
-	EXD2 B 4
-	{
-		A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1));
-		A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1));
-	}
-	EXD2 C 4
-	{
-		A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1));
-		A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1));
-	}
-	EXD2 D 4
-	{
-		A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1));
-		A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1));
-	}
-	Loop
-  Death:
-	EXD2 "#" 350
-	EXD2 "##########" 1 A_FadeOut(0.1, FTF_REMOVE)
-	Wait
+			A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1));
+		}
+		EXD2 D 4
+		{
+			A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1));
+			A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1));
+		}
+		Loop
+		
+	Death:
+		EXD2 "#" 350
+		EXD2 "##########" 1 A_FadeOut(0.1, FTF_REMOVE)
+		Wait
   }
 }
 
