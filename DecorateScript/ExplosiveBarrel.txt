@@ -140,35 +140,37 @@ actor BarrelDebris2 : BarrelDebris
 
 actor BarrelTiny : BarrelDebris
 {
-  Scale 0.5
-  Height 5
-  Radius 5
-  Mass 25
-  Speed 15
-  BounceCount 10
-  BounceType Doom
-  States
-  {
-  Spawn:
-	EXD1 ABCD 2
-	Loop
-  Death:
-	EXD1 "#" 350
-	EXD1 "##########" 1 A_FadeOut(0.1, FTF_REMOVE)
-	Wait
+	Scale 0.5
+	Height 5
+	Radius 5
+	Mass 25
+	Speed 15
+	States
+	{
+	
+	Spawn:
+		EXD1 ABCD 2
+		Loop
+	
+	Death:
+		EXD1 "#" 350
+		EXD1 "##########" 1 A_FadeOut(0.1, FTF_REMOVE)
+		Wait
   }
 }
 
 actor BarrelTiny2 : BarrelTiny
 {
-  States
-  {
-  Spawn:
-	EXD2 ABCD 2
-	Loop
-  Death:
-	EXD2 "#" 350
-	EXD2 "##########" 1 A_FadeOut(0.1, FTF_REMOVE)
-	Wait
+	States
+	{
+	
+	Spawn:
+		EXD2 ABCD 2
+		Loop
+	
+	Death:
+		EXD2 "#" 350
+		EXD2 "##########" 1 A_FadeOut(0.1, FTF_REMOVE)
+		Wait
   }
 }
