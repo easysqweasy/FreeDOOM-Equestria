@@ -122,19 +122,6 @@ ACTOR SoulSphereHealth : Health
 	+INVENTORY.ALWAYSPICKUP
 }
 
-/*ACTOR DESoulSphere : SoulSphere replaces SoulSphere
-{
-  +FLOATBOB
-  +NOGRAVITY
-  +FORCEXYBILLBOARD
-  States
-  {
-  Spawn:
-	SOUL ABCDCBA 6 Bright
-	Loop
-  }
-}*/
-
 //MegaSphere
 
 ACTOR DEMegaSphere : CustomInventory replaces Megasphere
@@ -159,18 +146,6 @@ ACTOR DEMegaSphere : CustomInventory replaces Megasphere
 	Stop
   }
 }
-
-/*ACTOR DEMegaSphere : MegaSphere replaces Megasphere
-{
-  +FLOATBOB
-  +NOGRAVITY
-  +FORCEXYBILLBOARD
-  States
-  {
-  Spawn:
-	MEGA ABCDCBA 6 Bright
-  }
-}*/
 
 //Berserk
 
