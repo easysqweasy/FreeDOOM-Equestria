@@ -1,3 +1,5 @@
 user int BobToggle = 1;
 user int ShakeToggle = 1;
 user int AuraToggle = 1;
+
+//To do:individual choices of classic weapons
