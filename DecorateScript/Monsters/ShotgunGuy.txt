@@ -18,7 +18,7 @@ ACTOR ShotgunPony : ShotgunGuy replaces ShotgunGuy
   States
   {
   Spawn:
-    SPOS AB 10 A_Look
+    SPOS A 10 A_Look
     Loop
   See:
     SPOS AABBCCDD 3 A_Chase
