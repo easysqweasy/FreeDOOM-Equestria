@@ -70,13 +70,13 @@ actor BarrelDebris : DebrisGeneral
   
 	+MISSILE
 	
-	+DOOMBOUNCE
 	+BOUNCEONWALLS
 	+BOUNCEONCEILINGS
 	+BOUNCEONFLOORS
 	+BOUNCEONACTORS
-	
+	BounceType Doom
 	BounceFactor 0.5
+	
 	States
 	{
 	Spawn:
