@@ -170,6 +170,7 @@ terrain DoomSizzle
 	allowprotection
 }
 
+/*
 //water
 floor fwater1 DoomWater
 floor fwater2 DoomWater
@@ -182,7 +183,7 @@ floor lava2 DoomLava
 floor lava3 DoomLava
 floor lava4 DoomLava
 
-/*
+
 //blood
 floor blood1 DoomBlood
 floor blood2 DoomBlood
