@@ -1,0 +1,9 @@
+Decal BlueSign 1
+{
+	pic BlueSign
+}
+
+Decal GreenSign 2
+{
+	pic GreenSign
+}
