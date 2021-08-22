@@ -170,18 +170,11 @@ terrain DoomSizzle
 	allowprotection
 }
 
-
-//terrains are assigned to flats here
-//follow this template to add terrain support to your custom flats
-
 //water
 floor fwater1 DoomWater
 floor fwater2 DoomWater
 floor fwater3 DoomWater
 floor fwater4 DoomWater
-
-//sludge
-//(note that Heretic's sludge doesn't really fit any stock Doom flats, but it's included in case you want it for custom flats
 
 //lava
 floor lava1 DoomLava
@@ -189,6 +182,7 @@ floor lava2 DoomLava
 floor lava3 DoomLava
 floor lava4 DoomLava
 
+/*
 //blood
 floor blood1 DoomBlood
 floor blood2 DoomBlood
@@ -220,3 +214,4 @@ floor slime09 DoomSizzle
 floor slime10 DoomSizzle
 floor slime11 DoomSizzle
 floor slime12 DoomSizzle
+/*
