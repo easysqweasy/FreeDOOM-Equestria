@@ -35,18 +35,21 @@ pic Lava1 tics 8
 pic Lava1 tics 8
 
 warp flat NUKAGE1 0.25
+warp flat NUKAGE2 0.25
+warp flat NUKAGE3 0.25
+warp flat NUKAGE4 0.25
 flat NUKAGE1
-pic NUKAGE1 tics 8
-pic NUKAGE1 tics 8
-pic NUKAGE1 tics 8
+pic NUKAGE2 tics 8
+pic NUKAGE2 tics 8
+pic NUKAGE2 tics 8
 flat NUKAGE2
-pic NUKAGE1 tics 8
-pic NUKAGE1 tics 8
-pic NUKAGE1 tics 8
+pic NUKAGE2 tics 8
+pic NUKAGE2 tics 8
+pic NUKAGE2 tics 8
 flat NUKAGE3
-pic NUKAGE1 tics 8
-pic NUKAGE1 tics 8
-pic NUKAGE1 tics 8
+pic NUKAGE2 tics 8
+pic NUKAGE2 tics 8
+pic NUKAGE2 tics 8
 
 warp flat SFALL1 0.50
 warp flat SFALL2 0.50
