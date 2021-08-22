@@ -181,7 +181,8 @@ Actor PlasmaScorch : RandomSpawner
 
 Actor PlasmaScorch1 : FloorDecal
 {
-
+	+BRIGHT
+	
 	RenderStyle Add
 
 	States
@@ -198,6 +199,7 @@ Actor PlasmaScorch1 : FloorDecal
 
 Actor PlasmaScorch2 : PlasmaScorch1
 {
+	
 	States
 	{
 	
@@ -260,7 +262,9 @@ Actor BFGLightning : RandomSpawner
 
 Actor BFGLightning1 : FloorDecal
 {
-
+	
+	+BRIGHT
+	
 	RenderStyle Shaded
 	StencilColor "80 ff 80"
 
