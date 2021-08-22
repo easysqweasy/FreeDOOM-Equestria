@@ -53,6 +53,7 @@ Script "BossHealthBar" (void)
     restart;
 }
 
+/*
 Script "BaronBrothersHealthBar" (void)
 {
 	int hdisp;
@@ -113,9 +114,6 @@ Script "BaronBrothersHealthBar" (void)
 	
 	SetHudSize (300,200, 0);
     HudMessageBold (i:BossHealth2; 0, 0, CR_WHITE, 148.0, 19.0, 0.1, 1.0);
-	
-	int acounter;
-    int bcounter;
 
 	for (acounter = 0; acounter <= hdisp2; acounter++)
     {
@@ -141,7 +139,7 @@ Script "BaronBrothersHealthBar" (void)
 	
 	if (BossHealth2 > 1)
     restart;
-}
+}*/
 
 Script "BaronBrother1" (Void)
 {
