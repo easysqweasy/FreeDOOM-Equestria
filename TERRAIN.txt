@@ -1,171 +1,231 @@
-//water splash
-splash DoomWater
+//Red Blood Splash
+
+splash Blood
 {
-   smallclass     	WaterSplashBase
-   smallclip		0
-   smallsound     	world/drip
+	smallclass		DEBloodBase
+	smallclip		10
+	smallsound		world/sludgegloopsmall
 
-   baseclass      	WaterSplashBase
-   chunkclass     	WaterSplash
-   sound          	world/watersplash
-   noalert
-}
-
-terrain DoomWater
-{
-	splash			DoomWater
-	footclip		10
-	liquid
-}
-
-
-//sludge splash
-splash DoomSludge
-{
-	smallclass		SludgeSplash
-	smallclip		0
-	smallsound		world/sludgegloop
-
-	baseclass		SludgeSplash
-	chunkclass		SludgeChunk
+	baseclass		DEBloodBase
+	chunkclass		DEBloodChunk
+	chunkxvelshift	6
+	chunkyvelshift	6
+	chunkzvelshift	6
+	chunkbasezvel	2
 	sound			world/sludgegloop
-	noalert
+	NoAlert
 }
 
-terrain DoomSludge
+//Lava Splash
+
+splash Lava
 {
-	splash			DoomSludge
-	footclip		10
-	liquid
-	
-	damageamount	5
-	damagetype		slime
-	damagetimemask	31
-	allowprotection
-}
+	smallclass		DELavaBase
+	smallclip		12
+	smallsound		world/lavasizzlesmall
 
-
-//lava
-splash DoomLava
-{
-	smallclass		LavaSplash
-	smallclip		0
-	smallsound		world/lavasizzle
-
-	baseclass		LavaSplash
-	chunkclass		LavaSmoke
+	baseclass		DELavaBase
+	chunkclass		DELavaSmoke
 	chunkxvelshift	-1
 	chunkyvelshift	-1
 	chunkzvelshift	7
 	chunkbasezvel	1
 	sound			world/lavasizzle
-	noalert
+	NoAlert
 }
 
-terrain DoomLava
+//Lava Smoke Only Splash
+
+splash LavaSmoke
 {
-	splash			DoomLava
-	footclip		10
-	liquid
-	
-	damageamount	10
-	damagetype		lava
-	damagetimemask	31
-	allowprotection
+	smallclass		DELavaSmokeOnly
+	smallclip		12
+	smallsound		world/lavsiz2
+
+	baseclass		DELavaSmokeOnly
+	chunkclass		DELavaSmokeOnly
+	chunkxvelshift	-1
+	chunkyvelshift	-1
+	chunkzvelshift	7
+	chunkbasezvel	1
+	sound			world/lavsiz2
+	NoAlert
 }
 
+//Nukage Green and Smokey
 
-//blood
-splash DoomBlood
+splash Nuke
 {
-	smallclass		BloodSplashBase
-	smallclip		0
-	smallsound		world/drip
+	smallclass		DENukageBase
+	smallclip		6
+	smallsound		world/lavasizzlesmall
 
-	baseclass		BloodSplashBase
-	chunkclass		BloodSplash
+	baseclass		DENukageBase
+	chunkclass		DENukageSmoke
+	chunkxvelshift	-1
+	chunkyvelshift	-1
+	chunkzvelshift	7
+	chunkbasezvel	1
+	sound			world/lavasizzle
+	NoAlert
+}
+
+//Slime Brown Splash
+
+splash SlimeBrown
+{
+	smallclass		DESlimeBrownBase
+	smallclip		6
+	smallsound		world/sludgegloopsmall
+
+	baseclass		DESlimeBrownBase
+	chunkclass		DESlimeBrownChunk
+	chunkxvelshift	6
+	chunkyvelshift	6
+	chunkzvelshift	6
+	chunkbasezvel	2
+	sound			world/sludgegloop
+	NoAlert
+}
+
+//Sludge Greeny-Brown Splash
+
+splash SludgeGreenBrown
+{
+	smallclass		DESludgeBase
+	smallclip		8
+	smallsound		world/sludgegloopsmall
+
+	baseclass		DESludgeBase
+	chunkclass		DESludgeChunk
+	chunkxvelshift	5
+	chunkyvelshift	5
+	chunkzvelshift	5
+	chunkbasezvel	2
+	sound			world/sludgegloop
+	NoAlert
+}
+
+//Water Splash
+
+splash Water
+{
+	smallclass		DEWaterSplashBase
+	smallclip		12
+	smallsound		world/watersplashsmall
+
+	baseclass		DEWaterSplashBase
+	chunkclass		DEWaterSplashChunk
+	chunkxvelshift	8
+	chunkyvelshift	8
+	chunkzvelshift	8
+	chunkbasezvel	2
 	sound			world/watersplash
-	noalert
+	NoAlert
 }
 
-terrain DoomBlood
+
+//Terrains
+
+//dull red blood
+terrain Blood
 {
-	splash			DoomBlood
+	splash			Blood
+	footclip		10
+	liquid
+}
+
+//smokey lava
+terrain Lava
+{
+	splash			Lava
+	footclip		10
+	liquid
+}
+
+//just smoke
+terrain LavaSmoke
+{
+	splash			LavaSmoke
+	footclip		0
+	liquid
+}
+
+//bright green and smoke
+terrain Nuke
+{
+	splash			Nuke
+	footclip		10
+	liquid
+}
+
+//brown and gloopy
+terrain SlimeBrown
+{
+	splash			SlimeBrown
+	footclip		10
+	liquid
+}
+
+//greeny brown and gloopy
+terrain SludgeGreenBrown
+{
+	splash			SludgeGreenBrown
+	footclip		10
+	liquid
+}
+
+//normal water
+terrain Water
+{
+	splash			Water
 	footclip		10
 	liquid
 }
 
 
-//nukage slime
-splash DoomSlime
-{
-   smallclass      	SlimeSplash
-   smallclip     	0
-   smallsound      	world/sludgegloop
 
-   baseclass      	SlimeSplash
-   chunkclass      	SlimeChunk
-   sound         	world/sludgegloop
-   noalert
-}
+//Floors
 
-terrain DoomSlime
-{
-	splash			DoomSlime
-	footclip		10
-	liquid
-	
-	damageamount	5
-	damagetype		slime
-	damagetimemask	31
-	allowprotection
-}
+floor BLOOD1 Blood
+floor BLOOD2 Blood
+floor BLOOD3 Blood
 
+floor FWATER1 Water
+floor FWATER2 Water
+floor FWATER3 Water
+floor FWATER4 Water
 
-//brown muddy slime; based off sludge
-splash DoomMud
-{
-   smallclass      	MudSplash
-   smallclip      	0
-   smallsound      	world/sludgegloop
+floor LAVA1 Lava
+floor LAVA2 Lava
+floor LAVA3 Lava
+floor LAVA4 Lava
 
-   baseclass      	MudSplash
-   chunkclass      	MudChunk
-   sound         	world/sludgegloop
-   noalert
-}
+floor NUKAGE1 Nuke
+floor NUKAGE2 Nuke
+floor NUKAGE3 Nuke
+floor NUKAGE4 Nuke
 
-terrain DoomMud
-{
-	splash			DoomMud
-	footclip		10
-	liquid
-}
+floor RROCK01 LavaSmoke
 
+floor RROCK02 LavaSmoke
 
-//sizzle effect for "hot" floors, like the glowing rock textures
-splash DoomSizzle
-{
-	smallclass		LavaSmoke
-	smallclip		0
-	smallsound		world/lavasizzle
+floor RROCK05 LavaSmoke
+floor RROCK06 LavaSmoke
+floor RROCK07 LavaSmoke
+floor RROCK08 LavaSmoke
 
-	baseclass		LavaSmoke
-	chunkclass		none
-	chunkxvelshift	-1
-	chunkyvelshift	-1
-	chunkzvelshift	7
-	chunkbasezvel	1
-	sound			world/lavasizzle
-	noalert
-}
+floor SLIME01 SlimeBrown
+floor SLIME02 SlimeBrown
+floor SLIME03 SlimeBrown
+floor SLIME04 SlimeBrown
 
-terrain DoomSizzle
-{
-	splash			DoomSizzle
-		
-	damageamount	5
-	damagetype		lava
-	damagetimemask	31
-	allowprotection
-}
+floor SLIME05 SlimeBrown
+floor SLIME06 SlimeBrown
+floor SLIME07 SlimeBrown
+floor SLIME08 SlimeBrown
+
+floor SLIME09 LavaSmoke
+floor SLIME10 LavaSmoke
+floor SLIME11 LavaSmoke
+floor SLIME12 LavaSmoke
