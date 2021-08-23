@@ -1,58 +1,93 @@
 ACTOR ShotgunPony : ShotgunGuy replaces ShotgunGuy
 {
-  Health 30
-  Radius 20
-  Height 56
-  Mass 100
-  Speed 8
-  PainChance 170
-  Monster
-  +FLOORCLIP
-  SeeSound "shotguy/sight"
-  AttackSound "shotguy/attack"
-  PainSound "shotguy/pain"
-  DeathSound "shotguy/death"
-  ActiveSound "shotguy/active"
-  Obituary "$OB_SHOTGUY"
-  DropItem "DEShotgun"
-  States
-  {
-  Spawn:
-    SPOS A 10 A_Look
-    Loop
-  See:
-    SPOS AABBCCDD 3 A_Chase
-    Loop
-  Missile:
-    SPOS E 10 A_FaceTarget
-    SPOS F 10 Bright A_SPosAttackUseAtkSound
-    SPOS E 10
-    Goto See
-  Pain:
-    SPOS G 3
-    SPOS G 3 A_Pain
-    Goto See
-  Death:
-    SPOS H 5
-    SPOS I 5 A_Scream
-    SPOS J 5 A_NoBlocking
-    SPOS K 5
-    SPOS L -1
-    Stop
-  XDeath:
-    SPOS M 3
-    SPOS N 5 
+	Health 30
+	Radius 20
+	Height 56
+	Mass 100
+	Speed 8
+	PainChance 170
+	
+	Monster
+	
+	+FLOORCLIP
+	
+	SeeSound "shotguy/sight"
+	AttackSound "shotguy/attack"
+	PainSound "shotguy/pain"
+	DeathSound "shotguy/death"
+	ActiveSound "shotguy/active"
+	
+	Obituary "$OB_SHOTGUY"
+	
+	DropItem "DEShotgun"
+	
+	States
 	{
-		A_CustomMissile(XDeathGoreSpawn, 2);
-		A_XScream;
-	}
-    SPOS O 3 A_NoBlocking
-    SPOS PQRST 3
-    SPOS U -1
-    Stop
-  Raise:
-    SPOS L 5
-    SPOS KJIH 5
-    Goto See
-  }
+	
+	Spawn:
+		SPOS A 10 A_Look
+		Loop
+	
+	See:
+		SPOS AABBCCDD 3 A_Chase
+		Loop
+	
+	Missile:
+		SPOS E 10 A_FaceTarget
+		SPOS F 10 Bright A_SPosAttackUseAtkSound
+		SPOS E 10
+		Goto See
+	
+	Pain:
+        SPOS G 3
+        SPOS G 3 A_Pain
+        Goto See
+	
+	Death:
+        SPOS H 5
+        SPOS I 5 A_Scream
+        SPOS J 5 A_NoBlocking
+        SPOS K 5
+        SPOS L -1
+        Stop
+    
+	XDeath:
+        SPOS M 3
+        SPOS N 5 
+		{
+			A_CustomMissile(XDeathGoreSpawn, 2);
+			A_XScream;
+		}
+        SPOS O 3 A_NoBlocking
+        SPOS PQRST 3
+        SPOS U -1
+        Stop
+    
+	Death.Berserk:
+		POSS H 0 ThrustThingZ(0,30,0,1)
+		POSS H 5
+        POSS I 5
+        POSS J 5 A_NoBlocking
+        POSS K 5
+        POSS L -1
+        Stop
+	
+	XDeath.Berserk:
+        POSS H 0 ThrustThingZ(0,30,0,1)
+		POSS M 3
+        POSS N 5
+		{
+			A_CustomMissile(XDeathGoreSpawn, 2);
+			A_XScream;
+		}
+        POSS O 3 A_NoBlocking
+        POSS PQRST 3
+        POSS U -1
+        Stop
+		
+	Raise:
+        SPOS L 5
+        SPOS KJIH 5
+        Goto See
+    }
 }
