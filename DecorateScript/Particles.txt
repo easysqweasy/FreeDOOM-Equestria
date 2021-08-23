@@ -119,7 +119,7 @@ ACTOR DERocketSmoke : RocketSmokeTrail replaces RocketSmokeTrail
   States
   {
   Spawn:
-    RSMK ABCDE 4 A_FadeOut(0.1)
+    RSMK AAAABBBBCCCCDDDDEEEE 1 A_FadeOut(0.05)
 	//RSMK DDEEE 5 A_FadeOut(0.1)
     Stop
   }
