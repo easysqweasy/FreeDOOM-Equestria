@@ -1,8 +1,12 @@
 # DOOM Equestria for GZDoom*
 
+This is the **development** version, so it may contain bugs and errors;
+**Updates** can happen at **any time**, this version does ***NOT represent*** the final version;
+
+# Running
+
 **Make sure you are using GZDoom 4.6.0 or later**
-This is the development version, so it may contain bugs and errors;
-Updates can happen at any time, this version does NOT represent the final version;
+Download repository as a ZIP file and drag it over gzdoom.exe.
 
 # Credits
 See "CREDITS.txt" for more detailed credits;
@@ -37,7 +41,3 @@ IsaacPony: https://twitter.com/isaac_pony
 Ragedox: https://twitter.com/TheRagedox
 
 Discord Server: https://discord.gg/xgzkMmayMz
-
-# Running
-
-Download repository as a ZIP file and drag it over gzdoom.exe.
