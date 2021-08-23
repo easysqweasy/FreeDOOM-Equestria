@@ -65,7 +65,9 @@ ACTOR ZombiePony : ZombieMan Replaces ZombieMan
         Stop
 	
 	XDeath.Berserk:
-        POSS M 3
+		POSS H 0 ThrustThingZ(0,30,0,1)
+		
+		POSS M 3
         POSS N 5
 		{
 			A_CustomMissile(XDeathGoreSpawn, 2);
