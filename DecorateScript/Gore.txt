@@ -276,11 +276,11 @@ actor GibGore5 : GibGoreBase
 
 actor BigGibGore1 : GibGoreBase
 {
-  Speed 15
-  Mass 10
-  BounceFactor 0.5
-  States
-  {
+	Speed 15
+	Mass 10
+	BounceFactor 0.5
+	States
+	{
   Spawn:
 	BGOR AB 4 A_SpawnItemEX(EquestriaBlood,random(-2,-2),random(-2,2),random(-2,2))
 	BGOR CD 4 A_SpawnItemEX(EquestriaBlood,random(-2,-2),random(-2,2),random(-2,2))
@@ -310,32 +310,3 @@ actor BigGibGore2 : BigGibGore1
 	Wait
   }
 }
-/*actor XDeathGoreSpawn : GibGoreBase
-{
-  States
-  {
-  Spawn:
-	TNT1 A 1
-	{
-		A_SpawnItemEX(GibGore1, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
-		A_SpawnItemEX(GibGore2, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
-		A_SpawnItemEX(GibGore2, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
-		A_SpawnItemEX(GibGore2, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
-		A_SpawnItemEX(GibGore3, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
-		A_SpawnItemEX(GibGore3, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
-		A_SpawnItemEX(GibGore4, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
-		A_SpawnItemEX(GibGore4, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
-		A_SpawnItemEX(GibGore4, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
-		A_SpawnItemEX(GibGore4, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
-		A_SpawnItemEX(GibGore4, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
-		A_SpawnItemEX(GibGore4, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
-		A_SpawnItemEX(GibGore4, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
-		A_SpawnItemEX(GibGore5, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
-		A_SpawnItemEX(GibGore5, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
-		A_SpawnItemEX(GibGore5, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
-		A_SpawnItemEX(GibGore5, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
-		A_SpawnItemEX(GibGore5, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
-	}
-	Stop
-  }
-}*/
