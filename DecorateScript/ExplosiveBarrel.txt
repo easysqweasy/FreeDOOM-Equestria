@@ -6,6 +6,8 @@ ACTOR DEExploBarrel : ExplosiveBarrel replaces ExplosiveBarrel
   States
   {
   Spawn:
+	TNT1 A 0 A_ChangeFlag("SPRITEFLIP", random(0,1))
+	
     BAR1 AB 8
     Loop
   Death:
@@ -80,6 +82,8 @@ actor BarrelDebris : DebrisGeneral
 	States
 	{
 	Spawn:
+		TNT1 A 0 A_ChangeFlag("SPRITEFLIP", random(0,1))
+		
 		EXD1 A 4
 		{
 			A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1));
@@ -114,6 +118,8 @@ actor BarrelDebris2 : BarrelDebris
   States
   {
 	Spawn:
+		TNT1 A 0 A_ChangeFlag("SPRITEFLIP", random(0,1))
+		
 		EXD2 A 4
 		{
 			A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1));
@@ -157,6 +163,8 @@ actor BarrelTiny : BarrelDebris
 	{
 	
 	Spawn:
+		TNT1 A 0 A_ChangeFlag("SPRITEFLIP", random(0,1))
+		
 		EXD1 ABCD 2
 		Loop
 	
@@ -173,6 +181,8 @@ actor BarrelTiny2 : BarrelTiny
 	{
 	
 	Spawn:
+		TNT1 A 0 A_ChangeFlag("SPRITEFLIP", random(0,1))
+		
 		EXD2 ABCD 2
 		Loop
 	
