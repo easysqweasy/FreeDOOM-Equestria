@@ -6,6 +6,14 @@ actor EquestriaImp : DoomImp Replaces DoomImp
 		IDLI AB 10 A_Look
 		Loop
 
+	Death:
+		TROO I 5
+		TROO J 5 A_Scream
+		TROO K 5 A_NoBlocking
+		TROO L 5 
+		TROO M -1
+        Stop
+		
 	XDeath:
 		TROO N 3
 		TROO O 5 
@@ -13,11 +21,34 @@ actor EquestriaImp : DoomImp Replaces DoomImp
 			A_CustomMissile(XDeathGoreSpawn, 2);
 			A_XScream;
 		}
-		TROO P 3
-		TROO Q 3 A_NoBlocking
-		TROO RST 3
+		TROO P 3 A_NoBlocking
+		TROO QRST 3
 		TROO U -1
 		Stop
+	
+	Death.Berserk:
+		TROO H 0 ThrustThingZ(0,30,0,1)
+		
+		TROO I 5
+		TROO J 5
+		TROO K 5 A_NoBlocking
+		TROO L 5 
+		TROO M -1
+        Stop
+	
+	XDeath.Berserk:
+        TROO H 0 ThrustThingZ(0,30,0,1)
+		
+		TROO M 3
+        TROO N 5
+		{
+			A_CustomMissile(XDeathGoreSpawn, 2);
+			A_XScream;
+		}
+        TROO P 3 A_NoBlocking
+		TROO QRST 3
+		TROO U -1
+        Stop
   }
 }
 
