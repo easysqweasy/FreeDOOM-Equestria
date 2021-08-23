@@ -121,3 +121,18 @@ Glow
 	}
 	Texture "CRACKLE3", Yellow, 15
 }
+
+Glow
+{
+	Flats
+	{
+		NUKWALK1
+		NUKWALK2
+		NUKWALK3
+		NUKWALK4
+	}
+	Texture "NUKWALK1", Green, 5, fullbright
+	Texture "NUKWALK2", Green, 5, fullbright
+	Texture "NUKWALK3", Green, 5, fullbright
+	Texture "NUKWALK4", Green, 5, fullbright
+}
