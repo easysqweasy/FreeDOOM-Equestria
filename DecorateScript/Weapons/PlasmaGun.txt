@@ -149,6 +149,8 @@ actor DEPlasmaGun : PlasmaRifle replaces PlasmaRifle
 
 actor DEPlasmaBall : PlasmaBall replaces PlasmaBall
 {
+	DamageType Plasma
+	
 	Radius 8
 	Height 13
 	Alpha 0.75
