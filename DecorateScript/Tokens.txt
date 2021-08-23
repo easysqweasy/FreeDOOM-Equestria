@@ -4,8 +4,5 @@ Actor DeadCheck : Inventory
 Actor KickCheck : Inventory
 {	Inventory.MaxAmount 1	}
 
-Actor HCheck : Inventory
-{	Inventory.MaxAmount 1	}
-
 Actor LowHealthCheck : Inventory
 {	Inventory.MaxAmount 1	}
