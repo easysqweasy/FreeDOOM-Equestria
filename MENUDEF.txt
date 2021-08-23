@@ -16,6 +16,12 @@ StaticText "$WIPWARNING", "yellow"
 StaticText "$FOVTOGGLE"
 StaticText ""
 StaticText ""
+
+StaticText "$GRAPHICSSETTINGS", "Brick"
+StaticText ""
+
+Option "$Projectile Trails", "ProjectileTrails", "MissileTrails"
+
 /*
 StaticText "$HIRESETTINGS", "Brick"
 StaticText "$HIRESWARNING", "White"
@@ -26,6 +32,13 @@ Option "Hi-Res Quality Pickups", "HDPickToggle", "onoff"
 Option "Hi-Res Projectiles", "HDProjectileToggle", "onoff"*/
 }
 
+OptionValue "MissileTrails"
+{
+	0, "Off"
+	1, "Particles"
+	2, "Sprites"
+	3, "Sprites and Particles"
+}
 
 AddListMenu "Skillmenu"
 {
