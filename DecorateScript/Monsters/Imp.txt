@@ -22,27 +22,27 @@ actor EquestriaImp : DoomImp Replaces DoomImp
 
 actor DEImpBall : DoomImpBall replaces DoomImpBall
 {
-  +ForceXYBillBoard
-  RenderStyle Translucent
-  Alpha 0.75
-  States
-  {
-  Spawn:
-	FIRB B 2 Bright A_SpawnItemEx("FireBallTrail")
-	FIRB A 2 Bright
+	+ForceXYBillBoard
+	RenderStyle Translucent
+	Alpha 0.75
+	States
 	{
-		A_SpawnItemEx("FirePieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1), 0);
-		A_SpawnItemEx("FirePieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1), 0);
+	Spawn:
+		FIRB B 2 Bright A_SpawnItemEx("FireBallTrail")
+		FIRB A 2 Bright
+		{
+			A_SpawnItemEx("FirePieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1), 0);
+			A_SpawnItemEx("FirePieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1), 0);
+		}
+		FIRB B 2 Bright 
+		{
+			A_SpawnItemEx("FirePieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1), 0);
+			A_SpawnItemEx("FirePieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1), 0);
+		}
+		Loop
+	Death:
+		BAL1 CD 6 Bright
+		BAL1 EEEEEEEEEE 1 Bright A_FadeOut(0.1)
+		Stop
 	}
-	FIRB B 2 Bright 
-	{
-		A_SpawnItemEx("FirePieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1), 0);
-		A_SpawnItemEx("FirePieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1), 0);
-	}
-	Loop
-  Death:
-	BAL1 CD 6 Bright
-	BAL1 EEEEEEEEEE 1 Bright A_FadeOut(0.1)
-	Stop
-  }
 }
