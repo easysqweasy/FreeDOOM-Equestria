@@ -1,4 +1,4 @@
-STARTUPTITLE = "DOOM Equestria - Github DevBuild V1.3" 
+STARTUPTITLE = "DOOM Equestria - Github DevBuild V1.3.2" 
 StartupSong = ""
 StartupType = "Hexen"
 StartupColors = "#3C4651", "#3C4651"
