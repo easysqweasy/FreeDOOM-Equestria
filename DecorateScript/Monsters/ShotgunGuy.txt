@@ -64,25 +64,25 @@ ACTOR ShotgunPony : ShotgunGuy replaces ShotgunGuy
         Stop
     
 	Death.Berserk:
-		POSS H 0 ThrustThingZ(0,30,0,1)
-		POSS H 5
-        POSS I 5
-        POSS J 5 A_NoBlocking
-        POSS K 5
-        POSS L -1
+		SPOS H 0 ThrustThingZ(0,30,0,1)
+		SPOS H 5
+        SPOS I 5
+        SPOS J 5 A_NoBlocking
+        SPOS K 5
+        SPOS L -1
         Stop
 	
 	XDeath.Berserk:
-        POSS H 0 ThrustThingZ(0,30,0,1)
-		POSS M 3
-        POSS N 5
+        SPOS H 0 ThrustThingZ(0,30,0,1)
+		SPOS M 3
+        SPOS N 5
 		{
 			A_CustomMissile(XDeathGoreSpawn, 2);
 			A_XScream;
 		}
-        POSS O 3 A_NoBlocking
-        POSS PQRST 3
-        POSS U -1
+        SPOS O 3 A_NoBlocking
+        SPOS PQRST 3
+        SPOS U -1
         Stop
 		
 	Raise:
