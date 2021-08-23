@@ -1,5 +1,6 @@
-# DOOM Equestria for GZDoom
+# DOOM Equestria for GZDoom*
 
+**Make sure you are using GZDoom 4.6.0 or later**
 This is the development version, so it may contain bugs and errors;
 Updates can happen at any time, this version does NOT represent the final version;
 
