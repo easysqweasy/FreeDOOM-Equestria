@@ -144,6 +144,7 @@ Actor PlasmaTrail : DEParticles
    RenderStyle Add
    Alpha 0.60
    -MOVEWITHSECTOR
+   +DONTSPLASH
    States
    {
    Spawn:
