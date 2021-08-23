@@ -178,7 +178,6 @@ actor FireBallTrail : DEParticles
   States
   {
   Spawn:
-	TNT1 A 4 A_ChangeFlag("SPRITEFLIP", random(0,1))
 	BAL1 CD 4 Bright
 	BAL1 EEEEEEEEEE 1 Bright A_FadeOut(0.1)
 	Stop
