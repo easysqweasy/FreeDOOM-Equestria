@@ -1,57 +1,84 @@
 ACTOR ZombiePony : ZombieMan Replaces ZombieMan
 {
-  Health 20
-  Radius 20
-  Height 56
-  Speed 8
-  PainChance 200
-  Monster
-  +FLOORCLIP
-  SeeSound "grunt/sight"
-  AttackSound "grunt/attack"
-  PainSound "grunt/pain"
-  DeathSound "grunt/death"
-  ActiveSound "grunt/active"
-  Obituary "$OB_ZOMBIE" // "%o was killed by a zombieman."
-  DropItem "Clip"
-  States
-  {
-  Spawn:
-    POSS AB 10 A_Look
-    Loop
-  See:
-    POSS AABBCCDD 4 A_Chase
-    Loop
-  Missile:
-    POSS E 10 A_FaceTarget
-    POSS F 8 A_PosAttack
-    POSS E 8
-    Goto See
-  Pain:
-    POSS G 3
-    POSS G 3 A_Pain
-    Goto See
-  Death:
-    POSS H 5
-    POSS I 5 A_Scream
-    POSS J 5 A_NoBlocking
-    POSS K 5
-    POSS L -1
-    Stop
-  XDeath:
-    POSS M 3
-    POSS N 5
-	{
-		A_CustomMissile(XDeathGoreSpawn, 2);
-		A_XScream;
-	}
-    POSS O 3 A_NoBlocking
-    POSS PQRST 3
-    POSS U -1
-    Stop
-  Raise:
-    POSS K 5
-    POSS JIH 5
-    Goto See
-  }
+	Health 20
+	Radius 20
+	Height 56
+	Speed 8
+	PainChance 200
+	Monster
+	+FLOORCLIP
+        SeeSound "grunt/sight"
+    AttackSound "grunt/attack"
+    PainSound "grunt/pain"
+    DeathSound "grunt/death"
+    ActiveSound "grunt/active"
+    Obituary "$OB_ZOMBIE" // "%o was killed by a zombieman."
+    DropItem "Clip"
+    States
+    {
+	
+	Spawn:
+        POSS A 10 A_Look
+        Loop
+
+	See:
+        POSS AABBCCDD 4 A_Chase
+        Loop
+   
+	Missile:
+        POSS E 10 A_FaceTarget
+        POSS F 8 A_PosAttack
+        POSS E 8
+        Goto See
+    
+	Pain:
+        POSS G 3
+        POSS G 3 A_Pain
+        Goto See
+   
+	Death:
+        POSS H 5
+        POSS I 5 A_Scream
+        POSS J 5 A_NoBlocking
+        POSS K 5
+        POSS L -1
+        Stop
+    
+	XDeath:
+        POSS M 3
+        POSS N 5
+		{
+			A_CustomMissile(XDeathGoreSpawn, 2);
+			A_XScream;
+		}
+        POSS O 3 A_NoBlocking
+        POSS PQRST 3
+        POSS U -1
+        Stop
+		
+	Death.Berserk:
+        POSS H 5
+        POSS I 5
+        POSS J 5 A_NoBlocking
+        POSS K 5
+        POSS L -1
+        Stop
+	
+	XDeath.Berserk:
+        POSS M 3
+        POSS N 5
+		{
+			A_CustomMissile(XDeathGoreSpawn, 2);
+			A_XScream;
+		}
+        POSS O 3 A_NoBlocking
+        POSS PQRST 3
+        POSS U -1
+        Stop
+    
+	Raise:
+        POSS K 5
+        POSS JIH 5
+        Goto See
+    }
 }
