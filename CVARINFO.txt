@@ -4,7 +4,7 @@ user int AuraToggle = 1;
 
 server int ProjectileTrails = 3;
 
-server int ClassicChaingun = 0;
+server int ClassicChainsaw = 0;
 server int ClassicShotgun = 0;
 server int ClassicSuperShotgun = 0;
 server int ClassicChainGun = 0;
