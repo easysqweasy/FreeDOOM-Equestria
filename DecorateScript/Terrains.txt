@@ -128,11 +128,7 @@ ACTOR DELavaSmoke : DECoreSplashSmoke
 	States
 	{
 	Spawn:
-		NLAV G 5
-		NLAV H 5 A_SetTranslucent(0.6, 0)
-		NLAV I 5 A_SetTranslucent(0.5, 0)
-		NLAV J 5 A_SetTranslucent(0.4, 0)
-		NLAV K 5 A_SetTranslucent(0.3, 0)
+		NLAV GGHHIIJJKK 3 A_Fadeout(0.075)
 		Stop
 	}
 }
@@ -176,11 +172,7 @@ Actor DENukageSmoke : DECoreSplashSmoke
 	{
 	Spawn:
 	Spawn:
-		NLAV G 5
-		NLAV H 5 A_SetTranslucent(0.6, 0)
-		NLAV I 5 A_SetTranslucent(0.5, 0)
-		NLAV J 5 A_SetTranslucent(0.4, 0)
-		NLAV K 5 A_SetTranslucent(0.3, 0)
+		NLAV GGHHIIJJKK 3 A_Fadeout(0.075)
 		Stop
 	}
 }
