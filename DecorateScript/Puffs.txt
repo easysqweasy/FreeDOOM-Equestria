@@ -27,8 +27,6 @@ Actor ShotgunPuff : DEBulletPuff
 	{
 	
 	Spawn:
-		TNT1 A 0 A_ChangeFlag("SPRITEFLIP", random(0,1))
-		
 		PUFF A 1 Bright A_SpawnItemEx("BulletFloorCheck", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION)
 		PUFF A 3 Bright
 		PUFF B 4
@@ -52,8 +50,6 @@ Actor KickPuff : DEBulletPuff
 	
 	Spawn:
 	Melee:
-		TNT1 A 0 A_ChangeFlag("SPRITEFLIP", random(0,1))
-		
 		PUFF C 4
 		PUFF DDDDD 1 A_FadeOut(0.1)
 		Stop
@@ -70,8 +66,6 @@ Actor BerserkPuff : KickPuff
 	
 	Spawn:
 	Melee:
-		TNT1 A 0 A_ChangeFlag("SPRITEFLIP", random(0,1))
-		
 		RSMK AABBCCDDEE 1 A_FadeOut(0.025)
 		Stop
 	
