@@ -65,6 +65,7 @@ ACTOR ShotgunPony : ShotgunGuy replaces ShotgunGuy
     
 	Death.Berserk:
 		SPOS H 0 ThrustThingZ(0,30,0,1)
+		
 		SPOS H 5
         SPOS I 5
         SPOS J 5 A_NoBlocking
@@ -74,6 +75,7 @@ ACTOR ShotgunPony : ShotgunGuy replaces ShotgunGuy
 	
 	XDeath.Berserk:
         SPOS H 0 ThrustThingZ(0,30,0,1)
+		
 		SPOS M 3
         SPOS N 5
 		{
