@@ -3,4 +3,11 @@ user int ShakeToggle = 1;
 user int AuraToggle = 1;
 
 server int ProjectileTrails = 3;
-//To do:individual choices of classic weapons
+
+server int ClassicChaingun = 0;
+server int ClassicShotgun = 0;
+server int ClassicSuperShotgun = 0;
+server int ClassicChainGun = 0;
+server int ClassicPlasmaGun = 0;
+server int ClassicRocketLauncher = 0;
+server int ClassicBFG = 0;
