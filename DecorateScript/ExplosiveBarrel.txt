@@ -6,8 +6,6 @@ ACTOR DEExploBarrel : ExplosiveBarrel replaces ExplosiveBarrel
   States
   {
   Spawn:
-	TNT1 A 0 A_ChangeFlag("SPRITEFLIP", random(0,1))
-	
     BAR1 AB 8
     Loop
   Death:
