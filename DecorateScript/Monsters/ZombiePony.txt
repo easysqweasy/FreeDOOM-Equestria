@@ -57,7 +57,9 @@ ACTOR ZombiePony : ZombieMan Replaces ZombieMan
         Stop
 		
 	Death.Berserk:
-        POSS H 5
+        POSS H 0 ThrustThingZ(0,30,0,1)
+		
+		POSS H 5
         POSS I 5
         POSS J 5 A_NoBlocking
         POSS K 5
