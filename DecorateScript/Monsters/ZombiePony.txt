@@ -6,17 +6,20 @@ ACTOR ZombiePony : ZombieMan Replaces ZombieMan
 	Speed 8
 	PainChance 200
 	Monster
+	
 	+FLOORCLIP
-        SeeSound "grunt/sight"
+    
+	SeeSound "grunt/sight"
     AttackSound "grunt/attack"
     PainSound "grunt/pain"
     DeathSound "grunt/death"
     ActiveSound "grunt/active"
-    Obituary "$OB_ZOMBIE" // "%o was killed by a zombieman."
+    
+	Obituary "$OB_ZOMBIE" // "%o was killed by a zombieman."
     DropItem "Clip"
-    States
+    
+	States
     {
-	
 	Spawn:
         POSS A 10 A_Look
         Loop
