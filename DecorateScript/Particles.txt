@@ -8,9 +8,9 @@ actor DEParticles
 	+MOVEWITHSECTOR
 	+THRUACTORS
 	+MISSILE
-	Height 1
-	Radius 1
-	damage 0
+	Height 0
+	Radius 0
+	Damage 0
 }
 
 actor FirePieceSpawn : RandomSpawner
