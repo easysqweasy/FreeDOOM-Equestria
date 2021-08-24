@@ -1,5 +1,7 @@
 ACTOR RevenantPony : Revenant replaces Revenant
 {
-  Radius 20
-  Height 60
+	+CASTSPRITESHADOW
+	
+	Radius 20
+	Height 60
 }
