@@ -89,6 +89,7 @@ Actor BloodExplosionSpawn : XDeathGoreSpawn
 
 actor GibGoreBase : DebrisGeneral
 {
+	Decal BloodSplat
 	BounceSound "gore/bloodsplats"
 	DeathSound "gore/bloodsplats"
 	
@@ -131,8 +132,6 @@ actor GibGore1 : GibGoreBase
 
 ACTOR EquestriaBlood : Blood replaces Blood
 {
-	Height 1
-	Radius 1
 	Mass 5
 	Speed 8
 
