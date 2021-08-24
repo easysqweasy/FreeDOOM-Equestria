@@ -143,17 +143,23 @@ Actor Smoke : DEParticles
 
 Actor PlasmaTrail : DEParticles
 {
-   Scale 0.75
-   RenderStyle Add
-   Alpha 0.60
-   -MOVEWITHSECTOR
-   +DONTSPLASH
-   States
-   {
-   Spawn:
-     PLST AAAAAABBBBBB 1 Bright A_FadeOut(0.1)
-     Loop
-   }
+	Height 0
+	Radius 0
+	
+	Scale 0.75
+	RenderStyle Add
+	Alpha 0.60
+	
+	+GHOST
+	-MOVEWITHSECTOR
+	+DONTSPLASH
+	
+	States
+	{
+	Spawn:
+		PLST AAAAAABBBBBB 1 Bright A_FadeOut(0.1)
+		Loop
+	}
 }
 
 Actor BFGTrail : PlasmaTrail
