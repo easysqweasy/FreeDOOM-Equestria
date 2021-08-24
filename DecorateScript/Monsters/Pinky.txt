@@ -1,6 +1,6 @@
 ACTOR EquestriaSpectre : Spectre replaces Spectre
 {
-  -SHADOW
+	+NOSPRITESHADOW
   RenderStyle Shaded
   SeeSound "spectre/sight"
   AttackSound "spectre/melee"
