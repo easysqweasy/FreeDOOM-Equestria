@@ -1,5 +1,7 @@
 actor EquestriaImp : DoomImp Replaces DoomImp
 {
+	+CASTSPRITESHADOW
+	
 	States
 	{
 	Spawn:
