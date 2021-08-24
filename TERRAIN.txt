@@ -25,7 +25,7 @@ splash Lava
 	smallsound		world/lavasizzlesmall
 
 	baseclass		DELavaBase
-	chunkclass		DELavaSmoke
+	chunkclass		DECoreSplashSmoke
 	chunkxvelshift	-1
 	chunkyvelshift	-1
 	chunkzvelshift	7
@@ -42,8 +42,8 @@ splash LavaSmoke
 	smallclip		12
 	smallsound		world/lavsiz2
 
-	baseclass		DELavaSmokeOnly
-	chunkclass		DELavaSmokeOnly
+	baseclass		DECoreSplashSmoke
+	chunkclass		DECoreSplashSmoke
 	chunkxvelshift	-1
 	chunkyvelshift	-1
 	chunkzvelshift	7
@@ -61,7 +61,7 @@ splash Nuke
 	smallsound		world/lavasizzlesmall
 
 	baseclass		DENukageBase
-	chunkclass		DENukageSmoke
+	chunkclass		DECoreSplashSmoke
 	chunkxvelshift	-1
 	chunkyvelshift	-1
 	chunkzvelshift	7
