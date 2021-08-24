@@ -9,6 +9,7 @@ ACTOR ShotgunPony : ShotgunGuy replaces ShotgunGuy
 	
 	Monster
 	
+	+CASTSPRITESHADOW
 	+FLOORCLIP
 	
 	SeeSound "shotguy/sight"
