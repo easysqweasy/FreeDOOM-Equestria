@@ -8,6 +8,7 @@ ACTOR ZombiePony : ZombieMan Replaces ZombieMan
 	Monster
 	
 	+FLOORCLIP
+	+CASTSPRITESHADOW
     
 	SeeSound "grunt/sight"
     AttackSound "grunt/attack"
