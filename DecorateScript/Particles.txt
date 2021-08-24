@@ -8,8 +8,8 @@ actor DEParticles
 	+MOVEWITHSECTOR
 	+THRUACTORS
 	+MISSILE
-	Height 0
-	Radius 0
+	Height 1
+	Radius 1
 	Damage 0
 }
 
