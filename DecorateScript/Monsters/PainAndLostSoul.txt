@@ -7,14 +7,15 @@ Actor LostSoulVariants : RandomSpawner replaces LostSoul
 
 Actor DELostSoul : LostSoul
 {
-	+CASTSPRITESHADOW
 	Health 75
 	Species "PainSoul"
 	RenderStyle Normal
-	//Height 40
+	Height 30
+	Radius 15
 	
+	+CASTSPRITESHADOW
 	+FORCEXYBILLBOARD
-	+FLOATBOB
+	//+FLOATBOB
 	-COUNTKILL
 	+NOBLOOD
 }
