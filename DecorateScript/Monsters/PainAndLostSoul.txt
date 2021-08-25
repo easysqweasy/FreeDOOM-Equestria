@@ -70,14 +70,14 @@ Actor NirikLostSoul : DELostSoul
 	}
 }
 
-Actor DeadLostSoul replaces DeadLostSoul
+Actor DeathLostSoul replaces DeadLostSoul
 {
-  States
-  {
-  Spawn:
-	SKUL L -1
-	Stop
-  }
+	States
+	{
+	Spawn:
+		SKUL L -1
+		Stop
+	}
 }
 
 Actor EquestriaPain : PainElemental replaces PainElemental
