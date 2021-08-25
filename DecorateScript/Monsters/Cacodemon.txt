@@ -3,6 +3,7 @@ actor EquestriaCacodemon : Cacodemon replaces Cacodemon
 	BloodColor "blue"
 	FloatBobStrength 0.5
 	
+	+CASTSPRITESHADOW
 	+FLOATBOB
 	+MISSILEMORE
 	+FORCEXYBILLBOARD

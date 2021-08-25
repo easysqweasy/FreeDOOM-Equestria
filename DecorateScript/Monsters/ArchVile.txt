@@ -1,9 +1,10 @@
 actor DEArchVile : ArchVile replaces Archvile
 {
-  States
-  {
-  Spawn:
-	IDLV AB 5 A_Look
-	Loop
-  }
+	+CASTSPRITESHADOW
+	States
+	{
+	Spawn:
+		IDLV AB 5 A_Look
+		Loop
+	}
 }

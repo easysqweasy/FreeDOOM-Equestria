@@ -87,6 +87,7 @@ Actor EquestriaPain : PainElemental replaces PainElemental
 	FloatBobStrength 0.5
 	PainChance 100
 	
+	+CASTSPRITESHADOW
 	+FLOATBOB
 	+FORCEXYBILLBOARD
 	+DONTHARMSPECIES
