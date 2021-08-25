@@ -10,7 +10,7 @@ ACTOR RevenantPony : Revenant replaces Revenant
 	Missile:
 		SKEL J 0 bright A_FaceTarget
 		SKEL J 10 bright A_FaceTarget
-		SKEL K 10 A_CustomMissile("RevanantPonyTracer", 8, 0, 0, CMF_AIMOFFSET)
+		SKEL K 10 A_CustomMissile("RevEnantPonyTracer", 55, randompick(-8, 8))
 		SKEL K 10 A_FaceTarget
 		Goto See
 	}
