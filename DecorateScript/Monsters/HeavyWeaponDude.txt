@@ -6,9 +6,13 @@ ACTOR ChaingunDude : ChaingunGuy replaces ChaingunGuy
 	Mass 100
 	Speed 8
 	PainChance 170
+	
+	+DONTHARMSPECIES
+	
 	AttackSound "weapons/chngun"
 	Dropitem "DEChaingun"
 	Species "Couple"
+	
 	States
 	{
 	Spawn:
