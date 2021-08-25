@@ -1,12 +1,13 @@
-Actor LostSoulVariants : RandomSpawner
+Actor LostSoulVariants : RandomSpawner replaces LostSoul
 {
 	DropItem "PonyLostSoul"
 	DropItem "UnicornLostSoul"
 	DropItem "NirikLostSoul"
 }	
 
-Actor PonyLostSoul : LostSoul
+Actor DELostSoul : LostSoul
 {
+	+CASTSPRITESHADOW
 	Health 75
 	Species "PainSoul"
 	RenderStyle Normal
@@ -16,23 +17,9 @@ Actor PonyLostSoul : LostSoul
 	+FLOATBOB
 	-COUNTKILL
 	+NOBLOOD
-	
-	States
-	{
-	Death:
-		SKUL F 6 Bright
-		SKUL G 6 Bright A_Scream
-		SKUL H 6 Bright
-		SKUL I 6 Bright A_NoBlocking
-		SKUL J 3
-		TNT1 A 0 A_SpawnItemEX("DeathLostSoul")
-		SKUL J 3
-		SKUL KKKKKKKKKK 1 A_FadeOut(0.1)
-		Stop
-	}
 }
 
-Actor UnicornLostSoul : PonyLostSoul
+Actor PonyLostSoul : DELostSoul
 {
 	States
 	{
@@ -49,7 +36,7 @@ Actor UnicornLostSoul : PonyLostSoul
 	}
 }
 
-Actor NirikLostSoul : PonyLostSoul
+Actor UnicornLostSoul : DELostSoul
 {
 	States
 	{
@@ -66,7 +53,24 @@ Actor NirikLostSoul : PonyLostSoul
 	}
 }
 
-Actor DeathLostSoul replaces DeadLostSoul
+Actor NirikLostSoul : DELostSoul	
+{
+	States
+	{
+	Death:
+		SKUL F 6 Bright
+		SKUL G 6 Bright A_Scream
+		SKUL H 6 Bright
+		SKUL I 6 Bright A_NoBlocking
+		SKUL J 3
+		TNT1 A 0 A_SpawnItemEX("DeathLostSoul")
+		SKUL J 3
+		SKUL KKKKKKKKKK 1 A_FadeOut(0.1)
+		Stop
+	}
+}
+
+Actor DeadLostSoul replaces DeadLostSoul
 {
   States
   {
