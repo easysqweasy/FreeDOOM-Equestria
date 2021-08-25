@@ -7,6 +7,7 @@ Actor DemonicDog
   Height 28
   Mass 100
   Monster
+  +CASTSPRITESHADOW
   +JUMPDOWN
   ActiveSound "dog/active"
   AttackSound "dog/attack"
