@@ -16,7 +16,7 @@ ACTOR RevenantPony : Revenant replaces Revenant
 	}
 }
 
-Actor RevenantPonyTracer : RevenantTracer replaces RevenantTraces
+Actor RevenantPonyTracer : RevenantTracer replaces RevenantTracer
 {
 	RenderStyle Normal
 	Alpha 1
