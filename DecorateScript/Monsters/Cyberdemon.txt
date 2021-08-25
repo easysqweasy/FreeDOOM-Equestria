@@ -1,5 +1,6 @@
 actor EquestriaCyberdemon : Cyberdemon replaces Cyberdemon
 {
+	+CASTSPRITESHADOW
   Health 5000
   States
   {
@@ -11,42 +12,8 @@ actor EquestriaCyberdemon : Cyberdemon replaces Cyberdemon
     CYBR I 10
 	{
 		A_CustomMissile(XDeathGoreSpawn, 35);
-		A_SpawnItemEX(Blood, 0, 0, 50, random(-10, 10), random(-10, 10), 15);
-		A_SpawnItemEX(Blood, 0, 0, 50, random(-10, 10), random(-10, 10), 15);
-		A_SpawnItemEX(Blood, 0, 0, 50, random(-10, 10), random(-10, 10), 15);
-		A_SpawnItemEX(Blood, 0, 0, 50, random(-10, 10), random(-10, 10), 15);
-		A_SpawnItemEX(Blood, 0, 0, 50, random(-10, 10), random(-10, 10), 15);
-		A_SpawnItemEX(Blood, 0, 0, 50, random(-10, 10), random(-10, 10), 15);
-		A_SpawnItemEX(Blood, 0, 0, 50, random(-10, 10), random(-10, 10), 15);
-		A_SpawnItemEX(Blood, 0, 0, 50, random(-10, 10), random(-10, 10), 15);
-		A_SpawnItemEX(Blood, 0, 0, 50, random(-10, 10), random(-10, 10), 15);
-		A_SpawnItemEX(Blood, 0, 0, 50, random(-10, 10), random(-10, 10), 15);
-		A_SpawnItemEX(Blood, 0, 0, 50, random(-10, 10), random(-10, 10), 15);
-		A_SpawnItemEX(Blood, 0, 0, 50, random(-10, 10), random(-10, 10), 15);
-		A_SpawnItemEX(Blood, 0, 0, 50, random(-10, 10), random(-10, 10), 15);
-		A_SpawnItemEX(Blood, 0, 0, 50, random(-10, 10), random(-10, 10), 15);
-		A_SpawnItemEX(Blood, 0, 0, 50, random(-10, 10), random(-10, 10), 15);
-		A_SpawnItemEX(Blood, 0, 0, 50, random(-10, 10), random(-10, 10), 15);
-		A_SpawnItemEX(Blood, 0, 0, 50, random(-10, 10), random(-10, 10), 15);
-		A_SpawnItemEX(Blood, 0, 0, 50, random(-10, 10), random(-10, 10), 15);
-		A_SpawnItemEX(Blood, 0, 0, 50, random(-10, 10), random(-10, 10), 15);
-		A_SpawnItemEX(Blood, 0, 0, 50, random(-10, 10), random(-10, 10), 15);
-		A_SpawnItemEX(Blood, 0, 0, 50, random(-10, 10), random(-10, 10), 15);
-		A_SpawnItemEX(Blood, 0, 0, 50, random(-10, 10), random(-10, 10), 15);
-		A_SpawnItemEX(Blood, 0, 0, 50, random(-10, 10), random(-10, 10), 15);
-		A_SpawnItemEX(Blood, 0, 0, 50, random(-10, 10), random(-10, 10), 15);
-		A_SpawnItemEX(Blood, 0, 0, 50, random(-10, 10), random(-10, 10), 15);
-		A_SpawnItemEX(Blood, 0, 0, 50, random(-10, 10), random(-10, 10), 15);
-		A_SpawnItemEX(Blood, 0, 0, 50, random(-10, 10), random(-10, 10), 15);
-		A_SpawnItemEX(Blood, 0, 0, 50, random(-10, 10), random(-10, 10), 15);
-		A_SpawnItemEX(Blood, 0, 0, 50, random(-10, 10), random(-10, 10), 15);
-		A_SpawnItemEX(Blood, 0, 0, 50, random(-10, 10), random(-10, 10), 15);
-		A_SpawnItemEX(Blood, 0, 0, 50, random(-10, 10), random(-10, 10), 15);
-		A_SpawnItemEX(Blood, 0, 0, 50, random(-10, 10), random(-10, 10), 15);
-		A_SpawnItemEX(Blood, 0, 0, 50, random(-10, 10), random(-10, 10), 15);
-		A_SpawnItemEX(Blood, 0, 0, 50, random(-10, 10), random(-10, 10), 15);
-		A_SpawnItemEX(Blood, 0, 0, 50, random(-10, 10), random(-10, 10), 15);
-		A_SpawnItemEX(Blood, 0, 0, 50, random(-10, 10), random(-10, 10), 15);
+		A_CustomMissile(BloodExplosionSpawn, random(16, 32));
+		A_CustomMissile(BloodExplosionSpawn, random(64, 128));
 		A_Scream;
 	}
     CYBR J 10
@@ -57,65 +24,18 @@ actor EquestriaCyberdemon : Cyberdemon replaces Cyberdemon
 		A_Quake(2, 25, 0, 700, "world/quake");
 		A_Quake(1, 20, 0, 800, "world/quake");
 		A_CustomMissile(BigGoreSpawn);
-		A_SpawnItemEX(Blood, 0, 0, 50, random(-10, 10), random(-10, 10), 15);
-		A_SpawnItemEX(Blood, 0, 0, 50, random(-10, 10), random(-10, 10), 15);
-		A_SpawnItemEX(Blood, 0, 0, 50, random(-10, 10), random(-10, 10), 15);
-		A_SpawnItemEX(Blood, 0, 0, 50, random(-10, 10), random(-10, 10), 15);
-		A_SpawnItemEX(Blood, 0, 0, 50, random(-10, 10), random(-10, 10), 15);
-		A_SpawnItemEX(Blood, 0, 0, 50, random(-10, 10), random(-10, 10), 15);
-		A_SpawnItemEX(Blood, 0, 0, 50, random(-10, 10), random(-10, 10), 15);
-		A_SpawnItemEX(Blood, 0, 0, 50, random(-10, 10), random(-10, 10), 15);
-		A_SpawnItemEX(Blood, 0, 0, 50, random(-10, 10), random(-10, 10), 15);
-		A_SpawnItemEX(Blood, 0, 0, 50, random(-10, 10), random(-10, 10), 15);
-		A_SpawnItemEX(Blood, 0, 0, 50, random(-10, 10), random(-10, 10), 15);
-		A_SpawnItemEX(Blood, 0, 0, 50, random(-10, 10), random(-10, 10), 15);
-		A_SpawnItemEX(Blood, 0, 0, 50, random(-10, 10), random(-10, 10), 15);
-		A_SpawnItemEX(Blood, 0, 0, 50, random(-10, 10), random(-10, 10), 15);
-		A_SpawnItemEX(Blood, 0, 0, 50, random(-10, 10), random(-10, 10), 15);
-		A_SpawnItemEX(Blood, 0, 0, 50, random(-10, 10), random(-10, 10), 15);
-		A_SpawnItemEX(Blood, 0, 0, 50, random(-10, 10), random(-10, 10), 15);
-		A_SpawnItemEX(Blood, 0, 0, 50, random(-10, 10), random(-10, 10), 15);
-		A_SpawnItemEX(Blood, 0, 0, 50, random(-10, 10), random(-10, 10), 15);
-		A_SpawnItemEX(Blood, 0, 0, 50, random(-10, 10), random(-10, 10), 15);
-		A_SpawnItemEX(Blood, 0, 0, 50, random(-10, 10), random(-10, 10), 15);
-		A_SpawnItemEX(Blood, 0, 0, 50, random(-10, 10), random(-10, 10), 15);
-		A_SpawnItemEX(Blood, 0, 0, 50, random(-10, 10), random(-10, 10), 15);
-		A_SpawnItemEX(Blood, 0, 0, 50, random(-10, 10), random(-10, 10), 15);
-		A_SpawnItemEX(Blood, 0, 0, 50, random(-10, 10), random(-10, 10), 15);
-		A_SpawnItemEX(Blood, 0, 0, 50, random(-10, 10), random(-10, 10), 15);
-		A_SpawnItemEX(Blood, 0, 0, 50, random(-10, 10), random(-10, 10), 15);
-		A_SpawnItemEX(Blood, 0, 0, 50, random(-10, 10), random(-10, 10), 15);
-		A_SpawnItemEX(Blood, 0, 0, 50, random(-10, 10), random(-10, 10), 15);
-		A_SpawnItemEX(Blood, 0, 0, 50, random(-10, 10), random(-10, 10), 15);
-		A_SpawnItemEX(Blood, 0, 0, 50, random(-10, 10), random(-10, 10), 15);
-		A_SpawnItemEX(Blood, 0, 0, 50, random(-10, 10), random(-10, 10), 15);
-		A_SpawnItemEX(Blood, 0, 0, 50, random(-10, 10), random(-10, 10), 15);
-		A_SpawnItemEX(Blood, 0, 0, 50, random(-10, 10), random(-10, 10), 15);
-		A_SpawnItemEX(Blood, 0, 0, 50, random(-10, 10), random(-10, 10), 15);
-		A_SpawnItemEX(Blood, 0, 0, 50, random(-10, 10), random(-10, 10), 15);
+		A_CustomMissile(BloodExplosionSpawn, random(16, 64));
+		A_CustomMissile(BloodExplosionSpawn, random(64, 128));
+		A_CustomMissile(BloodExplosionSpawn, random(16, 64));
+		A_CustomMissile(BloodExplosionSpawn, random(64, 128));
+		A_CustomMissile(BloodExplosionSpawn, random(16, 64));
+		A_CustomMissile(BloodExplosionSpawn, random(64, 128));
 	}
     CYBR M 10 A_NoBlocking
     CYBR NO 10
     CYBR P 30
     CYBR P -1 A_BossDeath
     Stop
-  }
-}
-
-actor CyberdemonBlood : DebrisGeneral
-{
-  +BLOODSPLATTER
-  Bloodtype Particles
-  Bloodcolor Red
-  Health 10
-  States
-  {
-  Spawn:
-	EXD1 ABCDEFGHA 2
-	Goto XDeath
-  XDeath: 
-	EXD1 "A" 35 A_FadeOut(0.1)
-	Wait
   }
 }
 
