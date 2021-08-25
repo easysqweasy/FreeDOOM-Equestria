@@ -4,9 +4,22 @@ ACTOR RevenantPony : Revenant replaces Revenant
 	
 	Radius 20
 	Height 60
+	
+	States
+	{
+	Missile:
+		SKEL J 0 bright A_FaceTarget
+		SKEL J 10 bright A_FaceTarget
+		SKEL K 10 A_CustomMissile("RevanantPonyTracer", 8, 0, 0, CMF_AIMOFFSET)
+		SKEL K 10 A_FaceTarget
+		Goto See
+	}
 }
 
 Actor RevenantPonyTracer : RevenantTracer replaces RevenantTraces
 {
+	RenderStyle Normal
+	Alpha 1
+	
 	+DONTSEEKINVISIBLE
 }
