@@ -48,25 +48,25 @@ object TeleportFog
 }
 
 // Bullet puff
-flickerlight BPUFF1
-{
-    color 0.5 0.5 0.0
-    size 9
-    secondarySize 12
-    chance 0.8
-	attenuate 1
-}
-
-flickerlight BPUFF2
+pointlight BPUFF1
 {
     color 0.5 0.5 0.0
     size 4
-    secondarySize 6
-    chance 0.8
-	attenuate 1
+}
+
+pointlight BPUFF2
+{
+    color 0.5 0.5 0.0
+    size 2
 }
 
 object DEBulletPuff
+{
+    frame PUFFA { light BPUFF1 }
+    frame PUFFB { light BPUFF2 }
+}
+
+object ShotgunPuff
 {
     frame PUFFA { light BPUFF1 }
     frame PUFFB { light BPUFF2 }

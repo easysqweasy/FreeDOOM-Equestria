@@ -1,6 +1,6 @@
 //slime (nukage) splash actors
 //without these, they're hard to see against the nukage flat if used in gzDoom with brightmap support
-BrightMap Sprite SLIMA0
+/*BrightMap Sprite SLIMA0
 {
 Map BMSLIMA0
 DisableFullBright
@@ -46,7 +46,7 @@ BrightMap Sprite SLIMH0
 {
 Map BMSLIMH0
 DisableFullBright
-}
+}*/
 
 Glow
 {
