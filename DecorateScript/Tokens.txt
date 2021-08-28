@@ -9,3 +9,6 @@ Actor LowHealthCheck : Inventory
 
 Actor PickedUpBerserk : Inventory
 {	Inventory.MaxAmount 1	}
+
+Actor TicBlood : Inventory
+{	Inventory.MaxAmount 1	}
