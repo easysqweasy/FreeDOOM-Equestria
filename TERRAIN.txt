@@ -38,7 +38,7 @@ splash Lava
 
 splash LavaSmoke
 {
-	smallclass		DELavaSmokeOnly
+	smallclass		DECoreSplashSmoke
 	smallclip		12
 	smallsound		world/lavsiz2
 
