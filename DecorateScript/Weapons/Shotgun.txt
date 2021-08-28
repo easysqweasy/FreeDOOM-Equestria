@@ -171,8 +171,9 @@ actor DEShotgun : Shotgun replaces Shotgun
 		SHTG A 12
 		SHTG AAAA 1 
 		{
-			A_OverlayOffset(3, 20, 0, WOF_KEEPY);
+			A_OverlayOffset(3, 15, 0, WOF_KEEPY);
 			A_OverlayRotate(3, -10, WOF_ADD);
 		}
+		Stop
 	}
-} //25 24
+}
