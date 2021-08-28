@@ -18,6 +18,7 @@ Actor DebrisGeneral
 
 actor EquestriaDoomPlayer : DoomPlayer
 {
+	+CASTSPRITESHADOW
   Player.DisplayName "Shainer"
   Player.DamageScreenColor red
   Player.StartItem "DEPistol" 
