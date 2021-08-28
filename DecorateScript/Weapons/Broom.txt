@@ -6,6 +6,7 @@ actor Broom : Weapon 90
   Inventory.PickupMessage "Let's clean up some Demons!"
   +WEAPON.NOAUTOFIRE
   Weapon.BobStyle alpha
+	//$Category "Weapons"
   States
   {
   Spawn:
