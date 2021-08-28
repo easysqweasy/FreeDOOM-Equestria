@@ -146,7 +146,7 @@ terrain Lava
 //just smoke
 terrain LavaSmoke
 {
-	splash			LavaSmoke
+	splash			DECoreSplashSmoke
 	footclip		0
 	liquid
 }
