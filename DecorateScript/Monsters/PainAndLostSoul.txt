@@ -34,6 +34,15 @@ Actor PonyLostSoul : DELostSoul
 		SKUL J 3
 		SKUL KKKKKKKKKK 1 A_FadeOut(0.1)
 		Stop
+	
+	Death.Berserk:
+		SKUL H 6 Bright A_Scream
+		SKUL I 3 Bright A_NoBlocking
+		SKUL J 3
+		TNT1 A 0 A_SpawnItemEX("DeathLostSoul")
+		SKUL J 3
+		SKUL KKKKKKKKKK 1 A_FadeOut(0.1)
+		Stop
 	}
 }
 
@@ -51,6 +60,15 @@ Actor UnicornLostSoul : DELostSoul
 		SKUL J 3
 		SKUL KKKKKKKKKK 1 A_FadeOut(0.1)
 		Stop
+	
+	Death.Berserk:
+		SKUL H 6 Bright A_Scream
+		SKUL I 3 Bright A_NoBlocking
+		SKUL J 3
+		TNT1 A 0 A_SpawnItemEX("DeathLostSoul")
+		SKUL J 3
+		SKUL KKKKKKKKKK 1 A_FadeOut(0.1)
+		Stop
 	}
 }
 
@@ -63,6 +81,15 @@ Actor NirikLostSoul : DELostSoul
 		SKUL G 6 Bright A_Scream
 		SKUL H 6 Bright
 		SKUL I 6 Bright A_NoBlocking
+		SKUL J 3
+		TNT1 A 0 A_SpawnItemEX("DeathLostSoul")
+		SKUL J 3
+		SKUL KKKKKKKKKK 1 A_FadeOut(0.1)
+		Stop
+	
+	Death.Berserk:
+		SKUL H 6 Bright A_Scream
+		SKUL I 3 Bright A_NoBlocking
 		SKUL J 3
 		TNT1 A 0 A_SpawnItemEX("DeathLostSoul")
 		SKUL J 3
