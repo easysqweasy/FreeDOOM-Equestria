@@ -19,6 +19,25 @@ Actor DEBulletPuff : BulletPuff replaces BulletPuff
 	}
 }
 
+actor BulletTracer : FastProjectile
+{
+  PROJECTILE
+  +FORCEXYBILLBOARD
+  +NOEXTREMEDEATH
+  Speed 125
+  RenderStyle Add
+  Damage 0
+  States
+  {
+  Spawn:
+	PUFF A 1 Bright
+	Loop
+  Death:
+    TNT1 A 0 
+	Stop
+  }
+}  
+
 Actor ShotgunPuff : DEBulletPuff
 {
 	States
