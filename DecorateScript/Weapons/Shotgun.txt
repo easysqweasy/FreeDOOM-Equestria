@@ -167,12 +167,12 @@ actor DEShotgun : Shotgun replaces Shotgun
 		
 		SHTG AEE 1
 		{
-			A_OverlayOffset(3, -30, 40, WOF_KEEPY | WOF_INTERPOLATE );
+			A_OverlayOffset(3, -35, 40, WOF_KEEPY | WOF_INTERPOLATE );
 			A_OverlayRotate(3, 3, WOF_ADD);
 		}
 		SHTG FF 1
 		{
-			A_OverlayOffset(3, -35, 40, WOF_KEEPY | WOF_INTERPOLATE );
+			A_OverlayOffset(3, -30, 55, WOF_KEEPY | WOF_INTERPOLATE );
 			A_OverlayRotate(3, 5, WOF_ADD);
 		}
 		SHTG F 10
