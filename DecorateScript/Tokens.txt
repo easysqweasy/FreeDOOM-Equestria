@@ -1,14 +1,14 @@
-Actor DeadCheck : Inventory
+Actor InvToken : Inventory
 {	Inventory.MaxAmount 1	}
 
-Actor KickCheck : Inventory
-{	Inventory.MaxAmount 1	}
+Actor DeadCheck : InvToken	{}
 
-Actor LowHealthCheck : Inventory
-{	Inventory.MaxAmount 1	}
+Actor KickCheck : InvToken	{}
 
-Actor PickedUpBerserk : Inventory
-{	Inventory.MaxAmount 1	}
+Actor LowHealthCheck : InvToken	{}
 
-Actor TicBlood : Inventory
-{	Inventory.MaxAmount 1	}
+//ToDo
+
+Actor PickedUpBerserk : InvToken	{}
+
+Actor DaisyCutscene : InvToken	{}
