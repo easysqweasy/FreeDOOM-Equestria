@@ -45,6 +45,8 @@ Musics from DOOM 1
 
 Some kick codes are from Brutal Doom, adapted by Ragedox
 
+Parts of MetaDOOM's Gibs code
+
 = Forums used:
 
 Lostres: https://www.doomworld.com/forum/topic/113992-lostres-21-doom-unused-sprites-flats-and-textures/
