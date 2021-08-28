@@ -42,7 +42,7 @@ ACTOR DEBlurSphere : CustomInventory replaces BlurSphere
   +INVENTORY.ALWAYSPICKUP
   Inventory.PickupMessage "$GOTINVIS" // "Partial Invisibility"
   Inventory.PickupSound "misc/p_pkup"
-  Renderstyle Add
+  Renderstyle Translucent
   Alpha 1
   States
   {
