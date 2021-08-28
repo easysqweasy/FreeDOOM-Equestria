@@ -81,6 +81,7 @@ actor DEShotgun : Shotgun replaces Shotgun
 	
 	KickAttack:
 		TNT1 A 0 A_Overlay(3, "Aside")
+		
 		TNT1 A 0 A_OverlayFlags(0, PSPF_INTERPOLATE, true)
 		
 		TNT1 A 0 A_TakeInventory("KickCheck", 999)
@@ -161,19 +162,26 @@ actor DEShotgun : Shotgun replaces Shotgun
 		TNT1 A 0 A_TakeInventory("KickCheck", 999)
 		Goto Ready
 	Aside:
+		TNT1 A 0 A_OverlayFlags(3, PSPF_ADDBOB, true)
 		TNT1 A 0 A_OverlayPivotAlign(3, PSPA_RIGHT, PSPA_BOTTOM)
 		
-		SHTG AAA 1
+		SHTG AEE 1
 		{
-			A_OverlayOffset(3, -20, 0, WOF_KEEPY);
-			A_OverlayRotate(3, 10, WOF_ADD);
+			A_OverlayOffset(3, -30, 40, WOF_KEEPY | WOF_INTERPOLATE );
+			A_OverlayRotate(3, 3, WOF_ADD);
 		}
-		SHTG A 12
-		SHTG AAAA 1 
+		SHTG FF 1
 		{
-			A_OverlayOffset(3, 15, 0, WOF_KEEPY);
-			A_OverlayRotate(3, -10, WOF_ADD);
+			A_OverlayOffset(3, -35, 40, WOF_KEEPY | WOF_INTERPOLATE );
+			A_OverlayRotate(3, 5, WOF_ADD);
 		}
+		SHTG F 10
+		SHTG EEA 1 
+		{
+			A_OverlayOffset(3, 0, 0, WOF_KEEPY | WOF_INTERPOLATE );
+			A_OverlayRotate(3, -5, WOF_ADD);
+		}
+		SHTG A 1
 		Stop
 	}
 }
