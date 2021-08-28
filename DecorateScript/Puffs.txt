@@ -78,13 +78,14 @@ Actor KickPuff : DEBulletPuff
 Actor BerserkPuff : KickPuff
 {
 	DamageType Berserk
+	Alpha 0.5
 	
 	States
 	{
 	
 	Spawn:
 	Melee:
-		RSMK AABBCCDDEE 1 A_FadeOut(0.025)
+		RSMK AAAABBBBCCCCDDDDEEEE 1 A_FadeOut(0.025)
 		Stop
 	
 	}
