@@ -176,7 +176,7 @@ actor DEShotgun : Shotgun replaces Shotgun
 			A_OverlayRotate(3, 5, WOF_ADD);
 		}
 		SHTG F 10
-		SHTG EEA 1 
+		SHTG FEE 1 
 		{
 			A_OverlayOffset(3, 0, 0, WOF_KEEPY | WOF_INTERPOLATE );
 			A_OverlayRotate(3, -5, WOF_ADD);
