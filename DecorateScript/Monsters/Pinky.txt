@@ -41,3 +41,14 @@ ACTOR EquestriaSpectre : Spectre replaces Spectre
 		Stop
 	}
 }
+
+Actor Pinky : Demon replaces Demon
+{
+	+CASTSPRITESHADOW
+	States
+	{
+	Spawn:
+		IDLP AB 10 A_Look
+		Loop
+	}
+}
