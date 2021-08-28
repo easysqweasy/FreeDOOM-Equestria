@@ -60,6 +60,7 @@ Actor KickPuff : DEBulletPuff
 	DamageType Kick
     AttackSound "*fist"
     
+	+BLOODLESSIMPACT
 	+NODECAL
 	
 	States
