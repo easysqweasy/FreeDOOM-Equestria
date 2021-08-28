@@ -125,25 +125,3 @@ ACTOR DEPistol : Pistol replaces Pistol
 		Goto Ready
   }
 }
-
-////////////////////V
-//Unused, Incomplete
-////////////////////V
-actor BulletPistol
-{
-  PROJECTILE
-  +FORCEXYBILLBOARD
-  +NOEXTREMEDEATH
-  Speed 125
-  RenderStyle Add
-  Damage 0
-  States
-  {
-  Spawn:
-	BLET A 1 Bright
-	Loop
-  Death:
-    TNT1 A 0 
-	Stop
-  }
-}  
