@@ -70,6 +70,9 @@ actor BarrelDebris : DebrisGeneral
   
 	+MISSILE
 	
+	+ROLLSPRITE
+	+ROLLCENTER
+	
 	+BOUNCEONWALLS
 	+BOUNCEONCEILINGS
 	+BOUNCEONFLOORS
@@ -80,60 +83,29 @@ actor BarrelDebris : DebrisGeneral
 	States
 	{
 	Spawn:
-		TNT1 A 0
-		TNT1 A 0 A_SetScale(frandom(0.75, 1))
 		TNT1 A 0 A_ChangeFlag("SPRITEFLIP", random(0,1))
-		TNT1 A 0 A_Jump(256,"Spawn1","Spawn2")
+		TNT1 A 0 A_Jump(256,"Debris1","Debris2")
 		
-	Spawn1:
-		EXD1 A 4
-		{
-			A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1));
-			A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1));
-		}
-		EXD1 B 4
-		{
-			A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1));
-			A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1));
-		}
-		EXD1 C 4
-		{
-			A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1));
-			A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1));
-		}
-		EXD1 D 4
-		{
-			A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1));
-			A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1));
-		}
-		Loop
+	Debris1:
+		EXD1 A 0
+		Goto Spawn2
 	
+	Debris2:
+		EXD2 A 0
+		Goto Spawn2
+
 	Spawn2:
-		EXD2 A 4
-		{
-			A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1));
-			A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1));
-		}
-		EXD2 B 4
-		{
-			A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1));
-			A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1));
-		}
-		EXD2 C 4
-		{
-			A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1));
-			A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1));
-		}
-		EXD2 D 4
-		{
-			A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1));
-			A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1));
-		}
+		"####" "#" 0 A_SetRoll(random(0,360))
+		Goto Roll
+	
+	Roll:
+		"####" "#" 4 A_SetRoll((roll + 40), SPF_INTERPOLATE)
+		"####" "#" 0 A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1))
 		Loop
 	
 	Death:
 		"####" "#" 350
-		"####" "##########" 1 A_FadeOut(0.1, FTF_REMOVE)
+		"####" "#" 1 A_FadeOut(0.1)
 		Wait
   }
 }
@@ -150,23 +122,9 @@ actor BarrelTiny : BarrelDebris
 	
 	States
 	{
-	
-	Spawn:
-		TNT1 A 0
-		TNT1 A 0 A_ChangeFlag("SPRITEFLIP", random(0,1))
-		TNT1 A 0 A_Jump(256,"Spawn1","Spawn2")
-		
-	Spawn1:
-		EXD1 ABCD 2
+
+	Roll:
+		"####" "#" 1 A_SetRoll((roll + 50), SPF_INTERPOLATE)
 		Loop
-	
-	Spawn2:
-		EXD2 ABCD 2
-		Loop
-	
-	Death:
-		"####" "#" 350
-		"####" "##########" 1 A_FadeOut(0.1, FTF_REMOVE)
-		Wait
   }
 }
