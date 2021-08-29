@@ -23,7 +23,6 @@ Actor XDeathGoreSpawn
 		A_CustomMissile(GibGore3, 32, 0, random (0, 360), 2, random (10, 90));
 		A_CustomMissile(GibGore3, 32, 0, random (0, 360), 2, random (10, 90));
 		A_CustomMissile(GibGore3, 32, 0, random (0, 360), 2, random (10, 90));
-		A_CustomMissile(GibGore3, 32, 0, random (0, 360), 2, random (10, 90));
 		A_CustomMissile(GibGore4, 32, 0, random (0, 360), 2, random (10, 90));
 		A_CustomMissile(GibGore4, 32, 0, random (0, 360), 2, random (10, 90));
 		A_CustomMissile(GibGore4, 32, 0, random (0, 360), 2, random (10, 90));
@@ -104,6 +103,7 @@ actor GibGoreBase : DebrisGeneral
 	
 	+FORCEXYBILLBOARD
   
+	+BOUNCEONWALLS
 	+BOUNCEONFLOORS
 	+BOUNCEONACTORS
 	BounceType Doom
