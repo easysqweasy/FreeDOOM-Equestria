@@ -71,7 +71,9 @@ actor BossBaronofHell : EquestriaBaronofHell
  
 actor EquestriaBaronBall : BaronBall replaces BaronBall
 {
-  +ForceXYBillBoard
+	Radius 8
+	Height 16
+	+ForceXYBillBoard
 }
 
 actor KnightBall : EquestriaBaronBall
