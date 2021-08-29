@@ -98,8 +98,8 @@ actor KnightBall : EquestriaBaronBall
 	}
 	Loop
   Death:
-	BBAL CD 6 Bright
-	BBAL EEEEEEEEEE 1 Bright A_FadeOut(0.1)
+	BAL7 CD 6 Bright
+	BAL7 EEEEEEEEEE 1 Bright A_FadeOut(0.1)
 	Stop
   }
 }
