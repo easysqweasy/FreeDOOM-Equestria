@@ -1,5 +1,0 @@
-actor DEExplosions : DEParticles
-{
-  Renderstyle Add
-  Alpha 0.75
-}
