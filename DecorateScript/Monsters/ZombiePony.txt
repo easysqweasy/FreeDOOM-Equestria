@@ -83,6 +83,14 @@ ACTOR ZombiePony : ZombieMan Replaces ZombieMan
         POSS PQRST 3
         POSS U -1
         Stop
+		
+	Death.Plasma:
+		POSS H 5 A_SetTranslation(0)
+        POSS I 5
+        POSS J 5 A_NoBlocking
+        POSS K 5
+        POSS L -1
+        Stop
     
 	Raise:
         POSS K 5
