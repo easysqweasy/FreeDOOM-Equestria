@@ -49,20 +49,20 @@ actor EquestriaDoomPlayer : DoomPlayer
 #include "DecorateScript/Monsters/Pinky.txt"
 #include "DecorateScript/Monsters/Cyberdemon.txt"
 #include "DecorateScript/Monsters/Revenant.txt"
-#include "DecorateScript/Monsters/Dogs.txt"
+#include "DecorateScript/Monsters/Canines.dec"
 
 ////Items/PowerUps
 
-#include "DecorateScript/Pickups.txt"
-#include "DecorateScript/Powerups.txt"
+#include "DecorateScript/Pickups.dec"
+#include "DecorateScript/Powerups.dec"
 
 ////Effects, Particles, Debris
 
-#include "DecorateScript/Terrains.txt"
-#include "DecorateScript/Particles.txt"
-#include "DecorateScript/Gore.txt"
-#include "DecorateScript/Puffs.txt"
-#include "DecorateScript/FloorDecals.txt"
+#include "DecorateScript/Terrains.dec"
+#include "DecorateScript/Particles.dec"
+#include "DecorateScript/Gore.dec"
+#include "DecorateScript/Puffs.dec"
+#include "DecorateScript/FloorDecals.dec"
 
 ////Weapons
 
@@ -80,7 +80,6 @@ actor EquestriaDoomPlayer : DoomPlayer
 
 ////Decorations
 
-#include "DecorateScript/Decorations/Flags.txt"
 #include "DecorateScript/Decorations/Tech.txt"
 #include "DecorateScript/Decorations/Nature.txt"
 #include "DecorateScript/Decorations/Hell.txt"
@@ -88,5 +87,5 @@ actor EquestriaDoomPlayer : DoomPlayer
 
 ////Misc
 
-#include "DecorateScript/Tokens.txt"
-#include "DecorateScript/ExplosiveBarrel.txt"
+#include "DecorateScript/Tokens.dec"
+#include "DecorateScript/ExplosiveBarrel.dec"
