@@ -152,7 +152,7 @@ actor DEPlasmaBall : PlasmaBall replaces PlasmaBall
 	DamageType Plasma
 	
 	Radius 8
-	Height 13
+	Height 16
 	Alpha 0.75
 	RenderStyle Add
   

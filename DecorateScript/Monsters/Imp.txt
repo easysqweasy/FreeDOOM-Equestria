@@ -56,6 +56,9 @@ actor EquestriaImp : DoomImp Replaces DoomImp
 
 actor DEImpBall : DoomImpBall replaces DoomImpBall
 {
+	Radius 8
+	Height 16
+
 	DamageType Fire
 	
 	+ForceXYBillBoard

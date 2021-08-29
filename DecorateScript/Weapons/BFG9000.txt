@@ -69,8 +69,8 @@ actor DEBFG9000 : BFG9000 replaces BFG9000
 
 actor DEBFGBall : BFGBall replaces BFGBall
 {
-  Height 19
-  Radius 12
+  Height 36
+  Radius 18
   Alpha 1
   RenderStyle Add
   +FORCEXYBILLBOARD
