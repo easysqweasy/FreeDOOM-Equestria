@@ -14,29 +14,10 @@ Actor DEBulletPuff : BulletPuff replaces BulletPuff
 	
 	Melee:
 		PUFF C 4
-		PUFF DDDDD 1 A_FadeOut(0.1)
-		Stop
+		PUFF D 1 A_FadeOut(0.1)
+		Wait
 	}
 }
-
-actor BulletTracer : FastProjectile
-{
-  PROJECTILE
-  +FORCEXYBILLBOARD
-  +NOEXTREMEDEATH
-  Speed 125
-  RenderStyle Add
-  Damage 0
-  States
-  {
-  Spawn:
-	PUFF A 1 Bright
-	Loop
-  Death:
-    TNT1 A 0 
-	Stop
-  }
-}  
 
 Actor ShotgunPuff : DEBulletPuff
 {
@@ -50,8 +31,8 @@ Actor ShotgunPuff : DEBulletPuff
 	
 	Melee:
 		PUFF C 4
-		PUFF DDDDDDDDDD 1 A_FadeOut(0.05)
-		Stop
+		PUFF D 1 A_FadeOut(0.05)
+		Wait
 	}
 }
 
@@ -69,8 +50,8 @@ Actor KickPuff : DEBulletPuff
 	Spawn:
 	Melee:
 		PUFF C 4
-		PUFF DDDDD 1 A_FadeOut(0.1)
-		Stop
+		PUFF D 1 A_FadeOut(0.1)
+		Wait
 	
 	}
 }
@@ -87,6 +68,6 @@ Actor BerserkPuff : KickPuff
 	Melee:
 		RSMK AAAABBBBCCCCDDDDEEEE 1 A_FadeOut(0.025)
 		Stop
-	
+
 	}
 }
