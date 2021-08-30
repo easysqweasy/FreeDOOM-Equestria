@@ -160,7 +160,7 @@ ACTOR EquestriaBlood : Blood replaces Blood
 	{
 	Spawn:
 		BLUD C 0
-		BLUD C 0 A_SetRoll(random(0,359))
+		BLUD C 0 A_SetRoll(random(-360, 360))
 	Blood:
 		BLUD C 1
 		Loop
