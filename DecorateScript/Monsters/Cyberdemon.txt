@@ -16,8 +16,8 @@ actor EquestriaCyberdemon : Cyberdemon replaces Cyberdemon
 		A_CustomMissile(BloodExplosionSpawn, random(64, 128));
 		A_Scream;
 	}
-    CYBR J 10
-	CYBR KL 10
+    CYBR J 8
+	CYBR KL 5
 	{
 		A_Quake(4, 35, 0, 500, "world/quake");
 		A_Quake(3, 30, 0, 600, "world/quake");
@@ -31,8 +31,8 @@ actor EquestriaCyberdemon : Cyberdemon replaces Cyberdemon
 		A_CustomMissile(BloodExplosionSpawn, random(16, 64));
 		A_CustomMissile(BloodExplosionSpawn, random(64, 128));
 	}
-    CYBR M 10 A_NoBlocking
-    CYBR NO 10
+    CYBR M 5 A_NoBlocking
+    CYBR NO 5
     CYBR P 30
     CYBR P -1 A_BossDeath
     Stop
