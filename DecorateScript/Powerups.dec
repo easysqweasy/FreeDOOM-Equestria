@@ -32,6 +32,9 @@ actor DEComputerMap : Allmap replaces Allmap
 
 ACTOR DEBlurSphere : CustomInventory replaces BlurSphere
 {
+	Height 40
+	Radius 20
+	
   +COUNTITEM
   +VISIBILITYPULSE
   +FLOATBOB
@@ -65,6 +68,9 @@ ACTOR DEBlurSphereInventory : BlurSphere
 
 ACTOR DEInvulSphere : CustomInventory replaces InvulnerabilitySphere
 {
+	Height 40
+	Radius 20
+	
   +COUNTITEM
   +FLOATBOB
   +NOGRAVITY
@@ -95,6 +101,9 @@ ACTOR DEInvulSphereInventory : InvulnerabilitySphere
 //SoulSphere
 ACTOR DESoulSphere : CustomInventory replaces Soulsphere
 {
+	Height 40
+	Radius 20
+	
   +COUNTITEM
   +FLOATBOB
   +NOGRAVITY
@@ -126,14 +135,17 @@ ACTOR SoulSphereHealth : Health
 
 ACTOR DEMegaSphere : CustomInventory replaces Megasphere
 {
-  +COUNTITEM
-  +FLOATBOB
-  +NOGRAVITY
-  +FORCEXYBILLBOARD
-  +INVENTORY.AUTOACTIVATE
-  +INVENTORY.ALWAYSPICKUP
-  Inventory.PickupMessage "$GOTMSPHERE" // "MegaSphere!"
-  Inventory.PickupSound "misc/p_pkup"
+	Height 40
+	Radius 20
+	
+	+COUNTITEM
+	+FLOATBOB
+	+NOGRAVITY
+	+FORCEXYBILLBOARD
+	+INVENTORY.AUTOACTIVATE
+	+INVENTORY.ALWAYSPICKUP
+	Inventory.PickupMessage "$GOTMSPHERE" // "MegaSphere!"
+	Inventory.PickupSound "misc/p_pkup"
   States
   {
   Spawn:
