@@ -87,5 +87,6 @@ actor EquestriaDoomPlayer : DoomPlayer
 
 ////Misc
 
+#include "DecorateScript/Demonstrations.dec"
 #include "DecorateScript/Tokens.dec"
 #include "DecorateScript/ExplosiveBarrel.dec"
