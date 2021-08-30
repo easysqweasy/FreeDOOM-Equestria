@@ -1,4 +1,4 @@
-actor DEChainsaw : Chainsaw replaces Chainsaw
+actor EquestriaChainsaw : Chainsaw replaces Chainsaw
 {
   Weapon.UpSound ""
   Weapon.ReadySound "weapons/sawidle"

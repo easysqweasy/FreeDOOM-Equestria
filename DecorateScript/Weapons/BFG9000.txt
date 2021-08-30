@@ -1,4 +1,4 @@
-actor DEBFG9000 : BFG9000 replaces BFG9000
+actor EquestriaBFG9000 : BFG9000 replaces BFG9000
 {
   Weapon.BobStyle alpha
   States

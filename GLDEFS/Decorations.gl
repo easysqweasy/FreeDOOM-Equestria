@@ -10,7 +10,7 @@ pulselight BARREL
 	attenuate 1
 }
 
-object DEExploBarrel
+object EquestriaExploBarrel
 {
     frame BAR1  { light BARREL    }
 

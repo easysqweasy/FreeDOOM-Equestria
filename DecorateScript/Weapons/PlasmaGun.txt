@@ -1,4 +1,4 @@
-actor DEPlasmaGun : PlasmaRifle replaces PlasmaRifle
+actor EquestriaPlasmaGun : PlasmaRifle replaces PlasmaRifle
 {
   Weapon.BobStyle alpha
   Inventory.PickupSound "pickup/plasmagun"

@@ -20,7 +20,7 @@ Actor EquestriaLostSoul : LostSoul
 	+NOBLOOD
 }
 
-Actor PonyLostSoul : DELostSoul
+Actor PonyLostSoul : EquestriaLostSoul
 {
 	States
 	{
@@ -46,7 +46,7 @@ Actor PonyLostSoul : DELostSoul
 	}
 }
 
-Actor UnicornLostSoul : DELostSoul
+Actor UnicornLostSoul : EquestriaLostSoul
 {
 	States
 	{
@@ -72,7 +72,7 @@ Actor UnicornLostSoul : DELostSoul
 	}
 }
 
-Actor NirikLostSoul : DELostSoul	
+Actor NirikLostSoul : EquestriaLostSoul	
 {
 	States
 	{

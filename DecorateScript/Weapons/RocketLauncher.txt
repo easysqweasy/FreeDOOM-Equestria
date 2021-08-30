@@ -1,4 +1,4 @@
-actor DERocketLauncher : RocketLauncher replaces RocketLauncher
+actor EquestriaRocketLauncher : RocketLauncher replaces RocketLauncher
 {
   Weapon.BobStyle alpha
   Inventory.PickupSound "pickup/rocklauncher"

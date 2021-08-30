@@ -60,7 +60,7 @@ pointlight BPUFF2
     size 2
 }
 
-object DEBulletPuff
+object EquestriaBulletPuff
 {
     frame PUFFA { light BPUFF1 }
     frame PUFFB { light BPUFF2 }

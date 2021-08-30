@@ -9,7 +9,7 @@ pulselight SOULSPHERE
 	attenuate 1
 }
 
-object DESoulSphere
+object EquestriaSoulSphere
 {
     frame SOUL { light SOULSPHERE }
 }
@@ -24,7 +24,7 @@ pulselight MEGASPHERE
 	attenuate 1
 }
 
-object DEMegaSphere
+object EquestriaMegaSphere
 {
     frame MEGA { light MEGASPHERE }
 }
@@ -40,7 +40,7 @@ pulselight INVULN
 	attenuate 1
 }
 
-object DEInvulSphere
+object EquestriaInvulSphere
 {
     frame PINV { light INVULN }
 }
@@ -86,7 +86,7 @@ pointlight BLURSPHERE5
 	attenuate 1
 }
 
-object DEBlurSphere
+object EquestriaBlurSphere
 {
     frame PINS { light BLURSPHERE1 }
 
@@ -107,7 +107,7 @@ pulselight HEALTHPOTION
     offset 0 10 0
 }
 
-object DEHealthPotion
+object EquestriaHealthPotion
 {
     frame BON1 { light HEALTHPOTION }
 }

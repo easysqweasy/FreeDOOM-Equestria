@@ -1,4 +1,4 @@
-Actor DEBulletPuff : BulletPuff replaces BulletPuff
+Actor EquestriaBulletPuff : BulletPuff replaces BulletPuff
 {
 	+FLOORCLIP
 	+NOTELEPORT
@@ -19,7 +19,7 @@ Actor DEBulletPuff : BulletPuff replaces BulletPuff
 	}
 }
 
-Actor ShotgunPuff : DEBulletPuff
+Actor ShotgunPuff : EquestriaBulletPuff
 {
 	States
 	{
@@ -36,7 +36,7 @@ Actor ShotgunPuff : DEBulletPuff
 	}
 }
 
-Actor KickPuff : DEBulletPuff
+Actor KickPuff : EquestriaBulletPuff
 {
 	DamageType Kick
     AttackSound "*fist"

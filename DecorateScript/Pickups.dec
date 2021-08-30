@@ -1,4 +1,4 @@
-actor DEHealthPotion : HealthBonus replaces HealthBonus
+actor EquestriaHealthPotion : HealthBonus replaces HealthBonus
 {
   Inventory.PickupSound "pickup/potion"
 }

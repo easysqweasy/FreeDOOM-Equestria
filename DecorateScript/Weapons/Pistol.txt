@@ -1,4 +1,4 @@
-ACTOR DEPistol : Pistol replaces Pistol
+ACTOR EquestriaPistol : Pistol replaces Pistol
 {
 	Weapon.BobStyle smooth
 	States

@@ -20,7 +20,7 @@ ACTOR EquestriaShotgunGuy : ShotgunGuy replaces ShotgunGuy
 	
 	Obituary "$OB_SHOTGUY"
 	
-	DropItem "DEShotgun"
+	DropItem "EquestriaShotgun"
 	
 	States
 	{

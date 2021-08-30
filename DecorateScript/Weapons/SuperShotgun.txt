@@ -1,4 +1,4 @@
-actor DESuperShotgun : SuperShotgun replaces SuperShotgun
+actor EquestriaSuperShotgun : SuperShotgun replaces SuperShotgun
 {
   Weapon.BobStyle smooth
   States

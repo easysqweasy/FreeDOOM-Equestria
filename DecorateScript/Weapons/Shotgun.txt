@@ -1,4 +1,4 @@
-actor DEShotgun : Shotgun replaces Shotgun
+actor EquestriaShotgun : Shotgun replaces Shotgun
 {
   Weapon.BobStyle smooth
   States

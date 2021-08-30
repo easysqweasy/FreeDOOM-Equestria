@@ -151,12 +151,12 @@ decal BFGLightning2
 
 ////Weapons
 
-generator DEPistol			ChipDecal
-generator DEChainsaw		BulletChip
-generator DEShotgun			ShellDecal
-generator DESuperShotgun	ShellDecal
-generator Repeater			ChipDecal
-generator DEChaingun		ChipDecal
+generator EquestriaPistol	ChipDecal
+generator EquestriaChainsaw	BulletChip
+generator EquestriaShotgun	ShellDecal
+generator EquestriaSuperShotgun	ShellDecal
+generator Repeater	ChipDecal
+generator EquestriaChaingun	ChipDecal
 
 ////Projectiles
 
@@ -169,8 +169,8 @@ generator KnightBall			BaronScorch
 
 ////Monsters
 
-generator ZombiePony		ChipDecal
-generator ShotgunPony		ShellDecal
-generator ChaingunDude		ChipDecal
+generator EquestriaZombieMan		ChipDecal
+generator EquestriaShotgunGuy		ShellDecal
+generator EquestriaChaingunGuy		ChipDecal
 generator WolfensteinSS		ChipDecal
 generator SpiderMastermind	ChipDecal

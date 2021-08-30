@@ -156,17 +156,17 @@ pulselight DemonNirik2
 	interval 0.5
 	attenuate 1
 }
-object ZombiePony
+object EquestriaZombieMan
 {
     frame POSSF { light ZOMBIEATK }
 }
 
-object ShotgunPony
+object EquestriaShotgunGuy
 {
     frame SPOSF { light ZOMBIEATK }
 }
 
-object ChaingunDude
+object EquestriaChaingunGuy
 {
     frame CPOSE { light ZOMBIEATK }
     frame CPOSF { light ZOMBIEATK }
@@ -265,7 +265,7 @@ pulselight ARCHRES
 	attenuate 1
 }
 
-object Archvile
+object EquestriaArchvile
 {
     frame VILEH { light ARCHATK1 }
     frame VILEI { light ARCHATK2 }
