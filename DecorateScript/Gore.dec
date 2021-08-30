@@ -91,7 +91,7 @@ actor GibGoreBase : DebrisGeneral
 	Decal BloodSplat
 	BounceSound "gore/bloodsplats"
 	DeathSound "gore/bloodsplats"
-	
+
 	Height 1
 	Radius 1
 	
