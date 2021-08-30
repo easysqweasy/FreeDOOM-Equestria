@@ -9,6 +9,6 @@ Actor LowHealthCheck : InvToken	{}
 
 //ToDo
 
-Actor PickedUpBerserk : InvToken	{}
+Actor InspectAnimation : InvToken	{}
 
-Actor DaisyCutscene : InvToken	{}
+Actor PickedUpBerserk : InvToken	{}
