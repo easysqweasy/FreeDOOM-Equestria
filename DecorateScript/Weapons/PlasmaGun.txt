@@ -164,7 +164,7 @@ actor DEPlasmaBall : PlasmaBall replaces PlasmaBall
 	{
 	Spawn:
 		PLSS A 0
-		PLSS A 0 A_SetRoll(random(0, 359))
+		PLSS A 0 A_SetRoll(random(-360, 360))
 	Projectile:
 		PLSS A 1 Bright
 		{
