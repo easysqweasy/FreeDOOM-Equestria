@@ -1,0 +1,4 @@
+Actor DoomEquestriaWeapon : DoomWeapon
+{
+	Weapon.BobStyle "Smooth"
+}
