@@ -7,7 +7,6 @@ Actor PlasmaBallDemo : DEPlasmaBall
 	Spawn:
 		PLSS A 1 Bright
 		{
-			A_SpawnItemEx("PlasmaTrail");
 			A_SetRoll((roll + 15), SPF_INTERPOLATE);
 		}
 		Loop
