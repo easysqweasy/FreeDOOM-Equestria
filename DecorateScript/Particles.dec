@@ -29,21 +29,22 @@ actor GravityFirePieceSpawn : RandomSpawner
 
 actor Pieces : DEParticles
 {
-  RenderStyle AddStencil
-  Alpha 1.0
-  States
-  {
-  Spawn:
-	PIEC A 5 Bright
-	PIEC AAAAAAAAAA 1 Bright A_FadeOut(0.1)
-	Stop
-  }
+	RenderStyle AddStencil
+	Alpha 1.0
+	States
+	{
+	
+	Spawn:
+		PIEC A 5 Bright
+		PIEC A 1 Bright A_FadeOut(0.1)
+		Wait
+	}
 }
 
 actor FirePiece : Pieces
 {
-  RenderStyle AddStencil
-  StencilColor Yellow
+	RenderStyle AddStencil
+	StencilColor Yellow
 }	
 
 actor FirePiece2 : FirePiece
@@ -66,16 +67,18 @@ actor GFirePiece : FirePiece
   -NOGRAVITY
 }
 
-actor GFirePiece2 : GFirePiece
+actor GFirePiece2 : FirePiece2
 {
   Speed 8
   Mass 1
+  -NOGRAVITY
 }
 
-actor GFirePiece3 : GFirePiece
+actor GFirePiece3 : FirePiece3
 {
   Speed 8
   Mass 1
+  -NOGRAVITY
 }
 
 actor AcidPieceSpawn : RandomSpawner
