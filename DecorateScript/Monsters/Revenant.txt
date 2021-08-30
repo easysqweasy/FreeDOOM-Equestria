@@ -1,4 +1,4 @@
-ACTOR RevenantPony : Revenant replaces Revenant
+ACTOR EquestriaRevenant : Revenant replaces Revenant
 {
 	+CASTSPRITESHADOW
 	
@@ -16,7 +16,7 @@ ACTOR RevenantPony : Revenant replaces Revenant
 	}
 }
 
-Actor RevenantPonyTracer : RevenantTracer replaces RevenantTracer
+Actor EquestriaRevenantTracer : RevenantTracer replaces RevenantTracer
 {
 	RenderStyle Normal
 	Alpha 1

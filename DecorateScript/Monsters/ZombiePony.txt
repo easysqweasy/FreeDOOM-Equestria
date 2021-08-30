@@ -1,4 +1,4 @@
-ACTOR ZombiePony : ZombieMan Replaces ZombieMan
+ACTOR EquestriaZombieMan : ZombieMan Replaces ZombieMan
 {
 	Health 20
 	Radius 20

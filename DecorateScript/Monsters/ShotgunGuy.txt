@@ -1,4 +1,4 @@
-ACTOR ShotgunPony : ShotgunGuy replaces ShotgunGuy
+ACTOR EquestriaShotgunGuy : ShotgunGuy replaces ShotgunGuy
 {
 	Health 30
 	Radius 20

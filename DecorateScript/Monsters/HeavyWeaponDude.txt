@@ -1,4 +1,4 @@
-ACTOR ChaingunDude : ChaingunGuy replaces ChaingunGuy
+ACTOR EquestriaChaingunGuy : ChaingunGuy replaces ChaingunGuy
 {
 	Health 70
 	Radius 20

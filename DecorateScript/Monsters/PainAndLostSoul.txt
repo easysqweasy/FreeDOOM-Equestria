@@ -5,7 +5,7 @@ Actor LostSoulVariants : RandomSpawner replaces LostSoul
 	DropItem "NirikLostSoul"
 }	
 
-Actor DELostSoul : LostSoul
+Actor EquestriaLostSoul : LostSoul
 {
 	Health 75
 	Species "PainSoul"

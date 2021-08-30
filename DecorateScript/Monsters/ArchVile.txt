@@ -1,4 +1,4 @@
-actor DEArchVile : ArchVile replaces Archvile
+actor EquestriaArchVile : ArchVile replaces Archvile
 {
 	+CASTSPRITESHADOW
 	States
