@@ -123,7 +123,7 @@ actor GibGoreBase : DebrisGeneral
 		GORE A 0
 	
 	Spawn2:
-		"####" "#" 0 A_SetRoll(random(0,360))
+		"####" "#" 0 A_SetRoll(random(0,359))
 		Goto Roll
 	
 	Roll:
@@ -141,6 +141,9 @@ actor GibGoreBase : DebrisGeneral
 
 ACTOR EquestriaBlood : Blood replaces Blood
 {
+	Height 4
+	Radius 2
+	
 	Mass 5
 	Speed 8
 	
@@ -160,7 +163,8 @@ ACTOR EquestriaBlood : Blood replaces Blood
 	{
 	Spawn:
 		BLUD C 0
-		BLUD C 0 A_SetRoll(random(-360, 360))
+		BLUD C 0 A_SetRoll(random(-359, 359))
+		Goto Blood
 	Blood:
 		BLUD C 1
 		Loop
@@ -190,7 +194,14 @@ ACTOR DESmallBloodPoolSpawn : SmallBloodPool
 
 ACTOR BloodTrail : EquestriaBlood
 {
-	Scale 0.5
+	Scale 0.75
+
+	States
+	{
+	Blood:
+		BLUD C 1 A_SetRoll((roll + 50), SPF_INTERPOLATE)
+		Loop
+	}
 }
 
 Actor Heart
