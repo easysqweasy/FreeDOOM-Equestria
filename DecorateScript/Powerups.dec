@@ -34,7 +34,7 @@ ACTOR EquestriaBlurSphere : CustomInventory replaces BlurSphere
 {
 	Height 40
 	Radius 20
-	
+
   +COUNTITEM
   +VISIBILITYPULSE
   +FLOATBOB
