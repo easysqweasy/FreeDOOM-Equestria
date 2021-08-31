@@ -1,0 +1,35 @@
+ACTOR EquestriaScriptedMarine : ScriptedMarine replaces ScriptedMarine
+{	+CASTSPRITESHADOW	}
+
+Actor EquestriaMarineBFG : MarineBFG replaces MarineBFG
+{	+CASTSPRITESHADOW	}
+
+Actor EquestriaMarineBerserk : MarineBerserk replaces MarineBerserk
+{	+CASTSPRITESHADOW	}
+
+Actor EquestriaMarineChaingun : MarineChaingun replaces MarineChaingun
+{	+CASTSPRITESHADOW	}
+
+Actor EquestriaMarineChainsaw : MarineChainsaw replaces MarineChainsaw
+{	+CASTSPRITESHADOW	}
+
+Actor EquestriaMarineFist : MarineFist replaces MarineFist
+{	+CASTSPRITESHADOW	}
+
+Actor EquestriaMarinePistol : MarinePistol replaces MarinePistol
+{	+CASTSPRITESHADOW	}
+
+Actor EquestriaMarinePlasma : MarinePlasma replaces MarinePlasma
+{	+CASTSPRITESHADOW	}
+
+Actor EquestriaMarineRailgun : MarineRailgun replaces MarineRailgun
+{	+CASTSPRITESHADOW	}
+
+Actor EquestriaMarineRocket : MarineRocket replaces MarineRocket
+{	+CASTSPRITESHADOW	}
+
+Actor EquestriaMarineSSG : MarineSSG replaces MarineSSG
+{	+CASTSPRITESHADOW	}
+
+Actor EquestriaMarineShotgun : MarineShotgun replaces MarineShotgun
+{	+CASTSPRITESHADOW	}
