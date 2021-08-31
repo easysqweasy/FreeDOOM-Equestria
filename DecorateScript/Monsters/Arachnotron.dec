@@ -15,7 +15,7 @@ Actor EquestriaArachnotron : Arachnotron replaces Arachnotron
 	}
 }
 
-ACTOR EquestriaArachnotronPlasma : ArachnotronPlasma replaces Arachnotron
+ACTOR EquestriaArachnotronPlasma : ArachnotronPlasma replaces ArachnotronPlasma
 {
 	+ROLLSPRITE +ROLLCENTER
 	
