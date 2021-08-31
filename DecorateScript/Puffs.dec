@@ -66,7 +66,7 @@ Actor BerserkPuff : KickPuff
 	
 	Spawn:
 	Melee:
-		RSMK AAAABBBBCCCCDDDDEEEE 1 A_FadeOut(0.025)
+		RSMK AAAAABBBBBCCCCCDDDDDEEEEE 1 A_FadeOut(0.015)
 		Stop
 
 	}
