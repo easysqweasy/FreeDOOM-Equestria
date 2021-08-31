@@ -1,5 +1,5 @@
 Actor InvToken : Inventory
-{	Inventory.MaxAmount 1	}
+{	Inventory.MaxAmount 1	+INVENTORY.QUIET	}
 
 Actor DeadCheck : InvToken	{}
 
@@ -12,3 +12,5 @@ Actor LowHealthCheck : InvToken	{}
 Actor InspectAnimation : InvToken	{}
 
 Actor PickedUpBerserk : InvToken	{}
+
+Actor FoundDaisy : InvToken	{}
