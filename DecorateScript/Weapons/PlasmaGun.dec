@@ -203,5 +203,8 @@ actor DEPlasmaBall : PlasmaBall replaces PlasmaBall
 
 actor TechPlasmaBall : DEPlasmaBall
 {
+	Radius 13
+	Height 8
+	
 	FastSpeed 30
 }
