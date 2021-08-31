@@ -12,3 +12,10 @@ Actor PlasmaBallDemo : DEPlasmaBall
 		Loop
 	}
 }
+
+Actor BloodTrailDemo : BloodTrail
+{
+	Speed 0
+	
+	Gravity 0
+}
