@@ -67,17 +67,17 @@ actor EquestriaDoomPlayer : DoomPlayer
 
 ////Weapons
 
-#Include "DecorateScript/Weapons/Broom.txt"
-#Include "DecorateScript/Weapons/Pistol.txt"
-#Include "DecorateScript/Weapons/Shotgun.txt"
-#Include "DecorateScript/Weapons/Repeater.txt"
-#Include "DecorateScript/Weapons/SuperShotgun.txt"
-#Include "DecorateScript/Weapons/Chaingun.txt"
-#Include "DecorateScript/Weapons/PlasmaGun.txt"
-#Include "DecorateScript/Weapons/RocketLauncher.txt"
-#Include "DecorateScript/Weapons/BFG9000.txt"
-#Include "DecorateScript/Weapons/Chainsaw.txt"
-#Include "DecorateScript/Weapons/Ammo.txt"
+#Include "DecorateScript/Weapons/Broom.dec"
+#Include "DecorateScript/Weapons/Pistol.dec"
+#Include "DecorateScript/Weapons/Shotgun.dec"
+#Include "DecorateScript/Weapons/Repeater.dec"
+#Include "DecorateScript/Weapons/SuperShotgun.dec"
+#Include "DecorateScript/Weapons/Chaingun.dec"
+#Include "DecorateScript/Weapons/PlasmaGun.dec"
+#Include "DecorateScript/Weapons/RocketLauncher.dec"
+#Include "DecorateScript/Weapons/BFG9000.dec"
+#Include "DecorateScript/Weapons/Chainsaw.dec"
+#Include "DecorateScript/Weapons/Ammo.dec"
 
 ////Decorations
 
