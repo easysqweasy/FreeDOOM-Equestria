@@ -36,6 +36,7 @@ actor EquestriaDoomPlayer : DoomPlayer
 
 ////Monsters
 
+#include "DecorateScript/Monsters/Arachnotron.dec"
 #include "DecorateScript/Monsters/ArchVile.txt"
 #include "DecorateScript/Monsters/BaronHellKnight.txt"
 #include "DecorateScript/Monsters/Cacodemon.txt"
