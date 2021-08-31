@@ -15,7 +15,6 @@ ACTOR BurstPegasus
   ActiveSound "chainguy/active"
   AttackSound "chainguy/attack"
   Obituary "$OB_CHAINGUY"
-  Dropitem "Repeater"
   States
   {
   Spawn:
