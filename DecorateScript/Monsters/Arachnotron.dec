@@ -7,7 +7,7 @@ Actor EquestriaArachnotron : Arachnotron replaces Arachnotron
 	
 	Missile:
 		BSPI A 20 bright A_FaceTarget
-		BSPI G 4 bright A_SpawnProjectile(ArachnotronPlasma, 20)
+		BSPI G 4 bright A_SpawnProjectile(ArachnotronPlasma, 18, 4)
 		BSPI H 4 bright
 		BSPI H 1 bright A_SpidRefire
 		Goto Missile+1
