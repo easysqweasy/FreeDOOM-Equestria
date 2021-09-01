@@ -39,6 +39,8 @@ GitHub Repository: https://github.com/Ragedox/DOOM-Equestria
 
 = Other Credits =
 
+Doom 2 Minor Sprite Fixing Project
+
 Lostres 2.1 by NaturalTvventy (Unused Doom Content by ID Software)
 
 Musics from DOOM 1
