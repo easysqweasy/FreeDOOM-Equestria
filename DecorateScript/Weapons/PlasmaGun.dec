@@ -84,6 +84,8 @@ Actor EquestriaPlasmaGun : DoomEquestriaWeapon replaces PlasmaRifle
 		
 actor DEPlasmaBall : PlasmaBall replaces PlasmaBall
 {
+	Decal PlasmaScorch
+	
 	DamageType Plasma
 	
 	Radius 8
