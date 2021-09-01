@@ -160,7 +160,7 @@ generator EquestriaChaingun	ChipDecal
 
 ////Projectiles
 
-generator DEPlasmaBall 			PlasmaScorch
+//generator DEPlasmaBall 			PlasmaScorch
 generator DERocket				Scorch
 generator DEBFGBall				BFGLightning
 generator DEImpBall				FireBallScorch
