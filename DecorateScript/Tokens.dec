@@ -9,6 +9,8 @@ Actor LowHealthCheck : InvToken	{}
 
 //ToDo
 
+Actor InterpolateON : InvToken	{}	Actor InterpolateOFF : InvToken	{}
+
 Actor InspectAnimation : InvToken	{}
 
 Actor PickedUpBerserk : InvToken	{}
