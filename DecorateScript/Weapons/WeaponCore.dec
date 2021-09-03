@@ -98,18 +98,18 @@ Actor DoomEquestriaWeapon : Weapon
 		
 		SHTG AEE 1
 		{
-			A_OverlayOffset(3, -35, 40, WOF_KEEPY | WOF_INTERPOLATE );
+			A_OverlayOffset(3, -35, 5, WOF_INTERPOLATE );
 			A_OverlayRotate(3, 4, WOF_ADD);
 		}
 		SHTG FF 1
 		{
-			A_OverlayOffset(3, -30, 55, WOF_KEEPY | WOF_INTERPOLATE );
+			A_OverlayOffset(3, -30, 10, WOF_INTERPOLATE );
 			A_OverlayRotate(3, 8, WOF_ADD);
 		}
 		SHTG F 10
 		SHTG FEE 1 
 		{
-			A_OverlayOffset(3, 0, 0, WOF_KEEPY | WOF_INTERPOLATE );
+			A_OverlayOffset(3, 0, 0, WOF_INTERPOLATE );
 			A_OverlayRotate(3, -8, WOF_ADD);
 		}
 		SHTG A 1
@@ -121,12 +121,12 @@ Actor DoomEquestriaWeapon : Weapon
 		
 		SHTG AEE 1
 		{
-			A_OverlayOffset(3, -35, 40, WOF_KEEPY | WOF_INTERPOLATE );
+			A_OverlayOffset(3, -35, 5, WOF_INTERPOLATE );
 			A_OverlayRotate(3, 5, WOF_ADD);
 		}
 		SHTG FF 1
 		{
-			A_OverlayOffset(3, -30, 55, WOF_KEEPY | WOF_INTERPOLATE );
+			A_OverlayOffset(3, -30, 10, WOF_INTERPOLATE );
 			A_OverlayRotate(3, 10, WOF_ADD);
 		}
 		SHTG F 8
