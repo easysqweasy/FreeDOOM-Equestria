@@ -4,12 +4,13 @@ Actor EquestriaBulletPuff : BulletPuff replaces BulletPuff
 	+NOTELEPORT
 	+FORCEXYBILLBOARD
 	+NOBLOCKMAP
+	+RANDOMIZE
+	
 	States
 	{
 	
 	Spawn:
-		PUFF A 1 Bright A_SpawnItemEx("BulletFloorCheck", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION)
-		PUFF A 3 Bright
+		PUFF A 4 Bright
 		PUFF B 4
 	
 	Melee:
@@ -25,8 +26,7 @@ Actor ShotgunPuff : EquestriaBulletPuff
 	{
 	
 	Spawn:
-		PUFF A 1 Bright A_SpawnItemEx("BulletFloorCheck", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION)
-		PUFF A 3 Bright
+		PUFF A 4 Bright
 		PUFF B 4
 	
 	Melee:
