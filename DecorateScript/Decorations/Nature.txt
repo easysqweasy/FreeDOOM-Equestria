@@ -1,5 +1,6 @@
 Actor Bush1 107
 {
+//$NotAngled
 //$Category Nature
 Radius 12
 Height 24
@@ -35,6 +36,7 @@ Spawn:
 
 Actor BushTall1 110
 {
+//$NotAngled
 //$Category Nature
 Radius 12
 Height 46
@@ -71,6 +73,7 @@ Spawn:
 
 Actor Rock 113
 {
+//$NotAngled
 //$Category Nature
   Radius 17
   Height 22
@@ -85,6 +88,7 @@ Actor Rock 113
 
 ACTOR Stalagtite2 114
 {
+//$NotAngled
 //$Category Nature
   Radius 16
   Height 40
@@ -98,13 +102,11 @@ ACTOR Stalagtite2 114
   }
 }
 
-ACTOR Stalagtite3 115
+ACTOR Stalagtite3 : Stalagtite2 115
 {
 //$Category Nature
   Radius 15
   Height 47
-  ProjectilePassHeight -16
-  +SOLID
   States
   {
   Spawn:
@@ -113,13 +115,8 @@ ACTOR Stalagtite3 115
   }
 }
 
-ACTOR Stalagtite4 116
+ACTOR Stalagtite4 : Stalagtite2 116
 {
-//$Category Nature
-  Radius 15
-  Height 47
-  ProjectilePassHeight -16
-  +SOLID
   States
   {
   Spawn:
@@ -130,6 +127,7 @@ ACTOR Stalagtite4 116
 
 ACTOR BigStalagtite 117
 {
+//$NotAngled
 //$Category Nature
   Radius 24
   Height 96
