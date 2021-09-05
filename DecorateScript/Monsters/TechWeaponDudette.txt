@@ -107,14 +107,13 @@ actor PlasmaKirin 91
 		Stop
 	
 	XDeath:
-		TECH M 3
-		TECH N 5 
+		TECH W 0 A_JumpIfInventory("DeadCheck",1,"VoidDead")
+		TECH W 0 
 		{
 			A_CustomMissile(XDeathGoreSpawn, 2);
 			A_XScream;
+			A_NoBlocking;
 		}
-		TECH O 3 A_NoBlocking
-		TECH PQRSTUV 3
 		TECH W -1
 		Stop
 	
@@ -226,14 +225,12 @@ actor DemonNirik 92
 		Stop
 	
 	XDeath:
-		TECH M 3
-		TECH N 5 
+		TECH W 0
 		{
 			A_CustomMissile(XDeathGoreSpawn, 2);
 			A_XScream;
+			A_NoBlocking;
 		}
-		TECH O 3 A_NoBlocking
-		TECH PQRSTUV 3
 		TECH W -1
 		Stop
 	

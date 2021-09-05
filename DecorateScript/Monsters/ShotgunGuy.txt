@@ -53,14 +53,12 @@ ACTOR EquestriaShotgunGuy : ShotgunGuy replaces ShotgunGuy
         Stop
     
 	XDeath:
-        SPOS M 3
-        SPOS N 5 
+        SPOS U 0
 		{
 			A_CustomMissile(XDeathGoreSpawn, 2);
 			A_XScream;
+			a_NoBlocking;
 		}
-        SPOS O 3 A_NoBlocking
-        SPOS PQRST 3
         SPOS U -1
         Stop
     

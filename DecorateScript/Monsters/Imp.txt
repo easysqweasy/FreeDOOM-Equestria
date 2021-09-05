@@ -7,6 +7,21 @@ actor EquestriaImp : DoomImp Replaces DoomImp
 	Spawn:
 		IDLI AB 10 A_Look
 		Loop
+	
+	
+	/*Idle:
+		TROO AABBCCDD 3
+		{
+			A_Wander;
+			A_Look;
+		}
+		TROO A 0 A_Jump(32, "Tired")
+		Loop
+	
+	Tired:
+		IDLI AB 10 A_Look
+		TROO A 0 A_Jump(128, "Idle")
+		Loop*/
 
 	Death:
 		TROO I 5
@@ -17,14 +32,12 @@ actor EquestriaImp : DoomImp Replaces DoomImp
         Stop
 		
 	XDeath:
-		TROO N 3
-		TROO O 5 
+		TROO U 0
 		{
 			A_CustomMissile(XDeathGoreSpawn, 2);
 			A_XScream;
+			A_NoBlocking;
 		}
-		TROO P 3 A_NoBlocking
-		TROO QRST 3
 		TROO U -1
 		Stop
 	
