@@ -1,5 +1,6 @@
 actor Broom : DoomEquestriaWeapon 90
 {
+//$Title Broom
 	Weapon.SelectionOrder 3600
 	Weapon.SlotNumber 1
 	Height 40

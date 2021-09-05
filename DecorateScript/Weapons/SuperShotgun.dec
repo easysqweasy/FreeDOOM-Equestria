@@ -1,5 +1,6 @@
 actor EquestriaSuperShotgun : DoomEquestriaWeapon replaces SuperShotgun
 {
+//$Title Super Shotgun
 	Weapon.SelectionOrder 400
 	Weapon.AmmoUse 2
 	Weapon.AmmoGive 8

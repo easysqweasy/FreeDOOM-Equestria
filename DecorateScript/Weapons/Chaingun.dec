@@ -1,5 +1,6 @@
 actor EquestriaChaingun : DoomEquestriaWeapon replaces Chaingun
 {
+//$Title Chaingun
 	Weapon.BobStyle alpha
 	Weapon.SelectionOrder 700
 	Weapon.AmmoUse 1

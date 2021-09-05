@@ -1,5 +1,6 @@
 actor EquestriaBFG9000 : DoomEquestriaWeapon replaces BFG9000
 {
+//$Title Big Fucking Gun 9000
 	Height 20
 	
 	Weapon.BobStyle alpha

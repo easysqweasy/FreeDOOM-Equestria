@@ -1,5 +1,6 @@
 Actor EquestriaPlasmaGun : DoomEquestriaWeapon replaces PlasmaRifle
 {
+//$Title Plasma Gun
 	Weapon.BobStyle alpha
 	Weapon.SelectionOrder 100
 	Weapon.AmmoUse 1
