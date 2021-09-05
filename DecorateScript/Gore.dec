@@ -19,10 +19,8 @@ Actor XDeathGoreSpawn
 	{
 		A_CustomMissile(GibGore2, 32, 0, random (0, 360), 2, random (10, 90));
 		A_CustomMissile(GibGore2, 32, 0, random (0, 360), 2, random (10, 90));
-		A_CustomMissile(GibGore2, 32, 0, random (0, 360), 2, random (10, 90));
 		A_CustomMissile(GibGore3, 32, 0, random (0, 360), 2, random (10, 90));
 		A_CustomMissile(GibGore3, 32, 0, random (0, 360), 2, random (10, 90));
-		A_CustomMissile(GibGore3, 32, 0, random (0, 360), 2, random (10, 90));
 		A_CustomMissile(GibGore4, 32, 0, random (0, 360), 2, random (10, 90));
 		A_CustomMissile(GibGore4, 32, 0, random (0, 360), 2, random (10, 90));
 		A_CustomMissile(GibGore4, 32, 0, random (0, 360), 2, random (10, 90));
@@ -32,7 +30,6 @@ Actor XDeathGoreSpawn
 		A_CustomMissile(GibGore4, 32, 0, random (0, 360), 2, random (10, 90));
 		A_CustomMissile(GibGore4, 32, 0, random (0, 360), 2, random (10, 90));
 		A_CustomMissile(GibGore4, 32, 0, random (0, 360), 2, random (10, 90));
-		A_CustomMissile(GibGore5, 32, 0, random (0, 360), 2, random (10, 90));
 		A_CustomMissile(GibGore5, 32, 0, random (0, 360), 2, random (10, 90));
 		A_CustomMissile(GibGore5, 32, 0, random (0, 360), 2, random (10, 90));
 	}
@@ -48,11 +45,6 @@ Actor BigGoreSpawn : XDeathGoreSpawn
 	TNT1 A 0
 	TNT1 A 0
 	{
-		A_CustomMissile(BigGoreRandom, 50, 0, random (0, 360), 2, random (10, 180));
-		A_CustomMissile(BigGoreRandom, 50, 0, random (0, 360), 2, random (10, 180));
-		A_CustomMissile(BigGoreRandom, 50, 0, random (0, 360), 2, random (10, 180));
-		A_CustomMissile(BigGoreRandom, 50, 0, random (0, 360), 2, random (10, 180));
-		A_CustomMissile(BigGoreRandom, 50, 0, random (0, 360), 2, random (10, 180));
 		A_CustomMissile(BigGoreRandom, 50, 0, random (0, 360), 2, random (10, 180));
 		A_CustomMissile(BigGoreRandom, 50, 0, random (0, 360), 2, random (10, 180));
 		A_CustomMissile(BigGoreRandom, 50, 0, random (0, 360), 2, random (10, 180));
@@ -313,7 +305,7 @@ actor BigGibGore1 : GibGoreBase
   Death:
 	BGOR E 0 A_ChangeFlag("SPRITEFLIP", random(0,1))
 	BGOR E 350 
-	BGOR EEEEEEEEEE 1 A_FadeOut(0.1)
+	BGOR E 1 A_FadeOut(0.1)
 	Wait
   }
 }
@@ -331,7 +323,7 @@ actor BigGibGore2 : BigGibGore1
   Death:
 	BGOR E 0 A_ChangeFlag("SPRITEFLIP", random(0,1))
 	BGO2 E 350
-	BGO2 EEEEEEEEEE 1 A_FadeOut(0.1, FTF_REMOVE)
+	BGO2 E 1 A_FadeOut(0.1)
 	Wait
   }
 }
