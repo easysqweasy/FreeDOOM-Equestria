@@ -138,6 +138,7 @@ terrain Blood
 //smokey lava
 terrain Lava
 {
+	DamageType		Fire
 	splash			Lava
 	footclip		10
 	liquid
@@ -154,6 +155,7 @@ terrain LavaSmoke
 //bright green and smoke
 terrain Nuke
 {
+	DamageType		Nuke
 	splash			Nuke
 	footclip		10
 	liquid
