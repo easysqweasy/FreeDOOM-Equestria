@@ -84,8 +84,8 @@ actor GibGoreBase : DebrisGeneral
 	BounceSound "gore/bloodsplats"
 	DeathSound "gore/bloodsplats"
 
-	Height 1
-	Radius 1
+	Height 4
+	Radius 2
 	
 	Mass 4
 	Speed 10
@@ -293,6 +293,9 @@ actor BigGoreRandom : RandomSpawner
 
 actor BigGibGore1 : GibGoreBase
 {
+	Height 10
+	Radius 5
+	
 	Speed 15
 	Mass 10
 	BounceFactor 0.5
