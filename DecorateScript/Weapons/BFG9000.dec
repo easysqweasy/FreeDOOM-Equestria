@@ -71,7 +71,7 @@ actor EquestriaBFG9000 : DoomEquestriaWeapon replaces BFG9000
 		}
 		BFGG C 10 
 		{
-			A_QuakeEx(5, 0, 4, 4, 0, 1, "", QF_RELATIVE | QF_SCALEDOWN);
+			A_QuakeEx(5, 0, 4, 4, 0, 1, "", QF_RELATIVE | QF_SCALEDOWN | QF_SCALEUP);
 			A_WeaponOffset(0, 40, WOF_KEEPX | WOF_INTERPOLATE);
 			A_FireBFG;
 			//A_SetBlend("green", 0.5, 16);
@@ -135,9 +135,7 @@ actor DEBFGBall : BFGBall replaces BFGBall
 			A_SpawnItemEx("BFGFloorCheck", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION);
 			A_SpawnItemEX("BFGEEffect");
 			
-			A_Quake(6,24,0,300,"world/quake");
-			A_Quake(3,12,0,600,"world/quake");
-			A_Quake(2,6,0,900,"world/quake");
+			A_QuakeEx(8, 8, 8, 35, 0, 500, "world/quake", QF_RELATIVE | QF_SCALEDOWN, 0,0,0, 1);
 		}	
 		TNT1 A 0 
 		BFE1 ABCD 2 Bright 
