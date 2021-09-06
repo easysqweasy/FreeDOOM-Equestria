@@ -2,7 +2,7 @@ Model "ScorchDecal" // Name of actor in DECORATE
 {
 	Path "Models"    // Path to model in PK3
 	Model 0 "PlaneSquare.md3"    // Model index, model file
-	Skin 0 "Scorch.png"     // Model index, texture (can be in any format supported by GZDoom)
+	Skin 0 "SCORCH1"     // Model index, texture (can be in any format supported by GZDoom)
 	Scale 1.25 1.25 1.25  	// Scale values
 	ZOffset 0.1
 	FrameIndex NULL A 0 0         //Sprite sprite lump, sprite frame, model index, frame number
