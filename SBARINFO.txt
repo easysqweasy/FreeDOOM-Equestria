@@ -15,6 +15,16 @@ mugshot "xdeath"
 	XDTH4 -1;
 }
 
+mugshot "Death.Fire"
+{
+	XDTH0 -1;
+}
+
+mugshot "Death.Nuke"
+{
+	XDTH4 -1;
+}
+
 mugshot "GodAnimated"
 {
 	{GOD0, GOD1, GOD2} 17;
