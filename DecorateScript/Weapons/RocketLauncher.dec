@@ -86,9 +86,8 @@ actor DERocket : Rocket replaces Rocket
 	BAL2 C 4 Bright 
 	{
 		A_Explode;
-		A_Quake(3, 4, 0, 100);
-		A_Quake(2, 3, 0, 200);
-		A_Quake(1, 2, 0, 300);
+		
+		A_QuakeEx(4, 4, 4, 16, 0, 200, "", QF_RELATIVE | QF_SCALEDOWN, 0,0,0, 1);
 	}
     MISL B 4 Bright
 	MISL C 4 Bright
