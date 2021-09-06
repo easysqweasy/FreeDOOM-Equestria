@@ -9,7 +9,7 @@ StaticText "$VIDEOSETTINGS", "Brick"
 StaticText ""
 
 Option "$BOBTOGGLE", "BobToggle", "onoff"
-Option "$SHAKETOGGLE", "ShakeToggle", "onoff"
+Option "$CAMRECOILTOGGLE", "CamRecoilToggle", "onoff"
 StaticText "$WIPWARNING", "yellow"
 Option "$AURATOGGLE", "AuraToggle", "onoff"
 StaticText "$WIPWARNING", "yellow"

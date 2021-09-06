@@ -6,9 +6,9 @@ script "BobToggle" (void)
     SetResultValue(GetCVar("BobToggle"));
 }
 
-script "ShakeToggle" (void)
+script "CamRecoilToggle" (void)
 {
-    SetResultValue(GetCVar("ShakeToggle"));
+    SetResultValue(GetCVar("CamRecoilToggle"));
 }
 
 ////Classic Weapons

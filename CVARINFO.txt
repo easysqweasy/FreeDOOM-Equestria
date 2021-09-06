@@ -1,5 +1,5 @@
 user int BobToggle = 1;
-user int ShakeToggle = 1;
+user int CamRecoilToggle = 1;
 user int AuraToggle = 1;
 
 server int ProjectileTrails = 3;

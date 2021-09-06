@@ -8,7 +8,7 @@ WIPWARNING = "^Ainda não implementado";
 VIDEOSETTINGS = "Configurações de Vídeo";
 
 BOBTOGGLE = "Movimentação no disparo";
-SHAKETOGGLE = "Tremida no disparo";
+CAMRECOILTOGGLE = "Recuo de camera";
 AURATOGGLE = "Aura mágica nas armas";
 FOVTOGGLE = "Para mudar o seu FOV (Campo de Visão) abra o console e coloque 'Fov [Quantidade Desejada]'";
 
