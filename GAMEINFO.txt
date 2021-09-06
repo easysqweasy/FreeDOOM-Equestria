@@ -1,4 +1,4 @@
-STARTUPTITLE = "DOOM Equestria - Public Alpha (09/06/2021)" 
+STARTUPTITLE = "DOOM Equestria - Public Alpha" 
 StartupSong = ""
 StartupType = "Hexen"
 StartupColors = "#3C4651", "#3C4651"
