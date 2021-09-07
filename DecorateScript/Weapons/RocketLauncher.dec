@@ -78,7 +78,7 @@ actor DERocket : Rocket replaces Rocket
 	{
 		A_SpawnItemEx("FirePieceSpawn",random(-3,-3),random(-3,3),random(-3,3));
 		A_SpawnItemEx("FirePieceSpawn",random(-3,-3),random(-3,3),random(-3,3));
-		A_SpawnItemEx("DERocketSmoke",random(-3,-3),random(-3,3),random(-3,3));
+		A_SpawnItemEx("DERocketSmoke");
 	}
     Loop
   Death:
