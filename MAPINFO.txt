@@ -1,3 +1,6 @@
+include "MAPINFO/DoomEdNumbers.txt"
+include "MAPINFO/Season1.txt"
+
 clearskills
 
 //Change "I'm Too Young To Die" to "I'm a Little Pony"
@@ -55,7 +58,13 @@ skill nightmare
    Key = "n"
 }
 
+
 //////
+
+gameinfo 
+{
+	intermissionmusic = "Music/Doom1Musics/D_INTER"   
+}
 
 clearepisodes
 
@@ -115,37 +124,4 @@ episode e4m1
 episode DoomTest
 {
 	name = "Test Map"
-}
-
-/*///////////////////
-Season 1: Kee-Deep in the Dead
-*////////////////////
-
-gameinfo 
-{
-	intermissionmusic = "Music/Doom1Musics/D_INTER"   
-}
-
-map S1E1 lookup "S1E1: Hangar"
-{
-	Music = "Music/Doom1Musics/S1E1"
-	levelnum = 1
-	titlepatch = "WILV00"
-	next = "S1E2"
-	//secretnext = "E1M9"
-	sky1 = "patches/Skys/RSKY4.png"
-	cluster = 1
-	//par = 30
-}
-
-map S1E2 lookup "S1E2: Nuclear Plant"
-{
-	Music = "Music/Doom1Musics/S1E2"
-	levelnum = 2
-	titlepatch = "WILV01"
-	next = "S1E3"
-	//secretnext = "E1M9"
-	sky1 = "SKY1"
-	cluster = 1
-	//par = 75
 }
