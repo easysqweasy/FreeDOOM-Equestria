@@ -125,8 +125,9 @@ ACTOR DERocketSmoke : RocketSmokeTrail replaces RocketSmokeTrail
   {
   Spawn:
 	TNT1 A 0 A_ChangeFlag("SPRITEFLIP", random(0,1))
-    RSMK AAAABBBBCCCCDDDDEEEE 1 A_FadeOut(0.025)
-    Stop
+    RSMK ABCD 5 
+	RSMK E 1 A_FadeOut(0.05)
+    Wait
   }
 }
 
