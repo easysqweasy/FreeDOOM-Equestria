@@ -10,7 +10,6 @@ StaticText ""
 
 Option "$BOBTOGGLE", "BobToggle", "onoff"
 Option "$CAMRECOILTOGGLE", "CamRecoilToggle", "onoff"
-StaticText "$WIPWARNING", "yellow"
 Option "$AURATOGGLE", "AuraToggle", "onoff"
 StaticText "$WIPWARNING", "yellow"
 StaticText "$FOVTOGGLE"
@@ -21,6 +20,7 @@ StaticText "$GRAPHICSSETTINGS", "Brick"
 StaticText ""
 
 Option "$Projectile Trails", "ProjectileTrails", "MissileTrails"
+StaticText "$WIPWARNING", "yellow"
 
 /*
 StaticText "$HIRESETTINGS", "Brick"
