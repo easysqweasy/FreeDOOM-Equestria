@@ -1,13 +1,17 @@
 actor Broom : DoomEquestriaWeapon 90
 {
 //$Title Broom
+//$Category "Weapons"
 	Weapon.SelectionOrder 3600
 	Weapon.SlotNumber 1
 	Height 40
 	Inventory.PickupMessage "Let's clean up some Demons!"
-	+WEAPON.NOAUTOFIRE
+	
 	Weapon.BobStyle alpha
-	//$Category "Weapons"
+	
+	-ForceXYBillBoard
+	+WEAPON.NOAUTOFIRE
+	
 	States
 	{
 	Spawn:
