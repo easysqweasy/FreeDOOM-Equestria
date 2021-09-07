@@ -41,6 +41,22 @@ actor EquestriaChaingun : DoomEquestriaWeapon replaces Chaingun
 		Wait
 	
 	Fire:
+		TNT1 A 0 A_JumpIf(callACS("CamRecoilToggle")==1,"Fire.CamRecoil")
+		
+		CHGG A 0 A_PlaySound("weapons/chngun", CHAN_WEAPON)
+		
+		CHGG A 0 A_GunFlash
+		CHGG A 4 A_FireBullets(5.6, 0, -1, 5, "EquestriaBulletPuff")
+	
+		CHGG B 0 A_PlaySound("weapons/chngun", CHAN_WEAPON)
+		
+		CHGG B 0 A_GunFlash("Flash2")
+		CHGG B 4 A_FireBullets(5.6, 0, -1, 5, "EquestriaBulletPuff")
+
+		CHGG B 0 A_ReFire
+		Goto Ready
+		
+	Fire.CamRecoil:
 		CHGG A 0 A_PlaySound("weapons/chngun", CHAN_WEAPON)
 		
 		CHGG A 0 A_GunFlash
