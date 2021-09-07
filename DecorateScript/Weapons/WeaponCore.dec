@@ -3,6 +3,8 @@ Actor DoomEquestriaWeapon : Weapon
 	Weapon.Kickback 100
 	Weapon.BobStyle "Smooth"
 	
+	+ForceXYBillBoard
+	
 	States
 	{
 
