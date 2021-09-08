@@ -99,16 +99,6 @@ Actor NirikLostSoul : EquestriaLostSoul
 	}
 }
 
-Actor DeathLostSoul replaces DeadLostSoul
-{
-	States
-	{
-	Spawn:
-		SKUL L -1
-		Stop
-	}
-}
-
 Actor EquestriaPain : PainElemental replaces PainElemental
 {
 	Species "PainSoul"
