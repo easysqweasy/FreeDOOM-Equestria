@@ -1,7 +1,7 @@
-actor PlasmaKirin 91
+actor PlasmaKirin
 {
 	//$Category Monsters
-	//$Title Tech Weapon Duddete
+	//$Title Tech Weapon Dudette
 	Tag "$TECHDUDE"
 	Monster
 	Health 40
@@ -133,7 +133,7 @@ actor PlasmaKirin 91
   }
 }
 
-actor DemonNirik 92
+actor DemonNirik
 {
 	//$Category Monsters
 	Tag "$DEMONIRIK"
@@ -244,7 +244,7 @@ actor DemonNirik 92
 	}
 }
 
-ACTOR DeadPlasmaKirin : PlasmaKirin 144
+ACTOR DeadPlasmaKirin : PlasmaKirin
 {
 //$Category Decoration
   Tag "Dead Tech Weapon Dudette"

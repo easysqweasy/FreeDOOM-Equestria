@@ -1,4 +1,4 @@
-ACTOR EvilEye2 121
+ACTOR EvilEye2
 {
 //$Category Hell
   Radius 16
@@ -13,7 +13,7 @@ ACTOR EvilEye2 121
   }
 }
 
-ACTOR DemonSkull1 122
+ACTOR DemonSkull
 {
 //$Category Hell
   States
@@ -23,7 +23,7 @@ ACTOR DemonSkull1 122
     Stop
   }
 }
-ACTOR DemonSkull2 : DemonSkull1 123
+ACTOR DemonSkull2 : DemonSkull
 {
   States
   {
@@ -32,7 +32,7 @@ ACTOR DemonSkull2 : DemonSkull1 123
     Stop
   }
 }
-ACTOR DemonSkull3 : DemonSkull1 124
+ACTOR DemonSkull3 : DemonSkull1
 {
   States
   {
@@ -41,7 +41,7 @@ ACTOR DemonSkull3 : DemonSkull1 124
     Stop
   }
 }
-ACTOR DemonSkull4 : DemonSkull1 125
+ACTOR DemonSkull4 : DemonSkull1
 {
   States
   {
@@ -50,7 +50,7 @@ ACTOR DemonSkull4 : DemonSkull1 125
     Stop
   }
 }
-ACTOR DemonSkull5 : DemonSkull1 126
+ACTOR DemonSkull5 : DemonSkull1
 {
   States
   {
@@ -59,7 +59,7 @@ ACTOR DemonSkull5 : DemonSkull1 126
     Stop
   }
 }
-ACTOR DemonSkull6 : DemonSkull1 127
+ACTOR DemonSkull6 : DemonSkull1
 {
   States
   {
@@ -68,7 +68,7 @@ ACTOR DemonSkull6 : DemonSkull1 127
     Stop
   }
 }
-ACTOR DemonSkull7 : DemonSkull1 128
+ACTOR DemonSkull7 : DemonSkull1
 {
   States
   {
@@ -77,7 +77,7 @@ ACTOR DemonSkull7 : DemonSkull1 128
     Stop
   }
 }
-ACTOR DemonSkull8 : DemonSkull1 129
+ACTOR DemonSkull8 : DemonSkull1
 {
   States
   {
@@ -86,7 +86,7 @@ ACTOR DemonSkull8 : DemonSkull1 129
     Stop
   }
 }
-ACTOR DemonSkull9  : DemonSkull1 130
+ACTOR DemonSkull9  : DemonSkull1
 {
   States
   {
@@ -95,7 +95,7 @@ ACTOR DemonSkull9  : DemonSkull1 130
     Stop
   }
 }
-ACTOR DemonSkull10 : DemonSkull1 131
+ACTOR DemonSkull10 : DemonSkull1
 {
   States
   {
@@ -105,7 +105,7 @@ ACTOR DemonSkull10 : DemonSkull1 131
   }
 }
 
-Actor BaronStatue1 132
+Actor BaronStatue1
 {
 //$Category Hell
   +FloorClip
@@ -121,7 +121,7 @@ Actor BaronStatue1 132
   }
 }
 
-Actor BaronStatue2 : BaronStatue1 133
+Actor BaronStatue2 : BaronStatue1
 {
   States
   {
@@ -130,7 +130,7 @@ Actor BaronStatue2 : BaronStatue1 133
     Stop
   }
 }
-Actor DemonArm 134
+Actor DemonArm
 {
 //$Category Hell
   +FloorClip
@@ -141,7 +141,7 @@ Actor DemonArm 134
     Stop
   }
 }
-ACTOR TallPinkColumn : TallRedColumn 135
+ACTOR TallPinkColumn : TallRedColumn
 {
 //$Category Hell
   States

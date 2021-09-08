@@ -1,4 +1,4 @@
-Actor Bush1 107
+Actor Bush1
 {
 //$NotAngled
 //$Category Nature
@@ -14,7 +14,7 @@ Spawn:
   }
 }
 
-Actor Bush2 : Bush1 108
+Actor Bush2 : Bush1
 {
 States
 {
@@ -24,7 +24,7 @@ Spawn:
   }
 }
 
-Actor Bush3 : Bush1 109
+Actor Bush3 : Bush1
 {
 States
 {
@@ -34,7 +34,7 @@ Spawn:
   }
 }
 
-Actor BushTall1 110
+Actor BushTall
 {
 //$NotAngled
 //$Category Nature
@@ -49,7 +49,7 @@ Spawn:
   }
 }
 
-Actor BushTall2 : Bush1 111
+Actor BushTall2 : Bush1
 {
 States
 {
@@ -59,7 +59,7 @@ Spawn:
   }
 }
 
-Actor BushTall3 : BushTall1 112
+Actor BushTall3 : BushTall
 {
 States
 {
@@ -71,7 +71,7 @@ Spawn:
 
 // End of bushes
 
-Actor Rock 113
+Actor Rock
 {
 //$NotAngled
 //$Category Nature
@@ -86,7 +86,7 @@ Actor Rock 113
   }
 }
 
-ACTOR Stalagtite2 114
+ACTOR Stalagtite2
 {
 //$NotAngled
 //$Category Nature
@@ -102,7 +102,7 @@ ACTOR Stalagtite2 114
   }
 }
 
-ACTOR Stalagtite3 : Stalagtite2 115
+ACTOR Stalagtite3 : Stalagtite2
 {
 //$Category Nature
   Radius 15
@@ -115,7 +115,7 @@ ACTOR Stalagtite3 : Stalagtite2 115
   }
 }
 
-ACTOR Stalagtite4 : Stalagtite2 116
+ACTOR Stalagtite4 : Stalagtite2
 {
   States
   {
@@ -125,7 +125,7 @@ ACTOR Stalagtite4 : Stalagtite2 116
   }
 }
 
-ACTOR BigStalagtite 117
+ACTOR BigStalagtite
 {
 //$NotAngled
 //$Category Nature
@@ -141,8 +141,9 @@ ACTOR BigStalagtite 117
   }
 }
 
-ACTOR BigTree3 : BigTree 118
+ACTOR BigTree3 : BigTree
 {
+//$NotAngled
 //$Category Nature
 States
   {
@@ -152,8 +153,9 @@ States
   }
 }
 
-ACTOR BigTree4 : BigTree 119
+ACTOR BigTree4 : BigTree
 {
+//$NotAngled
 //$Category Nature
 States
   {
@@ -162,8 +164,9 @@ States
     Stop
   }
 }
-ACTOR BigTree5 : BigTree 120
+ACTOR BigTree5 : BigTree
 {
+//$NotAngled
 //$Category Nature
 States
   {
@@ -175,6 +178,7 @@ States
 
 Actor BaseFire 
 {
+	//$NotAngled
 	RenderStyle Add
 	DamageType Fire
 }
