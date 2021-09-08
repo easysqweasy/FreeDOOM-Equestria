@@ -145,7 +145,7 @@ actor DEBFGBall : BFGBall replaces BFGBall
 		}	
 		TNT1 A 0 
 		BFE1 ABCD 2 Bright 
-		BFE1 E 4 Bright A_BFGSpray
+		BFE1 E 8 Bright A_BFGSpray
 		BFE1 FGHIJ 3 Bright
 		BFE1 K 1 Bright A_FadeOut(0.1)
 		Wait
