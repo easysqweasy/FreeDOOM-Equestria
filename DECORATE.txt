@@ -92,6 +92,7 @@ actor EquestriaDoomPlayer : DoomPlayer
 #include "DecorateScript/Decorations/Hell.txt"
 #include "DecorateScript/Decorations/Gothic.txt"
 #include "DecorateScript/Decorations/GoreGore.dec"
+#include "DecorateScript/Decorations/Corpses.dec"
 #include "DecorateScript/Decorations/LightSources.dec"
 
 ////Misc
