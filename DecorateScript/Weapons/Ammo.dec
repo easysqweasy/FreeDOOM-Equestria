@@ -9,7 +9,7 @@ ACTOR AmmoCache : Clip
     Stop
   }
 }
-ACTOR Ammoclips : Clip
+ACTOR AmmoClips : Clip
 {
   Inventory.PickupMessage "Picked up large bullet clips."
   Inventory.Amount 35
