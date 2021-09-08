@@ -32,7 +32,7 @@ ACTOR DemonSkull2 : DemonSkull
     Stop
   }
 }
-ACTOR DemonSkull3 : DemonSkull1
+ACTOR DemonSkull3 : DemonSkull
 {
   States
   {
@@ -41,7 +41,7 @@ ACTOR DemonSkull3 : DemonSkull1
     Stop
   }
 }
-ACTOR DemonSkull4 : DemonSkull1
+ACTOR DemonSkull4 : DemonSkull
 {
   States
   {
@@ -50,7 +50,7 @@ ACTOR DemonSkull4 : DemonSkull1
     Stop
   }
 }
-ACTOR DemonSkull5 : DemonSkull1
+ACTOR DemonSkull5 : DemonSkull
 {
   States
   {
@@ -59,7 +59,7 @@ ACTOR DemonSkull5 : DemonSkull1
     Stop
   }
 }
-ACTOR DemonSkull6 : DemonSkull1
+ACTOR DemonSkull6 : DemonSkull
 {
   States
   {
@@ -68,7 +68,7 @@ ACTOR DemonSkull6 : DemonSkull1
     Stop
   }
 }
-ACTOR DemonSkull7 : DemonSkull1
+ACTOR DemonSkull7 : DemonSkull
 {
   States
   {
@@ -77,7 +77,7 @@ ACTOR DemonSkull7 : DemonSkull1
     Stop
   }
 }
-ACTOR DemonSkull8 : DemonSkull1
+ACTOR DemonSkull8 : DemonSkull
 {
   States
   {
@@ -86,7 +86,7 @@ ACTOR DemonSkull8 : DemonSkull1
     Stop
   }
 }
-ACTOR DemonSkull9  : DemonSkull1
+ACTOR DemonSkull9  : DemonSkull
 {
   States
   {
@@ -95,7 +95,7 @@ ACTOR DemonSkull9  : DemonSkull1
     Stop
   }
 }
-ACTOR DemonSkull10 : DemonSkull1
+ACTOR DemonSkull10 : DemonSkull
 {
   States
   {
