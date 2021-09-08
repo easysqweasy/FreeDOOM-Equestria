@@ -18,6 +18,7 @@ Actor EquestriaLostSoul : LostSoul
 	+FLOATBOB
 	-COUNTKILL
 	+NOBLOOD
+
 }
 
 Actor PonyLostSoul : EquestriaLostSoul
