@@ -122,12 +122,15 @@ ACTOR DERocketSmoke : RocketSmokeTrail replaces RocketSmokeTrail
   VSpeed 1
   +ForceXYBillBoard
   +NoGravity
+  +ROLLSPRITE +ROLLCENTER
   States
   {
   Spawn:
+	TNT1 A 0 
 	TNT1 A 0 A_ChangeFlag("SPRITEFLIP", random(0,1))
+	TNT1 A 0 A_SetRoll(random(-359, 359))
     RSMK ABCD 4
-	RSMK E 1 A_FadeOut(0.05)
+	RSMK E 1 A_FadeOut(0.075)
     Wait
   }
 }
