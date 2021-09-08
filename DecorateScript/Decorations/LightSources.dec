@@ -1,5 +1,6 @@
 Actor Lamp1
 {
+//$NotAngled
 //$Category Light sources
 	Radius 9
 	Height 55
@@ -14,7 +15,8 @@ Actor Lamp1
 }
 
 Actor Lamp2
-  {
+{
+//$NotAngled
 //$Category Light sources
 	Radius 11
 	Height 32
@@ -29,6 +31,7 @@ Actor Lamp2
 }
 Actor Lamp3
 {
+//$NotAngled
 //$Category Light sources
 	Radius 9
 	Height 55
@@ -45,6 +48,7 @@ Actor Lamp3
 
 Actor Lamp4
 {
+//$NotAngled
 //$Category Light sources
 	ProjectilePassHeight -16
 	Radius 11
@@ -60,6 +64,7 @@ Actor Lamp4
 
 Actor Lamp5
 {
+//$NotAngled
 //$Category Light sources
 	Radius 11
 	Height 76
@@ -75,6 +80,7 @@ Actor Lamp5
 
 Actor Lamp6
 {
+//$NotAngled
 //$Category Light sources
 	Radius 11
 	Height 80
