@@ -1,3 +1,104 @@
-//Ragedox is too tired to do this, let him rest, otherwise he will bite you
+//I am a little afraid that this will break in future changes and additions
+//Ranges: 889-1199 / 1506-2000 / 5066-7999 / 14165-32000 and probably much more
 
-//Ranges: 889-1199 / 1506-2000 / 5066-7999 and probably much more
+DoomEdNums
+{
+	/* Monsters */
+
+	15000 = "PlasmaKirin"
+	15001 = "DemonNirik"
+	15002 = "DemonicDog"
+	15003 = "BossBaronofHell"
+
+	/* Heath and Armor */
+
+	15100 = "FirstAidKit"
+	15101 = "HealthPack"
+	15102 = "BigHealthBonus"
+	15103 = "BigArmorBonus"
+	15104 = "GreenArmor2"
+
+	/* Ammo */
+
+	15200 = "Clip2"
+	15201 = "AmmoClips"
+	15202 = "AmmoCache"
+	15203 = "LargeClip"
+	15204 = "ShellBox2"
+	15205 = "ShellBox3"
+	15206 = "Cell2"
+	15207 = "CellPack2"
+	15208 = "CellPack3"
+	15209 = "RocketBox2"
+	15210 = "RocketBox3"
+	
+	/* Decorations/Props */
+	
+	//Tech
+	
+	15300 = "Zapper"
+	15301 = "Chair"
+	15302 = "Lamp1"
+	15303 = "Lamp2"
+	15304 = "Lamp3"
+	15305 = "Lamp4"
+	15306 = "Lamp5"
+	15307 = "Lamp6"
+	15308 = "TechPillar2"
+	15309 = "Equipment1"
+	15310 = "Equipment2"
+	15311 = "Equipment3"
+	15312 = "Spark2"
+	
+	//Nature
+	
+	15400 = "Bush1"
+	15401 = "Bush2"
+	15402 = "Bush3"
+	15403 = "BushTall"
+	15404 = "BushTall2"
+	15405 = "BushTall3"
+	15406 = "Rock"
+	15407 = "Stalagtite2"
+	15408 = "Stalagtite3"
+	15409 = "Stalagtite4"
+	15410 = "BigStalagtite"
+	15411 = "BigTree3"
+	15412 = "BigTree4"
+	15413 = "BigTree5"
+	15414 = "SmallFire1"
+	15415 = "SmallFire2"
+	
+	//Gothic
+	
+	15500 = "SkullGem"
+	15501 = "Bible"
+	15502 = "Chalice"
+	15503 = "Dagger"
+	15504 = "DoomStaff"
+	15505 = "Chest"
+	15506 = "Book"
+	15507 = "FlamingPillar"
+	
+	//Hell
+	
+	15600 = "EvilEye2"
+	15601 = "DemonSkull"
+	15602 = "DemonSkull2"
+	15603 = "DemonSkull3"
+	15604 = "DemonSkull4"
+	15605 = "DemonSkull5"
+	15606 = "DemonSkull6"
+	15607 = "DemonSkull7"
+	15608 = "DemonSkull8"
+	15609 = "DemonSkull9"
+	15610 = "DemonSkull10"
+	15611 = "BaronStatue1"
+	15612 = "BaronStatue2"
+	15613 = "DemonArm"
+	15614 = "TallPinkColumn"
+	
+	//Gore parts (Bodys, Meat, etc)
+	
+	15700 = "DeadPlasmaKirin"
+}
