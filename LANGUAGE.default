@@ -45,7 +45,7 @@ GOTMEGA = "Picked up a Combat Armor.";
 
 GOTBERSERK = "Berserk! Let's punch out some demons!";
 
-TECHDUDE = "Tech Weapon Dudette";
+TECHDUDE = "Hacker Leader";
 DEMONIRIK = "Demonic Nirik";
-TECHKILL = "%o turned to dust by Tech Weapon Dudette.";
+TECHKILL = "%o turned to dust by the Hacker Leader.";
 NIRIKILL = "%o was bitten by the Demonic Nirik.";

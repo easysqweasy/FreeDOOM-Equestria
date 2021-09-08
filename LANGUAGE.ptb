@@ -48,7 +48,7 @@ GOTMEGA = "Pegou uma Armadura de Combate.";
 
 GOTBERSERK = "Berserk! Vamos esmurrar alguns demônios!";
 
-TECHDUDE = "Moça da Arma Tecnológica";
+TECHDUDE = "Líder dos Hackers";
 DEMONIRIK = "Nirik Demoníaca";
-TECHKILL = "%o virou pó pela Moça da Arma Tecnológica.";
+TECHKILL = "%o virou pó pela Líder dos Hackers.";
 NIRIKILL = "%o foi mordido pela Nirik Demoníaca.";
