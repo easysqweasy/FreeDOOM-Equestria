@@ -35,6 +35,10 @@ tech/death3 "Sounds/Zombies/TechWeaponDudette/TECHDTH3.ogg"
 tech/pain "Sounds/Zombies/TechWeaponDudette/TECHPAIN.ogg"
 tech/sight "Sounds/Zombies/TechWeaponDudette/TECHSIT.ogg"
 
+// Lost Soul
+
+skull/active	"Sounds/LostSoul/LostSoulSight"
+
 //Sound limit removal
 
 $Limit misc/i_pkup	0
