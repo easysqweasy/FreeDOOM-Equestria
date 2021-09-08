@@ -1,6 +1,6 @@
 //$Category TechDecorations
 
-Actor Zapper 93
+Actor Zapper
 {
 //$Category TechDecorations
   +SpawnCeiling
@@ -17,7 +17,7 @@ Actor Zapper 93
   }
 }
 
-Actor Chair 94
+Actor Chair
 {
 //$Category TechDecorations
   +FloorClip
@@ -34,97 +34,7 @@ Actor Chair 94
   }
 }
 
-Actor lamp1 95
-{
-//$Category TechDecorations
-  Radius 9
-  Height 55
-  ProjectilePassHeight -16
-  +SOLID
-  States
-  {
-  Spawn:
-	lam2 A -1 bright
-	Stop
-  }
-}
-
-Actor lamp2 97
-  {
-//$Category TechDecorations
-  Radius 11
-  Height 32
-  ProjectilePassHeight -16
-  +SOLID
-  States
-  {
-  Spawn:
-	lamp A -1 bright
-	Stop
-  }
-}
-Actor lamp3 98
-{
-//$Category TechDecorations
-Radius 9
-Height 55
-+SOLID
-+NOGRAVITY
-+SPAWNCEILING
-States
-{
-Spawn:
-	lam3 A -1 bright
-	Stop
-}
-}
-
-Actor lamp4 99
-{
-//$Category TechDecorations
-ProjectilePassHeight -16
-Radius 11
-Height 46
-+SOLID
-States
-{
-Spawn:
-	lam4 A -1 bright
-	Stop
-}
-}
-
-Actor lamp5 100
-{
-//$Category TechDecorations
-Radius 11
-Height 76
-ProjectilePassHeight -16
-+SOLID
-States
-{
-Spawn:
-	lam5 A -1 bright
-	Stop
-}
-}
-
-Actor lamp6 101
-{
-//$Category TechDecorations
-Radius 11
-Height 80
-ProjectilePassHeight -16
-+SOLID
-States
-{
-Spawn:
-	lam6 A -1 bright
-	Stop
-}
-}
-
-Actor TechPillar2: TechPillar 102
+Actor TechPillar2 : TechPillar 
 {
 //$Category TechDecorations
 Height 144
@@ -136,7 +46,7 @@ Spawn:
 }
 }
 
-Actor equipment1 103
+Actor Equipment1 
 {
 //$Category TechDecorations
 Radius 8
@@ -151,7 +61,7 @@ Spawn:
 }
 }
 
-Actor equipment2 104
+Actor Equipment2
 {
 //$Category TechDecorations
 Radius 16
@@ -166,7 +76,7 @@ Spawn:
 }
 }
 
-Actor equipment3 105
+Actor Equipment3
 {
 //$Category TechDecorations
 Radius 15
@@ -190,7 +100,7 @@ Spawn:
 }
 }
 
-Actor Spark2 106
+Actor Spark2
 {
 //$Category TechDecorations
 States

@@ -1,0 +1,89 @@
+Actor Lamp1
+{
+//$Category Light sources
+	Radius 9
+	Height 55
+	ProjectilePassHeight -16
+	+SOLID
+	States
+	{
+	Spawn:
+		lam2 A -1 bright
+		Stop
+	}
+}
+
+Actor Lamp2
+  {
+//$Category Light sources
+	Radius 11
+	Height 32
+	ProjectilePassHeight -16
+	+SOLID
+	States
+	{
+	Spawn:
+		lamp A -1 bright
+		Stop
+	}
+}
+Actor Lamp3
+{
+//$Category Light sources
+	Radius 9
+	Height 55
+	+SOLID
+	+NOGRAVITY
+	+SPAWNCEILING
+	States
+	{
+	Spawn:
+		lam3 A -1 bright
+		Stop
+	}
+}
+
+Actor Lamp4
+{
+//$Category Light sources
+	ProjectilePassHeight -16
+	Radius 11
+	Height 46
+	+SOLID
+	States
+	{
+	Spawn:
+		lam4 A -1 bright
+		Stop
+	}
+}
+
+Actor Lamp5
+{
+//$Category Light sources
+	Radius 11
+	Height 76
+	ProjectilePassHeight -16
+	+SOLID
+	States
+	{
+	Spawn:
+		lam5 A -1 bright
+		Stop
+	}
+}
+
+Actor Lamp6
+{
+//$Category Light sources
+	Radius 11
+	Height 80
+	ProjectilePassHeight -16
+	+SOLID
+	States
+	{
+	Spawn:
+		lam6 A -1 bright
+		Stop
+	}
+}
