@@ -1,0 +1,9 @@
+Actor SmallPonyBloodPool : SmallBloodPool replaces SmallBloodPool
+{
+	+ForceXYBillboard
+}
+
+Actor PonyBrainStem : BrainStem replaces BrainStem
+{
+	+ForceXYBillboard
+}
