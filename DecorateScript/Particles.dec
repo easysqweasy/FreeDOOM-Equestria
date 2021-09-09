@@ -165,6 +165,22 @@ Actor PlasmaTrail : DEParticles
 		Loop
 	}
 }
+Actor AracPlasmaTrail : PlasmaTrail
+{
+	States
+	{
+	Spawn:
+		APLS A 0
+		APLS A 0 A_SetRoll(random(-359, 359))
+	Trail:
+		APLS A 1 Bright
+		{
+			A_SetRoll((roll + 15), SPF_INTERPOLATE);
+			A_FadeOut(0.1);
+		}
+		Loop
+	}
+}
 
 Actor BFGTrail : PlasmaTrail
 {

@@ -27,7 +27,7 @@ ACTOR EquestriaArachnotronPlasma : ArachnotronPlasma replaces ArachnotronPlasma
 	Projectile:
 		APLS A 1 Bright
 		{
-			//A_SpawnItemEx("PlasmaTrail");
+			A_SpawnItemEx("AracPlasmaTrail");
 			A_SetRoll((roll + 15), SPF_INTERPOLATE);
 		}
 		Loop
