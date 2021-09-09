@@ -1,18 +1,19 @@
 actor EquestriaBaronofHell : BaronOfHell replaces BaronOfHell
 {
+//$Sprite BOSSA2C8
 	+CASTSPRITESHADOW
-  BloodColor "darkgreen"
-  States
-  {
-  Spawn:
-	IDLB CD 10 A_Look
-	Loop
-  Melee:
-  Missile:
-	BOSS EF 8 A_FaceTarget
-    BOSS G 8 A_CustomComboAttack("BaronHellBall", 32, 10 * random(1, 8), "baron/melee")
-    Goto See
-  }
+	BloodColor "darkgreen"
+	States
+	{
+	Spawn:
+		IDLB CD 10 A_Look
+		Loop
+	Melee:
+	Missile:
+		BOSS EF 8 A_FaceTarget
+		BOSS G 8 A_CustomComboAttack("BaronHellBall", 32, 10 * random(1, 8), "baron/melee")
+		Goto See
+	}
 }
  
 actor EquestriaHellKnight : HellKnight replaces HellKnight
