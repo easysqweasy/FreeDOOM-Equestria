@@ -15,4 +15,6 @@ Actor InspectAnimation : InvToken	{}
 
 Actor PickedUpBerserk : InvToken	{}
 
+Actor FoundHellPortal : InvToken {}
+
 Actor FoundDaisy : InvToken	{}
