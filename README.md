@@ -1,4 +1,4 @@
-# DOOM Equestria for GZDoom
+# DOOM Equestria for GZDoom and LZDoom
 
 This is the **development** version, so it may contain bugs and errors;
 **Updates** can happen at **any time**, this version does ***NOT represent*** the final version;
