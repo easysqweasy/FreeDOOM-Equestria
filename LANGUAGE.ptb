@@ -23,12 +23,19 @@ NORMALSKILL = "Um tapinha não dói";
 HARDSKILL = "UltraViolento";
 PLUSSKILL = "Violência instantânea";
 
-QUITMSG = "Você em certeza que quer sair deste ótimo mod?";
-//QUITMSG4 = "então você gosta mais de Brutal Doom\ndo que de mim, né?";
+QUITMSG = "Você tem certeza que quer sair deste ótimo mod?";
+//QUITMSG4 = "Então você gosta mais de Fallout Equestria\ndo que de mim, né?"; por favor não me mata é uma piada
 QUITMSG9 = "Não vá agora, tem um vírus da Kirin te esperando no computador!";
 QUITMSG7 = "Vai, pode ir embora. Tô nem aí.";
-QUITMSG10 = "Se manda daqui e\nvolte para o seu\ndesenho animado infantil";
+QUITMSG10 = "Se manda daqui e\nvolta pro teu\ndesenho animado infantil";
 QUITMSG13 = "Só vá embora.\nQuando você voltar, vai ter uma \nmorcega safada te esperando!";
+
+OTARMBONUS = "Pegou uma Armadura Espiritual.";
+GOTARMOR = "Pegou uma Armadura de Segurança.";
+GOTMEGA = "Pegou uma Armadura de Combate.";
+GOTBERSERK = "Berserk! Vamos esmurrar alguns demônios!";
+
+/* Monstros */
 
 CC_ZOMBIE = "Zumbi Pônei";
 /*
@@ -37,18 +44,15 @@ CC_SHOTGUN = "Sargento Possuído";
 CC_HEAVY = "Comandante Possuído";
 */
 
-LOWHEALTH = "Saúde Baixa";
-
-TAGREPEATER = "Repetidora";
-GOTREPEATER = "Você pegou a Repetidora!";
-
-OTARMBONUS = "Pegou uma Armadura Espiritual.";
-GOTARMOR = "Pegou uma Armadura de Segurança.";
-GOTMEGA = "Pegou uma Armadura de Combate.";
-
-GOTBERSERK = "Berserk! Vamos esmurrar alguns demônios!";
-
 TECHDUDE = "Líder dos Hackers";
 DEMONIRIK = "Nirik Demoníaca";
 TECHKILL = "%o virou pó pela Líder dos Hackers.";
 NIRIKILL = "%o foi mordido pela Nirik Demoníaca.";
+
+BURSTBAT = "Treinadora Possuída";
+
+//////////
+LOWHEALTH = "Saúde Baixa";
+
+TAGREPEATER = "Repetidora";
+GOTREPEATER = "Você pegou a Repetidora!";
