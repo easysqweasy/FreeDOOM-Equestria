@@ -5,7 +5,7 @@ This is the **development** version, so it may contain bugs and errors;
 
 # Running
 
-**Make sure you are using GZDoom 4.6.0 or later**
+**Make sure you are using GZDoom 4.6.1 or later**
 Download repository as a ZIP file and drag it over gzdoom.exe.
 
 # Credits
