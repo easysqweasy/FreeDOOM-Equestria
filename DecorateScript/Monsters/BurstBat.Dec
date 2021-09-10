@@ -1,0 +1,77 @@
+ACTOR BurstBat
+{
+	Monster
+//$Category Monsters
+//$Title Possessed Trainer
+	Tag "$BURSTBAT"
+	Health 50
+	
+	Radius 20
+	Height 56
+	
+	Mass 80
+	Speed 10
+	FastSpeed 15
+	
+	PainChance 170
+	
+	+CASTSPRITESHADOW
+	+FLOAT
+	+NOGRAVITY
+	
+	SeeSound "chainguy/sight"
+	PainSound "chainguy/pain"
+	DeathSound "chainguy/death"
+	ActiveSound "chainguy/active"
+	AttackSound "chainguy/attack"
+	
+	Obituary "$OB_CHAINGUY"
+	
+	States
+	{
+	Spawn:
+		CPOS AB 10 A_Look
+		Loop
+
+	See:
+		CPOS AABBCCDD 3 A_Chase
+		Loop
+
+	Missile:
+		CPOS E 3 A_FaceTarget
+		CPOS F 4 Bright A_CustomBulletAttack(5, 0, 1, random(1,5)*3, "EquestriaBulletPuff", 0, CBAF_NORANDOM)
+		CPOS E 3 A_FaceTarget
+		CPOS F 4 Bright A_CustomBulletAttack(10, 0, 1, random(1,5)*3, "EquestriaBulletPuff", 0, CBAF_NORANDOM)
+		CPOS E 5 A_FaceTarget
+		CPOS F 4 Bright A_CustomBulletAttack(15, 0, 1, random(1,5)*3, "EquestriaBulletPuff", 0, CBAF_NORANDOM)
+		Goto See
+	
+	Pain:
+		CPOS G 3
+		CPOS G 3 A_Pain
+		Goto See
+	
+	Death:
+		HEAD G 8
+		HEAD H 8 A_Scream
+		HEAD I 8
+		HEAD J 8
+		HEAD K 8 A_NoBlocking
+		HEAD L -1 A_SetFloorClip
+		Stop
+	
+	XDeath:
+		CPOS O 5 
+		CPOS P 5 A_XScream
+		CPOS Q 5 
+		CPOS R 5
+		COIS S 5 A_NoBlocking
+		CPOS T -1 A_SetFloorClip
+		Stop
+	
+	Raise:
+		CPOS N 5 A_UnSetFloorClip
+		CPOS MLKJIH 5
+		Goto See
+	}
+}
