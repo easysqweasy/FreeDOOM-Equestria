@@ -39,6 +39,15 @@ tech/sight "Sounds/Zombies/TechWeaponDudette/TECHSIT.ogg"
 
 skull/active	"Sounds/LostSoul/LostSoulSight"
 
+// Decorations
+
+DoomTorch/Ignite	DSFIRSTA
+DoomTorch/Burn		DSFIRLOP
+
+$limit DoomTorch/Burn 0
+$volume DoomTorch/Burn 0.1
+$attenuation DoomTorch/Burn 4
+
 //Sound limit removal
 
 $Limit misc/i_pkup	0
