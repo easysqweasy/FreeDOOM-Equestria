@@ -1,10 +1,11 @@
 actor PlasmaKirin
 {
+	Monster
 	//$Category Monsters
 	//$Title Tech Weapon Dudette
 	Tag "$TECHDUDE"
-	Monster
-	Health 40
+	
+	Health 30
 	Radius 20
 	Height 56
 	Mass 80
