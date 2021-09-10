@@ -22,7 +22,7 @@ actor EquestriaChaingun : DoomEquestriaWeapon replaces Chaingun
 		Stop
 	
 	Ready:
-		TNT1 A 0 A_JumpIfInventory("KickCheck", 1, "KickAttack")
+		TNT1 A 0 A_JumpIfInventory("KickCheck", 1, "Kick.Normal")
 		
 		CHGG A 1 A_WeaponReady
 		Loop
@@ -63,7 +63,7 @@ actor EquestriaChaingun : DoomEquestriaWeapon replaces Chaingun
 		CHGG A 4
 		{
 			A_FireBullets(5.6, 0, -1, 5, "EquestriaBulletPuff");
-			A_QuakeEx(1, 0, 1, 4, 0, 1, "", QF_SCALEDOWN | QF_SCALEUP);
+			A_QuakeEx(1, 0, 1, 4, 0, 1, "", QF_RELATIVE | QF_SCALEDOWN | QF_SCALEUP);
 			A_SetPitch(pitch-0.50, SPF_INTERPOLATE);
 		}
 		
@@ -74,7 +74,7 @@ actor EquestriaChaingun : DoomEquestriaWeapon replaces Chaingun
 		CHGG B 4 
 		{
 			A_FireBullets(5.6, 0, -1, 5, "EquestriaBulletPuff");
-			A_QuakeEx(1, 0, 1, 4, 0, 1, "", QF_SCALEDOWN | QF_SCALEUP);
+			A_QuakeEx(1, 0, 1, 4, 0, 1, "", QF_RELATIVE | QF_SCALEDOWN | QF_SCALEUP);
 		}
 		
 		CHGG B 0 A_ReFire

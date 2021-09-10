@@ -36,7 +36,7 @@ actor EquestriaSuperShotgun : DoomEquestriaWeapon replaces SuperShotgun
 		SHT2 DCB 2*/
 	
 	Ready:
-		TNT1 A 0 A_JumpIfInventory("KickCheck", 1, "KickAttack")
+		TNT1 A 0 A_JumpIfInventory("KickCheck", 1, "Kick.Normal")
 		
 		SHT2 A 1 A_WeaponReady
 		Loop
@@ -80,6 +80,7 @@ actor EquestriaSuperShotgun : DoomEquestriaWeapon replaces SuperShotgun
 			A_FireBullets (11.2, 7.1, 20, 5, "ShotgunPuff");
 			A_PlaySound ("weapons/sshotf", CHAN_WEAPON);
 			A_GunFlash;
+			A_QuakeEx(1, 0, 1, 4, 0, 1, "", QF_SCALEDOWN | QF_RELATIVE);
 			A_SetPitch(pitch-2);
 		}
 		SHT2 A 3 

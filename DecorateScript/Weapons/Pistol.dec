@@ -22,7 +22,7 @@ ACTOR EquestriaPistol : DoomEquestriaWeapon replaces Pistol
 		Stop
 	
 	Ready:
-		TNT1 A 0 A_JumpIfInventory("KickCheck", 1, "KickAttack")
+		TNT1 A 0 A_JumpIfInventory("KickCheck", 1, "Kick.Normal")
 		
 		PISG A 1 A_WeaponReady
 		Loop
