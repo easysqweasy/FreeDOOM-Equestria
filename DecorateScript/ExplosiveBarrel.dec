@@ -14,18 +14,17 @@ ACTOR EquestriaExploBarrel : ExplosiveBarrel replaces ExplosiveBarrel
 	BEXP C 5 Bright
 	BEXP D 5 Bright 
 	{
-		A_CustomMissile(BarrelDebris, 32, 0, random (0, 360), 2, random (10, 90));
-		A_CustomMissile(BarrelDebris, 32, 0, random (0, 360), 2, random (10, 90));
-		A_CustomMissile(BarrelDebris, 32, 0, random (0, 360), 2, random (10, 90));
-		A_CustomMissile(BarrelDebris, 32, 0, random (0, 360), 2, random (10, 90));
-		A_CustomMissile(BarrelTiny, 32, 0, random (0, 360), 2, random (10, 90));
-		A_CustomMissile(BarrelTiny, 32, 0, random (0, 360), 2, random (10, 90));
-		A_CustomMissile(BarrelTiny, 32, 0, random (0, 360), 2, random (10, 90));
-		A_CustomMissile(BarrelTiny, 32, 0, random (0, 360), 2, random (10, 90));
 		A_Explode;
-		A_Quake(3, 4, 0, 100);
-		A_Quake(2, 3, 0, 200);
-		A_Quake(1, 2, 0, 300);
+		A_QuakeEx(3, 3, 3, 4, 0, 300, "", 0,0,0,0, 1);
+		
+		A_CustomMissile(BarrelDebris, 32, 0, random (0, 360), 2, random (10, 90));
+		A_CustomMissile(BarrelDebris, 32, 0, random (0, 360), 2, random (10, 90));
+		A_CustomMissile(BarrelDebris, 32, 0, random (0, 360), 2, random (10, 90));
+		A_CustomMissile(BarrelDebris, 32, 0, random (0, 360), 2, random (10, 90));
+		A_CustomMissile(BarrelTiny, 32, 0, random (0, 360), 2, random (10, 90));
+		A_CustomMissile(BarrelTiny, 32, 0, random (0, 360), 2, random (10, 90));
+		A_CustomMissile(BarrelTiny, 32, 0, random (0, 360), 2, random (10, 90));
+		A_CustomMissile(BarrelTiny, 32, 0, random (0, 360), 2, random (10, 90));
 	}
 	BEXP EEEEEEEEEE 1 Bright A_FadeOut(0.1)
 	TNT1 A 1050 Bright A_BarrelDestroy
@@ -37,22 +36,21 @@ ACTOR EquestriaExploBarrel : ExplosiveBarrel replaces ExplosiveBarrel
 	BEXP C 5 Bright
 	BEXP D 5 Bright
 	{
-		A_CustomMissile(BarrelDebris, 32, 0, random (0, 360), 2, random (10, 90));
-		A_CustomMissile(BarrelDebris, 32, 0, random (0, 360), 2, random (10, 90));
-		A_CustomMissile(BarrelDebris, 32, 0, random (0, 360), 2, random (10, 90));
-		A_CustomMissile(BarrelDebris, 32, 0, random (0, 360), 2, random (10, 90));
-		A_CustomMissile(BarrelTiny, 32, 0, random (0, 360), 2, random (10, 90));
-		A_CustomMissile(BarrelTiny, 32, 0, random (0, 360), 2, random (10, 90));
-		A_CustomMissile(BarrelTiny, 32, 0, random (0, 360), 2, random (10, 90));
-		A_CustomMissile(BarrelTiny, 32, 0, random (0, 360), 2, random (10, 90));
-		A_CustomMissile(BarrelTiny, 32, 0, random (0, 360), 2, random (10, 90));
-		A_CustomMissile(BarrelTiny, 32, 0, random (0, 360), 2, random (10, 90));
-		A_CustomMissile(BarrelTiny, 32, 0, random (0, 360), 2, random (10, 90));
-		A_CustomMissile(BarrelTiny, 32, 0, random (0, 360), 2, random (10, 90));
 		A_Explode;
-		A_Quake(3, 4, 0, 100);
-		A_Quake(2, 3, 0, 200);
-		A_Quake(1, 2, 0, 300);
+		A_QuakeEx(3, 3, 3, 4, 0, 300, "", 0,0,0,0, 1);
+		
+		A_CustomMissile(BarrelDebris, 32, 0, random (0, 360), 2, random (10, 90));
+		A_CustomMissile(BarrelDebris, 32, 0, random (0, 360), 2, random (10, 90));
+		A_CustomMissile(BarrelDebris, 32, 0, random (0, 360), 2, random (10, 90));
+		A_CustomMissile(BarrelDebris, 32, 0, random (0, 360), 2, random (10, 90));
+		A_CustomMissile(BarrelTiny, 32, 0, random (0, 360), 2, random (10, 90));
+		A_CustomMissile(BarrelTiny, 32, 0, random (0, 360), 2, random (10, 90));
+		A_CustomMissile(BarrelTiny, 32, 0, random (0, 360), 2, random (10, 90));
+		A_CustomMissile(BarrelTiny, 32, 0, random (0, 360), 2, random (10, 90));
+		A_CustomMissile(BarrelTiny, 32, 0, random (0, 360), 2, random (10, 90));
+		A_CustomMissile(BarrelTiny, 32, 0, random (0, 360), 2, random (10, 90));
+		A_CustomMissile(BarrelTiny, 32, 0, random (0, 360), 2, random (10, 90));
+		A_CustomMissile(BarrelTiny, 32, 0, random (0, 360), 2, random (10, 90));
 	}
 	BEXP EEEEEEEEEE 1 Bright A_FadeOut(0.1)
 	TNT1 A 1050 Bright A_BarrelDestroy
