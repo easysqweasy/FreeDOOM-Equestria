@@ -1,11 +1,11 @@
-# DOOM Equestria for GZDoom
+# DOOM Equestria for GZDoom and LZDoom
 
 This is the **development** version, so it may contain bugs and errors;
 **Updates** can happen at **any time**, this version does ***NOT represent*** the final version;
 
 # Running
 
-**Make sure you are using GZDoom 4.6.0 or later**
+**Make sure you are using GZDoom 4.6.1/LZDoom 3.88a or later**
 Download repository as a ZIP file and drag it over gzdoom.exe.
 
 # Credits
