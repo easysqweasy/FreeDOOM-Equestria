@@ -141,7 +141,7 @@ actor DEBFGBall : BFGBall replaces BFGBall
 			A_SpawnItemEx("BFGFloorCheck", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION);
 			A_SpawnItemEX("BFGEEffect");
 			
-			A_QuakeEx(8, 8, 8, 35, 0, 750, "world/quake", QF_RELATIVE | QF_SCALEDOWN, 0,0,0, 1);
+			A_QuakeEx(8, 8, 8, 35, 0, 750, "world/quake", QF_SCALEDOWN, 0,0,0, 1);
 		}	
 		TNT1 A 0 
 		BFE1 ABCD 2 Bright 
