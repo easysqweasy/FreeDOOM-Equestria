@@ -40,14 +40,8 @@ OptionValue "MissileTrails"
 	3, "Sprites and Particles"
 }
 
-AddListMenu "Skillmenu"
-{
-    animatedtransition
-}
-
 LISTMENU "MainMenu"
 {
-	animatedtransition
 	IfGame(Doom, Chex)
 	{
 		StaticPatch 94, 2, "M_DOOM"
