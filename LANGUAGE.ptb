@@ -46,7 +46,7 @@ CC_HEAVY = "Comandante Possuído";
 
 TECHDUDE = "Líder dos Hackers";
 DEMONIRIK = "Nirik Demoníaca";
-TECHKILL = "%o virou pó pela Líder dos Hackers.";
+OB_PLASMAKIRIN = "%o virou pó pela Líder dos Hackers.";
 NIRIKILL = "%o foi mordido pela Nirik Demoníaca.";
 
 BURSTBAT = "Treinadora Possuída";
