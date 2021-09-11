@@ -24,16 +24,19 @@ gore/bloodsplats2 "Sounds/Gore/BSSPLAT2.ogg"
 gore/bloodsplats3 "Sounds/Gore/BSSPLAT3.ogg"
 gore/bloodsplats4 "Sounds/Gore/BSSPLAT4.ogg"
 
-tech/groan "Sounds/Zombies/TechWeaponDudette/TECHGROAN.ogg"
-tech/active "Sounds/Zombies/TechWeaponDudette/TECHACT.ogg"
+// Females
 
-$random tech/death { tech/death1 tech/death2 tech/death3 }
-tech/death1 "Sounds/Zombies/TechWeaponDudette/TECHDTH.ogg"
-tech/death2 "Sounds/Zombies/TechWeaponDudette/TECHDTH2.ogg"
-tech/death3 "Sounds/Zombies/TechWeaponDudette/TECHDTH3.ogg"
+female/groan "Sounds/Zombies/Female/MAREGROAN.ogg"
+female/active "Sounds/Zombies/Female/MAREACT.ogg"
 
-tech/pain "Sounds/Zombies/TechWeaponDudette/TECHPAIN.ogg"
-tech/sight "Sounds/Zombies/TechWeaponDudette/TECHSIT.ogg"
+$random female/death { female/death1 female/death2 female/death3 }
+female/death1 "Sounds/Zombies/Female/MAREDTH.ogg"
+female/death2 "Sounds/Zombies/Female/MAREDTH2.ogg"
+female/death3 "Sounds/Zombies/Female/MAREDTH3.ogg"
+
+female/pain "Sounds/Zombies/Female/MAREPAIN.ogg"
+female/pain "Sounds/Zombies/Female/MAREPAIN.ogg"
+female/sight "Sounds/Zombies/Female/MARESIT.ogg"
 
 // Lost Soul
 
