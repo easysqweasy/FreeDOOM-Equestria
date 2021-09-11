@@ -51,6 +51,8 @@ actor EquestriaCacodemon : Cacodemon replaces Cacodemon
 	Raise:
 		HEAD L 8 A_UnSetFloorClip
 		HEAD KJIHG 8
+		
+		HEAD A 0 A_ChangeFlag("FLOATBOB", 1)
 		Goto See
 
 	}
