@@ -35,7 +35,7 @@ female/death2 "Sounds/Zombies/Female/MAREDTH2.ogg"
 female/death3 "Sounds/Zombies/Female/MAREDTH3.ogg"
 
 female/pain "Sounds/Zombies/Female/MAREPAIN.ogg"
-female/pain "Sounds/Zombies/Female/MAREPAIN.ogg"
+female/pain2 "Sounds/Zombies/Female/MAREPAIN2.ogg"
 female/sight "Sounds/Zombies/Female/MARESIT.ogg"
 
 // Lost Soul
