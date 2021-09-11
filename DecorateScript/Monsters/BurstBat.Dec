@@ -4,7 +4,7 @@ ACTOR BurstBat
 //$Category Monsters
 //$Title Possessed Trainer
 	Tag "$BURSTBAT"
-	Health 50
+	Health 75
 	
 	Radius 20
 	Height 56
@@ -15,6 +15,7 @@ ACTOR BurstBat
 	
 	PainChance 150
 	
+	+FLOATBOB
 	+CASTSPRITESHADOW
 	+FLOAT
 	+NOGRAVITY
@@ -22,24 +23,34 @@ ACTOR BurstBat
 	+MISSILEMORE
 	
 	SeeSound "female/sight"
-	AttackSound "chainguy/attack"
+	AttackSound "weapons/chngun"
 	PainSound "female/pain2"
 	DeathSound "female/death"
 	ActiveSound "female/active"
 	
 	Obituary "$OB_BURSTBAT"
 	
+	DropItem "LargeClip"
+	
 	States
 	{
 	Spawn:
-		CPOS AB 10 A_Look
+		CPOS AB 10 A_LookEx(0, 0, 0, 0, 300)
 		Loop
 
 	See:
 		CPOS AABBCCDD 3 A_Chase
 		Loop
+	
+	/*Melee:
+		SKUL C 10 Bright A_FaceTarget
+		SKUL D 4 Bright A_SkullAttack
+		SKUL CD 4 Bright
+		Goto Missile+2*/
 
 	Missile:
+		//CPOS E 0 A_JumpIfCloser(200, "Melee")
+		
 		CPOS E 3 A_FaceTarget
 		CPOS F 4 Bright A_CustomBulletAttack(10, 0, 1, random(1,5)*3, "EquestriaBulletPuff", 0, CBAF_NORANDOM)
 		CPOS E 3 A_FaceTarget
