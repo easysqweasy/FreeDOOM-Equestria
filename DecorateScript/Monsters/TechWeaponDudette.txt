@@ -9,7 +9,7 @@ actor PlasmaKirin
 	Radius 20
 	Height 56
 	Mass 80
-	Speed 16
+	Speed 15
 	FastSpeed 20
 	Species "Couple"
 	PainChance 170
@@ -19,13 +19,13 @@ actor PlasmaKirin
 	+CASTSPRITESHADOW
 	+DOHARMSPECIES
 	
-	SeeSound "tech/sight"
+	SeeSound "female/sight"
 	AttackSound ""
-	PainSound "tech/pain"
-	DeathSound "tech/death"
-	ActiveSound "tech/active"
+	PainSound "female/pain"
+	DeathSound "female/death"
+	ActiveSound "female/active"
 	
-	Obituary "$TECHKILL"
+	Obituary "$OB_PLASMAKIRIN"
 	
 	DropItem "ArmorBonus"
 	DropItem "Cell", 64 //25% Chance of drop Cells
@@ -162,11 +162,11 @@ actor DemonNirik
 	+JUMPDOWN
 	+BRIGHT
 	 
-	SeeSound "tech/sight"
+	SeeSound "demon/sight"
 	AttackSound "demon/melee"
-	PainSound "tech/pain"
-	DeathSound "tech/death"
-	ActiveSound "tech/active"
+	PainSound "demon/pain"
+	DeathSound "female/death"
+	ActiveSound "demon/active"
 	
 	Obituary "$NIRIKILL"
 	States
