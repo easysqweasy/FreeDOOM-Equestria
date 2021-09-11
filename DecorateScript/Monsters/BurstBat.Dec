@@ -39,6 +39,8 @@ ACTOR BurstBat
 		Loop
 
 	See:
+		CPOS A 0 A_JumpIfCloser(128, "FallBack")
+
 		CPOS AABBCCDD 3 A_Chase
 		Loop
 	
@@ -47,9 +49,14 @@ ACTOR BurstBat
 		SKUL D 4 Bright A_SkullAttack
 		SKUL CD 4 Bright
 		Goto Missile+2*/
-
+	
+	FallBack:
+		CPOS E 0 A_FaceTarget
+		CPOS E 8 A_Recoil(15)
+		CPOA E 0 A_Stop
 	Missile:
-		//CPOS E 0 A_JumpIfCloser(200, "Melee")
+		//CPOS A 0 A_JumpIfCloser(200, "Melee")
+		CPOS A 0 A_JumpIfCloser(200, "FallBack")
 		
 		CPOS E 3 A_FaceTarget
 		CPOS F 4 Bright A_CustomBulletAttack(10, 0, 1, random(1,5)*3, "EquestriaBulletPuff", 0, CBAF_NORANDOM)
