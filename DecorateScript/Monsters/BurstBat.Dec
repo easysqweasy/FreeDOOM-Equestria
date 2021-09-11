@@ -13,7 +13,7 @@ ACTOR BurstBat
 	Speed 20
 	FastSpeed 25
 	
-	PainChance 170
+	PainChance 150
 	
 	+CASTSPRITESHADOW
 	+FLOAT
