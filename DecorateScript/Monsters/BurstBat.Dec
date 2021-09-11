@@ -10,22 +10,24 @@ ACTOR BurstBat
 	Height 56
 	
 	Mass 80
-	Speed 10
-	FastSpeed 15
+	Speed 20
+	FastSpeed 25
 	
 	PainChance 170
 	
 	+CASTSPRITESHADOW
 	+FLOAT
 	+NOGRAVITY
+	+QUICKTORETALIATE
+	+MISSILEMORE
 	
-	SeeSound "chainguy/sight"
-	PainSound "chainguy/pain"
-	DeathSound "chainguy/death"
-	ActiveSound "chainguy/active"
+	SeeSound "female/sight"
 	AttackSound "chainguy/attack"
+	PainSound "female/pain2"
+	DeathSound "female/death"
+	ActiveSound "female/active"
 	
-	Obituary "$OB_CHAINGUY"
+	Obituary "$OB_BURSTBAT"
 	
 	States
 	{
