@@ -10,8 +10,8 @@ ACTOR BurstBat
 	Height 56
 	
 	Mass 80
-	Speed 20
-	FastSpeed 25
+	Speed 15
+	FastSpeed 20
 	
 	PainChance 150
 	
