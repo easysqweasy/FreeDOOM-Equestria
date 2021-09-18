@@ -18,6 +18,12 @@ Actor DeathLostSoul replaces DeadLostSoul
 	States
 	{
 	Spawn:
+		SKUL L 0
+		SKUL L 1
+		{
+			bSPRITEFLIP = randompick(0, 1);
+		}
+		
 		SKUL L -1
 		Stop
 	}
