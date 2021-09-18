@@ -34,6 +34,7 @@ Actor DebrisGeneral
 #include "DecorateScript/Monsters/Revenant.txt"
 #include "DecorateScript/Monsters/Canines.dec"
 #include "DecorateScript/Monsters/ScriptedMarines.dec"
+#include "DecorateScript/Monsters/SpiderMastermind.dec"
 
 ////Items/PowerUps
 
