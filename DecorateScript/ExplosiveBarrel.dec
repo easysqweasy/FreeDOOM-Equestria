@@ -114,7 +114,7 @@ actor BarrelTiny : BarrelDebris
 	Height 5
 	Radius 5
 	Mass 25
-	Speed 15
+	Gravity 0.75
 	
 	BounceFactor 0.75
 	
