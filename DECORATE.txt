@@ -14,28 +14,7 @@ Actor DebrisGeneral
   Damage 0
 }
 
-////Player Characters
-
-actor EquestriaDoomPlayer : DoomPlayer
-{
-	+CASTSPRITESHADOW
-	
-	Player.DisplayName "Shainer"
-	
-	Player.DamageScreenColor red
-	
-	Player.StartItem "EquestriaPistol"
-	Player.StartItem "Clip", 20
-	//Player.StartItem "Fist"
-  
-	Player.WeaponSlot 1, /*"Fist",*/ "EquestriaChainsaw"
-	Player.WeaponSlot 2, "EquestriaPistol"
-	Player.WeaponSlot 3, "EquestriaShotgun", "EquestriaSuperShotgun"
-	Player.WeaponSlot 4, "EquestriaChaingun", "Repeater"
-	Player.WeaponSlot 5, "EquestriaPlasmaGun"
-	Player.WeaponSlot 6, "EquestriaRocketLauncher"
-	Player.WeaponSlot 7, "EquestriaBFG9000"
-}
+#include "DecorateScript/Player.dec"
 
 ////Monsters
 

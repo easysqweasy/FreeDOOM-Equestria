@@ -1,0 +1,32 @@
+actor EquestriaDoomPlayer : DoomPlayer
+{
+	+CASTSPRITESHADOW
+	
+	Player.DisplayName "Shainer"
+	
+	Player.DamageScreenColor red
+	
+	Player.StartItem "EquestriaPistol"
+	Player.StartItem "Clip", 20
+	//Player.StartItem "Fist"
+  
+	Player.WeaponSlot 1, "BerserkedFist", "EquestriaChainsaw"
+	Player.WeaponSlot 2, "EquestriaPistol"
+	Player.WeaponSlot 3, "EquestriaShotgun", "EquestriaSuperShotgun"
+	Player.WeaponSlot 4, "EquestriaChaingun", "Repeater"
+	Player.WeaponSlot 5, "EquestriaPlasmaGun"
+	Player.WeaponSlot 6, "EquestriaRocketLauncher"
+	Player.WeaponSlot 7, "EquestriaBFG9000"
+	
+	States
+	{
+	
+	Death.BaronKnightMelee:
+		PLAY O 5 A_PlayerScream
+		PLAY P 5 A_SkullPop
+		PLAY R 5 A_NoBlocking
+		PLAY STUV 5
+		PLAY W -1
+		Stop
+	}
+}
