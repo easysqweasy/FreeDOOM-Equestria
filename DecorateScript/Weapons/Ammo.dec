@@ -10,7 +10,14 @@ ACTOR AmmoCache : Clip
     Stop
   }
 }
-ACTOR AmmoClips : Clip
+
+
+Actor EquestriaClip : Clip replaces Clip
+{
+	+ForceXYBillBoard
+}
+
+ACTOR AmmoClips : EquestriaClip
 {
 //$Title Large bullet clip (35)
   Inventory.PickupMessage "Picked up large bullet clips."
@@ -22,7 +29,8 @@ ACTOR AmmoClips : Clip
     Stop
   }
 }
-ACTOR Clip2 : Clip
+
+ACTOR Clip2 : EquestriaClip
 {
 //$Title Clip 2 (10)
   Inventory.PickupMessage "$GOTCLIP" // "Picked up a clip."
@@ -35,7 +43,7 @@ ACTOR Clip2 : Clip
   }
 }
 
-ACTOR LargeClip : Clip
+ACTOR LargeClip : EquestriaClip
 {
 //$Title Large Clip (15)
   Inventory.PickupMessage "Picked up a large bullet clip."
@@ -112,6 +120,10 @@ ACTOR Cell2 : Cell
   }
 }
 
+Actor EquestriaShell : Shell replaces Shell
+{
+	+ForceXYBillBoard
+}
 ACTOR ShellBox2 : Shell
 {
 //$Title Shell Box 2 (10)
