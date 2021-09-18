@@ -51,7 +51,7 @@ ACTOR BurstBat
 	Melee:
 	Dodge:
 		CPOS E 0 A_FaceTarget
-		CPOS E 8 ThrustThingZ(0, 40, 0, 0)
+		CPOS E 8 ThrustThingZ(0, 50, 0, 0)
 		CPOS E 0 A_Stop
 		Goto Missile+2
 
