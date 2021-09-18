@@ -13,20 +13,10 @@ Actor FloorCheck
 	+NOGRAVITY
 }
 
-Actor FloorDecal
+Actor FloorDecal : FloorCheck
 {
 	Radius 0
 	Height 0
-	
-	+MISSILE
-	+FLOORCLIP
-	+NOTELEPORT
-	+NOBLOCKMAP
-	+THRUACTORS
-	+MOVEWITHSECTOR
-	+NODAMAGETHRUST
-	+GHOST
-	+NOGRAVITY
 }
 
 Actor ScorchFloorCheck : FloorCheck
