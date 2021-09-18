@@ -8,8 +8,11 @@ Actor LostSoulVariants : RandomSpawner replaces LostSoul
 Actor EquestriaLostSoul : LostSoul
 {
 	Health 50
+	Speed 10
 	Species "PainSoul"
+	
 	RenderStyle Normal
+	
 	Height 30
 	Radius 15
 	
@@ -18,7 +21,6 @@ Actor EquestriaLostSoul : LostSoul
 	+FLOATBOB
 	-COUNTKILL
 	+NOBLOOD
-
 }
 
 Actor PonyLostSoul : EquestriaLostSoul
