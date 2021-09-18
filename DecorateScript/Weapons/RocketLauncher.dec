@@ -90,7 +90,7 @@ actor DERocket : Rocket replaces Rocket
 		A_QuakeEx(4, 4, 4, 16, 0, 200, "", QF_SCALEDOWN, 0,0,0, 1);
 	}
 	MISL C 3 Bright
-    MISL D 1 Bright A_FadeOut(0.25)
+    MISL D 1 Bright A_FadeOut(0.2)
 	Wait
   }
 }
