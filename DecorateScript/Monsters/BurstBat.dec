@@ -84,7 +84,11 @@ ACTOR BurstBat
 		Stop
 	
 	XDeath:
-		CPOS O 5 
+		CPOS O 5
+		{
+			A_CustomMissile(XDeathGoreSpawn, 2);
+			A_CustomMissile(BloodExplosionSphere, 5);
+		}
 		CPOS P 5 A_XScream
 		CPOS Q 5 
 		CPOS R 5
