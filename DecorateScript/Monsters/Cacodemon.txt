@@ -44,8 +44,7 @@ actor EquestriaCacodemon : Cacodemon replaces Cacodemon
 		Stop
 	
 	Crash:
-		HEAD I 4 A_PlaySound ("*fist")
-		HEAD J 4
+		HEAD IJ 4
 		HEAD K 2 A_NoBlocking
 		HEAD K 1 A_UnsetSolid
 		HEAD K 1 A_UnSetShootable
