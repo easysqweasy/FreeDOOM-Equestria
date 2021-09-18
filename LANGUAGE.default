@@ -7,7 +7,7 @@ WIPWARNING = "^Not yet implemented";
 
 VIDEOSETTINGS = "Video Settings";
 
-BOBTOGGLE = "Bobbing on fire";
+BOBTOGGLE = "Bobbing after fire";
 CAMRECOILTOGGLE = "Camera Recoil";
 AURATOGGLE = "Magic Auras on Weapons";
 FOVTOGGLE = "To change the FOV (Field Of View) open the Console and put 'Fov [Desired Quantity]'";
