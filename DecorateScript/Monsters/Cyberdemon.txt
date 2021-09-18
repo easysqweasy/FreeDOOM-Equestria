@@ -12,9 +12,9 @@ actor EquestriaCyberdemon : Cyberdemon replaces Cyberdemon
     CYBR H 10
     CYBR I 10
 	{
-		A_CustomMissile(XDeathGoreSpawn, 35);
-		A_CustomMissile(BloodExplosionSpawn, random(16, 32));
-		A_CustomMissile(BloodExplosionSpawn, random(64, 128));
+		A_CustomMissile(XDeathGoreSpawn, 32);
+		A_CustomMissile(BloodExplosion, random(16, 32));
+		A_CustomMissile(BloodExplosion, random(16, 32));
 		A_Scream;
 	}
     CYBR J 8
@@ -22,12 +22,12 @@ actor EquestriaCyberdemon : Cyberdemon replaces Cyberdemon
 	{
 		A_QuakeEx(4, 4, 4, 35, 0, 800, "world/quake", QF_SCALEDOWN, 0,0,0, 1);
 		A_CustomMissile(BigGoreSpawn);
-		A_CustomMissile(BloodExplosionSpawn, random(16, 64));
-		A_CustomMissile(BloodExplosionSpawn, random(64, 128));
-		A_CustomMissile(BloodExplosionSpawn, random(16, 64));
-		A_CustomMissile(BloodExplosionSpawn, random(64, 128));
-		A_CustomMissile(BloodExplosionSpawn, random(16, 64));
-		A_CustomMissile(BloodExplosionSpawn, random(64, 128));
+		A_CustomMissile(BloodExplosion, random(16, 64));
+		A_CustomMissile(BloodExplosion, random(16, 64));
+		A_CustomMissile(BloodExplosion, random(16, 64));
+		A_CustomMissile(BloodExplosion, random(16, 64));
+		A_CustomMissile(BloodExplosion, random(16, 64));
+		A_CustomMissile(BloodExplosion, random(16, 64));
 	}
     CYBR M 5 A_NoBlocking
     CYBR NO 5
