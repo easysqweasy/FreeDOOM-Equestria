@@ -53,6 +53,7 @@ ACTOR EquestriaZombieMan : ZombieMan Replaces ZombieMan
 		POSS U 0
 		{
 			A_CustomMissile(XDeathGoreSpawn, 2);
+			A_CustomMissile(BloodExplosionSphere, 5);
 			A_XScream;
 			A_NoBlocking;
 		}
@@ -87,7 +88,7 @@ ACTOR EquestriaZombieMan : ZombieMan Replaces ZombieMan
         POSS N 5
 		{
 			A_CustomMissile(XDeathGoreSpawn, 2);
-			A_XScream;
+			A_CustomMissile(BloodExplosionSphere, 5);
 		}
         POSS O 3 A_NoBlocking
         POSS PQRST 3
