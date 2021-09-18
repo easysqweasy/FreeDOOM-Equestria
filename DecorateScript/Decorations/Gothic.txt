@@ -11,6 +11,7 @@ ACTOR SkullGem
 
 ACTOR Bible
 {
+	+ForceXYBillboard
 //$Category Gothic
   States
   {
@@ -79,6 +80,7 @@ ACTOR Chest
 
 ACTOR Book
 {
+	+ForceXYBillboard
 //$Category Gothic
   States
   {
