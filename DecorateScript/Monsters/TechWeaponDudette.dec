@@ -112,6 +112,7 @@ actor PlasmaKirin
 		TECH W 0 
 		{
 			A_CustomMissile(XDeathGoreSpawn, 2);
+			A_CustomMissile(BloodExplosionSphere, 5);
 			A_XScream;
 			A_NoBlocking;
 		}
@@ -229,6 +230,7 @@ actor DemonNirik
 		TECH W 0
 		{
 			A_CustomMissile(XDeathGoreSpawn, 2);
+			A_CustomMissile(BloodExplosionSphere, 5);
 			A_XScream;
 			A_NoBlocking;
 		}
