@@ -1,9 +1,11 @@
-Actor SmallPonyBloodPool : SmallBloodPool replaces SmallBloodPool
-{
-	+ForceXYBillboard
-}
+Actor EquestriaSmallBloodPool : SmallBloodPool replaces SmallBloodPool
+{	+ForceXYBillboard	}
 
-Actor PonyBrainStem : BrainStem replaces BrainStem
-{
-	+ForceXYBillboard
-}
+Actor EquestriaBrainStem : BrainStem replaces BrainStem
+{	+ForceXYBillboard	}
+
+Actor EquestriaGibs : Gibs replaces Gibs
+{	+ForceXYBillboard	}
+
+Actor EquestriaColonGibs : ColonGibs replaces ColonGibs
+{	+ForceXYBillboard	}
