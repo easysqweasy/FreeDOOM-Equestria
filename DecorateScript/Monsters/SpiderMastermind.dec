@@ -8,20 +8,20 @@ Actor EquestriaSpiderMastermind : SpiderMastermind replaces SpiderMastermind
 	Death:
 		SPID J 20 A_Scream
 		SPID K 10 A_NoBlocking
-		SPID LMN 10
+		SPID LMN 8
 		{
-			A_CustomMissile(XDeathGoreSpawn, 35);
-			A_CustomMissile(BloodExplosionSpawn, random(16, 32));
+			A_CustomMissile(XDeathGoreSpawn, 0);
+			A_CustomMissile(BloodExplosionSpawn, random(0, 16));
 		}
 		SPID O 10
 		{
 			A_CustomMissile(BigGoreSpawn);
 			A_CustomMissile(BloodExplosionSpawn, random(16, 32));
-			A_CustomMissile(BloodExplosionSpawn, random(64, 128));
-			A_CustomMissile(BloodExplosionSpawn, random(64, 128));
-			A_CustomMissile(BloodExplosionSpawn, random(64, 128));
+			A_CustomMissile(BloodExplosionSpawn, random(16, 32));
+			A_CustomMissile(BloodExplosionSpawn, random(16, 32));
+			A_CustomMissile(BloodExplosionSpawn, random(16, 32));
 		}
-		SPID PQR 10
+		SPID PQR 5
 		SPID S 30
 		SPID S -1 A_BossDeath
 		Stop
