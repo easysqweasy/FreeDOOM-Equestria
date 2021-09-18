@@ -11,7 +11,7 @@ actor EquestriaCacodemon : Cacodemon replaces Cacodemon
 	+MISSILEMORE
 	+FORCEXYBILLBOARD
 	
-	MeleeThreshold 100
+	MeleeThreshold 128
 	
 	States
 	{
@@ -22,7 +22,7 @@ actor EquestriaCacodemon : Cacodemon replaces Cacodemon
 		HEAD C 3 A_Recoil(-15)
 		HEAD B 4 A_CustomMeleeAttack(10 * random(1, 6), "demon/melee", "skeleton/swing")
 		
-		HEAD B 4 A_Stop
+		HEAD A 4 A_Stop
 		Goto See
 	
 	Missile:
