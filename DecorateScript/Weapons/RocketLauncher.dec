@@ -83,14 +83,14 @@ actor DERocket : Rocket replaces Rocket
   Death:
 	TNT1 A 0 A_SpawnItemEx("ScorchFloorCheck", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION)
 	
-    MISL B 4 Bright
+    MISL B 6 Bright
 	{
 		A_Explode;
 		
 		A_QuakeEx(4, 4, 4, 16, 0, 200, "", QF_SCALEDOWN, 0,0,0, 1);
 	}
-	MISL C 4 Bright
-    MISL D 1 Bright A_FadeOut(0.1)
+	MISL C 3 Bright
+    MISL D 1 Bright A_FadeOut(0.25)
 	Wait
   }
 }
