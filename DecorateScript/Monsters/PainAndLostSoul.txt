@@ -7,7 +7,7 @@ Actor LostSoulVariants : RandomSpawner replaces LostSoul
 
 Actor EquestriaLostSoul : LostSoul
 {
-	Health 75
+	Health 50
 	Species "PainSoul"
 	RenderStyle Normal
 	Height 30
@@ -25,6 +25,13 @@ Actor PonyLostSoul : EquestriaLostSoul
 {
 	States
 	{
+	
+	Missile:
+		SKUL C 10 Bright A_FaceTarget
+		SKUL D 4 Bright A_SkullAttack
+		SKUL CD 4 Bright
+		Goto Missile+2
+	
 	Death:
 		SKUL F 6 Bright
 		SKUL G 6 Bright A_Scream
@@ -36,6 +43,7 @@ Actor PonyLostSoul : EquestriaLostSoul
 		SKUL KKKKKKKKKK 1 A_FadeOut(0.1)
 		Stop
 	
+	XDeath:
 	Death.Berserk:
 		SKUL H 6 Bright A_Scream
 		SKUL I 3 Bright A_NoBlocking
@@ -51,6 +59,13 @@ Actor UnicornLostSoul : EquestriaLostSoul
 {
 	States
 	{
+	
+	Missile:
+		SKUL C 10 Bright A_FaceTarget
+		SKUL D 4 Bright A_SkullAttack
+		SKUL CD 4 Bright
+		Goto Missile+2
+	
 	Death:
 		SKUL F 6 Bright
 		SKUL G 6 Bright A_Scream
@@ -62,6 +77,7 @@ Actor UnicornLostSoul : EquestriaLostSoul
 		SKUL KKKKKKKKKK 1 A_FadeOut(0.1)
 		Stop
 	
+	XDeath:
 	Death.Berserk:
 		SKUL H 6 Bright A_Scream
 		SKUL I 3 Bright A_NoBlocking
@@ -77,6 +93,13 @@ Actor NirikLostSoul : EquestriaLostSoul
 {
 	States
 	{
+	
+	Missile:
+		SKUL C 10 Bright A_FaceTarget
+		SKUL D 4 Bright A_SkullAttack
+		SKUL CD 4 Bright
+		Goto Missile+2
+	
 	Death:
 		SKUL F 6 Bright
 		SKUL G 6 Bright A_Scream
@@ -88,6 +111,7 @@ Actor NirikLostSoul : EquestriaLostSoul
 		SKUL KKKKKKKKKK 1 A_FadeOut(0.1)
 		Stop
 	
+	XDeath:
 	Death.Berserk:
 		SKUL H 6 Bright A_Scream
 		SKUL I 3 Bright A_NoBlocking
@@ -109,6 +133,7 @@ Actor EquestriaPain : PainElemental replaces PainElemental
 	+FLOATBOB
 	+FORCEXYBILLBOARD
 	+DONTHARMSPECIES
+	+AvoidMelee
 	
 	States
 	{
@@ -116,9 +141,21 @@ Actor EquestriaPain : PainElemental replaces PainElemental
 	Missile:
 		PAIN D 5 A_FaceTarget
 		PAIN E 5 A_FaceTarget
-		PAIN F 5 BRIGHT A_FaceTarget
-		PAIN F 0 BRIGHT A_PainAttack("LostSoulVariants")
+		PAIN F 4 BRIGHT A_FaceTarget
+		PAIN F 0 BRIGHT A_Jump(256, "Missile.Pony", "Missile.Unicorn", "Missile.Nirik")
 		Goto See
+	
+		Missile.Pony:
+			PAIN F 1 BRIGHT A_PainAttack("PonyLostSoul")
+			Goto See
+			
+		Missile.Unicorn:
+			PAIN F 1 BRIGHT A_PainAttack("UnicornLostSoul")
+			Goto See
+			
+		Missile.Nirik:
+			PAIN F 1 BRIGHT A_PainAttack("NirikLostSoul")
+			Goto See
 
 	Death:
 		PAIN H 8 Bright
