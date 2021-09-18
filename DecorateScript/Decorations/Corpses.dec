@@ -13,6 +13,8 @@ ACTOR DeadPlasmaKirin : PlasmaKirin
 
 Actor DeathLostSoul replaces DeadLostSoul
 {
+	+ForceXYBillboard
+	
 	States
 	{
 	Spawn:
