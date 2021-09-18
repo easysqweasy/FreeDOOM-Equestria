@@ -39,15 +39,14 @@ ACTOR EquestriaChaingunGuy : ChaingunGuy replaces ChaingunGuy
 		CPOS H 5
 		CPOS I 5
 		{
-			A_SpawnItemEX(GibGore2, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
-			A_SpawnItemEX(GibGore2, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
-			A_SpawnItemEX(GibGore2, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
-			A_SpawnItemEX(GibGore4, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
-			A_SpawnItemEX(GibGore4, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
-			A_SpawnItemEX(GibGore4, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
-			A_SpawnItemEX(GibGore5, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
-			A_SpawnItemEX(GibGore5, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
-			A_SpawnItemEX(GibGore5, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
+			A_SpawnItemEX(TinyGibGore1, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
+			A_SpawnItemEX(TinyGibGore1, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
+			A_SpawnItemEX(TinyGibGore1, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
+			
+			A_SpawnItemEX(TinyGibGore2, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
+			A_SpawnItemEX(TinyGibGore2, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
+			A_SpawnItemEX(TinyGibGore2, 0, 0, 10, random(-6, 6), random(-6, 6), 10);
+			
 			A_Scream;
 		}
 		CPOS J 5 A_NoBlocking
