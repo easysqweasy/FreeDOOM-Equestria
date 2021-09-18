@@ -29,17 +29,17 @@ Actor XDeathGoreSpawn
 		A_CustomMissile(GibGore4, 32, 0, random (0, 360), 2, random (10, 90));
 		A_CustomMissile(GibGore4, 32, 0, random (0, 360), 2, random (10, 90));
 		
-		A_CustomMissile(GibGore5, 32, 0, random (0, 360), 2, random (10, 90));
-		A_CustomMissile(GibGore5, 32, 0, random (0, 360), 2, random (10, 90));
-		A_CustomMissile(GibGore5, 32, 0, random (0, 360), 2, random (10, 90));
-		A_CustomMissile(GibGore5, 32, 0, random (0, 360), 2, random (10, 90));
-		A_CustomMissile(GibGore5, 32, 0, random (0, 360), 2, random (10, 90));
+		A_CustomMissile(TinyGibGore1, 32, 0, random (0, 360), 2, random (10, 90));
+		A_CustomMissile(TinyGibGore1, 32, 0, random (0, 360), 2, random (10, 90));
+		A_CustomMissile(TinyGibGore1, 32, 0, random (0, 360), 2, random (10, 90));
+		A_CustomMissile(TinyGibGore1, 32, 0, random (0, 360), 2, random (10, 90));
+		A_CustomMissile(TinyGibGore1, 32, 0, random (0, 360), 2, random (10, 90));
 		
-		A_CustomMissile(GibGore6, 32, 0, random (0, 360), 2, random (10, 90));
-		A_CustomMissile(GibGore6, 32, 0, random (0, 360), 2, random (10, 90));
-		A_CustomMissile(GibGore6, 32, 0, random (0, 360), 2, random (10, 90));
-		A_CustomMissile(GibGore6, 32, 0, random (0, 360), 2, random (10, 90));
-		A_CustomMissile(GibGore6, 32, 0, random (0, 360), 2, random (10, 90));
+		A_CustomMissile(TinyGibGore2, 32, 0, random (0, 360), 2, random (10, 90));
+		A_CustomMissile(TinyGibGore2, 32, 0, random (0, 360), 2, random (10, 90));
+		A_CustomMissile(TinyGibGore2, 32, 0, random (0, 360), 2, random (10, 90));
+		A_CustomMissile(TinyGibGore2, 32, 0, random (0, 360), 2, random (10, 90));
+		A_CustomMissile(TinyGibGore2, 32, 0, random (0, 360), 2, random (10, 90));
 	}
 	Stop
 	}
@@ -144,11 +144,9 @@ ACTOR EquestriaBlood : Blood replaces Blood
 	Height 4
 	Radius 2
 	
+	Gravity 0.75
 	Mass 5
 	Speed 8
-	
-	+ROLLSPRITE
-	+ROLLCENTER
 	
 	+ForceXYBillBoard
 	+DONTSPLASH
@@ -159,38 +157,44 @@ ACTOR EquestriaBlood : Blood replaces Blood
 	-COUNTKILL
 	+FLOORCLIP
 	+MISSILE
+	
 	States
 	{
 	Spawn:
 		BLUD C 1
 		Loop
 	Death:
-		BLUD C 0 A_SpawnItemEX(DESmallBloodPoolSpawn, 0, 0, 0, 0, 0, 0, 0, SXF_TRANSFERTRANSLATION)
+		BLUD C 1 A_SpawnItemEX(SmallBloodPoolDrop, 0, 0, 0, 0, 0, 0, 0, SXF_TRANSFERTRANSLATION)
+		Stop
+	Crash:
 		BLUD BA 8
-	Spray:
-		SPRY ABCDEF 3
-		SPRY G 2
 		Stop
 	}
 }
 
-ACTOR DESmallBloodPoolSpawn : SmallBloodPool
+ACTOR BloodTrail : EquestriaBlood
+{
+	Gravity 0.5
+	Scale 0.75
+}
+
+ACTOR SmallBloodPoolDrop : SmallBloodPool
 {
   +ForceXYBillBoard
   States
   {
   Spawn:
-	TNT1 A 0 A_ChangeFlag("SPRITEFLIP", random(0,1))
-	POB2 A random(8, 35)
-	POB2 BCD 4
-	POB2 DEEEEEEEEE 1 A_FadeOut(0.1)
-	Stop
-  }
-}
+		TNT1 A 0
+		TNT1 A 1
+		{
+			bSPRITEFLIP = randompick(0, 1);
+		}
 
-ACTOR BloodTrail : EquestriaBlood
-{
-	Scale 0.75
+		POB2 A random(8, 35)
+		POB2 BCD 4
+		POB2 E 1 A_FadeOut(0.25)
+		Wait
+	}
 }
 
 Actor Heart
@@ -272,8 +276,10 @@ actor GibGore4 : GibGoreBase
 	}
 }
 
-actor GibGore5 : GibGoreBase
+actor TinyGibGore1 : GibGoreBase
 {
+	Gravity 0.75
+	
 	States
 	{
 	Spawn:
@@ -291,7 +297,7 @@ actor GibGore5 : GibGoreBase
 	}
 }
 
-actor GibGore6 : GibGore5
+actor TinyGibGore2 : TinyGibGore1
 {
 	States
 	{
