@@ -1,5 +1,6 @@
 ACTOR EquestriaExploBarrel : ExplosiveBarrel replaces ExplosiveBarrel
 {
+	DamageType BarrelExp
 	-NOBLOOD
 	//-OLDRADIUSDMG
 	BloodColor "66 a2 66"
@@ -30,10 +31,11 @@ ACTOR EquestriaExploBarrel : ExplosiveBarrel replaces ExplosiveBarrel
 	TNT1 A 1050 Bright A_BarrelDestroy
 	TNT1 A 5 A_Respawn
     Wait
+  
   XDeath:
-	BEXP A 5 Bright
-	BEXP B 5 Bright A_Scream
-	BEXP C 5 Bright
+	BEXP A 1 Bright
+	BEXP B 3 Bright A_Scream
+	BEXP C 4 Bright
 	BEXP D 5 Bright
 	{
 		A_Explode;
@@ -43,6 +45,9 @@ ACTOR EquestriaExploBarrel : ExplosiveBarrel replaces ExplosiveBarrel
 		A_CustomMissile(BarrelDebris, 32, 0, random (0, 360), 2, random (10, 90));
 		A_CustomMissile(BarrelDebris, 32, 0, random (0, 360), 2, random (10, 90));
 		A_CustomMissile(BarrelDebris, 32, 0, random (0, 360), 2, random (10, 90));
+		
+		A_CustomMissile(BarrelTiny, 32, 0, random (0, 360), 2, random (10, 90));
+		A_CustomMissile(BarrelTiny, 32, 0, random (0, 360), 2, random (10, 90));
 		A_CustomMissile(BarrelTiny, 32, 0, random (0, 360), 2, random (10, 90));
 		A_CustomMissile(BarrelTiny, 32, 0, random (0, 360), 2, random (10, 90));
 		A_CustomMissile(BarrelTiny, 32, 0, random (0, 360), 2, random (10, 90));
@@ -56,6 +61,37 @@ ACTOR EquestriaExploBarrel : ExplosiveBarrel replaces ExplosiveBarrel
 	TNT1 A 1050 Bright A_BarrelDestroy
     TNT1 A 5 A_Respawn
     Wait
+
+  Death.BarrelExp:
+  XDeath.BarrelExp:
+		BEXP A 2 Bright
+		BEXP B 3 Bright A_Scream
+		BEXP C 4 Bright
+		BEXP D 5 Bright
+		{
+			A_Explode;
+			A_QuakeEx(3, 3, 3, 4, 0, 300, "", 0,0,0,0, 1);
+			
+			A_CustomMissile(BarrelDebris, 32, 0, random (0, 360), 2, random (10, 90));
+			A_CustomMissile(BarrelDebris, 32, 0, random (0, 360), 2, random (10, 90));
+			A_CustomMissile(BarrelDebris, 32, 0, random (0, 360), 2, random (10, 90));
+			A_CustomMissile(BarrelDebris, 32, 0, random (0, 360), 2, random (10, 90));
+			
+			A_CustomMissile(BarrelTiny, 32, 0, random (0, 360), 2, random (10, 90));
+			A_CustomMissile(BarrelTiny, 32, 0, random (0, 360), 2, random (10, 90));
+			A_CustomMissile(BarrelTiny, 32, 0, random (0, 360), 2, random (10, 90));
+			A_CustomMissile(BarrelTiny, 32, 0, random (0, 360), 2, random (10, 90));
+			A_CustomMissile(BarrelTiny, 32, 0, random (0, 360), 2, random (10, 90));
+			A_CustomMissile(BarrelTiny, 32, 0, random (0, 360), 2, random (10, 90));
+			A_CustomMissile(BarrelTiny, 32, 0, random (0, 360), 2, random (10, 90));
+			A_CustomMissile(BarrelTiny, 32, 0, random (0, 360), 2, random (10, 90));
+			A_CustomMissile(BarrelTiny, 32, 0, random (0, 360), 2, random (10, 90));
+			A_CustomMissile(BarrelTiny, 32, 0, random (0, 360), 2, random (10, 90));
+		}
+		BEXP EEEEEEEEEE 1 Bright A_FadeOut(0.1)
+		TNT1 A 1050 Bright A_BarrelDestroy
+		TNT1 A 5 A_Respawn
+		Wait
   }
 }
 
