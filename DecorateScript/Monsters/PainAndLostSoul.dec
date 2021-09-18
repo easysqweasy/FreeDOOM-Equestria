@@ -165,7 +165,7 @@ Actor EquestriaPain : PainElemental replaces PainElemental
 		{
 			A_Explode(10, 200);
 			A_QuakeEx(2, 2, 2, 4, 0, 500, "", 0,0,0,0, 1);
-			A_CustomMissile(BloodExplosionSpawn);
+			A_CustomMissile(BloodExplosion);
 		}
 		PAIN L 8 Bright A_PainDie
 		PAIN M 8 Bright
