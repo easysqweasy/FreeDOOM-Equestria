@@ -18,11 +18,7 @@ actor EquestriaCacodemon : Cacodemon replaces Cacodemon
 
 	Melee:
 		HEAD BCDD 2 A_FaceTarget
-		HEAD C 3
-		{
-			A_PlaySound();
-			A_FaceTarget;
-		}
+		HEAD C 3 A_FaceTarget
 		HEAD C 3 A_Recoil(-15)
 		HEAD B 4 A_CustomMeleeAttack(10 * random(1, 6), "demon/melee", "skeleton/swing")
 		
