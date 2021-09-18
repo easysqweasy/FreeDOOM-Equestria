@@ -78,14 +78,8 @@ object UnicornLostSoul
 
 object NirikLostSoul
 {
-    frame SKULA { light LOSTSOUL    }
-    frame SKULB { light LOSTSOUL    }
-    frame SKULC { light LOSTSOUL    }
-    frame SKULD { light LOSTSOUL    }
-    frame SKULE { light LOSTSOUL    }
-    frame SKULF { light LOSTSOUL    }
-    frame SKULG { light LOSTSOUL    }
-
+    frame SKUL { light DemonNirik    }
+	
     frame SKULH { light LOSTSOUL_X1 }
     frame SKULI { light LOSTSOUL_X2 }
     frame SKULJ { light LOSTSOUL_X3 }
@@ -139,21 +133,21 @@ pulselight PLASMATK2
 
 pulselight DemonNirik
 {
-	color 0.5 0.0 0.0
+	color 0.5 0.0 0.25
 	offset 0 20 0
 	size 60
 	secondarySize 80
-	interval 1
+	interval 5
 	attenuate 1
 }
 
 pulselight DemonNirik2
 {
-	color 0.5 0.5 0.5
+	color 0.5 0.0 0.0
 	offset 0 16 0
 	size 40
 	secondarySize 60
-	interval 0.5
+	interval 5
 	attenuate 1
 }
 object EquestriaZombieMan
@@ -180,8 +174,8 @@ object PlasmaKirin
 
 object DemonNirik
 {
-	frame NRIK { light DemonNirik }
-	frame NRIK { light DemonNirik/*2*/ }
+	frame TECH { light DemonNirik }
+	frame TECH { light DemonNirik/*2*/ }
 }
 
 // Arch-vile
