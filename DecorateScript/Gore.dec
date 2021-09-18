@@ -63,27 +63,52 @@ Actor BigGoreSpawn : XDeathGoreSpawn
   }
 }
 
-Actor BloodExplosionSpawn : XDeathGoreSpawn
+Actor BloodExplosion : XDeathGoreSpawn
 {
-  States
-  {
-  Spawn:
-	TNT1 A 0
-	TNT1 A 0
+	States
 	{
-		A_CustomMissile(EquestriaBlood, 32, 0, random (0, 360), 2, random (10, 100));
-		A_CustomMissile(EquestriaBlood, 32, 0, random (0, 360), 2, random (10, 100));
-		A_CustomMissile(EquestriaBlood, 32, 0, random (0, 360), 2, random (10, 100));
-		A_CustomMissile(EquestriaBlood, 32, 0, random (0, 360), 2, random (10, 100));
-		A_CustomMissile(EquestriaBlood, 32, 0, random (0, 360), 2, random (10, 100));
-		A_CustomMissile(EquestriaBlood, 32, 0, random (0, 360), 2, random (10, 100));
-		A_CustomMissile(EquestriaBlood, 32, 0, random (0, 360), 2, random (10, 100));
-		A_CustomMissile(EquestriaBlood, 32, 0, random (0, 360), 2, random (10, 100));
-		A_CustomMissile(EquestriaBlood, 32, 0, random (0, 360), 2, random (10, 100));
-		A_CustomMissile(EquestriaBlood, 32, 0, random (0, 360), 2, random (10, 100));
+	Spawn:
+		TNT1 A 0
+		TNT1 A 0
+		{
+			A_CustomMissile(BloodTrail, 32, 0, random (0, 360), 2, random (10, 100));
+			A_CustomMissile(BloodTrail, 32, 0, random (0, 360), 2, random (10, 100));
+			A_CustomMissile(BloodTrail, 32, 0, random (0, 360), 2, random (10, 100));
+			A_CustomMissile(BloodTrail, 32, 0, random (0, 360), 2, random (10, 100));
+			A_CustomMissile(BloodTrail, 32, 0, random (0, 360), 2, random (10, 100));
+			
+			A_CustomMissile(EquestriaBlood, 32, 0, random (0, 360), 2, random (10, 100));
+			A_CustomMissile(EquestriaBlood, 32, 0, random (0, 360), 2, random (10, 100));
+			A_CustomMissile(EquestriaBlood, 32, 0, random (0, 360), 2, random (10, 100));
+			A_CustomMissile(EquestriaBlood, 32, 0, random (0, 360), 2, random (10, 100));
+			A_CustomMissile(EquestriaBlood, 32, 0, random (0, 360), 2, random (10, 100));
+		}
+		Stop
 	}
-	Stop
-  }
+}
+
+Actor BigBloodExplosion : XDeathGoreSpawn
+{
+	States
+	{
+	Spawn:
+		TNT1 A 0
+		TNT1 A 0
+		{
+			A_CustomMissile(BloodTrail, 32, 0, random (0, 360), 2, random (10, 100));
+			A_CustomMissile(BloodTrail, 32, 0, random (0, 360), 2, random (10, 100));
+			A_CustomMissile(BloodTrail, 32, 0, random (0, 360), 2, random (10, 100));
+			A_CustomMissile(BloodTrail, 32, 0, random (0, 360), 2, random (10, 100));
+			A_CustomMissile(BloodTrail, 32, 0, random (0, 360), 2, random (10, 100));
+			
+			A_CustomMissile(EquestriaBlood, 32, 0, random (0, 360), 2, random (10, 100));
+			A_CustomMissile(EquestriaBlood, 32, 0, random (0, 360), 2, random (10, 100));
+			A_CustomMissile(EquestriaBlood, 32, 0, random (0, 360), 2, random (10, 100));
+			A_CustomMissile(EquestriaBlood, 32, 0, random (0, 360), 2, random (10, 100));
+			A_CustomMissile(EquestriaBlood, 32, 0, random (0, 360), 2, random (10, 100));
+		}
+		Stop
+	}
 }
 
 actor GibGoreBase : DebrisGeneral
@@ -325,7 +350,7 @@ actor BigGibGore1 : GibGoreBase
 	{
   Spawn:
 	BGOR AB 4 A_SpawnItemEX(EquestriaBlood,random(-2,-2),random(-2,2),random(-2,2))
-	BGOR CD 4 A_SpawnItemEX(EquestriaBlood,random(-2,-2),random(-2,2),random(-2,2))
+	BGOR CD 4 A_SpawnItemEX(BloodTrail,random(-2,-2),random(-2,2),random(-2,2))
 	Loop
   Death:
 	BGOR E 0 A_ChangeFlag("SPRITEFLIP", random(0,1))
@@ -340,9 +365,9 @@ actor BigGibGore2 : BigGibGore1
   States
   {
   Spawn:
-	BGO2 A 2 A_SpawnItemEX(EquestriaBlood,random(-2,-2),random(-2,2),random(-2,2))
+	BGO2 A 2 A_SpawnItemEX(BloodTrail,random(-2,-2),random(-2,2),random(-2,2))
 	BGO2 B 2 A_SpawnItemEX(EquestriaBlood,random(-2,-2),random(-2,2),random(-2,2))
-	BGO2 C 2 A_SpawnItemEX(EquestriaBlood,random(-2,-2),random(-2,2),random(-2,2))
+	BGO2 C 2 A_SpawnItemEX(BloodTrail,random(-2,-2),random(-2,2),random(-2,2))
 	BGO2 D 2 A_SpawnItemEX(EquestriaBlood,random(-2,-2),random(-2,2),random(-2,2))
 	Loop
   Death:
