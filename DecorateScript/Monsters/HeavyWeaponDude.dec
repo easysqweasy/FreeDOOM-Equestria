@@ -58,6 +58,7 @@ ACTOR EquestriaChaingunGuy : ChaingunGuy replaces ChaingunGuy
 		CPOS T 0
 		{
 			A_CustomMissile(XDeathGoreSpawn, 2);
+			A_CustomMissile(BloodExplosionSphere, 5);
 			A_XScream;
 			A_NoBlocking;
 		}
