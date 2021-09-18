@@ -45,7 +45,7 @@ actor EquestriaBFG9000 : DoomEquestriaWeapon replaces BFG9000
 		BFGG B 10
 		{
 			A_WeaponOffset(0, 35, WOF_KEEPX | WOF_INTERPOLATE);
-			A_GunFlash;
+			A_Overlay(-10, "Flash");
 		}
 		BFGG C 4
 		{
@@ -67,7 +67,7 @@ actor EquestriaBFG9000 : DoomEquestriaWeapon replaces BFG9000
 		BFGG B 10
 		{
 			A_WeaponOffset(0, 35, WOF_KEEPX | WOF_INTERPOLATE);
-			A_GunFlash;
+			A_Overlay(-10, "Flash1");
 		}
 		BFGG C 4
 		{
@@ -90,11 +90,16 @@ actor EquestriaBFG9000 : DoomEquestriaWeapon replaces BFG9000
 		}
 		Goto Ready
 	
-	Flash:
-		BFGF A 3 Bright A_Light(6)
-		BFGF B 7 Bright A_Light(8)
-		//BFGF D 3 Bright 
-		BFGF C 8 Bright A_Light(10) 
+	Flash1:
+		BFGF A 0 A_OverlayOffset(-10, 0, 12, WOF_KEEPX)
+		
+		BFGF B 5 Bright A_Light(4)
+		BFGF A 5 Bright A_Light(8)
+		BFGF D 6 Bright A_Light(10) 
+		BFGF A 5 Bright A_Light(6) 
+		BFGF B 3 Bright 
+		
+		TNT1 A 0 A_OverlayFlags(-10, PSPF_INTERPOLATE, false)
 		Goto LightDone
 	
 	OldFire:
