@@ -11,7 +11,7 @@ actor EquestriaCacodemon : Cacodemon replaces Cacodemon
 	+MISSILEMORE
 	+FORCEXYBILLBOARD
 	
-	MeleeRange 100
+	MeleeThreshold 100
 	
 	States
 	{
@@ -20,11 +20,11 @@ actor EquestriaCacodemon : Cacodemon replaces Cacodemon
 		HEAD BCDD 2 A_FaceTarget
 		HEAD C 3
 		{
-			A_PlaySound("demon/melee");
+			A_PlaySound();
 			A_FaceTarget;
 		}
 		HEAD C 3 A_Recoil(-15)
-		HEAD B 4 A_CustomMeleeAttack(10 * random(1, 6))
+		HEAD B 4 A_CustomMeleeAttack(10 * random(1, 6), "demon/melee", "skeleton/swing")
 		
 		HEAD B 4 A_Stop
 		Goto See
