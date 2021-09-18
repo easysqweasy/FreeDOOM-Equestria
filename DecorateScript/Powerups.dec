@@ -5,27 +5,19 @@ ACTOR EquestriaBackpack : Backpack replaces Backpack
 
 actor EquestriaComputerMap : Allmap replaces Allmap
 {
-  States
-  {
-  Spawn:
-    PMAP A 16 Bright
-	PMAP E random( 2, 5)
-	PMAP A 10 Bright
-	PMAP E random( 1, 3)
-	PMAP B 16 Bright
-	PMAP E random( 2, 5)
-	PMAP B 10 Bright
-	PMAP E random( 1, 3)
-	PMAP C 16 Bright
-	PMAP E random( 2, 5)
-	PMAP C 10 Bright
-	PMAP E random( 1, 3)
-	PMAP D 16 Bright
-	PMAP E random( 2, 5)
-	PMAP D 10 Bright
-	PMAP E random( 2, 5)
-    Loop
-  }
+	States
+	{
+	Spawn:
+		PMAP A random( 10, 20) Bright
+				PMAP E random( 1, 5) Bright
+		PMAP B random( 10, 20) Bright
+				PMAP E random( 1, 5) Bright
+		PMAP C random( 10, 20) Bright
+				PMAP E random( 1, 5) Bright
+		PMAP D random( 10, 20) Bright
+				PMAP E random( 1, 5) Bright
+		Loop
+	}
 }
 
 //Invisibility Sphere
