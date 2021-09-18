@@ -191,8 +191,8 @@ ACTOR SmallBloodPoolDrop : SmallBloodPool
 		}
 
 		POB2 A random(8, 35)
-		POB2 BCD 4
-		POB2 E 1 A_FadeOut(0.2)
+		POB2 BCD random(2, 4)
+		POB2 E 1 A_FadeOut(0.1)
 		Wait
 	}
 }
