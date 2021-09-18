@@ -21,6 +21,7 @@ ACTOR BurstBat
 	+NOGRAVITY
 	+QUICKTORETALIATE
 	+MISSILEMORE
+	+AVOIDMELEE
 	
 	SeeSound "female/sight"
 	AttackSound "weapons/chngun"
