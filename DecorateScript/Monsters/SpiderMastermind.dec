@@ -11,15 +11,15 @@ Actor EquestriaSpiderMastermind : SpiderMastermind replaces SpiderMastermind
 		SPID LMN 8
 		{
 			A_CustomMissile(XDeathGoreSpawn, 0);
-			A_CustomMissile(BloodExplosionSpawn, random(0, 16));
+			A_CustomMissile(BloodExplosion, random(0, 16));
 		}
 		SPID O 10
 		{
 			A_CustomMissile(BigGoreSpawn);
-			A_CustomMissile(BloodExplosionSpawn, random(16, 32));
-			A_CustomMissile(BloodExplosionSpawn, random(16, 32));
-			A_CustomMissile(BloodExplosionSpawn, random(16, 32));
-			A_CustomMissile(BloodExplosionSpawn, random(16, 32));
+			A_CustomMissile(BloodExplosion, random(16, 32));
+			A_CustomMissile(BloodExplosion, random(16, 32));
+			A_CustomMissile(BloodExplosion, random(16, 32));
+			A_CustomMissile(BloodExplosion, random(16, 32));
 		}
 		SPID PQR 5
 		SPID S 30
