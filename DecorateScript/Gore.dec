@@ -180,10 +180,10 @@ ACTOR BloodTrail : EquestriaBlood
 
 ACTOR SmallBloodPoolDrop : SmallBloodPool
 {
-  +ForceXYBillBoard
-  States
-  {
-  Spawn:
+	+ForceXYBillBoard
+	States
+	{
+	Spawn:
 		TNT1 A 0
 		TNT1 A 1
 		{
