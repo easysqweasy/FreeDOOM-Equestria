@@ -27,6 +27,9 @@ Actor PonyLostSoul : EquestriaLostSoul
 {
 	States
 	{
+	See:
+		SKUL AB 5 Bright A_Chase
+		Loop
 	
 	Missile:
 		SKUL C 10 Bright A_FaceTarget
@@ -61,7 +64,10 @@ Actor UnicornLostSoul : EquestriaLostSoul
 {
 	States
 	{
-	
+	See:
+		SKUL AB 5 Bright A_Chase
+		Loop
+		
 	Missile:
 		SKUL C 10 Bright A_FaceTarget
 		SKUL D 4 Bright A_SkullAttack
@@ -95,7 +101,10 @@ Actor NirikLostSoul : EquestriaLostSoul
 {
 	States
 	{
-	
+	See:
+		SKUL AB 5 Bright A_Chase
+		Loop
+		
 	Missile:
 		SKUL C 10 Bright A_FaceTarget
 		SKUL D 4 Bright A_SkullAttack
