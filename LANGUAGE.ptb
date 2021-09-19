@@ -33,6 +33,8 @@ QUITMSG13 = "Só vá embora.\nQuando você voltar, vai ter uma \nmorcega safada 
 OTARMBONUS = "Pegou uma Armadura Espiritual.";
 GOTARMOR = "Pegou uma Armadura de Segurança.";
 GOTMEGA = "Pegou uma Armadura de Combate.";
+
+BERSERKFIST = "Cascos Fortalecidos";
 GOTBERSERK = "Berserk! Vamos esmurrar alguns demônios!";
 
 /* Monstros */

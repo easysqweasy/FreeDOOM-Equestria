@@ -30,6 +30,8 @@ QUITMSG13 = "just leave.\nwhen you come back, there will be a \nnaughty bat wait
 OTARMBONUS = "Picked up a Spiritual Armor.";
 GOTARMOR = "Picked up a Security Armor.";
 GOTMEGA = "Picked up a Combat Armor.";
+
+BERSERKFIST = "Berserked Hooves";
 GOTBERSERK = "Berserk! Let's punch out some demons!";
 
 LOWHEALTH = "Low Health";

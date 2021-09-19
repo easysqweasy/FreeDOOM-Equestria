@@ -4,7 +4,7 @@ Actor BerserkFist : DoomEquestriaWeapon
 	Weapon.Kickback 250
 	
 	Obituary "$OB_MPFIST"
-	Tag "Berserk Fist"
+	Tag "$BERSERKFIST"
 	
 	+WEAPON.WIMPY_WEAPON
 	+WEAPON.MELEEWEAPON
