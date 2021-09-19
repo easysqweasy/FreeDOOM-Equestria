@@ -1,3 +1,9 @@
+THIS PROJECT IS NOT OPEN-SOURCE!
+
+If you want to use something, you will have to ask Isaac Pony or Ragedox for permission;
+Discord Server: https://discord.gg/xgzkMmayMz
+GitHub Repository: https://github.com/Ragedox/DOOM-Equestria
+
 = DOOM 1 and DOOM 2 are from the amazing ID Software =
 = My Little Pony are from Hasbro =
 
@@ -33,11 +39,11 @@ Cinny! (Twitter: @idolkve)
 Lincoln (Twitter: @lila_kastelvam)
 SuperWillGaming (No longer in the project, Twitter: @njsw88)
 
-If you want to use something, you will have to ask Isaac Pony or Ragedox for permission;
-Discord Server: https://discord.gg/xgzkMmayMz
-GitHub Repository: https://github.com/Ragedox/DOOM-Equestria
-
 = Other Credits =
+
+Per Kristan's Hi-res sound pack
+
+Doom Sound Bulb by SeanTheBermanator
 
 Realm 667 Resources
 
@@ -51,9 +57,10 @@ Some kick codes are from Brutal Doom, adapted by Ragedox
 
 Parts of MetaDOOM's Gibs code
 
+David G Sprites
+
+NashDecals (Blood decals)
+
 = Forums used:
 
-Lostres: https://www.doomworld.com/forum/topic/113992-lostres-21-doom-unused-sprites-flats-and-textures/
-NashDecals: https://forum.zdoom.org/viewtopic.php?f=46&t=69770
-David G Sprites: https://forum.zdoom.org/viewtopic.php?f=37&t=25657&hilit=Death
 Kinsie's Test Map: https://forum.zdoom.org/viewtopic.php?t=57221	
