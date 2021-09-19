@@ -1,5 +1,10 @@
 # DOOM Equestria for GZDoom and LZDoom
 
+*Are you tired of colorful little ponies and the colorful world of equestria?
+Would you rather go on a killing spree on all of Hell itself?
+Forget friendship, they don't care who you are, go and kill as many demons as you need!*
+
+#
 This is the **development** version, so it may contain bugs and errors;
 **Updates** can happen at **any time**, this version does ***NOT represent*** the final version;
 
