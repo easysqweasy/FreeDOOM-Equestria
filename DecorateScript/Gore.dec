@@ -161,7 +161,7 @@ actor GibGoreBase : DebrisGeneral
 	Roll:
 		"####" "#" 4 A_SetRoll((roll + 20), SPF_INTERPOLATE)
 		"####" "#" 4 A_SetRoll((roll + 20), SPF_INTERPOLATE)
-		"####" "#" 0 A_SpawnItemEx("BloodTrail")
+		"####" "#" 0 A_SpawnItemEx("BloodTrail", random(-10, 10), random(-10, 10), random(-10, 10))
 		Loop
 	
 	Death:
@@ -191,14 +191,26 @@ ACTOR EquestriaBlood : Blood replaces Blood
 	States
 	{
 	Spawn:
-		BLUD C 1
+		BLUD C 1 A_JumpIf(waterlevel > 1, "Dissolve")
 		Loop
+	
 	Death:
-		BLUD C 1 A_SpawnItemEX(SmallBloodPoolDrop, 0, 0, 0, 0, 0, 0, 0, SXF_TRANSFERTRANSLATION)
-		Stop
+		TNT1 A 0 A_JumpIf(waterlevel > 1, "Dissolve")
+		TNT1 A 1 A_ChangeFlag("CORPSE", 1)
+		Wait
 	Crash:
-		BLUD BA 8
+		TNT1 A 0 A_ChangeFlag("NOBLOCKMAP",0)
+		BLUD B 8 A_SpawnItemEX(SmallBloodPoolDrop, 0, 0, 0, 0, 0, 0, 0, SXF_TRANSFERTRANSLATION)
+		BLUD A 8
 		Stop
+	
+	Dissolve:
+		BLUD C 1
+		{
+			A_FadeOut(0.1);
+			A_SetScale((scalex + frandom(0.25, 0.5)), (scaley + frandom(0.25, 0.5)), false);
+		}
+		Wait
 	}
 }
 
@@ -216,19 +228,31 @@ ACTOR SmallBloodTrail : EquestriaBlood
 
 ACTOR SmallBloodPoolDrop : SmallBloodPool
 {
+	+MISSILE
 	+ForceXYBillBoard
 	States
 	{
 	Spawn:
+		TNT1 A 1 
+		TNT1 A 0 A_JumpIf(waterlevel > 1, "Dissolve")
+		
 		TNT1 A 0
-		TNT1 A 1
 		{
+			
 			bSPRITEFLIP = randompick(0, 1);
 		}
-
+		
 		POB2 A random(8, 35)
 		POB2 BCD random(2, 4)
 		POB2 E 1 A_FadeOut(0.1)
+		Wait
+	
+	Dissolve:
+		POB2 A 1
+		{
+			A_FadeOut(0.15);
+			A_SetScale((scalex + frandom(0.25, 0.5)), (scaley + frandom(0.25, 0.5)), true);
+		}
 		Wait
 	}
 }
@@ -360,8 +384,10 @@ actor BigGibGore1 : GibGoreBase
 	States
 	{
   Spawn:
-	BGOR AB 4 A_SpawnItemEX(EquestriaBlood,random(-2,-2),random(-2,2),random(-2,2))
-	BGOR CD 4 A_SpawnItemEX(BloodTrail,random(-2,-2),random(-2,2),random(-2,2))
+	BGOR A 2 A_SpawnItemEX(BloodTrail, random(-10, 10), random(-10, 10), random(-10, 10))
+	BGOR B 2 A_SpawnItemEX(EquestriaBlood, random(-10, 10), random(-10, 10), random(-10, 10))
+	BGOR C 2 A_SpawnItemEX(BloodTrail, random(-10, 10), random(-10, 10), random(-10, 10))
+	BGOR D 2 A_SpawnItemEX(EquestriaBlood, random(-10, 10), random(-10, 10), random(-10, 10))
 	Loop
   Death:
 	BGOR E 0 A_ChangeFlag("SPRITEFLIP", random(0,1))
@@ -376,10 +402,10 @@ actor BigGibGore2 : BigGibGore1
   States
   {
   Spawn:
-	BGO2 A 2 A_SpawnItemEX(BloodTrail,random(-2,-2),random(-2,2),random(-2,2))
-	BGO2 B 2 A_SpawnItemEX(EquestriaBlood,random(-2,-2),random(-2,2),random(-2,2))
-	BGO2 C 2 A_SpawnItemEX(BloodTrail,random(-2,-2),random(-2,2),random(-2,2))
-	BGO2 D 2 A_SpawnItemEX(EquestriaBlood,random(-2,-2),random(-2,2),random(-2,2))
+	BGO2 A 2 A_SpawnItemEX(BloodTrail, random(-10, 10), random(-10, 10), random(-10, 10))
+	BGO2 B 2 A_SpawnItemEX(EquestriaBlood, random(-10, 10), random(-10, 10), random(-10, 10))
+	BGO2 C 2 A_SpawnItemEX(BloodTrail, random(-10, 10), random(-10, 10), random(-10, 10))
+	BGO2 D 2 A_SpawnItemEX(EquestriaBlood, random(-10, 10), random(-10, 10), random(-10, 10))
 	Loop
   Death:
 	BGOR E 0 A_ChangeFlag("SPRITEFLIP", random(0,1))
