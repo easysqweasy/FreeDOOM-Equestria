@@ -49,6 +49,11 @@ vile/raise			dsvilrai
 caco/pain			dscacpai
 caco/active			dscacact
 
+////Cyberdemon
+
+cyber/active		dscybact
+cyber/pain			dscybpai
+
 //// Lost Soul
 
 skull/active	"Sounds/LostSoul/LostSoulSight"
