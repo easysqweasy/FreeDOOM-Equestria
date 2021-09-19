@@ -9,12 +9,5 @@ Script "KickAttack" (void)
 
 Script "BerserkRemove" ENTER
 {
-	if (CheckInventory("PowerStrength") && CheckInventory("BerserkFist"))
-	{
-		TakeInventory("BerserkFist", 999);
-	}
-	
-	Delay(1);
-	
-	Restart;
+	TakeInventory("BerserkFist", 999);
 }
