@@ -6,3 +6,15 @@ Script "KickAttack" (void)
 {
 	GiveInventory("KickCheck", 1);
 }
+
+Script "BerserkRemove" ENTER
+{
+	if (CheckInventory("PowerStrength") && CheckInventory("BerserkFist"))
+	{
+		TakeInventory("BerserkFist", 999);
+	}
+	
+	Delay(1);
+	
+	Restart;
+}
