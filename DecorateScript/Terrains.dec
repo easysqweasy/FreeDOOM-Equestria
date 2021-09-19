@@ -53,6 +53,7 @@ ACTOR DECoreSplashSmoke
 	Height 4
 	RenderStyle Translucent
 	Alpha 0.7
+	VSpeed 1
 	+NOBLOCKMAP
 	+NOCLIP
 	+NOGRAVITY
