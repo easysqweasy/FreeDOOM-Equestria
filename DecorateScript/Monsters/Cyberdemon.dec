@@ -11,11 +11,11 @@ actor EquestriaCyberdemon : Cyberdemon replaces Cyberdemon
 		
 	 Missile:
 		CYBR E 6 A_FaceTarget
-		CYBR F 12 A_SpawnProjectile("EquestriaRocket", 32, 10)
+		CYBR F 12 A_SpawnProjectile("DERocket", 32, 10)
 		CYBR E 12 A_FaceTarget
-		CYBR F 12 A_SpawnProjectile("EquestriaRocket", 32, 10)
+		CYBR F 12 A_SpawnProjectile("DERocket", 32, 10)
 		CYBR E 12 A_FaceTarget
-		CYBR F 12 A_SpawnProjectile("EquestriaRocket", 32, 10)
+		CYBR F 12 A_SpawnProjectile("DERocket", 32, 10)
 		Goto See
    
 	Death:
