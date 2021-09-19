@@ -19,10 +19,13 @@ baby/pain			dsbsppai
 
 spider/pain			dssppain
 
-
 /* Arch Vile */
 
 vile/raise			dsvilrai
+
+/* Baron of Hell */
+
+baron/pain 			DSBRPAIN
 
 /* Cacodemon */
 
@@ -54,7 +57,10 @@ cyber/pain			dscybpai
 
 /* Lost Soul */
 
-skull/active	"Sounds/LostSoul/LostSoulSight"
+skull/active	LostSoulActive
+
+skull/pain		dssklpn
+
 skull/death		dsskldth
 
 /* Nazis */
@@ -73,6 +79,10 @@ wolfss/attack		dsssgun
 
 fatso/active		dsmanact
 fatso/attack		dsmnshot
+
+/* Hell Knight */
+
+knight/pain			DSKNTPAI
 
 /* Revenant */
 
