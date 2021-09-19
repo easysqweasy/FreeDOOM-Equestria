@@ -24,6 +24,7 @@ Actor DebrisGeneral
 #include "DecorateScript/Monsters/Cacodemon.dec"
 #include "DecorateScript/Monsters/PainAndLostSoul.dec"
 #include "DecorateScript/Monsters/Imp.dec"
+#include "DecorateScript/Monsters/Mancubus.dec"
 #include "DecorateScript/Monsters/ZombiePony.dec"
 #include "DecorateScript/Monsters/ShotgunGuy.dec"
 #include "DecorateScript/Monsters/HeavyWeaponDude.dec"
