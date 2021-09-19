@@ -55,6 +55,7 @@ Actor DebrisGeneral
 #include "DecorateScript/Weapons/WeaponCore.dec"
 
 #Include "DecorateScript/Weapons/Broom.dec"
+#Include "DecorateScript/Weapons/Fists.dec"
 #Include "DecorateScript/Weapons/Pistol.dec"
 #Include "DecorateScript/Weapons/Shotgun.dec"
 #Include "DecorateScript/Weapons/Repeater.dec"
