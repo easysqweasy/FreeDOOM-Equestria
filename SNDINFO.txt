@@ -12,7 +12,7 @@ pickup/plasmagun "Sounds/Pickups/PlasmaPickup.wav"
 pickup/rocklauncher "Sounds/Pickups/RckLaunPickup.wav"
 pickup/chaingun "Sounds/Pickups/ChainGPickup.wav"
 pickup/backpack "Sounds/Pickups/BackpackPickup.ogg"
-misc/k_pkup "Sounds/Pickups/KeyPickup.ogg"
+misc/k_pkup DSGETKEY
 
 /* Gore */
 
