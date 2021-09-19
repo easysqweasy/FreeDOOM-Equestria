@@ -30,6 +30,7 @@ baron/pain 			DSBRPAIN
 /* Cacodemon */
 
 caco/pain			dscacpai
+
 caco/active			dscacact
 
 /* Chaingunner */
@@ -78,6 +79,7 @@ wolfss/attack		dsssgun
 /* Mancubus */
 
 fatso/active		dsmanact
+
 fatso/attack		dsmnshot
 
 /* Hell Knight */
@@ -87,3 +89,7 @@ knight/pain			DSKNTPAI
 /* Revenant */
 
 skeleton/pain		dsskepai
+
+/* Pain Elemental */
+
+pain/active			dspeact
