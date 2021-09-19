@@ -22,9 +22,8 @@ actor EquestriaRocketLauncher : DoomEquestriaWeapon replaces RocketLauncher
 		Stop
 	
 	Select:
-		TNT1 A 0 A_TakeInventory("KickCheck", 999)
-	
 		MISG A 0 A_SetCrossHair(13)
+		
 		MISG A 1 A_Raise
 		Loop
 	
@@ -38,7 +37,7 @@ actor EquestriaRocketLauncher : DoomEquestriaWeapon replaces RocketLauncher
 		TNT1 A 0 A_JumpIfInventory("KickCheck", 1, "Kick.Normal")
 		
 		MISG A 1 A_WeaponReady
-		Loop
+		Wait
 	
 	Fire:
 		MISG A 4 A_GunFlash

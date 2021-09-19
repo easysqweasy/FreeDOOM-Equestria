@@ -28,9 +28,8 @@ ACTOR EquestriaPistol : DoomEquestriaWeapon replaces Pistol
 		Loop
 		
 	Select:
-		TNT1 A 0 A_TakeInventory("KickCheck", 999)
-		
 		PISG A 0 A_SetCrosshair(8)
+		
 		PISG A 1 A_Raise
 		Wait
 	

@@ -18,9 +18,8 @@ actor EquestriaShotgun : DoomEquestriaWeapon replaces Shotgun
 		Stop
 		
 	Select:
-		TNT1 A 0 A_TakeInventory("KickCheck", 999)
-		
 		SHTG A 0 A_SetCrossHair(9)
+		
 		//SHTG A 0 A_PlaySoundEX("misc/w_pkup", 1)
 		//TNT1 AAAAAAAAAAAA 0 A_Raise
 		SHTG A 1 A_Raise
@@ -37,8 +36,6 @@ actor EquestriaShotgun : DoomEquestriaWeapon replaces Shotgun
 		
 		SHTG A 1 A_Lower
 		Wait
-  
- 
 	
 	Ready:
 		TNT1 A 0 A_JumpIfInventory("KickCheck", 1, "Kick.Normal")
