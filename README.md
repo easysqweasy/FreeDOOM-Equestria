@@ -36,7 +36,7 @@ Cinny!
 SuperWillGaming, Lincoln
 
 # This project is NOT Open Source!
-If you want to use something, you will have to ask Isaac Pony or Ragedox for permission;
+If you want to use something, you will have to ask Isaac Pony and Ragedox for permission;
 
 IsaacPony: https://twitter.com/isaac_pony
 Ragedox: https://twitter.com/TheRagedox
