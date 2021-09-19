@@ -1,0 +1,4 @@
+Actor EquestriaMancubus : Fatso replaces Fatso
+{
+	+CastSpriteShadow
+}
