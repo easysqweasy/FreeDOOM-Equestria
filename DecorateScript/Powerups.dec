@@ -155,24 +155,32 @@ ACTOR EquestriaMegaSphere : CustomInventory replaces Megasphere
 
 ACTOR EquestriaBerserk : Berserk replaces Berserk
 {
-  +COUNTITEM
-  +INVENTORY.ALWAYSPICKUP
-  Inventory.PickupMessage "$GOTBERSERK" // "Berserk!"
-  Inventory.PickupSound "*xdeath"
-  States
-  {
-  Spawn:
-    PSTR A -1
-    Stop
-  Pickup:
-    TNT1 A 0 A_StartSound("misc/p_pkup")
-	TNT1 A 0 A_QuakeEX(4, 4, 4, 20, 0, 100, "", QF_RELATIVE | QF_SCALEDOWN)
-	TNT1 A 0 A_SetBlend(Red, 0.5, 160, Orange)
-	TNT1 A 0 A_GiveInventory("BerserkEffect")
-    TNT1 A 0 HealThing(100, 0)
-    TNT1 A 0 A_SelectWeapon("Fist")
-    Stop
-  }
+	+COUNTITEM
+	+INVENTORY.ALWAYSPICKUP
+	Inventory.PickupMessage "$GOTBERSERK" // "Berserk!"
+	Inventory.PickupSound "*xdeath"
+	States
+	{
+	Spawn:
+		PSTR A -1
+		Stop
+	Pickup:
+		TNT1 A 0
+		{
+			HealThing(100, 0);
+			
+			A_GiveInventory("BerserkEffect");
+			A_GiveInventory("BerserkFist");
+			A_SelectWeapon("BerserkFist");
+			
+			A_StartSound("misc/p_pkup", CHAN_VOICE);
+			
+			A_QuakeEX(4, 4, 4, 20, 0, 100, "", QF_RELATIVE | QF_SCALEDOWN | QF_SCALEUP);
+			
+			A_SetBlend(Red, 0.5, 160, Orange);
+		}
+		Stop
+	}
 }
 
 ACTOR BerserkEffect : PowerupGiver
