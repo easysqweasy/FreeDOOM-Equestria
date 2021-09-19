@@ -1,9 +1,11 @@
+/* Ambient */
+
 world/drip "Sounds/Terrains/GLOOP.ogg"
 world/watersplash "Sounds/Terrains/GLOOP.ogg"
 world/lavasizzle "Sounds/Terrains/ACID5.ogg"
 world/sludgegloop "Sounds/Terrains/MUCK5.ogg"
 
-//// Pickups
+/* Pickups */
 
 pickup/potion "Sounds/Pickups/PotionPickup.wav"
 pickup/plasmagun "Sounds/Pickups/PlasmaPickup.wav"
@@ -12,7 +14,7 @@ pickup/chaingun "Sounds/Pickups/ChainGPickup.wav"
 pickup/backpack "Sounds/Pickups/BackpackPickup.ogg"
 misc/k_pkup "Sounds/Pickups/KeyPickup.ogg"
 
-//// Gore
+/* Gore */
 
 $random gore/bloodsplats { gore/bloodsplats1 gore/bloodsplats2 gore/bloodsplats3 gore/bloodsplats4 }
 gore/bloodsplats1 "Sounds/Gore/BSSPLAT1.ogg"
@@ -20,65 +22,8 @@ gore/bloodsplats2 "Sounds/Gore/BSSPLAT2.ogg"
 gore/bloodsplats3 "Sounds/Gore/BSSPLAT3.ogg"
 gore/bloodsplats4 "Sounds/Gore/BSSPLAT4.ogg"
 
-//// Females
 
-female/groan "Sounds/Zombies/Female/MAREGROAN.ogg"
-female/active "Sounds/Zombies/Female/MAREACT.ogg"
-
-$random female/death { female/death1 female/death2 female/death3 }
-female/death1 "Sounds/Zombies/Female/MAREDTH.ogg"
-female/death2 "Sounds/Zombies/Female/MAREDTH2.ogg"
-female/death3 "Sounds/Zombies/Female/MAREDTH3.ogg"
-
-female/pain "Sounds/Zombies/Female/MAREPAIN.ogg"
-female/pain2 "Sounds/Zombies/Female/MAREPAIN2.ogg"
-female/sight "Sounds/Zombies/Female/MARESIT.ogg"
-
-
-//// Spiders
-
-baby/pain			dsbsppai
-spider/pain			dssppain
-
-//// Arch Vile
-
-vile/raise			dsvilrai
-
-//// Cacodemon
-
-caco/pain			dscacpai
-caco/active			dscacact
-
-////Cyberdemon
-
-cyber/active		dscybact
-cyber/pain			dscybpai
-
-//// Lost Soul
-
-skull/active	"Sounds/LostSoul/LostSoulSight"
-skull/death		dsskldth
-
-//// Nazis
-
-// SS Soldier
-
-wolfss/pain			dssspain
-wolfss/attack		dsssgun
-
-//// Mancubus
-
-fatso/active		dsmanact
-fatso/attack		dsmnshot
-
-//// Revenant
-
-skeleton/pain		dsskepai
-
-
-//////////
-
-//// Decorations
+/* Decorations */
 
 DoomTorch/Ignite	DSFIRSTA
 DoomTorch/Burn		DSFIRLOP
@@ -87,7 +32,7 @@ $limit DoomTorch/Burn 0
 $volume DoomTorch/Burn 0.1
 $attenuation DoomTorch/Burn 4
 
-////Sound limit removal
+/* Sound limit removal */
 
 $Limit misc/i_pkup	0
 $Limit misc/k_pkup	0
