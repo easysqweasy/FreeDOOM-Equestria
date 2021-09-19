@@ -8,7 +8,7 @@ Actor LostSoulVariants : RandomSpawner replaces LostSoul
 Actor EquestriaLostSoul : LostSoul
 {
 	Health 50
-	Speed 10
+	Speed 8
 	Species "PainSoul"
 	
 	RenderStyle Normal
@@ -28,7 +28,7 @@ Actor PonyLostSoul : EquestriaLostSoul
 	States
 	{
 	See:
-		SKUL AB 5 Bright A_Chase
+		SKUL AAAABBBB 2 Bright A_Chase
 		Loop
 	
 	Missile:
@@ -65,7 +65,7 @@ Actor UnicornLostSoul : EquestriaLostSoul
 	States
 	{
 	See:
-		SKUL AB 5 Bright A_Chase
+		SKUL AAAABBBB 2 Bright A_Chase
 		Loop
 		
 	Missile:
@@ -102,7 +102,7 @@ Actor NirikLostSoul : EquestriaLostSoul
 	States
 	{
 	See:
-		SKUL AB 5 Bright A_Chase
+		SKUL AAAABBBB 2 Bright A_Chase
 		Loop
 		
 	Missile:
