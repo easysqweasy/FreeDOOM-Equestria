@@ -29,6 +29,24 @@ vile/raise			dsvilrai
 caco/pain			dscacpai
 caco/active			dscacact
 
+/* Chaingunner */
+
+$random chainguy/sight		{ chainguy/sight1  chainguy/sight2  chainguy/sight3 }
+chainguy/sight1			dscgsit1
+chainguy/sight2			dscgsit2
+chainguy/sight3			dscgsit3
+
+chainguy/active			dscgsact
+
+chainguy/attack			DSCHNGUN
+
+chainguy/pain			dscgpain
+
+$random chainguy/death		{ chainguy/death1  chainguy/death2  chainguy/death3 }
+chainguy/death1 		dscgdth1
+chainguy/death2			dscgdth2
+chainguy/death3			dscgdth3
+
 /* Cyberdemon */
 
 cyber/active		dscybact
