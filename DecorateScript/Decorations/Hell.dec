@@ -1,3 +1,29 @@
+Actor EquestriaFloatingSkull : FloatingSkull replaces FloatingSkull
+{
+	+FLOATBOB
+	FloatBobStrength 0.5
+	
+	Radius 15
+	Height 50
+}
+
+Actor EquestriaEvilEye : EvilEye replaces EvilEye
+{
+	+FORCEXYBILLBOARD
+	+NOGRAVITY
+	+FLOATBOB
+
+	States
+	{
+	Spawn:
+		TNT1 A 1
+		TNT1 A 1 A_SpawnItemEx("Candlestick")
+	Summon:
+		CEYE ABCB 6 Bright
+		Loop
+	}
+}
+
 ACTOR EvilEye2
 {
 //$NotAngled
