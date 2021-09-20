@@ -1,7 +1,11 @@
 Actor BerserkFist : DoomEquestriaWeapon
 {
+	Weapon.BobSpeed 2
+	Weapon.BobRangeX 1.25 Weapon.BobRangeY 1.50
+	Weapon.BobStyle InverseAlpha
+	
 	Weapon.SelectionOrder 3700
-	Weapon.Kickback 250
+	Weapon.Kickback 150
 	
 	Obituary "$OB_MPFIST"
 	Tag "$BERSERKFIST"
@@ -13,7 +17,7 @@ Actor BerserkFist : DoomEquestriaWeapon
 	{
 	Ready:
 		PUNG A 0 A_JumpIfInventory("KickCheck", 1, "Kick.Normal")
-		PUNG A 0 A_OverlayFlags(0, PSPF_PLAYERTRANSLATED, true)
+		
 		PUNG A 1 A_WeaponReady
 		Loop
 		
@@ -24,6 +28,8 @@ Actor BerserkFist : DoomEquestriaWeapon
 		Wait
 		
 	Select:
+		PUNG A 0 A_OverlayFlags(0, PSPF_PLAYERTRANSLATED, true)
+		
 		PUNG A 1 A_Raise
 		Wait
 		
@@ -34,5 +40,9 @@ Actor BerserkFist : DoomEquestriaWeapon
 		PUNG C 4
 		PUNG B 5 A_ReFire
 		Goto Ready
+		
+	Aside:
+	Aside.MidAir:	Stop
+	
 	}
 }
