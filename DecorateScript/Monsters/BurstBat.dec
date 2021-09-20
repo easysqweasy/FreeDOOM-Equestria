@@ -1,4 +1,4 @@
-ACTOR BurstBat
+ACTOR BurstBat //: DoomEquestriaMonster
 {
 	Monster
 //$Category Monsters
