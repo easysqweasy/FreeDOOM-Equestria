@@ -2,12 +2,17 @@ Actor DoomEquestriaWeapon : Weapon
 {
 	Weapon.Kickback 100
 	Weapon.BobStyle "Smooth"
+	Weapon.BobSpeed 1.5
+	Weapon.BobRangeX 0.5 Weapon.BobRangeY 0.75
 	
 	+ForceXYBillBoard
 	
 	States
 	{
-
+	
+	GotoReady:
+		TNT1 A 0 A_Jump(256, "Ready")
+		Stop
 ////Configs
 
 //Still undecided about this
@@ -25,7 +30,7 @@ Actor DoomEquestriaWeapon : Weapon
 		
 			A_OverlayFlags(-10, PSPF_INTERPOLATE, true);
 		}
-		Goto Ready
+		Goto GotoReady
 	InterpolateOFF:
 		TNT1 A 0
 		TNT1 A 0
@@ -40,7 +45,7 @@ Actor DoomEquestriaWeapon : Weapon
 		
 			A_OverlayFlags(-10, PSPF_INTERPOLATE, false);
 		}
-		Goto Ready
+		Goto GotoReady
 
 ////Deaths
 
@@ -63,6 +68,8 @@ Actor DoomEquestriaWeapon : Weapon
 ////Kicks
 
 	Kick.Normal:
+		TNT1 A 0 A_Overlay(-2, "Kick.Overlay")
+		TNT1 A 0 A_OverlayFlags(-2, PSPF_INTERPOLATE | PSPF_PLAYERTRANSLATED, true)
 		TNT1 A 0
 		{
 			A_StartSound("skeleton/swing");
@@ -70,7 +77,7 @@ Actor DoomEquestriaWeapon : Weapon
 			A_TakeInventory("KickCheck", 999);
 		}
 		
-		TNT1 A 0 A_OverlayFlags(0, PSPF_INTERPOLATE | PSPF_PLAYERTRANSLATED, true)
+		
 		
 		TNT1 A 0 A_JumpIf(momZ > 0, "Kick.Air")
 		TNT1 A 0 A_JumpIf(momZ < 0, "Kick.Air")
@@ -81,37 +88,33 @@ Actor DoomEquestriaWeapon : Weapon
 				
 		TNT1 A 0 SetPlayerProperty(0, 1, PROP_FROZEN)
 
-		KICK BCD 1
+		TNT1 AAA 1
 		TNT1 A 0 A_CustomPunch(2 * Random(1,10), true, 0, "KickPuff", 75, 0, 0, "BasicArmorBonus", "*fist")
-		KICK H 6
+		TNT1 A 6
 		TNT1 A 0 SetPlayerProperty(0, 0, 0)
-		KICK FEDCB 2
-		
-		TNT1 A 0 A_OverlayFlags(0, PSPF_INTERPOLATE | PSPF_PLAYERTRANSLATED, false)
+		TNT1 AAAAA 2
 		
 		TNT1 A 0 A_TakeInventory("KickCheck", 999)
 		
-		TNT1 A 0 A_Jump (256, "Ready")
-		Stop
+		Goto GotoReady
 		
-	Kick.Berserk:
-		TNT1 A 0 A_OverlayFlags(0, PSPF_INTERPOLATE | PSPF_PLAYERTRANSLATED, true)
-
+	Kick.Overlay:
 		KICK BCD 1
-        TNT1 A 0 A_CustomPunch(20 * Random(1, 10), TRUE, 0, "BerserkPuff", 75, 0, 0, "BasicArmorBonus", "skeleton/melee")
-        KICK H 6
+		KICK H 6
 		KICK FEDCB 2
-		
-		TNT1 A 0 A_OverlayFlags(0, PSPF_INTERPOLATE | PSPF_PLAYERTRANSLATED, false)
+		Stop
+	
+	Kick.Berserk:
+		TNT1 AAA 1
+        TNT1 A 0 A_CustomPunch(20 * Random(1, 10), TRUE, 0, "BerserkPuff", 75, 0, 0, "BasicArmorBonus", "skeleton/melee")
+        TNT1 A 6
+		TNT1 AAAAA 2
 		
 		TNT1 A 0 A_TakeInventory("KickCheck", 999)
 		
-		TNT1 A 0 A_Jump (256, "Ready")
-		Stop
+		Goto GotoReady
 		
 	Kick.Air:
-		TNT1 A 0 A_OverlayFlags(0, PSPF_INTERPOLATE | PSPF_PLAYERTRANSLATED, true)
-	   
 		TNT1 A 0 A_Overlay(3, "Air.Aside")
 		TNT1 A 0 A_JumpIfInventory("PowerStrength", 1, "Kick.BerserkAir")
 		
@@ -123,31 +126,23 @@ Actor DoomEquestriaWeapon : Weapon
         KICK O 2 A_AlertMonsters (500, 0)
 		KICK PQRST 2
 		
-		TNT1 A 0 A_OverlayFlags(0, PSPF_INTERPOLATE | PSPF_PLAYERTRANSLATED, false)
-		
 		TNT1 A 0 SetPlayerProperty(0, 0, 0)
 		
 		TNT1 A 0 A_TakeInventory("KickCheck", 999)
 		
-		TNT1 A 0 A_Jump (256, "Ready")
-		Stop
+		Goto GotoReady
 		
 	Kick.BerserkAir:
-		TNT1 A 0 A_OverlayFlags(0, PSPF_INTERPOLATE | PSPF_PLAYERTRANSLATED, true)
-		
 		TNT1 A 0 A_Recoil(-6)
 		KICK JKLMN 1
         TNT1 A 0 A_CustomPunch(20 * Random(1, 10), TRUE, 0, "BerserkPuff", 75, 0, 0, "BasicArmorBonus", "skeleton/melee")
         KICK O 2 A_AlertMonsters (500, 0)
 		KICK PQRST 2
 		
-		TNT1 A 0 A_OverlayFlags(0, PSPF_INTERPOLATE | PSPF_PLAYERTRANSLATED, false)
-		
 		TNT1 A 0 A_TakeInventory("KickCheck", 999)
 		
-		TNT1 A 0 A_Jump (256, "Ready")
-		Stop
-	
+		Goto GotoReady
+		
 	Aside:
 		TNT1 A 0 A_OverlayFlags(3, PSPF_ADDBOB, true)
 		TNT1 A 0 A_OverlayPivotAlign(3, PSPA_RIGHT, PSPA_BOTTOM)
