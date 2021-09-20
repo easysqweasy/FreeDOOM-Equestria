@@ -46,6 +46,8 @@ actor EquestriaImp : DoomImp Replaces DoomImp
 
 	Crash.Berserk:
 		TNT1 A 0 A_SetRoll(0)
+		Goto XDeath
+		
 	XDeath:
 		TROO U 0
 		{
@@ -56,7 +58,7 @@ actor EquestriaImp : DoomImp Replaces DoomImp
 		}
 		TROO U -1
 		Stop
-  }
+	}
 }
 
 actor DEImpBall : DoomImpBall replaces DoomImpBall
