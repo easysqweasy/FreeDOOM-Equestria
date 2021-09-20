@@ -15,6 +15,8 @@ Actor DebrisGeneral
 }
 
 #include "DecorateScript/Player.dec"
+#include "DecorateScript/Cores/WeaponCore.dec"
+#include "DecorateScript/Cores/MonsterCore.dec"
 
 ////Monsters
 
@@ -51,8 +53,6 @@ Actor DebrisGeneral
 #include "DecorateScript/FloorDecals.dec"
 
 ////Weapons
-
-#include "DecorateScript/Weapons/WeaponCore.dec"
 
 #Include "DecorateScript/Weapons/Broom.dec"
 #Include "DecorateScript/Weapons/Fists.dec"
