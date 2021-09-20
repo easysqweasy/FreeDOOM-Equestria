@@ -12,7 +12,7 @@ Actor BerserkFist : DoomEquestriaWeapon
 	
 	+WEAPON.WIMPY_WEAPON
 	+WEAPON.MELEEWEAPON
-	
+
 	States
 	{
 	Ready:
