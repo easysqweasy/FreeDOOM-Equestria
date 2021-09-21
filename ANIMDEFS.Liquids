@@ -5,82 +5,58 @@ warp2 Flat SLIME01
 warp2 Flat SLIME05 0.25
 warp Flat BLOOD1 0.5
 
+
 flat FWater1
-pic FWater1 tics 8 pic FWater1 tics 8
-
+	pic 1 tics 1 pic 1 tics 1
 flat FWater2
-pic FWater1 tics 8 pic FWater1 tics 8
-
+	pic 1 tics 1 pic 1 tics 1
 flat FWater3
-pic FWater1 tics 8 pic FWater1 tics 8
-
+	pic 1 tics 1 pic 1 tics 1
 flat FWater4
-pic FWater1 tics 8 pic FWater1 tics 8
+	pic 1 tics 1 pic 1 tics 1
 
 
 flat Lava1
-pic Lava1 tics 8 pic Lava1 tics 8
-
+	pic 1 tics 1 pic 1 tics 1
 flat Lava2
-pic Lava1 tics 8 pic Lava1 tics 8
-
+	pic 1 tics 1 pic 1 tics 1
 flat Lava3
-pic Lava1 tics 8 pic Lava1 tics 8
-
+	pic 1 tics 1 pic 1 tics 1
 flat Lava4 
-pic Lava1 tics 8 pic Lava1 tics 8
+	pic 1 tics 1 pic 1 tics 1
 
 
 flat NUKAGE1
-pic NUKAGE2 tics 8 pic NUKAGE2 tics 8 pic NUKAGE2 tics 8 pic NUKAGE2 tics 8
+	pic 1 tics 1 pic 1 tics 1
 flat NUKAGE2
-pic NUKAGE2 tics 8 pic NUKAGE2 tics 8 pic NUKAGE2 tics 8 pic NUKAGE2 tics 8
+	pic 1 tics 1 pic 1 tics 1
 flat NUKAGE3
-pic NUKAGE2 tics 8 pic NUKAGE2 tics 8 pic NUKAGE2 tics 8 pic NUKAGE2 tics 8
+	pic 1 tics 1 pic 1 tics 1
 
 flat SLIME01
-pic SLIME01 tics 8 pic SLIME01 tics 8
-
+	pic 1 tics 1 pic 1 tics 1
 flat SLIME02
-pic SLIME01 tics 8 pic SLIME01 tics 8
-
+	pic 1 tics 1 pic 1 tics 1
 flat SLIME03
-pic SLIME01 tics 8 pic SLIME01 tics 8
-
+	pic 1 tics 1 pic 1 tics 1
 flat SLIME04
-pic SLIME01 tics 8 pic SLIME01 tics 8
+	pic 1 tics 1 pic 1 tics 1
 
 
 flat SLIME05
-pic SLIME05 tics 8
-pic SLIME05 tics 8
-pic SLIME05 tics 8
-pic SLIME05 tics 8
+	pic 1 tics 1 pic 1 tics 1
 flat SLIME06
-pic SLIME05 tics 8
-pic SLIME05 tics 8
-pic SLIME05 tics 8
-pic SLIME05 tics 8
+	pic 1 tics 1 pic 1 tics 1
 flat SLIME07
-pic SLIME05 tics 8
-pic SLIME05 tics 8
-pic SLIME05 tics 8
-pic SLIME05 tics 8
+	pic 1 tics 1 pic 1 tics 1
 flat SLIME08 
-pic SLIME05 tics 8
-pic SLIME05 tics 8
-pic SLIME05 tics 8
-pic SLIME05 tics 8
+	pic 1 tics 1 pic 1 tics 1
 
 flat BLOOD1
-pic BLOOD1 tics 8
-pic BLOOD1 tics 8
-pic BLOOD1 tics 8
+	pic 1 tics 1 pic 1 tics 1
+
 flat BLOOD2
-pic BLOOD1 tics 8
-pic BLOOD1 tics 8
-pic BLOOD1 tics 8
+	pic 1 tics 1 pic 1 tics 1
+
 flat BLOOD3
-pic BLOOD1 tics 8
-pic BLOOD1 tics 8
-pic BLOOD1 tics 8
+	pic 1 tics 1 pic 1 tics 1
