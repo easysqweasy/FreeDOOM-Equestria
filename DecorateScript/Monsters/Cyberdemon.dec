@@ -24,7 +24,7 @@ actor EquestriaCyberdemon : Cyberdemon replaces Cyberdemon
 		CYBR H 10
 		CYBR I 10
 		{
-			A_CustomMissile(XDeathGoreSpawn, 32);
+			A_CustomMissile(XDeathGoreSpawn);
 			A_CustomMissile(BloodExplosion, random(16, 32));
 			A_CustomMissile(BloodExplosion, random(16, 32));
 			A_Scream;

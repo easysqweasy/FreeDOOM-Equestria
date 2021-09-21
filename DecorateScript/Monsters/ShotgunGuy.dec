@@ -55,8 +55,8 @@ ACTOR EquestriaShotgunGuy : ShotgunGuy replaces ShotgunGuy
 	XDeath:
         SPOS U 0
 		{
-			A_CustomMissile(XDeathGoreSpawn, 2);
-			A_CustomMissile(BloodExplosionSphere, 5);
+			A_CustomMissile(XDeathGoreSpawn);
+			A_CustomMissile(BloodExplosionSphere);
 			A_XScream;
 			a_NoBlocking;
 		}
@@ -79,8 +79,8 @@ ACTOR EquestriaShotgunGuy : ShotgunGuy replaces ShotgunGuy
 		SPOS M 3
         SPOS N 5
 		{
-			A_CustomMissile(XDeathGoreSpawn, 2);
-			A_CustomMissile(BloodExplosionSphere, 5);
+			A_CustomMissile(XDeathGoreSpawn);
+			A_CustomMissile(BloodExplosionSphere);
 			A_XScream;
 		}
         SPOS O 3 A_NoBlocking

@@ -176,16 +176,16 @@ Actor EquestriaPain : PainElemental replaces PainElemental
 		PAIN K 8 Bright
 		{
 			A_QuakeEx(3, 3, 3, 4, 0, 500, "", 0,0,0,0, 1);
-			A_CustomMissile(BloodExplosionSphere, 16);
-			A_CustomMissile(BloodExplosionSphere, 16);
-			A_CustomMissile(BloodExplosionSphere, 16);
-			A_CustomMissile(BloodExplosionSphere, 16);
+			A_CustomMissile(BloodExplosionSphere);
+			A_CustomMissile(BloodExplosionSphere);
+			A_CustomMissile(BloodExplosionSphere);
+			A_CustomMissile(BloodExplosionSphere);
 		}
 		PAIN L 8 Bright
 		{
-			A_PainAttack("PonyLostSoul", 65, PAF_AIMFACING);
+			A_PainAttack("PonyLostSoul", 45, PAF_AIMFACING);
 			A_PainAttack("NirikLostSoul", 0, PAF_AIMFACING);
-			A_PainAttack("UnicornLostSoul", -65, PAF_AIMFACING);
+			A_PainAttack("UnicornLostSoul", -45, PAF_AIMFACING);
 		}
 		PAIN M 8 Bright
 		Stop

@@ -86,8 +86,8 @@ ACTOR BurstBat //: DoomEquestriaMonster
 	XDeath:
 		CPOS O 5
 		{
-			A_CustomMissile(XDeathGoreSpawn, 2);
-			A_CustomMissile(BloodExplosionSphere, 5);
+			A_CustomMissile(XDeathGoreSpawn);
+			A_CustomMissile(BloodExplosionSphere);
 		}
 		CPOS P 5 A_XScream
 		CPOS Q 5 
