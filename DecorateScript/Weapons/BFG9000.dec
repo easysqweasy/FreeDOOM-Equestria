@@ -4,6 +4,8 @@ actor EquestriaBFG9000 : DoomEquestriaWeapon replaces BFG9000
 	Height 20
 	
 	Weapon.BobStyle alpha
+	Weapon.BobSpeed 0.75
+	
 	Weapon.SelectionOrder 2800
 	Weapon.AmmoUse 40
 	Weapon.AmmoGive 40
