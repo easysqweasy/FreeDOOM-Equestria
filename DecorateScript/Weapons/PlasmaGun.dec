@@ -1,7 +1,7 @@
 Actor EquestriaPlasmaGun : DoomEquestriaWeapon replaces PlasmaRifle
 {
 //$Title Plasma Gun
-	Weapon.BobStyle alpha
+	Weapon.BobStyle InverseSmooth
 	Weapon.SelectionOrder 100
 	Weapon.AmmoUse 1
 	Weapon.AmmoGive 40

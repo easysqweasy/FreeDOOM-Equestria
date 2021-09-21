@@ -1,7 +1,7 @@
 actor EquestriaRocketLauncher : DoomEquestriaWeapon replaces RocketLauncher
 {
 //$Title Rocket Launcher
-	Weapon.BobStyle alpha
+	Weapon.BobStyle InverseSmooth
 	Weapon.SelectionOrder 2500
 	Weapon.AmmoUse 1
 	Weapon.AmmoGive 2

@@ -1,7 +1,7 @@
 actor EquestriaChainsaw : DoomEquestriaWeapon replaces Chainsaw
 {
 //$Title Chainsaw
-	Weapon.BobStyle alpha
+	Weapon.BobStyle InverseSmooth
 	Weapon.Kickback 0
 	Weapon.SelectionOrder 2200
 	Weapon.UpSound ""
