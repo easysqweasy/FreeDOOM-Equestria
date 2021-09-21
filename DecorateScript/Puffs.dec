@@ -1,16 +1,68 @@
+actor PuffSparklesSpawn
+{
+	States
+	{
+	Spawn:
+		TNT1 A 0
+		TNT1 A 0
+		{
+			A_CustomMissile("PuffSparkles", 0, 0, random (0, 360), 2, random (0, 360));
+			A_CustomMissile("PuffSparkles", 0, 0, random (0, 360), 2, random (0, 360));
+			A_CustomMissile("PuffSparkles", 0, 0, random (0, 360), 2, random (0, 360));
+			A_CustomMissile("PuffSparkles", 0, 0, random (0, 360), 2, random (0, 360));
+		}
+		Stop
+	}
+}
+	
+Actor PuffSparkles : DEParticles
+{
+	-NOGRAVITY
+	+ExplodeOnWater
+	+UseBounceState +BounceOnActors +BounceOnCeilings +BounceOnFloors +BounceOnWalls
+	BounceType Doom
+	BounceFactor 0.5
+	
+	Scale 0.25
+	
+	Height 2
+	Radius 1
+	
+	Gravity 0.20
+	Speed 4
+	RenderStyle Add
+	
+	States
+	{
+	Spawn:
+		PUFF A random(8, 35) Bright A_FadeOut(0.075)
+		Loop
+	
+	Bounce:
+		PUFF A 1 A_FadeOut(0.1)
+		Goto Spawn
+	
+	Death:
+		PUFF A 1 A_FadeOut(0.025)
+		Wait
+
+	}
+}
+
 Actor EquestriaBulletPuff : BulletPuff replaces BulletPuff
 {
 	+FLOORCLIP
 	+NOTELEPORT
 	+FORCEXYBILLBOARD
 	+NOBLOCKMAP
-	+RANDOMIZE
+	-RANDOMIZE
 	
 	States
 	{
 	
 	Spawn:
-		PUFF A 4 Bright
+		PUFF A 0 
+		PUFF A random(2, 8) Bright A_SpawnItemEx("PuffSparklesSpawn", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION)
 		PUFF B 4
 	
 	Melee:
@@ -24,10 +76,6 @@ Actor ShotgunPuff : EquestriaBulletPuff
 {
 	States
 	{
-	
-	Spawn:
-		PUFF A 4 Bright
-		PUFF B 4
 	
 	Melee:
 		PUFF C 4

@@ -1,18 +1,9 @@
-actor DEParticles
+actor DEParticles : DebrisGeneral
 {
-	+FLOORCLIP
-	+FORCEXYBILLBOARD
-	+NOTELEPORT
 	+NOGRAVITY
-	+NOBLOCKMAP
-	+MOVEWITHSECTOR
-	+THRUACTORS
+	//+THRUACTORS
 	+DONTSPLASH
-	+MISSILE
-	
-	Height 1
-	Radius 1
-	Damage 0
+	+ExplodeOnWater
 }
 
 actor FirePieceSpawn : RandomSpawner
