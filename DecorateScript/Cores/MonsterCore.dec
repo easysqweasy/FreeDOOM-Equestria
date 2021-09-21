@@ -40,7 +40,7 @@ actor DoomEquestriaMonster
 		"####" "#" 0 { bSPRITEFLIP = randompick(0, 1); }
 		Stop
 	FlipRaise:
-		"####" "#" 0 { SPRITEFLIP = 1 }
+		"####" "#" 0 { bSPRITEFLIP = 0; }
 		Goto Idle
 	}
 }
