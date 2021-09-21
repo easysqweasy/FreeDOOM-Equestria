@@ -14,18 +14,18 @@ actor DoomEquestriaMonster
 			A_Look;
 		}
 		
-		TNT1 A 0 A_Jump(32, "Tired")
+		"####" "#" 0 A_Jump(32, "Tired")
 		Loop
 	
 	Tired:
 		"####" "#" 10 A_Look
 		
-		TNT1 A 0 A_Jump(128, "Idle")
+		"####" "#" 0 A_Jump(128, "Idle")
 		Loop
 		
 	Death.Berserk:
 	XDeath.Berserk:
-		POSS J 0 ThrustThingZ(0,30,0,1)
+		TNT1 A 0 ThrustThingZ(0,30,0,1)
 		
 		TNT1 A 0 A_Jump(256, "MidAir")
 		Wait
