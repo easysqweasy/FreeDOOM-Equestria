@@ -27,11 +27,11 @@ flat Lava4
 
 
 flat NUKAGE1
-	pic 1 tics 1 pic 1 tics 1
+	pic 2 tics 1 pic 2 tics 1
 flat NUKAGE2
-	pic 1 tics 1 pic 1 tics 1
+	pic 2 tics 1 pic 2 tics 1
 flat NUKAGE3
-	pic 1 tics 1 pic 1 tics 1
+	pic 2 tics 1 pic 2 tics 1
 
 flat SLIME01
 	pic 1 tics 1 pic 1 tics 1
