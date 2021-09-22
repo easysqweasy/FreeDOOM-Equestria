@@ -114,12 +114,14 @@ ACTOR DERocketSmoke : RocketSmokeTrail replaces RocketSmokeTrail
 	Radius 5
   RenderStyle Translucent
   Alpha 0.5
-  Speed 5
+  Speed 7
   VSpeed 1
   +ForceXYBillBoard
   +NoGravity
   +ROLLSPRITE +ROLLCENTER
   -NOCLIP
+  -ACTIVATEIMPACT
+  -ACTIVATEPCROSS
   +MISSILE
   States
   {
