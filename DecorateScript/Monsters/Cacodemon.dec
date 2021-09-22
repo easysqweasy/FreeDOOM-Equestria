@@ -27,7 +27,7 @@ actor EquestriaCacodemon : Cacodemon replaces Cacodemon
 	
 	Missile:
 		HEAD BC 5 A_FaceTarget
-		HEAD D 5 Bright A_CustomMissile("CacodemonBall", 32)
+		HEAD D 5 Bright A_SpawnProjectile("CacodemonBall", 25)
 		Goto See
 	
 	Death:
