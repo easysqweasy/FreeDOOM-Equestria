@@ -2,8 +2,8 @@ Actor DoomEquestriaWeapon : Weapon
 {
 	Weapon.Kickback 100
 	Weapon.BobStyle "Smooth"
-	Weapon.BobSpeed 1.5
-	Weapon.BobRangeX 0.5 Weapon.BobRangeY 0.75
+	Weapon.BobSpeed 1.75
+	Weapon.BobRangeX 0.25 Weapon.BobRangeY 0.75
 	
 	+ForceXYBillBoard
 	
