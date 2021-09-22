@@ -8,7 +8,7 @@ Actor LostSoulVariants : RandomSpawner replaces LostSoul
 Actor EquestriaLostSoul : LostSoul
 {
 	Health 50
-	Speed 8
+	Speed 4
 	Species "PainSoul"
 	
 	RenderStyle Normal
@@ -28,7 +28,10 @@ Actor PonyLostSoul : EquestriaLostSoul
 	States
 	{
 	See:
-		SKUL AAAABBBB 2 Bright A_Chase
+		SKUL A 3 Bright A_Chase
+		SKUL A 3 Bright A_Chase ("","")
+		SKUL B 3 Bright A_Chase
+		SKUL B 3 Bright A_Chase ("","")
 		Loop
 	
 	Missile:
@@ -65,7 +68,10 @@ Actor UnicornLostSoul : EquestriaLostSoul
 	States
 	{
 	See:
-		SKUL AAAABBBB 2 Bright A_Chase
+		SKUL A 3 Bright A_Chase
+		SKUL A 3 Bright A_Chase ("","")
+		SKUL B 3 Bright A_Chase
+		SKUL B 3 Bright A_Chase ("","")
 		Loop
 		
 	Missile:
@@ -102,7 +108,10 @@ Actor NirikLostSoul : EquestriaLostSoul
 	States
 	{
 	See:
-		SKUL AAAABBBB 2 Bright A_Chase
+		SKUL A 3 Bright A_Chase
+		SKUL A 3 Bright A_Chase ("","")
+		SKUL B 3 Bright A_Chase
+		SKUL B 3 Bright A_Chase ("","")
 		Loop
 		
 	Missile:
@@ -153,20 +162,20 @@ Actor EquestriaPain : PainElemental replaces PainElemental
 	Missile:
 		PAIN D 5 A_FaceTarget
 		PAIN E 5 A_FaceTarget
-		PAIN F 4 BRIGHT A_FaceTarget
+		PAIN F 5 BRIGHT A_FaceTarget
 		PAIN F 0 BRIGHT A_Jump(256, "Missile.Pony", "Missile.Unicorn", "Missile.Nirik")
 		Goto See
 	
 		Missile.Pony:
-			PAIN F 1 BRIGHT A_PainAttack("PonyLostSoul")
+			PAIN F 0 BRIGHT A_PainAttack("PonyLostSoul")
 			Goto See
 			
 		Missile.Unicorn:
-			PAIN F 1 BRIGHT A_PainAttack("UnicornLostSoul")
+			PAIN F 0 BRIGHT A_PainAttack("UnicornLostSoul")
 			Goto See
 			
 		Missile.Nirik:
-			PAIN F 1 BRIGHT A_PainAttack("NirikLostSoul")
+			PAIN F 0 BRIGHT A_PainAttack("NirikLostSoul")
 			Goto See
 
 	Death:
@@ -176,6 +185,7 @@ Actor EquestriaPain : PainElemental replaces PainElemental
 		PAIN K 8 Bright
 		{
 			A_QuakeEx(3, 3, 3, 4, 0, 500, "", 0,0,0,0, 1);
+			
 			A_CustomMissile(BloodExplosionSphere);
 			A_CustomMissile(BloodExplosionSphere);
 			A_CustomMissile(BloodExplosionSphere);
@@ -183,9 +193,9 @@ Actor EquestriaPain : PainElemental replaces PainElemental
 		}
 		PAIN L 8 Bright
 		{
-			A_PainAttack("PonyLostSoul", 45, PAF_AIMFACING);
+			A_PainAttack("PonyLostSoul", 90, PAF_AIMFACING);
 			A_PainAttack("NirikLostSoul", 0, PAF_AIMFACING);
-			A_PainAttack("UnicornLostSoul", -45, PAF_AIMFACING);
+			A_PainAttack("UnicornLostSoul", -90, PAF_AIMFACING);
 		}
 		PAIN M 8 Bright
 		Stop
