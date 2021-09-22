@@ -87,6 +87,15 @@ actor DERocket : Rocket replaces Rocket
 		A_Explode;
 		
 		A_QuakeEx(4, 4, 4, 16, 0, 200, "", QF_SCALEDOWN, 0,0,0, 1);
+		
+		A_CustomMissile(DERocketSmoke, random(-32, 32), 0, random (0, 360), 2, random (0, 360));
+		A_CustomMissile(DERocketSmoke, random(-32, 32), 0, random (0, 360), 2, random (0, 360));
+		A_CustomMissile(DERocketSmoke, random(-32, 32), 0, random (0, 360), 2, random (0, 360));
+		A_CustomMissile(DERocketSmoke, random(-32, 32), 0, random (0, 360), 2, random (0, 360));
+		A_CustomMissile(DERocketSmoke, random(-32, 32), 0, random (0, 360), 2, random (0, 360));
+		A_CustomMissile(DERocketSmoke, random(-32, 32), 0, random (0, 360), 2, random (0, 360));
+		A_CustomMissile(DERocketSmoke, random(-32, 32), 0, random (0, 360), 2, random (0, 360));
+		A_CustomMissile(DERocketSmoke, random(-32, 32), 0, random (0, 360), 2, random (0, 360));
 	}
 	MISL C 4 Bright
     MISL D 1 Bright A_FadeOut(0.1)

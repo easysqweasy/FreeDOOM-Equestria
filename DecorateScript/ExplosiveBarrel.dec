@@ -26,14 +26,14 @@ ACTOR EquestriaExploBarrel : ExplosiveBarrel replaces ExplosiveBarrel
 		A_SetScale(1.5, 1.5);
 		A_QuakeEx(3, 3, 3, 4, 0, 300, "", 0,0,0,0, 1);
 		
-		A_CustomMissile(DERocketSmoke, random(8, 32), 0, random (0, 360), 2, random (0, 360));
-		A_CustomMissile(DERocketSmoke, random(8, 32), 0, random (0, 360), 2, random (0, 360));
-		A_CustomMissile(DERocketSmoke, random(8, 32), 0, random (0, 360), 2, random (0, 360));
-		A_CustomMissile(DERocketSmoke, random(8, 32), 0, random (0, 360), 2, random (0, 360));
-		A_CustomMissile(DERocketSmoke, random(8, 32), 0, random (0, 360), 2, random (0, 360));
-		A_CustomMissile(DERocketSmoke, random(8, 32), 0, random (0, 360), 2, random (0, 360));
-		A_CustomMissile(DERocketSmoke, random(8, 32), 0, random (0, 360), 2, random (0, 360));
-		A_CustomMissile(DERocketSmoke, random(8, 32), 0, random (0, 360), 2, random (0, 360));
+		A_CustomMissile(DERocketSmoke, random(-32, 32), 0, random (0, 360), 2, random (0, 360));
+		A_CustomMissile(DERocketSmoke, random(-32, 32), 0, random (0, 360), 2, random (0, 360));
+		A_CustomMissile(DERocketSmoke, random(-32, 32), 0, random (0, 360), 2, random (0, 360));
+		A_CustomMissile(DERocketSmoke, random(-32, 32), 0, random (0, 360), 2, random (0, 360));
+		A_CustomMissile(DERocketSmoke, random(-32, 32), 0, random (0, 360), 2, random (0, 360));
+		A_CustomMissile(DERocketSmoke, random(-32, 32), 0, random (0, 360), 2, random (0, 360));
+		A_CustomMissile(DERocketSmoke, random(-32, 32), 0, random (0, 360), 2, random (0, 360));
+		A_CustomMissile(DERocketSmoke, random(-32, 32), 0, random (0, 360), 2, random (0, 360));
 		
 		A_CustomMissile(BarrelDebris, random(8, 16), 0, random (0, 360), 2, random (10, 90));
 		A_CustomMissile(BarrelDebris, random(8, 16), 0, random (0, 360), 2, random (10, 90));
@@ -72,14 +72,14 @@ ACTOR EquestriaExploBarrel : ExplosiveBarrel replaces ExplosiveBarrel
 		A_SetScale(1.75, 1.75);
 		A_QuakeEx(3, 3, 3, 4, 0, 300, "", 0,0,0,0, 1);
 		
-		A_CustomMissile(DERocketSmoke, 32, 0, random (0, 360), 2, random (0, 360));
-		A_CustomMissile(DERocketSmoke, 32, 0, random (0, 360), 2, random (0, 360));
-		A_CustomMissile(DERocketSmoke, 32, 0, random (0, 360), 2, random (0, 360));
-		A_CustomMissile(DERocketSmoke, 32, 0, random (0, 360), 2, random (0, 360));
-		A_CustomMissile(DERocketSmoke, 32, 0, random (0, 360), 2, random (0, 360));
-		A_CustomMissile(DERocketSmoke, 32, 0, random (0, 360), 2, random (0, 360));
-		A_CustomMissile(DERocketSmoke, 32, 0, random (0, 360), 2, random (0, 360));
-		A_CustomMissile(DERocketSmoke, 32, 0, random (0, 360), 2, random (0, 360));
+		A_CustomMissile(DERocketSmoke, random(-32, 32), 0, random (0, 360), 2, random (0, 360));
+		A_CustomMissile(DERocketSmoke, random(-32, 32), 0, random (0, 360), 2, random (0, 360));
+		A_CustomMissile(DERocketSmoke, random(-32, 32), 0, random (0, 360), 2, random (0, 360));
+		A_CustomMissile(DERocketSmoke, random(-32, 32), 0, random (0, 360), 2, random (0, 360));
+		A_CustomMissile(DERocketSmoke, random(-32, 32), 0, random (0, 360), 2, random (0, 360));
+		A_CustomMissile(DERocketSmoke, random(-32, 32), 0, random (0, 360), 2, random (0, 360));
+		A_CustomMissile(DERocketSmoke, random(-32, 32), 0, random (0, 360), 2, random (0, 360));
+		A_CustomMissile(DERocketSmoke, random(-32, 32), 0, random (0, 360), 2, random (0, 360));
 		
 		A_CustomMissile(BarrelDebris, random(8, 16), 0, random (0, 360), 2, random (10, 90));
 		A_CustomMissile(BarrelDebris, random(8, 16), 0, random (0, 360), 2, random (10, 90));
@@ -123,14 +123,14 @@ ACTOR EquestriaExploBarrel : ExplosiveBarrel replaces ExplosiveBarrel
 			A_CustomMissile(BarrelDebris, 32, 0, random (0, 360), 2, random (10, 90));
 			A_CustomMissile(BarrelDebris, 32, 0, random (0, 360), 2, random (10, 90));
 			
-			A_CustomMissile(DERocketSmoke, 32, 0, random (0, 360), 2, random (0, 360));
-			A_CustomMissile(DERocketSmoke, 32, 0, random (0, 360), 2, random (0, 360));
-			A_CustomMissile(DERocketSmoke, 32, 0, random (0, 360), 2, random (0, 360));
-			A_CustomMissile(DERocketSmoke, 32, 0, random (0, 360), 2, random (0, 360));
-			A_CustomMissile(DERocketSmoke, 32, 0, random (0, 360), 2, random (0, 360));
-			A_CustomMissile(DERocketSmoke, 32, 0, random (0, 360), 2, random (0, 360));
-			A_CustomMissile(DERocketSmoke, 32, 0, random (0, 360), 2, random (0, 360));
-			A_CustomMissile(DERocketSmoke, 32, 0, random (0, 360), 2, random (0, 360));
+			A_CustomMissile(DERocketSmoke, random(-32, 32), 0, random (0, 360), 2, random (0, 360));
+			A_CustomMissile(DERocketSmoke, random(-32, 32), 0, random (0, 360), 2, random (0, 360));
+			A_CustomMissile(DERocketSmoke, random(-32, 32), 0, random (0, 360), 2, random (0, 360));
+			A_CustomMissile(DERocketSmoke, random(-32, 32), 0, random (0, 360), 2, random (0, 360));
+			A_CustomMissile(DERocketSmoke, random(-32, 32), 0, random (0, 360), 2, random (0, 360));
+			A_CustomMissile(DERocketSmoke, random(-32, 32), 0, random (0, 360), 2, random (0, 360));
+			A_CustomMissile(DERocketSmoke, random(-32, 32), 0, random (0, 360), 2, random (0, 360));
+			A_CustomMissile(DERocketSmoke, random(-32, 32), 0, random (0, 360), 2, random (0, 360));
 			
 			A_CustomMissile(BarrelTiny, 32, 0, random (0, 360), 2, random (10, 90));
 			A_CustomMissile(BarrelTiny, 32, 0, random (0, 360), 2, random (10, 90));

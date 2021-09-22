@@ -110,6 +110,8 @@ actor BFGPieces : DEParticles
 
 ACTOR DERocketSmoke : RocketSmokeTrail replaces RocketSmokeTrail
 {
+	Height 10
+	Radius 5
   RenderStyle Translucent
   Alpha 0.5
   Speed 5
@@ -117,6 +119,7 @@ ACTOR DERocketSmoke : RocketSmokeTrail replaces RocketSmokeTrail
   +ForceXYBillBoard
   +NoGravity
   +ROLLSPRITE +ROLLCENTER
+  -NOCLIP
   +MISSILE
   States
   {
