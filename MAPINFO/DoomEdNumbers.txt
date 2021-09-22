@@ -3,6 +3,12 @@
 
 DoomEdNums
 {
+
+	/* Title Map and Season Scenes Props */
+	
+	900 = "Shainer"
+	901 = "FlyingShotgun"
+	
 	/* Monsters */
 
 	15000 = "PlasmaKirin"
