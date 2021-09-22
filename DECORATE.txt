@@ -18,6 +18,7 @@ Actor DebrisGeneral
 }
 
 #include "DecorateScript/Player.dec"
+#include "DecorateScript/TitleMap.dec"
 #include "DecorateScript/Cores/WeaponCore.dec"
 #include "DecorateScript/Cores/MonsterCore.dec"
 
@@ -82,6 +83,5 @@ Actor DebrisGeneral
 
 ////Misc
 
-#include "DecorateScript/Demonstrations.dec"
 #include "DecorateScript/Tokens.dec"
 #include "DecorateScript/ExplosiveBarrel.dec"
