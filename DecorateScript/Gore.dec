@@ -192,6 +192,16 @@ ACTOR EquestriaBlood : Blood replaces Blood
 	States
 	{
 	Spawn:
+		BLUD C 0
+		BLUD C 1
+		{	
+			//A_SpawnItemEx("SmallBloodParticle", 0, 0, 0, random(-1,1), random(-1,1), random(-1,1), random (0, 360), SXF_TRANSFERTRANSLATION | SXF_ABSOLUTEVELOCITY);
+			//A_SpawnItemEx("SmallBloodParticle", 0, 0, 0, random(-1,1), random(-1,1), random(-1,1), random (0, 360), SXF_TRANSFERTRANSLATION | SXF_ABSOLUTEVELOCITY);
+			//A_SpawnItemEx("SmallBloodParticle", 0, 0, 0, random(-1,1), random(-1,1), random(-1,1), random (0, 360), SXF_TRANSFERTRANSLATION | SXF_ABSOLUTEVELOCITY);
+			//A_SpawnItemEx("SmallBloodParticle", 0, 0, 0, random(-1,1), random(-1,1), random(-1,1), random (0, 360), SXF_TRANSFERTRANSLATION | SXF_ABSOLUTEVELOCITY);
+			//A_SpawnItemEx("SmallBloodParticle", 0, 0, 0, random(-1,1), random(-1,1), random(-1,1), random (0, 360), SXF_TRANSFERTRANSLATION | SXF_ABSOLUTEVELOCITY);
+		}
+	Blood:
 		BLUD C 1 A_JumpIf(waterlevel > 1, "Dissolve")
 		Loop
 	
@@ -226,6 +236,37 @@ ACTOR SmallBloodTrail : EquestriaBlood
 	Gravity 0.35
 	Scale 0.50
 }
+
+Actor SmallBloodParticle : DEParticles
+{
+	+BounceOnFloors
+	+SLIDESONWALLS
+	+ThruActors
+	-NoGravity
+	BounceType Doom
+	BounceFactor 0.25
+	Gravity 0.10
+	Speed 1
+	Scale 0.5
+	Height 2
+	Radius 1
+	
+	RenderStyle Translucent Alpha 0.5
+	States
+	{
+	Spawn:
+		BLUD A 1
+		Loop
+	Death:
+		BLUD A 1
+		{
+			A_SetScale((scalex - 0.01), (scaley - 0.01), false);
+			A_FadeOut(frandom(0.1, 0.2));
+		}
+		Wait
+	}
+}
+	
 
 ACTOR SmallBloodPoolDrop : SmallBloodPool
 {
