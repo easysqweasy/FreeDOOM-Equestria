@@ -17,6 +17,7 @@ Actor DebrisGeneral
   Damage 0
 }
 
+#include "DecorateScript/Tokens.dec"
 #include "DecorateScript/Player.dec"
 #include "DecorateScript/TitleMap.dec"
 #include "DecorateScript/Cores/WeaponCore.dec"
@@ -83,5 +84,4 @@ Actor DebrisGeneral
 
 ////Misc
 
-#include "DecorateScript/Tokens.dec"
 #include "DecorateScript/ExplosiveBarrel.dec"
