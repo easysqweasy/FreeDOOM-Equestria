@@ -1,0 +1,10 @@
+[enu default]
+
+TITLEMAP = "";
+HANGAR = "Hangar";
+NUCLEAR_PLANT = "Nuclear Plant";
+
+[ptb pt br]
+
+HANGAR = "Hangar";
+NUCLEAR_PLANT = "Usina Nuclear";
