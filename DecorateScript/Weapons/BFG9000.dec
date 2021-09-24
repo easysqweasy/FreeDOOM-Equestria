@@ -144,12 +144,12 @@ actor DEBFGBall : BFGBall replaces BFGBall
 			A_SetScale(1.50);
 			
 			A_SpawnItemEx("BFGFloorCheck", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION);
-			A_SpawnItemEX("BFGEEffect");
+			A_SpawnItemEX("BFGShockwave");
 			
-			A_QuakeEx(8, 8, 8, 35, 0, 750, "world/quake", QF_SCALEDOWN, 0,0,0, 1);
+			A_QuakeEx(8, 8, 8, 35, 0, 1000, "world/quake", QF_SCALEDOWN, 0,0,0, 1);
 		}	
 		TNT1 A 0 
-		BFE1 ABCD 2 Bright 
+		BFE1 ABCD 2 Bright
 		BFE1 E 8 Bright A_BFGSpray
 		BFE1 FGHIJ 3 Bright
 		BFE1 K 1 Bright A_FadeOut(0.1)
@@ -157,20 +157,20 @@ actor DEBFGBall : BFGBall replaces BFGBall
 	}
 }
 
-actor BFGEEffect
+actor BFGShockwave
 {
-  +FORCEXYBILLBOARD
-  +NOINTERACTION
-  +NOGRAVITY
-  +NOCLIP
-  RenderStyle Add
-  Alpha 0.50
-  scale 0.70
-  States
-  {
-  Spawn:
-	BFEF EFGHIJKLMNOPQRSTUVWXY 1 Bright
-	BFEF Z 1 Bright A_FadeOut (0.1)
-	Wait
-  }
+	+FORCEXYBILLBOARD
+	+NOINTERACTION
+	+NOGRAVITY
+	+NOCLIP
+	RenderStyle Add
+	Alpha 0.50
+	scale 0.70
+	States
+	{
+	Spawn:
+		BFEF EGIKMOQSUWY 1 Bright
+		BFEF Z 1 Bright A_FadeOut (0.1)
+		Wait
+	}
 }
