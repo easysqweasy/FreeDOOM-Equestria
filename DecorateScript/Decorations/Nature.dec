@@ -179,6 +179,7 @@ States
 Actor BaseFire 
 {
 	//$NotAngled
+	//$Category "Decoration/Nature"
 	RenderStyle Add
 	DamageType Fire
 }
