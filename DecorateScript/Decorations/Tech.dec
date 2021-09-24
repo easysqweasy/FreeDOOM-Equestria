@@ -1,8 +1,8 @@
-//$Category TechDecorations
+//$Category "Decoration/Tech"
 
 Actor Zapper
 {
-//$Category TechDecorations
+//$Category "Decoration/Tech"
   +SpawnCeiling
   +NoGravity
   +Solid
@@ -19,7 +19,7 @@ Actor Zapper
 
 Actor Chair
 {
-//$Category TechDecorations
+//$Category "Decoration/Tech"
   +FloorClip
   +Solid
   ProjectilePassHeight -16
@@ -36,7 +36,7 @@ Actor Chair
 
 Actor TechPillar2 : TechPillar 
 {
-//$Category TechDecorations
+//$Category "Decoration/Tech"
 Height 144
 States
 {
@@ -48,7 +48,7 @@ Spawn:
 
 Actor Equipment1 
 {
-//$Category TechDecorations
+//$Category "Decoration/Tech"
 Radius 8
 Height 24
 ProjectilePassHeight -16
@@ -63,7 +63,7 @@ Spawn:
 
 Actor Equipment2
 {
-//$Category TechDecorations
+//$Category "Decoration/Tech"
 Radius 16
 Height 24
 ProjectilePassHeight -16
@@ -78,7 +78,7 @@ Spawn:
 
 Actor Equipment3
 {
-//$Category TechDecorations
+//$Category "Decoration/Tech"
 Radius 15
 Height 14
 ProjectilePassHeight -16
@@ -102,7 +102,7 @@ Spawn:
 
 Actor Spark2
 {
-//$Category TechDecorations
+//$Category "Decoration/Tech"
 States
 {
 Spawn:

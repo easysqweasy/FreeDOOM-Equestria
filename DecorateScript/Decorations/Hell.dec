@@ -1,10 +1,8 @@
 Actor EquestriaFloatingSkull : FloatingSkull replaces FloatingSkull
 {
-	+FLOATBOB
-	FloatBobStrength 0.5
+	+FLOATBOB FloatBobStrength 0.5
 	
-	Radius 15
-	Height 50
+	Radius 15 Height 50
 }
 
 Actor EquestriaEvilEye : EvilEye replaces EvilEye
@@ -27,7 +25,7 @@ Actor EquestriaEvilEye : EvilEye replaces EvilEye
 ACTOR EvilEye2
 {
 //$NotAngled
-//$Category Hell
+//$Category "Decoration/Hell"
   Radius 16
   Height 54
   ProjectilePassHeight -16
@@ -43,7 +41,7 @@ ACTOR EvilEye2
 ACTOR DemonSkull
 {
 //$NotAngled
-//$Category Hell
+//$Category "Decoration/Hell"
   States
   {
   Spawn:
@@ -135,7 +133,7 @@ ACTOR DemonSkull10 : DemonSkull
 
 Actor BaronStatue1
 {
-//$Category Hell
+//$Category "Decoration/Hell"
   +FloorClip
   +Solid
   ProjectilePassHeight -16
@@ -161,7 +159,7 @@ Actor BaronStatue2 : BaronStatue1
 Actor DemonArm
 {
 //$NotAngled
-//$Category Hell
+//$Category "Decoration/Hell"
   +FloorClip
   States
   {
@@ -173,7 +171,7 @@ Actor DemonArm
 ACTOR TallPinkColumn : TallRedColumn
 {
 //$NotAngled
-//$Category Hell
+//$Category "Decoration/Hell"
   States
   {
   Spawn:

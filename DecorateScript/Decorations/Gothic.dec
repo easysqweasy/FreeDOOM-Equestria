@@ -1,6 +1,6 @@
 ACTOR SkullGem
 {
-//$Category Gothic
+//$Category "Decoration/Gothic"
   States
   {
   Spawn:
@@ -12,7 +12,7 @@ ACTOR SkullGem
 ACTOR Bible
 {
 	+ForceXYBillboard
-//$Category Gothic
+//$Category "Decoration/Gothic"
   States
   {
   Spawn:
@@ -23,7 +23,7 @@ ACTOR Bible
 
 ACTOR Chalice
 {
-//$Category Gothic
+//$Category "Decoration/Gothic"
   States
   {
   Spawn:
@@ -34,7 +34,7 @@ ACTOR Chalice
 
 ACTOR Dagger
 {
-//$Category Gothic
+//$Category "Decoration/Gothic"
   +FloorClip
   +Solid
   ProjectilePassHeight -16
@@ -50,7 +50,7 @@ ACTOR Dagger
 
 ACTOR DoomStaff
 {
-//$Category Gothic
+//$Category "Decoration/Gothic"
   +FloorClip
   +Solid
   ProjectilePassHeight -16
@@ -66,7 +66,7 @@ ACTOR DoomStaff
 
 ACTOR Chest
 {
-//$Category Gothic
+//$Category "Decoration/Gothic"
   +FloorClip
   +Solid
   Height 16
@@ -81,7 +81,7 @@ ACTOR Chest
 ACTOR Book
 {
 	+ForceXYBillboard
-//$Category Gothic
+//$Category "Decoration/Gothic"
   States
   {
   Spawn:
@@ -92,7 +92,7 @@ ACTOR Book
 
 Actor FlamingPillar
 {
-//$Category Gothic
+//$Category "Decoration/Gothic"
   +FloorClip
   +Solid
   ProjectilePassHeight -16
