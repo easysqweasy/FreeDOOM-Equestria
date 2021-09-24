@@ -4,6 +4,7 @@ Season 1: Kee-Deep in the Dead
 
 map S1E1 lookup "HANGAR"
 {
+	//OutsideFog To Do
 	Music = "Music/Doom1Musics/S1E1"
 	levelnum = 1
 	titlepatch = "WILV00"
@@ -16,6 +17,7 @@ map S1E1 lookup "HANGAR"
 
 map S1E2 lookup "NUCLEAR_PLANT"
 {
+	//OutsideFog To Do
 	Music = "Music/Doom1Musics/S1E2"
 	levelnum = 2
 	titlepatch = "WILV01"
