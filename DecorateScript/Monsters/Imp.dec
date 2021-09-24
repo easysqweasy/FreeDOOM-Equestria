@@ -70,19 +70,16 @@ actor DEImpBall : DoomImpBall replaces DoomImpBall
 	
 	+ForceXYBillBoard
 	
-	RenderStyle Translucent
-	Alpha 0.75
-	
 	States
 	{
 	Spawn:
-		FIRB B 2 Bright A_SpawnItemEx("FireBallTrail")
-		FIRB A 2 Bright
+		BAL1 A 2 Bright
 		{
+			A_SpawnItemEx("FireBallTrail");
 			A_SpawnItemEx("FirePieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1), 0);
 			A_SpawnItemEx("FirePieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1), 0);
 		}
-		FIRB B 2 Bright 
+		BAL1 B 2 Bright 
 		{
 			A_SpawnItemEx("FirePieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1), 0);
 			A_SpawnItemEx("FirePieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1), 0);
