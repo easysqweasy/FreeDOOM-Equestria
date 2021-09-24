@@ -54,7 +54,7 @@ actor BroomProjectile
 	-NOGRAVITY
 	-NOICEDEATH
 	
-	ProjectileKickBack 100
+	ProjectileKickBack 150
 	Radius 10
 	Height 20
 	Speed 40
