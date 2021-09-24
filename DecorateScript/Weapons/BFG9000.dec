@@ -95,11 +95,11 @@ actor EquestriaBFG9000 : DoomEquestriaWeapon replaces BFG9000
 	Flash:
 		BFGF A 0 A_OverlayOffset(-10, 0, 12, WOF_KEEPX)
 		
-		BFGF B 5 Bright A_Light(4)
+		BFGF B 6 Bright A_Light(4)
 		BFGF A 5 Bright A_Light(8)
-		BFGF D 6 Bright A_Light(10) 
-		BFGF A 5 Bright A_Light(6) 
-		BFGF B 3 Bright 
+		BFGF D 8 Bright A_Light(10) 
+		BFGF A 4 Bright A_Light(6) 
+		BFGF B 5 Bright 
 		Goto LightDone
 	
 	OldFire:
