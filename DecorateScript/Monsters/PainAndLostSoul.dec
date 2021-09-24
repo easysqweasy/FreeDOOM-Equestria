@@ -1,7 +1,7 @@
 Actor LostSoulVariants : RandomSpawner replaces LostSoul
 {
-//$Title Lost Soul (Randomizer)
-//$Sprite SKULA
+//$Title Lost Soul
+//$Sprite SKULA1
 	DropItem "PonyLostSoul"
 	DropItem "UnicornLostSoul"
 	DropItem "NirikLostSoul"
