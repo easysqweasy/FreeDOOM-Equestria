@@ -138,18 +138,17 @@ actor DEBFGBall : BFGBall replaces BFGBall
 		Loop
 	
 	Death:
-		BFE1 A 0 
+		BFE1 A 2 
 		{
 			A_SetRoll(0);
 			A_SetScale(1.50);
+			A_SpawnItem("BFGShockwave");
 			
 			A_SpawnItemEx("BFGFloorCheck", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION);
-			A_SpawnItemEX("BFGShockwave");
 			
 			A_QuakeEx(8, 8, 8, 35, 0, 1000, "world/quake", QF_SCALEDOWN, 0,0,0, 1);
-		}	
-		TNT1 A 0 
-		BFE1 ABCD 2 Bright
+		}
+		BFE1 BCD 2 Bright
 		BFE1 E 8 Bright A_BFGSpray
 		BFE1 FGHIJ 3 Bright
 		BFE1 K 1 Bright A_FadeOut(0.1)
