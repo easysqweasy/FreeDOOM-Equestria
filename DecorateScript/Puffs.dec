@@ -116,6 +116,8 @@ Actor BerserkPuff : KickPuff
 	DamageType Berserk
 	Alpha 0.5
 	
+	-BLOODLESSIMPACT
+	
 	States
 	{
 	
