@@ -157,6 +157,8 @@ Actor PlasmaTrail : DEParticles
 	-MOVEWITHSECTOR
 	+DONTSPLASH
 	
+	-NoInteraction
+	
 	States
 	{
 	Spawn:
@@ -190,8 +192,6 @@ Actor AracPlasmaTrail : PlasmaTrail
 
 Actor BFGTrail : PlasmaTrail
 {
-	Alpha 0.50
-	
 	States
 	{
 	Spawn:
@@ -206,19 +206,15 @@ Actor BFGTrail : PlasmaTrail
    }
 }
 
-actor FireBallTrail : DEParticles
+actor FireBallTrail : PlasmaTrail
 {
-  -MOVEWITHSECTOR
-  RenderStyle Translucent
-  Alpha 0.50
-  Scale 0.75
-  States
-  {
-  Spawn:
-	BAL1 CD 4 Bright
-	BAL1 E 1 Bright A_FadeOut(0.1)
-	Wait
-  }
+	States
+	{
+	Spawn:
+		BAL1 CD 4 Bright
+		BAL1 E 1 Bright A_FadeOut(0.1)
+		Wait
+	}
 }
 
 actor ExplosionWave : DEParticles
