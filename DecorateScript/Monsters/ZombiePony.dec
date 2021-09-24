@@ -58,8 +58,8 @@ ACTOR EquestriaZombieMan : DoomEquestriaMonster Replaces ZombieMan
 		POSS U 0
 		{
 			bSPRITEFLIP = randompick(0, 1);
-			A_CustomMissile(XDeathGoreSpawn);
-			A_CustomMissile(BloodExplosionSphere);
+			A_SpawnProjectile(XDeathGoreSpawn);
+			A_SpawnProjectile(BloodExplosionSphere);
 			A_XScream;
 			A_NoBlocking;
 		}
