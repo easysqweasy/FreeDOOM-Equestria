@@ -15,7 +15,7 @@ Decal ShellLowerDecal
 
 Decal ShellDecal
 {
-	Pic ShtGunDecal2
+	Pic BulletDecal
 	Add 1
 	Animator GoAway
 	Shade "FF 34 03"
@@ -23,6 +23,28 @@ Decal ShellDecal
 	FullBright
 	Y-Scale 0.75 X-Scale 0.75
 	LowerDecal ShellLowerDecal
+}
+
+Decal ChainsawDecal1
+{
+	Pic BulletDecal
+	Shade "00 00 00"
+	Y-Scale 4.25 X-Scale 0.25
+	RandomFlipY RandomFlipX
+}
+
+Decal ChainsawDecal2
+{
+	Pic BulletDecal
+	Shade "00 00 00"
+	Y-Scale 0.25 X-Scale 4.25
+	RandomFlipY RandomFlipX
+}
+
+DecalGroup ChainsawDecal
+{
+	ChainsawDecal1 1
+	ChainsawDecal2 1
 }
 
 Decal FireBallScorch1
@@ -152,7 +174,7 @@ decal BFGLightning2
 ////Weapons
 
 generator EquestriaPistol	ChipDecal
-generator EquestriaChainsaw	BulletChip
+generator EquestriaChainsaw	ChainsawDecal
 generator EquestriaShotgun	ShellDecal
 generator EquestriaSuperShotgun	ShellDecal
 generator Repeater	ChipDecal
