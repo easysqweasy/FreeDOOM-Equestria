@@ -1,3 +1,14 @@
+/*Player */
+
+$playersound	player	male	*pain50		Sounds/Player/ds50plpain.wav
+$playersounddup	player	male	*pain25		*pain50
+
+$playersound	player	female	*pain50		Sounds/Player/ds50plpain.wav
+$playersounddup	player	female	*pain25		*pain50
+
+$playersound	player	other	*pain50		Sounds/Player/ds50plpain.wav
+$playersounddup	player	other	*pain25		*pain50
+
 /* Ambient */
 
 world/drip "Sounds/Terrains/GLOOP.ogg"
