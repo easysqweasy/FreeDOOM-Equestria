@@ -309,53 +309,14 @@ ACTOR SmallBloodPoolDrop : SmallBloodPool
 	}
 }
 
-Actor Heart
-{
-  -COUNTKILL
-  +THRUGHOST
-  +THRUACTORS
-  +FORCEXYBILLBOARD
-  +DONTHARMSPECIES
-  Monster
-  Speed 0
-  Health 1
-  States
-  {
-  Spawn:
-	GORE B 1 A_SetScale(0.8)
-	GORE B 1 A_SetScale(0.9)
-	GORE B 1 A_SetScale(1.0)
-	GORE B 2 A_SetScale(0.9)
-	GORE B 3 A_SetScale(0.8)
-	GORE B 4 A_SetScale(0.9)
-	GORE B 5 A_SetScale(1.0)
-	GORE B 4 A_SetScale(0.9)
-	GORE B 3 A_SetScale(0.8)
-	GORE B 2 A_SetScale(0.9)
-	Loop
-  Death:
-	TNT1 A 1
-	{
-		A_SpawnItemEx(GibGore4, 0, 0, 10, random(-6, 6), random(-6, 6), random(5, 10));
-		A_SpawnItemEx(GibGore4, 0, 0, 10, random(-6, 6), random(-6, 6), random(5, 10));
-		A_SpawnItemEx(GibGore4, 0, 0, 10, random(-6, 6), random(-6, 6), random(5, 10));
-		A_SpawnItemEx(GibGore4, 0, 0, 10, random(-6, 6), random(-6, 6), random(5, 10));
-	}
-	Stop
-  }
-}
-
 actor GibGore1 : GibGoreBase
 {
-  States
-  {
-  Spawn:
-	GORE B 4 A_SpawnItemEX(EquestriaBlood,random(-2,-2),random(-2,2),random(-2,2))
-	Loop
-  /*Death:
-	TNT1 A 1 A_SpawnItemEx(Heart)
-	Stop*/
-  }
+	States
+	{
+	Spawn:
+		GORE B 4 A_SpawnItemEX(EquestriaBlood,random(-2,-2),random(-2,2),random(-2,2))
+		Loop
+	}
 }
 
 actor GibGore2 : GibGoreBase
