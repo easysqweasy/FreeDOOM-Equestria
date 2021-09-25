@@ -23,6 +23,14 @@ Actor DebrisGeneral
 #include "DecorateScript/Cores/WeaponCore.dec"
 #include "DecorateScript/Cores/MonsterCore.dec"
 
+////Effects, Particles, Debris
+
+#include "DecorateScript/Terrains.dec"
+#include "DecorateScript/Particles.dec"
+#include "DecorateScript/Gore.dec"
+#include "DecorateScript/Puffs.dec"
+#include "DecorateScript/FloorDecals.dec"
+
 ////Monsters
 
 #include "DecorateScript/Monsters/Arachnotron.dec"
@@ -48,14 +56,6 @@ Actor DebrisGeneral
 
 #include "DecorateScript/Pickups.dec"
 #include "DecorateScript/Powerups.dec"
-
-////Effects, Particles, Debris
-
-#include "DecorateScript/Terrains.dec"
-#include "DecorateScript/Particles.dec"
-#include "DecorateScript/Gore.dec"
-#include "DecorateScript/Puffs.dec"
-#include "DecorateScript/FloorDecals.dec"
 
 ////Weapons
 
