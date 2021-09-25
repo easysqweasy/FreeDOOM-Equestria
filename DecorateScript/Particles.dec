@@ -6,6 +6,23 @@ actor DEParticles : DebrisGeneral
 	+ExplodeOnWater
 }
 
+Actor Trails : DEParticles
+{
+	Height 0
+	Radius 0
+	
+	Scale 0.75
+	RenderStyle Add
+	Alpha 0.75
+	
+	+ROLLSPRITE +ROLLCENTER
+	
+	+GHOST
+	-MOVEWITHSECTOR
+	+DONTSPLASH
+	
+	+NoInteraction
+}
 actor FirePieceSpawn : RandomSpawner
 {
 	DropItem FirePiece
@@ -93,147 +110,6 @@ actor AcidPiece2 : Pieces
   -NOGRAVITY
   Scale 1.5
   Gravity 0.10
-}
-
-actor BFGPieces : DEParticles
-{
-  RenderStyle add
-  alpha 1
-  States
-  {
-  Spawn:
-	BFGP ABCD 3 Bright 
-	BFGP EFGH 1 Bright A_FadeOut(0.1)
-	Stop
-  }
-}
-
-ACTOR DERocketSmoke : RocketSmokeTrail replaces RocketSmokeTrail
-{
-	Height 10
-	Radius 5
-	
-	RenderStyle Translucent
-	
-	Alpha 0.5
-	
-	Speed 7
-	VSpeed 0.5
-	
-	+ForceXYBillBoard
-	+NoGravity
-	+ROLLSPRITE +ROLLCENTER
-	-NOCLIP
-	-ACTIVATEIMPACT
-	-ACTIVATEPCROSS
-
-	States
-	{
-	Spawn:
-		TNT1 A 0
-		{
-			bSPRITEFLIP = randompick(0, 1);
-			A_SetRoll(random(-359, 359));
-		}
-		RSMK ABCD 4
-		RSMK E 1 A_FadeOut(0.075)
-		Wait
-	}
-}
-
-Actor PlasmaTrail : DEParticles
-{
-	Height 0
-	Radius 0
-	
-	Scale 0.75
-	RenderStyle Add
-	Alpha 0.50
-	
-	+ROLLSPRITE
-	+ROLLCENTER
-	
-	+GHOST
-	-MOVEWITHSECTOR
-	+DONTSPLASH
-	
-	-NoInteraction
-	
-	States
-	{
-	Spawn:
-		PLSS A 0
-		PLSS A 0 A_SetRoll(random(-359, 359))
-	Trail:
-		PLSS A 1 Bright
-		{
-			A_SetRoll((roll + 15), SPF_INTERPOLATE);
-			A_FadeOut(0.1);
-		}
-		Loop
-	}
-}
-Actor AracPlasmaTrail : PlasmaTrail
-{
-	States
-	{
-	Spawn:
-		APLS A 0
-		APLS A 0 A_SetRoll(random(-359, 359))
-	Trail:
-		APLS A 1 Bright
-		{
-			A_SetRoll((roll + 15), SPF_INTERPOLATE);
-			A_FadeOut(0.1);
-		}
-		Loop
-	}
-}
-
-Actor BFGTrail : PlasmaTrail
-{
-	States
-	{
-	Spawn:
-		BFS1 A 0
-		BFS1 A 0 A_SetRoll(random(-359, 359))
-	Trail:
-		BFS1 A random(2,4) Bright A_FadeOut(0.1)
-		BFS1 B random(2,4) Bright A_FadeOut(0.1)
-		BFS1 C random(2,4) Bright A_FadeOut(0.1)
-		BFS1 D random(2,4) Bright A_FadeOut(0.1)
-		Loop
-   }
-}
-
-actor FireBallTrail : PlasmaTrail
-{
-	States
-	{
-	Spawn:
-		BAL1 CD 4 Bright
-		BAL1 E 1 Bright A_FadeOut(0.1)
-		Wait
-	}
-}
-
-actor ExplosionWave : DEParticles
-{
-  RenderStyle Translucent
-  Alpha 1
-  States
-  {
-  Spawn:
-	BFGE A 1 Bright A_SetScale(0.4)
-	BFGE A 1 Bright A_SetScale(0.6)
-	BFGE A 1 Bright A_SetScale(0.8)
-	BFGE A 1 Bright A_SetScale(1)
-	BFGE A 1 Bright A_SetScale(1.2)
-	BFGE A 1 Bright A_SetScale(1.4)
-	BFGE A 1 Bright A_SetScale(1.6)
-	BFGE AAAAA 1 Bright A_Fadeout(0.1)
-	Stop
-  }
 }
 
 actor BulletTrail : DEParticles

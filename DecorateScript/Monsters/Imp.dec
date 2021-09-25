@@ -91,3 +91,14 @@ actor DEImpBall : DoomImpBall replaces DoomImpBall
 		Stop
 	}
 }
+
+actor FireBallTrail : Trails
+{
+	States
+	{
+	Spawn:
+		BAL1 CD 4 Bright
+		BAL1 E 1 Bright A_FadeOut(0.1)
+		Wait
+	}
+}

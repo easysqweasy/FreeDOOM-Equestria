@@ -106,3 +106,32 @@ actor DERocket : Rocket replaces Rocket
 	Wait
   }
 }
+
+ACTOR DERocketSmoke : Trails replaces RocketSmokeTrail
+{
+	Height 10
+	Radius 5
+	
+	RenderStyle Translucent
+	
+	Alpha 0.5
+	
+	Speed 7
+	VSpeed 0.5
+	
+	-NoInteraction
+	-NOCLIP
+
+	States
+	{
+	Spawn:
+		TNT1 A 0
+		{
+			bSPRITEFLIP = randompick(0, 1);
+			A_SetRoll(random(-359, 359));
+		}
+		RSMK ABCD 4
+		RSMK E 1 A_FadeOut(0.075)
+		Wait
+	}
+}
