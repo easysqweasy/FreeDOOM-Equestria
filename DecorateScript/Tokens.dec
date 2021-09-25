@@ -1,5 +1,5 @@
 Actor InvToken : Inventory
-{	Inventory.MaxAmount 1	+INVENTORY.QUIET	}
+{	Inventory.MaxAmount 1	+INVENTORY.QUIET	-INVENTORY.INVBAR}
 
 Actor DeadCheck : InvToken	{}
 
