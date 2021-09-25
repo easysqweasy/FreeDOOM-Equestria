@@ -29,24 +29,8 @@ Actor Lamp2
 		Stop
 	}
 }
-Actor Lamp3
-{
-//$NotAngled
-//$Category Light sources
-	Radius 9
-	Height 55
-	+SOLID
-	+NOGRAVITY
-	+SPAWNCEILING
-	States
-	{
-	Spawn:
-		lam3 A -1 bright
-		Stop
-	}
-}
 
-Actor Lamp4
+Actor Lamp3
 {
 //$NotAngled
 //$Category Light sources
@@ -62,7 +46,7 @@ Actor Lamp4
 	}
 }
 
-Actor Lamp5
+Actor Lamp4
 {
 //$NotAngled
 //$Category Light sources
@@ -78,7 +62,7 @@ Actor Lamp5
 	}
 }
 
-Actor Lamp6
+Actor Lamp5
 {
 //$NotAngled
 //$Category Light sources
@@ -90,6 +74,23 @@ Actor Lamp6
 	{
 	Spawn:
 		lam6 A -1 bright
+		Stop
+	}
+}
+
+Actor CeilingLamp1
+{
+//$NotAngled
+//$Category Light sources
+	Radius 10
+	Height 40
+	+SOLID
+	+NOGRAVITY
+	+SPAWNCEILING
+	States
+	{
+	Spawn:
+		lam3 A -1 bright
 		Stop
 	}
 }

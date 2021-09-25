@@ -50,7 +50,7 @@ DoomEdNums
 	15304 = "Lamp3"
 	15305 = "Lamp4"
 	15306 = "Lamp5"
-	15307 = "Lamp6"
+	15307 = "CeilingLamp1"
 	15308 = "TechPillar2"
 	15309 = "Equipment1"
 	15310 = "Equipment2"
