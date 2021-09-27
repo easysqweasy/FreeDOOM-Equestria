@@ -23,6 +23,7 @@ Actor Trails : DEParticles
 	
 	+NoInteraction
 }
+
 actor FirePieceSpawn : RandomSpawner
 {
 	DropItem FirePiece
