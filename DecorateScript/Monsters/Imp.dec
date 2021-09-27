@@ -61,7 +61,7 @@ actor EquestriaImp : DoomImp Replaces DoomImp
 	}
 }
 
-actor DEImpBall : DoomImpBall replaces DoomImpBall
+actor EquestriaImpBall : DoomImpBall replaces DoomImpBall
 {
 	Radius 8
 	Height 16
@@ -73,6 +73,11 @@ actor DEImpBall : DoomImpBall replaces DoomImpBall
 	States
 	{
 	Spawn:
+		BAL1 B 2 Bright 
+		{
+			A_SpawnItemEx("FirePieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1), 0);
+			A_SpawnItemEx("FirePieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1), 0);
+		}
 		BAL1 A 2 Bright
 		{
 			A_SpawnItemEx("FireBallTrail");
@@ -86,9 +91,10 @@ actor DEImpBall : DoomImpBall replaces DoomImpBall
 		}
 		Loop
 	Death:
-		BAL1 CD 6 Bright
-		BAL1 EEEEEEEEEE 1 Bright A_FadeOut(0.1)
-		Stop
+		BAL1 C 6
+		BAL1 D 4 Bright
+		BAL1 E 1 Bright A_FadeOut(0.1)
+		Wait
 	}
 }
 
@@ -97,7 +103,8 @@ actor FireBallTrail : Trails
 	States
 	{
 	Spawn:
-		BAL1 CD 4 Bright
+		TNT1 A 4
+		BAL1 CD 3 Bright
 		BAL1 E 1 Bright A_FadeOut(0.1)
 		Wait
 	}
