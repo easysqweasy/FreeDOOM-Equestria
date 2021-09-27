@@ -83,7 +83,7 @@ Actor CeilingLamp1
 //$NotAngled
 //$Category Light sources
 	Radius 10
-	Height 40
+	Height 35
 	+SOLID
 	+NOGRAVITY
 	+SPAWNCEILING
