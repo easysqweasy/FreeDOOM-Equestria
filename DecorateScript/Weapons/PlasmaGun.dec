@@ -152,7 +152,7 @@ actor DEPlasmaBall : PlasmaBall replaces PlasmaBall
 		Loop
  
 	Death:
-		PLSE A 0 A_SpawnItemEx("PlasmaFloorCheck", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION)
+		PLSE A 0 A_SpawnItem("PlasmaFloorCheck")
 		PLSE ABC 4 Bright
 		PLSE DE 4 A_FadeOut(0.1)
 		Stop
