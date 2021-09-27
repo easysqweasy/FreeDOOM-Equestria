@@ -58,6 +58,7 @@ Actor PuffSparkles : DEParticles
 
 Actor EquestriaBulletPuff : BulletPuff replaces BulletPuff
 {
+	Height 6 Radius 3
 	+FLOORCLIP
 	+NOTELEPORT
 	+FORCEXYBILLBOARD
