@@ -185,7 +185,7 @@ generator EquestriaChaingun	ChipDecal
 //generator DEPlasmaBall 			PlasmaScorch
 generator DERocket				Scorch
 generator DEBFGBall				BFGLightning
-generator DEImpBall				FireBallScorch
+generator EquestriaImpBall				FireBallScorch
 generator EquestriaBaronBall	BaronScorch
 generator KnightBall			BaronScorch
 
