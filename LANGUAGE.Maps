@@ -1,10 +1,17 @@
 [enu default]
 
 TITLEMAP = "";
+
+/* Season 1 */
+
 HANGAR = "Hangar";
 NUCLEAR_PLANT = "Nuclear Plant";
+TOXIN_REFINERY = "Toxin Refinery";
 
 [ptb pt br]
 
+/* Season 1 */
+
 HANGAR = "Hangar";
 NUCLEAR_PLANT = "Usina Nuclear";
+TOXIN_REFINERY = "Refinaria Tóxica";
