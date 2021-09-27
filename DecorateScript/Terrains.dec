@@ -53,9 +53,9 @@ ACTOR DECoreSplashSmoke
 	Height 4
 	RenderStyle Translucent
 	Alpha 0.7
-	VSpeed 1
+	VSpeed 1.5
 	+NOBLOCKMAP
-	+NOCLIP
+	+NoInteraction
 	+NOGRAVITY
 	+DONTSPLASH
 	+DONTBLAST
@@ -63,11 +63,12 @@ ACTOR DECoreSplashSmoke
 	States
 	{
 	Spawn:
-		NLAV A 0
-		NLAV A 0 A_ChangeFlag("SPRITEFLIP", randompick(0,1))
+		NLAV G 0
+		NLAV G 0 { bSPRITEFLIP = randompick(0,1); }
 		
-		NLAV GGHHIIJJKK 3 A_Fadeout(0.075)
-		Stop
+		NLAV GGGHHHIIJJKK 3 A_Fadeout(0.05)
+		NLAV K 1 A_FadeOut(0.05)
+		Wait
 	}
 }
 
