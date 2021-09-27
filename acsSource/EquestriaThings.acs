@@ -10,7 +10,7 @@ script "YouAreHere" enter
 	1, CR_WHITE, 1.5, 1.0, 3.5, 0.1, 1.0);
 }
 
-script "CheckClopper" enter //Ragedox says: Hands off!
+script "ClopperChecker" enter //Ragedox says: Hands off!
 {
 	if (GameType() == GAME_TITLE_MAP)
 	
@@ -31,13 +31,8 @@ script "CheckClopper" enter //Ragedox says: Hands off!
 		FadeTo (255, 255, 255, 1.0, 0.5); //Fade to White
 		
 		Delay (13);
-		{
-			/*GiveInventory ("HPistol", 1);
-			
-			Delay(1);*/
-			
-			ChangeLevel ("Map32", 0, CHANGELEVEL_NOINTERMISSION);
-		}
+
+		ChangeLevel ("Map32", 0, CHANGELEVEL_NOINTERMISSION);
 	}
 }
 
