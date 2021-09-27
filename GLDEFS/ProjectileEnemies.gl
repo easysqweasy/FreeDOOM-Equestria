@@ -1,5 +1,5 @@
 // Doom Imp Fireball
-Pulselight DEIMPBALL
+Pulselight IMPBALL
 {
     color 1.0 0.7 0.4
     size 60
@@ -36,21 +36,10 @@ flickerlight IMPBALL_X3
 	attenuate 1
 }
 
-object DEImpBall
+object EquestriaImpBall
 {
-    frame FIRBA { light DEIMPBALL    }
-    frame FIRBB { light DEIMPBALL    }
-    frame FIRBC { light DEIMPBALL    }
-    frame FIRBD { light DEIMPBALL    }
-    frame FIRBE { light DEIMPBALL    }
-    frame FIRBF { light DEIMPBALL    }
-    frame FIRBG { light DEIMPBALL    }
-    frame FIRBH { light DEIMPBALL    }
-    frame FIRBI { light DEIMPBALL    }
-    frame FIRBJ { light DEIMPBALL    }
-    frame FIRBK { light DEIMPBALL    }
-    frame FIRBL { light DEIMPBALL    }
-    frame FIRBM { light DEIMPBALL    }
+    frame BAL1A { light IMPBALL    }
+    frame BAL1B { light IMPBALL    }
 
     frame BAL1C { light IMPBALL_X1 }
     frame BAL1D { light IMPBALL_X2 }
