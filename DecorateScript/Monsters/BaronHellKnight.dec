@@ -8,11 +8,29 @@ actor EquestriaBaronofHell : BaronOfHell replaces BaronOfHell
 	Spawn:
 		IDLB CD 10 A_Look
 		Loop
+	
 	Melee:
 	Missile:
 		BOSS EF 8 A_FaceTarget
 		BOSS G 8 A_CustomComboAttack("BaronHellBall", 32, 10 * random(1, 8), "baron/melee")
 		Goto See
+	
+	Death:
+		BOSS I 8
+		BOSS J 8 A_Scream
+		BOSS K 8
+		BOSS L 8 A_NoBlocking
+		BOSS M 8
+		BOSS N -1 A_BossDeath
+		
+	XDeath:
+		BOSS O 8
+		BOSS P 8 A_Scream
+		BOSS Q 8
+		BOSS R 8 A_NoBlocking
+		BOSS ST 8 
+		BOSS U -1 A_BossDeath
+		Stop
 	}
 }
  
