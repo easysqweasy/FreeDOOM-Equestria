@@ -1,62 +1,50 @@
-Warp2 Flat FWater1
-Warp Flat Lava1 0.5
-Warp Flat NUKAGE2 0.25
-warp2 Flat SLIME01
-warp2 Flat SLIME05 0.25
-warp Flat BLOOD1 0.5
+Warp2 Flat FWATER1 
+Warp2 Flat FWATER2
+Warp2 Flat FWATER3
+Warp2 Flat FWATER4
 
+Warp Flat LAVA1
+Warp Flat LAVA2
+Warp Flat LAVA3
+Warp Flat LAVA4
 
-flat FWater1
-	pic 1 tics 1 pic 1 tics 1
-flat FWater2
-	pic 1 tics 1 pic 1 tics 1
-flat FWater3
-	pic 1 tics 1 pic 1 tics 1
-flat FWater4
-	pic 1 tics 1 pic 1 tics 1
+Warp Flat NUKAGE1
+Warp Flat NUKAGE2
+Warp Flat NUKAGE3
+Warp Flat NUKAGE4
 
+warp2 flat SLIME01
+warp2 flat SLIME02
+warp2 flat SLIME03
+warp2 flat SLIME04
+warp2 flat SLIME05
+warp2 flat SLIME06
+warp2 flat SLIME07
+warp2 flat SLIME08
 
-flat Lava1
-	pic 1 tics 1 pic 1 tics 1
-flat Lava2
-	pic 1 tics 1 pic 1 tics 1
-flat Lava3
-	pic 1 tics 1 pic 1 tics 1
-flat Lava4 
-	pic 1 tics 1 pic 1 tics 1
+Warp Flat BLOOD1
+Warp Flat BLOOD2
+Warp Flat BLOOD3
+Warp Flat BLOOD4
 
+flat FWATER1
+	pic 1 tics 1
+	pic 1 tics 1
+
+flat LAVA1 range LAVA4 tics 16 OSCILLATE
 
 flat NUKAGE1
-	pic 2 tics 1 pic 2 tics 1
-flat NUKAGE2
-	pic 2 tics 1 pic 2 tics 1
-flat NUKAGE3
-	pic 2 tics 1 pic 2 tics 1
+	pic 2 tics 1
+	pic 2 tics 1
 
 flat SLIME01
-	pic 1 tics 1 pic 1 tics 1
-flat SLIME02
-	pic 1 tics 1 pic 1 tics 1
-flat SLIME03
-	pic 1 tics 1 pic 1 tics 1
-flat SLIME04
-	pic 1 tics 1 pic 1 tics 1
-
+	pic 1 tics 1
+	pic 1 tics 1
 
 flat SLIME05
-	pic 1 tics 1 pic 1 tics 1
-flat SLIME06
-	pic 1 tics 1 pic 1 tics 1
-flat SLIME07
-	pic 1 tics 1 pic 1 tics 1
-flat SLIME08 
-	pic 1 tics 1 pic 1 tics 1
+	pic 1 tics 1
+	pic 1 tics 1
 
 flat BLOOD1
-	pic 1 tics 1 pic 1 tics 1
-
-flat BLOOD2
-	pic 1 tics 1 pic 1 tics 1
-
-flat BLOOD3
-	pic 1 tics 1 pic 1 tics 1
+	pic 1 tics 1
+	pic 1 tics 1
