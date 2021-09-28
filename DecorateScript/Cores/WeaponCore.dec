@@ -80,7 +80,7 @@ Actor DoomEquestriaWeapon : Weapon
 		TNT1 A 0 A_JumpIf(momZ > 0, "Kick.Air")
 		TNT1 A 0 A_JumpIf(momZ < 0, "Kick.Air")
 		
-		TNT1 A 0 A_Overlay(3, "Aside")
+		TNT1 A 0 A_Overlay(3, "Overlay.Aside")
 		
         TNT1 A 0 A_JumpIfInventory("PowerStrength", 1, "Kick.Berserk")
 				
@@ -95,12 +95,6 @@ Actor DoomEquestriaWeapon : Weapon
 		TNT1 A 0 A_TakeInventory("KickCheck", 999)
 		
 		Goto GotoReady
-		
-	Kick.Overlay:
-		KICK BCD 1 A_OverlayScale(-3, 1, 1, WOF_INTERPOLATE)
-		KICK H 6 A_OverlayScale(-3, 1, 1, WOF_INTERPOLATE)
-		KICK FEDCB 2 A_OverlayScale(-3, 1, 1, WOF_INTERPOLATE)
-		Stop
 	
 	Kick.Berserk:
 		TNT1 AAA 1
@@ -113,7 +107,7 @@ Actor DoomEquestriaWeapon : Weapon
 		Goto GotoReady
 		
 	Kick.Air:
-		TNT1 A 0 A_Overlay(3, "Aside.Air")
+		TNT1 A 0 A_Overlay(3, "Overlay.AirAside")
 		TNT1 A 0 A_JumpIfInventory("PowerStrength", 1, "Kick.BerserkAir")
 		
 		TNT1 A 0 SetPlayerProperty(0, 1, PROP_FROZEN)
@@ -141,7 +135,13 @@ Actor DoomEquestriaWeapon : Weapon
 		
 		Goto GotoReady
 		
-	Aside:
+	Kick.Overlay:
+		KICK BCD 1 A_OverlayScale(-3, 1, 1, WOF_INTERPOLATE)
+		KICK H 6 A_OverlayScale(-3, 1, 1, WOF_INTERPOLATE)
+		KICK FEDCB 2 A_OverlayScale(-3, 1, 1, WOF_INTERPOLATE)
+		Stop
+		
+	Overlay.Aside:
 		TNT1 A 0 A_OverlayFlags(3, PSPF_ADDBOB, true)
 		TNT1 A 0 A_OverlayPivotAlign(3, PSPA_RIGHT, PSPA_BOTTOM)
 		
@@ -164,7 +164,7 @@ Actor DoomEquestriaWeapon : Weapon
 		SHTG A 1
 		Stop
 	
-	Aside.Air:
+	Overlay.AirAside:
 		TNT1 A 0 A_OverlayFlags(3, PSPF_ADDBOB, true)
 		TNT1 A 0 A_OverlayPivotAlign(3, PSPA_RIGHT, PSPA_BOTTOM)
 		
