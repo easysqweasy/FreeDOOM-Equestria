@@ -1,0 +1,8 @@
+Actor UndeadAryanne
+{}
+
+Actor SSSoldier : WolfensteinSS Replaces WolfensteinSS
+{
+	+CASTSPRITESHADOW
+	+NOINFIGHTSPECIES
+}
