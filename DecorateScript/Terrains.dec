@@ -47,7 +47,7 @@ ACTOR DECoreSplashBase
 	+DONTBLAST
 }
 
-ACTOR DECoreSplashSmoke
+ACTOR SplashSmoke
 {
 	Radius 2
 	Height 4
