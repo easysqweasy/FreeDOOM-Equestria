@@ -41,8 +41,8 @@ Actor BerserkFist : DoomEquestriaWeapon
 		PUNG B 5 A_ReFire
 		Goto Ready
 		
-	Aside:
-	Aside.Air: Stop
+	Overlay.Aside: Stop
+	Overlay.AirAside: Stop
 	
 	}
 }
