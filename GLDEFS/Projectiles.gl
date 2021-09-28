@@ -11,8 +11,8 @@ flickerlight ROCKET
 flickerlight ROCKET_X1
 {
     color 1.0 0.7 0.5
-    size 20
-    secondarySize 25
+    size 25
+    secondarySize 30
     chance 0.3
 	attenuate 1
 }
@@ -20,8 +20,8 @@ flickerlight ROCKET_X1
 flickerlight ROCKET_X2
 {
     color 0.5 0.3 0.2
-    size 30
-    secondarySize 35
+    size 35
+    secondarySize 40
     chance 0.3
 	attenuate 1
 }
@@ -29,13 +29,13 @@ flickerlight ROCKET_X2
 flickerlight ROCKET_X3
 {
     color 0.3 0.1 0.1
-    size 40
-    secondarySize 45
+    size 45
+    secondarySize 50
     chance 0.3
 	attenuate 1
 }
 
-object DERocket
+object EquestriaRocket
 {
     frame MISLA { light ROCKET    }
 
@@ -49,7 +49,7 @@ pulselight PLASMABALL
 {
     color 0.25 0.25 1.0
     size 20
-	secondarysize 30
+	secondarysize 40
 	interval 0.5
 	attenuate 1
 }
@@ -57,40 +57,40 @@ pulselight PLASMABALL
 flickerlight PLASMA_X1
 {
     color 0.5 0.25 1.0
-    size 20
-    secondarySize 25
+    size 30
+    secondarySize 55
     chance 0.5
 	attenuate 1
 }
 
 flickerlight PLASMA_X2
 {
-    color 0.4 0.4 0.8
-    size 25
-    secondarySize 25
+    color 0.4 0.4 1.0
+    size 35
+    secondarySize 60
     chance 0.5
 	attenuate 1
 }
 
 flickerlight PLASMA_X3
 {
-    color 0.25 0.25 0.5
+    color 0.25 0.25 0.75
     size 15
-    secondarySize 15
+    secondarySize 20
     chance 0.5
 	attenuate 1
 }
 
 flickerlight PLASMA_X4
 {
-    color 0.1 0.1 0.2
+    color 0.1 0.1 0.25
     size 5
     secondarySize 10
     chance 0.5
 	attenuate 1
 }
 
-object DEPlasmaBall
+object EquestriaPlasmaBall
 {
     frame PLSSA { light PLASMABALL }
     frame PLSSB { light PLASMABALL }
@@ -102,114 +102,13 @@ object DEPlasmaBall
     frame PLSEE { light PLASMA_X4 }
 }
 
-// Beta Plasma 1
-pointlight PLASMABALL1
-{
-    color 0.1 1.0 0.0
-    size 20
-	attenuate 1
-}
-
-flickerlight PLASMA1_X1
-{
-    color 0.2 1.0 0.2
-    size 20
-    secondarySize 108
-    chance 0.4
-	attenuate 1
-}
-
-flickerlight PLASMA1_X2
-{
-    color 0.2 0.8 0.2
-    size 30
-    secondarySize 132
-    chance 0.4
-	attenuate 1
-}
-
-flickerlight PLASMA1_X3
-{
-    color 0.1 0.5 0.1
-    size 20
-    secondarySize 108
-    chance 0.4
-	attenuate 1
-}
-
-flickerlight PLASMA1_X4
-{
-    color 0.0 0.2 0.0
-    size 10
-    secondarySize 24
-    chance 0.4
-	attenuate 1
-}
-
-object PlasmaBall1
-{
-    frame PLS1A { light PLASMABALL1 }
-    frame PLS1B { light PLASMABALL1 }
-
-    frame PLS1C { light PLASMA1_X1 }
-    frame PLS1D { light PLASMA1_X2 }
-    frame PLS1E { light PLASMA1_X2 }
-    frame PLS1F { light PLASMA1_X3 }
-    frame PLS1G { light PLASMA1_X4 }
-}
-
-// Beta Plasma 2
-pointlight PLASMABALL2
-{
-    color 1.0 0.1 0.0
-    size 20
-	attenuate 1
-}
-
-flickerlight PLASMA2_X1
-{
-    color 0.9 0.2 0.2
-    size 30
-    secondarySize 35
-    chance 0.4
-	attenuate 1
-}
-
-flickerlight PLASMA2_X2
-{
-    color 0.6 0.2 0.2
-    size 40
-    secondarySize 45
-    chance 0.4
-	attenuate 1
-}
-
-flickerlight PLASMA2_X3
-{
-    color 0.2 0.0 0.0
-    size 10
-    secondarySize 15
-    chance 0.4
-	attenuate 1
-}
-
-object PlasmaBall2
-{
-    frame PLS2A { light PLASMABALL2 }
-    frame PLS2B { light PLASMABALL2 }
-
-    frame PLS2C { light PLASMA2_X1 }
-    frame PLS2D { light PLASMA2_X2 }
-    frame PLS2E { light PLASMA2_X3 }
-}
-
 // BFG
 pulselight BFGBALL
 {
     color 0.2 1.0 0.2
     size 100
-	secondarysize 120
-	interval 0.25
+	secondarysize 150
+	interval 0.1
 	attenuate 1
 }
 
@@ -225,8 +124,8 @@ flickerlight BFGBALL_X1
 flickerlight BFGBALL_X2
 {
     color 0.3 1.0 0.3
-    size 156
-    secondarySize 168
+    size 160
+    secondarySize 170
     chance 0.5
 	attenuate 1
 }
@@ -235,7 +134,7 @@ flickerlight BFGBALL_X3
 {
     color 0.4 1.0 0.4
     size 180
-    secondarySize 192
+    secondarySize 200
     chance 0.5
 	attenuate 1
 }
@@ -243,8 +142,8 @@ flickerlight BFGBALL_X3
 flickerlight BFGBALL_X4
 {
     color 0.3 0.7 0.3
-    size 84
-    secondarySize 96
+    size 85
+    secondarySize 100
     chance 0.5
 	attenuate 1
 }
@@ -252,8 +151,8 @@ flickerlight BFGBALL_X4
 flickerlight BFGBALL_X5
 {
     color 0.1 0.3 0.1
-    size 72
-    secondarySize 84
+    size 70
+    secondarySize 80
     chance 0.5
 	attenuate 1
 }
@@ -264,23 +163,6 @@ object DEBFGBall
     frame BFS1B { light BFGBALL }
 	frame BFS1C { light BFGBALL }
 	frame BFS1D { light BFGBALL }
-	frame BFS1E { light BFGBALL }
-	frame BFS1F { light BFGBALL }
-	frame BFS1G { light BFGBALL }
-	frame BFS1H { light BFGBALL }
-	frame BFS1J { light BFGBALL }
-	frame BFS1K { light BFGBALL }
-	frame BFS1L { light BFGBALL }
-	frame BFS1M { light BFGBALL }
-	frame BFS1N { light BFGBALL }
-	frame BFS1O { light BFGBALL }
-	frame BFS1P { light BFGBALL }
-	frame BFS1Q { light BFGBALL }
-	frame BFS1R { light BFGBALL }
-	frame BFS1S { light BFGBALL }
-	frame BFS1T { light BFGBALL }
-	frame BFS1U { light BFGBALL }
-	frame BFS1V { light BFGBALL }
 
     frame BFE1A { light BFGBALL_X1 }
     frame BFE1B { light BFGBALL_X1 }
@@ -294,7 +176,6 @@ object DEBFGBall
 	frame BFE1J { light BFGBALL_X4 }
 	frame BFE1K { light BFGBALL_X5 }
 }
-
 
 object BFGExtra
 {

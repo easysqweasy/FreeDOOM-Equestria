@@ -1,52 +1,7 @@
-//slime (nukage) splash actors
-//without these, they're hard to see against the nukage flat if used in gzDoom with brightmap support
-/*BrightMap Sprite SLIMA0
+object EquestriaDoomPlayer
 {
-Map BMSLIMA0
-DisableFullBright
+    frame PLAYF { light ZOMBIEATK }
 }
-
-BrightMap Sprite SLIMB0
-{
-Map BMSLIMB0
-DisableFullBright
-}
-
-BrightMap Sprite SLIMC0
-{
-Map BMSLIMC0
-DisableFullBright
-}
-
-BrightMap Sprite SLIMD0
-{
-Map BMSLIMD0
-DisableFullBright
-}
-
-BrightMap Sprite SLIME0
-{
-Map BMSLIME0
-DisableFullBright
-}
-
-BrightMap Sprite SLIMF0
-{
-Map BMSLIMF0
-DisableFullBright
-}
-
-BrightMap Sprite SLIMG0
-{
-Map BMSLIMG0
-DisableFullBright
-}
-
-BrightMap Sprite SLIMH0
-{
-Map BMSLIMH0
-DisableFullBright
-}*/
 
 Glow
 {
@@ -69,13 +24,6 @@ Glow
 		nukage3
 		nukage4
 	}
-	Walls
-	{
-		SFALL1
-		SFALL2
-		SFALL3
-		SFALL4
-	}
 	//Texture "nukage1", green, 10, fullbright
 }
 
@@ -89,6 +37,9 @@ Glow
 		SLIME12
 	}
 	Texture "SLIME09", red, 5, fullbright
+	Texture "SLIME10", red, 5, fullbright
+	Texture "SLIME11", red, 5, fullbright
+	Texture "SLIME12", red, 5, fullbright
 }
 
 Glow
@@ -102,24 +53,10 @@ Glow
 		RROCK08
 	}
 	Texture "RROCK04", red, 5, fullbright
-}
-
-Glow
-{
-	Walls
-	{
-		CRACKLE2
-	}
-	Texture "CRACKLE2", orange, 15
-}
-
-Glow
-{
-	Walls
-	{
-		CRACKLE3
-	}
-	Texture "CRACKLE3", Yellow, 15
+	Texture "RROCK05", red, 5, fullbright
+	Texture "RROCK06", red, 5, fullbright
+	Texture "RROCK07", red, 5, fullbright
+	Texture "RROCK08", red, 5, fullbright
 }
 
 Glow
@@ -132,7 +69,7 @@ Glow
 		NUKWALK4
 	}
 	Texture "NUKWALK1", Green, 5, fullbright
-	Texture "NUKWALK2", Green, 5, fullbright
-	Texture "NUKWALK3", Green, 5, fullbright
-	Texture "NUKWALK4", Green, 5, fullbright
+	Texture "NUKWALK2", Green, 4, fullbright
+	Texture "NUKWALK3", Green, 3, fullbright
+	Texture "NUKWALK4", Green, 4, fullbright
 }

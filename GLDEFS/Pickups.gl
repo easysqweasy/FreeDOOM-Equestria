@@ -99,10 +99,10 @@ object EquestriaBlurSphere
 // Health Potion
 pulselight HEALTHPOTION
 {
-    color 0.0 0.0 0.3
-    size 16
-    secondarySize 20
-    interval 2.0
+    color 0.0 0.0 0.5
+    size 10
+    secondarySize 25
+    interval 1.0
 	attenuate 1
     offset 0 10 0
 }
@@ -130,22 +130,43 @@ object ArmorBonus
 }
 
 // Blue Keys
+
+pulselight BLUECARD
+{
+    color 0.0 0.0 0.5
+    size 10
+    secondarySize 20
+    interval 2.0
+	attenuate 1
+    offset 0 10 0
+}
+
 object BlueCard
 {
-    frame BKEY { light HEALTHPOTION }
+    frame BKEY { light BLUECARD }
+}
+
+pulselight BLUESKULL
+{
+    color 0.0 0.0 1.0
+    size 20
+    secondarySize 40
+    interval 1.0
+	attenuate 1
+    offset 0 10 0
 }
 
 object BlueSkull
 {
-    frame BSKU { light HEALTHPOTION }
+    frame BSKU { light BLUESKULL }
 }
 
 // Yellow Keys
-pulselight YELLOWKEY
+pulselight YELLOWCARD
 {
-    color 0.6 0.6 0.0
-    size 24
-    secondarySize 27
+    color 0.5 0.5 0.0
+    size 10
+    secondarySize 20
     interval 2.0
 	attenuate 1
     offset 0 10 0
@@ -153,20 +174,30 @@ pulselight YELLOWKEY
 
 object YellowCard
 {
-    frame YKEY { light YELLOWKEY }
+    frame YKEY { light YELLOWCARD }
+}
+
+pulselight YELLOWSKULL
+{
+    color 1.0 1.0 0.0
+    size 20
+    secondarySize 40
+    interval 1.0
+	attenuate 1
+    offset 0 10 0
 }
 
 object YellowSkull
 {
-    frame YSKU { light YELLOWKEY }
+    frame YSKU { light YELLOWSKULL }
 }
 
 // Red Keys
-pulselight REDKEY
+pulselight REDCARD
 {
-    color 0.6 0.0 0.0
-    size 24
-    secondarySize 27
+    color 0.5 0.0 0.0
+    size 10
+    secondarySize 20
     interval 2.0
 	attenuate 1
     offset 0 10 0
@@ -174,12 +205,22 @@ pulselight REDKEY
 
 object RedCard
 {
-    frame RKEY { light REDKEY }
+    frame RKEY { light REDCARD }
+}
+
+pulselight REDSKULL
+{
+    color 1.0 0.0 0.0
+    size 20
+    secondarySize 40
+    interval 1.0
+	attenuate 1
+    offset 0 10 0
 }
 
 object RedSkull
 {
-    frame RSKU { light REDKEY }
+    frame RSKU { light REDSKULL }
 }
 
 // Green armour
