@@ -13,17 +13,17 @@ ACTOR EquestriaExploBarrel : ExplosiveBarrel replaces ExplosiveBarrel
   States
   {
   Pain:
-	BAR1 "#" 1 A_SpawnItem("DECoreSplashSmoke", 0, 40)
+	BAR1 "#" 1 A_SpawnItem("SplashSmoke", 0, 40)
   Spawn:
     BAR1 AB 8
     Loop
   Death:
 	BEXP A 5 Bright
 	{
-		A_CustomMissile(DERocketSmoke, random(16, 32), 0, random (0, 360), 2, random (0, 180));
-		A_CustomMissile(DERocketSmoke, random(16, 32), 0, random (0, 360), 2, random (0, 180));
-		A_CustomMissile(DERocketSmoke, random(16, 32), 0, random (0, 360), 2, random (0, 180));
-		A_CustomMissile(DERocketSmoke, random(16, 32), 0, random (0, 360), 2, random (0, 180));
+		A_CustomMissile(RocketSmoke, random(16, 32), 0, random (0, 360), 2, random (0, 180));
+		A_CustomMissile(RocketSmoke, random(16, 32), 0, random (0, 360), 2, random (0, 180));
+		A_CustomMissile(RocketSmoke, random(16, 32), 0, random (0, 360), 2, random (0, 180));
+		A_CustomMissile(RocketSmoke, random(16, 32), 0, random (0, 360), 2, random (0, 180));
 	}
 	BEXP BBBBB 1 Bright A_SetScale((scalex + 0.05), 1.0, 0, true)
 	BEXP CCCCC 1 Bright A_SetScale((scalex + 0.1), 1.0, 0, true)
@@ -34,16 +34,16 @@ ACTOR EquestriaExploBarrel : ExplosiveBarrel replaces ExplosiveBarrel
 		A_SetScale(1.5, 1.5);
 		A_QuakeEx(3, 3, 3, 4, 0, 300, "", 0,0,0,0, 1);
 		
-		A_CustomMissile(DERocketSmoke, random(-32, 32), 0, random (0, 360), 2, random (0, 360));
-		A_CustomMissile(DERocketSmoke, random(-32, 32), 0, random (0, 360), 2, random (0, 360));
-		A_CustomMissile(DERocketSmoke, random(-32, 32), 0, random (0, 360), 2, random (0, 360));
-		A_CustomMissile(DERocketSmoke, random(-32, 32), 0, random (0, 360), 2, random (0, 360));
-		A_CustomMissile(DERocketSmoke, random(-32, 32), 0, random (0, 360), 2, random (0, 360));
-		A_CustomMissile(DERocketSmoke, random(-32, 32), 0, random (0, 360), 2, random (0, 360));
-		A_CustomMissile(DERocketSmoke, random(-32, 32), 0, random (0, 360), 2, random (0, 360));
-		A_CustomMissile(DERocketSmoke, random(-32, 32), 0, random (0, 360), 2, random (0, 360));
-		A_CustomMissile(DERocketSmoke, random(-32, 32), 0, random (0, 360), 2, random (0, 360));
-		A_CustomMissile(DERocketSmoke, random(-32, 32), 0, random (0, 360), 2, random (0, 360));
+		A_CustomMissile(RocketSmoke, random(-32, 32), 0, random (0, 360), 2, random (0, 360));
+		A_CustomMissile(RocketSmoke, random(-32, 32), 0, random (0, 360), 2, random (0, 360));
+		A_CustomMissile(RocketSmoke, random(-32, 32), 0, random (0, 360), 2, random (0, 360));
+		A_CustomMissile(RocketSmoke, random(-32, 32), 0, random (0, 360), 2, random (0, 360));
+		A_CustomMissile(RocketSmoke, random(-32, 32), 0, random (0, 360), 2, random (0, 360));
+		A_CustomMissile(RocketSmoke, random(-32, 32), 0, random (0, 360), 2, random (0, 360));
+		A_CustomMissile(RocketSmoke, random(-32, 32), 0, random (0, 360), 2, random (0, 360));
+		A_CustomMissile(RocketSmoke, random(-32, 32), 0, random (0, 360), 2, random (0, 360));
+		A_CustomMissile(RocketSmoke, random(-32, 32), 0, random (0, 360), 2, random (0, 360));
+		A_CustomMissile(RocketSmoke, random(-32, 32), 0, random (0, 360), 2, random (0, 360));
 		
 		A_CustomMissile(BarrelDebris, random(8, 16), 0, random (0, 360), 2, random (10, 90));
 		A_CustomMissile(BarrelDebris, random(8, 16), 0, random (0, 360), 2, random (10, 90));
@@ -68,10 +68,10 @@ ACTOR EquestriaExploBarrel : ExplosiveBarrel replaces ExplosiveBarrel
   XDeath:
 	BEXP A 1 Bright
 	{
-		A_CustomMissile(DERocketSmoke, random(16, 32), 0, random (0, 360), 2, random (0, 180));
-		A_CustomMissile(DERocketSmoke, random(16, 32), 0, random (0, 360), 2, random (0, 180));
-		A_CustomMissile(DERocketSmoke, random(16, 32), 0, random (0, 360), 2, random (0, 180));
-		A_CustomMissile(DERocketSmoke, random(16, 32), 0, random (0, 360), 2, random (0, 180));
+		A_CustomMissile(RocketSmoke, random(16, 32), 0, random (0, 360), 2, random (0, 180));
+		A_CustomMissile(RocketSmoke, random(16, 32), 0, random (0, 360), 2, random (0, 180));
+		A_CustomMissile(RocketSmoke, random(16, 32), 0, random (0, 360), 2, random (0, 180));
+		A_CustomMissile(RocketSmoke, random(16, 32), 0, random (0, 360), 2, random (0, 180));
 	}
 	BEXP BBB 1 Bright A_SetScale((scalex + 0.20), 1.0, 0, true)
 	BEXP C 4 Bright
@@ -82,16 +82,16 @@ ACTOR EquestriaExploBarrel : ExplosiveBarrel replaces ExplosiveBarrel
 		A_SetScale(1.75, 1.75);
 		A_QuakeEx(3, 3, 3, 4, 0, 300, "", 0,0,0,0, 1);
 		
-		A_CustomMissile(DERocketSmoke, random(-32, 32), 0, random (0, 360), 2, random (0, 360));
-		A_CustomMissile(DERocketSmoke, random(-32, 32), 0, random (0, 360), 2, random (0, 360));
-		A_CustomMissile(DERocketSmoke, random(-32, 32), 0, random (0, 360), 2, random (0, 360));
-		A_CustomMissile(DERocketSmoke, random(-32, 32), 0, random (0, 360), 2, random (0, 360));
-		A_CustomMissile(DERocketSmoke, random(-32, 32), 0, random (0, 360), 2, random (0, 360));
-		A_CustomMissile(DERocketSmoke, random(-32, 32), 0, random (0, 360), 2, random (0, 360));
-		A_CustomMissile(DERocketSmoke, random(-32, 32), 0, random (0, 360), 2, random (0, 360));
-		A_CustomMissile(DERocketSmoke, random(-32, 32), 0, random (0, 360), 2, random (0, 360));
-		A_CustomMissile(DERocketSmoke, random(-32, 32), 0, random (0, 360), 2, random (0, 360));
-		A_CustomMissile(DERocketSmoke, random(-32, 32), 0, random (0, 360), 2, random (0, 360));
+		A_CustomMissile(RocketSmoke, random(-32, 32), 0, random (0, 360), 2, random (0, 360));
+		A_CustomMissile(RocketSmoke, random(-32, 32), 0, random (0, 360), 2, random (0, 360));
+		A_CustomMissile(RocketSmoke, random(-32, 32), 0, random (0, 360), 2, random (0, 360));
+		A_CustomMissile(RocketSmoke, random(-32, 32), 0, random (0, 360), 2, random (0, 360));
+		A_CustomMissile(RocketSmoke, random(-32, 32), 0, random (0, 360), 2, random (0, 360));
+		A_CustomMissile(RocketSmoke, random(-32, 32), 0, random (0, 360), 2, random (0, 360));
+		A_CustomMissile(RocketSmoke, random(-32, 32), 0, random (0, 360), 2, random (0, 360));
+		A_CustomMissile(RocketSmoke, random(-32, 32), 0, random (0, 360), 2, random (0, 360));
+		A_CustomMissile(RocketSmoke, random(-32, 32), 0, random (0, 360), 2, random (0, 360));
+		A_CustomMissile(RocketSmoke, random(-32, 32), 0, random (0, 360), 2, random (0, 360));
 		
 		A_CustomMissile(BarrelDebris, random(8, 16), 0, random (0, 360), 2, random (10, 90));
 		A_CustomMissile(BarrelDebris, random(8, 16), 0, random (0, 360), 2, random (10, 90));
@@ -117,10 +117,10 @@ ACTOR EquestriaExploBarrel : ExplosiveBarrel replaces ExplosiveBarrel
 	XDeath.BarrelExp:
 		BEXP A 5 Bright
 		{
-			A_CustomMissile(DERocketSmoke, random(16, 32), 0, random (0, 360), 2, random (0, 180));
-			A_CustomMissile(DERocketSmoke, random(16, 32), 0, random (0, 360), 2, random (0, 180));
-			A_CustomMissile(DERocketSmoke, random(16, 32), 0, random (0, 360), 2, random (0, 180));
-			A_CustomMissile(DERocketSmoke, random(16, 32), 0, random (0, 360), 2, random (0, 180));
+			A_CustomMissile(RocketSmoke, random(16, 32), 0, random (0, 360), 2, random (0, 180));
+			A_CustomMissile(RocketSmoke, random(16, 32), 0, random (0, 360), 2, random (0, 180));
+			A_CustomMissile(RocketSmoke, random(16, 32), 0, random (0, 360), 2, random (0, 180));
+			A_CustomMissile(RocketSmoke, random(16, 32), 0, random (0, 360), 2, random (0, 180));
 		}
 		BEXP BBBBB 1 Bright A_SetScale((scalex + 0.20), 1.0, 0, true)
 		BEXP C 5 Bright
@@ -136,16 +136,16 @@ ACTOR EquestriaExploBarrel : ExplosiveBarrel replaces ExplosiveBarrel
 			A_CustomMissile(BarrelDebris, 32, 0, random (0, 360), 2, random (10, 90));
 			A_CustomMissile(BarrelDebris, 32, 0, random (0, 360), 2, random (10, 90));
 			
-			A_CustomMissile(DERocketSmoke, random(-32, 32), 0, random (0, 360), 2, random (0, 360));
-			A_CustomMissile(DERocketSmoke, random(-32, 32), 0, random (0, 360), 2, random (0, 360));
-			A_CustomMissile(DERocketSmoke, random(-32, 32), 0, random (0, 360), 2, random (0, 360));
-			A_CustomMissile(DERocketSmoke, random(-32, 32), 0, random (0, 360), 2, random (0, 360));
-			A_CustomMissile(DERocketSmoke, random(-32, 32), 0, random (0, 360), 2, random (0, 360));
-			A_CustomMissile(DERocketSmoke, random(-32, 32), 0, random (0, 360), 2, random (0, 360));
-			A_CustomMissile(DERocketSmoke, random(-32, 32), 0, random (0, 360), 2, random (0, 360));
-			A_CustomMissile(DERocketSmoke, random(-32, 32), 0, random (0, 360), 2, random (0, 360));
-			A_CustomMissile(DERocketSmoke, random(-32, 32), 0, random (0, 360), 2, random (0, 360));
-			A_CustomMissile(DERocketSmoke, random(-32, 32), 0, random (0, 360), 2, random (0, 360));
+			A_CustomMissile(RocketSmoke, random(-32, 32), 0, random (0, 360), 2, random (0, 360));
+			A_CustomMissile(RocketSmoke, random(-32, 32), 0, random (0, 360), 2, random (0, 360));
+			A_CustomMissile(RocketSmoke, random(-32, 32), 0, random (0, 360), 2, random (0, 360));
+			A_CustomMissile(RocketSmoke, random(-32, 32), 0, random (0, 360), 2, random (0, 360));
+			A_CustomMissile(RocketSmoke, random(-32, 32), 0, random (0, 360), 2, random (0, 360));
+			A_CustomMissile(RocketSmoke, random(-32, 32), 0, random (0, 360), 2, random (0, 360));
+			A_CustomMissile(RocketSmoke, random(-32, 32), 0, random (0, 360), 2, random (0, 360));
+			A_CustomMissile(RocketSmoke, random(-32, 32), 0, random (0, 360), 2, random (0, 360));
+			A_CustomMissile(RocketSmoke, random(-32, 32), 0, random (0, 360), 2, random (0, 360));
+			A_CustomMissile(RocketSmoke, random(-32, 32), 0, random (0, 360), 2, random (0, 360));
 			
 			A_CustomMissile(BarrelTiny, 32, 0, random (0, 360), 2, random (10, 90));
 			A_CustomMissile(BarrelTiny, 32, 0, random (0, 360), 2, random (10, 90));
@@ -233,7 +233,7 @@ actor BarrelDebris : DebrisGeneral
 		"####" "#" 350
 		"####" "#" 1 A_FadeOut(0.1)
 		Wait
-  }
+	}
 }
 
 actor BarrelTiny : BarrelDebris
@@ -253,5 +253,5 @@ actor BarrelTiny : BarrelDebris
 	Roll:
 		"####" "#" 1 A_SetRoll((roll + 50), SPF_INTERPOLATE)
 		Loop
-  }
+	}
 }
