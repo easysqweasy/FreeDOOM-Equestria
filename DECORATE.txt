@@ -22,6 +22,7 @@ Actor DebrisGeneral
 #include "DecorateScript/TitleMap.dec"
 #include "DecorateScript/Cores/WeaponCore.dec"
 #include "DecorateScript/Cores/MonsterCore.dec"
+//#include "DecorateScript/Shrapnel.dec"
 
 ////Effects, Particles, Debris
 
@@ -51,6 +52,7 @@ Actor DebrisGeneral
 #include "DecorateScript/Monsters/Canines.dec"
 #include "DecorateScript/Monsters/ScriptedMarines.dec"
 #include "DecorateScript/Monsters/SpiderMastermind.dec"
+#include "DecorateScript/Monsters/WolfensteinActors.dec"
 
 ////Items/PowerUps
 
@@ -63,7 +65,7 @@ Actor DebrisGeneral
 #Include "DecorateScript/Weapons/Fists.dec"
 #Include "DecorateScript/Weapons/Pistol.dec"
 #Include "DecorateScript/Weapons/Shotgun.dec"
-#Include "DecorateScript/Weapons/Repeater.dec"
+//#Include "DecorateScript/Weapons/Repeater.dec" Dont Use
 #Include "DecorateScript/Weapons/SuperShotgun.dec"
 #Include "DecorateScript/Weapons/Chaingun.dec"
 #Include "DecorateScript/Weapons/PlasmaGun.dec"
