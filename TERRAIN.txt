@@ -25,7 +25,7 @@ splash Lava
 	smallsound		world/lavasizzlesmall
 
 	baseclass		DELavaBase
-	chunkclass		DECoreSplashSmoke
+	chunkclass		SplashSmoke
 	chunkxvelshift	-1
 	chunkyvelshift	-1
 	chunkzvelshift	7
@@ -38,12 +38,12 @@ splash Lava
 
 splash LavaSmoke
 {
-	smallclass		DECoreSplashSmoke
+	smallclass		SplashSmoke
 	smallclip		12
 	smallsound		world/lavsiz2
 
-	baseclass		DECoreSplashSmoke
-	chunkclass		DECoreSplashSmoke
+	baseclass		SplashSmoke
+	chunkclass		SplashSmoke
 	chunkxvelshift	-1
 	chunkyvelshift	-1
 	chunkzvelshift	7
@@ -61,7 +61,7 @@ splash Nuke
 	smallsound		world/lavasizzlesmall
 
 	baseclass		DENukageBase
-	chunkclass		DECoreSplashSmoke
+	chunkclass		SplashSmoke
 	chunkxvelshift	-1
 	chunkyvelshift	-1
 	chunkzvelshift	7
@@ -147,7 +147,7 @@ terrain Lava
 //just smoke
 terrain LavaSmoke
 {
-	splash			DECoreSplashSmoke
+	splash			SplashSmoke
 	footclip		0
 	liquid
 }
