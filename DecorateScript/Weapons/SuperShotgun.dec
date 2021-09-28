@@ -45,15 +45,31 @@ actor EquestriaSuperShotgun : DoomEquestriaWeapon replaces SuperShotgun
 		
 		SHT2 A 4
 		{
-			A_WeaponOffset(0, 42, WOF_KEEPX | WOF_INTERPOLATE);
 			A_FireBullets (11.2, 7.1, 20, 5, "ShotgunPuff");
+			A_WeaponOffset(0, 45, WOF_KEEPX | WOF_INTERPOLATE);
 			A_PlaySound ("weapons/sshotf", CHAN_WEAPON);
 			A_GunFlash;
 		}	
 		SHT2 A 3 A_WeaponOffset(0, 32, WOF_KEEPX | WOF_INTERPOLATE)
 		
 		TNT1 A 0 A_JumpIf(callACS("BobToggle")==1,"Reloading.Bob")
-
+		Goto Reloading
+		
+	Fire.CamRecoil:
+		SHT2 A 4
+		{
+			A_FireBullets (11.2, 7.1, 20, 5, "ShotgunPuff");
+			A_WeaponOffset(0, 45, WOF_KEEPX | WOF_INTERPOLATE);
+			A_PlaySound ("weapons/sshotf", CHAN_WEAPON);
+			A_GunFlash;
+			A_QuakeEx(4, 0, 2, 4, 0, 1, "", QF_SCALEDOWN | QF_RELATIVE);
+			A_Overlay(2, "Recoil");
+		}
+		SHT2 A 3 A_WeaponOffset(0, 32, WOF_KEEPX | WOF_INTERPOLATE)
+		
+		TNT1 A 0 A_JumpIf(callACS("BobToggle")==1,	"Reloading.BobRecoil")
+		Goto Reloading
+	
 	Reloading:
 		SHT2 BCDD 1
 		SHT2 D 1
@@ -71,26 +87,6 @@ actor EquestriaSuperShotgun : DoomEquestriaWeapon replaces SuperShotgun
 		SHT2 B 7
 		SHT2 C 3
 		Goto Deselect
-	
-	Fire.CamRecoil:
-		SHT2 A 4
-		{
-			A_WeaponOffset(0, 42, WOF_KEEPX | WOF_INTERPOLATE);
-			A_FireBullets (11.2, 7.1, 20, 5, "ShotgunPuff");
-			A_PlaySound ("weapons/sshotf", CHAN_WEAPON);
-			A_GunFlash;
-			A_QuakeEx(1, 0, 1, 4, 0, 1, "", QF_SCALEDOWN | QF_RELATIVE);
-			A_SetPitch(pitch-2);
-		}
-		SHT2 A 3 
-		{
-			A_WeaponOffset(0, 32, WOF_KEEPX | WOF_INTERPOLATE);
-			A_SetPitch(pitch+1, SPF_INTERPOLATE);
-		}
-		SHT2 DDDD 0 A_SetPitch(pitch+0.25, SPF_INTERPOLATE)
-		
-		TNT1 A 0 A_JumpIf(callACS("BobToggle")==1,	"Reloading.BobRecoil")
-		Goto Reloading
 		
 	Reloading.Bob: //Pumb.Bob
 	Reloading.BobRecoil:
@@ -130,8 +126,26 @@ actor EquestriaSuperShotgun : DoomEquestriaWeapon replaces SuperShotgun
 		SHT2 R 3 Bright
 		SHT2 Q 2 Bright
 		Goto LightDone
+	
+	Recoil:
+		TNT1 A 0 A_ZoomFactor(0.98, ZOOM_NOSCALETURNING)
+		TNT1 A 1 A_SetPitch(pitch-3, SPF_INTERPOLATE)
+		TNT1 A 1 A_SetPitch(pitch+0.25, SPF_INTERPOLATE)
+		TNT1 A 1 A_SetPitch(pitch+0.25, SPF_INTERPOLATE)
+		TNT1 A 1 A_ZoomFactor(1, ZOOM_NOSCALETURNING)
+		TNT1 A 1 A_SetPitch(pitch+0.25, SPF_INTERPOLATE)
+		TNT1 A 1 A_SetPitch(pitch+0.25, SPF_INTERPOLATE)
+		TNT1 A 1 A_SetPitch(pitch+0.25, SPF_INTERPOLATE)
+		TNT1 A 1 A_SetPitch(pitch+0.25, SPF_INTERPOLATE)
+		TNT1 A 1 A_SetPitch(pitch+0.25, SPF_INTERPOLATE)
+		TNT1 A 1 A_SetPitch(pitch+0.25, SPF_INTERPOLATE)
+		TNT1 A 1 A_SetPitch(pitch+0.25, SPF_INTERPOLATE)
+		TNT1 A 1 A_SetPitch(pitch+0.25, SPF_INTERPOLATE)
+		TNT1 A 1 A_SetPitch(pitch+0.25, SPF_INTERPOLATE)
+		TNT1 A 1 A_SetPitch(pitch+0.25, SPF_INTERPOLATE)
+		Stop
 		
-	Aside:
+	Overlay.Aside:
 		TNT1 A 0 A_OverlayFlags(3, PSPF_ADDBOB, true)
 		TNT1 A 0 A_OverlayPivotAlign(3, PSPA_RIGHT, PSPA_BOTTOM)
 		
@@ -154,7 +168,7 @@ actor EquestriaSuperShotgun : DoomEquestriaWeapon replaces SuperShotgun
 		SHT2 A 1
 		Stop
 	
-	Air.Aside:
+	Overlay.AirAside:
 		TNT1 A 0 A_OverlayFlags(3, PSPF_ADDBOB, true)
 		TNT1 A 0 A_OverlayPivotAlign(3, PSPA_RIGHT, PSPA_BOTTOM)
 		
