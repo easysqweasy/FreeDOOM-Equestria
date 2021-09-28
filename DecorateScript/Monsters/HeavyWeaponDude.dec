@@ -8,7 +8,7 @@ ACTOR EquestriaChaingunGuy : ChaingunGuy replaces ChaingunGuy
 	PainChance 170
 	
 	+CASTSPRITESHADOW
-	+DONTHARMSPECIES
+	+NOINFIGHTSPECIES
 	
 	AttackSound "weapons/chngun"
 	Dropitem "EquestriaChaingun"
