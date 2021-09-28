@@ -57,6 +57,8 @@ actor EquestriaChaingun : DoomEquestriaWeapon replaces Chaingun
 		}
 
 		CHGG A 0 A_ReFire
+		
+		CHGG B 0 A_WeaponOffset(0, 32, WOF_KEEPX | WOF_INTERPOLATE)
 		Goto Ready
 		
 	Fire.CamRecoil:
@@ -80,15 +82,17 @@ actor EquestriaChaingun : DoomEquestriaWeapon replaces Chaingun
 		}
 		
 		CHGG B 0 A_ReFire
+		
+		CHGG B 0 A_WeaponOffset(0, 32, WOF_KEEPX | WOF_INTERPOLATE)
 		Goto Ready
 	
 	Flash:
-		CHGF A 2 Bright A_WeaponOffset(0, 38, WOF_KEEPX | WOF_INTERPOLATE)
+		CHGF A 2 Bright A_WeaponOffset(0, 30, WOF_KEEPX | WOF_INTERPOLATE)
 		Goto LightDone
 	
 	Flash2:
 		TNT1 A 2 Bright 
-		CHGF B 2 Bright A_WeaponOffset(0, 42, WOF_KEEPX | WOF_INTERPOLATE)
+		CHGF B 2 Bright A_WeaponOffset(0, 38, WOF_KEEPX | WOF_INTERPOLATE)
 		Goto LightDone
 	
 	}
