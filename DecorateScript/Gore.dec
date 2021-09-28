@@ -237,11 +237,14 @@ ACTOR EquestriaBlood : Blood replaces Blood
 
 ACTOR BloodTrail : EquestriaBlood
 {
+	RenderStyle Translucent
+	Alpha 0.75
+	
 	Gravity 0.50
 	Scale 0.75
 }
 
-ACTOR SmallBloodTrail : EquestriaBlood
+ACTOR SmallBloodTrail : BloodTrail
 {
 	Gravity 0.35
 	Scale 0.50
