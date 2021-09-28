@@ -17,7 +17,7 @@ actor PlasmaKirin
 	+FLOORCLIP
 	+MISSILEMORE
 	+CASTSPRITESHADOW
-	+DOHARMSPECIES
+	+NOINFIGHTSPECIES
 	
 	SeeSound "female/sight"
 	AttackSound ""
@@ -49,19 +49,19 @@ actor PlasmaKirin
 		TECH F 2 Bright 
 		{
 			A_FaceTarget;
-			A_MissileAttack;
+			A_SpawnProjectile("TechPlasmaBall");
 		}
 		TECH E 1
 		TECH F 2 Bright 
 		{
 			A_FaceTarget;
-			A_MissileAttack;
+			A_SpawnProjectile("TechPlasmaBall");
 		}
 		TECH E 1
 		TECH F 2 Bright 
 		{
 			A_FaceTarget;
-			A_MissileAttack;
+			A_SpawnProjectile("TechPlasmaBall");
 		}
 		TECH E 20
 		TECH E 0 A_Jump(127, "AgainMissile")
@@ -72,19 +72,19 @@ actor PlasmaKirin
 		TECH F 2 Bright 
 		{
 			A_FaceTarget;
-			A_MissileAttack;
+			A_SpawnProjectile("TechPlasmaBall");
 		}
 		TECH E 1
 		TECH F 2 Bright 
 		{
 			A_FaceTarget;
-			A_MissileAttack;
+			A_SpawnProjectile("TechPlasmaBall");
 		}
 		TECH E 1
 		TECH F 2 Bright 
 		{
 			A_FaceTarget;
-			A_MissileAttack;
+			A_SpawnProjectile("TechPlasmaBall");
 		}
 		TECH E 20
 		Goto See
