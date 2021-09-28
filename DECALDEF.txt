@@ -177,13 +177,12 @@ generator EquestriaPistol	ChipDecal
 generator EquestriaChainsaw	ChainsawDecal
 generator EquestriaShotgun	ShellDecal
 generator EquestriaSuperShotgun	ShellDecal
-generator Repeater	ChipDecal
 generator EquestriaChaingun	ChipDecal
 
 ////Projectiles
 
 //generator DEPlasmaBall 			PlasmaScorch
-generator DERocket				Scorch
+generator EquestriaRocket				Scorch
 generator DEBFGBall				BFGLightning
 generator EquestriaImpBall				FireBallScorch
 generator EquestriaBaronBall	BaronScorch
