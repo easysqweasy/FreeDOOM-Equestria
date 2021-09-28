@@ -1,4 +1,4 @@
-ACTOR Repeater : DoomWeapon
+ACTOR Repeater : DoomWeapon //Dont Use
 {
 	Tag "$TAGREPEATER"
 	
