@@ -1,5 +1,9 @@
 [ptb pt br]
 
+WARNING = "ATENÇÃO!";
+NOKIDS = "Isso NÃO é um Mod para CRIANÇAS!";
+MAYCONTAIN = "Contém violência, sangue, e pode conter conteúdo sexual.";
+
 DOOMEQUESTRIAOPTIONS = "Opções do DOOM Equestria";
 EQUESTRIAOPTIONS = "Opções do Mod";
 
