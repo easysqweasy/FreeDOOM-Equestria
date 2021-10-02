@@ -56,8 +56,6 @@ Musics from DOOM 1
 
 Some kick codes are from Brutal Doom, adapted by Ragedox
 
-Parts of MetaDOOM's Gibs code
-
 David G Sprites
 
 NashDecals (Blood decals)
