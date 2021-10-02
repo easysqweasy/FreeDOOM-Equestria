@@ -27,3 +27,16 @@ map S1E2 lookup "NUCLEAR_PLANT"
 	cluster = 1
 	//par = 75
 }
+
+map S1E3 lookup "TOXIN_REFINERY"
+{
+	OutsideFog = 200
+	Music = "Music/Doom1Musics/S1E3"
+	levelnum = 3
+	titlepatch = "WILV01"
+	next = "S1E4"
+	//secretnext = "E1M9"
+	sky1 = "SKY1"
+	cluster = 1
+	//par = 75
+}
