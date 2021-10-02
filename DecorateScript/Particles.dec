@@ -112,16 +112,3 @@ actor AcidPiece2 : Pieces
   Scale 1.5
   Gravity 0.10
 }
-
-actor BulletTrail : DEParticles
-{
-  Renderstyle add
-  Alpha 0.50
-  Speed 90
-  States
-  {
-  Spawn:
-	TRAI A 1 Bright
-	Stop
-  }
-}
