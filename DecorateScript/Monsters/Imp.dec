@@ -73,23 +73,16 @@ actor EquestriaImpBall : DoomImpBall replaces DoomImpBall
 	States
 	{
 	Spawn:
-		BAL1 B 2 Bright 
-		{
-			A_SpawnItemEx("FirePieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1), 0);
-			A_SpawnItemEx("FirePieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1), 0);
-		}
-		BAL1 A 2 Bright
+		BAL1 BB 1 Bright A_SpawnItemEx("FirePieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1), 0)
+		BAL1 A 1 Bright
 		{
 			A_SpawnItemEx("FireBallTrail");
 			A_SpawnItemEx("FirePieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1), 0);
 			A_SpawnItemEx("FirePieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1), 0);
 		}
-		BAL1 B 2 Bright 
-		{
-			A_SpawnItemEx("FirePieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1), 0);
-			A_SpawnItemEx("FirePieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1), 0);
-		}
+		BAL1 BB 1 Bright A_SpawnItemEx("FirePieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1), 0)
 		Loop
+		
 	Death:
 		BAL1 CD 6 Bright
 		BAL1 E 1 Bright A_FadeOut(0.1)

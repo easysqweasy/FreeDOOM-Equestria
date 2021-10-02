@@ -97,55 +97,32 @@ actor EquestriaBaronBall : BaronBall replaces BaronBall
 
 actor KnightBall : EquestriaBaronBall
 {
-  States
-  {
-  Spawn:
-	BBAL A 2 Bright 
+	States
 	{
-		A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1), 0);
-		A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1), 0);
-		A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1), 0);
-		A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1), 0);
-
+	Spawn:
+		BBAL AA 2 Bright A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1), 0)
+		BBAL BB 2 Bright A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1), 0)
+		Loop
+ 
+	Death:
+		BAL7 CD 6 Bright
+		BAL7 E 1 Bright A_FadeOut(0.1)
+		Wait
 	}
-	BBAL B 2 Bright
-	{
-		A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1), 0);
-		A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1), 0);
-		A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1), 0);
-		A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1), 0);
-	}
-	Loop
-  Death:
-	BAL7 CD 6 Bright
-	BAL7 EEEEEEEEEE 1 Bright A_FadeOut(0.1)
-	Stop
-  }
 }
 	
 actor BaronHellBall : EquestriaBaronBall
 {
   States
-  {
-  Spawn:
-	BAL7 A 2 Bright
 	{
-		A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1), 0);
-		A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1), 0);
-		A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1), 0);
-		A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1), 0);
+	Spawn:
+		BAL7 AA 2 Bright A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1), 0)
+		BAL7 BB 2 Bright A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1), 0)
+		Loop
+ 
+	Death:
+		BAL7 CD 6 Bright
+		BAL7 E 1 Bright A_FadeOut(0.1)
+		Wait
 	}
-	BAL7 B 2 Bright
-	{
-		A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1), 0);
-		A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1), 0);
-		A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1), 0);
-		A_SpawnItemEx("AcidPieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1), 0);
-	}
-	Loop
-  Death:
-	BAL7 CD 6 Bright
-	BAL7 EEEEEEEEEE 1 Bright A_FadeOut(0.1)
-	Stop
-  }
 }

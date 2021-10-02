@@ -1,4 +1,4 @@
-Actor Lamp1
+Actor BigLampshade1
 {
 //$NotAngled
 //$Category Light sources
@@ -14,7 +14,7 @@ Actor Lamp1
 	}
 }
 
-Actor Lamp2
+Actor BigLampshade2
 {
 //$NotAngled
 //$Category Light sources
@@ -30,10 +30,11 @@ Actor Lamp2
 	}
 }
 
-Actor Lamp3
+Actor Column2
 {
 //$NotAngled
 //$Category Light sources
+//$Title Floor Lamp 2
 	ProjectilePassHeight -16
 	Radius 11
 	Height 46
@@ -46,10 +47,11 @@ Actor Lamp3
 	}
 }
 
-Actor Lamp4
+Actor BigLamp3
 {
 //$NotAngled
 //$Category Light sources
+//$Title Floor Lamp 3
 	Radius 11
 	Height 76
 	ProjectilePassHeight -16
@@ -62,10 +64,11 @@ Actor Lamp4
 	}
 }
 
-Actor Lamp5
+Actor BigLamp2
 {
 //$NotAngled
 //$Category Light sources
+//$Title Tall Techno floor Lamp 2
 	Radius 11
 	Height 80
 	ProjectilePassHeight -16
