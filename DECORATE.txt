@@ -76,13 +76,13 @@ Actor DebrisGeneral
 
 ////Decorations
 
-#include "DecorateScript/Decorations/Tech.dec"
-#include "DecorateScript/Decorations/Nature.dec"
-#include "DecorateScript/Decorations/Hell.dec"
-#include "DecorateScript/Decorations/Gothic.dec"
-#include "DecorateScript/Decorations/GoreGore.dec"
-#include "DecorateScript/Decorations/Corpses.dec"
-#include "DecorateScript/Decorations/LightSources.dec"
+#include "DecorateScript/Props/Tech.dec"
+#include "DecorateScript/Props/Nature.dec"
+#include "DecorateScript/Props/Hell.dec"
+#include "DecorateScript/Props/Gothic.dec"
+#include "DecorateScript/Props/GoreGore.dec"
+#include "DecorateScript/Props/Corpses.dec"
+#include "DecorateScript/Props/LightSources.dec"
 
 ////Misc
 
