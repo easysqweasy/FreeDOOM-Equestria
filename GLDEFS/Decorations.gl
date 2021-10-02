@@ -19,51 +19,7 @@ object EquestriaExploBarrel
     frame BEXPE { light ROCKET_X3 }
 }
 
-// Floor lamp
-pointlight LAMP
-{
-    color 1.0 1.0 0.8
-    size 84
-    offset 0 44 0
-	attenuate 1
-}
 
-object Column
-{
-    frame COLU { light LAMP }
-}
-
-// Short tech lamp
-pulselight SMALLLAMP
-{
-    color 0.8 0.8 1.0
-    size 84
-    secondarySize 87
-    interval 0.4
-    offset 0 44 0
-	attenuate 1
-}
-
-object TechLamp2
-{
-    frame TLP2 { light SMALLLAMP }
-}
-
-// Tall tech lamp
-pulselight BIGLAMP
-{
-    color 0.8 0.8 1.0
-    size 96
-    secondarySize 99
-    interval 0.4
-    offset 0 72 0
-	attenuate 1
-}
-
-object TechLamp
-{
-    frame TLMP { light BIGLAMP }
-}
 
 // Tall red torch
 flickerlight2 BIGREDTORCH

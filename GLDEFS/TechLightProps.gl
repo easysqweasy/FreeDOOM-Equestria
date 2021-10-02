@@ -1,0 +1,101 @@
+// Floor lamp
+pointlight LAMP
+{
+    color 1.0 1.0 0.8
+    size 84
+    offset 0 44 0
+	attenuate 1
+}
+
+pointlight LAMP2
+{
+    color 0.8 0.8 1.0
+    size 84
+    offset 0 44 0
+	attenuate 1
+}
+
+object Column
+{
+    frame COLU { light LAMP }
+}
+
+object Column2
+{
+    frame LAM4 { light LAMP2 }
+}
+
+
+// Short tech lamp
+pulselight SMALLLAMP
+{
+    color 0.8 0.8 1.0
+    size 84
+    secondarySize 87
+    interval 0.4
+    offset 0 44 0
+	attenuate 1
+}
+
+object TechLamp2
+{
+    frame TLP2 { light SMALLLAMP }
+}
+
+// Tall tech lamp
+pulselight BIGLAMP
+{
+    color 0.8 0.8 1.0
+    size 96
+    secondarySize 99
+    interval 0.4
+    offset 0 72 0
+	attenuate 1
+}
+
+object TechLamp
+{
+    frame TLMP { light BIGLAMP }
+}
+
+object BigLamp2
+{
+    frame LAM6 { light BIGLAMP }
+}
+
+object BigLamp3
+{
+    frame LAM5 { light BIGLAMP }
+}
+
+//Lampshades
+
+pulselight BigYellowLampshade
+{
+    color 1.0 1.0 0.8
+    size 96
+    secondarySize 99
+    interval 0.4
+    offset 0 65 0
+	attenuate 1
+}
+
+pulselight BigLampshade
+{
+    color 0.8 0.8 1.0
+    size 96
+    secondarySize 99
+    interval 0.4
+    offset 0 65 0
+	attenuate 1
+}
+
+object BigLampshade1
+{
+	frame LAM2 { light BigYellowLampshade }
+}
+
+object BigLampshade2
+{
+	frame LAMP { light BigLampshade }
+}
