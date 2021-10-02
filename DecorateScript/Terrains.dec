@@ -53,7 +53,10 @@ ACTOR SplashSmoke
 	Height 4
 	RenderStyle Translucent
 	Alpha 0.7
+	
+	Speed 1.5
 	VSpeed 1.5
+	
 	+NOBLOCKMAP
 	+NoInteraction
 	+NOGRAVITY
