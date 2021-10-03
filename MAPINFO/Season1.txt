@@ -4,39 +4,162 @@ Season 1: Kee-Deep in the Dead
 
 map S1E1 lookup "HANGAR"
 {
-	OutsideFog = 200
-	Music = "Music/Doom1Musics/S1E1"
+	//Author = "The Ragedox"	
+	
 	levelnum = 1
-	titlepatch = "WILV00"
 	next = "S1E2"
 	//secretnext = "E1M9"
+	
+	Music = "Music/Doom1Musics/S1E1"
+	
+	OutsideFog = 200
+	
 	sky1 = "patches/Skys/RSKY4.png"
 	cluster = 1
 	//par = 30
+	
+	compat_invisibility = 1
 }
 
 map S1E2 lookup "NUCLEAR_PLANT"
 {
-	OutsideFog = 200
-	Music = "Music/Doom1Musics/S1E2"
+	//Author = "The Ragedox"	
+	
 	levelnum = 2
-	titlepatch = "WILV01"
 	next = "S1E3"
 	//secretnext = "E1M9"
+	
+	Music = "Music/Doom1Musics/S1E2"
+	
+	OutsideFog = 200
+	
 	sky1 = "SKY1"
 	cluster = 1
-	//par = 75
+	
+	compat_invisibility = 1
 }
 
 map S1E3 lookup "TOXIN_REFINERY"
-{
-	OutsideFog = 200
-	Music = "Music/Doom1Musics/S1E3"
+{	
 	levelnum = 3
-	titlepatch = "WILV01"
+	
 	next = "S1E4"
-	//secretnext = "E1M9"
+	//secretnext = "E1M8"
+	
+	Music = "Music/Doom1Musics/S1E3"
+	
+	OutsideFog = 200
+	
 	sky1 = "SKY1"
 	cluster = 1
-	//par = 75
+	
+	compat_invisibility = 1
+}
+
+map S1E4 lookup "COMMAND_CONTROL"
+{
+	levelnum = 4
+	
+	next = "S1E5"
+	//secretnext = "E1M8"
+	
+	Music = "Music/Doom1Musics/S1E4"
+	
+	OutsideFog = 200
+	
+	sky1 = "SKY1"
+	cluster = 1
+	
+	compat_invisibility = 1
+}
+
+map S1E5 lookup "CENTRAL_PROCECESSING"
+{
+	levelnum = 5
+	
+	next = "S1E6"
+	
+	Music = "Music/Doom1Musics/S1E5"
+	
+	OutsideFog = 200
+	
+	sky1 = "SKY1"
+	cluster = 1
+	
+	compat_invisibility = 1
+}
+
+map S1E6 lookup "COMPUTER_STATION"
+{
+	levelnum = 6
+	
+	next = "S1E7"
+	
+	Music = "Music/Doom1Musics/S1E6"
+	
+	OutsideFog = 200
+	
+	sky1 = "SKY1"
+	cluster = 1
+	
+	compat_invisibility = 1
+}
+
+map S1E7 lookup "PHOBOS_LAB"
+{
+	levelnum = 7
+	
+	next = "S1E8"
+	//secretnext = "E1M8"
+	
+	Music = "Music/Doom1Musics/S1E7"
+	
+	OutsideFog = 200
+	
+	sky1 = "SKY1"
+	cluster = 1
+	
+	compat_invisibility = 1
+}
+
+map S1E8 lookup "PHOBOS_ANOMALY"
+{
+	levelnum = 8
+	
+	Music = "Music/Doom1Musics/S1E8"
+	
+	OutsideFog = 200
+	
+	sky1 = "SKY1"
+	cluster = 1
+	
+	compat_invisibility = 1
+}
+
+map S1E9 lookup "SEWERS"
+{
+	levelnum = 9
+	
+	Music = "Music/Doom1Musics/S1E9"
+	
+	OutsideFog = 200
+	
+	sky1 = "SKY1"
+	cluster = 1
+	
+	compat_invisibility = 1
+}
+
+map S1E10 lookup "MILITARY_BASE"
+{
+	levelnum = 10
+	
+	Music = "Music/Doom1Musics/S1E10"
+	
+	OutsideFog = 200
+	
+	sky1 = "SKY1"
+	cluster = 1
+	
+	compat_invisibility = 1
 }
