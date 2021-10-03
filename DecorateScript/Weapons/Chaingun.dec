@@ -66,7 +66,7 @@ actor EquestriaChaingun : DoomEquestriaWeapon replaces Chaingun
 		{
 			A_FireBullets(5.6, 0, -1, 5, "EquestriaBulletPuff");
 			A_GunFlash("Flash2");
-			A_PlaySound("weapons/chngun", CHAN_WEAPON);
+			A_StartSound("weapons/chngun", CHAN_WEAPON);
 			A_QuakeEx(1, 0, 1, 4, 0, 1, "", QF_RELATIVE | QF_SCALEDOWN | QF_SCALEUP);
 			A_SetPitch(pitch-0.50, SPF_INTERPOLATE);
 		}
@@ -77,7 +77,7 @@ actor EquestriaChaingun : DoomEquestriaWeapon replaces Chaingun
 		{
 			A_FireBullets(5.6, 0, -1, 5, "EquestriaBulletPuff");
 			A_GunFlash;
-			A_PlaySound("weapons/chngun", CHAN_WEAPON);
+			A_StartSound("weapons/chngun", CHAN_WEAPON);
 			A_QuakeEx(1, 0, 1, 4, 0, 1, "", QF_RELATIVE | QF_SCALEDOWN | QF_SCALEUP);
 		}
 		
@@ -87,12 +87,12 @@ actor EquestriaChaingun : DoomEquestriaWeapon replaces Chaingun
 		Goto Ready
 	
 	Flash:
-		CHGF A 2 Bright A_WeaponOffset(frandom(-2, 2), 30, WOF_INTERPOLATE)
+		CHGF A 2 Bright A_WeaponOffset(0, 30, WOF_INTERPOLATE)
 		Goto LightDone
 	
 	Flash2:
 		TNT1 A 2 Bright 
-		CHGF B 2 Bright A_WeaponOffset(frandom(-2, 2), 38, WOF_INTERPOLATE)
+		CHGF B 2 Bright A_WeaponOffset(0, 38, WOF_INTERPOLATE)
 		Goto LightDone
 	
 	}
