@@ -48,7 +48,7 @@ actor EquestriaShotgun : DoomEquestriaWeapon replaces Shotgun
 		
 		SHTG A 4
 		{
-			A_WeaponOffset(0, 42, WOF_KEEPX | WOF_INTERPOLATE);
+			A_WeaponOffset(0, 45, WOF_KEEPX | WOF_INTERPOLATE);
 			A_FireBullets (5.6, 0, 7, 5, "ShotgunPuff");
 			A_PlaySound ("weapons/shotgf", CHAN_WEAPON);
 			A_GunFlash;
@@ -62,7 +62,7 @@ actor EquestriaShotgun : DoomEquestriaWeapon replaces Shotgun
 	Fire.CamRecoil:
 		SHTG A 4
 		{
-			A_WeaponOffset(0, 42, WOF_KEEPX | WOF_INTERPOLATE);
+			A_WeaponOffset(0, 45, WOF_KEEPX | WOF_INTERPOLATE);
 			A_FireBullets (5.6, 0, 7, 5, "ShotgunPuff");
 			A_PlaySound ("weapons/shotgf", CHAN_WEAPON);
 			A_GunFlash;
