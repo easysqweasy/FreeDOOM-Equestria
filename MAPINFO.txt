@@ -1,7 +1,7 @@
 include "MAPINFO/DoomEdNumbers.txt"
 include "MAPINFO/Season1.txt"
 
-map TITLEMAP lookup "TITLEMAP"
+map TITLEMAP ""
 {
 	//Music = "D_DM2TTL"
 }
@@ -62,7 +62,6 @@ skill nightmare
    MustConfirm
    Key = "n"
 }
-
 
 //////
 
@@ -130,3 +129,6 @@ episode DoomTest
 {
 	name = "Test Map"
 }
+
+map DoomTest "Kinsie's Test Map"
+{}
