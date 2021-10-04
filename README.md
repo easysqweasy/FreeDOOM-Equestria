@@ -12,7 +12,7 @@ This is the **development** version, so it may contain bugs and errors;
 Download repository as a ZIP file and drag it over gzdoom.exe/lzdoom.exe.
 
 # This project is **NOT Open Source**!
-If you want to use something, you will have to ask Isaac Pony or Ragedox for permission;
+You can learn from this mod, but if you want to use something, you may not be able to use the content of this project as a basis for your own projects without permission from the authors **(permission is not guaranteed)**, you will have to ask **Isaac Pony and Ragedox** for permission;
 
 **IsaacPony**: https://twitter.com/isaac_pony
 **Ragedox**: https://twitter.com/TheRagedox
@@ -22,14 +22,14 @@ Discord Server: https://discord.gg/xgzkMmayMz
 # Credits
 See "CREDITS.txt" for more detailed credits;
 
-= DOOM 1 and DOOM 2 are from the amazing ID Software =
-= My Little Pony are from Hasbro =
+= The DOOM franchise is owned by ID Sotfware and Bethesda ~~(and Microsoft?)~~ =
+= My Little Pony is owned by Hasbro =
 
 = Main idea by Isaac Pony, Reformulated by Ragedox =
 
 = Project Lead =
-IsaacPony
 Ragedox
+IsaacPony
 
 = Code =
 Ragedox, SuperWillGaming 
