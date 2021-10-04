@@ -2,7 +2,7 @@
 
 WARNING = "WARNING!";
 NOKIDS = "This is NOT a Mod for CHILDREN!";
-MAYCONTAIN = "Contains violence, blood, gore\nand may contain sexual content.";
+MAYCONTAIN = "Contains violence, blood and gore.";
 
 DOOMEQUESTRIAOPTIONS = "DOOM Equestria Options";
 EQUESTRIAOPTIONS = "Mod Options";
