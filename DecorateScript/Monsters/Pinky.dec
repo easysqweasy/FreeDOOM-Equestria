@@ -1,3 +1,14 @@
+Actor Pinky : Demon replaces Demon
+{
+	+CASTSPRITESHADOW
+	States
+	{
+	Spawn:
+		IDLP AB 10 A_Look
+		Loop
+	}
+}
+
 ACTOR EquestriaSpectre : Spectre replaces Spectre
 {
 	+NOSPRITESHADOW
@@ -16,6 +27,8 @@ ACTOR EquestriaSpectre : Spectre replaces Spectre
 		IDLP AB 10 A_Look
 		Loop
 	Death:
+		TNT1 A 0 { bSPRITEFLIP = randompick(0, 1); }
+		
 		SPEC I 8 
 		{
 			A_FadeIn(0.5, FTF_CLAMP);
@@ -39,16 +52,5 @@ ACTOR EquestriaSpectre : Spectre replaces Spectre
 		SPEC M 4 
 		SPEC N -1
 		Stop
-	}
-}
-
-Actor Pinky : Demon replaces Demon
-{
-	+CASTSPRITESHADOW
-	States
-	{
-	Spawn:
-		IDLP AB 10 A_Look
-		Loop
 	}
 }
