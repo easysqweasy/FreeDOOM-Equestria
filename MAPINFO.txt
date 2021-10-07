@@ -1,5 +1,8 @@
+include "MAPINFO/Episodes.txt"
 include "MAPINFO/DoomEdNumbers.txt"
 include "MAPINFO/Season1.txt"
+//include "MAPINFO/Season2.txt"
+//include "MAPINFO/Others.txt"
 
 map TITLEMAP ""
 {
@@ -62,73 +65,3 @@ skill nightmare
    MustConfirm
    Key = "n"
 }
-
-//////
-
-gameinfo 
-{
-	intermissionmusic = "Music/Doom1Musics/D_INTER"   
-}
-
-clearepisodes
-
-episode S1E1
-{
-   picname = "M_EPI1"
-   name = "$TXT_D1E1"
-   key = "k"
-}
-
-episode map01
-{
-	name = "$TXT_D2E1"
-	key = "h"
-	optional
-}
-
-episode level01
-{
-	name = "$TXT_D2E2"
-	key = "n"
-	optional
-}
-
-episode e1m1
-{
-	picname = "M_EPI1"
-	name = "$TXT_D1E1"
-	key = "k"
-	optional
-}
-
-episode e2m1
-{
-	picname = "M_EPI2"
-	name = "$TXT_D1E2"
-	key = "t"
-	optional
-}
-
-episode e3m1
-{
-	picname = "M_EPI3"
-	name = "$TXT_D1E3"
-	key = "i"
-	optional
-}
-
-episode e4m1
-{
-	picname = "M_EPI4"
-	name = "$TXT_D1E4"
-	key = "t"
-	optional
-} 
-
-episode DoomTest
-{
-	name = "Test Map"
-}
-
-map DoomTest "Kinsie's Test Map"
-{}
