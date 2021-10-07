@@ -31,7 +31,7 @@ Actor DebrisGeneral
 
 #include "DecorateScript/Terrains.dec"
 #include "DecorateScript/Particles.dec"
-#include "DecorateScript/Gore.dec"
+#include "DecorateScript/Gibs.dec"
 #include "DecorateScript/Puffs.dec"
 #include "DecorateScript/FloorDecals.dec"
 
