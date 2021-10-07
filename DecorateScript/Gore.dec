@@ -1,4 +1,4 @@
-Actor XDeathGoreSpawn
+Actor XDeathGibber
 {
 	Radius 0
 	Height 0
@@ -23,7 +23,7 @@ Actor XDeathGoreSpawn
 	}
 }
 
-Actor BigGoreSpawn : XDeathGoreSpawn
+Actor BigGibber : XDeathGibber
 {
 	States
 	{
@@ -33,7 +33,7 @@ Actor BigGoreSpawn : XDeathGoreSpawn
 	}
 }
 
-Actor BloodExplosion : XDeathGoreSpawn
+Actor BloodExplosion : XDeathGibber
 {
 	States
 	{
@@ -160,7 +160,7 @@ ACTOR EquestriaBlood : Blood replaces Blood
 		Wait
 	Crash:
 		TNT1 A 0 A_ChangeFlag("NOBLOCKMAP",0)
-		BLUD B 8 A_SpawnItemEX(SmallBloodPoolDrop, 0, 0, 0, 0, 0, 0, 0, SXF_TRANSFERTRANSLATION)
+		BLUD B 8 A_SpawnItemEX("SmallBloodPoolDrop", 0, 0, 0, 0, 0, 0, 0, SXF_TRANSFERTRANSLATION | SXF_TRANSFERSCALE)
 		BLUD A 8
 		Stop
 	
