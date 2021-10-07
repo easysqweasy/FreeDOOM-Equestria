@@ -32,8 +32,6 @@ Actor PonyLostSoul : EquestriaLostSoul
 	See:
 		SKUL A 3 Bright A_Chase
 		SKUL A 3 Bright A_Chase ("","")
-		SKUL B 3 Bright A_Chase
-		SKUL B 3 Bright A_Chase ("","")
 		Loop
 	
 	Missile:
