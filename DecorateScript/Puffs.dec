@@ -4,7 +4,7 @@ Actor PuffSparkles : DEParticles
 	+ExplodeOnWater
 	+UseBounceState +BounceOnActors +BounceOnCeilings +BounceOnFloors +BounceOnWalls
 	BounceType Doom
-	BounceFactor 0.6
+	BounceFactor 0.5
 	
 	Scale 0.25
 	
@@ -19,7 +19,7 @@ Actor PuffSparkles : DEParticles
 	{
 	Spawn:
 		TNT1 A 0 A_JumpIf(waterlevel > 1, "Death")
-		PUFF A 35 Bright A_FadeOut(0.05)
+		PUFF A 35 Bright A_FadeOut(0.10)
 		Loop
 	
 	Bounce:
