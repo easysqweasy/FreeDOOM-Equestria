@@ -186,10 +186,10 @@ Actor EquestriaPain : PainElemental replaces PainElemental
 		{
 			A_QuakeEx(3, 3, 3, 4, 0, 500, "", 0,0,0,0, 1);
 			
-			A_CustomMissile(BloodExplosionSphere);
-			A_CustomMissile(BloodExplosionSphere);
-			A_CustomMissile(BloodExplosionSphere);
-			A_CustomMissile(BloodExplosionSphere);
+			A_SpawnItemEx("BloodExplosionSphere",0,0,32,0,0,0,0, SXF_TRANSFERPOINTERS);
+			A_SpawnItemEx("BloodExplosionSphere",0,0,32,0,0,0,0, SXF_TRANSFERPOINTERS);
+			A_SpawnItemEx("BloodExplosionSphere",0,0,32,0,0,0,0, SXF_TRANSFERPOINTERS);
+			A_SpawnItemEx("BloodExplosionSphere",0,0,32,0,0,0,0, SXF_TRANSFERPOINTERS);
 		}
 		PAIN L 8 Bright
 		{

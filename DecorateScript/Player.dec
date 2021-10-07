@@ -41,11 +41,13 @@ actor EquestriaDoomPlayer : DoomPlayer
 	XDeath:
 		PLAY O 5
 		{
-			A_SpawnProjectile("BloodExplosionSphere");
-			A_SpawnProjectile("XDeathGoreSpawn");
+			A_SpawnItemEx("XDeathGibber",0,0,16,0,0,0,0, SXF_TRANSFERPOINTERS);
+			A_SpawnItemEx("BloodExplosionSphere",0,0,16,0,0,0,0, SXF_TRANSFERPOINTERS);
+			A_XScream;
+			A_NoBlocking;
 		}
-		PLAY P 5 A_XScream
-		PLAY Q 5 A_NoBlocking
+		PLAY P 5
+		PLAY Q 5
 		PLAY RSTUV 5
 		PLAY W -1
 		Stop

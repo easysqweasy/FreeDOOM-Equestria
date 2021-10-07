@@ -73,7 +73,7 @@ ACTOR BurstBat //: DoomEquestriaMonster
 		Goto See
 	
 	Death:
-		CPOS G 0 A_ChangeFlag("FLOATBOB", 0)
+		TNT1 A 0 { bSPRITEFLIP = randompick(0, 1); bFLOATBOB = 0; }
 		
 		HEAD G 8
 		HEAD H 8 A_Scream
@@ -84,10 +84,14 @@ ACTOR BurstBat //: DoomEquestriaMonster
 		Stop
 	
 	XDeath:
+		TNT1 A 0 { bSPRITEFLIP = randompick(0, 1); }
+		
 		CPOS O 5
 		{
-			A_CustomMissile(XDeathGoreSpawn);
-			A_CustomMissile(BloodExplosionSphere);
+			A_SpawnItemEx("XDeathGibber",0,0,0,0,0,0,0, SXF_TRANSFERPOINTERS);
+			A_SpawnItemEx("BloodExplosionSphere",0,0,0,0,0,0,0, SXF_TRANSFERPOINTERS);
+			A_XScream;
+			A_NoBlocking;
 		}
 		CPOS P 5 A_XScream
 		CPOS Q 5 

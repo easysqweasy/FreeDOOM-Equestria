@@ -10,16 +10,18 @@ Actor EquestriaSpiderMastermind : SpiderMastermind replaces SpiderMastermind
 		SPID K 10 A_NoBlocking
 		SPID LMN 8
 		{
-			A_CustomMissile(XDeathGoreSpawn);
-			A_CustomMissile(BloodExplosion, random(0, 16));
+			A_SpawnItemEx("BigGibber",0,0,0,0,0,0,0, SXF_TRANSFERPOINTERS);
+			A_SpawnItemEx("BloodExplosionSphere",0,0,random(0, 16),0,0,0,0, SXF_TRANSFERPOINTERS);
 		}
 		SPID O 10
 		{
-			A_CustomMissile(BigGoreSpawn);
-			A_CustomMissile(BloodExplosion, random(16, 32));
-			A_CustomMissile(BloodExplosion, random(16, 32));
-			A_CustomMissile(BloodExplosion, random(16, 32));
-			A_CustomMissile(BloodExplosion, random(16, 32));
+			A_SpawnItemEx("XDeathGibber",0,0,16,0,0,0,0, SXF_TRANSFERPOINTERS);
+			
+			A_SpawnItemEx("BigGibber",0,0,random(16, 32),0,0,0,0, SXF_TRANSFERPOINTERS);
+			A_SpawnItemEx("BloodExplosionSphere",0,0,random(16, 32),0,0,0,0, SXF_TRANSFERPOINTERS);
+			A_SpawnItemEx("BloodExplosionSphere",0,0,random(16, 32),0,0,0,0, SXF_TRANSFERPOINTERS);
+			A_SpawnItemEx("BloodExplosionSphere",0,0,random(16, 32),0,0,0,0, SXF_TRANSFERPOINTERS);
+			A_SpawnItemEx("BloodExplosionSphere",0,0,random(16, 32),0,0,0,0, SXF_TRANSFERPOINTERS);
 		}
 		SPID PQR 5
 		SPID S 30

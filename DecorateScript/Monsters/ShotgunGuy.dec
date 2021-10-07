@@ -45,6 +45,8 @@ ACTOR EquestriaShotgunGuy : ShotgunGuy replaces ShotgunGuy
         Goto See
 	
 	Death:
+		TNT1 A 0 { bSPRITEFLIP = randompick(0, 1); }
+		
         SPOS H 5
         SPOS I 5 A_Scream
         SPOS J 5 A_NoBlocking
@@ -53,12 +55,14 @@ ACTOR EquestriaShotgunGuy : ShotgunGuy replaces ShotgunGuy
         Stop
     
 	XDeath:
+		TNT1 A 0 { bSPRITEFLIP = randompick(0, 1); }
+		
         SPOS U 0
 		{
-			A_CustomMissile(XDeathGoreSpawn);
-			A_CustomMissile(BloodExplosionSphere);
+			A_SpawnItemEx("XDeathGibber",0,0,0,0,0,0,0, SXF_TRANSFERPOINTERS);
+			A_SpawnItemEx("BloodExplosionSphere",0,0,0,0,0,0,0, SXF_TRANSFERPOINTERS);
 			A_XScream;
-			a_NoBlocking;
+			A_NoBlocking;
 		}
         SPOS U -1
         Stop
@@ -79,11 +83,12 @@ ACTOR EquestriaShotgunGuy : ShotgunGuy replaces ShotgunGuy
 		SPOS M 3
         SPOS N 5
 		{
-			A_CustomMissile(XDeathGoreSpawn);
-			A_CustomMissile(BloodExplosionSphere);
+			A_SpawnItemEx("XDeathGibber",0,0,16,0,0,0,0, SXF_TRANSFERPOINTERS);
+			A_SpawnItemEx("BloodExplosionSphere",0,0,16,0,0,0,0, SXF_TRANSFERPOINTERS);
 			A_XScream;
+			A_NoBlocking;
 		}
-        SPOS O 3 A_NoBlocking
+        SPOS O 3
         SPOS PQRST 3
         SPOS U -1
         Stop

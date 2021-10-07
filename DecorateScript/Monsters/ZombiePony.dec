@@ -55,11 +55,12 @@ ACTOR EquestriaZombieMan : DoomEquestriaMonster Replaces ZombieMan
         Stop
     
 	XDeath:
+		TNT1 A 0 { bSPRITEFLIP = randompick(0, 1); }
+		
 		POSS U 0
 		{
-			bSPRITEFLIP = randompick(0, 1);
-			A_SpawnProjectile(XDeathGoreSpawn);
-			A_SpawnProjectile(BloodExplosionSphere);
+			A_SpawnItemEx("XDeathGibber",0,0,16,0,0,0,0, SXF_TRANSFERPOINTERS);
+			A_SpawnItemEx("BloodExplosionSphere",0,0,16,0,0,0,0, SXF_TRANSFERPOINTERS);
 			A_XScream;
 			A_NoBlocking;
 		}
