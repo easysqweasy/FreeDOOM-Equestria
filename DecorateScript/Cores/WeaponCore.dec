@@ -47,14 +47,19 @@ Actor DoomEquestriaWeapon : Weapon
 		}
 		Goto GotoReady
 
+	Death.Blast:
+		TNT1 A 0 A_ClearOverlays
+		
+		KICK BCD 1 A_OverlayScale(-3, 1, 1, WOF_INTERPOLATE)
+		KICK H -1
+		Stop
+		
 ////Deaths
 
   /*ToDo	ToDo	ToDo
 	Death.Common:
 		
-	Death.Explosive:
 	
-	Death.Gibbed:
 	
 	Death.Nuke:
 	
@@ -62,7 +67,6 @@ Actor DoomEquestriaWeapon : Weapon
 	
 	Death.Toasted:
 	
-	XDeathToasted:
 	ToDo	ToDo	ToDo*/
 
 ////Kicks
