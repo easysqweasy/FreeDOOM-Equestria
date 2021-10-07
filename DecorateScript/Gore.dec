@@ -67,7 +67,6 @@ actor GibGoreBase : DebrisGeneral
 	Height 4
 	Radius 2
 	
-	Mass 4
 	Speed 10
 	Gravity 0.75
 	
