@@ -20,6 +20,8 @@ actor EquestriaBaronofHell : BaronOfHell replaces BaronOfHell
 		Goto See
 	
 	Death:
+		TNT1 A 0 { bSPRITEFLIP = randompick(0, 1); }
+		
 		BOSS I 8
 		BOSS J 8 A_Scream
 		BOSS K 8
@@ -28,6 +30,8 @@ actor EquestriaBaronofHell : BaronOfHell replaces BaronOfHell
 		BOSS N -1 A_BossDeath
 		
 	XDeath:
+		TNT1 A 0 { bSPRITEFLIP = randompick(0, 1); }
+		
 		BOSS O 8
 		BOSS P 8 A_Scream
 		BOSS Q 8
@@ -63,6 +67,8 @@ actor EquestriaHellKnight : HellKnight replaces HellKnight
 		Goto See
 	
 	Death:
+		TNT1 A 0 { bSPRITEFLIP = randompick(0, 1); }
+		
 		BOS2 I 8
 		BOS2 J 8 A_Scream
 		BOS2 K 8
@@ -72,6 +78,8 @@ actor EquestriaHellKnight : HellKnight replaces HellKnight
 		Stop
 		
 	XDeath:
+		TNT1 A 0 { bSPRITEFLIP = randompick(0, 1); }
+		
 		BOS2 P 5 A_Scream
 		BOS2 Q 5 A_NoBlocking
 		BOS2 R 5 A_XScream
