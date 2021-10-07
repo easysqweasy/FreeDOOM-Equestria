@@ -40,7 +40,7 @@ Actor EquestriaPlasmaGun : DoomEquestriaWeapon replaces PlasmaRifle
 	Fire:
 		PLSG A 3 A_FirePlasma
 		PLSG A 0 A_ReFire
-	
+
 	Chill:
 		TNT1 A 0 A_JumpIf(callACS("BobToggle")==1,"Chill.Bob")
 		
@@ -75,7 +75,7 @@ Actor EquestriaPlasmaGun : DoomEquestriaWeapon replaces PlasmaRifle
 		}
 		//I Don't know how i make a smooth animation with the original Doom Sprites
 		Goto LightDone
-	
+		
 	Overlay.Aside:
 		TNT1 A 0 A_OverlayFlags(3, PSPF_ADDBOB, true)
 		TNT1 A 0 A_OverlayPivotAlign(3, PSPA_RIGHT, PSPA_BOTTOM)
