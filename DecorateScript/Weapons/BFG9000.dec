@@ -80,7 +80,7 @@ actor EquestriaBFG9000 : DoomEquestriaWeapon replaces BFG9000
 			A_FireBFG;
 			A_WeaponOffset(0, 45, WOF_KEEPX | WOF_INTERPOLATE);
 			A_ZoomFactor(0.85, ZOOM_INSTANT | ZOOM_NOSCALETURNING);
-			A_Overlay(2, "Recoil");
+			A_Overlay(2, "CamRecoil");
 			//A_SetBlend("green", 0.5, 16);
 		}
 		BFGG C 6
@@ -107,11 +107,13 @@ actor EquestriaBFG9000 : DoomEquestriaWeapon replaces BFG9000
 		TNT1 AAAAAAA 1 A_WeaponOffset(frandom(-6, 6), frandom(32, 36), WOF_INTERPOLATE)
 		Stop
 		
-	Recoil:
-		TNT1 A 2 A_SetPitch(pitch-5, SPF_INTERPOLATE)
-		TNT1 A 1 A_ZoomFactor(0.9, ZOOM_INSTANT | ZOOM_NOSCALETURNING)
-		TNT1 A 1 A_ZoomFactor(1, ZOOM_NOSCALETURNING)
-		TNT1 AAAAA 1 A_SetPitch(pitch+1, SPF_INTERPOLATE)
+	CamRecoil:
+		TNT1 A 2 A_SetPitch(pitch-6, SPF_INTERPOLATE)
+		TNT1 B 1 A_ZoomFactor(0.9, ZOOM_INSTANT | ZOOM_NOSCALETURNING)
+		TNT1 B 1 A_ZoomFactor(1, ZOOM_NOSCALETURNING)
+		TNT1 A 1 A_SetPitch(pitch+2, SPF_INTERPOLATE)
+		TNT1 AAAA 1 A_SetPitch(pitch+0.50, SPF_INTERPOLATE)
+		TNT1 AAAAAAAA 1 A_SetPitch(pitch+0.25, SPF_INTERPOLATE)
 		Stop
 	}
 }
