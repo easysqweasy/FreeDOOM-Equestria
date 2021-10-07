@@ -2,7 +2,7 @@
 
 /* Season 1 */
 
-HANGAR = "Hangar";
+MAINBASE = "Main Base";
 NUCLEAR_PLANT = "Nuclear Plant";
 TOXIN_REFINERY = "Toxin Refinery";
 COMMAND_CONTROL = "Command Control";
@@ -18,7 +18,7 @@ MILITARY_BASE = "Military Base";
 
 /* Temporada 1 */
 
-HANGAR = "Hangar";
+HANGAR = "Base Principal";
 NUCLEAR_PLANT = "Usina Nuclear";
 TOXIN_REFINERY = "Refinaria de Toxinas";
 COMMAND_CONTROL = "Comando e controle";
