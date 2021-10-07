@@ -11,9 +11,9 @@ Actor LowHealthCheck : InvToken	{}
 
 Actor InterpolateON : InvToken	{}	Actor InterpolateOFF : InvToken	{}
 
-Actor InspectAnimation : InvToken	{}
+Actor InspectAnimation : InvToken	{} //Maybe
 
-Actor PickedUpBerserk : InvToken	{} //To do in ACS
+Actor PickedUpBerserk : InvToken	{} //To do in ACS or Overlays
 
 Actor FoundHellPortal : InvToken {}
 
