@@ -44,4 +44,4 @@ Ragedox
 Cinny!
 
 = Special Thanks to =
-SuperWillGaming, Lincoln
+RedLy_2XBR, SuperWillGaming, Lincoln
