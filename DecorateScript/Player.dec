@@ -1,4 +1,4 @@
-actor EquestriaDoomPlayer : DoomPlayer
+actor EquestriaDoomPlayer : DoomPlayer replaces DoomPlayer
 {
 	+CASTSPRITESHADOW
 	
@@ -22,6 +22,8 @@ actor EquestriaDoomPlayer : DoomPlayer
 	{
 	
 	Death:
+	Death.Nukage:
+	Death.Lava:
 		PLAY H 10
 		PLAY I 10 A_PlayerScream
 		PLAY J 10 A_NoBlocking
