@@ -1,0 +1,28 @@
+mugshot "XDeath"
+{
+	XDTH0 3;
+	XDTH1 2;
+	XDTH2 2;
+	XDTH3 2;
+	XDTH4 -1;
+}
+
+mugshot "Death.Fire"
+{
+	XDTH0 -1;
+}
+
+mugshot "Death.Lava"
+{
+	LAVA0 -1;
+}
+
+mugshot "Death.Nuke"
+{
+	NUKE0 -1;
+}
+
+mugshot "GodAnimated"
+{
+	{GOD0, GOD1, GOD2} 17;
+}
