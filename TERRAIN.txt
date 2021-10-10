@@ -138,7 +138,7 @@ terrain Blood
 //smokey lava
 terrain Lava
 {
-	DamageType		Lava
+	DamageType		"Lava"
 	splash			Lava
 	footclip		10
 	liquid
@@ -153,9 +153,9 @@ terrain LavaSmoke
 }
 
 //bright green and smoke
-terrain Nuke
+terrain Nukage
 {
-	DamageType		Nuke
+	DamageType		"Nukage"
 	splash			Nuke
 	footclip		10
 	liquid
@@ -203,10 +203,10 @@ floor LAVA2 Lava
 floor LAVA3 Lava
 floor LAVA4 Lava
 
-floor NUKAGE1 Nuke
-floor NUKAGE2 Nuke
-floor NUKAGE3 Nuke
-floor NUKAGE4 Nuke
+floor NUKAGE1 Nukage
+floor NUKAGE2 Nukage
+floor NUKAGE3 Nukage
+floor NUKAGE4 Nukage
 
 floor RROCK01 LavaSmoke
 
