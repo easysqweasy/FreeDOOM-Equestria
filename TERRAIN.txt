@@ -138,7 +138,7 @@ terrain Blood
 //smokey lava
 terrain Lava
 {
-	DamageType		Fire
+	DamageType		Lava
 	splash			Lava
 	footclip		10
 	liquid
