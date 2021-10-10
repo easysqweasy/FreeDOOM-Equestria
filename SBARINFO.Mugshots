@@ -17,7 +17,7 @@ mugshot "Death.Lava"
 	LAVA0 -1;
 }
 
-mugshot "Death.Nuke"
+mugshot "Death.Nukage"
 {
 	NUKE0 -1;
 }
