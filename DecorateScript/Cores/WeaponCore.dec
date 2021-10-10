@@ -60,12 +60,11 @@ Actor DoomEquestriaWeapon : Weapon
 	Death.Common:
 		
 	
+	Death.Lava:
 	
 	Death.Nuke:
 	
 	Death.Fire:
-	
-	Death.Toasted:
 	
 	ToDo	ToDo	ToDo*/
 
