@@ -9,7 +9,21 @@ mugshot "XDeath"
 
 mugshot "Death.Fire"
 {
-	XDTH0 -1;
+	OUCH2 2;
+	FIRE0 2;
+	FIRE1 2;
+	FIRE0 2;
+	FIRE1 1;
+	FIRE3 2;
+	FIRE4 5;
+	FIRE5 5;
+	FIRE4 5;
+	FIRE5 5;
+	FIRE4 5;
+	FIRE5 5;
+	FIRE6 4;
+	FIRE7 3;
+	FIRE8 -1;
 }
 
 mugshot "Death.Lava"
