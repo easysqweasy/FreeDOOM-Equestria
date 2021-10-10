@@ -23,7 +23,7 @@ map S1E1 lookup "MAINBASE"
 	cluster = 1
 	//par = 30
 	
-	//BorderTexture = "S1Border"
+	BorderTexture = "STARGR2"
 	
 	compat_invisibility = 1
 }
@@ -42,7 +42,7 @@ map S1E2 lookup "NUCLEAR_PLANT"
 	sky1 = "SKY1"
 	cluster = 1
 	
-	//BorderTexture = "S1Border"
+	BorderTexture = "STARGR2"
 	
 	compat_invisibility = 1
 }
@@ -60,7 +60,7 @@ map S1E3 lookup "TOXIN_REFINERY"
 	sky1 = "SKY1"
 	cluster = 1
 	
-	//BorderTexture = "S1Border"
+	BorderTexture = "STARGR2"
 	
 	compat_invisibility = 1
 }
@@ -79,7 +79,7 @@ map S1E4 lookup "COMMAND_CONTROL"
 	sky1 = "SKY1"
 	cluster = 1
 	
-	//BorderTexture = "S1Border"
+	BorderTexture = "STARGR2"
 	
 	compat_invisibility = 1
 }
@@ -97,7 +97,7 @@ map S1E5 lookup "CENTRAL_PROCECESSING"
 	sky1 = "SKY1"
 	cluster = 1
 	
-	//BorderTexture = "S1Border"
+	BorderTexture = "STARGR2"
 	
 	compat_invisibility = 1
 }
@@ -115,7 +115,7 @@ map S1E6 lookup "COMPUTER_STATION"
 	sky1 = "SKY1"
 	cluster = 1
 	
-	//BorderTexture = "S1Border"
+	BorderTexture = "STARGR2"
 	
 	compat_invisibility = 1
 }
@@ -133,7 +133,7 @@ map S1E7 lookup "PHOBOS_LAB"
 	sky1 = "SKY1"
 	cluster = 1
 	
-	//BorderTexture = "S1Border"
+	BorderTexture = "STARGR2"
 	
 	compat_invisibility = 1
 }
