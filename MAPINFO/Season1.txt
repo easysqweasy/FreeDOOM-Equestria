@@ -149,7 +149,7 @@ map S1E8 lookup "PHOBOS_ANOMALY"
 	sky1 = "SKY1"
 	cluster = 1
 	
-	//BorderTexture = "S1BossBorder"
+	BorderTexture = "STARBR2"
 	
 	compat_invisibility = 1
 }
