@@ -12,7 +12,9 @@ Actor PuffSparkles : DEParticles
 	Radius 1
 	
 	Gravity 0.20
+	
 	Speed 4
+	
 	RenderStyle Add
 	
 	States
