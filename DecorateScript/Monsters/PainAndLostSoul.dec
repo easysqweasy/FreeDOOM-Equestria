@@ -193,9 +193,9 @@ Actor EquestriaPain : PainElemental replaces PainElemental
 		}
 		PAIN L 8 Bright
 		{
-			A_PainAttack("PonyLostSoul", 90, PAF_AIMFACING);
-			A_PainAttack("NirikLostSoul", 0, PAF_AIMFACING);
-			A_PainAttack("UnicornLostSoul", -90, PAF_AIMFACING);
+			A_PainAttack("PonyLostSoul", 90);
+			A_PainAttack("NirikLostSoul", 0);
+			A_PainAttack("UnicornLostSoul", -90);
 		}
 		PAIN M 8 Bright
 		Stop
