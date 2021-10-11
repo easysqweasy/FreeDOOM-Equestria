@@ -107,7 +107,7 @@ pulselight HEALTHPOTION
     offset 0 10 0
 }
 
-object EquestriaHealthPotion
+object HealthPotion
 {
     frame BON1 { light HEALTHPOTION }
 }
