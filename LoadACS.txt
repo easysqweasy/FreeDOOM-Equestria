@@ -4,3 +4,7 @@ KickAttack
 CVARs
 EquestriaThings
 BossBar
+<<<<<<< Updated upstream:LoadACS.txt
+=======
+Pickups
+>>>>>>> Stashed changes:loadacs.txt
