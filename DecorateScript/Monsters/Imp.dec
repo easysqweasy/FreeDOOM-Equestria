@@ -78,7 +78,7 @@ actor EquestriaImpBall : DoomImpBall replaces DoomImpBall
 	{
 	Spawn:
 		BAL1 BB 1 Bright A_SpawnItemEx("FirePieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1), 0)
-		BAL1 A 1 Bright
+		BAL1 A 2 Bright
 		{
 			A_SpawnItemEx("FireBallTrail");
 			A_SpawnItemEx("FirePieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1), 0);
@@ -99,8 +99,8 @@ actor FireBallTrail : Trails
 	States
 	{
 	Spawn:
-		TNT1 A 4
-		BAL1 CD 3 Bright
+		TNT1 A 2
+		BAL1 CD 3 Bright A_FadeOut(0.125)
 		BAL1 E 1 Bright A_FadeOut(0.1)
 		Wait
 	}
