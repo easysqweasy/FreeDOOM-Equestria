@@ -48,8 +48,8 @@ ACTOR EquestriaBlurSphere : CustomInventory replaces BlurSphere
 		PINS ABCDCBA 6 Bright
 		Loop
 	Pickup:
-		TNT1 A 0 A_SetMugshotState("Invisibility")
 		TNT1 A 0 A_GiveInventory(BlurSphereInventory)
+		TNT1 A 0 ACS_NamedExecute("BlurMugshot")
 		TNT1 A 0 A_SetBlend(Red, 0.5, 16, Blue)
 		Stop
 	}
