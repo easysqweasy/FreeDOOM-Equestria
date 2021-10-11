@@ -1,4 +1,4 @@
-#library "EquestriaThings.acs"
+#library "EquestriaThings"
 #include "zcommon.acs"
 
 script "YouAreHere" enter

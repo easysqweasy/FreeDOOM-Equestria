@@ -1,4 +1,4 @@
-#library "CVARs.acs"
+#library "CVARs"
 #include "zcommon.acs"
 
 script "BobToggle" (void)

@@ -1,0 +1,14 @@
+#library "Pickups"
+#include "zcommon.acs"
+
+Script 80 (void)
+{   
+	Delay(1);
+	
+	while (CheckInventory("PowerWeaponLevel2") == 1)
+	{
+		SetMugShotState("Invisibility");
+		
+		Delay(1);
+	}
+}
