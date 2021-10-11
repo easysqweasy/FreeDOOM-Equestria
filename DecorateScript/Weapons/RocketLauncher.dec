@@ -102,13 +102,7 @@ actor EquestriaRocket : Rocket replaces Rocket
 	States
 	{
 	Spawn:
-		MISL A 2 Bright
-		{
-			A_SpawnItemEx("FirePieceSpawn",random(-3,-3),random(-3,3),random(-3,3));
-			A_SpawnItemEx("FirePieceSpawn",random(-3,-3),random(-3,3),random(-3,3));
-			
-			A_SpawnItemEx("RocketSmoke");
-		}
+		MISL A 2 Bright A_SpawnItemEx("RocketSmoke")
 		Loop
 	Death:
 		//MISL B 0 A_SetRoll(random(-359, 359))
@@ -127,7 +121,7 @@ actor EquestriaRocket : Rocket replaces Rocket
 		TNT1 AAAA 0 A_CustomMissile("SplashSmoke", random(-20, 20), random (-40, 40), random (0, 360), 2, random(0, 90))
 
 		MISL C 4 Bright
-		MISL D 1 Bright A_FadeOut(0.1)
+		MISL D 1 A_FadeOut(0.1)
 		Wait
 	}
 }
