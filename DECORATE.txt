@@ -35,6 +35,28 @@ Actor DebrisGeneral
 #include "DecorateScript/Puffs.dec"
 #include "DecorateScript/FloorDecals.dec"
 
+////Weapons
+
+#Include "DecorateScript/Weapons/Broom.dec"
+#Include "DecorateScript/Weapons/Fists.dec"
+#Include "DecorateScript/Weapons/Pistol.dec"
+#Include "DecorateScript/Weapons/Shotgun.dec"
+//#Include "DecorateScript/Weapons/Repeater.dec" Dont Use
+#Include "DecorateScript/Weapons/SuperShotgun.dec"
+#Include "DecorateScript/Weapons/Chaingun.dec"
+#Include "DecorateScript/Weapons/PlasmaGun.dec"
+#Include "DecorateScript/Weapons/RocketLauncher.dec"
+#Include "DecorateScript/Weapons/BFG9000.dec"
+#Include "DecorateScript/Weapons/Chainsaw.dec"
+
+////Items/PowerUps
+
+#include "DecorateScript/Pickups/Ammo.dec"
+#include "DecorateScript/Pickups/Armor.dec"
+#include "DecorateScript/Pickups/Health.dec"
+#include "DecorateScript/Pickups/Powerups.dec"
+
+
 ////Monsters
 
 #include "DecorateScript/Monsters/Arachnotron.dec"
@@ -57,36 +79,13 @@ Actor DebrisGeneral
 #include "DecorateScript/Monsters/SpiderMastermind.dec"
 #include "DecorateScript/Monsters/WolfensteinActors.dec"
 
-////Items/PowerUps
-
-#include "DecorateScript/Pickups.dec"
-#include "DecorateScript/Powerups.dec"
-
-////Weapons
-
-#Include "DecorateScript/Weapons/Broom.dec"
-#Include "DecorateScript/Weapons/Fists.dec"
-#Include "DecorateScript/Weapons/Pistol.dec"
-#Include "DecorateScript/Weapons/Shotgun.dec"
-//#Include "DecorateScript/Weapons/Repeater.dec" Dont Use
-#Include "DecorateScript/Weapons/SuperShotgun.dec"
-#Include "DecorateScript/Weapons/Chaingun.dec"
-#Include "DecorateScript/Weapons/PlasmaGun.dec"
-#Include "DecorateScript/Weapons/RocketLauncher.dec"
-#Include "DecorateScript/Weapons/BFG9000.dec"
-#Include "DecorateScript/Weapons/Chainsaw.dec"
-#Include "DecorateScript/Weapons/Ammo.dec"
-
-////Decorations
+////Props
 
 #include "DecorateScript/Props/Tech.dec"
 #include "DecorateScript/Props/Nature.dec"
 #include "DecorateScript/Props/Hell.dec"
 #include "DecorateScript/Props/Gothic.dec"
-#include "DecorateScript/Props/GoreGore.dec"
+#include "DecorateScript/Props/Gore.dec"
 #include "DecorateScript/Props/Corpses.dec"
 #include "DecorateScript/Props/LightSources.dec"
-
-////Misc
-
-#include "DecorateScript/ExplosiveBarrel.dec"
+#include "DecorateScript/Props/ExplosiveBarrel.dec"
