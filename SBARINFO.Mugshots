@@ -42,3 +42,8 @@ mugshot "GodAnimated"
 {
 	{GOD0, GOD1, GOD2} 17;
 }
+
+mugshot "Invisibility"
+{
+	{BLUR0, BLUR1, BLUR2} 15;
+}
