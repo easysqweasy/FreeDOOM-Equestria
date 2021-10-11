@@ -1,4 +1,4 @@
-actor EquestriaHealthPotion : HealthBonus replaces HealthBonus
+actor HealthPotion : HealthBonus replaces HealthBonus
 {
   Inventory.PickupSound "pickup/potion"
 }
@@ -48,44 +48,6 @@ ACTOR BigHealthBonus : Health
   {
   Spawn:
     PINW ABCDCB 6
-    Loop
-  }
-}
-
-Actor BigArmorBonus : BasicArmorBonus
-{
-//$Category Health and Armor
-//$Title Big Armor Bonus
-  Radius 20
-  Height 16
-  scale .75
-  Inventory.PickupMessage "Picked up a demon armor bonus."
-  Inventory.Icon "ARM2A0"
-  Armor.SavePercent 50
-  Armor.SaveAmount 5
-  Armor.MaxSaveAmount 300
-  +COUNTITEM
-  +INVENTORY.ALWAYSPICKUP
-  States
-  {
-  Spawn:
-	LARM A 48
-	LARM BC 6
-	LARM D 12
-	LARM CB 6
-	Loop
-  }
-}
-
-ACTOR GreenArmor2 : GreenArmor
-{
-//$Category Health and Armor
-//$Title Green Armor 2
-  States
-  {
-  Spawn:
-    ARM3 A 6
-	ARM3 A 7 Bright
     Loop
   }
 }
