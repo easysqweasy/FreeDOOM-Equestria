@@ -1,11 +1,11 @@
 #library "Pickups"
 #include "zcommon.acs"
 
-Script 80 (void)
+Script "BlurMugshot" (void)
 {   
 	Delay(1);
 	
-	while (CheckInventory("PowerWeaponLevel2") == 1)
+	while (CheckInventory("BlurSphereInventory") == 1)
 	{
 		SetMugShotState("Invisibility");
 		
