@@ -32,7 +32,7 @@ actor EquestriaImp : DoomImp Replaces DoomImp
 		TROO I 5
 		TROO J 5 A_Scream
 		TROO K 5 A_NoBlocking
-		TROO L 5 
+		TROO L 5
 		TROO M -1
         Stop
 	
