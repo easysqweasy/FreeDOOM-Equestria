@@ -10,46 +10,17 @@ Actor DoomEquestriaWeapon : Weapon
 	States
 	{
 	
-	GotoReady:
-		TNT1 A 0 A_Jump(256, "Ready")
-		Stop
-////Configs
-
-//Still undecided about this
-	InterpolateON:
-		TNT1 A 0
-		TNT1 A 0
+	DeathCheck:
+		TNT1 A 1 Offset(0,32)
 		{
-			A_TakeInventory("InterpolateOFF", 1);
-			A_GiveInventory("InterpolateON", 1);
+			A_ClearOverlays;
+			A_OverlayScale(PSP_WEAPON, 1, 1);
+			A_StopSound(CHAN_BODY);
+			A_StopSound(CHAN_WEAPON);
+			A_StopSound(CHAN_6);
+			A_ZoomFactor(1.0, ZOOM_INSTANT);
 		}
-		
-		TNT1 A 0
-		{
-			A_OverlayFlags(0, PSPF_INTERPOLATE, true);
-		
-			A_OverlayFlags(-10, PSPF_INTERPOLATE, true);
-		}
-		Goto GotoReady
-	InterpolateOFF:
-		TNT1 A 0
-		TNT1 A 0
-		{
-			A_TakeInventory("InterpolateON", 1);
-			A_GiveInventory("InterpolateOFF", 1);
-		}
-		
-		TNT1 A 0
-		{
-			A_OverlayFlags(0, PSPF_INTERPOLATE, false);
-		
-			A_OverlayFlags(-10, PSPF_INTERPOLATE, false);
-		}
-		Goto GotoReady
-
-	Death.Blast:
-		TNT1 A 0 A_ClearOverlays
-		
+	DeathNormal:
 		KICK BCD 1 A_OverlayScale(-3, 1, 1, WOF_INTERPOLATE)
 		KICK H -1
 		Stop
@@ -67,6 +38,10 @@ Actor DoomEquestriaWeapon : Weapon
 	Death.Fire:
 	
 	ToDo	ToDo	ToDo*/
+	
+	GotoReady:
+		TNT1 A 0 A_Jump(256, "Ready")
+		Wait
 
 ////Kicks
 
@@ -200,5 +175,39 @@ Actor DoomEquestriaWeapon : Weapon
 		SHTG A 1
 		Stop
 		
+	////Configs
+
+//Still undecided about this
+	InterpolateON:
+		TNT1 A 0
+		TNT1 A 0
+		{
+			A_TakeInventory("InterpolateOFF", 1);
+			A_GiveInventory("InterpolateON", 1);
+		}
+		
+		TNT1 A 0
+		{
+			A_OverlayFlags(0, PSPF_INTERPOLATE, true);
+		
+			A_OverlayFlags(-10, PSPF_INTERPOLATE, true);
+		}
+		Goto GotoReady
+		
+	InterpolateOFF:
+		TNT1 A 0
+		TNT1 A 0
+		{
+			A_TakeInventory("InterpolateON", 1);
+			A_GiveInventory("InterpolateOFF", 1);
+		}
+		
+		TNT1 A 0
+		{
+			A_OverlayFlags(0, PSPF_INTERPOLATE, false);
+		
+			A_OverlayFlags(-10, PSPF_INTERPOLATE, false);
+		}
+		Goto GotoReady
 	}
 }
