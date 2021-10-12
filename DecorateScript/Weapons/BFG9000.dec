@@ -160,6 +160,11 @@ actor DEBFGBall : BFGBall replaces BFGBall
 	}
 }
 
+ACTOR EquestriaBFGExtra : BFGExtra replaces BFGExtra
+{
+	+ForceXYBillBoard
+}
+
 Actor BFGTrail : Trails
 {
 	States
