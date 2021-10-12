@@ -1,5 +1,9 @@
 Actor EquestriaSpiderMastermind : SpiderMastermind replaces SpiderMastermind
 {
+	
+	PainChance "BFGSplash", 10
+	DamageFactor "BFGSplash", 0.15
+	
 	+CASTSPRITESHADOW
 	+AVOIDMELEE
 	
