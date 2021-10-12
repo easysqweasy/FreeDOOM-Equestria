@@ -23,7 +23,7 @@ DoomEdNums
 	15101 = "HealthPack"
 	15102 = "BigHealthBonus"
 	15103 = "BigArmorBonus"
-	15104 = "GreenArmor2"
+	15104 = "SecurityArmor2"
 
 	/* Ammo */
 
