@@ -1,7 +1,7 @@
 actor EquestriaBFG9000 : DoomEquestriaWeapon replaces BFG9000
 {
 //$Title Big Fucking Gun 9000
-	Height 20
+	Height 40
 	
 	Weapon.BobStyle InverseSmooth
 	Weapon.BobSpeed 0.75
@@ -14,6 +14,8 @@ actor EquestriaBFG9000 : DoomEquestriaWeapon replaces BFG9000
 	+WEAPON.NOAUTOFIRE
 	
 	Inventory.PickupMessage "$GOTBFG9000"
+	
+	Inventory.PickupSound "pickup/bfg"
 	
 	States
 	{

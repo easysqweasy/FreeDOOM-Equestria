@@ -6,6 +6,7 @@ actor EquestriaShotgun : DoomEquestriaWeapon replaces Shotgun
 	Weapon.AmmoGive 8
 	Weapon.AmmoType "Shell"
 
+	Inventory.PickupSound "pickup/shotgun"
 	Inventory.PickupMessage "$GOTSHOTGUN"
 	Obituary "$OB_MPSHOTGUN"
 	Tag "$TAG_SHOTGUN"

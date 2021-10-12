@@ -18,12 +18,22 @@ world/sludgegloop "Sounds/Terrains/MUCK5.ogg"
 
 /* Pickups */
 
-pickup/potion "Sounds/Pickups/PotionPickup.wav"
-pickup/plasmagun "Sounds/Pickups/PlasmaPickup.wav"
-pickup/rocklauncher "Sounds/Pickups/RckLaunPickup.wav"
-pickup/chaingun "Sounds/Pickups/ChainGPickup.wav"
-pickup/backpack "Sounds/Pickups/BackpackPickup.ogg"
-misc/k_pkup DSGETKEY
+pickup/potion "Sounds/Pickups/GetPotion.wav"
+
+pickup/armor1 "Sounds/Pickups/GetArmor1.wav"
+pickup/armor2 "Sounds/Pickups/GetArmor2.wav"
+
+pickup/clip "Sounds/Pickups/Ammo/GetClip.wav"
+pickup/shell "Sounds/Pickups/Ammo/GetShell.wav"
+pickup/backpack "Sounds/Pickups/Ammo/GetBackpack.ogg"
+
+pickup/shotgun "Sounds/Pickups/Weapons/GetShotgun.wav"
+pickup/chaingun "Sounds/Pickups/Weapons/GetChaingun.wav"
+pickup/plasmagun "Sounds/Pickups/Weapons/GetPlasmaGun.wav"
+pickup/rocklauncher "Sounds/Pickups/Weapons/GetRKTLauncher.wav"
+pickup/bfg "Sounds/Pickups/Weapons/GetBFG.wav"
+
+misc/k_pkup "Sounds/Pickups/GetKeycard.ogg"
 
 /* Gore */
 
