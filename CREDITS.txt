@@ -29,10 +29,6 @@ Ragedox, JoeyTD
 = Season 1 : Knee-Deep in the Dead (Reimagined) =
 Ragedox
 
-= Sounds =
-
-https://freesound.org/
-
 = Shainer's Voice =
 Cinny!
 
@@ -47,13 +43,22 @@ Cinny! (Twitter: @idolkve)
 Lincoln (Twitter: @lila_kastelvam)
 SuperWillGaming (No longer in the project, Twitter: @njsw88)
 
-= Other Credits =
+= Sounds =
+
+https://freesound.org/
+
+Quake 1
+
+DOOM 3
 
 Per Kristan's Hi-res sound pack
 
 Doom Sound Bulb by SeanTheBermanator
+Quake Sound Bulb
 
 Sound Caulking by Jaxxon R
+
+= Stuff from other mods =
 
 Realm 667 Resources
 
@@ -61,9 +66,9 @@ Doom 2 Minor Sprite Fixing Project
 
 Lostres 2.1 by NaturalTvventy (Unused Doom Content by ID Software)
 
-Musics from DOOM 1
+Brutal DOOM (Parts of the kick code)
 
-Some kick codes are from Brutal Doom, adapted by Ragedox
+MetaDOOM (Code references)
 
 David G Sprites
 
