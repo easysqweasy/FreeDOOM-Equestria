@@ -29,6 +29,7 @@ actor EquestriaRocketLauncher : DoomEquestriaWeapon replaces RocketLauncher
 	
 	Deselect:
 		TNT1 A 0 A_TakeInventory("KickCheck", 999)
+		TNT1 A 0 A_JumpIf(health <= 0, "DeathCheck")
 		
 		MISG A 1 A_Lower
 		Wait
