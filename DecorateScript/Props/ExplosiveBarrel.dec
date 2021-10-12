@@ -1,6 +1,6 @@
 ACTOR EquestriaExploBarrel : ExplosiveBarrel replaces ExplosiveBarrel
 {
-	Height 35
+	Height 32
 	
 	DamageType BarrelExp
 	-NOBLOOD
