@@ -22,14 +22,27 @@ actor EquestriaDoomPlayer : DoomPlayer replaces DoomPlayer
 	{
 	
 	Death:
-	Death.Nukage:
-	Death.Lava:
 		PLAY H 10
 		PLAY I 10 A_PlayerScream
 		PLAY J 10 A_NoBlocking
 		PLAY KLM 10
 		PLAY N -1
 		Stop
+		
+	Death.Nukage:
+		TNT1 A 0
+		TNT1 A 0 A_GiveInventory("NukageDeath", 1)
+		Goto Death
+	
+	Death.Lava:
+		TNT1 A 0
+		TNT1 A 0 A_GiveInventory("LavaDeath", 1)
+		Goto Death
+		
+	Death.Fire:
+		TNT1 A 0
+		TNT1 A 0 A_GiveInventory("FireDeath", 1)
+		Goto Death
 		
 	Death.Blast:
 		PLAY H 0 A_GiveInventory("BlastDeath", 1)
@@ -65,8 +78,9 @@ actor EquestriaDoomPlayer : DoomPlayer replaces DoomPlayer
 }
 
 Actor BlastDeath : InvToken {}
-Actor AcidDeath : InvToken {}
+Actor NukageDeath : InvToken {}
 Actor LavaDeath : InvToken {}
+Actor FireDeath : InvToken {}
 
 ACTOR PopSkull : PlayerChunk
 {
