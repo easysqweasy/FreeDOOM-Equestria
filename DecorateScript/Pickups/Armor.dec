@@ -31,7 +31,7 @@ Actor SecurityArmor : GreenArmor replaces GreenArmor
 	Inventory.PickupSound "pickup/armor1"
 }
 
-ACTOR SecurityArmorWithBoots : SecurityArmor
+ACTOR SecurityArmor2 : SecurityArmor
 {
 //$Category Health and Armor
 //$Title Security Armor with Boots (125)
