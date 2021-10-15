@@ -10,8 +10,9 @@ actor EquestriaBaronofHell : BaronOfHell replaces BaronOfHell
 		Loop
 	
 	Melee:
-		BOSS EF 8 A_FaceTarget
-		BOSS G 8 A_CustomMeleeAttack(10 * random(1, 8), "baron/melee", "skel/swing", "BruisersMelee")
+		BOSS E 8 A_FaceTarget
+		BOSS F 6 A_FaceTarget
+		BOSS G 6 A_CustomMeleeAttack(10 * random(1, 8), "baron/melee", "skel/swing", "BruisersMelee")
 		Goto See
 		
 	Missile:
@@ -57,8 +58,9 @@ actor EquestriaHellKnight : HellKnight replaces HellKnight
 		Loop
  
 	Melee:
-		BOS2 EF 8 A_FaceTarget
-		BOS2 G 8 A_CustomMeleeAttack(10 * random(1, 8), "baron/melee", "skel/swing", "BruisersMelee")
+		BOS2 E 8 A_FaceTarget
+		BOS2 F 6 A_FaceTarget
+		BOS2 G 6 A_CustomMeleeAttack(10 * random(1, 8), "baron/melee", "skel/swing", "BruisersMelee")
 		Goto See
 		
 	Missile:
