@@ -9,18 +9,6 @@ ACTOR SkullGem
   }
 }
 
-ACTOR Bible
-{
-	+ForceXYBillboard
-//$Category "Decoration/Gothic"
-  States
-  {
-  Spawn:
-    bon4 A -1
-    Stop
-  }
-}
-
 ACTOR Chalice
 {
 //$Category "Decoration/Gothic"
