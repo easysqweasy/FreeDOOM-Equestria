@@ -32,7 +32,7 @@ script "ClopperChecker" enter //Ragedox says: Hands off!
 		
 		Delay (13);
 
-		ChangeLevel ("Map32", 0, CHANGELEVEL_NOINTERMISSION);
+		ChangeLevel ("MAP00", 0, CHANGELEVEL_NOINTERMISSION);
 	}
 }
 
