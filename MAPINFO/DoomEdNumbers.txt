@@ -79,13 +79,12 @@ DoomEdNums
 	//Gothic
 	
 	15500 = "SkullGem"
-	15501 = "Bible"
+	15501 = "Book"
 	15502 = "Chalice"
 	15503 = "Dagger"
 	15504 = "DoomStaff"
 	15505 = "Chest"
-	15506 = "Book"
-	15507 = "FlamingPillar"
+	15506 = "FlamingPillar"
 	
 	//Hell
 	
