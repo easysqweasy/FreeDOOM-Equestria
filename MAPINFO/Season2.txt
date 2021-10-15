@@ -1,1 +1,1 @@
-InterMusic = "Intermission2.mid"
+InterMusic = "INTER2.mid"

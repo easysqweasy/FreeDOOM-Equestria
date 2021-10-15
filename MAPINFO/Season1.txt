@@ -1,6 +1,6 @@
 gameinfo 
 {
-	intermissionmusic = "Music/Intermission1.mid"   
+	intermissionmusic = "Music/INTER1.mid"   
 }
 
 /*///////////////////
