@@ -3,6 +3,7 @@ Actor FloorCheck
 	Radius 2
 	Height 4
 	+MISSILE
+	+DONTSPLASH
 	+NOTELEPORT
 	+NOBLOCKMAP
 	+THRUACTORS
