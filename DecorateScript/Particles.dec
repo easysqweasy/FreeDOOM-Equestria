@@ -19,7 +19,6 @@ Actor Trails : DEParticles
 	
 	+ROLLSPRITE +ROLLCENTER
 	
-	+GHOST
 	-MOVEWITHSECTOR
 	+DONTSPLASH
 	
