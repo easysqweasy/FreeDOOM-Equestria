@@ -36,7 +36,7 @@ ACTOR EquestriaChaingunGuy : ChaingunGuy replaces ChaingunGuy
 		Goto See
 	
 	Death:
-		TNT1 A 0 { bSPRITEFLIP = randompick(0, 1); }
+		"####" "#" 0 { bSPRITEFLIP = randompick(0, 1); }
 		
 		CPOS H 5
 		CPOS I 5
@@ -52,7 +52,7 @@ ACTOR EquestriaChaingunGuy : ChaingunGuy replaces ChaingunGuy
 		Stop
 	
 	XDeath:
-		TNT1 A 0 { bSPRITEFLIP = randompick(0, 1); }
+		"####" "#" 0 { bSPRITEFLIP = randompick(0, 1); }
 		
 		CPOS T 0
 		{
@@ -65,8 +65,9 @@ ACTOR EquestriaChaingunGuy : ChaingunGuy replaces ChaingunGuy
 		Stop
 	
 	Raise:
-		CPOS N 5
-		CPOS MLKJIH 5
+		CPOS NMLKJIH 5
+		
+		"####" "#" 0 { bSPRITEFLIP = 0; }
 		Goto See
   }
 }
