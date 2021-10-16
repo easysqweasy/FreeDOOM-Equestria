@@ -2,6 +2,7 @@ actor EquestriaBaronofHell : BaronOfHell replaces BaronOfHell
 {
 //$Sprite BOSSA2C8
 	BloodColor "darkgreen"
+	+CastSpriteShadow
 	States
 	{
 	Spawn:
@@ -93,7 +94,6 @@ actor EquestriaHellKnight : HellKnight replaces HellKnight
 
 actor BossBaronofHell : EquestriaBaronofHell
 {
-	+CASTSPRITESHADOW
 	States
 	{
 	See:
