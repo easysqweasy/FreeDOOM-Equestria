@@ -1,7 +1,6 @@
 actor EquestriaBaronofHell : BaronOfHell replaces BaronOfHell
 {
 //$Sprite BOSSA2C8
-	+CASTSPRITESHADOW
 	BloodColor "darkgreen"
 	States
 	{
@@ -21,7 +20,7 @@ actor EquestriaBaronofHell : BaronOfHell replaces BaronOfHell
 		Goto See
 	
 	Death:
-		TNT1 A 0 { bSPRITEFLIP = randompick(0, 1); }
+		"####" "#" 0 { bSPRITEFLIP = randompick(0, 1); }
 		
 		BOSS I 8
 		BOSS J 8 A_Scream
@@ -29,9 +28,10 @@ actor EquestriaBaronofHell : BaronOfHell replaces BaronOfHell
 		BOSS L 8 A_NoBlocking
 		BOSS M 8
 		BOSS N -1 A_BossDeath
+		Stop
 		
 	XDeath:
-		TNT1 A 0 { bSPRITEFLIP = randompick(0, 1); }
+		"####" "#" 0 { bSPRITEFLIP = randompick(0, 1); }
 		
 		BOSS O 8
 		BOSS P 8 A_Scream
