@@ -24,7 +24,6 @@ Actor DebrisGeneral
 #include "DecorateScript/Player.dec"
 #include "DecorateScript/TitleMap.dec"
 #include "DecorateScript/Cores/WeaponCore.dec"
-#include "DecorateScript/Cores/MonsterCore.dec"
 //#include "DecorateScript/Shrapnel.dec"
 
 ////Effects, Particles, Debris
