@@ -48,6 +48,8 @@ Actor DemonicDog
 		Goto See
 	
 	Death:
+		"####" "#" 0 { bSPRITEFLIP = randompick(0, 1); }
+		
 		DOGS I 8
 		DOGS J 8 A_Scream
 		DOGS K 4
@@ -58,6 +60,8 @@ Actor DemonicDog
 	
 	Raise:
 		DOGS NMLKJI 5
+		
+		"####" "#" 0 { bSPRITEFLIP = 0; }
 		Goto See
 	}
 }
