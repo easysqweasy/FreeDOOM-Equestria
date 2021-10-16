@@ -19,9 +19,6 @@ StaticText ""
 StaticText "$GRAPHICSSETTINGS", "Brick"
 StaticText ""
 
-Option "$Projectile Trails", "ProjectileTrails", "MissileTrails"
-StaticText "$WIPWARNING", "yellow"
-
 /*
 StaticText "$HIRESETTINGS", "Brick"
 StaticText "$HIRESWARNING", "White"
