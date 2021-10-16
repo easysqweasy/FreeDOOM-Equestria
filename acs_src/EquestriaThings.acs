@@ -36,9 +36,15 @@ script "ClopperChecker" enter //Ragedox says: Hands off!
 	}
 }
 
-//Script "CheckBrutal" enter
-//{
-//	if (CheckClass("Doomer") && CheckClass("Melee_Attacks")
+Script "CheckBrutal" enter
+{
+	if (CheckClass("Doomer") && CheckClass("Melee_Attacks"))
+	{
+		HudMessage(s:"It looks like you are playing Brutal DOOM Equestria,
+		remember, you can have a bad time...";
+		HUDMSG_TYPEON | HUDMSG_PLAIN, 20, CR_ICE, 1.5, 0.8, 0);
+	}
+}
 
 Script "LowHealth" ENTER
 {
