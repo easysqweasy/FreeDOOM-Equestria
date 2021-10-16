@@ -27,7 +27,7 @@ ACTOR EquestriaSpectre : Spectre replaces Spectre
 		IDLP AB 10 A_Look
 		Loop
 	Death:
-		TNT1 A 0 { bSPRITEFLIP = randompick(0, 1); }
+		"####" "#" 0 { bSPRITEFLIP = randompick(0, 1); }
 		
 		SPEC I 8 
 		{
