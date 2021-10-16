@@ -41,6 +41,8 @@ Actor PonyLostSoul : EquestriaLostSoul
 		Goto Missile+2
 	
 	Death:
+		"####" "#" 0 { bSPRITEFLIP = randompick(0, 1); }
+		
 		SKUL F 6 Bright
 		SKUL G 6 Bright A_Scream
 		SKUL H 6 Bright
@@ -53,6 +55,8 @@ Actor PonyLostSoul : EquestriaLostSoul
 	
 	XDeath:
 	Death.Berserk:
+		"####" "#" 0 { bSPRITEFLIP = randompick(0, 1); }
+		
 		SKUL H 6 Bright A_Scream
 		SKUL I 3 Bright A_NoBlocking
 		SKUL J 3
@@ -81,6 +85,8 @@ Actor UnicornLostSoul : EquestriaLostSoul
 		Goto Missile+2
 	
 	Death:
+		"####" "#" 0 { bSPRITEFLIP = randompick(0, 1); }
+		
 		SKUL F 6 Bright
 		SKUL G 6 Bright A_Scream
 		SKUL H 6 Bright
@@ -93,6 +99,8 @@ Actor UnicornLostSoul : EquestriaLostSoul
 	
 	XDeath:
 	Death.Berserk:
+		"####" "#" 0 { bSPRITEFLIP = randompick(0, 1); }
+		
 		SKUL H 6 Bright A_Scream
 		SKUL I 3 Bright A_NoBlocking
 		SKUL J 3
@@ -121,6 +129,8 @@ Actor NirikLostSoul : EquestriaLostSoul
 		Goto Missile+2
 	
 	Death:
+		"####" "#" 0 { bSPRITEFLIP = randompick(0, 1); }
+		
 		SKUL F 6 Bright
 		SKUL G 6 Bright A_Scream
 		SKUL H 6 Bright
@@ -133,6 +143,8 @@ Actor NirikLostSoul : EquestriaLostSoul
 	
 	XDeath:
 	Death.Berserk:
+		"####" "#" 0 { bSPRITEFLIP = randompick(0, 1); }
+		
 		SKUL H 6 Bright A_Scream
 		SKUL I 3 Bright A_NoBlocking
 		SKUL J 3
