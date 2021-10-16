@@ -143,6 +143,8 @@ ACTOR RocketSmoke : Trails replaces RocketSmokeTrail
 	
 	-NoInteraction
 	-NOCLIP
+	
+	+MoveWithSector
 
 	States
 	{
