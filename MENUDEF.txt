@@ -19,6 +19,8 @@ StaticText ""
 StaticText "$GRAPHICSSETTINGS", "Brick"
 StaticText ""
 
+Option "Enhanced Gore", "GoreToggle", "onoff"
+StaticText ""
 /*
 StaticText "$HIRESETTINGS", "Brick"
 StaticText "$HIRESWARNING", "White"
@@ -27,14 +29,6 @@ StaticText ""
 Option "Hi-Res Guns Pickups", "HDGunsToggle", "onfoff"
 Option "Hi-Res Quality Pickups", "HDPickToggle", "onoff"
 Option "Hi-Res Projectiles", "HDProjectileToggle", "onoff"*/
-}
-
-OptionValue "MissileTrails"
-{
-	0, "Off"
-	1, "Particles"
-	2, "Sprites"
-	3, "Sprites and Particles"
 }
 
 LISTMENU "MainMenu"
