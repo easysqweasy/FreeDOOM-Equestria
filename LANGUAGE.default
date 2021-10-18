@@ -4,21 +4,6 @@ WARNING = "WARNING!";
 NOKIDS = "This is NOT a Mod for CHILDREN!";
 MAYCONTAIN = "Contains violence, blood and gore.";
 
-DOOMEQUESTRIAOPTIONS = "DOOM Equestria Options";
-EQUESTRIAOPTIONS = "Mod Options";
-
-WIPWARNING = "^Not yet implemented";
-
-VIDEOSETTINGS = "Video Settings";
-
-BOBTOGGLE = "Bobbing after fire";
-CAMRECOILTOGGLE = "Camera Recoil";
-AURATOGGLE = "Magic Auras on Weapons";
-FOVTOGGLE = "To change the FOV (Field Of View) open the Console and put 'Fov [Desired Quantity]'";
-
-HIRESETTINGS = "High Quality Sprites Settings*";
-HIRESWARNING = "*May decrease performance on weaker computers";
-
 BABYSKILL = "I'm a Little Pony";
 EASYSKILL = "Hey, not too rough";
 NORMALSKILL = "Hurt me plenty";

@@ -4,21 +4,6 @@ WARNING = "ATENÇÃO!";
 NOKIDS = "Isso NÃO é um Mod para CRIANÇAS!";
 MAYCONTAIN = "Contém violência extrema e sangue.";
 
-DOOMEQUESTRIAOPTIONS = "Opções do DOOM Equestria";
-EQUESTRIAOPTIONS = "Opções do Mod";
-
-WIPWARNING = "^Ainda não implementado";
-
-VIDEOSETTINGS = "Configurações de Vídeo";
-
-BOBTOGGLE = "Movimentação na arma após o disparo";
-CAMRECOILTOGGLE = "Recuo de camera";
-AURATOGGLE = "Aura mágica nas armas";
-FOVTOGGLE = "Para mudar o seu FOV (Campo de Visão) abra o console e coloque 'Fov [Quantidade Desejada]'";
-
-HIRESETTINGS = "Opções de Alta Qualidade*";
-HIRESWARNING = "*Pode reduzir o desempenho em computadores fracos";
-
 MNU_CHOOSESKILL = "Nível de Dificuldade:";
 
 BABYSKILL = "Eu sou um Pequeno Ponêi";

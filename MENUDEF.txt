@@ -19,7 +19,7 @@ StaticText ""
 StaticText "$GRAPHICSSETTINGS", "Brick"
 StaticText ""
 
-Option "Enhanced Gore", "GoreToggle", "onoff"
+Option "$GORETOGGLE", "GoreToggle", "onoff"
 StaticText ""
 /*
 StaticText "$HIRESETTINGS", "Brick"

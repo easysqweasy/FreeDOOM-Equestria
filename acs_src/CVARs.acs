@@ -11,5 +11,10 @@ script "CamRecoilToggle" (void)
     SetResultValue(GetCVar("CamRecoilToggle"));
 }
 
+script "GoreToggle" (void)
+{
+    SetResultValue(GetCVar("GoreToggle"));
+}
+
 ////Classic Weapons
 //ragedox is lazy
