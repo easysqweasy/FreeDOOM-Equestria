@@ -10,7 +10,7 @@ script "YouAreHere" enter
 	1, CR_WHITE, 1.5, 1.0, 3.5, 0.1, 1.0);
 }
 
-script "ClopperChecker" enter //Ragedox says: Hands off!
+script "CheckClopper" enter //Ragedox says: Hands off!
 {
 	if (GameType() == GAME_TITLE_MAP)
 	
@@ -36,13 +36,13 @@ script "ClopperChecker" enter //Ragedox says: Hands off!
 	}
 }
 
-Script "CheckBrutal" enter
+Script "CheckBrutalDoom" enter
 {
 	if (CheckClass("Doomer") && CheckClass("Melee_Attacks"))
 	{
-		HudMessage(s:"It looks like you are playing Brutal DOOM Equestria,
+		HudMessage(s:"It looks like that you want to play Brutal DOOM Equestria,
 		remember, you can have a bad time...";
-		HUDMSG_TYPEON | HUDMSG_PLAIN, 20, CR_ICE, 1.5, 0.8, 0);
+		HUDMSG_TYPEON | HUDMSG_PLAIN, 100, CR_ICE, 1.5, 0.8, 0);
 	}
 }
 
