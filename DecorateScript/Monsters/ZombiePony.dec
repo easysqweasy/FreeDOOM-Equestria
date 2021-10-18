@@ -67,18 +67,6 @@ ACTOR EquestriaZombieMan Replaces ZombieMan
 		POSS NOPQRST 5
         POSS U -1
         Stop
-		
-	XDeath.GibsOff:
-		"####" "#" 0 { bSPRITEFLIP = randompick(0, 1); }
-		
-		POSS M 5
-		{
-			A_XScream;
-			A_NoBlocking;
-		}
-		POSS NOPQRST 5
-		POSS U -1
-		Stop
 	
 	Death.Berserk:
 	XDeath.Berserk:
