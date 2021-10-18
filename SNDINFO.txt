@@ -33,8 +33,6 @@ pickup/plasmagun "Sounds/Pickups/Weapons/GetPlasmaGun.wav"
 pickup/rocklauncher "Sounds/Pickups/Weapons/GetRKTLauncher.wav"
 pickup/bfg "Sounds/Pickups/Weapons/GetBFG.wav"
 
-misc/k_pkup "Sounds/Pickups/GetKeycard.ogg"
-
 /* Gore */
 
 $random gore/bloodsplats { gore/bloodsplats1 gore/bloodsplats2 gore/bloodsplats3 gore/bloodsplats4 }
