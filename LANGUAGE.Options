@@ -15,6 +15,7 @@ FOVTOGGLE = "To change the FOV (Field Of View) open the Console and put 'Fov [De
 GRAPHICSSETTINGS = "Graphic Settings";
 
 GORETOGGLE = "Enhanced Gore";
+REALISTIC = "Realistic";
 
 HIRESETTINGS = "High Quality Sprites Settings*";
 HIRESWARNING = "*May decrease performance on weaker computers";
@@ -36,6 +37,7 @@ FOVTOGGLE = "Para mudar o seu FOV (Campo de Visão) abra o console e coloque 'Fo
 GRAPHICSSETTINGS = "Configurações Graficas";
 
 GORETOGGLE = "Gore Aprimorado";
+REALISTIC = "Realista";
 
 HIRESETTINGS = "Opções de Alta Qualidade*";
 HIRESWARNING = "*Pode reduzir o desempenho em computadores fracos";

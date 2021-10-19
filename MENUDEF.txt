@@ -19,8 +19,15 @@ StaticText ""
 StaticText "$GRAPHICSSETTINGS", "Brick"
 StaticText ""
 
-Option "$GORETOGGLE", "GoreToggle", "onoff"
+Option "$GORETOGGLE", "GoreToggle", "GoreType"
 StaticText ""
+
+OptionValue "GoreType"
+{
+	0, "Off"
+	1, "Quake-ish"
+	2, "$REALISTIC"
+}
 /*
 StaticText "$HIRESETTINGS", "Brick"
 StaticText "$HIRESWARNING", "White"
