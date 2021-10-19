@@ -22,12 +22,6 @@ StaticText ""
 Option "$GORETOGGLE", "GoreToggle", "GoreType"
 StaticText ""
 
-OptionValue "GoreType"
-{
-	0, "Off"
-	1, "Quake-ish"
-	2, "$REALISTIC"
-}
 /*
 StaticText "$HIRESETTINGS", "Brick"
 StaticText "$HIRESWARNING", "White"
@@ -36,6 +30,13 @@ StaticText ""
 Option "Hi-Res Guns Pickups", "HDGunsToggle", "onfoff"
 Option "Hi-Res Quality Pickups", "HDPickToggle", "onoff"
 Option "Hi-Res Projectiles", "HDProjectileToggle", "onoff"*/
+}
+
+OptionValue "GoreType"
+{
+	0, "Off"
+	1, "Quake-ish"
+	2, "$REALISTIC"
 }
 
 LISTMENU "MainMenu"
