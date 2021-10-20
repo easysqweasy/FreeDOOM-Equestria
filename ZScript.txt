@@ -1,23 +1,24 @@
-Actor DebrisGeneral
+Class DebrisGeneral : Actor
 {
-  +MISSILE
-  +NOBLOCKMAP
-  +DROPOFF
-  +NOTELEPORT
-  //+GHOST
-  +FORCEXYBILLBOARD
-  +FLOORCLIP
-  +MOVEWITHSECTOR
-  +CANNOTPUSH
-  +SKYEXPLODE
-  +NOBLOCKMONST
-  
-  -ACTIVATEIMPACT
-  -ACTIVATEPCROSS
-  Radius 1
-  Height 1
-  Mass 1
-  Damage 0
+	Default
+	{
+		//+MISSILE;
+		+NOBLOCKMAP;
+		+DROPOFF;
+		+NOTELEPORT;
+		//+GHOST;
+		+FORCEXYBILLBOARD;
+		+FLOORCLIP;
+		+MOVEWITHSECTOR;
+		+CANNOTPUSH;
+		+SKYEXPLODE;
+		+NOBLOCKMONST;
+	  
+		-ACTIVATEIMPACT
+		-ACTIVATEPCROSS
+		Radius 1 Height 1
+		Damage 0
+	}
 }
 
 #include "Actors/Tokens.dec"
