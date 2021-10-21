@@ -89,20 +89,20 @@ Class KickPuff : EquestriaBulletPuff
 {
 	Default
 	{
-		DamageType Kick
-		AttackSound "*fist"
+		DamageType Kick;
+		AttackSound "*fist";
 		
-		+BLOODLESSIMPACT
-		+NODECAL
+		+BLOODLESSIMPACT;
+		+NODECAL;
 	}
 	States;
 	{
 	
 	Spawn:
 	Melee:
-		PUFF C 4
-		PUFF D 1 A_FadeOut(0.1)
-		Wait
+		PUFF C 4;
+		PUFF D 1 A_FadeOut(0.1);
+		Wait;
 	
 	}
 }
