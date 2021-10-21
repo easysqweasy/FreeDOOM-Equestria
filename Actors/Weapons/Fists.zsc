@@ -1,49 +1,50 @@
-Actor BerserkFist : DoomEquestriaWeapon
+Class BerserkFist : DoomEquestriaWeapon
 {
-	Weapon.BobSpeed 2
-	Weapon.BobRangeX 1.25 Weapon.BobRangeY 1.50
-	Weapon.BobStyle InverseAlpha
-	
-	Weapon.SelectionOrder 3700
-	Weapon.Kickback 150
-	
-	Obituary "$OB_MPFIST"
-	Tag "$BERSERKFIST"
-	
-	+WEAPON.WIMPY_WEAPON
-	+WEAPON.MELEEWEAPON
-
-	States
+	Default
+	{
+		Weapon.BobSpeed 2;
+		Weapon.BobRangeX 1.25 Weapon.BobRangeY 1.50;
+		Weapon.BobStyle "InverseAlpha";
+		
+		Weapon.SelectionOrder 3700;
+		Weapon.Kickback 150;
+		
+		Obituary "$OB_MPFIST";
+		Tag "$BERSERKFIST";
+		
+		+WEAPON.WIMPY_WEAPON;
+		+WEAPON.MELEEWEAPON;
+	}
+	States/
 	{
 	Ready:
-		PUNG A 0 A_JumpIfInventory("KickCheck", 1, "Kick.Normal")
+		PUNG A 0 A_JumpIfInventory("KickCheck", 1, "Kick.Normal")/
 		
-		PUNG A 1 A_WeaponReady
-		Loop
+		PUNG A 1 A_WeaponReady;
+		Loop;
 		
 	Deselect:
-		TNT1 A 0 A_TakeInventory("KickCheck", 999)
-		TNT1 A 0 A_JumpIf(health <= 0, "DeathCheck")
+		TNT1 A 0 A_TakeInventory("KickCheck", 999);
+		TNT1 A 0 A_JumpIf(health <= 0, "DeathCheck");
 		
-		PUNG A 1 A_Lower
-		Wait
+		PUNG A 1 A_Lower;
+		Wait;
 		
 	Select:
-		PUNG A 0 A_OverlayFlags(0, PSPF_PLAYERTRANSLATED, true)
+		PUNG A 0 A_OverlayFlags(0, PSPF_PLAYERTRANSLATED, true);
 		
-		PUNG A 1 A_Raise
-		Wait
+		PUNG A 1 A_Raise;
+		Wait;
 		
 	Fire:
-		PUNG B 4 A_StartSound("skeleton/swing")
-		PUNG C 4 A_CustomPunch(10 * Random(1, 10), TRUE, 0, "BerserkPuff", 50, 0, 0, "BasicArmorBonus", "skeleton/melee")
-		PUNG D 5
-		PUNG C 4
-		PUNG B 5 A_ReFire
-		Goto Ready
+		PUNG B 4 A_StartSound("skeleton/swing");
+		PUNG C 4 A_CustomPunch(10 * Random(1, 10), TRUE, 0, "BerserkPuff", 50, 0, 0, "BasicArmorBonus", "skeleton/melee");
+		PUNG D 5;
+		PUNG C 4;
+		PUNG B 5 A_ReFire;
+		Goto Ready;
 		
-	Overlay.Aside: Stop
-	Overlay.AirAside: Stop
-	
+	Overlay.Aside: Stop;
+	Overlay.AirAside: Stop;
 	}
 }
