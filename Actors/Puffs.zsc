@@ -1,120 +1,128 @@
-Actor PuffSparkles : DEParticles
+Class PuffSparkles : DEParticles
 {
-	-NOGRAVITY
-	+ExplodeOnWater
-	+UseBounceState +BounceOnActors +BounceOnCeilings +BounceOnFloors -BounceOnWalls
-	BounceType Doom
-	BounceFactor 0.5
-	
-	Scale 0.50
-	
-	Height 2
-	Radius 1
-	
-	Gravity 0.25
-	
-	Speed 5
-	
-	RenderStyle Add
-	
-	States
+	Default
+	{
+		-NOGRAVITY;
+		+ExplodeOnWater;
+		+UseBounceState; +BounceOnActors; +BounceOnCeilings; +BounceOnFloors; -BounceOnWalls;
+		BounceType "Doom"
+		BounceFactor 0.5;
+		
+		Scale 0.50;
+		
+		Height 2; Radius 1;
+		
+		Gravity 0.25;
+		
+		Speed 5;
+		
+		RenderStyle "Add";
+	}
+	States;
 	{
 	Spawn:
-		TNT1 A 0 A_JumpIf(waterlevel > 1, "Death")
+		TNT1 A 0 A_JumpIf(waterlevel > 1, "Death");
 		
-		PUFF A 0 Bright A_SetScale(scalex - 0.05, scaley - 0.05)
-		PUFF A 5 Bright A_FadeOut(0.10)
-		PUFF A 0 Bright A_SetScale(scalex - 0.05, scaley - 0.05)
-		PUFF A 5 Bright A_FadeOut(0.10)
-		PUFF A 0 Bright A_SetScale(scalex - 0.05, scaley - 0.05)
-		PUFF A 5 Bright A_FadeOut(0.10)
-		Loop
+		PUFF A 0 Bright A_SetScale(scalex - 0.05, scaley - 0.05);
+		PUFF A 5 Bright A_FadeOut(0.10);
+		PUFF A 0 Bright A_SetScale(scalex - 0.05, scaley - 0.05);
+		PUFF A 5 Bright A_FadeOut(0.10);
+		PUFF A 0 Bright A_SetScale(scalex - 0.05, scaley - 0.05);
+		PUFF A 5 Bright A_FadeOut(0.10);
+		Loop;
 	
 	Bounce:
-		PUFF A 0 A_SetScale(scalex - 0.05, scaley - 0.05)
-		PUFF A 0 A_FadeOut(frandom(0.015, 0.5))
-		Goto Spawn
+		PUFF A 0 A_SetScale(scalex - 0.05, scaley - 0.05);
+		PUFF A 0 A_FadeOut(frandom(0.015, 0.5));
+		Goto Spawn;
 		
 	Death:
-		PUFF A 0 A_SetScale(scalex - 0.05, scaley - 0.05)
-		PUFF A 1 Bright A_FadeOut(0.05)
-		Wait
+		PUFF A 0 A_SetScale(scalex - 0.05, scaley - 0.05);
+		PUFF A 1 Bright A_FadeOut(0.05);
+		Wait;
 		
 	}
 }
 
-Actor EquestriaBulletPuff : BulletPuff replaces BulletPuff
+Class EquestriaBulletPuff : BulletPuff replaces BulletPuff
 {
-	Height 6 Radius 3
-	+FLOORCLIP
-	+NOTELEPORT
-	+FORCEXYBILLBOARD
-	+NOBLOCKMAP
-	-RANDOMIZE
-	
-	States
+	Default
+	{
+		Height 6; Radius 3;
+		
+		+FLOORCLIP;
+		+NOTELEPORT;
+		+FORCEXYBILLBOARD;
+		+NOBLOCKMAP;
+		-RANDOMIZE;
+	}
+	States;
 	{
 	
 	Spawn:
-		TNT1 A 0
-		TNT1 AAA 0 A_CustomMissile("PuffSparkles", 0, 0, random (0, 360), 2, random (0, 360))
-		TNT1 A 0 A_CustomMissile("BulletDecalCheck", 7,0,0, CMF_TRACKOWNER | CMF_AIMDIRECTION, -90)
+		TNT1 A 0;
+		TNT1 AAA 0 A_CustomMissile("PuffSparkles", 0, 0, random (0, 360), 2, random (0, 360));
+		TNT1 A 0 A_CustomMissile("BulletDecalCheck", 7,0,0, CMF_TRACKOWNER | CMF_AIMDIRECTION, -90);
 
-		PUFF A random(2, 8) Bright
-		PUFF B 4
+		PUFF A random(2, 8) Bright;
+		PUFF B 4;
 	
+	Melee:
+		PUFF C 4;
+		PUFF D 1 A_FadeOut(0.1);
+		Wait;
+	}
+}
+
+Class ShotgunPuff : EquestriaBulletPuff
+{
+	States;
+	{
+	Melee:
+		PUFF C 4;
+		PUFF D 1 A_FadeOut(0.05);
+		Wait;
+	}
+}
+
+Class KickPuff : EquestriaBulletPuff
+{
+	Default
+	{
+		DamageType Kick
+		AttackSound "*fist"
+		
+		+BLOODLESSIMPACT
+		+NODECAL
+	}
+	States;
+	{
+	
+	Spawn:
 	Melee:
 		PUFF C 4
 		PUFF D 1 A_FadeOut(0.1)
 		Wait
-	}
-}
-
-Actor ShotgunPuff : EquestriaBulletPuff
-{
-	States
-	{
-	Melee:
-		PUFF C 4
-		PUFF D 1 A_FadeOut(0.05)
-		Wait
-	}
-}
-
-Actor KickPuff : EquestriaBulletPuff
-{
-	DamageType Kick
-    AttackSound "*fist"
-    
-	+BLOODLESSIMPACT
-	+NODECAL
 	
-	States
+	}
+}
+
+Class BerserkPuff : KickPuff
+{
+	Default
+	{
+		DamageType "Berserk";
+		Alpha 0.5;
+		
+		-BLOODLESSIMPACT;
+	}
+	States;
 	{
 	
 	Spawn:
 	Melee:
-		PUFF C 4
-		PUFF D 1 A_FadeOut(0.1)
-		Wait
-	
-	}
-}
-
-Actor BerserkPuff : KickPuff
-{
-	DamageType Berserk
-	Alpha 0.5
-	
-	-BLOODLESSIMPACT
-	
-	States
-	{
-	
-	Spawn:
-	Melee:
-		RSMK AAAAABBBBBCCCCCDDDDDEEEEE 1 A_FadeOut(0.015)
-		Stop
+		RSMK AAAAABBBBBCCCCCDDDDDEEEEE 1 A_FadeOut(0.015);
+		Stop;
 
 	}
 }
