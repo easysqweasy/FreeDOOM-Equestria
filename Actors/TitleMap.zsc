@@ -1,28 +1,34 @@
-Actor TitleMapProps
+Class TitleMapProps : Actor
 {
-	Speed 0
-	+NOGRAVITY +FLOAT +NOINTERACTION 
-}
-
-Actor Shainer : TitleMapProps
-{	
-//$Category Cutscenes
-	States
+	Default
 	{
-	Spawn:
-		PLAY A -1
-		Stop
+		Speed 0;
+		+NOGRAVITY; +FLOAT; +NOINTERACTION;
 	}
 }
 
-Actor FlyingShotgun : TitleMapProps
-{
-//$Category Cutscenes
-	+FORCEXYBILLBOARD +FLOATBOB
-	States
+Class Shainer : TitleMapProps
+{	
+	//$Category Cutscenes
+	States;
 	{
 	Spawn:
-		SHOT A -1
-		Stop
+		PLAY A -1;
+		Stop;
+	}
+}
+
+Class FlyingShotgun : TitleMapProps
+{
+	Default
+	{
+		//$Category Cutscenes
+		+FORCEXYBILLBOARD; +FLOATBOB;
+	}
+	States;
+	{
+	Spawn:
+		SHOT A -1;
+		Stop;
 	}
 }
