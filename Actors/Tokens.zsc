@@ -1,20 +1,18 @@
-Actor InvToken : Inventory
+Class InvToken : Inventory
 {	Inventory.MaxAmount 1	+INVENTORY.QUIET	-INVENTORY.INVBAR}
 
-Actor DeadCheck : InvToken	{}
+Class DeadCheck : InvToken	{}
 
-Actor KickCheck : InvToken	{}
+Class KickCheck : InvToken	{}
 
-Actor LowHealthCheck : InvToken	{}
+Class LowHealthCheck : InvToken	{}
 
 //ToDo
 
-Actor InterpolateON : InvToken	{}	Actor InterpolateOFF : InvToken	{}
+Class InspectAnimation : InvToken	{} //Maybe
 
-Actor InspectAnimation : InvToken	{} //Maybe
+Class PickedUpBerserk : InvToken	{} //To do in ACS or Overlays
 
-Actor PickedUpBerserk : InvToken	{} //To do in ACS or Overlays
+Class FoundHellPortal : InvToken {}
 
-Actor FoundHellPortal : InvToken {}
-
-Actor FoundDaisy : InvToken	{}
+Class FoundDaisy : InvToken	{}
