@@ -1,57 +1,59 @@
-actor EquestriaDoomPlayer : DoomPlayer replaces DoomPlayer
+Class EquestriaDoomPlayer : DoomPlayer replaces DoomPlayer
 {
-	+CASTSPRITESHADOW
-	
-	Player.DisplayName "EquestrianDoomPlayer"
-	
-	Player.DamageScreenColor red
-	
-	Player.StartItem "EquestriaPistol"
-	Player.StartItem "Clip", 20
-	//Player.StartItem "Fist"
-  
-	Player.WeaponSlot 1, "EquestriaChainsaw", "BerserkFist"
-	Player.WeaponSlot 2, "EquestriaPistol"
-	Player.WeaponSlot 3, "EquestriaShotgun", "EquestriaSuperShotgun"
-	Player.WeaponSlot 4, "EquestriaChaingun"//, "Repeater"
-	Player.WeaponSlot 5, "EquestriaPlasmaGun"
-	Player.WeaponSlot 6, "EquestriaRocketLauncher"
-	Player.WeaponSlot 7, "EquestriaBFG9000"
-	
-	States
+	Default
+	{
+		+CASTSPRITESHADOW
+		
+		Player.DisplayName "EquestrianDoomPlayer"
+		
+		Player.DamageScreenColor red
+		
+		Player.StartItem "EquestriaPistol"
+		Player.StartItem "Clip", 20
+		//Player.StartItem "Fist"
+	  
+		Player.WeaponSlot 1, "EquestriaChainsaw", "BerserkFist"
+		Player.WeaponSlot 2, "EquestriaPistol"
+		Player.WeaponSlot 3, "EquestriaShotgun", "EquestriaSuperShotgun"
+		Player.WeaponSlot 4, "EquestriaChaingun"//, "Repeater"
+		Player.WeaponSlot 5, "EquestriaPlasmaGun"
+		Player.WeaponSlot 6, "EquestriaRocketLauncher"
+		Player.WeaponSlot 7, "EquestriaBFG9000"
+	}
+	States;
 	{
 	
 	Death:
-		PLAY H 10
-		PLAY I 10 A_PlayerScream
-		PLAY J 10 A_NoBlocking
-		PLAY KLM 10
-		PLAY N -1
-		Stop
+		PLAY H 10;
+		PLAY I 10 A_PlayerScream;
+		PLAY J 10 A_NoBlocking;
+		PLAY KLM 10;
+		PLAY N -1;
+		Stop;
 		
 	Death.Nukage:
-		TNT1 A 0
-		TNT1 A 0 A_GiveInventory("NukageDeath", 1)
-		Goto Death
+		TNT1 A 0;
+		TNT1 A 0 A_GiveInventory("NukageDeath", 1);
+		Goto Death;
 	
 	Death.Lava:
-		TNT1 A 0
-		TNT1 A 0 A_GiveInventory("LavaDeath", 1)
-		Goto Death
+		TNT1 A 0;
+		TNT1 A 0 A_GiveInventory("LavaDeath", 1);
+		Goto Death;
 		
 	Death.Fire:
-		TNT1 A 0
-		TNT1 A 0 A_GiveInventory("FireDeath", 1)
-		Goto Death
+		TNT1 A 0;
+		TNT1 A 0 A_GiveInventory("FireDeath", 1);
+		Goto Death;
 		
 	Death.Blast:
-		PLAY H 0 A_GiveInventory("BlastDeath", 1)
-		PLAY H 10
-		PLAY I 10 A_PlayerScream
-		PLAY J 10 A_NoBlocking
-		PLAY KLM 10
-		PLAY N -1
-		Stop
+		PLAY H 0 A_GiveInventory("BlastDeath", 1);
+		PLAY H 10;
+		PLAY I 10 A_PlayerScream;
+		PLAY J 10 A_NoBlocking;
+		PLAY KLM 10;
+		PLAY N -1;
+		Stop;
 	
 	XDeath:
 		PLAY O 5
@@ -61,69 +63,70 @@ actor EquestriaDoomPlayer : DoomPlayer replaces DoomPlayer
 			A_XScream;
 			A_NoBlocking;
 		}
-		PLAY P 5
-		PLAY Q 5
-		PLAY RSTUV 5
-		PLAY W -1
-		Stop
+		PLAY P 5;
+		PLAY Q 5;
+		PLAY RSTUV 5;
+		PLAY W -1;
+		Stop;
 		
 	Death.BruisersMelee:
-		PLAY O 5 A_SkullPop("PopSkull")
-		PLAY P 5 A_XScream
-		PLAY R 5 A_NoBlocking
-		PLAY STUV 5
-		PLAY W -1
-		Stop
+		PLAY O 5 A_SkullPop("PopSkull");
+		PLAY P 5 A_XScream;
+		PLAY R 5 A_NoBlocking;
+		PLAY STUV 5;
+		PLAY W -1;
+		Stop;
 	}
 }
 
-Actor BlastDeath : InvToken {}
-Actor NukageDeath : InvToken {}
-Actor LavaDeath : InvToken {}
-Actor FireDeath : InvToken {}
+Class BlastDeath : InvToken {}
+Class NukageDeath : InvToken {}
+Class LavaDeath : InvToken {}
+Class FireDeath : InvToken {}
 
-ACTOR PopSkull : PlayerChunk
+Class PopSkull : PlayerChunk
 {
-	+MISSILE
-	
-	Height 8 Radius 4
-
-	+ForceXYBillBoard
-	
-	+UseBounceState +BounceOnFloors +BounceOnActors +BounceOnWalls
-	
-	BounceType Doom
-	
-	Gravity 0.25
-	
-	+NOSKIN
-	-SOLID
-	-SHOOTABLE
-	-PICKUP
-	-NOTDMATCH
-	-FRIENDLY
-	-SLIDESONWALLS
-	-CANPUSHWALLS
-	-WINDTHRUST
-	-TELESTOMP
-	
-	States
+	Default
 	{
+		+MISSILE;
 	
-	Spawn:
-		BSKL ABCDE 5
-		BSKL A 0 A_SpawnItem("BloodTrail")
-		Loop
+		Height 8; Radius 4;
+
+		+ForceXYBillBoard;
+	
+		+UseBounceState; +BounceOnFloors; +BounceOnActors; +BounceOnWalls;
+		BounceType Doom;
+	
+		Gravity 0.25;
+	
+		+NOSKIN;
+		-SOLID;
+		-SHOOTABLE;
+		-PICKUP;
+		-NOTDMATCH;
+		-FRIENDLY;
+		-SLIDESONWALLS;
+		-CANPUSHWALLS;
+		-WINDTHRUST;
+		-TELESTOMP;
+	
+		States;
+		{
+	
+		Spawn:
+			BSKL ABCDE 5;
+			BSKL A 0 A_SpawnItem("BloodTrail");
+			Loop
 		
 	
-	Death:
-		BSKL A 0
-		BSKL A 1 A_CheckFloor("Hit")
-		Wait
+		Death:
+			BSKL A 0;
+			BSKL A 1 A_CheckFloor("Hit");
+			Wait;
 		
-	Hit:
-		BSKL F 16 A_CheckPlayerDone
-		Wait
+		Hit:
+			BSKL F 16 A_CheckPlayerDone;
+			Wait;
 		
 	}
 }
