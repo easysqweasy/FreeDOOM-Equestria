@@ -18,11 +18,11 @@ Class XDeathGibber : Actor
 	Spawn:
 		TNT1 A 0 A_JumpIf(CallACS("GoreToggle")== 0, "Bye");
 		
-		TNT1 AAA 0 A_CustomMissile(GibGore2, random(0, 8), 0, random (0, 360), 2, random (10, 90));
-		TNT1 BBB 0 A_CustomMissile(GibGore3, random(0, 8), 0, random (0, 360), 2, random (10, 90));
-		TNT1 CCC 0 A_CustomMissile(GibGore4, random(0, 8), 0, random (0, 360), 2, random (10, 90));
-		TNT1 DDDDD 0 A_CustomMissile(TinyGibGore1, random(0, 8), 0, random (0, 360), 2, random (10, 90));
-		TNT1 EEEEE 0 A_CustomMissile(TinyGibGore2, random(0, 8), 0, random (0, 360), 2, random (10, 90));
+		TNT1 AAA 0 A_CustomMissile("GibGore2", random(0, 8), 0, random (0, 360), 2, random (10, 90));
+		TNT1 BBB 0 A_CustomMissile("GibGore3", random(0, 8), 0, random (0, 360), 2, random (10, 90));
+		TNT1 CCC 0 A_CustomMissile("GibGore4", random(0, 8), 0, random (0, 360), 2, random (10, 90));
+		TNT1 DDDDD 0 A_CustomMissile("TinyGibGore1", random(0, 8), 0, random (0, 360), 2, random (10, 90));
+		TNT1 EEEEE 0 A_CustomMissile("TinyGibGore2", random(0, 8), 0, random (0, 360), 2, random (10, 90));
 		Stop;
 		
 	Bye: TNT1 A 0;
@@ -38,7 +38,7 @@ Class BigGibber : XDeathGibber
 	Spawn:
 		TNT1 A 0 A_JumpIf(CallACS("GoreToggle")== 0, "Bye");
 		
-		TNT1 AAAAA 0 A_CustomMissile(BigGoreRandom, random(0, 8), 0, random (0, 360), 2, random (10, 180));
+		TNT1 AAAAA 0 A_CustomMissile("BigGoreRandom", random(0, 8), 0, random (0, 360), 2, random (10, 180));
 		Stop;
 	}
 }
@@ -50,9 +50,9 @@ Class BloodExplosion : XDeathGibber
 	Spawn:
 		TNT1 A 0 A_JumpIf(CallACS("GoreToggle")== 0, "Bye");
 		
-		TNT1 AAAAA 0 A_CustomMissile(BloodTrail, random(0, 8), 0, random (0, 360), 2, random (10, 100));
-		TNT1 BBBBBB 0 A_CustomMissile(SmallBloodTrail, random(0, 8), 0, random (0, 360), 2, random (10, 100));
-		TNT1 CCCC 0 A_CustomMissile(EquestriaBlood, random(0, 8), 0, random (0, 360), 2, random (10, 100));
+		TNT1 AAAAA 0 A_CustomMissile("BloodTrail", random(0, 8), 0, random (0, 360), 2, random (10, 100));
+		TNT1 BBBBBB 0 A_CustomMissile("SmallBloodTrail", random(0, 8), 0, random (0, 360), 2, random (10, 100));
+		TNT1 CCCC 0 A_CustomMissile("EquestriaBlood", random(0, 8), 0, random (0, 360), 2, random (10, 100));
 		Stop;
 	}
 }
@@ -65,9 +65,9 @@ Class BloodExplosionSphere : BloodExplosion
 	Spawn:
 		TNT1 A 0 A_JumpIf(CallACS("GoreToggle") == 0, "Bye");
 		
-		TNT1 AAAAA 0 A_CustomMissile(BloodTrail, random(0, 8), 0, random (0, 360), 2, random (0, 360));
-		TNT1 BBBBBB 0 A_CustomMissile(SmallBloodTrail, random(0, 8), 0, random (0, 360), 2, random (0, 360));
-		TNT1 CCCC 0 A_CustomMissile(EquestriaBlood, random(0, 8), 0, random (0, 360), 2, random (0, 360));
+		TNT1 AAAAA 0 A_CustomMissile("BloodTrail", random(0, 8), 0, random (0, 360), 2, random (0, 360));
+		TNT1 BBBBBB 0 A_CustomMissile("SmallBloodTrail", random(0, 8), 0, random (0, 360), 2, random (0, 360));
+		TNT1 CCCC 0 A_CustomMissile("EquestriaBlood", random(0, 8), 0, random (0, 360), 2, random (0, 360));
 		Stop;
 	}
 }
@@ -164,7 +164,6 @@ Class EquestriaBlood : Blood replaces Blood
 		Wait;
 		
 	Crash:
-		TNT1 A 0 { bNOBLOCKMAP = 0; }
 		BLUD B 8 A_SpawnItemEX("SmallBloodPoolDrop", 0, 0, 0, 0, 0, 0, 0, SXF_TRANSFERTRANSLATION | SXF_TRANSFERSCALE);
 		BLUD A 8;
 		Stop;
@@ -331,8 +330,11 @@ Class TinyGibGore2 : TinyGibGore1
 
 Class BigGoreRandom : RandomSpawner
 {
-	DropItem BigGibGore1;
-	DropItem BigGibGore2;
+	Default
+	{
+		DropItem "BigGibGore1";
+		DropItem "BigGibGore2";
+	}
 }
 
 Class BigGibGore1 : GibGoreBase
