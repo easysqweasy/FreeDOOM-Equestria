@@ -95,7 +95,7 @@ Class PopSkull : PlayerChunk
 		+ForceXYBillBoard;
 	
 		+UseBounceState; +BounceOnFloors; +BounceOnActors; +BounceOnWalls;
-		BounceType Doom;
+		BounceType "Doom";
 	
 		Gravity 0.25;
 	
