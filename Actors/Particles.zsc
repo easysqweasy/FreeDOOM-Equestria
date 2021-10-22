@@ -1,117 +1,33 @@
-actor DEParticles : DebrisGeneral
+Class DEParticles : DebrisGeneral
 {
-	+NOGRAVITY
-	//+THRUACTORS
-	+DONTSPLASH
-	+ExplodeOnWater
-}
-
-Actor Trails : DEParticles
-{
-	Height 0
-	Radius 0
-	
-	Scale 0.75
-	RenderStyle Add
-	Alpha 0.75
-	
-	+Randomize
-	
-	-Missile
-	
-	+ROLLSPRITE +ROLLCENTER
-	
-	-MOVEWITHSECTOR
-	+DONTSPLASH
-	
-	+NoInteraction
-}
-
-actor FirePieceSpawn : RandomSpawner
-{
-	DropItem FirePiece
-	DropItem FirePiece2
-	DropItem FirePiece3
-}
-
-actor GravityFirePieceSpawn : RandomSpawner
-{
-	DropItem GFirePiece
-	DropItem GFirePiece2
-	DropItem GFirePiece3
-}
-
-actor Pieces : DEParticles
-{
-	RenderStyle AddStencil
-	Alpha 1.0
-	States
+	Default
 	{
-	
-	Spawn:
-		PIEC A 5 Bright
-		PIEC A 1 Bright A_FadeOut(0.1)
-		Wait
+		+NOGRAVITY;
+		//+THRUACTORS;
+		+DONTSPLASH;
+		+ExplodeOnWater;
 	}
 }
 
-actor FirePiece : Pieces
+Class Trails : DEParticles
 {
-	RenderStyle AddStencil
-	StencilColor Yellow
-}	
-
-actor FirePiece2 : FirePiece
-{
-  RenderStyle AddStencil
-  StencilColor Orange
-}
-
-actor FirePiece3 : FirePiece
-{
-  Scale 1.5
-  RenderStyle AddStencil
-  StencilColor Red
-}
-
-actor GFirePiece : FirePiece
-{
-  Speed 8
-  Mass 1
-  -NOGRAVITY
-}
-
-actor GFirePiece2 : FirePiece2
-{
-  Speed 8
-  Mass 1
-  -NOGRAVITY
-}
-
-actor GFirePiece3 : FirePiece3
-{
-  Speed 8
-  Mass 1
-  -NOGRAVITY
-}
-
-actor AcidPieceSpawn : RandomSpawner
-{
-	DropItem AcidPiece
-	DropItem AcidPiece2
-}
-
-actor AcidPiece : Pieces
-{
-  StencilColor DarkGreen
-  -NOGRAVITY
-  Gravity 0.05
-}
-
-actor AcidPiece2 : Pieces
-{
-  StencilColor Green
-  -NOGRAVITY
-  Scale 1.5
-  Gravity 0.10
+	Default
+	{
+		Height 0; Radius 0;
+		
+		Scale 0.75;
+		RenderStyle "Add";
+		Alpha 0.75;
+		
+		+Randomize;
+		
+		-Missile;
+		
+		+ROLLSPRITE; +ROLLCENTER;
+		
+		-MOVEWITHSECTOR;
+		+DONTSPLASH;
+		
+		+NoInteraction;
+	}
 }
