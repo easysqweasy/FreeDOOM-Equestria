@@ -15,7 +15,7 @@ DoomEdNums
 	15001 = "DemonNirik"
 	15002 = "DemonicDog"
 	15003 = "BossBaronofHell"
-	15004 = "BurstBat"
+	15004 = "PossessedTrainer"
 
 	/* Heath and Armor */
 
