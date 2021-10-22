@@ -4,6 +4,8 @@
 DoomEdNums
 {
 
+	90 = "Broom"
+
 	/* Title Map and Season Scenes Props */
 	
 	900 = "Shainer"
