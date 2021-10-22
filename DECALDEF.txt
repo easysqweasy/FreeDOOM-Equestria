@@ -181,13 +181,7 @@ generator EquestriaChaingun	ChipDecal
 
 ////Projectiles
 
-//generator DEPlasmaBall 			PlasmaScorch
-generator EquestriaRocket				Scorch
-generator DEBFGBall				BFGLightning
-generator EquestriaImpBall				FireBallScorch
-generator EquestriaBaronBall	BaronScorch
-generator KnightBall			BaronScorch
-
+/*
 ////Monsters
 
 generator EquestriaZombieMan		ChipDecal
@@ -195,3 +189,4 @@ generator EquestriaShotgunGuy		ShellDecal
 generator EquestriaChaingunGuy		ChipDecal
 generator WolfensteinSS		ChipDecal
 generator SpiderMastermind	ChipDecal
+/*
