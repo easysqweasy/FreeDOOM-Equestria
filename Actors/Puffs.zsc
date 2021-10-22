@@ -2,9 +2,9 @@ Class PuffSparkles : DEParticles
 {
 	Default
 	{
-		-NOGRAVITY;
-		+ExplodeOnWater;
-		+UseBounceState; +BounceOnActors; +BounceOnCeilings; +BounceOnFloors; -BounceOnWalls;
+		-NOGRAVITY
+		+ExplodeOnWater
+		+UseBounceState +BounceOnActors +BounceOnCeilings +BounceOnFloors -BounceOnWalls
 		BounceType "Doom";
 		BounceFactor 0.75;
 		
