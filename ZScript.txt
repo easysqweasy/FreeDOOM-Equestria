@@ -32,7 +32,7 @@ Class DebrisGeneral : Actor
 
 ////Effects, Particles, Debris
 
-//#include "Actors/Terrains.zsc"
+#include "Actors/Terrains.zsc"
 #include "Actors/Particles.zsc"
 #include "Actors/Gibs.zsc"
 #include "Actors/FloorDecals.zsc"
