@@ -157,7 +157,7 @@ flickerlight BFGBALL_X5
 	attenuate 1
 }
 
-object DEBFGBall
+object EquestriaBFGBall
 {
     frame BFS1A { light BFGBALL }
     frame BFS1B { light BFGBALL }
