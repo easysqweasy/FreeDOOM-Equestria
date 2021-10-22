@@ -1,4 +1,4 @@
-Class DEParticles : DebrisGeneral
+Class DEParticles : DebrisCore
 {
 	Default
 	{
