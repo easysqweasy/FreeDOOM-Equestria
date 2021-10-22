@@ -1,3 +1,5 @@
+Version "4.7.1"
+
 Class DebrisGeneral : Actor
 {
 	Default
@@ -14,78 +16,84 @@ Class DebrisGeneral : Actor
 		+SKYEXPLODE;
 		+NOBLOCKMONST;
 	  
-		-ACTIVATEIMPACT
-		-ACTIVATEPCROSS
-		Radius 1 Height 1
-		Damage 0
+		-ACTIVATEIMPACT;
+		-ACTIVATEPCROSS;
+		
+		Radius 1; Height 1;
+		Damage 0;
 	}
 }
 
-#include "Actors/Tokens.dec"
-#include "Actors/Player.dec"
-#include "Actors/TitleMap.dec"
-#include "Actors/Cores/WeaponCore.dec"
-//#include "Actors/Shrapnel.dec"
+#include "Actors/Tokens.zsc"
+#include "Actors/Player.zsc"
+#include "Actors/TitleMap.zsc"
+#include "Actors/Weapons/WeaponCore.zsc"
+//#include "Actors/Shrapnel.zsc"
 
 ////Effects, Particles, Debris
 
-#include "Actors/Terrains.dec"
-#include "Actors/Particles.dec"
-#include "Actors/Gibs.dec"
-#include "Actors/FloorDecals.dec"
-#include "Actors/Puffs.dec"
+//#include "Actors/Terrains.zsc"
+#include "Actors/Particles.zsc"
+#include "Actors/Gibs.zsc"
+#include "Actors/FloorDecals.zsc"
+#include "Actors/Puffs.zsc"
 
 ////Weapons
 
-#Include "Actors/Weapons/Broom.dec"
-#Include "Actors/Weapons/Fists.dec"
-#Include "Actors/Weapons/Pistol.dec"
-#Include "Actors/Weapons/Shotgun.dec"
-//#Include "Actors/Weapons/Repeater.dec" Dont Use
-#Include "Actors/Weapons/SuperShotgun.dec"
-#Include "Actors/Weapons/Chaingun.dec"
-#Include "Actors/Weapons/PlasmaGun.dec"
-#Include "Actors/Weapons/RocketLauncher.dec"
-#Include "Actors/Weapons/BFG9000.dec"
-#Include "Actors/Weapons/Chainsaw.dec"
+#Include "Actors/Weapons/Broom.zsc"
+#Include "Actors/Weapons/Fists.zsc"
+#Include "Actors/Weapons/Pistol.zsc"
+#Include "Actors/Weapons/Shotgun.zsc"
+//#Include "Actors/Weapons/Repeater.zsc" Dont Use
+#Include "Actors/Weapons/SuperShotgun.zsc"
+#Include "Actors/Weapons/Chaingun.zsc"
+#Include "Actors/Weapons/PlasmaGun.zsc"
+#Include "Actors/Weapons/RocketLauncher.zsc"
+#Include "Actors/Weapons/BFG9000.zsc"
+#Include "Actors/Weapons/Chainsaw.zsc"
 
 ////Items/PowerUps
 
-#include "Actors/Pickups/Ammo.dec"
-#include "Actors/Pickups/Armor.dec"
-#include "Actors/Pickups/Health.dec"
-#include "Actors/Pickups/Powerups.dec"
-
+/*
+#include "Actors/Pickups/Ammo.zsc"
+#include "Actors/Pickups/Armor.zsc"
+#include "Actors/Pickups/Health.zsc"
+#include "Actors/Pickups/Powerups.zsc"
+*/
 
 ////Monsters
 
-#include "Actors/Monsters/Arachnotron.dec"
-#include "Actors/Monsters/ArchVile.dec"
-#include "Actors/Monsters/BaronHellKnight.dec"
-#include "Actors/Monsters/Cacodemon.dec"
-#include "Actors/Monsters/PainAndLostSoul.dec"
-#include "Actors/Monsters/Imp.dec"
-#include "Actors/Monsters/Mancubus.dec"
-#include "Actors/Monsters/ZombiePony.dec"
-#include "Actors/Monsters/ShotgunGuy.dec"
-#include "Actors/Monsters/HeavyWeaponDude.dec"
-#include "Actors/Monsters/BurstBat.dec"
-#include "Actors/Monsters/TechWeaponDudette.dec"
-#include "Actors/Monsters/Pinky.dec"
-#include "Actors/Monsters/Cyberdemon.dec"
-#include "Actors/Monsters/Revenant.dec"
-#include "Actors/Monsters/Canines.dec"
-#include "Actors/Monsters/ScriptedMarines.dec"
-#include "Actors/Monsters/SpiderMastermind.dec"
-#include "Actors/Monsters/WolfensteinActors.dec"
+/*
+#include "Actors/Monsters/Arachnotron.zsc"
+#include "Actors/Monsters/ArchVile.zsc"
+#include "Actors/Monsters/BaronHellKnight.zsc"
+#include "Actors/Monsters/Cacodemon.zsc"
+#include "Actors/Monsters/PainAndLostSoul.zsc"
+#include "Actors/Monsters/Imp.zsc"
+#include "Actors/Monsters/Mancubus.zsc"
+#include "Actors/Monsters/ZombiePony.zsc"
+#include "Actors/Monsters/ShotgunGuy.zsc"
+#include "Actors/Monsters/HeavyWeaponDude.zsc"
+#include "Actors/Monsters/BurstBat.zsc"
+#include "Actors/Monsters/TechWeaponDudette.zsc"
+#include "Actors/Monsters/Pinky.zsc"
+#include "Actors/Monsters/Cyberdemon.zsc"
+#include "Actors/Monsters/Revenant.zsc"
+#include "Actors/Monsters/Canines.zsc"
+#include "Actors/Monsters/ScriptedMarines.zsc"
+#include "Actors/Monsters/SpiderMastermind.zsc"
+#include "Actors/Monsters/WolfensteinActors.zsc"
+*/
 
 ////Props
 
-#include "Actors/Props/Tech.dec"
-#include "Actors/Props/Nature.dec"
-#include "Actors/Props/Hell.dec"
-#include "Actors/Props/Gothic.dec"
-#include "Actors/Props/Gore.dec"
-#include "Actors/Props/Corpses.dec"
-#include "Actors/Props/LightSources.dec"
-#include "Actors/Props/ExplosiveBarrel.dec"
+/*
+#include "Actors/Props/Tech.zsc"
+#include "Actors/Props/Nature.zsc"
+#include "Actors/Props/Hell.zsc"
+#include "Actors/Props/Gothic.zsc"
+#include "Actors/Props/Gore.zsc"
+#include "Actors/Props/Corpses.zsc"
+#include "Actors/Props/LightSources.zsc"
+#include "Actors/Props/ExplosiveBarrel.zsc"
+*/
