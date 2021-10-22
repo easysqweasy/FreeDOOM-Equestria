@@ -127,6 +127,8 @@ Class EquestriaBFGBall : BFGBall replaces BFGBall
 	{
 		Height 36; Radius 18;
 		
+		Decal "BFGScorch";
+		
 		RenderStyle "Add";
 		Alpha 1;
 		
