@@ -93,11 +93,11 @@ Class GibGoreBase : DebrisCore
 		BounceType "Doom";
 		BounceFactor 0.25;
 		
-		+NOTELEPORT;
-		+THRUGHOST;
-		+FLOORCLIP;
+		+NOTELEPORT
+		+THRUGHOST
+		+FLOORCLIP
 		
-		-COUNTKILL;
+		-COUNTKILL
 	}
 	States
 	{
@@ -171,7 +171,7 @@ Class EquestriaBlood : Blood replaces Blood
 		BLUD C 1
 		{
 			A_FadeOut(0.1);
-			A_SetScale((scalex + frandom(0.25, 0.5)), (scaley + frandom(0.25, 0.5)), false);
+			A_SetScale((Scale.X + frandom(0.25, 0.5)), (Scale.Y + frandom(0.25, 0.5)), false);
 		}
 		Wait;
 	}
@@ -225,7 +225,7 @@ Class SmallBloodParticle : DEParticles
 	Death:
 		BLUD A 1
 		{
-			A_SetScale((scalex - 0.01), (scaley - 0.01), false);
+			A_SetScale((Scale.X - 0.01), (Scale.Y - 0.01), false);
 			A_FadeOut(frandom(0.1, 0.2));
 		}
 		Wait;
@@ -252,7 +252,7 @@ Class SmallBloodPoolDrop : SmallBloodPool
 		POB2 A 1
 		{
 			A_FadeOut(0.15);
-			A_SetScale((scalex + frandom(0.25, 0.5)), (scaley + frandom(0.25, 0.5)), true);
+			A_SetScale((Scale.X + frandom(0.25, 0.5)), (Scale.Y + frandom(0.25, 0.5)), true);
 		}
 		Wait;
 	}
