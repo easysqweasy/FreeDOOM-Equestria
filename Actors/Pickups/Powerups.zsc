@@ -1,182 +1,190 @@
-ACTOR EquestriaBackpack : Backpack replaces Backpack
-{
-  Inventory.PickupSound "pickup/backpack"
-}
+Class EquestriaBackpack : Backpack replaces Backpack
+{	Default {	Inventory.PickupSound "pickup/backpack";	}}
 
-actor EquestriaComputerMap : Allmap replaces Allmap
+Class EquestriaComputerMap : Allmap replaces Allmap
 {
 	States
 	{
 	Spawn:
-		PMAP A random( 10, 20) Bright
-				PMAP E random( 1, 5) Bright
-		PMAP B random( 10, 20) Bright
-				PMAP E random( 1, 5) Bright
-		PMAP C random( 10, 20) Bright
-				PMAP E random( 1, 5) Bright
-		PMAP D random( 10, 20) Bright
-				PMAP E random( 1, 5) Bright
-		Loop
+		PMAP A random( 10, 20) Bright;
+				PMAP E random( 1, 5) Bright;
+		PMAP B random( 10, 20) Bright;
+				PMAP E random( 1, 5) Bright;
+		PMAP C random( 10, 20) Bright;
+				PMAP E random( 1, 5) Bright;
+		PMAP D random( 10, 20) Bright;
+				PMAP E random( 1, 5) Bright;
+		Loop;
 	}
 }
 
 //Invisibility Sphere
 
-ACTOR EquestriaBlurSphere : CustomInventory replaces BlurSphere
+Class EquestriaBlurSphere : CustomInventory replaces BlurSphere
 {
-	Height 40
-	Radius 20
+	Default
+	{
+		Height 40; Radius 20;
 
-	+COUNTITEM
-	+VISIBILITYPULSE
-	+FLOATBOB
-	+NOGRAVITY
-	+FORCEXYBILLBOARD
-	
-	+INVENTORY.BIGPOWERUP
-	+INVENTORY.AUTOACTIVATE
-	+INVENTORY.ALWAYSPICKUP
-	
-	Inventory.PickupMessage "$GOTINVIS" // "Partial Invisibility"
-	Inventory.PickupSound "misc/p_pkup"
-	Renderstyle Translucent
-	Alpha 1
-	
+		+COUNTITEM;
+		+VISIBILITYPULSE;
+		+FLOATBOB;
+		+NOGRAVITY;
+		+FORCEXYBILLBOARD;
+		
+		+INVENTORY.BIGPOWERUP;
+		+INVENTORY.AUTOACTIVATE;
+		+INVENTORY.ALWAYSPICKUP;
+		
+		Inventory.PickupMessage "$GOTINVIS"; // "Partial Invisibility"
+		Inventory.PickupSound "misc/p_pkup";
+		Renderstyle "Translucent";
+		Alpha 1;
+	}
 	States
 	{
 	Spawn:
-		PINS ABCDCBA 6 Bright
-		Loop
+		PINS ABCDCBA 6 Bright;
+		Loop;
 		
 	Pickup:
 		TNT1 A 0
 		{
 			A_GiveInventory("BlurSphereInventory");
-			A_SetBlend(Red, 0.5, 16, Blue);
+			A_SetBlend("Red", 0.5, 16, "Blue");
 		}
-		TNT1 A 0 ACS_NamedExecute("BlurMugshot")
-		Stop
+		TNT1 A 0 ACS_NamedExecute("BlurMugshot");
+		Stop;
 	}
 }
 
-ACTOR BlurSphereInventory : BlurSphere
-{	
-	RenderStyle Shaded
-}
+Class BlurSphereInventory : BlurSphere
+{	Default {	RenderStyle "Shaded";	}}
 
 //Invulnerability Sphere
 
-ACTOR EquestriaInvulSphere : CustomInventory replaces InvulnerabilitySphere
+Class EquestriaInvulSphere : CustomInventory replaces InvulnerabilitySphere
 {
-	Height 40
-	Radius 20
-	
-	+COUNTITEM
-	+FLOATBOB
-	+NOGRAVITY
-	+FORCEXYBILLBOARD
-	
-	+INVENTORY.BIGPOWERUP
-	+INVENTORY.AUTOACTIVATE
-	+INVENTORY.ALWAYSPICKUP
-	
-	Inventory.PickupMessage "$GOTINVUL" // "Invulnerability!"
-	Inventory.PickupSound "misc/p_pkup"
+	Default
+	{
+		Height 40; Radius 20;
+		
+		+COUNTITEM;
+		+FLOATBOB;
+		+NOGRAVITY;
+		+FORCEXYBILLBOARD;
+		
+		+INVENTORY.BIGPOWERUP;
+		+INVENTORY.AUTOACTIVATE;
+		+INVENTORY.ALWAYSPICKUP;
+		
+		Inventory.PickupMessage "$GOTINVUL";
+		Inventory.PickupSound "misc/p_pkup";
+	}
 	States
 	{
 	Spawn:
-		PINV ABCDCBA 6 Bright
-		Loop
+		PINV ABCDCBA 6 Bright;
+		Loop;
 	Pickup:
-		TNT1 A 0 A_Quake(4, 2, 0, 100)
-		TNT1 A 0 A_GiveInventory("InvulSphereInventory")
-		TNT1 A 0 A_SetBlend(DarkGreen, 0.5, 16, Yellow)
-		Stop
+		TNT1 A 0 A_Quake(4, 2, 0, 100);
+		TNT1 A 0 A_GiveInventory("InvulSphereInventory");
+		TNT1 A 0 A_SetBlend("DarkGreen", 0.5, 16, "Yellow");
+		Stop;
 	}
 }
 
-ACTOR InvulSphereInventory : InvulnerabilitySphere
-{
-  Powerup.Color GoldMap,1
-}
+Class InvulSphereInventory : InvulnerabilitySphere
+{	Default	{	Powerup.Color "GoldMap", 1;	}}
 
 //SoulSphere
-ACTOR EquestriaSoulSphere : CustomInventory replaces Soulsphere
+Class EquestriaSoulSphere : CustomInventory replaces Soulsphere
 {
-	Height 40
-	Radius 20
-	
-	+COUNTITEM
-	+FLOATBOB
-	+NOGRAVITY
-	+FORCEXYBILLBOARD
-	
-	+INVENTORY.AUTOACTIVATE
-	+INVENTORY.ALWAYSPICKUP
-	
-	Inventory.PickupMessage "$GOTSUPER" // "Supercharge!"
-	Inventory.PickupSound "misc/p_pkup"
-	
+	Default
+	{
+		Height 40; Radius 20;
+		
+		+COUNTITEM;
+		+FLOATBOB;
+		+NOGRAVITY;
+		+FORCEXYBILLBOARD;
+		
+		+INVENTORY.AUTOACTIVATE;
+		+INVENTORY.ALWAYSPICKUP;
+		
+		Inventory.PickupMessage "$GOTSUPER";
+		Inventory.PickupSound "misc/p_pkup";
+	}
 	States
 	{
 	Spawn:
-		SOUL ABCDCBA 6 Bright
-		Loop
+		SOUL ABCDCBA 6 Bright;
+		Loop;
 	Pickup:
-		TNT1 A 0 A_GiveInventory("SoulSphereHealth")
-		TNT1 A 0 A_SetBlend(Blue, 0.5, 16)
-		Stop
+		TNT1 A 0 A_GiveInventory("SoulSphereHealth");
+		TNT1 A 0 A_SetBlend("Blue", 0.5, 16);
+		Stop;
 	}
 }
 
-ACTOR SoulSphereHealth : Health	
+Class SoulSphereHealth : Health	
 {
-	Inventory.Amount 100
-	Inventory.MaxAmount 200
-	+INVENTORY.ALWAYSPICKUP
+	Default
+	{
+		Inventory.Amount 100;
+		Inventory.MaxAmount 200;
+		+INVENTORY.ALWAYSPICKUP;
+	}
 }
 
 //MegaSphere
 
-ACTOR EquestriaMegaSphere : CustomInventory replaces Megasphere
+Class EquestriaMegaSphere : CustomInventory replaces Megasphere
 {
-	Height 40
-	Radius 20
-	
-	+COUNTITEM
-	+FLOATBOB
-	+NOGRAVITY
-	+FORCEXYBILLBOARD
-	+INVENTORY.AUTOACTIVATE
-	+INVENTORY.ALWAYSPICKUP
-	Inventory.PickupMessage "$GOTMSPHERE" // "MegaSphere!"
-	Inventory.PickupSound "misc/p_pkup"
+	Default
+	{
+		Height 40; Radius 20;
+		
+		+COUNTITEM;
+		+FLOATBOB;
+		+NOGRAVITY;
+		+FORCEXYBILLBOARD;
+		
+		+INVENTORY.AUTOACTIVATE;
+		+INVENTORY.ALWAYSPICKUP;
+		
+		Inventory.PickupMessage "$GOTMSPHERE";
+		Inventory.PickupSound "misc/p_pkup";
+	}
 	States
 	{
 	Spawn:
-		MEGA ABCDCBA 6 Bright
-		Loop
+		MEGA ABCDCBA 6 Bright;
+		Loop;
 	Pickup:
-		TNT1 A 0 A_GiveInventory("BlueArmorForMegasphere")
-		TNT1 A 0 A_GiveInventory("MegasphereHealth")
-		TNT1 A 0 A_SetBlend(Beige, 0.5, 16)
-		Stop
+		TNT1 A 0 A_GiveInventory("BlueArmorForMegasphere");
+		TNT1 A 0 A_GiveInventory("MegasphereHealth");
+		TNT1 A 0 A_SetBlend("Beige", 0.5, 16);
+		Stop;
 	}
 }
 
 //Berserk
 
-ACTOR EquestriaBerserk : Berserk replaces Berserk
+Class EquestriaBerserk : Berserk replaces Berserk
 {
-	+COUNTITEM
-	+INVENTORY.ALWAYSPICKUP
-	Inventory.PickupMessage "$GOTBERSERK" // "Berserk!"
-	Inventory.PickupSound "*xdeath"
+	Default
+	{
+		+COUNTITEM;
+		+INVENTORY.ALWAYSPICKUP;
+		Inventory.PickupMessage "$GOTBERSERK";
+		Inventory.PickupSound "*xdeath";
+	}
 	States
 	{
 	Spawn:
-		PSTR A -1
-		Stop
+		PSTR A -1;
+		Stop;
 	Pickup:
 		TNT1 A 0
 		{
@@ -192,34 +200,40 @@ ACTOR EquestriaBerserk : Berserk replaces Berserk
 			
 			A_QuakeEX(4, 4, 4, 20, 0, 100, "", QF_RELATIVE | QF_SCALEDOWN | QF_SCALEUP);
 			
-			A_SetBlend(Red, 0.5, 160, Orange);
+			A_SetBlend("Red", 0.5, 160, "Orange");
 		}
-		Stop
+		Stop;
 	}
 }
 
-ACTOR BerserkEffect : PowerupGiver
+Class BerserkEffect : PowerupGiver
 {
-	Powerup.Duration 1
-	+INVENTORY.HUBPOWER
-	Inventory.MaxAmount 0
-	Powerup.Color "None"
-	Powerup.Type "PowerStrength"
-	+INVENTORY.ALWAYSPICKUP
-	+INVENTORY.AUTOACTIVATE
+	Default
+	{
+		Powerup.Duration 1;
+		Inventory.MaxAmount 0;
+		Powerup.Color "None";
+		Powerup.Type "PowerStrength";
+		
+		+INVENTORY.HUBPOWER;
+		+INVENTORY.ALWAYSPICKUP;
+		+INVENTORY.AUTOACTIVATE;
+	}
 }
 
 //Unholy Bible
 
-ACTOR DemonicBible replaces UnholyBible //Madness Shock, Demon Rune
+Class DemonicBible : PowerMorph replaces UnholyBible //Madness Shock, Demon Rune
 {
-//$Category "Decoration/Power Ups"
-	+ForceXYBillboard
-
+	Default
+	{
+	//$Category "Decoration/Power Ups"
+		+ForceXYBillboard;
+	}
 	States
 	{
 	Spawn:
-		BON4 A -1
-		Stop
+		BON4 A -1;
+		Stop;
 	}
 }

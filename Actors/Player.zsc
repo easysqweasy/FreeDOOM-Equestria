@@ -18,7 +18,7 @@ Class EquestriaDoomPlayer : DoomPlayer replaces DoomPlayer
 		Player.WeaponSlot 4, "EquestriaChaingun";//, "Repeater"
 		Player.WeaponSlot 5, "EquestriaPlasmaGun";
 		Player.WeaponSlot 6, "EquestriaRocketLauncher";
-		Player.WeaponSlot 7, "EquestriaBFG9000";
+		Player.WeaponSlot 7, "EquestriaBFG9K";
 	}
 	States
 	{
