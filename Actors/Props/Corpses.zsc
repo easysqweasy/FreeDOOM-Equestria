@@ -1,30 +1,35 @@
-ACTOR DeadPlasmaKirin : PlasmaKirin
+Class DeadPlasmaKirin : PlasmaKirin
 {
-//$Category Decoration
-	Tag "Dead Tech Weapon Dudette"
-	Skip_Super
-	DropItem None
+	Default
+	{
+		//$Category Decoration
+		Tag "Dead Hacker Leader";
+		Skip_Super;
+		DropItem "None";
+	}
 	States
 	{
 	Spawn:
-		Goto Super::Death+4
+		Goto Super::Death+4;
 	}
 }
 
-Actor DeathLostSoul replaces DeadLostSoul
+Class DeathLostSoul replaces DeadLostSoul
 {
-	+ForceXYBillboard
-	
+	Default
+	{
+		+ForceXYBillboard;
+	}
 	States
 	{
 	Spawn:
-		SKUL L 0
+		SKUL L 0;
 		SKUL L 1
 		{
 			bSPRITEFLIP = randompick(0, 1);
 		}
 		
-		SKUL L -1
-		Stop
+		SKUL L -1;
+		Stop;
 	}
 }

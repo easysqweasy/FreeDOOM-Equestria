@@ -1,112 +1,129 @@
 //$Category "Decoration/Tech"
 
-Actor Zapper
+Class Zapper : Actor
 {
-//$Category "Decoration/Tech"
-  +SpawnCeiling
-  +NoGravity
-  +Solid
-  Radius 12
-  Height 32
-  States
-  {
-  Spawn:
-    ZAPR A 42
-	ZAPR BCDEDCDEDCDEDCDEDCDEDCB 4
-    Loop
-  }
+	Default
+	{
+	//$Category "Decoration/Tech"
+		+SpawnCeiling;
+		+NoGravity;
+		+Solid;
+		+Bright;
+		
+		Radius 12;
+		Height 32;
+	}
+	States
+	{
+	Spawn:
+		ZAPR A random(21, 42);
+		ZAPR BCDEDCDEDCDEDCDEDCDEDCB random(2, 8);
+		Loop;
+	}
 }
 
-Actor Chair
+Class Chair : Actor
 {
-//$Category "Decoration/Tech"
-  +FloorClip
-  +Solid
-  ProjectilePassHeight -16
-  Height 30
-  Radius 15
-  Mass 20
-  States
-  {
-  Spawn:
-    CHAI A -1
-    Stop
-  }
+	Default
+	{
+	//$Category "Decoration/Tech"
+		+FloorClip;
+		+Solid;
+		ProjectilePassHeight -16;
+		Height 30; Radius 15;
+		Mass 20;
+	}
+	States
+	{
+	Spawn:
+		CHAI A -1;
+		Stop;
+	}
 }
 
-Actor TechPillar2 : TechPillar 
+Class TechPillar2 : TechPillar 
 {
-//$Category "Decoration/Tech"
-Height 144
-States
-{
-Spawn:
-	elec B -1 bright
-	Stop
-}
-}
-
-Actor Equipment1 
-{
-//$Category "Decoration/Tech"
-Radius 8
-Height 24
-ProjectilePassHeight -16
-+SOLID
-States
-{
-Spawn:
-	equ1 A -1
-	Stop
-}
+	Default
+	{
+	//$Category "Decoration/Tech"
+		Height 144;
+	}
+	States
+	{
+	Spawn:
+		elec B -1 bright;
+		Stop;
+	}
 }
 
-Actor Equipment2
+Class Equipment1 : Actor
 {
-//$Category "Decoration/Tech"
-Radius 16
-Height 24
-ProjectilePassHeight -16
-+SOLID
-States
-{
-Spawn:
-	equ2 A -1
-	Stop
-}
-}
-
-Actor Equipment3
-{
-//$Category "Decoration/Tech"
-Radius 15
-Height 14
-ProjectilePassHeight -16
-+SOLID
-States
-{
-Spawn:
-	equ3 A 90
-	equ3 B 8
-	equ3 A 70
-	equ3 B 8
-	equ3 A 100
-	equ3 B 8
-	equ3 A 20
-	equ3 b 8
-	equ3 a 200
-	equ3 b 8
-	LOOP
-}
+	Default
+	{
+	//$Category "Decoration/Tech"
+		Radius 8;
+		Height 24;
+		ProjectilePassHeight -16;
+		+SOLID;
+	}
+	States
+	{
+	Spawn:
+		equ1 A -1;
+		Stop;
+	}
 }
 
-Actor Spark2
+Class Equipment2 : Actor
+{
+	Default
+	{
+	//$Category "Decoration/Tech"
+		Radius 16; Height 24;
+		ProjectilePassHeight -16;
+		+SOLID;
+	}
+	States
+	{
+	Spawn:
+		equ2 A -1;
+		Stop;
+	}
+}
+
+Class Equipment3 : Actor
+{
+	Default
+	{
+	//$Category "Decoration/Tech"
+		Radius 15; Height 14;
+		ProjectilePassHeight -16;
+		+SOLID;
+	}
+	States
+	{
+	Spawn:
+		equ3 A 90;
+		equ3 B 8;
+		equ3 A 70;
+		equ3 B 8;
+		equ3 A 100;
+		equ3 B 8;
+		equ3 A 20;
+		equ3 b 8;
+		equ3 a 200;
+		equ3 b 8;
+		Loop;
+	}
+}
+
+Class Spark2 : Actor
 {
 //$Category "Decoration/Tech"
-States
-{
-Spawn:
-	SPAR abcdcBDACDABDCADACDBCAD 3 bright
-	loop
-}
+	States
+	{
+	Spawn:
+		SPAR abcdcBDACDABDCADACDBCAD random(3, 6) bright;
+		Loop;
+	}
 }

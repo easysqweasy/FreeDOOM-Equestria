@@ -1,11 +1,11 @@
-Actor EquestriaSmallBloodPool : SmallBloodPool replaces SmallBloodPool
-{	+ForceXYBillboard	}
+Class EquestriaSmallBloodPool : SmallBloodPool replaces SmallBloodPool
+{	Default	{	+ForceXYBillboard;	}	}
 
-Actor EquestriaBrainStem : BrainStem replaces BrainStem
-{	+ForceXYBillboard	}
+Class EquestriaBrainStem : BrainStem replaces BrainStem
+{	Default	{	+ForceXYBillboard;	}	}
 
-Actor EquestriaGibs : Gibs replaces Gibs
-{	+ForceXYBillboard	}
+Class EquestriaGibs : Gibs replaces Gibs
+{	Default	{	+ForceXYBillboard;	}	}
 
-Actor EquestriaColonGibs : ColonGibs replaces ColonGibs
-{	+ForceXYBillboard	}
+Class EquestriaColonGibs : ColonGibs replaces ColonGibs
+{	Default	{	+ForceXYBillboard;	}	}

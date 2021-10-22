@@ -1,302 +1,332 @@
-Actor BigLampshade1
+Class BigLampshade1 : Actor
 {
-//$NotAngled
-//$Category Light sources
-	Radius 9
-	Height 55
-	ProjectilePassHeight -16
-	+SOLID
+	Default
+	{
+	//$NotAngled
+	//$Category Light sources
+		Radius 9; Height 55;
+		ProjectilePassHeight -16;
+		+SOLID;
+	}
 	States
 	{
 	Spawn:
-		lam2 A -1 bright
-		Stop
+		lam2 A -1 bright;
+		Stop;
 	}
 }
 
-Actor BigLampshade2
+Class BigLampshade2 : Actor
 {
-//$NotAngled
-//$Category Light sources
-	Radius 11
-	Height 32
-	ProjectilePassHeight -16
-	+SOLID
+	Default
+	{
+	//$NotAngled
+	//$Category Light sources
+		Radius 11; Height 32;
+		ProjectilePassHeight -16;
+		+SOLID;
+	}
 	States
 	{
 	Spawn:
-		lamp A -1 bright
-		Stop
+		lamp A -1 bright;
+		Stop;
 	}
 }
 
-Actor Column2
+Class Column2 : Actor
 {
-//$NotAngled
-//$Category Light sources
-//$Title Floor Lamp 2
-	ProjectilePassHeight -16
-	Radius 11
-	Height 46
-	+SOLID
+	Default
+	{
+	//$NotAngled
+	//$Category Light sources
+	//$Title Floor Lamp 2
+		ProjectilePassHeight -16;
+		Radius 11; Height 46;
+		+SOLID;
+	}
 	States
 	{
 	Spawn:
-		lam4 A -1 bright
-		Stop
+		lam4 A -1 bright;
+		Stop;
 	}
 }
 
-Actor BigLamp3
+Class BigLamp3 : Actor
 {
-//$NotAngled
-//$Category Light sources
-//$Title Floor Lamp 3
-	Radius 11
-	Height 76
-	ProjectilePassHeight -16
-	+SOLID
+	Default
+	{
+	//$NotAngled
+	//$Category Light sources
+	//$Title Floor Lamp 3
+		Radius 11; Height 76;
+		ProjectilePassHeight -16;
+		+SOLID;
+	}
 	States
 	{
 	Spawn:
-		lam5 A -1 bright
-		Stop
+		lam5 A -1 bright;
+		Stop;
 	}
 }
 
-Actor BigLamp2
+Class BigLamp2 : Actor
 {
-//$NotAngled
-//$Category Light sources
-//$Title Tall Techno floor Lamp 2
-	Radius 11
-	Height 80
-	ProjectilePassHeight -16
-	+SOLID
+	Default
+	{
+	//$NotAngled
+	//$Category Light sources
+	//$Title Tall Techno floor Lamp 2
+		Radius 11; Height 80;
+		ProjectilePassHeight -16;
+		+SOLID;
+	}
 	States
 	{
 	Spawn:
-		lam6 A -1 bright
-		Stop
+		lam6 A -1 bright;
+		Stop;
 	}
 }
 
-Actor CeilingLamp1
+Class CeilingLamp1 : Actor
 {
-//$NotAngled
-//$Category Light sources
-	Radius 10
-	Height 35
-	+SOLID
-	+NOGRAVITY
-	+SPAWNCEILING
+	Default
+	{
+	//$NotAngled
+	//$Category Light sources
+		Radius 10; Height 35;
+		+SOLID;
+		+NOGRAVITY;
+		+SPAWNCEILING;
+	}
 	States
 	{
 	Spawn:
-		lam3 A -1 bright
-		Stop
+		lam3 A -1 bright;
+		Stop;
 	}
 }
 
 /* Torches */
 
-ACTOR BlueWallTorch : SwitchableDecoration 12500
+Class BlueWallTorch : SwitchableDecoration
 {
+	Default
+	{
 	//$Title Wall Torch Blue
 	//$Category Light Sources/Wall Torches
 	//$IsDecoration
 	//$NotAngled
 	//$Sprite BWTRA0
-
-	+NOBLOCKMAP
-	+NOGRAVITY
-	+FIXMAPTHINGPOS
-	Radius 6.5
 	
-		States
-		{
-			Active:
-				BWTR A 0 Bright A_PlaySound ("DoomTorch/Ignite")
-			Spawn:
-				BWTR A 0 Bright NoDelay A_PlaySound("DoomTorch/Burn", CHAN_6, 1, TRUE)
-			Lit:
-				BWTR ABCD 4 Bright
-				Loop
-			Inactive:
-				UWTR A -1 A_StopSound(CHAN_6)
-				Stop
-		}
+		+NOBLOCKMAP;
+		+NOGRAVITY;
+		+FIXMAPTHINGPOS;
+		Radius 6.5;
+	}
+	States
+	{
+	Active:
+		BWTR A 0 Bright A_StartSound("DoomTorch/Ignite");
+	Spawn:
+		BWTR A 0 Bright NoDelay A_StartSound("DoomTorch/Burn", CHAN_6, 1, TRUE);
+	Lit:
+		BWTR ABCD 4 Bright;
+		Loop;
+	Inactive:
+		UWTR A -1 A_StopSound(CHAN_6);
+		Stop;
+	}
 }
 
-ACTOR RedWallTorch : SwitchableDecoration 12501
+Class RedWallTorch : SwitchableDecoration
 {
+	Default
+	{
 	//$Title Wall Torch Red
 	//$Category Light Sources/Wall Torches
 	//$IsDecoration
 	//$NotAngled
 	//$Sprite OWTRA0
 
-	+NOBLOCKMAP
-	+NOGRAVITY
-	+FIXMAPTHINGPOS
-	Radius 6.5
-  
-		States
-		{
-			Active:
-				OWTR A 0 Bright A_PlaySound ("DoomTorch/Ignite")
-			Spawn:
-				OWTR A 0 Bright NoDelay A_PlaySound("DoomTorch/Burn", CHAN_6, 1, TRUE)
-			Lit:
-				OWTR ABCD 4 Bright
-				Loop
-			Inactive:
-				UWTR A -1 A_StopSound(CHAN_6)
-				Stop
-		}
+		+NOBLOCKMAP;
+		+NOGRAVITY;
+		+FIXMAPTHINGPOS;
+		Radius 6.5;
+	}
+	States
+	{
+	Active:
+		OWTR A 0 Bright A_PlaySound ("DoomTorch/Ignite");
+	Spawn:
+		OWTR A 0 Bright NoDelay A_PlaySound("DoomTorch/Burn", CHAN_6, 1, TRUE);
+	Lit:
+		OWTR ABCD 4 Bright;
+		Loop;
+	Inactive:
+		UWTR A -1 A_StopSound(CHAN_6);
+		Stop;
+	}
 }
 
-ACTOR GreenWallTorch : SwitchableDecoration 12502
+Class GreenWallTorch : SwitchableDecoration
 {
+	Default
+	{
 	//$Title Wall Torch Green
 	//$Category Light Sources/Wall Torches
 	//$IsDecoration
 	//$NotAngled
 	//$Sprite GWTRA0
 
-	+NOBLOCKMAP
-	+NOGRAVITY
-	+FIXMAPTHINGPOS
-	Radius 6.5
-	
-		States
-		{
-			Active:
-				GWTR A 0 Bright A_PlaySound ("DoomTorch/Ignite")
-			Spawn:
-				GWTR A 0 Bright NoDelay A_PlaySound("DoomTorch/Burn", CHAN_6, 1, TRUE)
-			Lit:
-				GWTR ABCD 4 Bright
-				Loop
-			Inactive:
-				UWTR A -1 A_StopSound(CHAN_6)
-				Stop
-		}
+		+NOBLOCKMAP;
+		+NOGRAVITY;
+		+FIXMAPTHINGPOS;
+		Radius 6.5;
+	}
+	States
+	{
+	Active:
+		GWTR A 0 Bright A_PlaySound ("DoomTorch/Ignite");
+	Spawn:
+		GWTR A 0 Bright NoDelay A_PlaySound("DoomTorch/Burn", CHAN_6, 1, TRUE);
+	Lit:
+		GWTR ABCD 4 Bright;
+		Loop;
+		
+	Inactive:
+		UWTR A -1 A_StopSound(CHAN_6);
+		Stop;
+	}
 }
 
-ACTOR PurpleWallTorch : SwitchableDecoration 12503
+Class PurpleWallTorch : SwitchableDecoration
 {
+	Default
+	{
 	//$Title Wall Torch Purple
 	//$Category Light Sources/Wall Torches
 	//$IsDecoration
 	//$NotAngled
 	//$Sprite PWTRA0
 
-	+NOBLOCKMAP
-	+NOGRAVITY
-	+FIXMAPTHINGPOS
-	Radius 6.5
-	
-		States
-		{
-			Active:
-				PWTR A 0 Bright A_PlaySound ("DoomTorch/Ignite")
-			Spawn:
-				PWTR A 0 Bright NoDelay A_PlaySound("DoomTorch/Burn", CHAN_6, 1, TRUE)
-			Lit:
-				PWTR ABCD 4 Bright
-				Loop
-			Inactive:
-				UWTR A -1 A_StopSound(CHAN_6)
-				Stop
-		}
+		+NOBLOCKMAP;
+		+NOGRAVITY;
+		+FIXMAPTHINGPOS;
+		Radius 6.5;
+	}
+	States
+	{
+	Active:
+		PWTR A 0 Bright A_PlaySound ("DoomTorch/Ignite");
+	Spawn:
+		PWTR A 0 Bright NoDelay A_PlaySound("DoomTorch/Burn", CHAN_6, 1, TRUE);
+	Lit:
+		PWTR ABCD 4 Bright;
+		Loop;
+		
+	Inactive:
+		UWTR A -1 A_StopSound(CHAN_6);
+		Stop;
+	}
 }
 
-ACTOR DarkRedWallTorch : SwitchableDecoration 12504
+Class DarkRedWallTorch : SwitchableDecoration
 {
+	Default
+	{
 	//$Title Wall Torch Dark Red
 	//$Category Light Sources/Wall Torches
 	//$IsDecoration
 	//$NotAngled
 	//$Sprite RWTRA0
 
-	+NOBLOCKMAP
-	+NOGRAVITY
-	+FIXMAPTHINGPOS
-	Radius 6.5
-	
-		States
-		{
-			Active:
-				RWTR A 0 Bright A_PlaySound ("DoomTorch/Ignite")
-			Spawn:
-				RWTR A 0 Bright NoDelay A_PlaySound("DoomTorch/Burn", CHAN_6, 1, TRUE)
-			Lit:
-				RWTR ABCD 4 Bright
-				Loop
-			Inactive:
-				UWTR A -1 A_StopSound(CHAN_6)
-				Stop
-		}
+		+NOBLOCKMAP;
+		+NOGRAVITY;
+		+FIXMAPTHINGPOS;
+		Radius 6.5;
+	}
+	States
+	{
+	Active:
+		RWTR A 0 Bright A_PlaySound ("DoomTorch/Ignite");
+	Spawn:
+		RWTR A 0 Bright NoDelay A_PlaySound("DoomTorch/Burn", CHAN_6, 1, TRUE);
+	Lit:
+		RWTR ABCD 4 Bright;
+		Loop;
+		
+	Inactive:
+		UWTR A -1 A_StopSound(CHAN_6);
+		Stop;
+	}
 }
 
-ACTOR YellowWallTorch : SwitchableDecoration 12505
+Class YellowWallTorch : SwitchableDecoration
 {
+	Default
+	{
 	//$Title Wall Torch Yellow
 	//$Category Light Sources/Wall Torches
 	//$IsDecoration
 	//$NotAngled
 	//$Sprite YWTRA0
 
-	+NOBLOCKMAP
-	+NOGRAVITY
-	+FIXMAPTHINGPOS
-	Radius 6.5
-	
-		States
-		{
-			Active:
-				YWTR A 0 Bright A_PlaySound ("DoomTorch/Ignite")
-			Spawn:
-				YWTR A 0 Bright NoDelay A_PlaySound("DoomTorch/Burn", CHAN_6, 1, TRUE)
-			Lit:
-				YWTR ABCD 4 Bright
-				Loop
-			Inactive:
-				UWTR A -1 A_StopSound(CHAN_6)
-				Stop
-		}
+		+NOBLOCKMAP;
+		+NOGRAVITY;
+		+FIXMAPTHINGPOS;
+		Radius 6.5;
+	}
+	States
+	{
+	Active:
+		YWTR A 0 Bright A_PlaySound ("DoomTorch/Ignite");
+	Spawn:
+		YWTR A 0 Bright NoDelay A_PlaySound("DoomTorch/Burn", CHAN_6, 1, TRUE);
+	Lit:
+		YWTR ABCD 4 Bright;
+		Loop;
+				
+	Inactive:
+		UWTR A -1 A_StopSound(CHAN_6);
+		Stop;
+	}
 }
 
-ACTOR WhiteWallTorch : SwitchableDecoration 12506
+Class WhiteWallTorch : SwitchableDecoration
 {
+	Default
+	{
 	//$Title Wall Torch White
 	//$Category Light Sources/Wall Torches
 	//$IsDecoration
 	//$NotAngled
 	//$Sprite WWTRA0
 
-	+NOBLOCKMAP
-	+NOGRAVITY
-	+FIXMAPTHINGPOS
-	Radius 6.5
-	
-		States
-		{
-			Active:
-				WWTR A 0 Bright A_PlaySound ("DoomTorch/Ignite")
-			Spawn:
-				WWTR A 0 Bright NoDelay A_PlaySound("DoomTorch/Burn", CHAN_6, 1, TRUE)
-			Lit:
-				WWTR ABCD 4 Bright
-				Loop
-			Inactive:
-				UWTR A -1 A_StopSound(CHAN_6)
-				Stop
-		}
+		+NOBLOCKMAP;
+		+NOGRAVITY;
+		+FIXMAPTHINGPOS;
+		Radius 6.5;
+	}
+	States
+	{
+	Active:
+		WWTR A 0 Bright A_PlaySound ("DoomTorch/Ignite");
+	Spawn:
+		WWTR A 0 Bright NoDelay A_PlaySound("DoomTorch/Burn", CHAN_6, 1, TRUE);
+	Lit:
+		WWTR ABCD 4 Bright;
+		Loop;
+	Inactive:
+		UWTR A -1 A_StopSound(CHAN_6);
+		Stop;
+	}
 }
 
-ACTOR BlueWallTorchUnlit : BlueWallTorch 12507
+Class BlueWallTorchUnlit : BlueWallTorch
 {
 	//$Title Wall Torch Blue Unlit
 	//$Sprite UWTRA0
@@ -304,11 +334,11 @@ ACTOR BlueWallTorchUnlit : BlueWallTorch 12507
 		States
 		{
 			Spawn:
-				Goto Super::Inactive
+				Goto Super::Inactive;
 		}
 }
 
-ACTOR RedWallTorchUnlit : RedWallTorch 12508
+Class RedWallTorchUnlit : RedWallTorch
 {
 	//$Title Wall Torch Red Unlit
 	//$Sprite UWTRA0
@@ -316,11 +346,11 @@ ACTOR RedWallTorchUnlit : RedWallTorch 12508
 		States
 		{
 			Spawn:
-				Goto Super::Inactive
+				Goto Super::Inactive;
 		}
 }
 
-ACTOR GreenWallTorchUnlit : GreenWallTorch 12509
+Class GreenWallTorchUnlit : GreenWallTorch
 {
 	//$Title Wall Torch Green Unlit
 	//$Sprite UWTRA0
@@ -328,11 +358,11 @@ ACTOR GreenWallTorchUnlit : GreenWallTorch 12509
 		States
 		{
 			Spawn:
-				Goto Super::Inactive
+				Goto Super::Inactive;
 		}
 }
 
-ACTOR PurpleWallTorchUnlit : PurpleWallTorch 12510
+Class PurpleWallTorchUnlit : PurpleWallTorch
 {
 	//$Title Wall Torch Purple Unlit
 	//$Sprite UWTRA0
@@ -340,11 +370,11 @@ ACTOR PurpleWallTorchUnlit : PurpleWallTorch 12510
 		States
 		{
 			Spawn:
-				Goto Super::Inactive
+				Goto Super::Inactive;
 		}
 }
 
-ACTOR DarkRedWallTorchUnlit : DarkRedWallTorch 12511
+Class DarkRedWallTorchUnlit : DarkRedWallTorch
 {
 	//$Title Wall Torch Dark Red Unlit
 	//$Sprite UWTRA0
@@ -352,11 +382,11 @@ ACTOR DarkRedWallTorchUnlit : DarkRedWallTorch 12511
 		States
 		{
 			Spawn:
-				Goto Super::Inactive
+				Goto Super::Inactive;
 		}
 }
 
-ACTOR YellowWallTorchUnlit : YellowWallTorch 12512
+Class YellowWallTorchUnlit : YellowWallTorch
 {
 	//$Title Wall Torch Yellow Unlit
 	//$Sprite UWTRA0
@@ -364,11 +394,11 @@ ACTOR YellowWallTorchUnlit : YellowWallTorch 12512
 		States
 		{
 			Spawn:
-				Goto Super::Inactive
+				Goto Super::Inactive;
 		}
 }
 
-ACTOR WhiteWallTorchUnlit : WhiteWallTorch 12513
+Class WhiteWallTorchUnlit : WhiteWallTorch
 {
 	//$Title Wall Torch White Unlit
 	//$Sprite UWTRA0
@@ -376,6 +406,6 @@ ACTOR WhiteWallTorchUnlit : WhiteWallTorch 12513
 		States
 		{
 			Spawn:
-				Goto Super::Inactive
+				Goto Super::Inactive;
 		}
 }
