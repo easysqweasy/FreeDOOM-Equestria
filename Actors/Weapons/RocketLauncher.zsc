@@ -139,7 +139,7 @@ Class RocketSmoke : Trails replaces RocketSmokeTrail
 		Height 8;
 		Radius 4;
 		
-		RenderStyle Translucent;
+		RenderStyle "Translucent";
 		
 		Alpha 0.75;
 		

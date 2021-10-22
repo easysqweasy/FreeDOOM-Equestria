@@ -89,7 +89,7 @@ Class KickPuff : EquestriaBulletPuff
 {
 	Default
 	{
-		DamageType Kick;
+		DamageType "Kick";
 		AttackSound "*fist";
 		
 		+BLOODLESSIMPACT;

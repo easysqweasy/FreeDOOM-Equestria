@@ -54,7 +54,7 @@ Class EquestriaBFG9K : DoomEquestriaWeapon replaces BFG9000
 		}
 		BFGG C 4
 		{
-			A_FireBFG;
+			A_FireBFG();
 			A_WeaponOffset(0, 45, WOF_KEEPX | WOF_INTERPOLATE);
 			//A_SetBlend("green", 0.5, 16);
 		}
@@ -62,7 +62,7 @@ Class EquestriaBFG9K : DoomEquestriaWeapon replaces BFG9000
 		BFGG B 20
 		{
 			A_WeaponOffset(0, 32, WOF_KEEPX | WOF_INTERPOLATE);
-			A_ReFire;
+			A_ReFire();
 		}
 		Goto Ready;
 		
@@ -80,7 +80,7 @@ Class EquestriaBFG9K : DoomEquestriaWeapon replaces BFG9000
 		}
 		BFGG C 4
 		{
-			A_FireBFG;
+			A_FireBFG();
 			A_WeaponOffset(0, 45, WOF_KEEPX | WOF_INTERPOLATE);
 			A_ZoomFactor(0.85, ZOOM_INSTANT | ZOOM_NOSCALETURNING);
 			A_Overlay(2, "CamRecoil");
@@ -90,7 +90,7 @@ Class EquestriaBFG9K : DoomEquestriaWeapon replaces BFG9000
 		BFGG B 20
 		{
 			A_WeaponOffset(0, 32, WOF_KEEPX | WOF_INTERPOLATE);
-			A_ReFire;
+			A_ReFire();
 		}
 		Goto Ready;
 	
@@ -179,7 +179,7 @@ Class BFGTrail : Trails
    }
 }
 
-Class BFGShockwave
+Class BFGShockwave : Actor
 {
 	Default
 	{
@@ -191,7 +191,7 @@ Class BFGShockwave
 		RenderStyle "Add";
 		Alpha 0.50;
 		
-		scale 0.70;
+		Scale 0.70;
 	}
 	States
 	{
