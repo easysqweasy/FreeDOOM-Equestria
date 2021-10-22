@@ -13,7 +13,7 @@ Class EquestriaShotgun : DoomEquestriaWeapon replaces Shotgun
 		Obituary "$OB_MPSHOTGUN";
 		Tag "$TAG_SHOTGUN";
 	}
-	States;
+	States
 	{
 	Spawn:
 		SHOT A -1;
@@ -89,7 +89,7 @@ Class EquestriaShotgun : DoomEquestriaWeapon replaces Shotgun
 		TNT1 A 1 A_SetPitch(pitch-3, SPF_INTERPOLATE);
 		TNT1 AAA 1 A_SetPitch(pitch+0.5, SPF_INTERPOLATE);
 		TNT1 AAAAAA 1 A_SetPitch(pitch+0.25, SPF_INTERPOLATE);
-		Stop
+		Stop;
 
 	Offset:
 		TNT1 A 4 A_WeaponOffset(0, 45, WOF_KEEPX | WOF_INTERPOLATE);

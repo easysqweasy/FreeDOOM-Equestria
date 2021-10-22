@@ -19,7 +19,7 @@ Class EquestriaBFG9K : DoomEquestriaWeapon replaces BFG9000
 		
 		Inventory.PickupSound "pickup/bfg";
 	}
-	States;
+	States
 	{
 	Spawn:
 		BFUG A -1;
@@ -134,7 +134,7 @@ Class DEBFGBall : BFGBall replaces BFGBall
 	  
 		+ROLLSPRITE; +ROLLCENTER;
 	}
-	States;
+	States
 	{
 	Spawn:
 		BFS1 A 0;
@@ -162,12 +162,12 @@ Class DEBFGBall : BFGBall replaces BFGBall
 	}
 }
 
-Extend Class BFGExtra : BFGExtra
+Class EquestriaBFGExtra : BFGExtra replaces BFGExtra
 {	Default { +ForceXYBillBoard; }	}
 
 Class BFGTrail : Trails
 {
-	States;
+	States
 	{
 	Spawn:
 		BFS1 A 0;
@@ -193,7 +193,7 @@ Class BFGShockwave
 		
 		scale 0.70;
 	}
-	States;
+	States
 	{
 	Spawn:
 		BFEF EGIKMOQSUWY 1 Bright;

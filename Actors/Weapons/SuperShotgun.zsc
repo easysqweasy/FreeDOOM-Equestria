@@ -12,7 +12,7 @@ Class EquestriaSuperShotgun : DoomEquestriaWeapon replaces SuperShotgun
 		Obituary "$OB_MPSSHOTGUN";
 		Tag "$TAG_SUPERSHOTGUN";
 	}
-	States;
+	States
 	{
 	Spawn:
 		SGN2 A -1;

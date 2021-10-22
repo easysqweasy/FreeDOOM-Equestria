@@ -3,7 +3,7 @@ Class BerserkFist : DoomEquestriaWeapon
 	Default
 	{
 		Weapon.BobSpeed 2;
-		Weapon.BobRangeX 1.25 Weapon.BobRangeY 1.50;
+		Weapon.BobRangeX 1.25; Weapon.BobRangeY 1.50;
 		Weapon.BobStyle "InverseAlpha";
 		
 		Weapon.SelectionOrder 3700;
@@ -15,10 +15,10 @@ Class BerserkFist : DoomEquestriaWeapon
 		+WEAPON.WIMPY_WEAPON;
 		+WEAPON.MELEEWEAPON;
 	}
-	States/
+	States
 	{
 	Ready:
-		PUNG A 0 A_JumpIfInventory("KickCheck", 1, "Kick.Normal")/
+		PUNG A 0 A_JumpIfInventory("KickCheck", 1, "Kick.Normal");
 		
 		PUNG A 1 A_WeaponReady;
 		Loop;

@@ -16,7 +16,7 @@ Class EquestriaRocketLauncher : DoomEquestriaWeapon replaces RocketLauncher
 		
 		Tag "$TAG_ROCKETLAUNCHER";
 	}
-	States;
+	States
 	{
 	Spawn:
 		LAUN A -1;
@@ -104,7 +104,7 @@ Class EquestriaRocket : Rocket replaces Rocket
 		+ForceXYBillBoard;
 		-RocketTrail;
 	}
-	States;
+	States
 	{
 	Spawn:
 		MISL A 2 Bright A_SpawnItemEx("RocketSmoke");
@@ -153,7 +153,7 @@ Class RocketSmoke : Trails replaces RocketSmokeTrail
 		
 		+MoveWithSector;
 	}
-	States;
+	States
 	{
 	Spawn:
 		TNT1 A 0;

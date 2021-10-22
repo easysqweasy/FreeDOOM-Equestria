@@ -16,9 +16,8 @@ Class EquestriaChaingun : DoomEquestriaWeapon replaces Chaingun
 		
 		Tag "$TAG_CHAINGUN";
 	}
-	States;
+	States
 	{
-	
 	Spawn:
 		MGUN A -1;
 		Stop;

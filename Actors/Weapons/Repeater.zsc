@@ -14,9 +14,8 @@ Class Repeater : DoomEquestriaWeapon //Dont Use
 		
 		Obituary "$OB_MPCHAINGUN";
 	}
-	States;
+	States
 	{
-	
 	Spawn:
 		MGUN A -1;
 		Stop;

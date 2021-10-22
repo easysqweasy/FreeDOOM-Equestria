@@ -18,9 +18,8 @@ Class EquestriaChainsaw : DoomEquestriaWeapon replaces Chainsaw
 		
 		Tag "$TAG_CHAINSAW";
 	}
-	States;
+	States
 	{
-	
 	Spawn:
 		CSAW A -1;
 		Stop;

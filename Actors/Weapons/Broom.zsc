@@ -14,9 +14,8 @@ Class Broom : DoomEquestriaWeapon
 		-ForceXYBillBoard;
 		+WEAPON.NOAUTOFIRE;
 	}
-	States;
+	States
 	{
-	
 	Spawn:
 		BROM A -1;
 		Stop;
@@ -65,7 +64,7 @@ Class BroomProjectile : Actor
 		Speed 40;
 		Damage 8;
 	}
-	States;
+	States
 	{
 
 	Spawn:

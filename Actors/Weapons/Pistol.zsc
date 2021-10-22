@@ -16,9 +16,8 @@ Class EquestriaPistol : DoomEquestriaWeapon replaces Pistol
 		
 		Tag "$TAG_PISTOL";
 	}
-	States;
+	States
 	{
-
 	Spawn:
 		PIST A -1;
 		Stop;
@@ -52,7 +51,7 @@ Class EquestriaPistol : DoomEquestriaWeapon replaces Pistol
 			A_GunFlash;
 		}
 		PISG C 4 A_WeaponOffset(0, 29, WOF_KEEPX | WOF_INTERPOLATE);
-		PISG D 5;
+		PISG D 5
 		{
 			A_WeaponOffset(0, 32, WOF_KEEPX | WOF_INTERPOLATE);
 			A_ReFire;
