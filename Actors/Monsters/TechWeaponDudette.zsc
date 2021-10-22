@@ -211,7 +211,7 @@ Class DemonNirik : Actor
 		goto See;
 	
 	Jump:
-		TECH H 0 A_PlaySound("demon/melee");
+		TECH H 0 A_StartSound("demon/melee");
 		TECH H 0 A_FaceTarget();
 		TECH J 8;
 		TECH H 0 A_Recoil(-15);

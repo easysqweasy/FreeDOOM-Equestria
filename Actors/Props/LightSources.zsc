@@ -160,9 +160,9 @@ Class RedWallTorch : SwitchableDecoration
 	States
 	{
 	Active:
-		OWTR A 0 Bright A_PlaySound ("DoomTorch/Ignite");
+		OWTR A 0 Bright A_StartSound ("DoomTorch/Ignite");
 	Spawn:
-		OWTR A 0 Bright NoDelay A_PlaySound("DoomTorch/Burn", CHAN_6, 1, TRUE);
+		OWTR A 0 Bright NoDelay A_StartSound("DoomTorch/Burn", CHAN_6, 1, TRUE);
 	Lit:
 		OWTR ABCD 4 Bright;
 		Loop;
@@ -190,9 +190,9 @@ Class GreenWallTorch : SwitchableDecoration
 	States
 	{
 	Active:
-		GWTR A 0 Bright A_PlaySound ("DoomTorch/Ignite");
+		GWTR A 0 Bright A_StartSound ("DoomTorch/Ignite");
 	Spawn:
-		GWTR A 0 Bright NoDelay A_PlaySound("DoomTorch/Burn", CHAN_6, 1, TRUE);
+		GWTR A 0 Bright NoDelay A_StartSound("DoomTorch/Burn", CHAN_6, 1, TRUE);
 	Lit:
 		GWTR ABCD 4 Bright;
 		Loop;
@@ -221,9 +221,9 @@ Class PurpleWallTorch : SwitchableDecoration
 	States
 	{
 	Active:
-		PWTR A 0 Bright A_PlaySound ("DoomTorch/Ignite");
+		PWTR A 0 Bright A_StartSound ("DoomTorch/Ignite");
 	Spawn:
-		PWTR A 0 Bright NoDelay A_PlaySound("DoomTorch/Burn", CHAN_6, 1, TRUE);
+		PWTR A 0 Bright NoDelay A_StartSound("DoomTorch/Burn", CHAN_6, 1, TRUE);
 	Lit:
 		PWTR ABCD 4 Bright;
 		Loop;
@@ -252,9 +252,9 @@ Class DarkRedWallTorch : SwitchableDecoration
 	States
 	{
 	Active:
-		RWTR A 0 Bright A_PlaySound ("DoomTorch/Ignite");
+		RWTR A 0 Bright A_StartSound ("DoomTorch/Ignite");
 	Spawn:
-		RWTR A 0 Bright NoDelay A_PlaySound("DoomTorch/Burn", CHAN_6, 1, TRUE);
+		RWTR A 0 Bright NoDelay A_StartSound("DoomTorch/Burn", CHAN_6, 1, TRUE);
 	Lit:
 		RWTR ABCD 4 Bright;
 		Loop;
@@ -283,9 +283,9 @@ Class YellowWallTorch : SwitchableDecoration
 	States
 	{
 	Active:
-		YWTR A 0 Bright A_PlaySound ("DoomTorch/Ignite");
+		YWTR A 0 Bright A_StartSound ("DoomTorch/Ignite");
 	Spawn:
-		YWTR A 0 Bright NoDelay A_PlaySound("DoomTorch/Burn", CHAN_6, 1, TRUE);
+		YWTR A 0 Bright NoDelay A_StartSound("DoomTorch/Burn", CHAN_6, 1, TRUE);
 	Lit:
 		YWTR ABCD 4 Bright;
 		Loop;
@@ -314,9 +314,9 @@ Class WhiteWallTorch : SwitchableDecoration
 	States
 	{
 	Active:
-		WWTR A 0 Bright A_PlaySound ("DoomTorch/Ignite");
+		WWTR A 0 Bright A_StartSound ("DoomTorch/Ignite");
 	Spawn:
-		WWTR A 0 Bright NoDelay A_PlaySound("DoomTorch/Burn", CHAN_6, 1, TRUE);
+		WWTR A 0 Bright NoDelay A_StartSound("DoomTorch/Burn", CHAN_6, 1, TRUE);
 	Lit:
 		WWTR ABCD 4 Bright;
 		Loop;
