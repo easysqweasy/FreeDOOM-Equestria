@@ -6,7 +6,7 @@ Class PuffSparkles : DEParticles
 		+ExplodeOnWater;
 		+UseBounceState; +BounceOnActors; +BounceOnCeilings; +BounceOnFloors; -BounceOnWalls;
 		BounceType "Doom";
-		BounceFactor 0.5;
+		BounceFactor 0.75;
 		
 		Scale 0.50;
 		
