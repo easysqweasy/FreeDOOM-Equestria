@@ -14,7 +14,7 @@ Class DeadPlasmaKirin : PlasmaKirin
 	}
 }
 
-Class DeathLostSoul replaces DeadLostSoul
+Class DeathLostSoul : Actor replaces DeadLostSoul
 {
 	Default
 	{
