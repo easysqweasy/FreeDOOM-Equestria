@@ -111,7 +111,7 @@ Class EmptyBarrel : EquestriaExploBarrel
 	}
 }
 
-Class BarrelDebris : DebrisGeneral
+Class BarrelDebris : DebrisCore
 {
 	Default
 	{
