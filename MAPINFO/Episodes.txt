@@ -25,6 +25,3 @@ episode DoomTest
 {
 	name = "Test Map"
 }
-
-map DoomTest "Kinsie's Test Map"
-{}
