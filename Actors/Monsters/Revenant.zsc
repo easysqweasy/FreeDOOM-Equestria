@@ -1,26 +1,29 @@
-ACTOR EquestriaRevenant : Revenant replaces Revenant
+Class EquestriaRevenant : Revenant replaces Revenant
 {
-	+CASTSPRITESHADOW
+	Default
+	{
+		+CASTSPRITESHADOW
 	
-	Radius 20
-	Height 60
-	
+		Radius 20; Height 60;
+	}
 	States
 	{
 	Missile:
-		SKEL J 0 bright A_FaceTarget
-		SKEL J 10 bright A_FaceTarget
-		SKEL K 10 A_SpawnProjectile("EquestriaRevenantTracer", 55, randompick(-8, 8))
-		SKEL K 10 A_FaceTarget
-		Goto See
+		SKEL J 10 bright A_FaceTarget();
+		SKEL K 10 A_SpawnProjectile("EquestriaRevenantTracer", 55, randompick(-8, 8));
+		SKEL K 10 A_FaceTarget();
+		Goto See;
 	}
 }
 
-Actor EquestriaRevenantTracer : RevenantTracer replaces RevenantTracer
+Class EquestriaRevenantTracer : RevenantTracer replaces RevenantTracer
 {
-	RenderStyle Normal
-	Alpha 1
-	
-	+FORCEXYBILLBOARD
-	+DONTSEEKINVISIBLE
+	Default
+	{
+		RenderStyle "Normal";
+		Alpha 1;
+		
+		+FORCEXYBILLBOARD;
+		+DONTSEEKINVISIBLE;
+	}
 }

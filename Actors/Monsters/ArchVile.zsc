@@ -1,10 +1,13 @@
-actor EquestriaArchVile : ArchVile replaces Archvile
+Class EquestriaArchVile : ArchVile replaces Archvile
 {
-	+CASTSPRITESHADOW
+	Default
+	{
+		+CASTSPRITESHADOW;
+	}
 	States
 	{
 	Spawn:
-		IDLV AB 5 A_Look
-		Loop
+		IDLV AB 5 A_Look;
+		Loop;
 	}
 }

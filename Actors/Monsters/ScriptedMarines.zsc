@@ -1,35 +1,35 @@
-ACTOR EquestriaScriptedMarine : ScriptedMarine replaces ScriptedMarine
-{	+CASTSPRITESHADOW	}
+Class EquestriaScriptedMarine : ScriptedMarine replaces ScriptedMarine
+{	Default {	+CASTSPRITESHADOW	}}
 
-Actor EquestriaMarineBFG : MarineBFG replaces MarineBFG
-{	+CASTSPRITESHADOW	}
+Class EquestriaMarineBFG : MarineBFG replaces MarineBFG
+{	Default {	+CASTSPRITESHADOW	}}
 
-Actor EquestriaMarineBerserk : MarineBerserk replaces MarineBerserk
-{	+CASTSPRITESHADOW	}
+Class EquestriaMarineBerserk : MarineBerserk replaces MarineBerserk
+{	Default {	+CASTSPRITESHADOW	}}
 
-Actor EquestriaMarineChaingun : MarineChaingun replaces MarineChaingun
-{	+CASTSPRITESHADOW	}
+Class EquestriaMarineChaingun : MarineChaingun replaces MarineChaingun
+{	Default {	+CASTSPRITESHADOW	}}
 
-Actor EquestriaMarineChainsaw : MarineChainsaw replaces MarineChainsaw
-{	+CASTSPRITESHADOW	}
+Class EquestriaMarineChainsaw : MarineChainsaw replaces MarineChainsaw
+{	Default {	+CASTSPRITESHADOW	}}
 
-Actor EquestriaMarineFist : MarineFist replaces MarineFist
-{	+CASTSPRITESHADOW	}
+Class EquestriaMarineFist : MarineFist replaces MarineFist
+{	Default {	+CASTSPRITESHADOW	}}
 
-Actor EquestriaMarinePistol : MarinePistol replaces MarinePistol
-{	+CASTSPRITESHADOW	}
+Class EquestriaMarinePistol : MarinePistol replaces MarinePistol
+{	Default {	+CASTSPRITESHADOW	}}
 
-Actor EquestriaMarinePlasma : MarinePlasma replaces MarinePlasma
-{	+CASTSPRITESHADOW	}
+Class EquestriaMarinePlasma : MarinePlasma replaces MarinePlasma
+{	Default {	+CASTSPRITESHADOW	}}
 
-Actor EquestriaMarineRailgun : MarineRailgun replaces MarineRailgun
-{	+CASTSPRITESHADOW	}
+Class EquestriaMarineRailgun : MarineRailgun replaces MarineRailgun
+{	Default {	+CASTSPRITESHADOW	}}
 
-Actor EquestriaMarineRocket : MarineRocket replaces MarineRocket
-{	+CASTSPRITESHADOW	}
+Class EquestriaMarineRocket : MarineRocket replaces MarineRocket
+{	Default {	+CASTSPRITESHADOW	}}
 
-Actor EquestriaMarineSSG : MarineSSG replaces MarineSSG
-{	+CASTSPRITESHADOW	}
+Class EquestriaMarineSSG : MarineSSG replaces MarineSSG
+{	Default {	+CASTSPRITESHADOW	}}
 
-Actor EquestriaMarineShotgun : MarineShotgun replaces MarineShotgun
-{	+CASTSPRITESHADOW	}
+Class EquestriaMarineShotgun : MarineShotgun replaces MarineShotgun
+{	Default {	+CASTSPRITESHADOW	}}

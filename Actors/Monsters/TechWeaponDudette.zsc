@@ -1,117 +1,116 @@
-actor PlasmaKirin
+Class PlasmaKirin : Actor
 {
-	Monster
+	Default
+	{
+	Monster;
 	//$Category Monsters
 	//$Title Tech Weapon Dudette
-	Tag "$TECHDUDE"
-	
-	Health 30
-	Radius 20
-	Height 56
-	Mass 80
-	Speed 15
-	FastSpeed 20
-	Species "Couple"
-	PainChance 170
-	
-	+FLOORCLIP
-	+MISSILEMORE
-	+CastSpriteShadow
-	+NOINFIGHTSPECIES
-	
-	SeeSound "female/sight"
-	AttackSound ""
-	PainSound "female/pain"
-	DeathSound "female/death"
-	ActiveSound "female/active"
-	
-	Obituary "$OB_PLASMAKIRIN"
-	
-	DropItem "ArmorBonus"
-	DropItem "Cell", 64 //25% Chance of drop Cells
-	DropItem "EquestriaPlasmaGun", 13 //(Almost) 5% Chance of drop Plasma Gun
-	
-	MissileType "TechPlasmaBall"
-	
+		Tag "$TECHDUDE";
+		
+		Health 30;
+		Radius 20; Height 56;
+		Mass 80;
+		Speed 15; FastSpeed 20;
+		Species "Couple";
+		PainChance 170;
+		
+		+FLOORCLIP;
+		+MISSILEMORE;
+		+CastSpriteShadow;
+		+NOINFIGHTSPECIES;
+		
+		SeeSound "female/sight";
+		AttackSound "";
+		PainSound "female/pain";
+		DeathSound "female/death";
+		ActiveSound "female/active";
+		
+		Obituary "$OB_PLASMAKIRIN";
+		
+		DropItem "ArmorBonus";
+		DropItem "Cell", 64; //25% Chance of drop Cells
+		
+		MissileType "TechPlasmaBall";
+	}
 	States
 	{
 	
 	Spawn:
-		TECH AB 10 A_Look
-		Loop
+		TECH AB 10 A_Look();
+		Loop;
 	
 	See:
-		TECH AABBCCDD 3 A_Chase
-		Loop
+		TECH AABBCCDD 3 A_Chase();
+		Loop;
 	
 	Missile:
-		TECH E 1
+		TECH E 1;
 		TECH F 2 Bright 
 		{
-			A_FaceTarget;
+			A_FaceTarget();
 			A_SpawnProjectile("TechPlasmaBall");
 		}
-		TECH E 1
+		TECH E 1;
 		TECH F 2 Bright 
 		{
-			A_FaceTarget;
+			A_FaceTarget();
 			A_SpawnProjectile("TechPlasmaBall");
 		}
-		TECH E 1
+		TECH E 1;
 		TECH F 2 Bright 
 		{
-			A_FaceTarget;
+			A_FaceTarget();
 			A_SpawnProjectile("TechPlasmaBall");
 		}
-		TECH E 20
-		TECH E 0 A_Jump(127, "AgainMissile")
-		Goto See
+		TECH E 20;
+		TECH E 0 A_Jump(127, "AgainMissile");
+		Goto See;
 	
 	AgainMissile:
-		TECH E 1
+		TECH E 1;
 		TECH F 2 Bright 
 		{
-			A_FaceTarget;
+			A_FaceTarget();
 			A_SpawnProjectile("TechPlasmaBall");
 		}
-		TECH E 1
+		TECH E 1;
 		TECH F 2 Bright 
 		{
-			A_FaceTarget;
+			A_FaceTarget();
 			A_SpawnProjectile("TechPlasmaBall");
 		}
-		TECH E 1
+		TECH E 1;
 		TECH F 2 Bright 
 		{
-			A_FaceTarget;
+			A_FaceTarget();
 			A_SpawnProjectile("TechPlasmaBall");
 		}
-		TECH E 20
-		Goto See
+		TECH E 20;
+		Goto See;
 	
 	Pain:
-		TECH G 3
-		TECH G 3 A_Pain
-		Goto See
+		TECH G 3;
+		TECH G 3 A_Pain();
+		Goto See;
 	
 	Death:
-		TNT1 A 0 A_JumpIfInventory("DeadCheck",1,"VoidDead")   //A_Die lands here, and if the token is present...
+		TNT1 A 0 A_JumpIfInventory("DeadCheck",1,"VoidDead");   //A_Die lands here, and if the token is present...
 		
 		"####" "#" 0 { bSPRITEFLIP = randompick(0, 1); }
 		
-		TECH H 5 
+		TECH H 5 ;
 		TECH I 5 
 		{
-			A_AlertMonsters;
-			A_Scream;
+			A_AlertMonsters();
+			A_Scream();
 		}
-		TECH J 5 A_NoBlocking
-		TECH K 5
-		TECH L -1
-		Stop
+		TECH J 5 A_NoBlocking();
+		TECH K 5;
+		TECH L -1;
+		Stop;
 	
 	XDeath:
-		TECH W 0 A_JumpIfInventory("DeadCheck",1,"VoidDead")
+		TECH W 0 A_JumpIfInventory("DeadCheck",1,"VoidDead");
 		
 		"####" "#" 0 { bSPRITEFLIP = randompick(0, 1); }
 		
@@ -119,140 +118,139 @@ actor PlasmaKirin
 		{
 			A_SpawnItemEx("XDeathGibber",0,0,0,0,0,0,0, SXF_TRANSFERPOINTERS);
 			A_SpawnItemEx("BloodExplosionSphere",0,0,0,0,0,0,0, SXF_TRANSFERPOINTERS);
-			A_XScream;
-			A_NoBlocking;
+			A_XScream();
+			A_NoBlocking();
 		}
-		TECH W -1
-		Stop
+		TECH W -1;
+		Stop;
 	
 	Death.Berserk:
 	XDeath.Berserk:
-		"####" "#" 0 ThrustThingZ(0,30,0,1)
+		"####" "#" 0 ThrustThingZ(0,30,0,1);
 		
-		"####" "#" 0 A_Jump(256, "MidAir")
-		Wait
+		"####" "#" 0 A_Jump(256, "MidAir");
+		Wait;
 	
 	MidAir:
-		POSS J 1 A_SetRoll((roll + 20))
-		Loop
+		POSS J 1 A_SetRoll((roll + 20));
+		Loop;
 		
 	Crash.Berserk:
-		"####" "#" 0 A_SetRoll(0)
+		"####" "#" 0 A_SetRoll(0);
 		
-		"####" "#" 0 A_Jump(256, "XDeath")
-		Wait
+		"####" "#" 0 A_Jump(256, "XDeath");
+		Wait;
 		
 	Raise: //Make her transform into a nirik
-		TNT1 A 0 A_GiveInventory("DeadCheck",1)   //gives a token that says "he was revived already"
-		TNT1 A 0 A_SetRenderStyle(1, STYLE_Add)
-		FIRE A 5 A_StartFire
-		FIRE BABAB 2 A_FireCrackle
-		TNT1 A 0 A_SpawnItemEx("DemonNirik",0,0,0,0,0,0,0,32)  //Spawns Nirik
-		TNT1 A 0 A_Die
-		FIRE DEFGH 1 A_FireCrackle
+		TNT1 A 0 A_GiveInventory("DeadCheck",1);   //gives a token that says "he was revived already"
+		TNT1 A 0 A_SetRenderStyle(1, STYLE_Add);
+		FIRE A 5 A_StartFire();
+		FIRE BABAB 2 A_FireCrackle();
+		TNT1 A 0 A_SpawnItemEx("DemonNirik",0,0,0,0,0,0,0,32);  //Spawns Nirik
+		TNT1 A 0 A_Die();
+		FIRE DEFGH 1 A_FireCrackle();
 		
 		"####" "#" 0 { bSPRITEFLIP = 0; }
-		Goto See
+		Goto See;
 	
 	VoidDead:   //...jumps here where the monster is removed
-		TNT1 A 1
-		Stop
-  }
+		TNT1 A 1;
+		Stop;
+	}
 }
 
-actor DemonNirik
+Class DemonNirik : Actor
 {
+	Default
+	{
 	//$Category Monsters
-	Tag "$DEMONIRIK"
-	
-	Monster
-	
-	Health 50
-	
-	Radius 20
-	Height 56
-	
-	Mass 100
-	
-	Speed 20
-	FastSpeed 30
-	
-	PainChance 100
-	
-	Species "Couple"
+		Tag "$DEMONIRIK";
+		
+		Monster;
+		
+		Health 50;
+		
+		Radius 20; Height 56;
+		
+		Mass 100;
+		
+		Speed 20; FastSpeed 30;
+		
+		PainChance 100;
 
-	+CastSpriteShadow
-	+FLOORCLIP
-	+MISSILEMORE
-	+MISSILEEVENMORE
-	+EXTREMEDEATH
-	+JUMPDOWN
-	+BRIGHT
-	 
-	SeeSound "demon/sight"
-	AttackSound "demon/melee"
-	PainSound "demon/pain"
-	DeathSound "female/death"
-	ActiveSound "demon/active"
-	
-	Obituary "$NIRIKILL"
+		+CastSpriteShadow;
+		+FLOORCLIP;
+		+MISSILEMORE;
+		+MISSILEEVENMORE;
+		+EXTREMEDEATH;
+		+JUMPDOWN;
+		+BRIGHT;
+		 
+		SeeSound "demon/sight";
+		AttackSound "demon/melee";
+		PainSound "demon/pain";
+		DeathSound "female/death";
+		ActiveSound "demon/active";
+		
+		Obituary "$NIRIKILL";
+	}
 	States
 	{
 	
 	Spawn:
-		TECH AB 10 A_Look
-		Loop
+		TECH AB 10 A_Look();
+		Loop;
 	See:
-		TECH AABBCCDD 3 A_Chase
-		TNT1 A 0 A_JumpIf(Random(1, 10) == 5, "TryJump")
-		TNT1 A 0 A_JumpIfCloser(128, "TryJump")
-		Loop
+		TECH AABBCCDD 3 A_Chase();
+		TNT1 A 0 A_JumpIf(Random(1, 10) == 5, "TryJump");
+		TNT1 A 0 A_JumpIfCloser(128, "TryJump");
+		Loop;
 	
 	TryJump:
-		NULL A 0 A_CheckFloor("Jump") //don't jump if mid-air
-		goto See
+		NULL A 0 A_CheckFloor("Jump"); //don't jump if mid-air
+		goto See;
 	
 	Jump:
-		TECH H 0 A_PlaySound("demon/melee")
-		TECH H 0 A_FaceTarget
-		TECH J 8 
-		TECH H 0 A_Recoil(-15)
-		TECH H 0 A_ChangeVelocity(0, 0, 10, 0)
-		Goto See
+		TECH H 0 A_PlaySound("demon/melee");
+		TECH H 0 A_FaceTarget();
+		TECH J 8;
+		TECH H 0 A_Recoil(-15);
+		TECH H 0 A_ChangeVelocity(0, 0, 10, 0);
+		Goto See;
 	
 	Melee:
-		TECH E 5 A_FaceTarget
-		TECH F 5 Bright A_CustomMeleeAttack(random(1, 10) * 6)
-		TECH F 0 A_Recoil(2)
+		TECH E 5 A_FaceTarget();
+		TECH F 5 Bright A_CustomMeleeAttack(random(1, 10) * 6);
+		TECH F 0 A_Recoil(2);
 		
-		TECH E 5 A_FaceTarget
-		TECH F 5 Bright A_CustomMeleeAttack(random(1, 10) * 6)
-		TECH F 0 A_Recoil(2)
-		Goto See
+		TECH E 5 A_FaceTarget();
+		TECH F 5 Bright A_CustomMeleeAttack(random(1, 10) * 6);
+		TECH F 0 A_Recoil(2);
+		Goto See;
 	
 	Pain:
-		TECH G 3
-		TECH G 3 A_Pain
-		Goto See
+		TECH G 3;
+		TECH G 3 A_Pain();
+		Goto See;
 	
 	Death: //make her transform back into kirin
 		"####" "#" 0 { bSPRITEFLIP = randompick(0, 1); }
 		
-		TECH H 5 
+		TECH H 5;
 		TECH I 5 
 		{
-			A_AlertMonsters;
-			A_Scream;
+			A_AlertMonsters();
+			A_Scream();
 		}
-		TNT1 A 0 A_SetRenderStyle(1, STYLE_Add)
-		FIRE A 2 A_StartFire
-		FIRE BAB 2 A_FireCrackle
-		FIRE DEF 3 A_FireCrackle
-		TNT1 A 0 A_SetRenderStyle(1, STYLE_Normal)
-		TECH J 5 A_NoBlocking
-		TECH K 5
-		TECH L -1
-		Stop
+		TNT1 A 0 A_SetRenderStyle(1, STYLE_Add);
+		FIRE A 2 A_StartFire();
+		FIRE BAB 2 A_FireCrackle();
+		FIRE DEF 3 A_FireCrackle();
+		TNT1 A 0 A_SetRenderStyle(1, STYLE_Normal);
+		TECH J 5 A_NoBlocking();
+		TECH K 5;
+		TECH L -1;
+		Stop;
 	
 	XDeath:
 		"####" "#" 0 { bSPRITEFLIP = randompick(0, 1); }
@@ -261,20 +259,20 @@ actor DemonNirik
 		{
 			A_SpawnItemEx("XDeathGibber",0,0,0,0,0,0,0, SXF_TRANSFERPOINTERS);
 			A_SpawnItemEx("BloodExplosionSphere",0,0,0,0,0,0,0, SXF_TRANSFERPOINTERS);
-			A_XScream;
-			A_NoBlocking;
+			A_XScream();
+			A_NoBlocking();
 		}
-		TECH W -1
-		Stop
+		TECH W -1;
+		Stop;
 		
 	Raise:
-		TNT1 A 0 A_SetRenderStyle(1, STYLE_Add)
-		FIRE A 5 A_StartFire
-		FIRE BABAB 2 A_FireCrackle
-		FIRE DEFGH 1 A_FireCrackle
-		TNT1 A 0 A_SetRenderStyle(1, STYLE_Normal)
+		TNT1 A 0 A_SetRenderStyle(1, STYLE_Add);
+		FIRE A 5 A_StartFire();
+		FIRE BABAB 2 A_FireCrackle();
+		FIRE DEFGH 1 A_FireCrackle();
+		TNT1 A 0 A_SetRenderStyle(1, STYLE_Normal);
 		
 		"####" "#" 0 { bSPRITEFLIP = 0; }
-		Goto See
+		Goto See;
 	}
 }

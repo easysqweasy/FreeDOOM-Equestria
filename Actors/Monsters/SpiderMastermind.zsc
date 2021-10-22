@@ -1,17 +1,18 @@
-Actor EquestriaSpiderMastermind : SpiderMastermind replaces SpiderMastermind
+Class EquestriaSpiderMastermind : SpiderMastermind replaces SpiderMastermind
 {
-	
-	PainChance "BFGSplash", 10
-	DamageFactor "BFGSplash", 0.15
-	
-	+CASTSPRITESHADOW
-	+AVOIDMELEE
-	
+	Default
+	{
+		PainChance "BFGSplash", 10;
+		DamageFactor "BFGSplash", 0.15;
+		
+		+CASTSPRITESHADOW;
+		+AVOIDMELEE;
+	}
 	States
 	{
 	Death:
-		SPID J 20 A_Scream
-		SPID K 10 A_NoBlocking
+		SPID J 20 A_Scream();
+		SPID K 10 A_NoBlocking();
 		SPID LMN 8
 		{
 			A_SpawnItemEx("BigGibber",0,0,0,0,0,0,0, SXF_TRANSFERPOINTERS);
@@ -27,9 +28,9 @@ Actor EquestriaSpiderMastermind : SpiderMastermind replaces SpiderMastermind
 			A_SpawnItemEx("BloodExplosionSphere",0,0,random(16, 32),0,0,0,0, SXF_TRANSFERPOINTERS);
 			A_SpawnItemEx("BloodExplosionSphere",0,0,random(16, 32),0,0,0,0, SXF_TRANSFERPOINTERS);
 		}
-		SPID PQR 5
-		SPID S 30
-		SPID S -1 A_BossDeath
-		Stop
+		SPID PQR 5;
+		SPID S 30;
+		SPID S -1 A_BossDeath();
+		Stop;
 	}
 }

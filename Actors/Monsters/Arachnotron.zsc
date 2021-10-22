@@ -1,58 +1,62 @@
-Actor EquestriaArachnotron : Arachnotron replaces Arachnotron
+Class EquestriaArachnotron : Arachnotron replaces Arachnotron
 {
-	+CASTSPRITESHADOW
-	
+	Default
+	{
+		+CASTSPRITESHADOW;
+	}
 	States
 	{
 	
 	Missile:
-		BSPI A 20 bright A_FaceTarget
-		BSPI G 4 bright A_SpawnProjectile(ArachnotronPlasma, 18, 4)
-		BSPI H 4 bright
-		BSPI H 1 bright A_SpidRefire
-		Goto Missile+1
+		BSPI A 20 bright A_FaceTarget();
+		BSPI G 4 bright A_SpawnProjectile("ArachnotronPlasma", 18, 4);
+		BSPI H 4 bright;
+		BSPI H 1 bright A_SpidRefire();
+		Goto Missile+1;
    
 	}
 }
 
-ACTOR EquestriaArachnotronPlasma : ArachnotronPlasma replaces ArachnotronPlasma
+Class EquestriaArachnotronPlasma : ArachnotronPlasma replaces ArachnotronPlasma
 {
-	+ROLLSPRITE +ROLLCENTER
-	
+	Default
+	{
+		+ROLLSPRITE; +ROLLCENTER;
+	}
 	States
 	{
 	Spawn:
-		APLS A 0
-		APLS A 0 A_SetRoll(random(-359, 359))
+		APLS A 0;
+		APLS A 0 A_SetRoll(random(-359, 359));
 	Projectile:
 		APLS A 1 Bright
 		{
 			A_SpawnItemEx("AracPlasmaTrail");
 			A_SetRoll((roll + 15), SPF_INTERPOLATE);
 		}
-		Loop
+		Loop;
  
 	Death:
-		APBX A 0 A_SpawnItemEx("PlasmaFloorCheck", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION)
-		APBX ABC 4 Bright
-		APBX DE 4 A_FadeOut(0.1)
-		Stop
+		APBX A 0 A_SpawnItemEx("PlasmaFloorCheck", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION);
+		APBX ABC 4 Bright;
+		APBX DE 4 A_FadeOut(0.1);
+		Stop;
 	}
 }
 
-Actor AracPlasmaTrail : Trails
+Class AracPlasmaTrail : Trails
 {
 	States
 	{
 	Spawn:
-		APLS A 0
-		APLS A 0 A_SetRoll(random(-359, 359))
+		APLS A 0;
+		APLS A 0 A_SetRoll(random(-359, 359));
 	Trail:
 		APLS A 1 Bright
 		{
 			A_SetRoll((roll + 15), SPF_INTERPOLATE);
 			A_FadeOut(0.1);
 		}
-		Loop
+		Loop;
 	}
 }

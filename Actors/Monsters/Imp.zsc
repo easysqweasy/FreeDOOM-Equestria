@@ -1,40 +1,42 @@
-actor EquestriaImp : DoomImp Replaces DoomImp
+Class EquestriaImp : DoomImp Replaces DoomImp
 {
-	+CASTSPRITESHADOW
-	
-	+ROLLSPRITE +ROLLCENTER
-	
+	Default
+	{
+		+CASTSPRITESHADOW;
+		
+		+ROLLSPRITE; +ROLLCENTER;
+	}
 	States
 	{
 	Spawn:
-		IDLI AB 10 A_Look
-		Loop
+		IDLI AB 10 A_Look();
+		Loop;
 	
 	
 	/*Idle:
 		TROO AABBCCDD 3
 		{
-			A_Wander;
-			A_Look;
+			A_Wander();
+			A_Look();
 		}
-		TROO A 0 A_Jump(32, "Tired")
-		Loop
+		TROO A 0 A_Jump(32, "Tired");
+		Loop;
 	
 	Tired:
-		IDLI AB 10 A_Look
-		TROO A 0 A_Jump(128, "Idle")
-		Loop*/
+		IDLI AB 10 A_Look();
+		TROO A 0 A_Jump(128, "Idle");
+		Loop;*/
 	
 	
 	Death:
 		"####" "#" 0 { bSPRITEFLIP = randompick(0, 1); }
 		
-		TROO I 5
-		TROO J 5 A_Scream
-		TROO K 5 A_NoBlocking
-		TROO L 5
-		TROO M -1
-        Stop
+		TROO I 5;
+		TROO J 5 A_Scream();
+		TROO K 5 A_NoBlocking();
+		TROO L 5;
+		TROO M -1;
+        Stop;
 		
 	XDeath:
 		"####" "#" 0 { bSPRITEFLIP = randompick(0, 1); }
@@ -43,77 +45,72 @@ actor EquestriaImp : DoomImp Replaces DoomImp
 		{
 			A_SpawnItemEx("XDeathGibber",0,0,16,0,0,0,0, SXF_TRANSFERPOINTERS);
 			A_SpawnItemEx("BloodExplosionSphere",0,0,16,0,0,0,0, SXF_TRANSFERPOINTERS);
-			A_XScream;
-			A_NoBlocking;
+			A_XScream();
+			A_NoBlocking();
 		}
-		TROO U -1
-		Stop
+		TROO U -1;
+		Stop;
 		
 	Death.Berserk:
 	XDeath.Berserk:
-		"####" "#" 0 ThrustThingZ(0,30,0,1)
+		"####" "#" 0 ThrustThingZ(0,30,0,1);
 		
-		"####" "#" 0 A_Jump(256, "MidAir")
-		Wait
+		"####" "#" 0 A_Jump(256, "MidAir");
+		Wait;
 	
 	MidAir:
-		TROO J 1 A_SetRoll((roll + 20))
-		Loop
+		TROO J 1 A_SetRoll((roll + 20));
+		Loop;
 		
 	Crash.Berserk:
-		"####" "#" 0 A_SetRoll(0)
+		"####" "#" 0 A_SetRoll(0);
 		
-		"####" "#" 0 A_Jump(256, "XDeath")
-		Wait
+		"####" "#" 0 A_Jump(256, "XDeath");
+		Wait;
 		
 	Raise:
-		TROO ML 8
-		TROO KJI 6
+		TROO ML 8;
+		TROO KJI 6;
 		
 		"####" "#" 0 { bSPRITEFLIP = 0; }
-		Goto See
+		Goto See;
 		
 	}
 }
 
-actor EquestriaImpBall : DoomImpBall replaces DoomImpBall
+Class EquestriaImpBall : DoomImpBall replaces DoomImpBall
 {
-	Radius 8
-	Height 16
-
-	DamageType Fire
+	Default
+	{
+		Radius 8; Height 16;
 	
-	+ForceXYBillBoard
-	
+		DamageType "Fire";
+		
+		Decal "FireBallScorch";
+		
+		+ForceXYBillBoard;
+	}
 	States
 	{
 	Spawn:
-		BAL1 BB 1 Bright A_SpawnItemEx("FirePieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1), 0)
-		BAL1 A 2 Bright
-		{
-			A_SpawnItemEx("FireBallTrail");
-			
-			A_SpawnItemEx("FirePieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1), 0);
-			A_SpawnItemEx("FirePieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1), 0);
-		}
-		BAL1 BB 1 Bright A_SpawnItemEx("FirePieceSpawn",random(-5,-5),random(-5,5),random(-5,5), random(-1, 1), random(-1, 1), 0)
-		Loop
+		BAL1 B 2 Bright;
+		BAL1 A 2 Bright A_SpawnItemEx("FireBallTrail");
+		Loop;
 		
 	Death:
-		BAL1 CD 6 Bright
-		BAL1 E 1 Bright A_FadeOut(0.1)
-		Wait
+		BAL1 CD 6 Bright;
+		BAL1 E 1 Bright A_FadeOut(0.1);
+		Wait;
 	}
 }
 
-actor FireBallTrail : Trails
+Class FireBallTrail : Trails
 {
 	States
 	{
 	Spawn:
-		TNT1 A 2
-		BAL1 CD 3 Bright A_FadeOut(0.125)
-		BAL1 E 1 Bright A_FadeOut(0.1)
-		Wait
+		BAL1 CD 3 Bright A_FadeOut(0.125);
+		BAL1 E 1 Bright A_FadeOut(0.1);
+		Wait;
 	}
 }
