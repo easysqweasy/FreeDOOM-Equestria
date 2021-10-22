@@ -2,3 +2,8 @@ map TITLEMAP ""
 {
 	//Music = "D_DM2TTL"
 }
+
+map DoomTest "Kinsie's Test Map"
+{
+	BorderTexture = "Flats/PlaceHolders/MSSINGT1.png"
+}
