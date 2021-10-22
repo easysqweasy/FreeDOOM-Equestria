@@ -25,8 +25,8 @@ Class EquestriaDoomPlayer : DoomPlayer replaces DoomPlayer
 	
 	Death:
 		PLAY H 10;
-		PLAY I 10 A_PlayerScream;
-		PLAY J 10 A_NoBlocking;
+		PLAY I 10 A_PlayerScream();
+		PLAY J 10 A_NoBlocking();
 		PLAY KLM 10;
 		PLAY N -1;
 		Stop;
@@ -49,8 +49,8 @@ Class EquestriaDoomPlayer : DoomPlayer replaces DoomPlayer
 	Death.Blast:
 		PLAY H 0 A_GiveInventory("BlastDeath", 1);
 		PLAY H 10;
-		PLAY I 10 A_PlayerScream;
-		PLAY J 10 A_NoBlocking;
+		PLAY I 10 A_PlayerScream();
+		PLAY J 10 A_NoBlocking();
 		PLAY KLM 10;
 		PLAY N -1;
 		Stop;
@@ -60,8 +60,8 @@ Class EquestriaDoomPlayer : DoomPlayer replaces DoomPlayer
 		{
 			A_SpawnItemEx("XDeathGibber",0,0,16,0,0,0,0, SXF_TRANSFERPOINTERS);
 			A_SpawnItemEx("BloodExplosionSphere",0,0,16,0,0,0,0, SXF_TRANSFERPOINTERS);
-			A_XScream;
-			A_NoBlocking;
+			A_XScream();
+			A_NoBlocking();
 		}
 		PLAY P 5;
 		PLAY Q 5;
@@ -71,8 +71,8 @@ Class EquestriaDoomPlayer : DoomPlayer replaces DoomPlayer
 		
 	Death.BruisersMelee:
 		PLAY O 5 A_SkullPop("PopSkull");
-		PLAY P 5 A_XScream;
-		PLAY R 5 A_NoBlocking;
+		PLAY P 5 A_XScream();
+		PLAY R 5 A_NoBlocking();
 		PLAY STUV 5;
 		PLAY W -1;
 		Stop;
@@ -124,7 +124,7 @@ Class PopSkull : PlayerChunk
 		Wait;
 		
 	Hit:
-		BSKL F 16 A_CheckPlayerDone;
+		BSKL F 16 A_CheckPlayerDone();
 		Wait;
 		
 	}
