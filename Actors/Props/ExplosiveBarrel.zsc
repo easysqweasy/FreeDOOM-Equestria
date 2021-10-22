@@ -32,6 +32,8 @@ Class EquestriaExploBarrel : ExplosiveBarrel replaces ExplosiveBarrel
 		
 		TNT1 AAAAAAAAAA 0 A_CustomMissile("RocketSmoke", random(-32, 32), 0, random (0, 360), 2, random (0, 360));
 		
+		TNT1 BBBBBBBBBBBBBBB 0 A_CustomMissile("BarrelDebris", random(8, 16), 0, random (0, 360), 2, random (10, 90));
+		
 		BEXP D 5 Bright
 		{
 			A_Scream();
@@ -43,8 +45,6 @@ Class EquestriaExploBarrel : ExplosiveBarrel replaces ExplosiveBarrel
 		}
 		
 		TNT1 AAAA 0 A_CustomMissile("SplashSmoke", random(-20, 20), random (-40, 40), random (0, 360), 2, random(0, 90));
-		
-		TNT1 BBBBBBBBBBBBBBB 0 A_CustomMissile("BarrelDebris", random(8, 16), 0, random (0, 360), 2, random (10, 90));
 		
 		BEXP EEEEEEEEEE 1 Bright A_FadeOut(0.1);
 		TNT1 A 1050 Bright A_BarrelDestroy();
@@ -65,6 +65,8 @@ Class EquestriaExploBarrel : ExplosiveBarrel replaces ExplosiveBarrel
 		
 		TNT1 AAAAAAAAAA 0 A_CustomMissile("RocketSmoke", random(-32, 32), 0, random (0, 360), 2, random (0, 360));
 		
+		TNT1 BBBBBBBBBBBBBBBBBBBB 0 A_CustomMissile("BarrelDebris", random(8, 16), 0, random (0, 360), 2, random (10, 90));
+		
 		BEXP D 5 Bright
 		{
 			A_Scream();
@@ -76,8 +78,6 @@ Class EquestriaExploBarrel : ExplosiveBarrel replaces ExplosiveBarrel
 		}
 		
 		TNT1 AAAA 0 A_CustomMissile("SplashSmoke", random(-20, 20), random (-40, 40), random (0, 360), 2, random(0, 90));
-		
-		TNT1 BBBBBBBBBBBBBBBBBBBB 0 A_CustomMissile("BarrelDebris", random(8, 16), 0, random (0, 360), 2, random (10, 90));
 		
 		BEXP EEEEEEEEEE 1 Bright A_FadeOut(0.1);
 		TNT1 A 1050 Bright A_BarrelDestroy();
