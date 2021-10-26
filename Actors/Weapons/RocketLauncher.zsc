@@ -107,7 +107,7 @@ Class EquestriaRocket : Rocket replaces Rocket
 	States
 	{
 	Spawn:
-		MISL A 2 Bright A_SpawnItemEx("RocketSmoke");
+		MISL A 2 Bright A_SpawnItemEx("DERocketTrail");
 		Loop;
 		
 	Death:
@@ -131,7 +131,7 @@ Class EquestriaRocket : Rocket replaces Rocket
 		Wait;
 	}
 }
-
+	
 Class RocketSmoke : Trails replaces RocketSmokeTrail
 {
 	Default
@@ -150,10 +150,10 @@ Class RocketSmoke : Trails replaces RocketSmokeTrail
 		
 		Scale 0.50;
 		
-		-NoInteraction;
-		-NOCLIP;
+		-NoInteraction
+		-NOCLIP
 		
-		+MoveWithSector;
+		+MoveWithSector
 	}
 	States
 	{
@@ -174,3 +174,6 @@ Class RocketSmoke : Trails replaces RocketSmokeTrail
 		Wait;
 	}
 }
+
+Class DERocketTrail : RocketSmoke
+{	Default	{	+NoInteraction	}	}
