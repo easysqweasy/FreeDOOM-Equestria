@@ -6,6 +6,7 @@ Class DEParticles : DebrisCore
 		//+THRUACTORS;
 		+DONTSPLASH;
 		+ExplodeOnWater;
+		+Randomize;
 	}
 }
 
@@ -19,11 +20,7 @@ Class Trails : DEParticles
 		RenderStyle "Add";
 		Alpha 0.75;
 		
-		+Randomize;
-		
 		-Missile;
-		
-		+ROLLSPRITE; +ROLLCENTER;
 		
 		-MOVEWITHSECTOR;
 		+DONTSPLASH;
