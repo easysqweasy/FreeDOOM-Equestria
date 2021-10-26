@@ -2,7 +2,8 @@
 
 WARNING = "WARNING!";
 NOKIDS = "This is NOT a Mod for CHILDREN!";
-MAYCONTAIN = "Contains violence, blood and gore.";
+MAYCONTAIN = "May contain images and content sensitive for some audiences,\nsuch as Blood and Gore,\nExtreme Violence,Strong Language, and Drugs.";
+//DOOM Equestria: Shainer, contains no sexual content, but... nobody knows about the other characters
 
 BABYSKILL = "I'm a Little Pony";
 EASYSKILL = "Hey, not too rough";

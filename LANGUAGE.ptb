@@ -1,8 +1,8 @@
 [ptb pt br]
 
 WARNING = "ATENÇÃO!";
-NOKIDS = "Isso NÃO é um Mod para CRIANÇAS!";
-MAYCONTAIN = "Contém violência extrema e sangue.";
+NOKIDS = "Isso NÃO é um jogo para CRIANÇAS!";
+MAYCONTAIN = "Pode conter imagens e conteúdos sensiveis\npara alguns publicos, como Violência Extrema, Linguagem Imprópria, e Drogas.";
 
 MNU_CHOOSESKILL = "Nível de Dificuldade:";
 
