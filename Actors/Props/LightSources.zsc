@@ -1,46 +1,92 @@
-Class BigLampshade1 : Actor
+////////// Tech lamp
+
+Class EquestriaTechLamp : TechLamp
 {
-	Default
-	{
 	//$NotAngled
-	//$Category Light sources
-		Radius 9; Height 55;
-		ProjectilePassHeight -16;
-		+SOLID;
-	}
+	
+	//$Arg0 Destroyed
+	//$Arg0Enum falsetrue
 	States
 	{
 	Spawn:
-		lam2 A -1 bright;
+		TLMP ABCD 4 BRIGHT;
+		Loop;
+	}
+}
+
+Class EquestriaTechLamp2 : EquestriaTechLamp replaces TechLamp2
+{
+	//$NotAngled
+	
+	//$Arg0 Destroyed
+	//$Arg0Enum falsetrue
+	States
+	{
+	Spawn:
+		TLP2 ABCD 4 BRIGHT;
+		Loop;
+	}
+}
+
+Class EquestriaTechLamp3 : EquestriaTechLamp
+{
+	//$NotAngled
+	
+	//$Arg0 Destroyed
+	//$Arg0Enum falsetrue
+	States
+	{
+	Spawn:
+		TLP3 A 1 BRIGHT;
+		Loop;
+	}
+}
+
+Class EquestriaTechLamp4 : EquestriaTechLamp
+{
+	//$NotAngled
+	
+	//$Arg0 Destroyed
+	//$Arg0Enum falsetrue
+	States
+	{
+	Spawn:
+		TLP4 A 1 BRIGHT;
+		Loop;
+	}
+}
+////////// Column
+
+Class EquestriaColumn : Column replaces Column
+{
+	//$Title Column
+	
+	//$NotAngled
+	
+	//$Arg0 Destroyed
+	//$Arg0Enum falsetrue
+	
+	//$Category Light sources
+	States
+	{
+	Spawn:
+		COLU A -1 BRIGHT;
 		Stop;
 	}
 }
 
-Class BigLampshade2 : Actor
+Class Column2 : Column
 {
 	Default
 	{
+	//$Title Column 2
+	
+	//$Arg0 Destroyed
+	//$Arg0Enum falsetrue
+	
 	//$NotAngled
 	//$Category Light sources
-		Radius 11; Height 32;
-		ProjectilePassHeight -16;
-		+SOLID;
-	}
-	States
-	{
-	Spawn:
-		lamp A -1 bright;
-		Stop;
-	}
-}
 
-Class Column2 : Actor
-{
-	Default
-	{
-	//$NotAngled
-	//$Category Light sources
-	//$Title Floor Lamp 2
 		ProjectilePassHeight -16;
 		Radius 11; Height 46;
 		+SOLID;
@@ -48,45 +94,45 @@ Class Column2 : Actor
 	States
 	{
 	Spawn:
-		lam4 A -1 bright;
+		COLU B -1 bright;
 		Stop;
 	}
 }
 
-Class BigLamp3 : Actor
+/////////
+Class BigLampshade1 : Actor
 {
 	Default
 	{
 	//$NotAngled
 	//$Category Light sources
-	//$Title Floor Lamp 3
-		Radius 11; Height 76;
+	
+	//$Arg0 Destroyed
+	//$Arg0Enum falsetrue
+		Radius 9; Height 55;
 		ProjectilePassHeight -16;
 		+SOLID;
 	}
 	States
 	{
 	Spawn:
-		lam5 A -1 bright;
+		LAM1 A -1 bright;
 		Stop;
 	}
 }
 
-Class BigLamp2 : Actor
+Class BigLampshade2 : BigLampshade1
 {
 	Default
 	{
 	//$NotAngled
 	//$Category Light sources
-	//$Title Tall Techno floor Lamp 2
-		Radius 11; Height 80;
-		ProjectilePassHeight -16;
-		+SOLID;
+		Radius 11; Height 32;
 	}
 	States
 	{
 	Spawn:
-		lam6 A -1 bright;
+		lamp A -1 bright;
 		Stop;
 	}
 }
@@ -105,7 +151,7 @@ Class CeilingLamp1 : Actor
 	States
 	{
 	Spawn:
-		lam3 A -1 bright;
+		LAM2 A -1 bright;
 		Stop;
 	}
 }
