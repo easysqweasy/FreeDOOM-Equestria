@@ -89,12 +89,12 @@ Class EquestriaChaingun : DoomEquestriaWeapon replaces Chaingun
 		Goto Ready;
 	
 	Flash:
-		CHGF A 2 Bright A_WeaponOffset(0, 30, WOF_INTERPOLATE);
+		CHGF A 2 Bright A_WeaponOffset(0, 28, WOF_INTERPOLATE);
 		Goto LightDone;
 	
 	Flash2:
 		TNT1 A 2 Bright ;
-		CHGF B 2 Bright A_WeaponOffset(0, 38, WOF_INTERPOLATE);
+		CHGF B 2 Bright A_WeaponOffset(0, 36, WOF_INTERPOLATE);
 		Goto LightDone;
 	
 	}
