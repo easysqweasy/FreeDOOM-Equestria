@@ -115,20 +115,16 @@ Class BarrelDebris : DebrisCore
 {
 	Default
 	{
-		Radius 10;
-		Height 10;
+		Radius 10; Height 10;
 		Mass 50;
+		
 		Speed 12;
-	  
-		+MISSILE;
 		
-		+ROLLSPRITE;
-		+ROLLCENTER;
+		Gravity 0.75;
 		
-		+BOUNCEONWALLS;
-		+BOUNCEONCEILINGS;
-		+BOUNCEONFLOORS;
-		+BOUNCEONACTORS;
+		+ROLLSPRITE +ROLLCENTER
+		
+		+BOUNCEONWALLS +BOUNCEONCEILINGS +BOUNCEONFLOORS +BOUNCEONACTORS
 		BounceType "Doom";
 		BounceFactor 0.5;
 	}
