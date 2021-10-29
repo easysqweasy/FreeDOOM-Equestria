@@ -2,7 +2,7 @@
 
 WARNING = "ATENÇÃO!";
 NOKIDS = "Isso NÃO é um jogo para CRIANÇAS!";
-MAYCONTAIN = "Pode conter imagens e conteúdos sensiveis\npara alguns publicos, como Violência Extrema, Linguagem Imprópria, e Drogas.";
+MAYCONTAIN = "Pode conter imagens e conteúdos sensiveis\npara alguns publicos, como Violência Extrema e Linguagem Imprópria.";
 
 MNU_CHOOSESKILL = "Nível de Dificuldade:";
 
