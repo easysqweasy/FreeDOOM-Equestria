@@ -1,3 +1,17 @@
+gameinfo
+{
+	intermissionmusic = "Music/INTER1.mid"
+}
+
+gamedefaults 
+{
+	useplayerstartz
+	nosoundclipping
+	strictmonsteractivation
+	
+	compat_invisibility = 1
+}
+
 include "MAPINFO/Episodes.txt"
 include "MAPINFO/DoomEdNumbers.txt"
 include "MAPINFO/Season1.txt"
