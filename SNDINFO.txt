@@ -50,16 +50,3 @@ DoomTorch/Burn		DSFIRLOP
 $limit DoomTorch/Burn 0
 $volume DoomTorch/Burn 0.1
 $attenuation DoomTorch/Burn 4
-
-/* Sound limit removal */
-
-$Limit misc/i_pkup	0
-$Limit misc/k_pkup	0
-$Limit misc/w_pkup	0
-$Limit misc/p_pkup	0
-
-$Limit pickup/plasmagun	0
-$Limit pickup/rocklauncher	0
-$Limit pickup/chaingun	0
-$Limit pickup/backpack	0
-$Limit misc/k_pkup	0
