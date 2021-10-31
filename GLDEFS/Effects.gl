@@ -48,26 +48,74 @@ object TeleportFog
 }
 
 // Bullet puff
-pointlight BPUFF1
+pulselight BPUFF1
 {
-    color 0.5 0.5 0.0
-    size 4
-}
-
-pointlight BPUFF2
-{
-    color 0.5 0.5 0.0
-    size 2
+    color 0.8 0.8 0.2
+    size 0
+	secondarysize 8
+	interval 0.15
 }
 
 object EquestriaBulletPuff
 {
     frame PUFFA { light BPUFF1 }
-    frame PUFFB { light BPUFF2 }
 }
 
 object ShotgunPuff
 {
     frame PUFFA { light BPUFF1 }
-    frame PUFFB { light BPUFF2 }
+}
+
+// Weapons Light
+
+flickerlight2 PistolLight
+{
+	color 0.6 0.6 0.1
+	size 25
+	secondarySize 30
+	interval 0.05
+	offset 0 48 0
+}
+
+flickerlight2 ShotgunLight
+{
+    color 0.6 0.6 0.1
+    size 35
+	secondarySize 50
+	interval 0.05
+	offset 0 48 0
+}
+
+flickerlight2 SuperShotgunLight
+{
+    color 0.6 0.6 0.1
+    size 45
+	secondarySize 75
+	interval 0.05
+	offset 0 48 0
+}
+
+flickerlight2 ChaingunLight
+{
+    color 0.6 0.6 0.1
+    size 35
+	secondarySize 50
+	interval 0.05
+	offset 0 48 0
+}
+
+flickerlight2 PlasmaGunLight
+{
+    color 0.6 0.6 0.1
+    size 4
+	interval 0.05
+	offset 0 48 0
+}
+
+flickerlight2 BFGLight
+{
+    color 0.6 0.6 0.1
+    size 4
+	interval 0.05
+	offset 0 48 0
 }

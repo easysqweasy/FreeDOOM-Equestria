@@ -1,18 +1,16 @@
 // Rocket
-flickerlight ROCKET
+pointlight ROCKET
 {
     color 1.0 0.7 0.0
-    size 15
-	secondarysize 20
-	chance 0.5
+	size 20
 	attenuate 1
 }
 
 flickerlight ROCKET_X1
 {
     color 1.0 0.7 0.5
-    size 25
-    secondarySize 30
+    size 50
+    secondarySize 45
     chance 0.3
 	attenuate 1
 }
@@ -20,8 +18,8 @@ flickerlight ROCKET_X1
 flickerlight ROCKET_X2
 {
     color 0.5 0.3 0.2
-    size 35
-    secondarySize 40
+    size 40
+    secondarySize 35
     chance 0.3
 	attenuate 1
 }
@@ -29,8 +27,8 @@ flickerlight ROCKET_X2
 flickerlight ROCKET_X3
 {
     color 0.3 0.1 0.1
-    size 45
-    secondarySize 50
+    size 30
+    secondarySize 25
     chance 0.3
 	attenuate 1
 }
