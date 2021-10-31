@@ -54,7 +54,7 @@ splash LavaSmoke
 
 //Nukage Green and Smokey
 
-splash Nuke
+splash Nukage
 {
 	smallclass		DENukageBase
 	smallclip		6
@@ -147,7 +147,7 @@ terrain Lava
 //just smoke
 terrain LavaSmoke
 {
-	splash			SplashSmoke
+	splash			LavaSmoke
 	footclip		0
 	liquid
 }
@@ -156,7 +156,7 @@ terrain LavaSmoke
 terrain Nukage
 {
 	DamageType		"Nukage"
-	splash			Nuke
+	splash			"Nukage"
 	footclip		10
 	liquid
 }
