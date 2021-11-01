@@ -1,11 +1,6 @@
 #library "CVARs"
 #include "zcommon.acs"
 
-script "BobToggle" (void)
-{
-    SetResultValue(GetCVar("BobToggle"));
-}
-
 script "CamRecoilToggle" (void)
 {
     SetResultValue(GetCVar("CamRecoilToggle"));
@@ -16,5 +11,7 @@ script "GoreToggle" (void)
     SetResultValue(GetCVar("GoreToggle"));
 }
 
-////Classic Weapons
-//ragedox is lazy
+script "GibsStayForever" (void)
+{
+    SetResultValue(GetCVar("GibsStayForever"));
+}
