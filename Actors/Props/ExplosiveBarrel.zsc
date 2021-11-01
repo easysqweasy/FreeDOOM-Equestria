@@ -11,7 +11,8 @@ Class EquestriaExploBarrel : ExplosiveBarrel replaces ExplosiveBarrel
 		-OLDRADIUSDMG;
 		+CANPASS;
 		
-		BloodColor "66 a2 66";
+		//BloodColor "66 a2 66";
+		//BloodType "ExploBarrel"
 		Painchance 256;
 	}
 	States
