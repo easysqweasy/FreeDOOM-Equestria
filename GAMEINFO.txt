@@ -1,3 +1,4 @@
+IWAD = "DOOM2.WAD"
 STARTUPTITLE = "DOOM Equestria - Public Alpha" 
 StartupSong = ""
 StartupType = "Hexen"
