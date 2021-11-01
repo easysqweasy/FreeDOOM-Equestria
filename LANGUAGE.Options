@@ -15,6 +15,7 @@ GRAPHICSSETTINGS = "Graphic Settings";
 
 GORETOGGLE = "Enhanced Gore";
 REALISTIC = "Realistic";
+GIBSFOREVER = "Gibs stay down forever";
 
 HIRESETTINGS = "High Quality Sprites Settings*";
 HIRESWARNING = "*May decrease performance on weaker computers";
@@ -37,6 +38,7 @@ GRAPHICSSETTINGS = "Configurações Graficas";
 
 GORETOGGLE = "Gore Aprimorado";
 REALISTIC = "Realista";
+GIBSFOREVER = "Gibs ficam no chão para sempre";
 
 HIRESETTINGS = "Opções de Alta Qualidade*";
 HIRESWARNING = "*Pode reduzir o desempenho em computadores fracos";
