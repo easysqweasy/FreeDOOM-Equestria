@@ -2,37 +2,21 @@ OptionMenu "EquestriaOptions"
 {
 Title "$DOOMEQUESTRIAOPTIONS"
 
-StaticText ""
-StaticText ""
-
 StaticText "$VIDEOSETTINGS", "Brick"
 StaticText ""
 
-Option "$BOBTOGGLE", "BobToggle", "onoff"
-Slider "$DSPLYMNU_MOVEBOB", "movebob", 0, 1.0, 0.05, 2
-Slider "$DSPLYMNU_STILLBOB", "stillbob", 0, 1.0, 0.05, 2
-Slider "$DSPLYMNU_BOBSPEED", "wbobspeed", 0, 2.0, 0.1
-Slider "$DSPLYMNU_BOBFIRE", "wbobfire", 0, 1.0, 0.1
 Option "$CAMRECOILTOGGLE", "CamRecoilToggle", "onoff"
 Option "$AURATOGGLE", "AuraToggle", "onoff"
 StaticText "$WIPWARNING", "yellow"
-Slider "$DSPLYMNU_FOV",	"fov", 75.0, 120.0, 0.1, 1
 StaticText ""
 	
 StaticText "$GRAPHICSSETTINGS", "Brick"
 StaticText ""
 
 Option "$GORETOGGLE", "GoreToggle", "GoreType"
+Option "$GIBSFOREVER", "GibsStayForever", "onoff"
+Option "Flat blood", "FlatBlood", "onoff"
 StaticText ""
-
-/*
-StaticText "$HIRESETTINGS", "Brick"
-StaticText "$HIRESWARNING", "White"
-StaticText ""
-
-Option "Hi-Res Guns Pickups", "HDGunsToggle", "onfoff"
-Option "Hi-Res Quality Pickups", "HDPickToggle", "onoff"
-Option "Hi-Res Projectiles", "HDProjectileToggle", "onoff"*/
 }
 
 OptionValue "GoreType"
