@@ -7,12 +7,12 @@ Class KickCheck : InvToken	{}
 
 Class LowHealthCheck : InvToken	{}
 
-//ToDo
+Class Vanish : InvToken	{}
 
-Class InspectAnimation : InvToken	{} //Maybe
+//ToDo
 
 Class PickedUpBerserk : InvToken	{} //To do in ACS or Overlays
 
-Class FoundHellPortal : InvToken {}
+Class FoundHellPortal : InvToken {} //Season 1 End
 
-Class FoundDaisy : InvToken	{}
+Class FoundDaisy : InvToken	{} //DOOM 2
