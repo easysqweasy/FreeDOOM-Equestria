@@ -54,22 +54,9 @@ Class EquestriaPlasmaGun : DoomEquestriaWeapon replaces PlasmaRifle
 		PLSG A 0 A_ReFire();
 
 	Chill:
-		TNT1 A 0 A_JumpIf(callACS("BobToggle")==1,"Chill.Bob");
-		
 		PLSG B 1;
 		PLSG CDE 1;
 		PLSG F 12;
-		PLSG EDCB 1;
-		Goto Ready;
-	
-	Chill.Bob:
-		TNT1 A 0 A_WeaponReady(WRF_NOFIRE | WRF_NOSWITCH);
-		PLSG B 1;
-		TNT1 A 0 A_WeaponReady(WRF_NOFIRE | WRF_NOSWITCH);
-		PLSG CDE 1;
-		TNT1 A 0 A_WeaponReady(WRF_NOFIRE | WRF_NOSWITCH);
-		PLSG F 12;
-		TNT1 A 0 A_WeaponReady(WRF_NOFIRE | WRF_NOSWITCH);
 		PLSG EDCB 1;
 		Goto Ready;
 	
