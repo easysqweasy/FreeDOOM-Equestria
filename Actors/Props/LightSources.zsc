@@ -1,25 +1,54 @@
 ////////// Tech lamp
 
-Class EquestriaTechLamp : TechLamp
+Class EquestriaTechLamp : TechLamp replaces TechLamp
 {
-	//$NotAngled
+	Default
+	{
+		//$NotAngled
 	
-	//$Arg0 Destroyed
-	//$Arg0Enum falsetrue
+		//$Arg0 Destroyed
+		//$Arg0Enum falsetrue
+		Health 5;
+		
+		Radius 16; Height 80; DeathHeight 80; ProjectilePassHeight -16;
+		
+		+SOLID
+		+NOTAUTOAIMED
+		+DONTTHRUST
+		+SHOOTABLE
+		+NOBLOOD
+		+DONTGIB //Remove when XDeath is done
+		+RANDOMIZE
+		+NOICEDEATH
+	}
 	States
 	{
 	Spawn:
-		TLMP ABCD 4 BRIGHT;
+		TLMP ABCD 4 Bright;
 		Loop;
+		
+	Death:
+		TNT1 AAAAAAAAAAAAAAAAAAAA 0 A_SpawnProjectile("PuffSparkles", 70, 0, random (0, 360), CMF_AIMDIRECTION, random (0, 360));
+		TLMP D -1;
+		Stop;
+		
+	/*XDeath: //Make it be affected by the Realistic Gore and Quake-Ish type setting
+		TNT1 BBBBB 0 A_SpawnProjectile("BarrelDebris", random(16, 75), 0, random (0, 360), CMF_AIMDIRECTION, random (-10, -90));
+		TLMP D -1;
+		Stop;*/
 	}
 }
 
 Class EquestriaTechLamp2 : EquestriaTechLamp replaces TechLamp2
 {
-	//$NotAngled
-	
-	//$Arg0 Destroyed
-	//$Arg0Enum falsetrue
+	Default
+	{
+		//$NotAngled
+		
+		//$Arg0 Destroyed
+		//$Arg0Enum falsetrue
+		Height 60;
+	}
 	States
 	{
 	Spawn:
