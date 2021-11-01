@@ -6,8 +6,8 @@ gameinfo
 gamedefaults 
 {
 	useplayerstartz
-	nosoundclipping
 	strictmonsteractivation
+	ClipMidTextures
 	
 	compat_invisibility = 1
 }
