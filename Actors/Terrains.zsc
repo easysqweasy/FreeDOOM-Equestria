@@ -10,20 +10,24 @@ Class CoreSplashChunk : Actor
 		Alpha 0.7;
 		
 		+MISSILE
-		+NOBLOCKMAP;
-		+DROPOFF;
-		+NOTELEPORT;
-		+LOWGRAVITY;
-		+CANNOTPUSH;
-		+DONTSPLASH;
-		+DONTBLAST;
-		+ForceXYBillBoard;
+		+NOBLOCKMAP
+		+DROPOFF
+		+NOTELEPORT
+		+LOWGRAVITY
+		+CANNOTPUSH
+		+DONTSPLASH
+		+DONTBLAST
+		+ForceXYBillBoard
 	}
 	States
 	{
 	Spawn:
-		NSL1 A 0;
-		NSL1 A 0 { bSPRITEFLIP = randompick(0, 1); }
+		TNT1 A 0;
+		TNT1 A 0
+		{
+			bSPRITEFLIP = randompick(0, 1);
+			A_RadiusGive("Vanish", 5, RGF_OBJECTS, 1);
+		}
 		
 		NSL1 A 6;
 		NSL1 B 6 A_SetTranslucent(0.6, 0);
@@ -97,6 +101,13 @@ Class DEBloodBase : DEBloodChunk
 	States
 	{
 	Spawn:
+		TNT1 A 0;
+		TNT1 A 0
+		{
+			bSPRITEFLIP = randompick(0, 1);
+			A_RadiusGive("Vanish", 5, RGF_OBJECTS, 1);
+		}
+		
 		NSL1 EFG 5;
 		NSL1 H 5 A_SetTranslucent(0.6, 0);
 		NSL1 I 5 A_SetTranslucent(0.5, 0);
@@ -119,6 +130,13 @@ Class DELavaBase : CoreSplashBase
 	States
 	{
 	Spawn:
+		TNT1 A 0;
+		TNT1 A 0
+		{
+			bSPRITEFLIP = randompick(0, 1);
+			A_RadiusGive("Vanish", 5, RGF_OBJECTS, 1);
+		}
+		
 		NLAV ABCDEF 5;
 		Stop;
 	}
@@ -137,6 +155,13 @@ Class DENukageBase : CoreSplashBase
 	States
 	{
 	Spawn:
+		TNT1 A 0;
+		TNT1 A 0
+		{
+			bSPRITEFLIP = randompick(0, 1);
+			A_RadiusGive("Vanish", 5, RGF_OBJECTS, 1);
+		}
+		
 		NWAT EFGH 5;
 		NWAT I 5 A_SetTranslucent(0.5, 1);
 		NWAT J 5 A_SetTranslucent(0.4, 1);
@@ -157,6 +182,13 @@ Class DESlimeBrownBase : DESlimeBrownChunk
 	States
 	{
 	Spawn:
+		TNT1 A 0;
+		TNT1 A 0
+		{
+			bSPRITEFLIP = randompick(0, 1);
+			A_RadiusGive("Vanish", 5, RGF_OBJECTS, 1);
+		}
+		
 		NSL1 EFG 5;
 		NSL1 H 5 A_SetTranslucent(0.6, 0);
 		NSL1 I 5 A_SetTranslucent(0.5, 0);
@@ -191,6 +223,13 @@ Class DESludgeBase : CoreSplashBase
 	States
 	{
 	Spawn:
+		TNT1 A 0;
+		TNT1 A 0
+		{
+			bSPRITEFLIP = randompick(0, 1);
+			A_RadiusGive("Vanish", 5, RGF_OBJECTS, 1);
+		}
+		
 		NSL2 EFGH 6;
 		NSL2 I 6 A_SetTranslucent(0.7, 0);
 		NSL2 J 6 A_SetTranslucent(0.5, 0);
@@ -220,6 +259,13 @@ Class DEWaterSplashBase : CoreSplashBase
 	States
 	{
 	Spawn:
+		TNT1 A 0;
+		TNT1 A 0
+		{
+			bSPRITEFLIP = randompick(0, 1);
+			A_RadiusGive("Vanish", 5, RGF_OBJECTS, 1);
+		}
+		
 		NWAT EFGH 5;
 		NWAT I 5 A_SetTranslucent(0.5, 0);
 		NWAT J 5 A_SetTranslucent(0.4, 0);
