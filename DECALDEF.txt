@@ -17,8 +17,8 @@ Decal ShellDecal
 {
 	Pic BulletDecal
 	Add 1
-	Animator GoAway
-	Shade "FF 34 03"
+	Animator GoAway2
+	Shade "FF 00 00"
 	RandomFlipY RandomFlipX
 	FullBright
 	Y-Scale 0.75 X-Scale 0.75
