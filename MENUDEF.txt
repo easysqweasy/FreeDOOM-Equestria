@@ -16,6 +16,7 @@ StaticText ""
 Option "$GORETOGGLE", "GoreToggle", "GoreType"
 Option "$GIBSFOREVER", "GibsStayForever", "onoff"
 Option "Flat blood", "FlatBlood", "onoff"
+Option "Fake Bloom", "FakeBloom", "onoff"
 StaticText ""
 }
 
