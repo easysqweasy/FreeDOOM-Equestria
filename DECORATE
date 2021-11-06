@@ -1,0 +1,45 @@
+Actor DebrisGeneral
+{
+  +MISSILE
+  +NOBLOCKMAP
+  +DROPOFF
+  +NOTELEPORT
+  //+GHOST
+  +FORCEXYBILLBOARD
+  +FLOORCLIP
+  +MOVEWITHSECTOR
+  
+  -ACTIVATEIMPACT
+  -ACTIVATEPCROSS
+  Radius 1
+  Height 1
+  Mass 1
+  Damage 0
+}
+
+#include DecorateStuff/Cores/WeaponCore.dec
+#include DecorateStuff/Cores/MonsterCore.dec
+#include DecorateStuff/Particles.dec
+#include DecorateStuff/Gore.dec
+#include DecorateStuff/Player.dec
+#include DecorateStuff/FloorDecals.dec
+#include DecorateStuff/Puffs.dec
+#include DecorateStuff/Terrains.txt
+#include DecorateStuff/Powerups.txt
+#include DecorateStuff/Pickups.txt
+#include DecorateStuff/Weapons/Ammo.dec
+#include DecorateStuff/Monsters/HeavyWeaponDude.dec
+#include DecorateStuff/Monsters/Imp.dec
+#include DecorateStuff/Monsters/ShotgunGuy.dec
+#include DecorateStuff/Monsters/ZombiePony.dec
+#include DecorateStuff/Weapons/Pistol.dec
+#include DecorateStuff/Weapons/Shotgun.dec
+#include DecorateStuff/Weapons/SuperShotgun.dec
+#include DecorateStuff/Weapons/Chaingun.dec
+#include DecorateStuff/Weapons/DualChaingun.dec
+#include DecorateStuff/Weapons/Chainsaw.dec
+#include DecorateStuff/Weapons/RocketLauncher.dec
+#include DecorateStuff/Weapons/PlasmaGun.dec
+#include DecorateStuff/Weapons/BFG9000.dec
+#include DecorateStuff/Tokens.dec
+

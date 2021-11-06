@@ -1,0 +1,185 @@
+Actor FDEPlasmaGun : DoomEquestriaWeapon replaces PlasmaRifle
+{
+//$Title Plasma Gun
+	Weapon.BobStyle InverseSmooth
+	Weapon.SelectionOrder 100
+	Weapon.AmmoUse 1
+	Weapon.AmmoGive 40
+	Weapon.AmmoType "Cell"
+
+	Inventory.PickupMessage "$GOTPLASMA"
+	Inventory.PickupSound "pickup/plasmagun"
+
+	Tag "$TAG_PLASMARIFLE"
+
+	States
+	{
+	
+	Spawn:
+		PLAS A -1
+		Stop
+		
+	Ready:
+		TNT1 A 0 A_JumpIfInventory("KickCheck", 1, "Kick.Normal")
+
+		PLSG A 1 A_WeaponReady
+		Loop
+	
+	Select:
+		PLSG A 0 A_SetCrossHair(12)
+		
+		PLSG A 1 A_Raise
+		Wait
+		
+	Deselect:
+		TNT1 A 0 A_TakeInventory("KickCheck", 999)
+		
+		PLSG A 1 A_Lower
+		Wait
+	
+	Fire:
+		PLSG A 3 A_FirePlasma
+		PLSG A 0 A_ReFire
+	
+	Chill:
+		TNT1 A 0 A_JumpIf(callACS("BobToggle")==1,"Chill.Bob")
+		
+		PLSG B 1
+		PLSG BBB 1
+		PLSG B 12
+		PLSG BBBB 1
+		Goto Ready
+	
+	Chill.Bob:
+		TNT1 A 0 A_WeaponReady(WRF_NOFIRE | WRF_NOSWITCH)
+		PLSG B 1
+		TNT1 A 0 A_WeaponReady(WRF_NOFIRE | WRF_NOSWITCH)
+		PLSG CDE 1
+		TNT1 A 0 A_WeaponReady(WRF_NOFIRE | WRF_NOSWITCH)
+		PLSG F 12
+		TNT1 A 0 A_WeaponReady(WRF_NOFIRE | WRF_NOSWITCH)
+		PLSG EDCB 1
+		Goto Ready
+	
+	Flash:
+		PLSF A 3 Bright
+		{
+			A_WeaponOffset(0, 40, WOF_KEEPX | WOF_INTERPOLATE);
+			A_Light1;
+		}
+		Goto LightDone
+		PLSF B 3 Bright 
+		{
+			A_WeaponOffset(0, 35, WOF_KEEPX | WOF_INTERPOLATE);
+			A_Light1;
+		}
+		//I Don't know how i make a smooth animation with the original Doom Sprites
+		Goto LightDone
+	
+	Aside:
+		TNT1 A 0 A_OverlayFlags(3, PSPF_ADDBOB, true)
+		TNT1 A 0 A_OverlayPivotAlign(3, PSPA_RIGHT, PSPA_BOTTOM)
+		
+		PLSG AFF 1
+		{
+			A_OverlayOffset(3, -35, 5, WOF_INTERPOLATE );
+			A_OverlayRotate(3, 4, WOF_ADD);
+		}
+		PLSG FF 1
+		{
+			A_OverlayOffset(3, -30, 10, WOF_INTERPOLATE );
+			A_OverlayRotate(3, 8, WOF_ADD);
+		}
+		PLSG F 10
+		PLSG FFF 1 
+		{
+			A_OverlayOffset(3, 0, 0, WOF_INTERPOLATE );
+			A_OverlayRotate(3, -8, WOF_ADD);
+		}
+		PLSG A 1
+		Stop
+	
+	Air.Aside:
+		TNT1 A 0 A_OverlayFlags(3, PSPF_ADDBOB, true)
+		TNT1 A 0 A_OverlayPivotAlign(3, PSPA_RIGHT, PSPA_BOTTOM)
+		
+		PLSG AFF 1
+		{
+			A_OverlayOffset(3, -35, 5, WOF_INTERPOLATE );
+			A_OverlayRotate(3, 5, WOF_ADD);
+		}
+		PLSG FF 1
+		{
+			A_OverlayOffset(3, -30, 10, WOF_INTERPOLATE );
+			A_OverlayRotate(3, 10, WOF_ADD);
+		}
+		PLSG F 8
+		PLSG FFF 1 
+		{
+			A_OverlayOffset(3, 0, 0, WOF_KEEPY | WOF_INTERPOLATE );
+			A_OverlayRotate(3, -10, WOF_ADD);
+		}
+		PLSG A 1
+		Stop
+		
+	}
+}
+		
+actor FDEPlasmaBall : PlasmaBall replaces PlasmaBall
+{
+	Decal PlasmaScorch
+	
+	DamageType Plasma
+	
+	Radius 8
+	Height 16
+  
+	+ROLLSPRITE
+	+ROLLCENTER
+	
+	+FORCEXYBILLBOARD
+	States
+	{
+	Spawn:
+		PLSS A 0
+		PLSS A 0 A_SetRoll(random(-359, 359))
+	Projectile:
+		PLSS A 1 Bright
+		{
+			A_SpawnItemEx("PlasmaTrail");
+			A_SetRoll((roll + 15), SPF_INTERPOLATE);
+		}
+		Loop
+ 
+	Death:
+		PLSE A 0 A_SpawnItemEx("PlasmaFloorCheck", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION)
+		PLSE ABC 4 Bright
+		PLSE DE 4 A_FadeOut(0.1)
+		Stop
+  }
+}
+
+actor TechPlasmaBall : FDEPlasmaBall
+{
+	Radius 13
+	Height 8
+	
+	FastSpeed 30
+}
+
+Actor PlasmaTrail : Trails
+{
+	States
+	{
+	Spawn:
+		PLSE A 0
+		PLSE A 0 A_SetRoll(random(-359, 359))
+	Trail:
+		PLSE ABCDE 1 Bright
+		{
+			A_SetRoll((roll + 15), SPF_INTERPOLATE);
+			A_FadeOut(0.1);
+		}
+		Loop
+	}
+}

@@ -1,20 +1,26 @@
 [enu default] 
 
-WARNING = "WARNING!";
-NOKIDS = "This is NOT a Mod for CHILDREN!";
-MAYCONTAIN = "May contain images and content sensitive\nfor some audiences, such as\nBlood and Gore, Extreme Violence and Strong Language.";
+DOOMEQUESTRIAOPTIONS = "FreeDOOM Equestria Options";
+EQUESTRIAOPTIONS = "Mod Options";
 
-BABYSKILL = "I'm a Little Pony";
-EASYSKILL = "Hey, not too rough";
-NORMALSKILL = "Hurt me plenty";
-HARDSKILL = "Ultra-Violence";
-PLUSSKILL = "Instant-Violence";
+WIPWARNING = "^Not yet implemented";
+
+VIDEOSETTINGS = "Video Settings";
+
+BOBTOGGLE = "Bobbing after fire";
+CAMRECOILTOGGLE = "Camera Recoil";
+AURATOGGLE = "Magic Auras on Weapons";
+FOVTOGGLE = "To change the FOV (Field Of View) open the Console and put 'Fov [Desired Quantity]'";
+
+HIRESETTINGS = "High Quality Sprites Settings*";
+HIRESWARNING = "*May decrease performance on weaker computers";
+
 
 QUITMSG = "Are you sure you want to quit this great mod?";
 //QUITMSG4 = "you're trying to say you like Fallout Equestria\nbetter than me, right?"; pls dont kill me, its a joke
 QUITMSG9 = "Don't go now, there's a \nKirinware waiting at your computer!";
 QUITMSG10 = "Get out of here and\ngo back to your\ninfantile cartoon.";
-QUITMSG13 = "just leave.\nwhen you come back, there will be a \nnaughty bat waiting for you!";
+QUITMSG13 = ".c.";
 
 OTARMBONUS = "Picked up a Spiritual Armor.";
 GOTARMOR = "Picked up a Security Armor.";
@@ -23,7 +29,7 @@ GOTMEGA = "Picked up a Combat Armor.";
 BERSERKFIST = "Berserked Hooves";
 GOTBERSERK = "Berserk! Let's punch out some demons!";
 
-LOWHEALTH = "Low Health";
+LOWHEALTH = "Danger!";
 
 /* Monsters */
 

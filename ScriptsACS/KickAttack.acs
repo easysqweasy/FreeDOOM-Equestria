@@ -1,0 +1,8 @@
+// ACS
+#library "KickAttack"
+#include "zcommon.acs"
+
+Script "KickAttack" (void)
+{
+	GiveInventory("KickCheck", 1);
+}

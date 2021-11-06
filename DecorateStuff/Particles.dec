@@ -1,0 +1,126 @@
+actor FDEParticles : DebrisGeneral
+{
+	+NOGRAVITY
+	//+THRUACTORS
+	+DONTSPLASH
+	+ExplodeOnWater
+}
+
+Actor Trails : FDEParticles
+{
+	Height 0
+	Radius 0
+	
+	Scale 0.75
+	RenderStyle Add
+	Alpha 0.75
+	
+	+ROLLSPRITE +ROLLCENTER
+	
+	+GHOST
+	-MOVEWITHSECTOR
+	+DONTSPLASH
+	
+	+NoInteraction
+}
+actor FirePieceSpawn : RandomSpawner
+{
+	DropItem FirePiece
+	DropItem FirePiece2
+	DropItem FirePiece3
+}
+
+actor GravityFirePieceSpawn : RandomSpawner
+{
+	DropItem GFirePiece
+	DropItem GFirePiece2
+	DropItem GFirePiece3
+}
+
+actor Pieces : FDEParticles
+{
+	RenderStyle AddStencil
+	Alpha 1.0
+	States
+	{
+	
+	Spawn:
+		PIEC A 5 Bright
+		PIEC A 1 Bright A_FadeOut(0.1)
+		Wait
+	}
+}
+
+actor FirePiece : Pieces
+{
+	RenderStyle AddStencil
+	StencilColor Yellow
+}	
+
+actor FirePiece2 : FirePiece
+{
+  RenderStyle AddStencil
+  StencilColor Orange
+}
+
+actor FirePiece3 : FirePiece
+{
+  Scale 1.5
+  RenderStyle AddStencil
+  StencilColor Red
+}
+
+actor GFirePiece : FirePiece
+{
+  Speed 8
+  Mass 1
+  -NOGRAVITY
+}
+
+actor GFirePiece2 : FirePiece2
+{
+  Speed 8
+  Mass 1
+  -NOGRAVITY
+}
+
+actor GFirePiece3 : FirePiece3
+{
+  Speed 8
+  Mass 1
+  -NOGRAVITY
+}
+
+actor AcidPieceSpawn : RandomSpawner
+{
+	DropItem AcidPiece
+	DropItem AcidPiece2
+}
+
+actor AcidPiece : Pieces
+{
+  StencilColor DarkGreen
+  -NOGRAVITY
+  Gravity 0.05
+}
+
+actor AcidPiece2 : Pieces
+{
+  StencilColor Green
+  -NOGRAVITY
+  Scale 1.5
+  Gravity 0.10
+}
+
+actor BulletTrail : FDEParticles
+{
+  Renderstyle add
+  Alpha 0.50
+  Speed 90
+  States
+  {
+  Spawn:
+	TRAI A 1 Bright
+	Stop
+  }
+}
