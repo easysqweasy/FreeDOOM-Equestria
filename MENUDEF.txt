@@ -13,9 +13,10 @@ StaticText ""
 StaticText "$GRAPHICSSETTINGS", "Brick"
 StaticText ""
 
+//Option "DOOM Renderer Mode", "ClassicToggle", "onoff"
 Option "$GORETOGGLE", "GoreToggle", "GoreType"
 Option "$GIBSFOREVER", "GibsStayForever", "onoff"
-Option "Flat blood", "FlatBlood", "onoff"
+Option "Flat Floor Decals", "FlatDecals", "onoff"
 Option "Fake Bloom", "FakeBloom", "onoff"
 StaticText ""
 }
