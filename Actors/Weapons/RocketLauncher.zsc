@@ -93,6 +93,8 @@ Class EquestriaRocket : Rocket replaces Rocket
 		+RollSprite +RollCenter;
 		+ForceXYBillBoard;
 		-RocketTrail;
+		
+		Decal "Scorch";
 	}
 	States
 	{
