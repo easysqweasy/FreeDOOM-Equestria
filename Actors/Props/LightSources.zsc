@@ -10,6 +10,8 @@ Class EquestriaTechLamp : TechLamp replaces TechLamp
 		//$Arg0Enum falsetrue
 		Health 5;
 		
+		DamageFactor "Plasma", 0.05;
+		
 		Radius 16; Height 80; DeathHeight 80; ProjectilePassHeight -16;
 		
 		+SOLID
