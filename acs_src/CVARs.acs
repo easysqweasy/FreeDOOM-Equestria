@@ -15,3 +15,8 @@ script "GibsStayForever" (void)
 {
     SetResultValue(GetCVar("GibsStayForever"));
 }
+
+script "FlatDecals" (void)
+{
+    SetResultValue(GetCVar("FlatDecals"));
+}

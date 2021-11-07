@@ -78,6 +78,16 @@ Class ShotgunPuff : EquestriaBulletPuff
 {
 	States
 	{
+	
+	Spawn:
+		TNT1 A 0;
+		TNT1 A 0 A_JumpIfInventory("Vanish", 1, "Vanish");
+		TNT1 A 0 A_SpawnProjectile("PuffSparkles", 0, 0, random (0, 360), CMF_AIMDIRECTION, random (0, 360));
+		TNT1 A 0 A_SpawnProjectile("BulletDecalCheck", 7,0,0, CMF_TRACKOWNER | CMF_AIMDIRECTION, 90);
+
+		PUFF A random(2, 8) Bright;
+		PUFF B 4;
+		
 	Melee:
 		PUFF C 4;
 		PUFF D 1 A_FadeOut(0.05);
