@@ -1,10 +1,6 @@
 [enu default]
 
-<<<<<<< HEAD
-DOOMEQUESTRIAOPTIONS = "FreeDOOM Equestria Options";
-=======
 DOOMEQUESTRIAOPTIONS = "DOOM Equestria Options";
->>>>>>> parent of 8e460af (Removed DE stuff and added FDE stuff (most likely needs heavy changing as most of the stuff is old))
 EQUESTRIAOPTIONS = "Mod Options";
 
 WIPWARNING = "^Not yet implemented";
@@ -26,11 +22,7 @@ HIRESWARNING = "*May decrease performance on weaker computers";
 
 [ptb pt br]
 
-<<<<<<< HEAD
-DOOMEQUESTRIAOPTIONS = "Opções do FreeDOOM Equestria";
-=======
 DOOMEQUESTRIAOPTIONS = "Opções do DOOM Equestria";
->>>>>>> parent of 8e460af (Removed DE stuff and added FDE stuff (most likely needs heavy changing as most of the stuff is old))
 EQUESTRIAOPTIONS = "Opções do Mod";
 
 WIPWARNING = "^Ainda não implementado";
