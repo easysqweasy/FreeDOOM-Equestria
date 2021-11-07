@@ -5,7 +5,7 @@ This is the **development** version, so it may contain bugs and errors;
 
 # Running
 
-**Make sure you are using GZDoom 4.7.1/LZDoom 3.88a or later and you have a copy of doom2.wad;**
+**Make sure you are using GZDoom 4.7.1/LZDoom 3.88a or later and you have a copy of freedoom2.wad;**
 Download repository as a ZIP file and drag it over gzdoom.exe/lzdoom.exe.
 
 # This modification was allowed and is supported by the developers of DOOM Equestria
