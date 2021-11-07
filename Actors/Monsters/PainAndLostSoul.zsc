@@ -47,8 +47,7 @@ Class PonyLostSoul : EquestriaLostSoul
 	{
 	
 	Spawn:
-		SKUL AAAAAA 1 A_SpawnProjectile("LostSoulFire", random(24, 40), random(-10, 10), random(0, 360), CMF_BADPITCH | CMF_ABSOLUTEPITCH, 0);
-		SKUL A 0 A_Look();
+		SKUL AB 10 BRIGHT A_Look();
 		Loop;
 		
 	See:
@@ -86,6 +85,14 @@ Class PonyLostSoul : EquestriaLostSoul
 		SKUL J 3;
 		SKUL K 1 A_FadeOut(0.1);
 		Wait;
+	
+	}
+	
+	override void Tick() 
+	{
+		super.Tick();
+		if (!isFrozen())
+			A_SpawnProjectile("LostSoulFire", random(15, 30), 0, random(0, 360), 2, random(0, 360));
 	}
 }
 
@@ -95,8 +102,7 @@ Class UnicornLostSoul : EquestriaLostSoul
 	{
 	
 	Spawn:
-		SKUL AAAAAA 1 A_SpawnProjectile("LostSoulFire", random(24, 40), random(-10, 10), random(0, 360), CMF_BADPITCH | CMF_ABSOLUTEPITCH, 0);
-		SKUL A 0 A_Look();
+		SKUL AB 10 BRIGHT A_Look();
 		Loop;
 		
 	See:
@@ -143,8 +149,7 @@ Class NirikLostSoul : EquestriaLostSoul
 	{
 	
 	Spawn:
-		SKUL AAAAAA 1 A_SpawnProjectile("LostSoulFire", random(24, 40), random(-10, 10), random(0, 360), CMF_BADPITCH | CMF_ABSOLUTEPITCH, 0);
-		SKUL A 0 A_Look();
+		SKUL AB 10 BRIGHT A_Look();
 		Loop;
 		
 	See:
