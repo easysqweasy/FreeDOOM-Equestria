@@ -1,4 +1,0 @@
-actor FDEStimpack : Stimpack replaces Stimpack
-{
-  Inventory.PickupSound "pickup/stimpack"
-}

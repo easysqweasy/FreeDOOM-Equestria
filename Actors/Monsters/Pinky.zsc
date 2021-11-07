@@ -1,0 +1,63 @@
+Class Pinky : Demon replaces Demon
+{
+	Default
+	{
+		+CASTSPRITESHADOW;
+	}
+	States
+	{
+	Spawn:
+		IDLP AB 10 A_Look();
+		Loop;
+	}
+}
+
+Class EquestriaSpectre : Spectre replaces Spectre
+{
+	Default
+	{
+		+NOSPRITESHADOW;
+		RenderStyle "Shaded";
+	
+		SeeSound "spectre/sight";
+		AttackSound "spectre/melee";
+		PainSound "spectre/pain";
+		DeathSound "spectre/death";
+		ActiveSound "spectre/active";
+	
+		HitObituary "$OB_SPECTREHIT";
+	}
+	States
+	{
+	Spawn:
+		IDLP AB 10 A_Look();
+		Loop;
+		
+	Death:
+		"####" "#" 0 { bSPRITEFLIP = randompick(0, 1); }
+		
+		SPEC I 8 
+		{
+			A_FadeIn(0.5, FTF_CLAMP);
+			A_SetRenderStyle(0.25, STYLE_Translucent);
+		}
+		SPEC J 8 
+		{
+			A_SetRenderStyle(0.50, STYLE_Translucent);
+			A_Scream();
+		}
+		SPEC K 4 
+		{
+			A_FadeIn(1, FTF_CLAMP);
+			A_SetRenderStyle(0.75, STYLE_Translucent);
+		}
+		SPEC L 4 
+		{
+			A_SetRenderStyle(1, STYLE_Normal);
+			A_NoBlocking();
+		}
+		SPEC M 4;
+		SPEC N -1;
+		Stop;
+	}
+}

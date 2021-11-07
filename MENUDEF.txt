@@ -2,33 +2,34 @@ OptionMenu "EquestriaOptions"
 {
 Title "$DOOMEQUESTRIAOPTIONS"
 
-StaticText ""
-StaticText ""
-
 StaticText "$VIDEOSETTINGS", "Brick"
 StaticText ""
 
-Option "$BOBTOGGLE", "BobToggle", "onoff"
 Option "$CAMRECOILTOGGLE", "CamRecoilToggle", "onoff"
 Option "$AURATOGGLE", "AuraToggle", "onoff"
 StaticText "$WIPWARNING", "yellow"
-StaticText "$FOVTOGGLE"
 StaticText ""
-StaticText ""
-
+	
 StaticText "$GRAPHICSSETTINGS", "Brick"
 StaticText ""
 
+<<<<<<< HEAD
 Option "$Projectile Trails", "ProjectileTrails", "MissileTrails"
 StaticText "$WIPWARNING", "yellow"
+=======
+Option "$GORETOGGLE", "GoreToggle", "GoreType"
+Option "$GIBSFOREVER", "GibsStayForever", "onoff"
+Option "Flat blood", "FlatBlood", "onoff"
+Option "Fake Bloom", "FakeBloom", "onoff"
+StaticText ""
+>>>>>>> parent of 8e460af (Removed DE stuff and added FDE stuff (most likely needs heavy changing as most of the stuff is old))
 }
 
-OptionValue "MissileTrails"
+OptionValue "GoreType"
 {
 	0, "Off"
-	1, "Particles"
-	2, "Sprites"
-	3, "Sprites and Particles"
+	1, "Quake-ish"
+	2, "$REALISTIC"
 }
 
 LISTMENU "MainMenu"
@@ -36,7 +37,7 @@ LISTMENU "MainMenu"
 	IfGame(Doom, Chex)
 	{
 		StaticPatch 94, 2, "M_DOOM"
-		Position 97, 88
+		Position 97, 72
 		//Postion 0, 72 (A Morden Look, maybe for a future Doom Equestria
 		IfOption(ReadThis)
 		{

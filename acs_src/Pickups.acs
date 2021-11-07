@@ -1,0 +1,14 @@
+#library "Pickups"
+#include "zcommon.acs"
+
+Script "BlurMugshot" (void)
+{   
+	Delay(1);
+	
+	while (CheckInventory("BlurSphereInventory") == 1)
+	{
+		SetMugShotState("Invisibility");
+		
+		Delay(1);
+	}
+}

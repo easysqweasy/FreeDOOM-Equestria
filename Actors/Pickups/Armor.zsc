@@ -1,0 +1,66 @@
+Class BigArmorBonus : BasicArmorBonus
+{
+	Default
+	{
+	//$Category Health and Armor
+	//$Title Big Armor Bonus (5)
+		Radius 20; Height 16;
+		
+		Scale 0.75;
+		Inventory.PickupMessage "Picked up a demon armor bonus.";
+		Inventory.Icon "ARM2A0";
+		
+		Armor.SavePercent 40;
+		Armor.SaveAmount 5;
+		Armor.MaxSaveAmount 300;
+		
+		+COUNTITEM;
+		+INVENTORY.ALWAYSPICKUP;
+	}
+	States
+	{
+	Spawn:
+		LARM A 48;
+		LARM BC 6;
+		LARM D 12;
+		LARM CB 6;
+		Loop;
+	}
+}
+
+Class SecurityArmor : GreenArmor replaces GreenArmor
+{
+	Default
+	{
+	//$Title Security Armor (100)
+		Inventory.PickupSound "pickup/armor1";
+	}
+}
+
+Class SecurityArmor2 : SecurityArmor
+{
+	Default
+	{
+	//$Category Health and Armor
+	//$Title Security Armor with Boots (125)
+
+		Armor.SavePercent 35;
+		Armor.SaveAmount 125;
+	}
+	States
+	{
+	Spawn:
+		ARM3 A 6;
+		ARM3 A 7 Bright;
+		Loop;
+	}
+}
+
+Class CombatArmor : BlueArmor replaces BlueArmor
+{
+	Default
+	{
+	//$Title Security Armor (200)
+		Inventory.PickupSound "pickup/armor2";
+	}
+}

@@ -1,0 +1,27 @@
+clearepisodes
+
+episode S1E1
+{
+   picname = "M_EPI1"
+   name = "$TXT_D1E1"
+   key = "k"
+}
+
+episode map01
+{
+	name = "$TXT_D2E1"
+	key = "h"
+	optional
+}
+
+episode level01
+{
+	name = "$TXT_D2E2"
+	key = "n"
+	optional
+}
+
+episode DoomTest
+{
+	name = "Test Map"
+}

@@ -1,0 +1,151 @@
+Class EquestriaBaronofHell : BaronOfHell replaces BaronOfHell
+{
+	Default
+	{
+		//$Sprite BOSSA2C8
+		BloodColor "darkgreen";
+		
+		+CastSpriteShadow;
+	}
+	States
+	{
+	Spawn:
+		IDLB CD 10 A_Look;
+		Loop;
+	
+	Melee:
+		BOSS E 8 A_FaceTarget;
+		BOSS F 6 A_FaceTarget;
+		BOSS G 6 A_CustomMeleeAttack(10 * random(1, 8), "baron/melee", "skel/swing", "BruisersMelee");
+		Goto See;
+		
+	Missile:
+		BOSS EF 8 A_FaceTarget;
+		BOSS G 8 A_SpawnProjectile("BaronHellBall");
+		Goto See;
+	
+	Death:
+		"####" "#" 0 { bSPRITEFLIP = randompick(0, 1); }
+		
+		BOSS I 8;
+		BOSS J 8 A_Scream;
+		BOSS K 8;
+		BOSS L 8 A_NoBlocking;
+		BOSS M 8;
+		BOSS N -1 A_BossDeath;
+		Stop;
+		
+	XDeath:
+		"####" "#" 0 { bSPRITEFLIP = randompick(0, 1); }
+		
+		BOSS O 8;
+		BOSS P 8 A_Scream;
+		BOSS Q 8;
+		BOSS R 8 A_NoBlocking;
+		BOSS ST 8;
+		BOSS U -1 A_BossDeath;
+		Stop;
+	}
+}
+ 
+Class EquestriaHellKnight : HellKnight replaces HellKnight
+{
+	Default
+	{
+		+CASTSPRITESHADOW;
+		
+		Speed 10;
+		PainChance 75;
+		BloodColor "green";
+	}
+	States
+	{
+	
+	Spawn:
+		IDLB AB 10 A_Look;
+		Loop;
+ 
+	Melee:
+		BOS2 E 8 A_FaceTarget;
+		BOS2 F 6 A_FaceTarget;
+		BOS2 G 6 A_CustomMeleeAttack(10 * random(1, 8), "baron/melee", "skel/swing", "BruisersMelee");
+		Goto See;
+		
+	Missile:
+		BOS2 EF 8 A_FaceTarget;
+		BOS2 G 8 A_SpawnProjectile("BaronHellBall");
+		Goto See;
+	
+	Death:
+		TNT1 A 0 { bSPRITEFLIP = randompick(0, 1); }
+		
+		BOS2 I 8;
+		BOS2 J 8 A_Scream;
+		BOS2 K 8;
+		BOS2 L 8 A_NoBlocking;
+		BOS2 MN 8;
+		BOS2 O -1;
+		Stop;
+		
+	XDeath:
+		TNT1 A 0 { bSPRITEFLIP = randompick(0, 1); }
+		
+		BOS2 P 5 A_Scream;
+		BOS2 Q 5 A_NoBlocking;
+		BOS2 R 5 A_XScream;
+		BOS2 STUVW 5;
+		BOS2 X -1;
+		Stop;
+	}
+}
+
+Class BossBaronofHell : EquestriaBaronofHell
+{
+	States
+	{
+	See:
+		BOSS A 1;
+		BOSS C 0 ACS_NamedExecuteAlways("BossHealthBar");
+	Chase:
+		BOSS AABBCCDD 3 A_Chase;
+		Loop;
+	}
+}
+
+ 
+Class EquestriaBaronBall : BaronBall replaces BaronBall
+{
+	Default
+	{
+		Radius 8; Height 16;
+		
+		Decal "BaronScorch";
+		
+		+ForceXYBillBoard;
+	}
+}
+
+Class KnightBall : EquestriaBaronBall
+{
+	States
+	{
+	Spawn:
+		BBAL AB 4 Bright;
+		Loop;
+	}
+}
+	
+Class BaronHellBall : EquestriaBaronBall
+{
+	States
+	{
+	Spawn:
+		BAL7 AB 4 Bright;
+		Loop;
+ 
+	Death:
+		BAL7 CD 6 Bright;
+		BAL7 E 1 Bright A_FadeOut(0.1);
+		Wait;
+	}
+}

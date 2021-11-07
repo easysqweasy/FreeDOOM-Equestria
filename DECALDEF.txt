@@ -1,0 +1,192 @@
+Decal ChipDecal
+{
+	Pic BulletDecal
+	Shade "00 00 00"
+	Y-Scale 0.75 X-Scale 0.75
+	RandomFlipY RandomFlipX
+}
+
+Decal ShellLowerDecal
+{
+	Pic BulletDecal
+	Shade "00 00 00"
+	RandomFlipY RandomFlipX
+}
+
+Decal ShellDecal
+{
+	Pic BulletDecal
+	Add 1
+	Animator GoAway2
+	Shade "FF 00 00"
+	RandomFlipY RandomFlipX
+	FullBright
+	Y-Scale 0.75 X-Scale 0.75
+	LowerDecal ShellLowerDecal
+}
+
+Decal ChainsawDecal1
+{
+	Pic BulletDecal
+	Shade "00 00 00"
+	Y-Scale 4.25 X-Scale 0.25
+	RandomFlipY RandomFlipX
+}
+
+Decal ChainsawDecal2
+{
+	Pic BulletDecal
+	Shade "00 00 00"
+	Y-Scale 0.25 X-Scale 4.25
+	RandomFlipY RandomFlipX
+}
+
+DecalGroup ChainsawDecal
+{
+	ChainsawDecal1 1
+	ChainsawDecal2 1
+}
+
+Decal FireBallScorch1
+{
+	Pic CBALSCR1
+	Shade "FF 34 03"
+	FullBright
+	Y-Scale 0.75 X-Scale 0.75
+	RandomFlipY RandomFlipX
+	Animator ToBlack
+}
+
+Decal FireBallScorch2
+{
+	Pic CBALSCR2
+	Shade "FF 34 03"
+	FullBright
+	Y-Scale 0.75 X-Scale 0.75
+	RandomFlipY RandomFlipX
+	Animator ToBlack
+}
+
+decalgroup FireBallScorch
+{
+	FireBallScorch1	1
+	FireBallScorch2	1
+}
+
+decal PlasmaScorchLower1
+{
+	pic PLASMA1
+	shade "00 00 00"
+	x-scale 0.6
+	y-scale 0.6
+	randomflipx
+	randomflipy
+}
+
+decal PlasmaScorch1
+{
+	pic PLSSA0
+	add 1.0
+	fullbright
+	animator GoAway
+	lowerdecal PlasmaScorchLower1
+}
+
+decal PlasmaScorchLower2
+{
+	pic PLASMA2
+	shade "00 00 00"
+	x-scale 0.6
+	y-scale 0.6
+	randomflipx
+	randomflipy
+}
+
+decal PlasmaScorch2
+{
+	pic PLSSB0
+	add 1.0
+	fullbright
+	animator GoAway
+	lowerdecal PlasmaScorchLower2
+}
+
+decalgroup PlasmaScorchLower
+{
+	PlasmaScorchLower1	1
+	PlasmaScorchLower2	1
+}
+
+decalgroup PlasmaScorch
+{
+	PlasmaScorch1	1
+	PlasmaScorch2	1
+}
+
+decal Scorch
+{
+	pic SCORCH1
+	shade "00 00 00"
+	randomflipx
+	randomflipy
+}
+
+decal BFGScorch1
+{
+	pic BFGSCRC1
+	shade "00 00 00"
+	Y-Scale 1.50 X-Scale 1.50
+	randomflipx
+	randomflipy
+}
+
+decal BFGScorch2
+{
+	pic BFGSCRC2
+	shade "00 00 00"
+	Y-Scale 1.50 X-Scale 1.50
+	randomflipx
+	randomflipy
+}
+
+Decal BFGLightning1
+{
+	pic BFGLITE1
+	shade "80 ff 80"
+	Y-Scale 1.50 X-Scale 1.50
+	fullbright
+	randomflipx
+	animator GoAway2
+	lowerdecal BFGScorch
+}
+
+decal BFGLightning2
+{
+	pic BFGLITE2
+	shade "80 ff 80"
+	Y-Scale 1.50 X-Scale 1.50
+	fullbright
+	randomflipy
+	animator GoAway2
+	lowerdecal BFGScorch
+}
+
+////Weapons
+
+generator EquestriaPistol	ChipDecal
+generator EquestriaChainsaw	ChainsawDecal
+generator EquestriaShotgun	ShellDecal
+generator EquestriaSuperShotgun	ShellDecal
+generator EquestriaChaingun	ChipDecal
+
+////Projectiles
+
+/*
+////Monsters
+
+generator EquestriaZombieMan		ChipDecal
+generator EquestriaShotgunGuy		ShellDecal
+generator EquestriaChaingunGuy		ChipDecal
+generator WolfensteinSS		ChipDecal
+generator SpiderMastermind	ChipDecal
+/*

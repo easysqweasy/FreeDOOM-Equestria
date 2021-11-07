@@ -1,0 +1,50 @@
+Warp2 Flat FWATER1 
+Warp2 Flat FWATER2
+Warp2 Flat FWATER3
+Warp2 Flat FWATER4
+
+Warp2 Flat LAVA1 0.25
+Warp2 Flat LAVA2 0.25
+Warp2 Flat LAVA3 0.25
+Warp2 Flat LAVA4 0.25
+
+Warp Flat NUKAGE1
+Warp Flat NUKAGE2
+Warp Flat NUKAGE3
+Warp Flat NUKAGE4
+
+warp2 flat SLIME01
+warp2 flat SLIME02
+warp2 flat SLIME03
+warp2 flat SLIME04
+warp2 flat SLIME05
+warp2 flat SLIME06
+warp2 flat SLIME07
+warp2 flat SLIME08
+
+Warp Flat BLOOD1 0.5
+Warp Flat BLOOD2 0.5
+Warp Flat BLOOD3 0.5
+Warp Flat BLOOD4 0.5
+
+flat FWATER1
+	pic 1 tics 1
+	pic 1 tics 1
+
+flat LAVA1 range LAVA4 tics 16 OSCILLATE
+
+flat NUKAGE1
+	pic 2 tics 1
+	pic 2 tics 1
+
+flat SLIME01
+	pic 1 tics 1
+	pic 1 tics 1
+
+flat SLIME05
+	pic 1 tics 1
+	pic 1 tics 1
+
+flat BLOOD1
+	pic 1 tics 1
+	pic 1 tics 1

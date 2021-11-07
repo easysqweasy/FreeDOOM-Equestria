@@ -1,0 +1,90 @@
+/* Females */
+
+female/sight		MARESIT
+
+female/active		MAREACT
+
+female/pain			MAREPAIN
+female/pain2		MAREPAIN2
+
+$random female/death { female/death1 female/death2 female/death3 }
+female/death1		MAREDTH
+female/death2		MAREDTH2
+female/death3		MAREDTH3
+
+/* Spiders */
+
+baby/pain			dsbsppai
+
+spider/pain			dssppain
+
+/* Arch Vile */
+
+vile/raise			dsvilrai
+
+/* Cacodemon */
+
+caco/pain			dscacpai
+
+caco/active			dscacact
+
+/* Chaingunner */
+
+$random chainguy/sight		{ chainguy/sight1  chainguy/sight2  chainguy/sight3 }
+chainguy/sight1			dscgsit1
+chainguy/sight2			dscgsit2
+chainguy/sight3			dscgsit3
+
+chainguy/active			dscgsact
+
+chainguy/attack			DSCHNGUN
+
+chainguy/pain			dscgpain
+
+$random chainguy/death		{ chainguy/death1  chainguy/death2  chainguy/death3 }
+chainguy/death1 		dscgdth1
+chainguy/death2			dscgdth2
+chainguy/death3			dscgdth3
+
+/* Cyberdemon */
+
+cyber/active		dscybact
+cyber/pain			dscybpai
+
+/* Lost Soul */
+
+skull/active	LostSoulActive
+
+skull/pain		dssklpn
+
+skull/death		dsskldth
+
+/* Nazis */
+
+// SS Soldier
+
+$random wolfss/active { weinershitzel1 weinershitzel2 }
+weinershitzel1				dsssact1
+weinershitzel2				dsssact2
+
+wolfss/pain			dssspain
+
+wolfss/attack		dsssgun
+
+/* Mancubus */
+
+fatso/active		dsmanact
+
+fatso/attack		dsmnshot
+
+/* Hell Knight */
+
+knight/pain			DSKNTPAI
+
+/* Revenant */
+
+skeleton/pain		dsskepai
+
+/* Pain Elemental */
+
+pain/active			dspeact

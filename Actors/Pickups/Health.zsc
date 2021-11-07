@@ -1,0 +1,68 @@
+Class HealthPotion : HealthBonus replaces HealthBonus
+{
+	Default
+	{
+	//$Title Health Potion (1)
+		Inventory.PickupSound "pickup/potion";
+	}
+}
+
+Class FirstAidKit : Health
+{
+	Default
+	{
+	//$Category Health and Armor
+	//$Title First Aid Kit (15)
+		Inventory.Amount 15;
+		Inventory.PickupMessage "Picked up a first aid kit.";
+		Health.LowMessage 25, "Picked up a first aid kit that you REALLY need!";
+	}
+	States
+	{
+	Spawn:
+		STIN A -1;
+		Stop;
+	}
+}
+
+Class HealthPack : Health
+{
+	Default
+	{
+	//$Category Health and Armor
+	//$Title Health Pack (20)
+		Inventory.Amount 20;
+		Inventory.PickupMessage "Picked up a health pack.";
+		Health.LowMessage 25, "Picked up a health pack that you REALLY need!";
+	}
+	States
+	{
+	Spawn:
+		MEDJ A -1;
+		Stop;
+	}
+}
+
+Class BigHealthBonus : HealthPotion
+{
+	Default
+	{
+	//$Category Health and Armor
+	//$Title Big Health Potion (5)
+		
+		+COUNTITEM;
+		+INVENTORY.ALWAYSPICKUP;
+		Scale 0.75;
+		
+		Inventory.Amount 5;
+		Inventory.MaxAmount 300;
+		
+		Inventory.PickupMessage "Picked up a big health potion.";
+	}
+	States
+	{
+	Spawn:
+		PINW ABCDCB 6;
+		Loop;
+	}
+}

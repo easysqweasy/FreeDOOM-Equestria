@@ -1,0 +1,17 @@
+#library "CVARs"
+#include "zcommon.acs"
+
+script "CamRecoilToggle" (void)
+{
+    SetResultValue(GetCVar("CamRecoilToggle"));
+}
+
+script "GoreToggle" (void)
+{
+    SetResultValue(GetCVar("GoreToggle"));
+}
+
+script "GibsStayForever" (void)
+{
+    SetResultValue(GetCVar("GibsStayForever"));
+}

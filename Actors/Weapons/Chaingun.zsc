@@ -1,0 +1,101 @@
+Class EquestriaChaingun : DoomEquestriaWeapon replaces Chaingun
+{
+	Default
+	{
+		//$Title Chaingun
+		Weapon.BobStyle "InverseSmooth";
+		Weapon.SelectionOrder 700;
+		Weapon.AmmoUse 1;
+		Weapon.AmmoGive 20;
+		Weapon.AmmoType "Clip";
+		
+		Inventory.PickupMessage "$GOTCHAINGUN";
+		Inventory.PickupSound "pickup/chaingun";
+		
+		Obituary "$OB_MPCHAINGUN";
+		
+		Tag "$TAG_CHAINGUN";
+	}
+	States
+	{
+	Spawn:
+		MGUN A -1;
+		Stop;
+	
+	Ready:
+		TNT1 A 0 A_JumpIfInventory("KickCheck", 1, "Kick.Normal");
+		
+		CHGG A 1 A_WeaponReady();
+		Loop;
+	
+	Select:
+		CHGG A 0 A_SetCrossHair(11);
+		
+		CHGG A 1 A_Raise();
+		Wait;
+		
+	Deselect:
+		TNT1 A 0 A_TakeInventory("KickCheck", 999);
+		TNT1 A 0 A_JumpIf(health <= 0, "DeathCheck");
+		
+		CHGG A 1 A_Lower();
+		Wait;
+	
+	Fire:
+		TNT1 A 0 A_JumpIf(callACS("CamRecoilToggle")==1,"Fire.CamRecoil");
+		
+		CHGG B 4
+		{
+			A_FireBullets(5.6, 0, -1, 5, "EquestriaBulletPuff");
+			A_GunFlash("Flash2");
+			A_StartSound("weapons/chngun", CHAN_WEAPON);
+		}
+		
+		CHGG A 4 
+		{
+			A_FireBullets(5.6, 0, -1, 5, "EquestriaBulletPuff");
+			A_GunFlash("Flash");
+			A_StartSound("weapons/chngun", CHAN_WEAPON);
+		}
+
+		CHGG A 0 A_ReFire();
+		
+		CHGG B 0 A_WeaponOffset(0, 32, WOF_KEEPX | WOF_INTERPOLATE);
+		Goto Ready;
+		
+	Fire.CamRecoil:
+		CHGG B 4
+		{
+			A_FireBullets(5.6, 0, -1, 5, "EquestriaBulletPuff");
+			A_GunFlash("Flash2");
+			A_StartSound("weapons/chngun", CHAN_WEAPON);
+			A_QuakeEx(1, 0, 1, 4, 0, 1, "", QF_RELATIVE | QF_SCALEDOWN | QF_SCALEUP);
+			A_SetPitch(pitch-0.50, SPF_INTERPOLATE);
+		}
+		
+		CHGG A 0 A_SetPitch(pitch+0.50, SPF_INTERPOLATE);
+
+		CHGG A 4 
+		{
+			A_FireBullets(5.6, 0, -1, 5, "EquestriaBulletPuff");
+			A_GunFlash();
+			A_StartSound("weapons/chngun", CHAN_WEAPON);
+			A_QuakeEx(1, 0, 1, 4, 0, 1, "", QF_RELATIVE | QF_SCALEDOWN | QF_SCALEUP);
+		}
+		
+		CHGG B 0 A_ReFire();
+		
+		CHGG B 0 A_WeaponOffset(0, 32, WOF_KEEPX | WOF_INTERPOLATE);
+		Goto Ready;
+	
+	Flash:
+		CHGF A 2 Bright A_WeaponOffset(0, 28, WOF_INTERPOLATE);
+		Goto LightDone;
+	
+	Flash2:
+		TNT1 A 2 Bright ;
+		CHGF B 2 Bright A_WeaponOffset(0, 36, WOF_INTERPOLATE);
+		Goto LightDone;
+	
+	}
+}

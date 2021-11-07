@@ -1,0 +1,13 @@
+//For DOOM Equestria : Hell on Earth
+
+Class UndeadAryanne : Actor
+{}
+
+Class SSSoldier : WolfensteinSS Replaces WolfensteinSS
+{
+	Default
+	{
+		+CASTSPRITESHADOW;
+		+NOINFIGHTSPECIES;
+	}
+}

@@ -1,0 +1,4 @@
+/*map Example
+{
+	InterMusic = "Music/INTER2.mid"
+}*/

@@ -1,0 +1,80 @@
+Class Broom : DoomEquestriaWeapon
+{
+	Default
+	{
+		//$Title Broom
+		//$Category "Weapons"
+		Weapon.SelectionOrder 3600;
+		Weapon.SlotNumber 1;
+		Height 40;
+		Inventory.PickupMessage "Let's clean up some Demons!";
+		
+		Weapon.BobStyle "alpha";
+		
+		-ForceXYBillBoard;
+		+WEAPON.NOAUTOFIRE;
+	}
+	States
+	{
+	Spawn:
+		BROM A -1;
+		Stop;
+	
+	Ready:
+		TNT1 A 0 A_JumpIfInventory("KickCheck", 1, "Kick.Normal");
+		
+		BROO A 1 A_WeaponReady;
+		Loop;
+	
+	Deselect:
+		TNT1 A 0 A_TakeInventory("KickCheck", 999);
+		
+		BROO A 1 A_Lower;
+		Wait;
+  
+	Select:
+		BROO A 0 A_SetCrosshair(8);
+		
+		BROO A 1 A_Raise;
+		Wait;
+  
+	Fire:
+		BROO BC 3;
+		BROO D 4;
+		BROO E 2 A_FireProjectile("BroomProjectile");
+		TNT1 A 1 A_TakeInventory("Broom");
+		Goto Deselect;
+		
+	}
+}
+
+Class BroomProjectile : Actor
+{
+	Default
+	{
+		+MISSILE;
+		+NOEXTREMEDEATH;
+		+FORCEXYBILLBOARD;
+		-NOGRAVITY;
+		-NOICEDEATH;
+		
+		ProjectileKickBack 200;
+		Radius 10;
+		Height 20;
+		Speed 40;
+		Damage 8;
+	}
+	States
+	{
+
+	Spawn:
+		BROM BCDC 2;
+		Loop;
+		
+	Death:
+		BBRK ABCDE 1 A_NoBlocking;
+		BBRK FGHIJ 1 A_UnSetShootable;
+		BBRK K -1 A_SetFloorClip;
+		Stop;
+	}
+}

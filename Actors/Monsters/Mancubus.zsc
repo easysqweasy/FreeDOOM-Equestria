@@ -1,0 +1,58 @@
+Class EquestriaMancubus : Fatso replaces Fatso
+{
+	Default
+	{
+		+CastSpriteShadow;
+	}
+	States
+	{
+	Missile:
+		FATT G 20 A_FatRaise();
+		FATT H 10 Bright
+		{
+			A_SpawnProjectile("EquestriaFatShot", 16, 30, -10);
+			A_SpawnProjectile("EquestriaFatShot", 16, -30, 0);
+		}
+		FATT IG 5 A_FaceTarget();
+		FATT H 10 Bright
+		{
+			A_SpawnProjectile("EquestriaFatShot", 16, 30, 0);
+			A_SpawnProjectile("EquestriaFatShot", 16, -30, 10);
+		}
+		FATT IG 5 A_FaceTarget();
+		FATT H 10 Bright
+		{
+			A_SpawnProjectile("EquestriaFatShot", 16, 30, -4);
+			A_SpawnProjectile("EquestriaFatShot", 16, -30, 4);
+		}
+		FATT IG 5 A_FaceTarget();
+		Goto See;
+	}
+}
+
+Class EquestriaFatShot : FatShot replaces FatShot
+{
+	Default
+	{
+		Height 20; Radius 10;
+		
+		+ForceXYBillBoard;
+		-Randomize;
+	}
+	States
+	{
+	Spawn:
+		MANF AB 4 Bright A_SpawnItemEx("FireBallTrail", 0,0,0,0,0,0,0, SXF_TRANSFERSCALE);
+		Loop;
+		
+	Death:
+		TNT1 A 0;
+		TNT1 AA 0 A_SpawnProjectile("SplashSmoke", random(-20, 20), random (-40, 40), random (0, 360), CMF_BADPITCH | CMF_ABSOLUTEPITCH, random(0, 90));
+		TNT1 BBBB 0 A_SpawnProjectile("RocketSmoke", random(-32, 32), 0, random (0, 360), CMF_BADPITCH | CMF_ABSOLUTEPITCH, random (0, 359));
+		
+		MISL B random(5, 8) Bright A_QuakeEx(4, 4, 4, 8, 0, 175, "", QF_SCALEDOWN, 0,0,0, 1);
+		MISL C 5 Bright;
+		MISL D 1 Bright A_FadeOut(0.1);
+		Stop;
+	}
+}

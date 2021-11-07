@@ -1,0 +1,18 @@
+Class InvToken : Inventory
+{	Default {	Inventory.MaxAmount 1;	+INVENTORY.QUIET;	-INVENTORY.INVBAR;	}}
+
+Class DeadCheck : InvToken	{}
+
+Class KickCheck : InvToken	{}
+
+Class LowHealthCheck : InvToken	{}
+
+Class Vanish : InvToken	{}
+
+//ToDo
+
+Class PickedUpBerserk : InvToken	{} //To do in ACS or Overlays
+
+Class FoundHellPortal : InvToken {} //Season 1 End
+
+Class FoundDaisy : InvToken	{} //DOOM 2

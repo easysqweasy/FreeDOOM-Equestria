@@ -1,0 +1,76 @@
+Glow
+{
+	Flats
+	{
+		lava1
+		lava2
+		lava3
+		lava4
+	}
+	Texture "LAVA1", ff2600, 100, fullbright
+	Texture "LAVA2", ff2600, 100, fullbright
+	Texture "LAVA3", ff2600, 100, fullbright
+	Texture "LAVA4", ff2600, 100, fullbright
+}
+
+Glow
+{
+	Flats
+	{
+		NUKAGE1
+		NUKAGE2
+		NUKAGE3
+		NUKAGE4
+	}
+	Texture "NUKAGE1", green, 50, fullbright
+	Texture "NUKAGE2", green, 50, fullbright
+	Texture "NUKAGE3", green, 50, fullbright
+	Texture "NUKAGE4", green, 50, fullbright
+}
+
+Glow
+{
+	Flats
+	{
+		SLIME09
+		SLIME10
+		SLIME11
+		SLIME12
+	}
+	Texture "SLIME09", red, 25, fullbright
+	Texture "SLIME10", red, 25, fullbright
+	Texture "SLIME11", red, 25, fullbright
+	Texture "SLIME12", red, 25, fullbright
+}
+
+Glow
+{
+	Flats
+	{
+		RROCK04
+		RROCK05
+		RROCK06
+		RROCK07
+		RROCK08
+	}
+	Texture "RROCK04", red, 25, fullbright
+	Texture "RROCK05", red, 25, fullbright
+	Texture "RROCK06", red, 25, fullbright
+	Texture "RROCK07", red, 25, fullbright
+	Texture "RROCK08", red, 25, fullbright
+}
+
+Glow
+{
+	Flats
+	{
+		NUKWALK1
+		NUKWALK2
+		NUKWALK3
+		NUKWALK4
+	}
+	Texture "NUKWALK1", Green, 5, fullbright
+	Texture "NUKWALK2", Green, 5, fullbright
+	Texture "NUKWALK3", Green, 5, fullbright
+	Texture "NUKWALK4", Green, 5, fullbright
+}

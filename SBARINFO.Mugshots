@@ -1,0 +1,54 @@
+mugshot "Death"
+{
+	DEAD0 -1;
+}
+
+mugshot "XDeath"
+{
+	XDTH0 3;
+	XDTH1 2;
+	XDTH2 2;
+	XDTH3 2;
+	XDTH4 -1;
+}
+
+mugshot "Death.Fire"
+{
+	OUCH2 2;
+	FIRE0 3;
+	FIRE1 2;
+	FIRE0 3;
+	FIRE1 2;
+	FIRE0 3;
+	FIRE1 2;
+	FIRE3 3;
+	FIRE4 5;
+	FIRE3 5;
+	FIRE4 5;
+	FIRE3 5;
+	FIRE4 5;
+	FIRE5 5;
+	FIRE6 4;
+	FIRE7 3;
+	FIRE8 -1;
+}
+
+mugshot "Death.Lava"
+{
+	LAVA0 -1;
+}
+
+mugshot "Death.Nukage"
+{
+	NUKE0 -1;
+}
+
+mugshot "GodAnimated"
+{
+	{GOD0, GOD1, GOD2} 17;
+}
+
+mugshot "Invisibility"
+{
+	{BLUR0, BLUR1, BLUR2} 15;
+}

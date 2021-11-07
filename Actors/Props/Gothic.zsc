@@ -1,0 +1,114 @@
+Class SkullGem : Actor
+{
+//$Category "Decoration/Gothic"
+	States
+	{
+	Spawn:
+		bon3 A -1;
+		Stop;
+	}
+}
+
+Class Chalice : Actor
+{
+//$Category "Decoration/Gothic"
+	States
+	{
+	Spawn:
+		bon5 A -1;
+		Stop;
+	}
+}
+
+Class Dagger : Actor
+{
+	Default
+	{
+		//$Category "Decoration/Gothic"
+		+FloorClip;
+		+Solid;
+		
+		ProjectilePassHeight -16;
+		Height 36;
+		Radius 7;
+	}
+	States
+	{
+	Spawn:
+		bon6 A -1;
+		Stop;
+	}
+}
+
+Class DoomStaff : Actor
+{
+	Default
+	{
+		//$Category "Decoration/Gothic";
+		+FloorClip;
+		+Solid;
+		
+		ProjectilePassHeight -16;
+		Height 50;
+		Radius 5;
+	}
+	States
+	{
+	Spawn:
+		bon7 A -1;
+		Stop;
+	}
+}
+
+Class Chest : Actor
+{
+	Default
+	{
+//$Category "Decoration/Gothic"
+		+FloorClip;
+		+Solid;
+		
+		Height 16;
+	}
+	States
+	{
+	Spawn:
+		bon8 A -1;
+		Stop;
+	}
+}
+
+Class Book : Actor
+{
+	Default
+	{
+	//$Category "Decoration/Gothic"
+		+ForceXYBillboard;
+	}
+	States
+	{
+	Spawn:
+		bon9 A -1;
+		Stop;
+	}
+}
+
+Class FlamingPillar : Actor
+{
+	Default
+	{
+//$Category "Decoration/Gothic"
+		+FloorClip;
+		+Solid;
+		
+		ProjectilePassHeight -16;
+		Height 32;
+		Radius 19;
+	}
+	States
+	{
+	Spawn:
+		FBBQ ABC 6 Bright;
+		Loop;
+	}
+}

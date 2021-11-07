@@ -1,0 +1,35 @@
+Class EquestriaScriptedMarine : ScriptedMarine replaces ScriptedMarine
+{	Default {	+CASTSPRITESHADOW	}}
+
+Class EquestriaMarineBFG : MarineBFG replaces MarineBFG
+{	Default {	+CASTSPRITESHADOW	}}
+
+Class EquestriaMarineBerserk : MarineBerserk replaces MarineBerserk
+{	Default {	+CASTSPRITESHADOW	}}
+
+Class EquestriaMarineChaingun : MarineChaingun replaces MarineChaingun
+{	Default {	+CASTSPRITESHADOW	}}
+
+Class EquestriaMarineChainsaw : MarineChainsaw replaces MarineChainsaw
+{	Default {	+CASTSPRITESHADOW	}}
+
+Class EquestriaMarineFist : MarineFist replaces MarineFist
+{	Default {	+CASTSPRITESHADOW	}}
+
+Class EquestriaMarinePistol : MarinePistol replaces MarinePistol
+{	Default {	+CASTSPRITESHADOW	}}
+
+Class EquestriaMarinePlasma : MarinePlasma replaces MarinePlasma
+{	Default {	+CASTSPRITESHADOW	}}
+
+Class EquestriaMarineRailgun : MarineRailgun replaces MarineRailgun
+{	Default {	+CASTSPRITESHADOW	}}
+
+Class EquestriaMarineRocket : MarineRocket replaces MarineRocket
+{	Default {	+CASTSPRITESHADOW	}}
+
+Class EquestriaMarineSSG : MarineSSG replaces MarineSSG
+{	Default {	+CASTSPRITESHADOW	}}
+
+Class EquestriaMarineShotgun : MarineShotgun replaces MarineShotgun
+{	Default {	+CASTSPRITESHADOW	}}

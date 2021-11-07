@@ -1,0 +1,69 @@
+Decal Explosive 1
+{	pic Explosive	}
+
+Decal Radiation 2
+{	pic Radiation	}
+
+Decal Posion 3
+{	pic Posion		}
+
+Decal Voltage 4
+{	pic Voltage		}
+
+//Instruct
+
+Decal PressButton 5
+{	pic PressButton	}
+
+Decal PullSwitch 6
+{	pic PullSwitch	}
+
+//Info
+
+Decal GreenSign 7
+{	pic GreenSign	}
+
+Decal Canteen 8
+{	pic Canteen		}
+
+Decal Infirmary 9
+{	pic Infirmary	}
+
+Decal Technologics 10
+{	pic Technologics	}
+
+//Warning
+
+Decal RedSign 11
+{	pic RedSign		}
+
+Decal NoWay 12
+{	pic NoWay		}
+
+Decal FallObjects 13
+{	pic FallObjects	}
+
+//Direction
+
+Decal BlueSign 14
+{	pic BlueSign	}
+
+Decal DEP 15
+{	pic Dep		}
+
+Decal WH1 16
+{	pic WH1		}
+
+Decal BAYLeft 17
+{	pic BayLeft		}
+
+Decal BAYRight 18
+{	pic BAYRight	}
+
+Decal Laboratory 19
+{	pic Laboratory	}
+
+//Others
+
+Decal Unauthorized 20
+{	pic Unauthorized	}

@@ -1,0 +1,67 @@
+Class Repeater : DoomEquestriaWeapon //Dont Use
+{
+	Default
+	{
+		Tag "$TAGREPEATER";
+		
+		Weapon.MinSelectionAmmo1 2;
+		Weapon.AmmoUse 3;
+		Weapon.SelectionOrder 699;
+		Weapon.AmmoGive 20;
+		Weapon.AmmoType "Clip";
+		
+		Inventory.PickupMessage "$GOTREPEATER" // "You got the Repeater";
+		
+		Obituary "$OB_MPCHAINGUN";
+	}
+	States
+	{
+	Spawn:
+		MGUN A -1;
+		Stop;
+		
+	Ready:
+		BRST A 1 A_WeaponReady;
+		Loop;
+	
+	Deselect:
+		BRST A 1 A_Lower;
+		Wait;
+	
+	Select:
+		BRST A 1 A_Raise;
+		Wait;
+	
+	Fire:
+		BRST A 0 A_StartSound("weapons/chngun", CHAN_WEAPON);
+		
+		BRST A 0 A_GunFlash;
+		BRST A 4 A_FireBullets(6, 0, 1, 5, "BulletPuff");
+		
+		BRST A 0 A_StartSound("weapons/chngun", CHAN_WEAPON);
+		
+		BRST A 0 A_GunFlash("Flash2");
+		BRST A 4 A_FireBullets(6, 0, 1, 5, "BulletPuff");
+		
+		BRST A 0 A_StartSound("weapons/chngun", CHAN_WEAPON);
+		
+		BRST A 0 A_GunFlash;
+		BRST A 4 A_FireBullets(10, 0, -1, 5, "BulletPuff");
+		
+		BRST A 0 A_GunFlash("Flash3");
+		
+		BRST A 16;
+		BRST B 0 A_ReFire;
+		Goto Ready;
+	
+	Flash:
+		BRST B 4 Bright A_WeaponOffset(0, 38, WOF_KEEPX | WOF_INTERPOLATE);
+		Goto LightDone;
+	Flash2:
+		BRST D 4 Bright A_WeaponOffset(0, 40, WOF_KEEPX | WOF_INTERPOLATE);
+		Goto LightDone;
+	Flash3:
+		BRST D 3 Bright;
+		Goto LightDone;
+   }
+}
