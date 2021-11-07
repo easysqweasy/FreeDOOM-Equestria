@@ -64,10 +64,6 @@ Class BulletDecalCheck : FloorCheck
 	States
 	{
 	Spawn:
-		TNT1 A 0;
-		TNT1 AA 1 Bright A_SpawnItemEx("BulletFloorCheck",0,0,0,0,0,0,0, SXF_NOCHECKPOSITION);
-		Stop;
-		
 	Death:
 		TNT1 A 0;
 		TNT1 AA 1 Bright A_SpawnItemEx("BulletFloorCheck",0,0,0,0,0,0,0, SXF_NOCHECKPOSITION);
