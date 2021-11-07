@@ -13,6 +13,7 @@ StaticText ""
 StaticText "$GRAPHICSSETTINGS", "Brick"
 StaticText ""
 
+
 //Option "DOOM Renderer Mode", "ClassicToggle", "onoff"
 Option "$GORETOGGLE", "GoreToggle", "GoreType"
 Option "$GIBSFOREVER", "GibsStayForever", "onoff"
@@ -27,46 +28,3 @@ OptionValue "GoreType"
 	1, "Quake-ish"
 	2, "$REALISTIC"
 }
-
-LISTMENU "MainMenu"
-{
-	IfGame(Doom, Chex)
-	{
-		StaticPatch 94, 2, "M_DOOM"
-		Position 97, 72
-		//Postion 0, 72 (A Morden Look, maybe for a future Doom Equestria
-		IfOption(ReadThis)
-		{
-			Position 97, 64
-		}
-	}
-	IfGame(Strife)
-	{
-		StaticPatch 84, 2, "M_STRIFE"
-		Position 97, 45
-	}
-	
-	TextItem "$MNU_NEWGAME", "1", "PlayerclassMenu"
-	TextItem "$MNU_OPTIONS", "2", "OptionsMenu"
-	TextItem "$EQUESTRIAOPTIONS", "3", "EquestriaOptions"
-	TextItem "$MNU_LOADGAME", "4", "LoadGameMenu"
-	TextItem "$MNU_SAVEGAME", "5", "SaveGameMenu"
-	IfOption(ReadThis)
-	{
-		TextItem "$MNU_INFO", "r", "ReadThisMenu"
-	}
-	TextItem "$MNU_QUITGAME", "q", "QuitMenu"
-}
-
-/*ListMenu "SkillMenu"
-{
-	IfGame(Doom, Chex)
-	{
-		StaticPatch 96, 14, "M_NEWG", 0, "$MNU_NEWGAME"
-	}
-	IfGame(Doom, Strife, Chex)
-	{
-		//StaticPatch 0, 38, "M_SKILL", 0, "$MNU_CHOOSESKILL"
-		Position 48, 63
-	}
-}*/
