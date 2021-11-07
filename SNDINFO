@@ -1,0 +1,22 @@
+// huehue water
+world/drip "Sounds/GLOOP.ogg"
+world/watersplash "Sounds/GLOOP.ogg"
+world/lavasizzle "Sounds/ACID5.ogg"
+world/sludgegloop "Sounds/MUCK5.ogg"
+
+// Stimpack sound lol
+pickup/stimpack "Sounds/DSSTIM.wav"
+
+////////////////////
+// Doomguy sounds
+////////////////////
+
+$playersound	player	 male	*death			dspldeth
+$playersound	player	 male	*xdeath			dspdiehi
+$playersound	player	 male	*gibbed			dsslop
+$playersound	player	male	*pain100	dsplpain
+$playersounddup	player	male	*pain75		*pain100
+$playersounddup	player	male	*pain50		*pain100
+$playersounddup	player	male	*pain25		*pain100
+$playersound	player	 male	*grunt			dsoof
+$playersound	player	 male	*usefail		dsnoway

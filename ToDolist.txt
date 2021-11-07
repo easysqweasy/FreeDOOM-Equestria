@@ -1,0 +1,20 @@
+Mapping:
+FreeDooM is more brutal with monster placements but more generous with item placements than DooM
+The Quad Damage powerup should rarely be placed, as it makes the weapons massively overpowered
+
+Weapons:
+Overhaul the DBS Animation
+Handless weapon sprite
+
+Sprites:
+Magnum face sprites
+Magnum third person sprites
+Ponified zombie, shotgun zombie, minigun zombie, and others.
+Handless weapon sprites
+
+Sounds:
+Magnum sounds for DSOOF, DSPLPAIN, DSDIHI, and DSNOWAY
+
+Others:
+easy do not yoink sprites or sounds thats a big nono you've been doing it for years pleASE STOP-
+give Magnum a cookie and some snuggles

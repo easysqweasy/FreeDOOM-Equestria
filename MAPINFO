@@ -1,0 +1,76 @@
+clearskills
+skill baby
+{
+	AutoUseHealth
+	AmmoFactor = 2
+	DamageFactor = 0.5
+	ACSReturn = 0
+	EasyBossBrain
+	SpawnFilter = Baby
+	Name = "Please don't kill me!"
+	Key = "p"
+}
+
+skill easy
+{
+	ACSReturn = 1
+	EasyBossBrain
+	SpawnFilter = Easy
+	Name = "Will this hurt?"
+	Key = "w"
+}
+
+skill normal
+{
+	ACSReturn = 2
+	SpawnFilter = Normal
+	Name = "Bring on the pain."
+	Key = "b"
+}
+
+skill hard
+{
+	ACSReturn = 3
+	SpawnFilter = Hard
+	Name = "Extreme carnage."
+	Key = "e"
+}
+
+skill hardplus
+{
+	ACSReturn = 4
+	SpawnFilter = Hard
+	FastMonsters
+	Name = "Instant carnage."
+	Key = "i"
+}
+
+skill nightmare
+{
+	ACSReturn = 5
+	AmmoFactor = 2
+	FastMonsters
+	DisableCheats
+	RespawnTime = 12
+	SpawnFilter = Nightmare
+	Name = "Mayhem!"
+	Key = "m"
+	MustConfirm = "This is the highest skill level. Not recommended unless you're experienced."
+}
+
+gameinfo
+{
+	pickupcolor = "e0 e0 e0"
+}
+
+episode DoomTest
+{
+	name = "Test Map"
+}
+
+episode map01
+{
+	name = "Phase 2"
+	key = "2"
+	optional
+}

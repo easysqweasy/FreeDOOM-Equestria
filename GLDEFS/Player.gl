@@ -1,4 +1,0 @@
-object EquestriaDoomPlayer
-{
-    frame PLAYF { light ZOMBIEATK }
-}

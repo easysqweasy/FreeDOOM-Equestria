@@ -1,0 +1,20 @@
+Actor InvToken : Inventory
+{	Inventory.MaxAmount 1	+INVENTORY.QUIET	-INVENTORY.INVBAR}
+
+Actor DeadCheck : InvToken	{}
+
+Actor KickCheck : InvToken	{}
+
+Actor LowHealthCheck : InvToken	{}
+
+//ToDo
+
+Actor InterpolateON : InvToken	{}	Actor InterpolateOFF : InvToken	{}
+
+Actor InspectAnimation : InvToken	{}
+
+Actor PickedUpBerserk : InvToken	{} //To do in ACS
+
+Actor FoundHellPortal : InvToken {}
+
+Actor FoundDaisy : InvToken	{}

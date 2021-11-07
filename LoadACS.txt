@@ -1,5 +1,5 @@
+// Global ACS
+
 KickAttack
 CVARs
 EquestriaThings
-BossBar
-Pickups

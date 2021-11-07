@@ -1,7 +1,7 @@
 clearplayerclasses
-addplayerclass EquestriaDoomPlayer
+addplayerclass EquestriaFreeDoomPlayer
 
-addkeysection "DOOM Equestria" DoomEquestriaActions
+addkeysection "FreeDooM Equestria" DoomEquestriaActions
 
 addmenukey "Kick" kickem
 alias kickem "pukename KickAttack"
