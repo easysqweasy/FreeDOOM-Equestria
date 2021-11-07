@@ -12,7 +12,3 @@ Class Vanish : InvToken	{}
 //ToDo
 
 Class PickedUpBerserk : InvToken	{} //To do in ACS or Overlays
-
-Class FoundHellPortal : InvToken {} //Season 1 End
-
-Class FoundDaisy : InvToken	{} //DOOM 2
