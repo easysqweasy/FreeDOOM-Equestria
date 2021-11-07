@@ -22,10 +22,10 @@ warp2 flat SLIME06
 warp2 flat SLIME07
 warp2 flat SLIME08
 
-Warp Flat BLOOD1 0.5
-Warp Flat BLOOD2 0.5
-Warp Flat BLOOD3 0.5
-Warp Flat BLOOD4 0.5
+Warp Flat BLOOD1
+Warp Flat BLOOD2
+Warp Flat BLOOD3
+Warp Flat BLOOD4
 
 flat FWATER1
 	pic 1 tics 1
