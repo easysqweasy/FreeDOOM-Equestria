@@ -33,8 +33,6 @@ Class DebrisCore : Actor
 
 #include "Actors/Cores/WeaponCore.zsc"
 #include "Actors/Cores/MonsterCore.zsc"
-//#include "Actors/NPCs/Shrapnel.zsc"
-//#include "Actors/NPCs/Hellya.zsc"
 
 ////Effects, Particles, Debris
 
