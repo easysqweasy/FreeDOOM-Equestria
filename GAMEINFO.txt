@@ -1,5 +1,5 @@
 IWAD = "DOOM2.WAD"
-STARTUPTITLE = "DOOM Equestria - Public Alpha" 
+STARTUPTITLE = "FreeDOOM Equestria - Public Alpha" 
 StartupSong = ""
 StartupType = "Hexen"
-StartupColors = "#3C4651", "#3C4651"
+StartupColors = "#550000", "#550000"
