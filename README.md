@@ -10,6 +10,7 @@ Download repository as a ZIP file and drag it over gzdoom.exe/lzdoom.exe.
 
 # This modification was allowed and is supported by the developers of DOOM Equestria
 
+DOOM Equestria: https://github.com/Ragedox/DOOM-Equestria
 Discord Server: https://discord.gg/xgzkMmayMz
 
 # Credits
