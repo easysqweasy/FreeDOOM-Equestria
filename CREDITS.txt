@@ -16,9 +16,8 @@ Would you rather go on a killing spree on all of Hell itself?." by SuperWillGami
 
 = Main idea by Isaac Pony, Reformulated by Ragedox =
 
-= Owners =
-Ragedox
-IsaacPony
+= Owner =
+easysqweasy
 
 = Code =
 Ragedox, SuperWillGaming 
@@ -26,51 +25,26 @@ Ragedox, SuperWillGaming
 = Sprites =
 Ragedox, JoeyTD
 
-= Season 1 : Knee-Deep in the Dead (Reimagined) =
-Ragedox
-
-= Shainer's Voice =
-Cinny!
+= Season 1 (Reimagined) =
+[ToDo]
 
 = Special Thanks to =
-Redly_2XBR, SuperWillGaming, Lincoln
+SuperWillGaming
 
-
-IsaacPony( Twitter: @Isaac_Pony)
+easysqweasy {Twitter: @easysqweasy)
 Ragedox (Twitter: @TheRagedox)
-JoeyTD (Twitter: @beardeddoomguy)
-Cinny! (Twitter: @idolkve)
-Lincoln (Twitter: @lila_kastelvam)
 SuperWillGaming (No longer in the project, Twitter: @njsw88)
 
 = Sounds =
-
-https://freesound.org/
-
-Quake 1
-
-DOOM 3
-
-Per Kristan's Hi-res sound pack
-
-Doom Sound Bulb by SeanTheBermanator
-Quake Sound Bulb
-
-Sound Caulking by Jaxxon R
+----------------
 
 = Stuff from other mods =
 
 Realm 667 Resources
 
-Doom 2 Minor Sprite Fixing Project
-
-Lostres 2.1 by NaturalTvventy (Unused Doom Content by ID Software)
-
 Brutal DOOM (Parts of the kick code)
 
 MetaDOOM (Code references)
-
-David G Sprites
 
 NashDecals (Blood decals)
 
