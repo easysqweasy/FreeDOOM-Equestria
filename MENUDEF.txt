@@ -21,15 +21,6 @@ StaticText ""
 
 Option "$Projectile Trails", "ProjectileTrails", "MissileTrails"
 StaticText "$WIPWARNING", "yellow"
-
-/*
-StaticText "$HIRESETTINGS", "Brick"
-StaticText "$HIRESWARNING", "White"
-StaticText ""
-
-Option "Hi-Res Guns Pickups", "HDGunsToggle", "onfoff"
-Option "Hi-Res Quality Pickups", "HDPickToggle", "onoff"
-Option "Hi-Res Projectiles", "HDProjectileToggle", "onoff"*/
 }
 
 OptionValue "MissileTrails"
