@@ -90,9 +90,9 @@ Class EquestriaRocket : Rocket replaces Rocket
 {
 	Default
 	{
-		+RollSprite +RollCenter;
-		+ForceXYBillBoard;
-		-RocketTrail;
+		+RollSprite +RollCenter
+		+ForceXYBillBoard
+		-RocketTrail
 		
 		Decal "Scorch";
 	}
@@ -128,8 +128,8 @@ Class RocketSmoke : Trails replaces RocketSmokeTrail
 {
 	Default
 	{
-		Height 6;
-		Radius 3;
+		Height 2;
+		Radius 2;
 		
 		Decal "Scorch";
 		
