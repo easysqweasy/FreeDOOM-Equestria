@@ -18,6 +18,9 @@ world/sludgegloop "Sounds/Terrains/MUCK5.ogg"
 
 /* Pickups */
 
+pickup/skullkey dssklatk
+$pitchset pickup/skullkey 1.5
+
 pickup/potion "Sounds/Pickups/GetPotion.wav"
 
 pickup/armor1 "Sounds/Pickups/GetArmor1.wav"

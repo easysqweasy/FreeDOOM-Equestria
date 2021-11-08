@@ -1,0 +1,26 @@
+Class EquestriaBlueSkull : BlueSkull replaces BlueSkull
+{
+	Default
+	{
+		Species "BlueSkull";
+		Inventory.PickupSound "pickup/skullkey";
+	}
+}
+
+Class EquestriaYellowSkull : YellowSkull replaces YellowSkull
+{
+	Default
+	{
+		Species "YellowSkull";
+		Inventory.PickupSound "pickup/skullkey";
+	}
+}
+
+Class EquestriaRedSkull : RedSkull replaces RedSkull
+{
+	Default
+	{
+		Species "RedSkull";
+		Inventory.PickupSound "pickup/skullkey";
+	}
+}
