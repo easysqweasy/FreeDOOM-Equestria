@@ -1,0 +1,35 @@
+Class FlatWall : Actor
+{
+	Default
+	{
+		+NOCLIP +NOGRAVITY +NOINTERACTION
+		+WALLSPRITE
+		
+		Height 40;
+		Radius 20;
+	}
+}
+
+Class Voltage : FlatWall
+{
+	Default
+	{
+		+NOCLIP +NOGRAVITY +NOINTERACTION
+		+WALLSPRITE
+	}
+}
+
+Class ExplosiveBoard : FlatWall
+{
+	Default
+	{
+		+NOCLIP +NOGRAVITY +NOINTERACTION
+		+WALLSPRITE
+	}
+	States
+	{
+	Spawn:
+		WALL A -1;
+		Stop;
+	}
+}
