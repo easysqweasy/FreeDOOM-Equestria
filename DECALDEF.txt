@@ -179,9 +179,6 @@ generator EquestriaShotgun	ShellDecal
 generator EquestriaSuperShotgun	ShellDecal
 generator EquestriaChaingun	ChipDecal
 
-////Projectiles
-
-/*
 ////Monsters
 
 generator EquestriaZombieMan		ChipDecal
@@ -189,4 +186,3 @@ generator EquestriaShotgunGuy		ShellDecal
 generator EquestriaChaingunGuy		ChipDecal
 generator WolfensteinSS		ChipDecal
 generator SpiderMastermind	ChipDecal
-/*
