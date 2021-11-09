@@ -10,26 +10,32 @@ Class FlatWall : Actor
 	}
 }
 
-Class Voltage : FlatWall
+Class ExplosiveWarning : FlatWall
 {
-	Default
-	{
-		+NOCLIP +NOGRAVITY +NOINTERACTION
-		+WALLSPRITE
-	}
-}
-
-Class ExplosiveBoard : FlatWall
-{
-	Default
-	{
-		+NOCLIP +NOGRAVITY +NOINTERACTION
-		+WALLSPRITE
-	}
 	States
 	{
 	Spawn:
 		WALL A -1;
+		Stop;
+	}
+}
+
+Class VoltageWarning : FlatWall
+{
+	States
+	{
+	Spawn:
+		WALL B -1;
+		Stop;
+	}
+}
+
+Class RadiationWarning : FlatWall
+{
+	States
+	{
+	Spawn:
+		WALL C -1;
 		Stop;
 	}
 }
