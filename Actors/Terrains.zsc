@@ -9,6 +9,7 @@ Class CoreSplashChunk : Actor
 		Renderstyle "Translucent";
 		Alpha 0.7;
 		
+		+THRUACTORS
 		+MISSILE
 		+NOBLOCKMAP
 		+DROPOFF
