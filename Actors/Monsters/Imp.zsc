@@ -108,6 +108,7 @@ Class EquestriaImpBall : DoomImpBall replaces DoomImpBall
 
 Class FireBallTrail : Trails
 {
+	Default { +ZDOOMTRANS }
 	States
 	{
 	Spawn:
