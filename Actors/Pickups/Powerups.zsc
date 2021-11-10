@@ -121,8 +121,12 @@ Class EquestriaSoulSphere : CustomInventory replaces Soulsphere
 		SOUL ABCDCBA 6 Bright;
 		Loop;
 	Pickup:
-		TNT1 A 0 A_GiveInventory("SoulSphereHealth");
-		TNT1 A 0 A_SetBlend("Blue", 0.5, 16);
+		TNT1 A 0
+		{
+			A_SpawnItem("SoulSpherePickup", 0, 10);
+			A_GiveInventory("SoulSphereHealth");
+			A_SetBlend("Blue", 0.5, 16);
+		}
 		Stop;
 	}
 }
