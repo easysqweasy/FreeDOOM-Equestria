@@ -28,3 +28,18 @@ Class Trails : DEParticles
 		+NoInteraction;
 	}
 }
+
+Class SoulSpherePickup : DEParticles
+{
+	Default
+	{
+		Translation "112:127=192:207", "160:167=80:95", "224:231=80:95";
+		+NoInteraction;
+	}
+	States
+	{
+	Spawn:
+		BFE2 ABCD 6 Bright;
+		Stop;
+	}
+}
