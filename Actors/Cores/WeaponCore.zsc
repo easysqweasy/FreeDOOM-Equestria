@@ -27,8 +27,8 @@ Class DoomEquestriaWeapon : Weapon
 		}
 		TNT1 A 0 A_Overlay(2, "CameraRoll");
 	DeathNormal:
-		KICK BCD 1 A_OverlayScale(-3, 1, 1, WOF_INTERPOLATE);
-		KICK H -1;
+		FDTH A 1 A_OverlayScale(-3, 1, 1, WOF_INTERPOLATE);
+		FDTH A -1;
 		Stop;
 	
 	CameraRoll:
