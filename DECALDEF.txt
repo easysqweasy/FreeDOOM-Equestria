@@ -123,12 +123,22 @@ decalgroup PlasmaScorch
 	PlasmaScorch2	1
 }
 
-decal Scorch
+decal LowerScorch
 {
 	pic SCORCH1
 	shade "00 00 00"
-	randomflipx
-	randomflipy
+	randomflipx randomflipy
+}
+
+decal Scorch
+{
+	pic SCORCH1
+	FullBright
+	shade "FF 34 03"
+	randomflipx randomflipy
+	x-scale 0.5 y-scale 0.5
+	animator GoAway2
+	lowerdecal LowerScorch
 }
 
 decal BFGScorch1
