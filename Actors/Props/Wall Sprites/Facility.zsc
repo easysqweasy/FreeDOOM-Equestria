@@ -2,6 +2,7 @@ Class FlatWall : Actor
 {
 	Default
 	{
+		//$Category Wall Sprites
 		+NOCLIP +NOGRAVITY +NOINTERACTION
 		+WALLSPRITE
 		
