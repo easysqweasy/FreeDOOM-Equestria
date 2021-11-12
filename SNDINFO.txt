@@ -1,3 +1,5 @@
+$pitchshiftrange 2
+
 /*Player */
 
 $playersound	player	male	*pain50		Sounds/Player/ds50plpain.wav
