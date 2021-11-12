@@ -27,22 +27,44 @@ Class DoomEquestriaWeapon : Weapon
 		}
 		TNT1 A 0 A_Overlay(2, "CameraRoll");
 	DeathNormal:
+	DeathBlast:
 		FDTH A 1 A_OverlayScale(-3, 1, 1, WOF_INTERPOLATE);
 		FDTH A -1;
 		Stop;
 	
 	CameraRoll:
+		TNT1 A 0 A_Jump(256, 1, "CameraRoll2");
+		Wait;
 		TNT1 A 1
 		{
+			A_OverlayFlags(1, PSPF_PLAYERTRANSLATED, 1);
 			A_SetPitch(frandom(-25, 25), SPF_INTERPOLATE);
-			A_SetRoll(frandom(-50, 50), SPF_INTERPOLATE);
+			A_SetRoll(frandom(0, 50), SPF_INTERPOLATE);
 		}
 		TNT1 A 1 A_JumpIf(health >= 1, 1);
 		Wait;
 		TNT1 A 1
 		{
-			A_SetPitch(0, SPF_INTERPOLATE);
-			A_SetRoll(0, SPF_INTERPOLATE);
+			A_OverlayFlags(1, PSPF_PLAYERTRANSLATED | PSPF_FLIP, 0);
+			A_SetPitch(0);
+			A_SetRoll(0);
+		}
+		Stop;
+	CameraRoll2:
+		TNT1 A 1
+		{
+			A_OverlayFlags(1, PSPF_PLAYERTRANSLATED, 1);
+			A_OverlayFlags(1, PSPF_FLIP, 1);
+			A_SetPitch(frandom(-25, 25), SPF_INTERPOLATE);
+			A_SetRoll(frandom(-50, 0), SPF_INTERPOLATE);
+		}
+		TNT1 A 1 A_JumpIf(health >= 1, 1);
+		Wait;
+		TNT1 A 1
+		{
+			A_OverlayFlags(1, PSPF_PLAYERTRANSLATED | PSPF_FLIP, 0);
+			A_SetPitch(0);
+			A_SetRoll(0);
 		}
 		Stop;
 		
