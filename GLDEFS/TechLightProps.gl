@@ -37,7 +37,7 @@ pulselight SMALLLAMP
 	attenuate 1
 }
 
-object TechLamp2
+object EquestriaTechLamp2
 {
     frame TLP2 { light SMALLLAMP }
 }
@@ -53,19 +53,19 @@ pulselight BIGLAMP
 	attenuate 1
 }
 
-object TechLamp
+object EquestriaTechLamp
 {
     frame TLMP { light BIGLAMP }
 }
 
-object BigLamp2
+object EquestriaTechLamp3
 {
-    frame LAM6 { light BIGLAMP }
+    frame TLP3 { light BIGLAMP }
 }
 
-object BigLamp3
+object EquestriaTechLamp4
 {
-    frame LAM5 { light BIGLAMP }
+    frame TLP4 { light BIGLAMP }
 }
 
 //Lampshades
