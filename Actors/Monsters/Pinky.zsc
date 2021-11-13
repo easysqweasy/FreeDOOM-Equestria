@@ -52,8 +52,8 @@ Class EquestriaSpectre : Spectre replaces Spectre
 			A_SetRenderStyle(1, STYLE_Normal);
 			A_NoBlocking();
 		}
-		SPEC M 4;
-		SPEC N -1;
+		SARG M 4;
+		SARG N -1;
 		Stop;
 	}
 }
