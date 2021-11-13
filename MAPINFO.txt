@@ -31,26 +31,30 @@ clearskills
 //Change "I'm Too Young To Die" to "I'm a Little Pony"
 skill baby
 {
-   AutoUseHealth
-   AmmoFactor = 2
-   DamageFactor = 0.5
-   EasyBossBrain
-   SpawnFilter = Baby
-   Name = "$BABYSKILL"
-   Key = "i"
+	SpawnFilter = baby
+	
+	AutoUseHealth
+	AmmoFactor = 2
+	DamageFactor = 0.5
+	EasyBossBrain
+			   
+	Name = "$BABYSKILL"
+	Key = "i"
 }
 
 skill easy
 {
+	SpawnFilter = easy
+	
 	EasyBossBrain
-	SpawnFilter = Easy
 	Name = "$EASYSKILL"
 	Key = "h"
 }
 
 skill normal
 {
-	SpawnFilter = Normal
+	SpawnFilter = normal
+	
 	Key = "h"
 	Name = "$NORMALSKILL"
 	DefaultSkill
@@ -58,14 +62,16 @@ skill normal
 
 skill hard
 {
-	SpawnFilter = Hard
+	SpawnFilter = hard
+	
 	Name = "$HARDSKILL"
 	Key = "u"
 }
 
 skill hardplus
 {
-   SpawnFilter = Hard
+   SpawnFilter = hard
+   
    Name = "$PLUSSKILL"
    Key = "f"
    FastMonsters
@@ -73,11 +79,12 @@ skill hardplus
 
 skill nightmare
 {
+	SpawnFilter = Nightmare
+
    AmmoFactor = 2
    FastMonsters
    DisableCheats
-   RespawnTime = 12
-   SpawnFilter = Nightmare
+   RespawnTime = 12 
    PicName = "M_NMARE"
    MustConfirm
    Key = "n"
