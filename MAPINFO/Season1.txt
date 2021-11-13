@@ -14,7 +14,7 @@ map S1E1 lookup "MAINBASE"
 	
 	OutsideFog = 200
 	
-	sky1 = "Textures/Skys/RSKY4.png"
+	sky1 = RSKY4
 	cluster = 1
 	//par = 30
 	
