@@ -1,8 +1,13 @@
-[enu default] 
+[enu default]
+
+STARTUP1 = "========== You are playing the Github version of DOOM Equestria Alpha ==========";
+STARTUP2 = "This mod was made by Redyusedom, read the credits for more information";
+STARTUP3 = "By Isaac and Ragedox, stay tuned for more news!";
+STARTUP4 = "======================== This is NOT a children's game! ========================";
 
 WARNING = "WARNING!";
-NOKIDS = "This is NOT a Mod for CHILDREN!";
-MAYCONTAIN = "May contain images and content sensitive\nfor some audiences, such as\nBlood and Gore, Extreme Violence and Strong Language.";
+NOKIDS = "This is NOT a children's game!";
+MAYCONTAIN = "May contain images and content sensitive\nfor some audiences, such as\nBlood, Gore and Extreme Violence.";
 
 BABYSKILL = "I'm a Little Pony";
 EASYSKILL = "Hey, not too rough";
