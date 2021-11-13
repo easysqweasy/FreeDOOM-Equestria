@@ -1,58 +1,86 @@
-object EquestriaDoomPlayer
-{
-    frame PLAYF { light ZOMBIEATK }
-}
-
 // Weapons Light
 
 flickerlight2 PistolLight
 {
-	color 0.6 0.6 0.1
+	color 0.8 0.8 0.2
 	size 25
-	secondarySize 30
+	secondarySize 50
 	interval 0.05
-	offset 0 48 0
+	attenuate 1
+}
+
+object PistolLight
+{
+	frame TNT1A { light PistolLight }
 }
 
 flickerlight2 ShotgunLight
 {
-    color 0.6 0.6 0.1
-    size 35
-	secondarySize 50
+    color 0.8 0.8 0.2
+    size 50
+	secondarySize 75
 	interval 0.05
-	offset 0 48 0
+	offset 0 -5 0
+	attenuate 1
+}
+
+object ShotgunLight
+{
+	frame TNT1A { light ShotgunLight }
 }
 
 flickerlight2 SuperShotgunLight
 {
-    color 0.6 0.6 0.1
-    size 45
-	secondarySize 75
+    color 0.8 0.8 0.2
+    size 75
+	secondarySize 100
 	interval 0.05
-	offset 0 48 0
+	offset 0 -5 0
+	attenuate 1
+}
+
+object SuperShotgunLight
+{
+	frame TNT1A { light SuperShotgunLight }
 }
 
 flickerlight2 ChaingunLight
 {
-    color 0.6 0.6 0.1
-    size 35
-	secondarySize 50
+    color 0.8 0.8 0.2
+    size 50
+	secondarySize 75
 	interval 0.05
-	offset 0 48 0
+	offset 0 -5 0
+	attenuate 1
+}
+
+object ChaingunLight
+{
+	frame TNT1A { light ChaingunLight }
 }
 
 flickerlight2 PlasmaGunLight
 {
-    color 0.6 0.6 0.1
-    size 4
+    color 0.25 0.25 1.0
+    size 75
+	secondarySize 100
 	interval 0.05
-	offset 0 48 0
+	offset 0 -5 0
+	attenuate 1
 }
+
+object PlasmaGunLight
+{
+	frame TNT1A { light PlasmaGunLight }
+}
+
 
 flickerlight2 BFGLight
 {
-    color 0.6 0.6 0.1
-    size 4
+    color 0.0 1.0 0.0
+    size 100
+	secondarySize 150
 	interval 0.05
-	offset 0 48 0
+	offset 0 0 0
+	attenuate 1
 }

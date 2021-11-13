@@ -49,7 +49,7 @@ Class EquestriaRocketLauncher : DoomEquestriaWeapon replaces RocketLauncher
 		
 		MISG B 6
 		{
-			A_FireProjectile("EquestriaRocket");
+			A_FireProjectile("EquestriaRocket", 0, 1, 0, -5);
 			A_WeaponOffset(0, 42, WOF_KEEPX | WOF_INTERPOLATE);
 		}
 		MISG A 6 A_WeaponOffset(0, 32, WOF_KEEPX | WOF_INTERPOLATE);
@@ -59,7 +59,7 @@ Class EquestriaRocketLauncher : DoomEquestriaWeapon replaces RocketLauncher
 	Fire.CamRecoil:
 		MISG B 6
 		{
-			A_FireProjectile("EquestriaRocket");
+			A_FireProjectile("EquestriaRocket", 0, 1, 0, -5);
 			A_WeaponOffset(0, 42, WOF_KEEPX | WOF_INTERPOLATE);
 			A_Overlay(2, "CamRecoil");
 		}

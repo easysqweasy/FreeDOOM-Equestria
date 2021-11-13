@@ -50,6 +50,7 @@ Class EquestriaSuperShotgun : DoomEquestriaWeapon replaces SuperShotgun
 		SHT2 A 8
 		{
 			A_FireBullets (11.2, 7.1, 20, 5, "ShotgunPuff");
+			A_FireProjectile("SuperShotgunLight", 0, 0, 0, -5);
 			A_StartSound ("weapons/sshotf", CHAN_WEAPON);
 			A_GunFlash();
 			A_Overlay(2, "Offset");
@@ -60,6 +61,7 @@ Class EquestriaSuperShotgun : DoomEquestriaWeapon replaces SuperShotgun
 		SHT2 A 8
 		{
 			A_FireBullets (11.2, 7.1, 20, 5, "ShotgunPuff");
+			A_FireProjectile("SuperShotgunLight", 0, 0, 0, -5);
 			A_StartSound ("weapons/sshotf", CHAN_WEAPON);
 			A_GunFlash();
 			A_QuakeEx(2, 0, 2, 4, 0, 1, "", QF_SCALEDOWN | QF_RELATIVE);
@@ -152,3 +154,6 @@ Class EquestriaSuperShotgun : DoomEquestriaWeapon replaces SuperShotgun
 		Stop;
 	}
 }
+
+Class SuperShotgunLight : PlasmaGunLight
+{}
