@@ -1,50 +1,55 @@
-Warp2 Flat FWATER1 
-Warp2 Flat FWATER2
-Warp2 Flat FWATER3
-Warp2 Flat FWATER4
+Warp2 Texture FWATER1 
+Warp2 Texture FWATER2
+Warp2 Texture FWATER3
+Warp2 Texture FWATER4
 
-Warp2 Flat LAVA1 0.25
-Warp2 Flat LAVA2 0.25
-Warp2 Flat LAVA3 0.25
-Warp2 Flat LAVA4 0.25
+Warp2 Texture LAVA1 0.25
+Warp2 Texture LAVA2 0.25
+Warp2 Texture LAVA3 0.25
+Warp2 Texture LAVA4 0.25
 
-Warp Flat NUKAGE1
-Warp Flat NUKAGE2
-Warp Flat NUKAGE3
-Warp Flat NUKAGE4
+Warp Texture NUKAGE1 0.5
+Warp Texture NUKAGE2 0.5
+Warp Texture NUKAGE3 0.5
+Warp Texture NUKAGE4 0.5
 
-warp2 flat SLIME01
-warp2 flat SLIME02
-warp2 flat SLIME03
-warp2 flat SLIME04
-warp2 flat SLIME05
-warp2 flat SLIME06
-warp2 flat SLIME07
-warp2 flat SLIME08
+warp2 Texture SLIME01
+warp2 Texture SLIME02
+warp2 Texture SLIME03
+warp2 Texture SLIME04
+warp2 Texture SLIME05
+warp2 Texture SLIME06
+warp2 Texture SLIME07
+warp2 Texture SLIME08
 
-Warp Flat BLOOD1 0.5
-Warp Flat BLOOD2 0.5
-Warp Flat BLOOD3 0.5
-Warp Flat BLOOD4 0.5
+Warp Texture BLOOD1
+Warp Texture BLOOD2
+Warp Texture BLOOD3
+Warp Texture BLOOD4
 
-flat FWATER1
+Texture FWATER1
 	pic 1 tics 1
 	pic 1 tics 1
 
-flat LAVA1 range LAVA4 tics 16 OSCILLATE
+Texture LAVA1 range LAVA4 tics 16
 
-flat NUKAGE1
+Texture NUKAGE1
 	pic 2 tics 1
 	pic 2 tics 1
 
-flat SLIME01
+Texture SLIME01
 	pic 1 tics 1
 	pic 1 tics 1
 
-flat SLIME05
+Texture SLIME05
 	pic 1 tics 1
 	pic 1 tics 1
 
-flat BLOOD1
+Texture BLOOD1
 	pic 1 tics 1
 	pic 1 tics 1
+	
+Texture		BFALL1  	Range	BFALL4  	Tics 8
+Texture		SFALL1  	Range	SFALL4  	Tics 8
+Texture		SWFALL1  	Range	SWFALL4  	Tics 8
+Texture		WFALL1  	Range	WFALL4  	Tics 8

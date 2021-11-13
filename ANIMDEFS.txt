@@ -23,9 +23,6 @@ Texture		FIRELAV3	Range	FIRELAVA	Tics 8
 Texture		FIREMAG1	Range	FIREMAG3	Tics 8
 Texture		FIREBLU1	Range	FIREBLU2	Tics 8
 Texture		ROCKRED1	Range	ROCKRED3	Tics 8
-Texture		BFALL1  	Range	BFALL4  	Tics 8
-Texture		SFALL1  	Range	SFALL4  	Tics 8
-Texture		WFALL1  	Range	WFALL4  	Tics 8
 Texture		DBRAIN1 	Range	DBRAIN4 	Tics 8
 Texture		COMP1ON1	Range	COMP1ON2	Tics 8
 Texture		COMP2ON1	Range	COMP2ON2	Tics 8
