@@ -4,6 +4,7 @@ Class PuffSparkles : DEParticles
 	{
 		-NOGRAVITY
 		+Bright
+		+ThruActors
 		
 		BounceType "Doom";
 		BounceFactor 0.50;
@@ -34,7 +35,7 @@ Class PuffSparkles : DEParticles
 		
 	Vanish:
 		PUFF A 1 A_FadeOut(0.25);
-		Stop;
+		Wait;
 		
 	}
 }
