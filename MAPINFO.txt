@@ -12,6 +12,7 @@ gamedefaults
 	DisableSkyboxAO
 	
 	compat_invisibility = 1
+	LightMode = 2
 }
 
 include "MAPINFO/Episodes.txt"
