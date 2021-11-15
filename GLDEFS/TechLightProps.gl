@@ -17,7 +17,7 @@ pointlight LAMP2
 
 object Column
 {
-    frame COLU { light LAMP }
+    frame COLUA { light LAMP }
 }
 
 object Column2
@@ -39,7 +39,7 @@ pulselight SMALLLAMP
 
 object EquestriaTechLamp2
 {
-    frame TLP2 { light SMALLLAMP }
+    frame TLP2A { light SMALLLAMP }
 }
 
 // Tall tech lamp
@@ -55,17 +55,20 @@ pulselight BIGLAMP
 
 object EquestriaTechLamp
 {
-    frame TLMP { light BIGLAMP }
+    frame TLMPA { light BIGLAMP }
+	frame TLMPB { light BIGLAMP }
+	frame TLMPC { light BIGLAMP }
+	frame TLMPD { light BIGLAMP }
 }
 
 object EquestriaTechLamp3
 {
-    frame TLP3 { light BIGLAMP }
+    frame TLP3A { light BIGLAMP }
 }
 
 object EquestriaTechLamp4
 {
-    frame TLP4 { light BIGLAMP }
+    frame TLP4A { light BIGLAMP }
 }
 
 //Lampshades
