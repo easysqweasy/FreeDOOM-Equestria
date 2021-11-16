@@ -50,6 +50,7 @@ Class EquestriaSuperShotgun : DoomEquestriaWeapon replaces SuperShotgun
 		SHT2 A 8
 		{
 			A_FireBullets (11.2, 7.1, 20, 5, "ShotgunPuff");
+			A_FireProjectile("SuperShotgunLight", 0, 0, 0, -5);
 			A_StartSound ("weapons/sshotf", CHAN_WEAPON);
 			A_GunFlash();
 			A_Overlay(2, "Offset");
@@ -60,6 +61,7 @@ Class EquestriaSuperShotgun : DoomEquestriaWeapon replaces SuperShotgun
 		SHT2 A 8
 		{
 			A_FireBullets (11.2, 7.1, 20, 5, "ShotgunPuff");
+			A_FireProjectile("SuperShotgunLight", 0, 0, 0, -5);
 			A_StartSound ("weapons/sshotf", CHAN_WEAPON);
 			A_GunFlash();
 			A_QuakeEx(2, 0, 2, 4, 0, 1, "", QF_SCALEDOWN | QF_RELATIVE);
@@ -99,8 +101,10 @@ Class EquestriaSuperShotgun : DoomEquestriaWeapon replaces SuperShotgun
 		Stop;
 		
 	Offset:
-		TNT1 A 5 A_WeaponOffset(0, 45, WOF_KEEPX | WOF_INTERPOLATE);
-		TNT1 A 10 A_WeaponOffset(0, 32, WOF_KEEPX | WOF_INTERPOLATE);
+		TNT1 A 4 A_WeaponOffset(0, 45, WOF_KEEPX | WOF_INTERPOLATE);
+		TNT1 A 5 A_WeaponOffset(0, 40, WOF_KEEPX | WOF_INTERPOLATE);
+		TNT1 A 3 A_WeaponOffset(0, 35, WOF_KEEPX | WOF_INTERPOLATE);
+		TNT1 A 0 A_WeaponOffset(0, 32, WOF_KEEPX | WOF_INTERPOLATE);
 		Stop;
 		
 	Overlay.Aside:
@@ -150,3 +154,6 @@ Class EquestriaSuperShotgun : DoomEquestriaWeapon replaces SuperShotgun
 		Stop;
 	}
 }
+
+Class SuperShotgunLight : PlasmaGunLight
+{}

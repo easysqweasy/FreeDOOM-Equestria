@@ -4,6 +4,7 @@ Class PuffSparkles : DEParticles
 	{
 		-NOGRAVITY
 		+Bright
+		+ThruActors
 		
 		BounceType "Doom";
 		BounceFactor 0.50;
@@ -34,7 +35,7 @@ Class PuffSparkles : DEParticles
 		
 	Vanish:
 		PUFF A 1 A_FadeOut(0.25);
-		Stop;
+		Wait;
 		
 	}
 }
@@ -44,6 +45,8 @@ Class EquestriaBulletPuff : BulletPuff replaces BulletPuff
 	Default
 	{
 		Height 6; Radius 3;
+		
+		VSpeed 1;
 		
 		+FLOORCLIP
 		+NOTELEPORT
@@ -60,8 +63,9 @@ Class EquestriaBulletPuff : BulletPuff replaces BulletPuff
 		TNT1 A 0 A_JumpIfInventory("Vanish", 1, "Vanish");
 		TNT1 AAA 0 A_SpawnProjectile("PuffSparkles", 0, 0, random (0, 360), CMF_AIMDIRECTION, random (0, 360));
 		TNT1 A 0 A_SpawnProjectile("BulletDecalCheck", 7,0,0, CMF_TRACKOWNER | CMF_AIMDIRECTION, 90);
-
-		PUFF A random(2, 8) Bright;
+		
+		PUFF A random(5, 8) Bright;
+		//PUFF A 0 A_Recoil(-2);
 		PUFF B 4;
 	
 	Melee:

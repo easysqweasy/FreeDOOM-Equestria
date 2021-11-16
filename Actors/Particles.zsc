@@ -28,3 +28,17 @@ Class Trails : DEParticles
 		+NoInteraction;
 	}
 }
+
+Class SoulSpherePickup : DEParticles
+{
+	Default
+	{
+		+NoInteraction;
+	}
+	States
+	{
+	Spawn:
+		SOUL EFGH 6 Bright;
+		Stop;
+	}
+}

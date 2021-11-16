@@ -4,7 +4,9 @@ Class EquestriaDoomPlayer : DoomPlayer replaces DoomPlayer
 	{
 		+CASTSPRITESHADOW;
 		
-		Player.DisplayName "EquestrianDoomPlayer";
+		Player.ViewHeight 45; Player.AttackZOffset 17;
+		
+		Player.DisplayName "Shainer";
 		
 		Player.DamageScreenColor "Red";
 		
@@ -15,7 +17,7 @@ Class EquestriaDoomPlayer : DoomPlayer replaces DoomPlayer
 		Player.WeaponSlot 1, "EquestriaChainsaw", "BerserkFist";
 		Player.WeaponSlot 2, "EquestriaPistol";
 		Player.WeaponSlot 3, "EquestriaShotgun", "EquestriaSuperShotgun";
-		Player.WeaponSlot 4, "EquestriaChaingun";//, "Repeater"
+		Player.WeaponSlot 4, "EquestriaChaingun";
 		Player.WeaponSlot 5, "EquestriaPlasmaGun";
 		Player.WeaponSlot 6, "EquestriaRocketLauncher";
 		Player.WeaponSlot 7, "EquestriaBFG9K";

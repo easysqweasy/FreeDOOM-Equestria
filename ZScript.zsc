@@ -8,7 +8,6 @@ Class DebrisCore : Actor
 		+NOBLOCKMAP
 		+DROPOFF
 		+NOTELEPORT
-		//+GHOST
 		+FORCEXYBILLBOARD
 		+FLOORCLIP
 		+MOVEWITHSECTOR
@@ -48,7 +47,6 @@ Class DebrisCore : Actor
 #Include "Actors/Weapons/Fists.zsc"
 #Include "Actors/Weapons/Pistol.zsc"
 #Include "Actors/Weapons/Shotgun.zsc"
-//#Include "Actors/Weapons/Repeater.zsc" Dont Use
 #Include "Actors/Weapons/SuperShotgun.zsc"
 #Include "Actors/Weapons/Chaingun.zsc"
 #Include "Actors/Weapons/PlasmaGun.zsc"
@@ -58,6 +56,7 @@ Class DebrisCore : Actor
 
 ////Items/PowerUps
 
+#include "Actors/Pickups/Keys.zsc"
 #include "Actors/Pickups/Ammo.zsc"
 #include "Actors/Pickups/Armor.zsc"
 #include "Actors/Pickups/Health.zsc"
@@ -93,5 +92,8 @@ Class DebrisCore : Actor
 #include "Actors/Props/Gothic.zsc"
 #include "Actors/Props/Gore.zsc"
 #include "Actors/Props/Corpses.zsc"
-#include "Actors/Props/LightSources.zsc"
 #include "Actors/Props/ExplosiveBarrel.zsc"
+
+#include "Actors/Props/Wall Sprites/Facility.zsc"
+
+#include "Actors/Props/Light Sources/LightSources.zsc"

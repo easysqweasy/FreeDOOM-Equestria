@@ -6,7 +6,7 @@ Class EquestriaExploBarrel : ExplosiveBarrel replaces ExplosiveBarrel
 		
 		DamageType "BarrelExp";
 		
-		-NOBLOOD;
+		+NOBLOOD;
 		+ALLOWPAIN;
 		-OLDRADIUSDMG;
 		+CANPASS;

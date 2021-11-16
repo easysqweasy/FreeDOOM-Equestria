@@ -2,10 +2,17 @@ Glow
 {
 	Flats
 	{
-		lava1
-		lava2
-		lava3
-		lava4
+		LAVA1
+		LAVA2
+		LAVA3
+		LAVA4
+	}
+	Walls
+	{
+		LAVA1
+		LAVA2
+		LAVA3
+		LAVA4
 	}
 	Texture "LAVA1", ff2600, 100, fullbright
 	Texture "LAVA2", ff2600, 100, fullbright
@@ -16,6 +23,13 @@ Glow
 Glow
 {
 	Flats
+	{
+		NUKAGE1
+		NUKAGE2
+		NUKAGE3
+		NUKAGE4
+	}
+	Walls
 	{
 		NUKAGE1
 		NUKAGE2
@@ -37,6 +51,13 @@ Glow
 		SLIME11
 		SLIME12
 	}
+	Walls
+	{
+		SLIME09
+		SLIME10
+		SLIME11
+		SLIME12
+	}
 	Texture "SLIME09", red, 25, fullbright
 	Texture "SLIME10", red, 25, fullbright
 	Texture "SLIME11", red, 25, fullbright
@@ -46,6 +67,14 @@ Glow
 Glow
 {
 	Flats
+	{
+		RROCK04
+		RROCK05
+		RROCK06
+		RROCK07
+		RROCK08
+	}
+	Walls
 	{
 		RROCK04
 		RROCK05
@@ -69,8 +98,15 @@ Glow
 		NUKWALK3
 		NUKWALK4
 	}
-	Texture "NUKWALK1", Green, 5, fullbright
-	Texture "NUKWALK2", Green, 5, fullbright
-	Texture "NUKWALK3", Green, 5, fullbright
-	Texture "NUKWALK4", Green, 5, fullbright
+	Walls
+	{
+		NUKWALK1
+		NUKWALK2
+		NUKWALK3
+		NUKWALK4
+	}
+	Texture "NUKWALK1", Green, 5
+	Texture "NUKWALK2", Green, 5
+	Texture "NUKWALK3", Green, 5
+	Texture "NUKWALK4", Green, 5
 }

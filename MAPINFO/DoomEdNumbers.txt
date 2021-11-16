@@ -3,7 +3,8 @@
 
 DoomEdNums
 {
-
+	/* Weapons */
+	
 	90 = "Broom"
 
 	/* Title Map and Season Scenes Props */
@@ -111,4 +112,10 @@ DoomEdNums
 	//Gore parts (Bodys, Meat, etc)
 	
 	15700 = "DeadPlasmaKirin"
+	
+	// Wall Sprites
+	
+	15800 = "ExplosiveWarning"
+	15801 = "VoltageWarning"
+	15802 = "RadiationWarning"
 }

@@ -156,7 +156,7 @@ pulselight BLUESKULL
     offset 0 10 0
 }
 
-object BlueSkull
+object EquestriaBlueSkull
 {
     frame BSKU { light BLUESKULL }
 }
@@ -187,7 +187,7 @@ pulselight YELLOWSKULL
     offset 0 10 0
 }
 
-object YellowSkull
+object EquestriaYellowSkull
 {
     frame YSKU { light YELLOWSKULL }
 }
@@ -218,7 +218,7 @@ pulselight REDSKULL
     offset 0 10 0
 }
 
-object RedSkull
+object EquestriaRedSkull
 {
     frame RSKU { light REDSKULL }
 }

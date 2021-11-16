@@ -49,8 +49,9 @@ Class EquestriaShotgun : DoomEquestriaWeapon replaces Shotgun
 		
 		SHTG A 7
 		{
-			A_WeaponOffset(0, 45, WOF_KEEPX | WOF_INTERPOLATE);
 			A_FireBullets (5.6, 0, 7, 5, "ShotgunPuff");
+			A_FireProjectile("ShotgunLight", 0, 0, 0, -5);
+			A_WeaponOffset(0, 45, WOF_KEEPX | WOF_INTERPOLATE);
 			A_StartSound ("weapons/shotgf", CHAN_WEAPON);
 			A_GunFlash();
 			A_Overlay(3, "Offset");
@@ -60,8 +61,9 @@ Class EquestriaShotgun : DoomEquestriaWeapon replaces Shotgun
 	Fire.CamRecoil:
 		SHTG A 7
 		{
-			A_WeaponOffset(0, 45, WOF_KEEPX | WOF_INTERPOLATE);
 			A_FireBullets (5.6, 0, 7, 5, "ShotgunPuff");
+			A_FireProjectile("ShotgunLight", 0, 0, 0, -5);
+			A_WeaponOffset(0, 45, WOF_KEEPX | WOF_INTERPOLATE);
 			A_StartSound ("weapons/shotgf", CHAN_WEAPON);
 			A_GunFlash();
 			A_Overlay(3, "Offset");
@@ -97,3 +99,6 @@ Class EquestriaShotgun : DoomEquestriaWeapon replaces Shotgun
 		Stop;
 	}
 }
+
+Class ShotgunLight : SuperShotgunLight
+{}
