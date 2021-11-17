@@ -142,7 +142,7 @@ Class EquestriaBFGBall : BFGBall replaces BFGBall
 		BFS1 A 0;
 		BFS1 A 0 A_SetRoll(random(-359, 359));
 	Projectile:
-		BFS1 ABCD random(2, 4) Bright A_SpawnItemEx("BFGTrail");
+		BFS1 AB random(2, 4) Bright A_SpawnItemEx("BFGTrail");
 		Loop;
 	
 	Death:
@@ -172,11 +172,12 @@ Class BFGTrail : Trails
 	States
 	{
 	Spawn:
-		BFS1 A 0;
-		BFS1 A 0 A_SetRoll(random(-359, 359));
+		TNT1 A 0;
+		TNT1 A 0 A_SetRoll(random(-359, 359));
 		
 	Trail:
-		BFS1 ABCD random(2,4) Bright A_FadeOut(0.1);
+		BFS1 AB random(2,4) Bright A_FadeOut(0.1);
+		TNT1 AA random(2,4) A_FadeOut(0.1);
 		Loop;
    }
 }
