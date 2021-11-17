@@ -48,42 +48,47 @@ object EquestriaInvulSphere
 // Blur Sphere
 pointlight BLURSPHERE1
 {
-    color 1.0 0.0 0.0
+    color 1.0 1.0 0.5
     size 60
     offset 0 16 0
 	attenuate 1
+	subtractive 1
 }
 
 pointlight BLURSPHERE2
 {
-    color 0.0 0.0 1.0
+    color 1.0 1.0 1.0
     size 48
     offset 0 16 0
 	attenuate 1
+	subtractive 1
 }
 
 pointlight BLURSPHERE3
 {
-    color 0.0 0.0 1.0
+    color 1.0 1.0 1.0
     size 36
     offset 0 16 0
 	attenuate 1
+	subtractive 1
 }
 
 pointlight BLURSPHERE4
 {
-    color 0.0 0.0 1.0
+    color 1.0 1.0 1.0
     size 24
     offset 0 16 0
 	attenuate 1
+	subtractive 1
 }
 
 pointlight BLURSPHERE5
 {
-    color 0.0 0.0 1.0
+    color 1.0 1.0 1.0
     size 12
     offset 0 16 0
 	attenuate 1
+	subtractive 1
 }
 
 object EquestriaBlurSphere
