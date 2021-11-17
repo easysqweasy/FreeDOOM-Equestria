@@ -68,11 +68,11 @@ Class EquestriaRocketLauncher : DoomEquestriaWeapon replaces RocketLauncher
 		Goto Ready;
 	
 	Flash:
-		TNT1 A 4;
-		MISF A 4 Bright;
+		TNT1 A 8;
+		MISF A 3 Bright;
 		MISF B 2 Bright;
-		MISF C 4;
-		MISF D 2;
+		MISF C 2;
+		MISF D 1;
 		Goto LightDone;
 	
 	CamRecoil:
