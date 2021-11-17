@@ -8,24 +8,23 @@ Warp2 Texture LAVA2 0.25
 Warp2 Texture LAVA3 0.25
 Warp2 Texture LAVA4 0.25
 
-Warp Texture NUKAGE1 0.5
-Warp Texture NUKAGE2 0.5
-Warp Texture NUKAGE3 0.5
-Warp Texture NUKAGE4 0.5
+Warp Texture NUKAGE1 0.10
+Warp Texture NUKAGE2 0.10
+Warp Texture NUKAGE3 0.10
 
 warp2 Texture SLIME01
 warp2 Texture SLIME02
 warp2 Texture SLIME03
 warp2 Texture SLIME04
-warp2 Texture SLIME05
-warp2 Texture SLIME06
-warp2 Texture SLIME07
-warp2 Texture SLIME08
 
-Warp Texture BLOOD1
-Warp Texture BLOOD2
-Warp Texture BLOOD3
-Warp Texture BLOOD4
+warp2 Texture SLIME05 0.75
+warp2 Texture SLIME06 0.75
+warp2 Texture SLIME07 0.75
+warp2 Texture SLIME08 0.75
+
+Warp Texture BLOOD1 0.5
+Warp Texture BLOOD2 0.5
+Warp Texture BLOOD3 0.5
 
 Texture FWATER1
 	pic 1 tics 1
