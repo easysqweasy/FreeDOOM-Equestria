@@ -3,10 +3,10 @@ Warp2 Texture FWATER2
 Warp2 Texture FWATER3
 Warp2 Texture FWATER4
 
-Warp2 Texture LAVA1 0.25
-Warp2 Texture LAVA2 0.25
-Warp2 Texture LAVA3 0.25
-Warp2 Texture LAVA4 0.25
+Warp Texture LAVA1 5
+Warp Texture LAVA2 5
+Warp Texture LAVA3 5
+Warp Texture LAVA4 5
 
 Warp Texture NUKAGE1 0.10
 Warp Texture NUKAGE2 0.10
