@@ -1,5 +1,3 @@
-$pitchshiftrange 2
-
 /*Player */
 
 $playersound	player	male	*pain50		Sounds/Player/ds50plpain.wav
@@ -45,7 +43,6 @@ gore/bloodsplats1 "Sounds/Gore/BSSPLAT1.ogg"
 gore/bloodsplats2 "Sounds/Gore/BSSPLAT2.ogg"
 gore/bloodsplats3 "Sounds/Gore/BSSPLAT3.ogg"
 gore/bloodsplats4 "Sounds/Gore/BSSPLAT4.ogg"
-
 
 /* Decorations */
 
