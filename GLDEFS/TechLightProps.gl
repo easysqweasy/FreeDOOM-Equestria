@@ -40,6 +40,9 @@ pulselight SMALLLAMP
 object EquestriaTechLamp2
 {
     frame TLP2A { light SMALLLAMP }
+	frame TLP2B { light SMALLLAMP }
+	frame TLP2C { light SMALLLAMP }
+	frame TLP2D { light SMALLLAMP }
 }
 
 // Tall tech lamp
