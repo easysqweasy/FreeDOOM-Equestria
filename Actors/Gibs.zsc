@@ -77,8 +77,8 @@ Class GibGoreBase : DebrisCore
 	Default
 	{
 		Decal "BloodSplat";
-		BounceSound "gore/bloodsplats";
-		DeathSound "gore/bloodsplats";
+		BounceSound "gore/impact";
+		//DeathSound "gore/impact";
 
 		Height 4; Radius 2;
 		
