@@ -32,7 +32,6 @@ LOWHEALTH = "Low Health";
 
 /* Monsters */
 
-CC_ZOMBIE = "Zombie Pony";
 /*
 CC_ZOMBIE = "Former Soldier";
 CC_SHOTGUN = "Former Sergeant";
