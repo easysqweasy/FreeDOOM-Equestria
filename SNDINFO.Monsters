@@ -30,23 +30,25 @@ caco/active			dscacact
 
 /* Chaingunner */
 
-/*
+
 $random chainguy/sight		{ chainguy/sight1  chainguy/sight2  chainguy/sight3 }
-chainguy/sight1			dscgsit1
-chainguy/sight2			dscgsit2
-chainguy/sight3			dscgsit3
+chainguy/sight1			DSPOSIT1
+chainguy/sight2			DSPOSIT2
+chainguy/sight3			DSPOSIT3
+$pitchset chainguy/sight 0.85
 
-chainguy/active			dscgsact
+chainguy/active			DSPOSACT
+$pitchset chainguy/active 0.85
 
-chainguy/attack			DSCHNGUN
-
-chainguy/pain			dscgpain
+chainguy/pain			DSPOPAIN
+$pitchset chainguy/pain 0.85
 
 $random chainguy/death		{ chainguy/death1  chainguy/death2  chainguy/death3 }
-chainguy/death1 		dscgdth1
-chainguy/death2			dscgdth2
-chainguy/death3			dscgdth3
-*/
+chainguy/death1 		DSPODTH1
+chainguy/death2			DSPODTH2
+chainguy/death3			DSPODTH3
+$pitchset chainguy/death 0.85
+
 
 /* Cyberdemon */
 
