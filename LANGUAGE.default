@@ -2,7 +2,7 @@
 
 STARTUP1 = "========== You are playing the Github version of DOOM Equestria Alpha ==========";
 STARTUP2 = "This mod was made by Redyusedom, read the credits for more information";
-STARTUP3 = "By Isaac and Ragedox, stay tuned for more news!";
+STARTUP3 = "By Isaac, Ragedox and the Team Redyusedom, stay tuned for more news!";
 STARTUP4 = "======================== This is NOT a children's game! ========================";
 
 WARNING = "WARNING!";
