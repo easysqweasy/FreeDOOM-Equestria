@@ -36,7 +36,6 @@ Class PuffSparkles : DEParticles
 	Vanish:
 		PUFF A 1 A_FadeOut(0.25);
 		Wait;
-		
 	}
 }
 
@@ -77,6 +76,15 @@ Class EquestriaBulletPuff : BulletPuff replaces BulletPuff
 	
 	Vanish:
 		Stop;
+	}
+	
+	Override void Tick()
+	{
+		Super.Tick();
+		if (!isFrozen())
+		{
+			A_ScaleVelocity(0.96);
+		}
 	}
 }
 
@@ -133,6 +141,7 @@ Class BerserkPuff : KickPuff
 	{
 		DamageType "Berserk";
 		Alpha 0.5;
+		Scale 0.5;
 		
 		-BLOODLESSIMPACT;
 	}
@@ -141,8 +150,19 @@ Class BerserkPuff : KickPuff
 	
 	Spawn:
 	Melee:
-		RSMK AAAAABBBBBCCCCCDDDDDEEEEE 1 A_FadeOut(0.015);
-		Stop;
-
+		TNT1 A 0;
+		RSMK A random(2,4)
+		{
+			bSPRITEFLIP = randompick(0, 1);
+			A_SetRoll(random(-359, 359));
+		}
+		RSMK A 2;
+		RSMK AAAAAAAAAABBBBBBBBCCCCCCDDDD 1
+		{
+			A_FadeOut(0.02);
+			A_SetScale(Scale.X + 0.025, Scale.Y + 0.025);
+		}
+		RSMK E 1 A_FadeOut(0.05);
+		Wait;
 	}
 }

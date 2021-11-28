@@ -137,8 +137,7 @@ Class Smoke : Trails replaces RocketSmokeTrail
 		
 		Alpha 0.75;
 		
-		Speed 5;
-		VSpeed 0.5;
+		Speed 7;
 		
 		Scale 0.50;
 		
@@ -177,4 +176,4 @@ Class Smoke : Trails replaces RocketSmokeTrail
 }
 
 Class EquestriaRocketSmoke : Smoke replaces RocketSmokeTrail
-{	Default{	+NOINTERACTION	}	}
+{	Default{	+NOINTERACTION	VSpeed 0.65;}	}
