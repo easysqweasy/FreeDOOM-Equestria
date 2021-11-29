@@ -1,4 +1,4 @@
-Class Equestria_ChaingunGuy : ChaingunGuy replaces ChaingunGuy
+Class EquestriaChaingunGuy : ChaingunGuy replaces ChaingunGuy
 {
 	Default
 	{
