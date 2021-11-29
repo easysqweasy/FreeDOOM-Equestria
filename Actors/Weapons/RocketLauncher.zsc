@@ -9,7 +9,7 @@ Class EquestriaRocketLauncher : DoomEquestriaWeapon replaces RocketLauncher
 		Weapon.AmmoGive 2;
 		Weapon.AmmoType "RocketAmmo";
 		
-		+WEAPON.NOAUTOFIRE;
+		+WEAPON.NOAUTOFIRE
 		
 		Inventory.PickupMessage "$GOTLAUNCHER";
 		Inventory.PickupSound "pickup/rocklauncher";
@@ -121,57 +121,6 @@ Class EquestriaRocket : Rocket replaces Rocket
 		MISL C 4 Bright;
 		MISL D 1 A_FadeOut(0.1);
 		Wait;
-	}
-}
-	
-Class Smoke : Trails replaces RocketSmokeTrail
-{
-	Default
-	{
-		Height 2;
-		Radius 2;
-		
-		Decal "Scorch";
-		
-		RenderStyle "Translucent";
-		
-		Alpha 0.75;
-		
-		Speed 7;
-		
-		Scale 0.50;
-		
-		-NoInteraction
-		-NOCLIP
-		
-		+MoveWithSector
-	}
-	States
-	{
-	Spawn:
-		TNT1 A 0;
-		RSMK A 4
-		{
-			bSPRITEFLIP = randompick(0, 1);
-			A_SetRoll(random(-359, 359));
-		}
-		RSMK A 2;
-		RSMK AAAAAAAAAABBBBBBBBCCCCCCDDDD 1
-		{
-			A_FadeOut(0.02);
-			A_SetScale(Scale.X + 0.025, Scale.Y + 0.025);
-		}
-		RSMK E 1 A_FadeOut(0.05);
-		Wait;
-	}
-	
-	Override void Tick()
-		{
-		Super.Tick();
-		if (!isFrozen())
-		{
-			A_ScaleVelocity(0.95);
-		}
 	}
 }
 
