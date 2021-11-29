@@ -55,6 +55,7 @@ Class EquestriaBulletPuff : BulletPuff replaces BulletPuff
 		+NOBLOCKMAP
 		-RANDOMIZE
 		+SHOOTABLE
+		+ROLLSPRITE +ROLLCENTER
 	}
 	States
 	{
