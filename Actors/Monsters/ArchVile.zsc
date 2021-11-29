@@ -1,4 +1,4 @@
-Class Equestria_ArchVile : ArchVile replaces Archvile
+Class EquestriaArchVile : ArchVile replaces Archvile
 {
 	Default
 	{
