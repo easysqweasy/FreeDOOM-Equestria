@@ -1,4 +1,4 @@
-Class EquestriaBaronofHell : BaronOfHell replaces BaronOfHell
+Class Equestria_BaronofHell : BaronOfHell replaces BaronOfHell
 {
 	Default
 	{
