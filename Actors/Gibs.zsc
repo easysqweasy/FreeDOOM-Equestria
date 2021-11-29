@@ -72,7 +72,7 @@ Class BloodExplosionSphere : BloodExplosion
 	}
 }
 
-Class GibGoreBase : DebrisCore
+Class GibBase : DebrisCore
 {
 	Default
 	{
@@ -82,20 +82,13 @@ Class GibGoreBase : DebrisCore
 
 		Height 4; Radius 2;
 		
+		Mass 60;
 		Speed 10;
 		Gravity 0.75;
-		
-		+ROLLSPRITE +ROLLCENTER
-		
-		+FORCEXYBILLBOARD
 	  
 		+USEBOUNCESTATE +BOUNCEONWALLS +BOUNCEONFLOORS +BOUNCEONACTORS
 		BounceType "Doom";
 		BounceFactor 0.25;
-		
-		+NOTELEPORT
-		+THRUGHOST
-		+FLOORCLIP
 		
 		-COUNTKILL
 	}
@@ -254,7 +247,7 @@ Class SmallBloodPoolDrop : SmallBloodPool
 	}
 }
 
-Class GibGore1 : GibGoreBase
+Class GibGore1 : GibBase
 {
 	States
 	{
@@ -264,7 +257,7 @@ Class GibGore1 : GibGoreBase
 	}
 }
 
-Class GibGore2 : GibGoreBase
+Class GibGore2 : GibBase
 {
 	States
 	{
@@ -274,7 +267,7 @@ Class GibGore2 : GibGoreBase
 	}
 }
 
-Class GibGore3 : GibGoreBase
+Class GibGore3 : GibBase
 {
 	States
 	{
@@ -284,7 +277,7 @@ Class GibGore3 : GibGoreBase
 	}
 }
 
-Class GibGore4 : GibGoreBase
+Class GibGore4 : GibBase
 {
 	States
 	{
@@ -294,7 +287,7 @@ Class GibGore4 : GibGoreBase
 	}
 }
 
-Class TinyGibGore1 : GibGoreBase
+Class TinyGibGore1 : GibBase
 {
 	Default
 	{
@@ -332,7 +325,7 @@ Class BigGoreRandom : RandomSpawner
 	}
 }
 
-Class BigGibGore1 : GibGoreBase
+Class BigGibGore1 : GibBase
 {
 	Default
 	{
@@ -390,5 +383,23 @@ Class BigGibGore2 : BigGibGore1
 		BGO2 B 350;
 		BGO2 B 1 A_FadeOut(0.1);
 		Wait;
+	}
+}
+
+Class HeadGib : GibBase	{}
+
+Class TorsoGib : GibBase
+{
+	Default
+	{
+		Gravity 1;
+	}
+}
+
+Class LegsArmsGib : GibBase
+{
+	Default
+	{
+		Gravity 0.5;
 	}
 }
