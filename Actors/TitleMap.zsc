@@ -7,28 +7,33 @@ Class TitleMapProps : Actor
 	}
 }
 
-Class Shainer : TitleMapProps
+Class TheHorse : TitleMapProps
 {	
-	//$Category Cutscenes
+	Default
+	{
+		//$Category TitleMap and End Screens
+		Scale 0.50;
+	}
 	States
 	{
 	Spawn:
-		PLAY A -1;
+		TMAP A -1;
 		Stop;
 	}
 }
 
-Class FlyingShotgun : TitleMapProps
-{
+Class PoorImp : TitleMapProps
+{	
 	Default
 	{
-		//$Category Cutscenes
-		+FORCEXYBILLBOARD; +FLOATBOB;
+		//$Category TitleMap and End Screens
+		Scale 0.35;
+		+FORCEXYBILLBOARD
 	}
 	States
 	{
 	Spawn:
-		SHOT A -1;
+		TMAP B -1;
 		Stop;
 	}
 }
