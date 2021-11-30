@@ -37,3 +37,14 @@ Model "BFGLightning2"
 	ZOffset 0.2
 	FrameIndex NULL A 0 0
 }
+
+Model "BulletTracer"
+{
+	Path "Models"
+	Model 0 "Tracer.md3"
+	Skin 0 "Tracer.png"
+	Scale 5 5 5.2
+	FrameIndex NULL A 0 0
+
+	PITCHFROMMOMENTUM
+}
