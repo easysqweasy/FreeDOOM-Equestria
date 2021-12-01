@@ -5,6 +5,7 @@ Class FlatWall : Actor
 		//$Category Wall Sprites
 		+NOCLIP +NOGRAVITY +NOINTERACTION
 		+WALLSPRITE
+		+NOTONAUTOMAP
 		
 		Height 40;
 		Radius 20;
