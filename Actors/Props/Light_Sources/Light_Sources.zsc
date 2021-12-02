@@ -216,33 +216,27 @@ Class CeilingLamp1 : Actor
 }
 
 /* Torches */
-/*
-Class BlueWallTorch : SwitchableDecoration
+
+Class EquestriaWallTorch : Actor
 {
 	Default
 	{
-	//$Title Wall Torch Blue
-	//$Category Light Sources/Wall Torches
+	//$Title Wall Torch
+	//$Category Light Sources
 	//$IsDecoration
 	//$NotAngled
-	//$Sprite BWTRA0
 	
+		+RANDOMIZE;
 		+NOBLOCKMAP;
 		+NOGRAVITY;
 		+FIXMAPTHINGPOS;
-		Radius 6.5;
+		Radius 6.5; Height 10;
 	}
 	States
 	{
-	Active:
-		BWTR A 0 Bright A_StartSound("DoomTorch/Ignite");
 	Spawn:
-		BWTR A 0 Bright NoDelay A_StartSound("DoomTorch/Burn", CHAN_6, 1, TRUE);
-	Lit:
-		BWTR ABCD 4 Bright;
+		WTCH A 0 A_StartSound("DoomTorch/Burn", CHAN_BODY, CHANF_LOOPING, 1.0, ATTN_STATIC);
+		WTCH ABCD 4 Bright;
 		Loop;
-	Inactive:
-		UWTR A -1 A_StopSound(CHAN_6);
-		Stop;
 	}
-}*/
+}
