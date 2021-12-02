@@ -1,9 +1,9 @@
 //For DOOM Equestria : Hell on Earth
 
-Class UndeadAryanne : Actor
+Class Harbinger_of_Doom : Actor
 {}
 
-Class SSSoldier : WolfensteinSS Replaces WolfensteinSS
+Class SS_Soldier : WolfensteinSS Replaces WolfensteinSS
 {
 	Default
 	{
