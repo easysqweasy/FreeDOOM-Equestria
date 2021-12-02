@@ -153,7 +153,7 @@ Class BarrelDebris : DebrisCore
 		Wait;
 	
 	ChooseDebris:
-		TNT1 A 0 A_Jump(256, 1, 2, 3, 4, 5, 6, 7);
+		TNT1 A 0 A_Jump(256, 1, 2, 3, 4, 5);
 		EXPD A 0;
 		Goto Roll;
 		EXPD B 0;
@@ -163,10 +163,6 @@ Class BarrelDebris : DebrisCore
 		EXPD D 0;
 		Goto Roll;
 		EXPD E 0;
-		Goto Roll;
-		EXPD F 0;
-		Goto Roll;
-		EXPD G 0;
 		Goto Roll;
 	}
 }
