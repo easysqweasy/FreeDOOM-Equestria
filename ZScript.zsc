@@ -39,9 +39,10 @@ Class DebrisCore : Actor
 
 #include "Actors/Terrains.zsc"
 #include "Actors/Particles.zsc"
-#include "Actors/Gibs.zsc"
 #include "Actors/FloorDecals.zsc"
 #include "Actors/Puffs.zsc"
+
+#include "Actors/Debris/Gibs_Generic.zsc"
 
 ////Weapons
 
@@ -84,10 +85,9 @@ Class DebrisCore : Actor
 #include "Actors/Monsters/Canines.zsc"
 #include "Actors/Monsters/ScriptedMarines.zsc"
 #include "Actors/Monsters/SpiderMastermind.zsc"
-//#include "Actors/Monsters/WolfensteinActors.zsc" For DOOM Equestria : Hell on Earth
+#include "Actors/Monsters/WolfensteinActors.zsc" //For DOOM Equestria : Hell on Earth
 
 ////Props
-
 
 #include "Actors/Props/Tech.zsc"
 #include "Actors/Props/Nature.zsc"

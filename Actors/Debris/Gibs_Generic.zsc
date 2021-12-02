@@ -385,21 +385,3 @@ Class BigGibGore2 : BigGibGore1
 		Wait;
 	}
 }
-
-Class HeadGib : GibBase	{}
-
-Class TorsoGib : GibBase
-{
-	Default
-	{
-		Gravity 1;
-	}
-}
-
-Class LegsArmsGib : GibBase
-{
-	Default
-	{
-		Gravity 0.5;
-	}
-}
