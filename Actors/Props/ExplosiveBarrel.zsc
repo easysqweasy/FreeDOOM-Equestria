@@ -20,7 +20,7 @@ Class EquestriaExploBarrel : ExplosiveBarrel replaces ExplosiveBarrel
 	Pain:
 		BAR1 "#" 1 A_SpawnItem("SplashSmoke", 0, 40);
 	Spawn:
-		BAR1 AB 8;
+		BAR1 A 8;
 		Loop;
 	
 	Death.BarrelExp:
