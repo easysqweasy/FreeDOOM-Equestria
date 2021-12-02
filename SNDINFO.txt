@@ -50,11 +50,11 @@ gore/impact1 GibImp1
 gore/impact2 GibImp2
 gore/impact3 GibImp3
 
+$volume gore/impact 0.5
+
 /* Decorations */
 
-DoomTorch/Ignite	DSFIRSTA
 DoomTorch/Burn		DSFIRLOP
 
 $limit DoomTorch/Burn 0
-$volume DoomTorch/Burn 0.1
 $attenuation DoomTorch/Burn 4
