@@ -84,7 +84,7 @@ Class DebrisCore : Actor
 #include "Actors/Monsters/Canines.zsc"
 #include "Actors/Monsters/ScriptedMarines.zsc"
 #include "Actors/Monsters/SpiderMastermind.zsc"
-#include "Actors/Monsters/WolfensteinActors.zsc" //For DOOM Equestria : Hell on Earth
+//#include "Actors/Monsters/WolfensteinActors.zsc" For DOOM Equestria : Hell on Earth
 
 ////Props
 
@@ -97,6 +97,6 @@ Class DebrisCore : Actor
 #include "Actors/Props/Corpses.zsc"
 #include "Actors/Props/ExplosiveBarrel.zsc"
 
-#include "Actors/Props/Wall Sprites/Facility.zsc"
+#include "Actors/Props/Flat_Sprites/Wall_Facility.zsc"
 
-#include "Actors/Props/Light Sources/LightSources.zsc"
+#include "Actors/Props/Light_Sources/Light_Sources.zsc"
