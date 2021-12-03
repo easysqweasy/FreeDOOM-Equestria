@@ -3,3 +3,4 @@ CVARs
 EquestriaThings
 BossBar
 Pickups
+FloorCheck
