@@ -47,11 +47,12 @@ Class CoreSplashBase : Actor
 		Renderstyle "Translucent";
 		Alpha 0.7;
 		
-		+NOBLOCKMAP;
-		+NOCLIP;
-		+NOGRAVITY;
-		+DONTSPLASH;
-		+DONTBLAST;
+		+NOBLOCKMAP
+		+NOCLIP
+		+NOGRAVITY
+		+DONTSPLASH
+		+DONTBLAST
+		+NOINTERACTION
 	}
 }
 
@@ -65,12 +66,12 @@ Class SplashSmoke : Actor
 	
 		Speed 1.5; VSpeed 1.5;
 	
-		+NOBLOCKMAP;
-		+NoInteraction;
-		+NOGRAVITY;
-		+DONTSPLASH;
-		+DONTBLAST;
-		+ForceXYBillBoard;
+		+NOBLOCKMAP
+		+NoInteraction
+		+NOGRAVITY
+		+DONTSPLASH
+		+DONTBLAST
+		+ForceXYBillBoard
 	}
 	States
 	{
