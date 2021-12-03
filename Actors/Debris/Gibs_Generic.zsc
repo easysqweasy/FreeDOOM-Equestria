@@ -232,8 +232,8 @@ Class SmallBloodPoolDrop : SmallBloodPool
 		TNT1 A 0 { bSPRITEFLIP = randompick(0, 1); }
 		TNT1 A 0 A_JumpIf(waterlevel > 1, "Dissolve");
 		
-		POB2 A random(8, 35);
-		POB2 BCD random(2, 4);
+		POB2 A random(4, 32);
+		POB2 BCD 4 A_FadeOut(0.15);
 		POB2 E 1 A_FadeOut(0.1);
 		Wait;
 	
