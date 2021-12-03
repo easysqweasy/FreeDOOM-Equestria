@@ -134,7 +134,7 @@ decal Scorch
 {
 	pic SCORCH1
 	FullBright
-	shade "FF 34 03"
+	shade "Red"
 	randomflipx randomflipy
 	x-scale 0.5 y-scale 0.5
 	animator GoAway2
