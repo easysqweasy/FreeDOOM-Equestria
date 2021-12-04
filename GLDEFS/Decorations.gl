@@ -12,7 +12,7 @@ pulselight BARREL
 
 object EquestriaExploBarrel
 {
-    frame BAR1  { light BARREL    }
+    //frame BAR1  { light BARREL    }
 
     frame BEXPC { light ROCKET_X1 }
     frame BEXPD { light ROCKET_X2 }
