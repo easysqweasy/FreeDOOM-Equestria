@@ -235,8 +235,9 @@ Class EquestriaWallTorch : Actor
 	States
 	{
 	Spawn:
+		WTCH A 0 A_SpawnItem("BerserkPuff", 0, 15);
 		WTCH A 0 A_StartSound("DoomTorch/Burn", CHAN_BODY, CHANF_LOOPING, 1.0, ATTN_STATIC);
-		WTCH ABCD 4 Bright;
+		WTCH ABCDABCD 4 Bright;
 		Loop;
 	}
 }
