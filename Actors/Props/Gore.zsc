@@ -9,3 +9,18 @@ Class EquestriaGibs : Gibs replaces Gibs
 
 Class EquestriaColonGibs : ColonGibs replaces ColonGibs
 {	Default	{	+ForceXYBillboard;	}	}
+
+Class EquestriaBloodyTwitch : BloodyTwitch replaces BloodyTwitch
+{
+	States
+	{
+	Spawn:
+		GOR1 A 10;
+		GOR1 B 10;
+		GOR1 B 5 A_SpawnItemEx("EquestriaBlood", random(4, 8), random(4, 8));
+		GOR1 C 8;
+		GOR1 B 3;
+		GOR1 B 3 A_SpawnItemEx("EquestriaBlood", random(4, 8), random(4, 8));
+		Loop;
+	}
+}
