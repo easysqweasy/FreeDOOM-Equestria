@@ -56,6 +56,7 @@ Class DebrisCore : Actor
 #Include "Actors/Weapons/RocketLauncher.zsc"
 #Include "Actors/Weapons/BFG9000.zsc"
 #Include "Actors/Weapons/Chainsaw.zsc"
+#Include "Actors/Weapons/DumbWeapons.zsc"
 
 ////Items/PowerUps
 
@@ -98,5 +99,6 @@ Class DebrisCore : Actor
 #include "Actors/Props/ExplosiveBarrel.zsc"
 
 #include "Actors/Props/Flat_Sprites/Wall_Facility.zsc"
+#include "Actors/Props/Flat_Sprites/Flat_Blood.zsc"
 
 #include "Actors/Props/Light_Sources/Light_Sources.zsc"
