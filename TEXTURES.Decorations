@@ -19,4 +19,5 @@ Sprite "WALLD0", 62, 36
 	Patch "PS20A0", 0, 0
 }
 
+
 // End of texture definitions
