@@ -113,6 +113,10 @@ Class ChainsawSparkles : PuffSparkles
 
 Class ChainsawPuff : Player_EquestriaBulletPuff
 {
+	Default
+	{
+		Damagetype "Chainsaw";
+	}
 	States
 	{
 	Spawn:
