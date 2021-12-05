@@ -1,0 +1,19 @@
+Class BloodSmear : Wall_FlatProps
+{
+	States
+	{
+	Spawn:
+		WALL E -1;
+		Stop;
+	}
+}
+
+Class BloodSmear2 : BloodSmear
+{
+	States
+	{
+	Spawn:
+		WALL F -1;
+		Stop;
+	}
+}
