@@ -60,25 +60,6 @@ Class EquestriaTechLamp2 : EquestriaTechLamp replaces TechLamp2
 	}
 }
 
-Class EquestriaTechLamp3 : EquestriaTechLamp
-{
-	//$NotAngled
-	
-	//$Arg0 Destroyed
-	//$Arg0Enum falsetrue
-	States
-	{
-	Spawn:
-		TLP3 A 1 Bright A_JumpIf(Args[0]>1, "Destroyed");
-		Loop;
-	Death:
-		TNT1 AAAAAAAAAAAAAAAAAAAA 0 A_SpawnProjectile("PuffSparkles", 70, 0, random (0, 360), 2, random (0, 360));
-	Destroyed:
-		TLP3 B -1;
-		Stop;
-	}
-}
-
 Class EquestriaTechLamp4 : EquestriaTechLamp
 {
 	//$NotAngled
