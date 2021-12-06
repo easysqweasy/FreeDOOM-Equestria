@@ -60,7 +60,7 @@ Class EquestriaTechLamp2 : EquestriaTechLamp replaces TechLamp2
 	}
 }
 
-Class EquestriaTechLamp4 : EquestriaTechLamp
+Class TallColumn : EquestriaTechLamp
 {
 	//$NotAngled
 	
@@ -69,7 +69,7 @@ Class EquestriaTechLamp4 : EquestriaTechLamp
 	States
 	{
 	Spawn:
-		TLP4 A 1 BRIGHT;
+		TLP3 A 1 BRIGHT;
 		Loop;
 	}
 }
