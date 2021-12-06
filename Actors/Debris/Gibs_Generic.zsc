@@ -18,16 +18,15 @@ Class XDeathGibber : Actor
 	Spawn:
 		TNT1 A 0 A_JumpIf(CallACS("GoreToggle")== 0, "Bye");
 		
-		TNT1 AAA 0 A_SpawnProjectile("GibGore2", random(16, 32), 0, random (0, 360), CMF_AIMDIRECTION, random (-10, -90));
-		TNT1 BBB 0 A_SpawnProjectile("GibGore3", random(16, 32), 0, random (0, 360), CMF_AIMDIRECTION, random (-10, -90));
-		TNT1 CCC 0 A_SpawnProjectile("GibGore4", random(16, 32), 0, random (0, 360), CMF_AIMDIRECTION, random (-10, -90));
-		TNT1 DDDDD 0 A_SpawnProjectile("TinyGibGore1", random(16, 32), 0, random (0, 360), CMF_AIMDIRECTION, random (-10, -90));
-		TNT1 EEEEE 0 A_SpawnProjectile("TinyGibGore2", random(16, 32), 0, random (0, 360), CMF_AIMDIRECTION, random (-10, -90));
+		TNT1 AAA 0 A_SpawnProjectile("GibGore2", random(8, 32), 0, random (0, 360), CMF_AIMDIRECTION, random (-10, -90));
+		TNT1 BBB 0 A_SpawnProjectile("GibGore3", random(8, 32), 0, random (0, 360), CMF_AIMDIRECTION, random (-10, -90));
+		TNT1 CCC 0 A_SpawnProjectile("GibGore4", random(8, 32), 0, random (0, 360), CMF_AIMDIRECTION, random (-10, -90));
+		TNT1 DDDDD 0 A_SpawnProjectile("TinyGibGore1", random(8, 32), 0, random (0, 360), CMF_AIMDIRECTION, random (-10, -90));
+		TNT1 EEEEE 0 A_SpawnProjectile("TinyGibGore2", random(8, 32), 0, random (0, 360), CMF_AIMDIRECTION, random (-10, -90));
 		Stop;
 		
 	Bye: TNT1 A 0;
 	Stop;
-	
 	}
 }
 
@@ -160,7 +159,7 @@ Class EquestriaBlood : Blood replaces Blood
 		BLUD C 1
 		{
 			A_FadeOut(0.1);
-			A_SetScale((Scale.X + frandom(0.25, 0.5)), (Scale.Y + frandom(0.25, 0.5)), false);
+			A_SetScale((Scale.X + frandom(0.25, 0.5)), (Scale.Y + frandom(0.25, 0.5)));
 		}
 		Wait;
 	}
