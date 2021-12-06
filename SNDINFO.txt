@@ -39,12 +39,18 @@ pickup/plasmagun "Sounds/Pickups/Weapons/GetPlasmaGun.wav"
 pickup/rocklauncher "Sounds/Pickups/Weapons/GetRKTLauncher.wav"
 pickup/bfg "Sounds/Pickups/Weapons/GetBFG.wav"
 
-/* Gore */
+/* Gore - need sounds that are free to use */
 
-$random gore/bloodsplats { gore/bloodsplats1 gore/bloodsplats2 gore/bloodsplats3 gore/bloodsplats4 }
-gore/bloodsplats1 "Sounds/Gore/BSSPLAT1.ogg"
-gore/bloodsplats2 "Sounds/Gore/BSSPLAT2.ogg"
-gore/bloodsplats3 "Sounds/Gore/BSSPLAT3.ogg"
-gore/bloodsplats4 "Sounds/Gore/BSSPLAT4.ogg"
-gore/bloodsplats4 "Sounds/Gore/BSSPLAT4.ogg"
-*/
+$random gore/impact { gore/impact1 gore/impact2 gore/impact3 }
+gore/impact1 GibImp1
+gore/impact2 GibImp2
+gore/impact3 GibImp3
+
+$volume gore/impact 0.5
+
+/* Decorations */
+
+DoomTorch/Burn		DSFIRLOP
+
+$limit DoomTorch/Burn 0
+$attenuation DoomTorch/Burn 4
