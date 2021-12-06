@@ -225,10 +225,9 @@ Class BFGSparkles : PuffSparkles
 	Spawn:
 		BFS1 AA 0 A_SetRoll(random(-359, 359));
 		
-		APLS A 16;
-		APLS A 12;
+		APLS A 35;
 		APLS AAAA 1 A_SetScale(Scale.X + 0.25, Scale.Y + 0.25);
-		APLS AAAAAAAA 1 A_SetScale(Scale.X - 0.25, Scale.Y - 0.25);
+		APLS AAAAAAAAAAAA 1 A_SetScale(Scale.X - 0.25, Scale.Y - 0.25);
 		Stop;
 	}
 	Override void Tick()
