@@ -139,8 +139,7 @@ Class EquestriaBFGBall : BFGBall replaces BFGBall
 	States
 	{
 	Spawn:
-		BFS1 A 0;
-		BFS1 A 0 A_SetRoll(random(-359, 359));
+		BFS1 AA 0 A_SetRoll(random(-359, 359));
 		BFS1 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA 0 A_SpawnProjectile("BFGSparkles", 0, 0, random (0, 360), CMF_AIMDIRECTION, random (0, 360));
 	Projectile:
 		BFS1 ABCD random(2, 4) Bright A_SpawnItemEx("BFGTrail");
@@ -191,10 +190,10 @@ Class BFGShockwave : Actor
 {
 	Default
 	{
-		+FORCEXYBILLBOARD;
-		+NOINTERACTION;
-		+NOGRAVITY;
-		+NOCLIP;
+		+FORCEXYBILLBOARD
+		+NOINTERACTION
+		+NOGRAVITY
+		+NOCLIP
 		
 		RenderStyle "Add";
 		Alpha 0.50;
@@ -224,6 +223,8 @@ Class BFGSparkles : PuffSparkles
 	States
 	{
 	Spawn:
+		BFS1 AA 0 A_SetRoll(random(-359, 359));
+		
 		APLS A 16;
 		APLS AAA 4;
 		BFE2 DDDDD 1 A_SetScale(Scale.X - 0.25, Scale.Y - 0.25);
