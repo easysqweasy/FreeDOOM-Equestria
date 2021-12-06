@@ -44,7 +44,7 @@ Class EquestriaBlurSphere : CustomInventory replaces BlurSphere
 	States
 	{
 	Spawn:
-		PINS ABCDCBA 6 Bright;
+		PINS ABCD 6 Bright;
 		Loop;
 		
 	Pickup:
@@ -84,7 +84,7 @@ Class EquestriaInvulSphere : CustomInventory replaces InvulnerabilitySphere
 	States
 	{
 	Spawn:
-		PINV ABCDCBA 6 Bright;
+		PINV ABCD 6 Bright;
 		Loop;
 	Pickup:
 		TNT1 A 0 A_Quake(4, 2, 0, 100);
@@ -118,7 +118,7 @@ Class EquestriaSoulSphere : CustomInventory replaces Soulsphere
 	States
 	{
 	Spawn:
-		SOUL ABCDCBA 6 Bright;
+		SOUL ABCDCB 6 Bright;
 		Loop;
 	Pickup:
 		TNT1 A 0
@@ -163,7 +163,7 @@ Class EquestriaMegaSphere : CustomInventory replaces Megasphere
 	States
 	{
 	Spawn:
-		MEGA ABCDCBA 6 Bright;
+		MEGA ABCD 6 Bright;
 		Loop;
 	Pickup:
 		TNT1 A 0 A_GiveInventory("BlueArmorForMegasphere");
