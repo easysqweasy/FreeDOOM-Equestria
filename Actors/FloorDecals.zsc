@@ -23,11 +23,16 @@ Class ScorchBase : FloorCheck
 	{
 		+FLATSPRITE
 		+ROLLSPRITE +ROLLCENTER
-		+NoInteraction
 		
 		RenderStyle "Shaded"; StencilColor "Black";
 		
 		SpriteRotation 90;
+	}
+	States
+	{
+	Vanish:
+		TNT1 A 0;
+		Stop;
 	}
 }
 
@@ -49,6 +54,11 @@ Class ScorchDecal : ScorchBase
 	States
 	{
 	Spawn:
+		TNT1 A 0;
+		TNT1 A 0 ACS_NamedExecute("CheckLiquid");
+		TNT1 A 0 A_JumpIfInventory("OverLiquid", 1, "Vanish");
+		
+		TNT1 A 0 {	bNOINTERACTION = 1;	}
 		FLAT B 2100;
 		FLAT B 1 A_FadeOut(0.1);
 		Wait;
@@ -88,6 +98,7 @@ Class BulletDecal : ScorchBase
 	{
 	Spawn:
 		TNT1 A 0;
+		TNT1 A 0 {	bNOINTERACTION = 1;	}
 		FLAT A 2100 A_SetRoll(random(0, 359));
 		FLAT A 1 A_FadeOut(0.1);
 		Wait;
@@ -114,13 +125,16 @@ Class PlasmaScorchLower : ScorchBase
 	{
 	Spawn:
 		TNT1 A 0;
+		TNT1 A 0 ACS_NamedExecute("CheckLiquid");
+		TNT1 A 0 A_JumpIfInventory("OverLiquid", 1, "Vanish");
 		TNT1 A 0 A_SetRoll(random(0, 359));
-		TNT1 A 0 A_Jump(256, +3, +4);
+		TNT1 A 0 A_Jump(256, +5, +6);
 		Wait;
 		
 	InFloor:
-		"####" "#" 2100 A_SpawnItemEX("PlasmaScorch", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION);
-		"####" "#" 1 A_FadeOut(0.1);
+		#### ## 0 {	bNOINTERACTION = 1;	}
+		#### # 2100 A_SpawnItemEX("PlasmaScorch", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION);
+		#### # 1 A_FadeOut(0.1);
 		Wait;
 		FLAT C 0;
 		Goto InFloor;
@@ -150,6 +164,11 @@ Class PlasmaScorch1 : FloorCheck
 	States
 	{
 	Spawn:
+		TNT1 A 0;
+		TNT1 A 0 ACS_NamedExecute("CheckLiquid");
+		TNT1 A 0 A_JumpIfInventory("OverLiquid", 1, "Vanish");
+		
+		TNT1 A 0 {	bNOINTERACTION = 1;	}
 		NULL A 14;
 		NULL A 1 A_FadeOut(0.035);
 		Wait;
@@ -161,6 +180,11 @@ Class PlasmaScorch2 : PlasmaScorch1
 	States
 	{
 	Spawn:
+		TNT1 A 0;
+		TNT1 A 0 ACS_NamedExecute("CheckLiquid");
+		TNT1 A 0 A_JumpIfInventory("OverLiquid", 1, "Vanish");
+		
+		TNT1 A 0 {	bNOINTERACTION = 1;	}
 		NULL A 14;
 		NULL A 1 A_FadeOut(0.035);
 		Wait;
@@ -187,13 +211,16 @@ Class BFGScorch : ScorchBase
 	{
 	Spawn:
 		TNT1 A 0;
+		TNT1 A 0 ACS_NamedExecute("CheckLiquid");
+		TNT1 A 0 A_JumpIfInventory("OverLiquid", 1, "Vanish");
 		TNT1 A 0 A_SetRoll(random(0, 359));
-		TNT1 A 0 A_Jump(256, +3, +4);
+		TNT1 A 0 A_Jump(256, +5, +6);
 		Wait;
 		
 	InFloor:
-		"####" "#" 2100 A_SpawnItemEX("BFGLightning", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION);
-		"####" "#" 1 A_FadeOut(0.1);
+		#### ## 0 {	bNOINTERACTION = 1;	}
+		#### # 2100 A_SpawnItemEX("BFGLightning", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION);
+		#### # 1 A_FadeOut(0.1);
 		Wait;
 		FLAT E 0;
 		Goto InFloor;
@@ -226,6 +253,10 @@ Class BFGLightning1 : FloorCheck
 	{
 	Spawn:
 		TNT1 A 0;
+		TNT1 A 0 ACS_NamedExecute("CheckLiquid");
+		TNT1 A 0 A_JumpIfInventory("OverLiquid", 1, "Vanish");
+		
+		TNT1 A 0 {	bNOINTERACTION = 1;	}
 		NULL A 35;
 		NULL A 1 A_FadeOut(0.014);
 		Wait;
@@ -239,6 +270,10 @@ Class BFGLightning2 : BFGLightning
 	
 	Spawn:
 		TNT1 A 0;
+		TNT1 A 0 ACS_NamedExecute("CheckLiquid");
+		TNT1 A 0 A_JumpIfInventory("OverLiquid", 1, "Vanish");
+		
+		TNT1 A 0 {	bNOINTERACTION = 1;	}
 		NULL A 35;
 		NULL A 1 A_FadeOut(0.014);
 		Wait;

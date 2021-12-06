@@ -28,7 +28,6 @@ GOTBERSERK = "Berserk! Vamos esmurrar alguns demônios!";
 
 /* Monstros */
 
-CC_ZOMBIE = "Zumbi Pônei";
 /*
 CC_ZOMBIE = "Soldado Possuído";
 CC_SHOTGUN = "Sargento Possuído";

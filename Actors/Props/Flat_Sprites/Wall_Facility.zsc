@@ -1,17 +1,18 @@
-Class FlatWall : Actor
+Class Wall_FlatProps : Actor
 {
 	Default
 	{
 		//$Category Wall Sprites
 		+NOCLIP +NOGRAVITY +NOINTERACTION
 		+WALLSPRITE
+		+NOTONAUTOMAP
 		
 		Height 40;
 		Radius 20;
 	}
 }
 
-Class ExplosiveWarning : FlatWall
+Class ExplosiveWarning : Wall_FlatProps
 {
 	States
 	{
@@ -21,7 +22,7 @@ Class ExplosiveWarning : FlatWall
 	}
 }
 
-Class VoltageWarning : FlatWall
+Class VoltageWarning : Wall_FlatProps
 {
 	States
 	{
@@ -31,7 +32,7 @@ Class VoltageWarning : FlatWall
 	}
 }
 
-Class RadiationWarning : FlatWall
+Class RadiationWarning : Wall_FlatProps
 {
 	States
 	{

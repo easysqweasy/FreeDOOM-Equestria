@@ -14,10 +14,10 @@ Glow
 		LAVA3
 		LAVA4
 	}
-	Texture "LAVA1", ff2600, 100, fullbright
-	Texture "LAVA2", ff2600, 100, fullbright
-	Texture "LAVA3", ff2600, 100, fullbright
-	Texture "LAVA4", ff2600, 100, fullbright
+	Texture "LAVA1", FF4B00, 100, fullbright
+	Texture "LAVA2", FF4B00, 100, fullbright
+	Texture "LAVA3", FF4B00, 100, fullbright
+	Texture "LAVA4", FF4B00, 100, fullbright
 }
 
 Glow
@@ -36,10 +36,10 @@ Glow
 		NUKAGE3
 		NUKAGE4
 	}
-	Texture "NUKAGE1", green, 50, fullbright
-	Texture "NUKAGE2", green, 50, fullbright
-	Texture "NUKAGE3", green, 50, fullbright
-	Texture "NUKAGE4", green, 50, fullbright
+	Texture "NUKAGE1", 80FF80, 50, fullbright
+	Texture "NUKAGE2", 80FF80, 50, fullbright
+	Texture "NUKAGE3", 80FF80, 50, fullbright
+	Texture "NUKAGE4", 80FF80, 50, fullbright
 }
 
 Glow

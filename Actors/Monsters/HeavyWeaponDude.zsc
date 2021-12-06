@@ -11,7 +11,11 @@ Class EquestriaChaingunGuy : ChaingunGuy replaces ChaingunGuy
 		+CASTSPRITESHADOW;
 		+NOINFIGHTSPECIES;
 		
+		//SeeSound "chainguy/sight";
+		//DeathSound "chainguy/death";
+		//PainSound "chainguy/pain";
 		AttackSound "weapons/chngun";
+		//ActiveSound "chaingun/active";
 		Dropitem "EquestriaChaingun";
 		Species "Couple";
 	}

@@ -19,6 +19,8 @@ Class CoreSplashChunk : Actor
 		+DONTSPLASH
 		+DONTBLAST
 		+ForceXYBillBoard
+		BounceType "Doom";
+		BounceFactor 0.25;
 	}
 	States
 	{
@@ -30,15 +32,8 @@ Class CoreSplashChunk : Actor
 			A_RadiusGive("Vanish", 5, RGF_OBJECTS, 1);
 		}
 		
-		NSL1 A 6;
-		NSL1 B 6 A_SetTranslucent(0.6, 0);
-		NSL1 C 6 A_SetTranslucent(0.5, 0);
-		NSL1 D 6 A_SetTranslucent(0.4, 0);
-		NSL1 D 6 A_SetTranslucent(0.3, 0);
-		Stop;
-	Death:
-		NSL1 D 8 A_SetTranslucent(0.2, 0);
-		Stop;
+		NSL1 ABCD 6 A_FadeOut(0.05);
+		Wait;
 	}
 }
 
@@ -52,11 +47,12 @@ Class CoreSplashBase : Actor
 		Renderstyle "Translucent";
 		Alpha 0.7;
 		
-		+NOBLOCKMAP;
-		+NOCLIP;
-		+NOGRAVITY;
-		+DONTSPLASH;
-		+DONTBLAST;
+		+NOBLOCKMAP
+		+NOCLIP
+		+NOGRAVITY
+		+DONTSPLASH
+		+DONTBLAST
+		+NOINTERACTION
 	}
 }
 
@@ -70,12 +66,12 @@ Class SplashSmoke : Actor
 	
 		Speed 1.5; VSpeed 1.5;
 	
-		+NOBLOCKMAP;
-		+NoInteraction;
-		+NOGRAVITY;
-		+DONTSPLASH;
-		+DONTBLAST;
-		+ForceXYBillBoard;
+		+NOBLOCKMAP
+		+NoInteraction
+		+NOGRAVITY
+		+DONTSPLASH
+		+DONTBLAST
+		+ForceXYBillBoard
 	}
 	States
 	{

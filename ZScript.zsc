@@ -6,6 +6,7 @@ Class DebrisCore : Actor
 	{
 		+MISSILE
 		+NOBLOCKMAP
+		+NOTAUTOAIMED
 		+DROPOFF
 		+NOTELEPORT
 		+FORCEXYBILLBOARD
@@ -37,9 +38,10 @@ Class DebrisCore : Actor
 
 #include "Actors/Terrains.zsc"
 #include "Actors/Particles.zsc"
-#include "Actors/Gibs.zsc"
 #include "Actors/FloorDecals.zsc"
 #include "Actors/Puffs.zsc"
+
+#include "Actors/Debris/Gibs_Generic.zsc"
 
 ////Weapons
 
@@ -53,6 +55,7 @@ Class DebrisCore : Actor
 #Include "Actors/Weapons/RocketLauncher.zsc"
 #Include "Actors/Weapons/BFG9000.zsc"
 #Include "Actors/Weapons/Chainsaw.zsc"
+#Include "Actors/Weapons/DumbWeapons.zsc"
 
 ////Items/PowerUps
 
@@ -68,8 +71,8 @@ Class DebrisCore : Actor
 #include "Actors/Monsters/ArchVile.zsc"
 #include "Actors/Monsters/BaronHellKnight.zsc"
 #include "Actors/Monsters/Cacodemon.zsc"
-#include "Actors/Monsters/PainAndLostSoul.zsc"
 #include "Actors/Monsters/Imp.zsc"
+#include "Actors/Monsters/PainAndLostSoul.zsc"
 #include "Actors/Monsters/Mancubus.zsc"
 #include "Actors/Monsters/ZombiePony.zsc"
 #include "Actors/Monsters/ShotgunGuy.zsc"
@@ -85,7 +88,6 @@ Class DebrisCore : Actor
 
 ////Props
 
-
 #include "Actors/Props/Tech.zsc"
 #include "Actors/Props/Nature.zsc"
 #include "Actors/Props/Hell.zsc"
@@ -94,6 +96,7 @@ Class DebrisCore : Actor
 #include "Actors/Props/Corpses.zsc"
 #include "Actors/Props/ExplosiveBarrel.zsc"
 
-#include "Actors/Props/Wall Sprites/Facility.zsc"
+#include "Actors/Props/Flat_Sprites/Wall_Facility.zsc"
+#include "Actors/Props/Flat_Sprites/Flat_Blood.zsc"
 
-#include "Actors/Props/Light Sources/LightSources.zsc"
+#include "Actors/Props/Light_Sources/Light_Sources.zsc"

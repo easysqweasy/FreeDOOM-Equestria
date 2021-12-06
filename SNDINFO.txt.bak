@@ -1,0 +1,67 @@
+/*Player */
+
+/*
+$playersound	player	male	*pain50		Sounds/Player/ds50plpain.wav
+$playersounddup	player	male	*pain25		*pain50
+
+$playersound	player	female	*pain50		Sounds/Player/ds50plpain.wav
+$playersounddup	player	female	*pain25		*pain50
+
+$playersound	player	other	*pain50		Sounds/Player/ds50plpain.wav
+$playersounddup	player	other	*pain25		*pain50
+*/
+
+/* Ambient */
+
+world/drip 			GLOOP
+world/watersplash 	GLOOP
+world/lavasizzle	ACID5
+world/sludgegloop	MUCK5
+
+/* Weapons */
+
+$random weapons/ricochet	{	weapons/ricochet1	weapons/ricochet2	weapons/ricochet3	}
+weapons/ricochet1 RIC1
+weapons/ricochet2 RIC2
+weapons/ricochet3 RIC3
+
+/* Pickups */
+
+/*
+pickup/skullkey dssklatk
+$pitchset pickup/skullkey 1.5
+
+pickup/potion "Sounds/Pickups/GetPotion.wav"
+
+pickup/armor1 "Sounds/Pickups/GetArmor1.wav"
+pickup/armor2 "Sounds/Pickups/GetArmor2.wav"
+
+pickup/clip "Sounds/Pickups/Ammo/GetClip.wav"
+pickup/shell "Sounds/Pickups/Ammo/GetShell.wav"
+pickup/backpack "Sounds/Pickups/Ammo/GetBackpack.ogg"
+
+pickup/shotgun "Sounds/Pickups/Weapons/GetShotgun.wav"
+pickup/chaingun "Sounds/Pickups/Weapons/GetChaingun.wav"
+pickup/plasmagun "Sounds/Pickups/Weapons/GetPlasmaGun.wav"
+pickup/rocklauncher "Sounds/Pickups/Weapons/GetRKTLauncher.wav"
+pickup/bfg "Sounds/Pickups/Weapons/GetBFG.wav"
+
+/* Gore */
+
+
+/* need sounds that are free to use
+$random gore/impact { gore/impact1 gore/impact2 gore/impact3 }
+gore/impact1 GibImp1
+gore/impact2 GibImp2
+gore/impact3 GibImp3
+
+$volume gore/impact 0.5
+*/
+
+/* Decorations */
+
+DoomTorch/Burn		DSFIRLOP
+
+$limit DoomTorch/Burn 0
+$attenuation DoomTorch/Burn 4
+>>>>>>> upstream/main
