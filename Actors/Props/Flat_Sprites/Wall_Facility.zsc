@@ -4,7 +4,7 @@ Class Wall_FlatProps : Actor
 	{
 		//$Category Wall Sprites
 		+NOCLIP +NOGRAVITY +NOINTERACTION
-		+WALLSPRITE
+		+FLATSPRITE 
 		+NOTONAUTOMAP
 		
 		Height 40;
