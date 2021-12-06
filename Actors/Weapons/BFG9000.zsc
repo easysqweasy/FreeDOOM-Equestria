@@ -227,7 +227,7 @@ Class BFGSparkles : PuffSparkles
 		
 		APLS A 35;
 		APLS AAAA 1 A_SetScale(Scale.X + 0.25, Scale.Y + 0.25);
-		APLS AAAAAAAAAAAA 1 A_SetScale(Scale.X - 0.25, Scale.Y - 0.25);
+		APLS AAAAAAAA 1 A_SetScale(Scale.X - 0.25, Scale.Y - 0.25);
 		Stop;
 	}
 	Override void Tick()
