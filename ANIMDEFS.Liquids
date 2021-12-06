@@ -3,6 +3,11 @@ Warp2 Texture FWATER2
 Warp2 Texture FWATER3
 Warp2 Texture FWATER4
 
+Warp2 Texture SWATER1 
+Warp2 Texture SWATER2
+Warp2 Texture SWATER3
+Warp2 Texture SWATER4
+
 Warp Texture LAVA1 0.5
 Warp Texture LAVA2 0.5
 Warp Texture LAVA3 0.5
@@ -22,11 +27,24 @@ warp Texture SLIME06
 warp Texture SLIME07
 warp Texture SLIME08
 
+warp2 Texture SLIME17
+warp2 Texture SLIME18
+warp2 Texture SLIME19
+warp2 Texture SLIME20
+
 Warp Texture BLOOD1 0.75
 Warp Texture BLOOD2 0.75
 Warp Texture BLOOD3 0.75
 
+Warp2 Texture FBLOOD1 0.75
+Warp2 Texture FBLOOD2 0.75
+Warp2 Texture FBLOOD3 0.75
+
 Texture FWATER1
+	pic 1 tics 1
+	pic 1 tics 1
+	
+Texture SWATER1
 	pic 1 tics 1
 	pic 1 tics 1
 
@@ -43,8 +61,14 @@ Texture SLIME01
 Texture SLIME05
 	pic 1 tics 1
 	pic 1 tics 1
+	
+Texture		SLIME17  	Range	SLIME20  	Tics 8
 
 Texture BLOOD1
+	pic 1 tics 1
+	pic 1 tics 1
+
+Texture FBLOOD1
 	pic 1 tics 1
 	pic 1 tics 1
 	
