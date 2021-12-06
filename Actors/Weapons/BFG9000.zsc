@@ -226,7 +226,7 @@ Class BFGSparkles : PuffSparkles
 	Spawn:
 		PLSS AA 0 A_SetRoll(random(-359, 359));
 		
-		PLSS AA 35;
+		PLSS A 35;
 		PLSS AAAA 1 A_SetScale(Scale.X + 0.25, Scale.Y + 0.25);
 		PLSS AAAAAAAA 1 A_SetScale(Scale.X - 0.25, Scale.Y - 0.25);
 		Stop;
