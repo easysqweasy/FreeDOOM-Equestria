@@ -21,7 +21,7 @@ Class ScorchBase : FloorCheck
 {
 	Default
 	{
-		+DCALSPRITE
+		+FLATSPRITE
 		+ROLLSPRITE +ROLLCENTER
 		
 		RenderStyle "Shaded"; StencilColor "Black";
