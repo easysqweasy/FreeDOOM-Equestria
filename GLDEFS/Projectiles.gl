@@ -103,7 +103,7 @@ object EquestriaPlasmaBall
 // BFG
 pulselight BFGBALL
 {
-    color 0.2 1.0 0.2
+    color 0.25 0.25 0.75
     size 100
 	secondarysize 150
 	interval 0.1
@@ -112,7 +112,7 @@ pulselight BFGBALL
 
 flickerlight BFGBALL_X1
 {
-    color 0.2 1.0 0.2
+    color 0.25 0.25 0.75
     size 100
     secondarySize 125
     chance 0.5
@@ -121,7 +121,7 @@ flickerlight BFGBALL_X1
 
 flickerlight BFGBALL_X2
 {
-    color 0.3 1.0 0.3
+    color 0.25 0.25 0.75
     size 160
     secondarySize 170
     chance 0.5
@@ -130,7 +130,7 @@ flickerlight BFGBALL_X2
 
 flickerlight BFGBALL_X3
 {
-    color 0.4 1.0 0.4
+    color 0.25 0.25 0.75
     size 180
     secondarySize 200
     chance 0.5
@@ -139,7 +139,7 @@ flickerlight BFGBALL_X3
 
 flickerlight BFGBALL_X4
 {
-    color 0.3 0.7 0.3
+    color 0.25 0.25 0.75
     size 85
     secondarySize 100
     chance 0.5
@@ -148,7 +148,7 @@ flickerlight BFGBALL_X4
 
 flickerlight BFGBALL_X5
 {
-    color 0.1 0.3 0.1
+    color 0.25 0.25 0.75
     size 70
     secondarySize 80
     chance 0.5
