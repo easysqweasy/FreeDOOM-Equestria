@@ -98,7 +98,7 @@ Class DebrisCore : Actor
 #include "Actors/Props/Corpses.zsc"
 #include "Actors/Props/ExplosiveBarrel.zsc"
 
-#include "Actors/Props/Flat_Sprites/Wall_Facility.zsc"
+#include "Actors/Props/Flat_Sprites/Flat_Facility.zsc"
 #include "Actors/Props/Flat_Sprites/Flat_Blood.zsc"
 
 #include "Actors/Props/Light_Sources/Light_Sources.zsc"
