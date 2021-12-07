@@ -64,14 +64,9 @@ object EquestriaTechLamp
 	frame TLMPD { light BIGLAMP }
 }
 
-object EquestriaTechLamp3
+object TallColumn
 {
     frame TLP3A { light BIGLAMP }
-}
-
-object EquestriaTechLamp4
-{
-    frame TLP4A { light BIGLAMP }
 }
 
 //Lampshades
