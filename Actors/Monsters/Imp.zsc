@@ -31,12 +31,16 @@ Class EquestriaImp : DoomImp Replaces DoomImp
 		Loop;*/
 	
 	Melee:
-		TROO EF 6 A_FaceTarget();
+		TROO E 8 A_FaceTarget();
+		TROO F 6 A_FaceTarget();
 		TROO G 6 A_CustomMeleeAttack(3 * random(1, 8), "imp/melee");
+		Goto See;
+		
 	Missile:
 		TROO EF 8 A_FaceTarget();
 		TROO G 6 A_SpawnProjectile("DoomImpBall");
 		Goto See;
+		
 	Pain:
 		TROO H 2;
 		TROO H 2 A_Pain;
@@ -63,11 +67,11 @@ Class EquestriaImp : DoomImp Replaces DoomImp
 			A_XScream();
 			A_NoBlocking();
 		}
-		TROO N 2;
-		TROO O 2 A_XScream();
-		TROO P 2;
-		TROO Q 2 A_NoBlocking();
-		TROO RST 2;
+		TROO N 4;
+		TROO O 4 A_XScream();
+		TROO P 4;
+		TROO Q 4 A_NoBlocking();
+		TROO RST 4;
 		TROO U -1;
 		Stop;
 		
