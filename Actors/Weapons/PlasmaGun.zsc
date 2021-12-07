@@ -218,14 +218,14 @@ Class PlasmaGunLight : Actor replaces PlasmaBall
 Class PlasmaPuff : BerserkPuff
 {	Default{	+NoInteraction	}	}
 
-Class PlasmaSparkle : BFGSparkles
+Class PlasmaSparkle : PuffSparkles
 {
 	Default
 	{
-		-NOGRAVITY
+		+NOINTERACTION
 		Alpha 0.5;
 		Scale 0.5;
-		Speed 1;
+		Speed 4;
 	}
 	States
 	{
