@@ -2,7 +2,7 @@
 
 /* Season 1 */
 
-MAINBASE = "Main Base";
+MAINBASE = "Main Facility";
 NUCLEAR_PLANT = "Nuclear Plant";
 TOXIN_REFINERY = "Toxin Refinery";
 COMMAND_CONTROL = "Command Control";
