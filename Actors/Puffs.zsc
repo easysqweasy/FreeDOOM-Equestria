@@ -50,12 +50,10 @@ Class EquestriaBulletPuff : BulletPuff replaces BulletPuff
 		
 		AttackSound "weapons/ricochet";
 		
-		+FLOORCLIP
 		+NOTELEPORT
 		+FORCEXYBILLBOARD
 		+NOBLOCKMAP
 		-RANDOMIZE
-		+SHOOTABLE
 		+ROLLSPRITE +ROLLCENTER
 	}
 	States
@@ -63,7 +61,6 @@ Class EquestriaBulletPuff : BulletPuff replaces BulletPuff
 	
 	Spawn:
 		TNT1 A 0;
-		TNT1 A 0 A_JumpIfInventory("Vanish", 1, "Vanish");
 		TNT1 A 0 ACS_NamedExecute("CheckLiquid");
 		TNT1 A 0 A_JumpIfInventory("OverLiquid", 1, "Vanish");
 		TNT1 AAA 0 A_SpawnProjectile("PuffSparkles", 0, 0, random (0, 360), CMF_AIMDIRECTION, random (0, 360));
@@ -75,7 +72,6 @@ Class EquestriaBulletPuff : BulletPuff replaces BulletPuff
 		}
 		
 		PUFF A random(5, 8) Bright;
-		//PUFF A 0 A_Recoil(-2);
 		PUFF B 4;
 	
 	Melee:
