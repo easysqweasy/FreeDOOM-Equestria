@@ -43,16 +43,18 @@ Class EquestriaPistol : DoomEquestriaWeapon replaces Pistol
 	
 	Fire:
 		PISG A 4;
-		PISG B 6
+		PISG B 4
 		{
 			A_WeaponOffset(0, 30, WOF_KEEPX | WOF_INTERPOLATE);
-			A_FireBullets (5.6, 0, 1, 5, "Player_BulletPuff", 1, 0, "BulletTracer", -5);
+			A_FireBullets (2, 0, 1, 4, "Player_BulletPuff", 1, 0, "BulletTracer", -5);
 			//A_FireProjectile("BulletTracer", 0, 0, 0, -8);
 			A_StartSound("weapons/pistol", CHAN_WEAPON);
 			A_GunFlash();
 		}
 		PISG C 4 A_WeaponOffset(0, 29, WOF_KEEPX | WOF_INTERPOLATE);
-		PISG D 5
+		PISG D 2;
+		PISG E 3;
+		PISG D 3
 		{
 			A_WeaponOffset(0, 32, WOF_KEEPX | WOF_INTERPOLATE);
 			A_ReFire();
