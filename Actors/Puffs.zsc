@@ -98,8 +98,8 @@ Class EquestriaBulletPuff : BulletPuff replaces BulletPuff
 	}
 }
 
-Class Player_EquestriaBulletPuff : EquestriaBulletPuff
-{	Default	{	AttackSound "";	}	}
+Class Player_BulletPuff : EquestriaBulletPuff
+{	Default	{	AttackSound "weapons/impact";	}	}
 
 Class ChainsawSparkles : PuffSparkles
 {
@@ -111,7 +111,7 @@ Class ChainsawSparkles : PuffSparkles
 	}
 }
 
-Class ChainsawPuff : Player_EquestriaBulletPuff
+Class ChainsawPuff : Player_BulletPuff
 {
 	Default
 	{
@@ -171,6 +171,9 @@ Class ShotgunPuff : EquestriaBulletPuff
 		Wait;
 	}
 }
+
+Class Player_ShotgunPuff : ShotgunPuff
+{	Default	{	AttackSound "weapons/impact";	}	}
 
 Class KickPuff : ShotgunPuff
 {

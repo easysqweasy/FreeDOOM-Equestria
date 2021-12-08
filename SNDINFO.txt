@@ -23,6 +23,9 @@ weapons/ricochet1 RIC1
 weapons/ricochet2 RIC2
 weapons/ricochet3 RIC3
 
+weapons/impact RIC1
+$attenuation weapons/impact 2
+
 /* Pickups */
 
 pickup/skullkey dssklatk
