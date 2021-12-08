@@ -29,7 +29,6 @@ Class CoreSplashChunk : Actor
 		TNT1 A 0
 		{
 			bSPRITEFLIP = randompick(0, 1);
-			A_RadiusGive("Vanish", 5, RGF_OBJECTS, 1);
 		}
 		
 		NSL1 ABCD 6 A_FadeOut(0.05);
@@ -102,7 +101,7 @@ Class DEBloodBase : DEBloodChunk
 		TNT1 A 0
 		{
 			bSPRITEFLIP = randompick(0, 1);
-			A_RadiusGive("Vanish", 5, RGF_OBJECTS, 1);
+			
 		}
 		
 		NSL1 EFG 5;
@@ -131,7 +130,7 @@ Class DELavaBase : CoreSplashBase
 		TNT1 A 0
 		{
 			bSPRITEFLIP = randompick(0, 1);
-			A_RadiusGive("Vanish", 5, RGF_OBJECTS, 1);
+			
 		}
 		
 		NLAV ABCDEF 5;
@@ -156,7 +155,7 @@ Class DENukageBase : CoreSplashBase
 		TNT1 A 0
 		{
 			bSPRITEFLIP = randompick(0, 1);
-			A_RadiusGive("Vanish", 5, RGF_OBJECTS, 1);
+			
 		}
 		
 		NWAT EFGH 5;
@@ -183,7 +182,7 @@ Class DESlimeBrownBase : DESlimeBrownChunk
 		TNT1 A 0
 		{
 			bSPRITEFLIP = randompick(0, 1);
-			A_RadiusGive("Vanish", 5, RGF_OBJECTS, 1);
+			
 		}
 		
 		NSL1 EFG 5;
@@ -224,7 +223,7 @@ Class DESludgeBase : CoreSplashBase
 		TNT1 A 0
 		{
 			bSPRITEFLIP = randompick(0, 1);
-			A_RadiusGive("Vanish", 5, RGF_OBJECTS, 1);
+			
 		}
 		
 		NSL2 EFGH 6;
@@ -260,7 +259,7 @@ Class DEWaterSplashBase : CoreSplashBase
 		TNT1 A 0
 		{
 			bSPRITEFLIP = randompick(0, 1);
-			A_RadiusGive("Vanish", 5, RGF_OBJECTS, 1);
+			
 		}
 		
 		NWAT EFGH 5;
