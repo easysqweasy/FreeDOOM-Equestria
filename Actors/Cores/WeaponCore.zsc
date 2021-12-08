@@ -219,19 +219,23 @@ Class BulletTracer : FastProjectile
 {
 	Default
 	{
+		+MISSILE
+		+NOGRAVITY
 		+DONTSPLASH
 		+NOEXTREMEDEATH
 		+NOPAIN
 		
-		Speed 100;
+		Speed 150;
 		Damage 0;
 		Radius 1; Height 2;
+		RenderStyle "Add";
 	}
 	States
 	{
 	Spawn:
-		NULL A 1 Bright;
-		Loop;
+		TNT1 A 2;
+		PUFF A 1 Bright;
+		Wait;
 	
 	Death:
 		TNT1 A 1;
