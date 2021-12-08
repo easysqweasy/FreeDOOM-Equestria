@@ -87,10 +87,6 @@ Class EquestriaShotgun : DoomEquestriaWeapon replaces Shotgun
 		TNT1 A 4 A_WeaponOffset(0, 45, WOF_KEEPX | WOF_INTERPOLATE);
 		TNT1 A 3 A_WeaponOffset(0, 32, WOF_KEEPX | WOF_INTERPOLATE);
 		Stop;
-		
-	Off:
-		TNT1 A 0;
-		Stop;
 	}
 }
 
