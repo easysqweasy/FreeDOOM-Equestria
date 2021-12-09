@@ -233,7 +233,7 @@ Class BulletTracer : FastProjectile
 		Speed 200;
 		Damage 0;
 		RenderStyle "Add";
-		Alpha 0.5;
+		Alpha 0.75;
 	}
 	States
 	{
