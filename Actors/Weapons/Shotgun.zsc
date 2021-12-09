@@ -3,7 +3,7 @@ Class EquestriaShotgun : DoomEquestriaWeapon replaces Shotgun
 	Default
 	{
 		//$Title Shotgun
-		Weapon.SelectionOrder 4;
+		Weapon.SelectionOrder 5;
 		Weapon.AmmoUse 1;
 		Weapon.AmmoGive 8;
 		Weapon.AmmoType "Shell";

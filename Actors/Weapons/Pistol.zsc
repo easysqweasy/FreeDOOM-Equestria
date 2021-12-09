@@ -3,7 +3,7 @@ Class EquestriaPistol : DoomEquestriaWeapon replaces Pistol
 	Default
 		{
 	//$Title Pistol
-		Weapon.SelectionOrder 5;
+		Weapon.SelectionOrder 6;
 		Weapon.AmmoUse 1;
 		Weapon.AmmoGive 20;
 		Weapon.AmmoType "Clip";
