@@ -6,19 +6,24 @@ StaticText "$VIDEOSETTINGS", "Brick"
 StaticText ""
 
 Option "$CAMRECOILTOGGLE", "CamRecoilToggle", "onoff"
-Option "$AURATOGGLE", "AuraToggle", "onoff"
-StaticText "$WIPWARNING", "yellow"
+//Option "$AURATOGGLE", "AuraToggle", "onoff"
+Option "Muzzle Flash Style", "Muzzle_Alpha", "MuzzleStyle"
 StaticText ""
 	
 StaticText "$GRAPHICSSETTINGS", "Brick"
 StaticText ""
 
 //Option "DOOM Renderer Mode", "ClassicToggle", "onoff"
-Option "$GORETOGGLE", "GoreToggle", "GoreType"
-Option "$GIBSFOREVER", "GibsStayForever", "onoff"
-Option "Flat Floor Decals", "FlatDecals", "onoff"
-Option "Fake Bloom", "FakeBloom", "onoff"
+//Option "$GORETOGGLE", "GoreToggle", "GoreType"
+//Option "$GIBSFOREVER", "GibsStayForever", "onoff"
+//Option "Flat Floor Decals", "FlatDecals", "onoff"
 StaticText ""
+}
+
+OptionValue "MuzzleStyle"
+{
+	0, "Classic Style"
+	1, "Equestria Style" //i know this needs a better name
 }
 
 OptionValue "GoreType"

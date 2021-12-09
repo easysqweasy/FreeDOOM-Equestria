@@ -20,3 +20,8 @@ script "FlatDecals" (void)
 {
     SetResultValue(GetCVar("FlatDecals"));
 }
+
+script "Muzzle_Alpha" (void)
+{
+    SetResultValue(GetCVar("Muzzle_Alpha"));
+}
