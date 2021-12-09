@@ -228,17 +228,18 @@ Class BulletTracer : FastProjectile
 		+DONTSPLASH
 		+NOEXTREMEDEATH
 		+NOPAIN
+		+Bright
 		
 		Speed 200;
 		Damage 0;
 		RenderStyle "Add";
-		Alpha 0.5;
+		Alpha 0.0;
 	}
 	States
 	{
 	Spawn:
 		TNT1 A 2;
-		PUFF A 1 Bright;
+		PUFF A 1;
 		Wait;
 	
 	Death:
