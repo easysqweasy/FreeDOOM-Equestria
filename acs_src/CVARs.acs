@@ -21,7 +21,7 @@ script "FlatDecals" (void)
     SetResultValue(GetCVar("FlatDecals"));
 }
 
-script "Muzzle_Alpha" (void)
+script "Muzzle_Style" (void)
 {
-    SetResultValue(GetCVar("Muzzle_Alpha"));
+    SetResultValue(GetCVar("Muzzle_Style"));
 }
