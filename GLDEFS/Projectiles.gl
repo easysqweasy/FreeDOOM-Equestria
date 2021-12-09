@@ -100,10 +100,24 @@ object EquestriaPlasmaBall
     frame PLSEE { light PLASMA_X4 }
 }
 
+Pulselight PlasmaSparkle
+{
+    color 0.25 0.25 0.75
+    size 5
+    secondarySize 15
+    interval 0.5
+	attenuate 1
+}
+
+object PlasmaSparkle
+{
+	frame PLSS { light PlasmaSparkle }
+}
+
 // BFG
 pulselight BFGBALL
 {
-    color 0.2 1.0 0.2
+    color 0.0 1.0 0.0
     size 100
 	secondarysize 150
 	interval 0.1
@@ -182,3 +196,17 @@ object BFGExtra
     frame BFE2C { light BFGBALL_X4 }
     frame BFE2D { light BFGBALL_X5 }
 }
+
+Pulselight BFGSparkle
+{
+    color 0.2 1.0 0.2
+    size 10
+    secondarySize 20
+    interval 0.5
+	attenuate 1
+}
+
+object BFGSparkles
+{
+	frame APLS { light BFGSparkle }
+}	
