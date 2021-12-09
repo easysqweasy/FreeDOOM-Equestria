@@ -223,8 +223,8 @@ Class BulletTracer : FastProjectile
 {
 	Default
 	{
-		+MISSILE
-		+NOGRAVITY
+		Projectile;
+		
 		+DONTSPLASH
 		+NOEXTREMEDEATH
 		+NOPAIN
