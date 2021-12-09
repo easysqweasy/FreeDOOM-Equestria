@@ -38,13 +38,13 @@ Model "BFGLightning2"
 	FrameIndex NULL A 0 0
 }
 
+
 Model "BulletTracer"
 {
 	Path "Models"
 	Model 0 "Tracer.md3"
 	Skin 0 "Tracer.png"
-	Scale 5 5 5.2
-	FrameIndex NULL A 0 0
-
+	Scale 1.5 0.3 0.5
 	PITCHFROMMOMENTUM
+	FrameIndex PUFF A 0 0
 }

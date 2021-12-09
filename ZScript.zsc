@@ -50,9 +50,10 @@ Class DebrisCore : Actor
 #Include "Actors/Weapons/Pistol.zsc"
 #Include "Actors/Weapons/Shotgun.zsc"
 #Include "Actors/Weapons/SuperShotgun.zsc"
+#Include "Actors/Weapons/Rifle.zsc"
 #Include "Actors/Weapons/Chaingun.zsc"
-#Include "Actors/Weapons/PlasmaGun.zsc"
 #Include "Actors/Weapons/RocketLauncher.zsc"
+#Include "Actors/Weapons/PlasmaGun.zsc"
 #Include "Actors/Weapons/BFG9000.zsc"
 #Include "Actors/Weapons/Chainsaw.zsc"
 #Include "Actors/Weapons/DumbWeapons.zsc"
@@ -96,7 +97,7 @@ Class DebrisCore : Actor
 #include "Actors/Props/Corpses.zsc"
 #include "Actors/Props/ExplosiveBarrel.zsc"
 
-#include "Actors/Props/Flat_Sprites/Wall_Facility.zsc"
+#include "Actors/Props/Flat_Sprites/Flat_Facility.zsc"
 #include "Actors/Props/Flat_Sprites/Flat_Blood.zsc"
 
 #include "Actors/Props/Light_Sources/Light_Sources.zsc"

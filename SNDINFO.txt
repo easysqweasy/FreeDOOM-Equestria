@@ -18,6 +18,9 @@ world/watersplash "Sounds/Terrains/GLOOP.ogg"
 world/lavasizzle "Sounds/Terrains/ACID5.ogg"
 world/sludgegloop "Sounds/Terrains/MUCK5.ogg"
 
+weapons/impact RIC1
+$attenuation weapons/impact 2
+
 /* Pickups */
 
 /*

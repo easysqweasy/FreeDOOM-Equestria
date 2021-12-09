@@ -151,6 +151,10 @@ Class UnicornLostSoul : EquestriaLostSoul
 
 Class NirikLostSoul : EquestriaLostSoul	
 {
+	Default
+	{
+		Health 75;
+	}
 	States
 	{
 	
@@ -159,8 +163,8 @@ Class NirikLostSoul : EquestriaLostSoul
 		Loop;
 		
 	See:
-		SKUL A 3 Bright A_Chase();
-		SKUL A 3 Bright A_Chase (null,null);
+		SKUL A 2 Bright A_Chase();
+		SKUL A 2 Bright A_Chase (null,null);
 		Loop;
 	
 	Missile:

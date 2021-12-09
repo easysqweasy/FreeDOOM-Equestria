@@ -39,6 +39,3 @@ Class InstaKillBall69 : EquestriaBFGBall
 		Translation "112:127=168:191";
 	}
 }
-
-Class DecalPlacer1250 : DoomEquestriaWeapon
-{}

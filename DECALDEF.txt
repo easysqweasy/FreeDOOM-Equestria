@@ -188,6 +188,7 @@ generator EquestriaChainsaw	ChainsawDecal
 generator EquestriaShotgun	ShellDecal
 generator EquestriaSuperShotgun	ShellDecal
 generator EquestriaChaingun	ChipDecal
+generator EquestriaRifle	ChipDecal
 
 ////Monsters
 

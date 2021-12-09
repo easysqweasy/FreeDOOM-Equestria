@@ -1,54 +1,7 @@
 Class DoomEquestriaMonster : Actor
 {
-	double oldVelZ;
 	Default
 	{
-		+CastSpriteShadow;
+		+CastSpriteShadow
 	}
-	
-	override void Tick()
-	{
-		// add the following line to your actor's Tick() method
-		oldVelZ = vel.z;
-		
-		super.Tick();
-	}
-
-	action state A_CheckSolidFooting(StateLabel label, int flags = CSF_ALL)
-	{
-		// small optimization: if our z-vel has changed, we aren't standing on something
-		if (invoker.oldVelZ != vel.z)
-			return null;
-		
-		// are we standing on solid ground?
-		if (abs(pos.z - GetZAt()) <= 1)
-		{
-			if (flags & CSF_SOLIDGROUND)
-				return ResolveState(label);
-		}
-		
-		// are we standing on an actor?
-		bool ok; Actor below;
-		[ok, below] = TestMobjZ(true);
-		if (below)
-		{
-			if (flags & CSF_SOLIDACTORS)
-				return ResolveState(label);
-		}
-		
-		// has our z-velocity not changed?
-		if (vel.z == invoker.oldVelZ && (flags & CSF_SOLIDGROUND))
-			return ResolveState(label);
-		
-		// we aren't standing on anything
-		return null;
-	}
-}
-
-enum ECheckSolidFootingFlags
-{
-    CSF_SOLIDGROUND = 1,
-    CSF_SOLIDACTORS = 2,
-    
-    CSF_ALL = CSF_SOLIDGROUND|CSF_SOLIDACTORS,
 }

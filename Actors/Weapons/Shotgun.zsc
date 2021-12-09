@@ -3,7 +3,7 @@ Class EquestriaShotgun : DoomEquestriaWeapon replaces Shotgun
 	Default
 	{
 		//$Title Shotgun
-		Weapon.SelectionOrder 1300;
+		Weapon.SelectionOrder 5;
 		Weapon.AmmoUse 1;
 		Weapon.AmmoGive 8;
 		Weapon.AmmoType "Shell";
@@ -45,29 +45,17 @@ Class EquestriaShotgun : DoomEquestriaWeapon replaces Shotgun
 		Loop;
 		
 	Fire:
-		TNT1 A 0 A_JumpIf(callACS("CamRecoilToggle")==1,"Fire.CamRecoil");
-		
 		STGN A 7
 		{
-			A_FireBullets (5.6, 0, 7, 5, "ShotgunPuff");
+			A_FireBullets (6, 1, 8, 5, "Player_ShotgunPuff", 1, 0, "BulletTracer", -8);
+			A_GunFlash();
+			A_StartSound ("weapons/shotgf", CHAN_WEAPON);
+			
 			A_FireProjectile("ShotgunLight", 0, 0, 0, -5);
 			A_WeaponOffset(0, 45, WOF_KEEPX | WOF_INTERPOLATE);
-			A_StartSound ("weapons/shotgf", CHAN_WEAPON);
-			A_GunFlash();
-			A_Overlay(3, "Offset");
-		}
-		Goto Pump;
-	
-	Fire.CamRecoil:
-		STGN A 7
-		{
-			A_FireBullets (5.6, 0, 7, 5, "ShotgunPuff");
-			A_FireProjectile("ShotgunLight", 0, 0, 0, -5);
-			A_WeaponOffset(0, 45, WOF_KEEPX | WOF_INTERPOLATE);
-			A_StartSound ("weapons/shotgf", CHAN_WEAPON);
-			A_GunFlash();
-			A_Overlay(3, "Offset");
+
 			A_Overlay(2, "CamRecoil");
+			A_Overlay(3, "Offset");
 		}
 		Goto Pump;
 		
@@ -88,6 +76,8 @@ Class EquestriaShotgun : DoomEquestriaWeapon replaces Shotgun
 		Goto LightDone;
 		
 	CamRecoil:
+		TNT1 A 0 A_JumpIf(callACS("CamRecoilToggle")==0, "Off");
+		
 		TNT1 A 1 A_SetPitch(pitch-3, SPF_INTERPOLATE);
 		TNT1 AAA 1 A_SetPitch(pitch+0.5, SPF_INTERPOLATE);
 		TNT1 AAAAAA 1 A_SetPitch(pitch+0.25, SPF_INTERPOLATE);

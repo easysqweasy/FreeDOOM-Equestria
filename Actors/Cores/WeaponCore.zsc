@@ -212,6 +212,10 @@ Class DoomEquestriaWeapon : Weapon
 		}
 		SHTG A 1;
 		Stop;
+		
+	Off:
+		TNT1 A 0;
+		Stop;
 	}
 }
 
@@ -219,19 +223,24 @@ Class BulletTracer : FastProjectile
 {
 	Default
 	{
+		Projectile;
+		
 		+DONTSPLASH
 		+NOEXTREMEDEATH
 		+NOPAIN
+		+Bright
 		
-		Speed 100;
+		Speed 200;
 		Damage 0;
-		Radius 1; Height 2;
+		RenderStyle "Add";
+		Alpha 0.75;
 	}
 	States
 	{
 	Spawn:
-		NULL A 1 Bright;
-		Loop;
+		TNT1 A 2;
+		PUFF A 1;
+		Wait;
 	
 	Death:
 		TNT1 A 1;
