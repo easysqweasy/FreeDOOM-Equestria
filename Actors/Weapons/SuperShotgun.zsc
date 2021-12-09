@@ -62,7 +62,12 @@ Class EquestriaSuperShotgun : DoomEquestriaWeapon replaces SuperShotgun
 		SHT2 E 3;
 		SHT2 F 4;
 		SHT2 G 5 A_JumpIfNoAmmo("Deselect2");
-		SHT2 H 5 A_OpenShotgun2;
+		SHT2 H 5
+		{
+			A_OpenShotgun2();
+			A_FireProjectile("ShellCasing",90,0,0,-4, FPF_NOAUTOAIM);
+			A_FireProjectile("ShellCasing",45,0,0,-4, FPF_NOAUTOAIM);
+		}
 		SHT2 IJ 4;
 		SHT2 K 6 A_LoadShotgun2;
 		SHT2 LM 4;
