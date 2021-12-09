@@ -7,7 +7,7 @@ StaticText ""
 
 Option "$CAMRECOILTOGGLE", "CamRecoilToggle", "onoff"
 //Option "$AURATOGGLE", "AuraToggle", "onoff"
-Option "Muzzle Flash Style", "Muzzle_Alpha", "MuzzleStyle"
+//Option "Muzzle Flash Style", "Muzzle_Alpha", "MuzzleStyle"
 StaticText ""
 	
 StaticText "$GRAPHICSSETTINGS", "Brick"
