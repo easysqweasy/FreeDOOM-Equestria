@@ -63,7 +63,7 @@ Class BloodExplosionSphere : BloodExplosion
 	{
 	Spawn:
 		TNT1 A 0 A_JumpIf(CallACS("GoreToggle") == 0, "Bye");
-		
+
 		TNT1 AAAAA 0 A_SpawnProjectile("BloodTrail", random(0, 8), 0, random (0, 360), CMF_AIMDIRECTION, random (0, 360));
 		TNT1 BBBBBB 0 A_SpawnProjectile("SmallBloodTrail", random(0, 8), 0, random (0, 360), CMF_AIMDIRECTION, random (0, 360));
 		TNT1 CCCC 0 A_SpawnProjectile("EquestriaBlood", random(0, 8), 0, random (0, 360), CMF_AIMDIRECTION, random (0, 360));
