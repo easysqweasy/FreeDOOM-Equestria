@@ -3,8 +3,11 @@ Class EquestriaRocketLauncher : DoomEquestriaWeapon replaces RocketLauncher
 	Default
 	{
 		//$Title Rocket Launcher
-		Weapon.BobStyle "InverseSmooth";
 		Weapon.SelectionOrder 7;
+		
+		Weapon.BobStyle "InverseSmooth";
+		Weapon.BobRangeX 0.2;
+		
 		Weapon.AmmoUse 1;
 		Weapon.AmmoGive 2;
 		Weapon.AmmoType "RocketAmmo";
