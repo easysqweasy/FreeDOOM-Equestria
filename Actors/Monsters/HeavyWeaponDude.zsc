@@ -14,7 +14,7 @@ Class EquestriaChaingunGuy : ChaingunGuy replaces ChaingunGuy
 		//SeeSound "chainguy/sight";
 		//DeathSound "chainguy/death";
 		//PainSound "chainguy/pain";
-		AttackSound "weapons/chngun";
+		AttackSound "weapons/chaingun";
 		//ActiveSound "chaingun/active";
 		Dropitem "EquestriaChaingun";
 		Species "Couple";
@@ -31,13 +31,13 @@ Class EquestriaChaingunGuy : ChaingunGuy replaces ChaingunGuy
 	
 	Missile:
 		CPOS E 10 A_FaceTarget();
-		CPOS FE 4 Bright A_CPosAttack();
-		CPOS F 1 A_CPosRefire();
+		CPOS F 3 bright A_CustomBulletAttack(20, 10, 1, random(1,5)*3, "BulletPuff", 0, CBAF_NORANDOM, AAPTR_TARGET, "BulletTracer");
+		CPOS E 1 A_CPosRefire();
 		Goto Missile+1;
 	
 	Pain:
-		CPOS G 3;
-		CPOS G 3 A_Pain();
+		CPOS G 2;
+		CPOS G 2 A_Pain();
 		Goto See;
 	
 	Death:
