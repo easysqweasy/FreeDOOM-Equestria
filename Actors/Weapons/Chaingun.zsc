@@ -42,17 +42,17 @@ Class EquestriaChaingun : DoomEquestriaWeapon replaces Chaingun
 		Wait;
 	
 	Fire:
-		CHGG B 4
+		CHGG A 4
 		{
-			A_FireBullets(5.6, 0, -1, 5, "Player_BulletPuff", 1, 0, "BulletTracer", -5);
-			A_GunFlash("Flash2");
+			A_FireBullets(5.6, 2, -1, 5, "Player_BulletPuff", 1, 0, "BulletTracer", -8);
+			A_GunFlash("Flash");
 			A_StartSound("weapons/chngun", CHAN_WEAPON);
 		}
 		
-		CHGG A 4 
+		CHGG B 4
 		{
-			A_FireBullets(5.6, 0, -1, 5, "Player_BulletPuff", 1, 0, "BulletTracer", -5);
-			A_GunFlash("Flash");
+			A_FireBullets(5.6, 2, -1, 5, "Player_BulletPuff", 1, 0, "BulletTracer", -8);
+			A_GunFlash("Flash2");
 			A_StartSound("weapons/chngun", CHAN_WEAPON);
 		}
 
@@ -66,7 +66,6 @@ Class EquestriaChaingun : DoomEquestriaWeapon replaces Chaingun
 		Goto LightDone;
 	
 	Flash2:
-		TNT1 A 2 Bright ;
 		CHGF B 2 Bright A_WeaponOffset(0, 36, WOF_INTERPOLATE);
 		Goto LightDone;
 	
