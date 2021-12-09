@@ -3,6 +3,7 @@ Class EquestriaRifle : DoomEquestriaWeapon
 	Default
 	{
 		Weapon.SelectionOrder 3;
+		Weapon.BobStyle "InverseSmooth";
 		
 		Weapon.AmmoUse 1;
 		Weapon.AmmoGive 30;
@@ -15,22 +16,22 @@ Class EquestriaRifle : DoomEquestriaWeapon
 	States
 	{
 	Ready:
-		CHGG A 1 A_WeaponReady;
+		RFLE A 1 A_WeaponReady;
 		Loop;
 	Deselect:
-		CHGG A 1 A_Lower;
+		RFLE A 1 A_Lower;
 		Loop;
 	Select:
-		CHGG A 1 A_Raise;
+		RFLE A 1 A_Raise;
 		Loop;
 	Fire:
-		CHGG A 4
+		RFLE A 4
 		{
 			A_FireBullets(1, 2, 1, 5, "Player_BulletPuff", 1, 0, "BulletTracer", -8);
 			A_GunFlash("Flash");
 			A_StartSound("weapons/chngun", CHAN_WEAPON);
 		}
-		CHGG B 0 A_ReFire;
+		RFLE B 0 A_ReFire;
 		Goto Ready;
 	Flash:
 		CHGF A 5 Bright A_Light1;
