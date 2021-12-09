@@ -50,7 +50,11 @@ Class EquestriaPistol : DoomEquestriaWeapon replaces Pistol
 			A_StartSound("weapons/pistol", CHAN_WEAPON);
 			A_GunFlash();
 		}
-		PISG C 4 A_WeaponOffset(0, 29, WOF_KEEPX | WOF_INTERPOLATE);
+		PISG C 4
+		{
+			A_WeaponOffset(0, 29, WOF_KEEPX | WOF_INTERPOLATE);
+			A_FireProjectile("BulletCasing",90,0,0,-8, FPF_NOAUTOAIM);
+		}
 		PISG D 2;
 		PISG E 3;
 		PISG D 3
