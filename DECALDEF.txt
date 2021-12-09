@@ -196,4 +196,4 @@ generator EquestriaZombieMan		ChipDecal
 generator EquestriaShotgunGuy		ShellDecal
 generator EquestriaChaingunGuy		ChipDecal
 generator WolfensteinSS		ChipDecal
-generator SpiderMastermind	ChipDecal
+generator EquestriaSpiderMastermind	ShellDecal
