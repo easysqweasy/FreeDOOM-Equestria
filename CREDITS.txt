@@ -58,20 +58,16 @@ Quake Sound Bulb
 
 Sound Caulking by Jaxxon R
 
-= Stuff from other mods =
+3P Sound Pack
 
-Realm 667 Resources
+= Stuff from other mods =
 
 Doom 2 Minor Sprite Fixing Project
 
 Lostres 2.1 by NaturalTvventy (Unused Doom Content by ID Software)
 
-Brutal DOOM (Parts of the kick code)
-
-MetaDOOM (Code references)
-
 David G Sprites
 
 NashDecals (Blood decals)
 
-Kinsie's Test Map: https://forum.zdoom.org/viewtopic.php?t=57221	
+Kinsie's Test Map: https://forum.zdoom.org/viewtopic.php?t=57221
