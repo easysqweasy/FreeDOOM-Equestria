@@ -26,6 +26,8 @@ weapons/ricochet3 RIC3
 weapons/impact RIC1
 $attenuation weapons/impact 2
 
+weapons/chaingun DSCHAIN
+
 /* Pickups */
 
 pickup/skullkey dssklatk
