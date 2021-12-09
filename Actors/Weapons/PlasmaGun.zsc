@@ -4,7 +4,7 @@ Class EquestriaPlasmaGun : DoomEquestriaWeapon replaces PlasmaRifle
 	{
 		//$Title Plasma Gun
 		Weapon.BobStyle "InverseSmooth";
-		Weapon.SelectionOrder 100;
+		Weapon.SelectionOrder 1;
 		Weapon.AmmoUse 1;
 		Weapon.AmmoGive 40;
 		Weapon.AmmoType "Cell";

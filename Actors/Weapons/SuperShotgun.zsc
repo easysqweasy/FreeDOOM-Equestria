@@ -3,7 +3,7 @@ Class EquestriaSuperShotgun : DoomEquestriaWeapon replaces SuperShotgun
 	Default
 	{
 		//$Title Super Shotgun
-		Weapon.SelectionOrder 400;
+		Weapon.SelectionOrder 2;
 		Weapon.AmmoUse 2;
 		Weapon.AmmoGive 8;
 		Weapon.AmmoType "Shell";

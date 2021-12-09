@@ -5,7 +5,7 @@ Class EquestriaChainsaw : DoomEquestriaWeapon replaces Chainsaw
 		//$Title Chainsaw
 		Weapon.BobStyle "InverseSmooth";
 		Weapon.Kickback 0;
-		Weapon.SelectionOrder 2200;
+		Weapon.SelectionOrder 6;
 		Weapon.UpSound "";
 		Weapon.ReadySound "weapons/sawidle";
 		

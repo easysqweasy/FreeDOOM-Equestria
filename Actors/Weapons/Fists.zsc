@@ -6,7 +6,7 @@ Class BerserkFist : DoomEquestriaWeapon
 		Weapon.BobRangeX 1.25; Weapon.BobRangeY 1.50;
 		Weapon.BobStyle "InverseAlpha";
 		
-		Weapon.SelectionOrder 3700;
+		Weapon.SelectionOrder 9;
 		Weapon.Kickback 150;
 		
 		Obituary "$OB_MPFIST";
