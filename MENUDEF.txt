@@ -35,31 +35,18 @@ OptionValue "GoreType"
 
 LISTMENU "MainMenu"
 {
-	IfGame(Doom, Chex)
-	{
-		StaticPatch 94, 2, "M_DOOM"
-		Position 97, 72
-		//Postion 0, 72 (A Morden Look, maybe for a future Doom Equestria
-		IfOption(ReadThis)
-		{
-			Position 97, 64
-		}
-	}
-	IfGame(Strife)
-	{
-		StaticPatch 84, 2, "M_STRIFE"
-		Position 97, 45
-	}
+	Size "Clean"
 	
+	StaticPatch 94, -40, "M_DOOM"
+	Position 97, 72
+	//Postion 0, 72 (A Morden Look, maybe for a future Doom Equestria
+
 	TextItem "$MNU_NEWGAME", "1", "PlayerclassMenu"
 	TextItem "$MNU_OPTIONS", "2", "OptionsMenu"
 	TextItem "$EQUESTRIAOPTIONS", "3", "EquestriaOptions"
 	TextItem "$MNU_LOADGAME", "4", "LoadGameMenu"
 	TextItem "$MNU_SAVEGAME", "5", "SaveGameMenu"
-	IfOption(ReadThis)
-	{
-		TextItem "$MNU_INFO", "r", "ReadThisMenu"
-	}
+	TextItem "$MNU_INFO", "r", "ReadThisMenu"
 	TextItem "$MNU_QUITGAME", "q", "QuitMenu"
 }
 
