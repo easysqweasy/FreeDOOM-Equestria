@@ -130,22 +130,39 @@ decal LowerScorch
 	randomflipx randomflipy
 }
 
-decal Scorch
+decal Scorch1
 {
-	pic SCORCH1
+	pic PLASMA1
 	FullBright
 	shade "Red"
 	randomflipx randomflipy
-	x-scale 0.5 y-scale 0.5
+	Y-Scale 0.75 X-Scale 0.75
 	animator GoAway2
 	lowerdecal LowerScorch
+}
+
+decal Scorch2
+{
+	pic PLASMA2
+	FullBright
+	shade "Red"
+	randomflipx randomflipy
+	Y-Scale 0.75 X-Scale 0.75
+	animator GoAway2
+	lowerdecal LowerScorch
+}
+
+decalgroup Scorch
+{
+	Scorch1		1
+	Scorch2		1
 }
 
 decal BFGScorch1
 {
 	pic BFGSCRC1
 	shade "00 00 00"
-	Y-Scale 1.50 X-Scale 1.50
+	Y-Scale 1.5 X-Scale 1.5
 	randomflipx
 	randomflipy
 }
@@ -154,7 +171,7 @@ decal BFGScorch2
 {
 	pic BFGSCRC2
 	shade "00 00 00"
-	Y-Scale 1.50 X-Scale 1.50
+	Y-Scale 1.5 X-Scale 1.5
 	randomflipx
 	randomflipy
 }
@@ -163,7 +180,7 @@ Decal BFGLightning1
 {
 	pic BFGLITE1
 	shade "80 ff 80"
-	Y-Scale 1.50 X-Scale 1.50
+	Y-Scale 1.5 X-Scale 1.5
 	fullbright
 	randomflipx
 	animator GoAway2
@@ -174,7 +191,7 @@ decal BFGLightning2
 {
 	pic BFGLITE2
 	shade "80 ff 80"
-	Y-Scale 1.50 X-Scale 1.50
+	Y-Scale 1.5 X-Scale 1.5
 	fullbright
 	randomflipy
 	animator GoAway2
@@ -197,3 +214,4 @@ generator EquestriaShotgunGuy		ShellDecal
 generator EquestriaChaingunGuy		ChipDecal
 generator WolfensteinSS		ChipDecal
 generator EquestriaSpiderMastermind	ShellDecal
+generator EquestriaRevenantTracer	RevenantScorch
