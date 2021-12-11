@@ -63,6 +63,7 @@ Class EquestriaShotgun : DoomEquestriaWeapon replaces Shotgun
 		STGN B 2;
 		STGN C 2;
 		STGN DEFGHIJ 1;
+		STGN H 0 A_FireProjectile("ShellCasing",-90,0,0,-8, FPF_NOAUTOAIM);
 		STGN IH 4;
 		STGN GFEDCB 1;
 		STGN A 3;

@@ -21,6 +21,8 @@ world/sludgegloop "Sounds/Terrains/MUCK5.ogg"
 weapons/impact RIC1
 $attenuation weapons/impact 2
 
+weapons/chaingun DSCHAIN
+
 /* Pickups */
 
 /*
@@ -45,11 +47,10 @@ pickup/bfg "Sounds/Pickups/Weapons/GetBFG.wav"
 /* Gore - need sounds that are free to use */
 
 $random gore/impact { gore/impact1 gore/impact2 gore/impact3 }
+
 gore/impact1 GibImp1
 gore/impact2 GibImp2
 gore/impact3 GibImp3
-
-$volume gore/impact 0.5
 
 /* Decorations */
 
