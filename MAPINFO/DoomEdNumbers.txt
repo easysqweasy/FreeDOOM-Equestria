@@ -72,9 +72,9 @@ DoomEdNums
 	15408 = "Stalagtite3"
 	15409 = "Stalagtite4"
 	15410 = "BigStalagtite"
-	15411 = "BigTree3"
-	15412 = "BigTree4"
-	15413 = "BigTree5"
+/*  15411 = 
+	15412 = 
+	15413 = */
 	15414 = "SmallFire1"
 	15415 = "SmallFire2"
 	
