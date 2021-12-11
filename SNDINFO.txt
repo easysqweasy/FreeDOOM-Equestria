@@ -25,10 +25,10 @@ weapons/chaingun DSCHAIN
 
 /* Pickups */
 
-/*
 pickup/skullkey dssklatk
 $pitchset pickup/skullkey 1.5
 
+/*
 pickup/potion "Sounds/Pickups/GetPotion.wav"
 
 pickup/armor1 "Sounds/Pickups/GetArmor1.wav"
@@ -43,8 +43,7 @@ pickup/chaingun "Sounds/Pickups/Weapons/GetChaingun.wav"
 pickup/plasmagun "Sounds/Pickups/Weapons/GetPlasmaGun.wav"
 pickup/rocklauncher "Sounds/Pickups/Weapons/GetRKTLauncher.wav"
 pickup/bfg "Sounds/Pickups/Weapons/GetBFG.wav"
-
-/* Gore - need sounds that are free to use */
+*/
 
 $random gore/impact { gore/impact1 gore/impact2 gore/impact3 }
 
