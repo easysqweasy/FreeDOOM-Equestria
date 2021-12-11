@@ -51,11 +51,10 @@ pickup/bfg "Sounds/Pickups/Weapons/GetBFG.wav"
 /* Gore */
 
 $random gore/impact { gore/impact1 gore/impact2 gore/impact3 }
+
 gore/impact1 GibImp1
 gore/impact2 GibImp2
 gore/impact3 GibImp3
-
-$volume gore/impact 0.5
 
 /* Decorations */
 
