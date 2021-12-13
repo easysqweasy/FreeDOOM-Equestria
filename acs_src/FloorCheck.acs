@@ -3,31 +3,31 @@
 
 script "CheckLiquid" (void)
 {
-	if (CheckActorFloorTexture(0, "FWATER1"))	GiveInventory("OverLiquid", 1);
-	if (CheckActorFloorTexture(0, "FWATER2"))	GiveInventory("OverLiquid", 1);
-	if (CheckActorFloorTexture(0, "FWATER3"))	GiveInventory("OverLiquid", 1);
-	if (CheckActorFloorTexture(0, "FWATER4"))	GiveInventory("OverLiquid", 1);
+	if (CheckActorFloorTexture(0, "FWATER1"))	{	Thing_Remove(0); terminate;	};
+	if (CheckActorFloorTexture(0, "FWATER2"))	{	Thing_Remove(0); terminate;	};
+	if (CheckActorFloorTexture(0, "FWATER3"))	{	Thing_Remove(0); terminate;	};
+	if (CheckActorFloorTexture(0, "FWATER4"))	{	Thing_Remove(0); terminate;	};
 	
-	if (CheckActorFloorTexture(0, "LAVA1"))		GiveInventory("OverLiquid", 1);
-	if (CheckActorFloorTexture(0, "LAVA2"))		GiveInventory("OverLiquid", 1);
-	if (CheckActorFloorTexture(0, "LAVA3"))		GiveInventory("OverLiquid", 1);
-	if (CheckActorFloorTexture(0, "LAVA4"))		GiveInventory("OverLiquid", 1);
+	if (CheckActorFloorTexture(0, "LAVA1"))		{	Thing_Remove(0); terminate;	};
+	if (CheckActorFloorTexture(0, "LAVA2"))		{	Thing_Remove(0); terminate;	};
+	if (CheckActorFloorTexture(0, "LAVA3"))		{	Thing_Remove(0); terminate;	};
+	if (CheckActorFloorTexture(0, "LAVA4"))		{	Thing_Remove(0); terminate;	};
   
-	if (CheckActorFloorTexture(0, "NUKAGE1"))	GiveInventory("OverLiquid", 1);
-	if (CheckActorFloorTexture(0, "NUKAGE2"))	GiveInventory("OverLiquid", 1);
-	if (CheckActorFloorTexture(0, "NUKAGE3"))	GiveInventory("OverLiquid", 1);
+	if (CheckActorFloorTexture(0, "NUKAGE1"))	{	Thing_Remove(0); terminate;	};
+	if (CheckActorFloorTexture(0, "NUKAGE2"))	{	Thing_Remove(0); terminate;	};
+	if (CheckActorFloorTexture(0, "NUKAGE3"))	{	Thing_Remove(0); terminate;	};
   
-	if (CheckActorFloorTexture(0, "SLIME01"))	GiveInventory("OverLiquid", 1);
-	if (CheckActorFloorTexture(0, "SLIME02"))	GiveInventory("OverLiquid", 1);
-	if (CheckActorFloorTexture(0, "SLIME03"))	GiveInventory("OverLiquid", 1);
-	if (CheckActorFloorTexture(0, "SLIME04"))	GiveInventory("OverLiquid", 1);
+	if (CheckActorFloorTexture(0, "SLIME01"))	{	Thing_Remove(0); terminate;	};
+	if (CheckActorFloorTexture(0, "SLIME02"))	{	Thing_Remove(0); terminate;	};
+	if (CheckActorFloorTexture(0, "SLIME03"))	{	Thing_Remove(0); terminate;	};
+	if (CheckActorFloorTexture(0, "SLIME04"))	{	Thing_Remove(0); terminate;	};
 	
-	if (CheckActorFloorTexture(0, "SLIME05"))	GiveInventory("OverLiquid", 1);
-	if (CheckActorFloorTexture(0, "SLIME06"))	GiveInventory("OverLiquid", 1);
-	if (CheckActorFloorTexture(0, "SLIME07"))	GiveInventory("OverLiquid", 1);
-	if (CheckActorFloorTexture(0, "SLIME08"))	GiveInventory("OverLiquid", 1);
+	if (CheckActorFloorTexture(0, "SLIME05"))	{	Thing_Remove(0); terminate;	};
+	if (CheckActorFloorTexture(0, "SLIME06"))	{	Thing_Remove(0); terminate;	};
+	if (CheckActorFloorTexture(0, "SLIME07"))	{	Thing_Remove(0); terminate;	};
+	if (CheckActorFloorTexture(0, "SLIME08"))	{	Thing_Remove(0); terminate;	};
 	
-	if (CheckActorFloorTexture(0, "BLOOD1"))	GiveInventory("OverLiquid", 1);
-	if (CheckActorFloorTexture(0, "BLOOD2"))	GiveInventory("OverLiquid", 1);
-	if (CheckActorFloorTexture(0, "BLOOD3"))	GiveInventory("OverLiquid", 1);
+	if (CheckActorFloorTexture(0, "BLOOD1"))	{	Thing_Remove(0); terminate;	};
+	if (CheckActorFloorTexture(0, "BLOOD2"))	{	Thing_Remove(0); terminate;	};
+	if (CheckActorFloorTexture(0, "BLOOD3"))	{	Thing_Remove(0); terminate;	};
 }
