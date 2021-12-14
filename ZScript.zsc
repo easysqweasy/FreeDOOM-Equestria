@@ -26,6 +26,8 @@ Class DebrisCore : Actor
 	}
 }
 
+#include "Zscript/DeathFade.zsc"
+
 #include "Actors/Tokens.zsc"
 #include "Actors/Player.zsc"
 #include "Actors/TitleMap.zsc"

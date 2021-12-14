@@ -1,6 +1,7 @@
 gameinfo
 {
 	intermissionmusic = "Music/INTER1.mid"
+	AddEventHandlers = "DeathFadeBootstrap"
 }
 
 gamedefaults 
