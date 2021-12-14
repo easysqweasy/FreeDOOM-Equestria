@@ -4,6 +4,8 @@ Class EquestriaDoomPlayer : DoomPlayer replaces DoomPlayer
 	{
 		+CASTSPRITESHADOW;
 		
+		Player.DamageScreenColor "Red", 0.0;
+		
 		Player.ViewHeight 45; Player.AttackZOffset 17;
 		
 		Player.DisplayName "Shainer";
@@ -24,6 +26,11 @@ Class EquestriaDoomPlayer : DoomPlayer replaces DoomPlayer
 	}
 	States
 	{
+	
+	Pain:
+		PLAY G 4 ACS_NamedExecute ("PainVisor");
+		PLAY G 4 A_Pain();
+		Goto Spawn;
 	
 	Death:
 		PLAY H 10;
