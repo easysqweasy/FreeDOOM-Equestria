@@ -44,19 +44,26 @@ Script "BloodOnVisor" (void)
 
 Script "PainVisor" (void)
 {
-	int Health = GetActorProperty (0, APROP_HEALTH);
-	int MaxHealth = GetActorProperty (0, APROP_SPAWNHEALTH);
-	int Damage = GetActorProperty(0, APROP_DAMAGE);
-	
-	int PainOpacity = MaxHealth * Health / MaxHealth;
-	
-	//PrintBold (i:PainOpacity);
-	
 	SetHudSize(960,720,0);
 	
-	SetFont("PAINSCRN");
-	
-	HudMessage(s:"A";HUDMSG_FADEINOUT,9,CR_UNTRANSLATED, 480.0, 360.0, 0.75, 0.0, 0.5);
+	if (GetActorProperty (0, APROP_HEALTH) > 50)
+	{
+		SetFont("PAINSCRN");
+		
+		HudMessage(s:"A";HUDMSG_FADEINOUT,8,CR_UNTRANSLATED, 480.0, 360.0, 0.75, 0.0, 0.5);
+		Terminate;
+	}
+	else if (GetActorProperty (0, APROP_HEALTH) <= 50)
+	{
+		SetFont("BLODSCRN");
+		
+		HudMessage(s:"A";HUDMSG_FADEINOUT,7,CR_UNTRANSLATED, 480.0, 360.0, 0.25, 0.0, 0.25, 0.5);
+		
+		SetFont("PAINSCRN");
+		
+		HudMessage(s:"A";HUDMSG_FADEINOUT,8,CR_UNTRANSLATED, 480.0, 360.0, 0.75, 0.0, 0.25);
+		Terminate;
+	}
 }
 
 /*					Pickups					*/
@@ -76,6 +83,15 @@ Script "Screen_PickPotion" (void)
 	SetHudSize(960,720,0);
 	
 	SetFont("MEDISCRN");
+	
+	HudMessage(s:"A";HUDMSG_FADEINOUT,10,CR_UNTRANSLATED, 480.0, 360.0, 0.1, 0.1, 0.25);
+}
+
+Script "Screen_PickGeneric" (void)
+{
+	SetHudSize(960,720,0);
+	
+	SetFont("GNRCSCRN");
 	
 	HudMessage(s:"A";HUDMSG_FADEINOUT,10,CR_UNTRANSLATED, 480.0, 360.0, 0.1, 0.1, 0.25);
 }
