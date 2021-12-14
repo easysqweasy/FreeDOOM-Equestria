@@ -1,23 +1,131 @@
-OptionMenu "EquestriaOptions"
+LISTMENU "MainMenu"
 {
-Title "$DOOMEQUESTRIAOPTIONS"
-
-StaticText "$VIDEOSETTINGS", "Brick"
-StaticText ""
-
-Option "$CAMRECOILTOGGLE", "CamRecoilToggle", "onoff"
-//Option "$AURATOGGLE", "AuraToggle", "onoff"
-//Option "Muzzle Flash Style", "Muzzle_Alpha", "MuzzleStyle"
-StaticText ""
+	Size "Clean"
 	
-StaticText "$GRAPHICSSETTINGS", "Brick"
-StaticText ""
+	StaticPatchCentered 160, -40, "M_DOOM"
+	Position 95, 72
+	//Postion 0, 72 (A Morden Look, maybe for a future Doom Equestria
 
-//Option "DOOM Renderer Mode", "ClassicToggle", "onoff"
-//Option "$GORETOGGLE", "GoreToggle", "GoreType"
-//Option "$GIBSFOREVER", "GibsStayForever", "onoff"
-//Option "Flat Floor Decals", "FlatDecals", "onoff"
-StaticText ""
+	//by Jimmy in ZDoom forums
+	StaticTextCentered 160, 70, "$MNU_NEWGAME"
+	StaticTextCentered 160, 90, "$MNU_SAVEGAME"
+	StaticTextCentered 160, 110, "$MNU_LOADGAME"
+	StaticTextCentered 160, 130, "$MNU_OPTIONS"
+	StaticTextCentered 160, 150, "$MNU_INFO"
+	StaticTextCentered 160, 170, "$MNU_QUITGAME"
+
+	PatchItem "TNT1A0",	"1", "PlayerclassMenu"
+	Linespacing 20
+	PatchItem "TNT1A0",	"2", "SaveGameMenu"
+	Linespacing 20
+	PatchItem "TNT1A0",	"3", "LoadGameMenu"
+	Linespacing 20
+	PatchItem "TNT1A0",	"4", "EquestriaOptions"
+	Linespacing 20
+	PatchItem "TNT1A0",	"5", "ReadThisMenu"
+	Linespacing 20
+	PatchItem "TNT1A0",	"6", "QuitMenu"
+}
+
+ListMenu "EquestriaOptions"
+{
+	Size "Clean"
+	
+	StaticTextCentered 160, 10,		"Options"
+	Position 65, 72
+
+	StaticTextCentered 160, 70,		"$VIDEOSETTINGS"
+	StaticTextCentered 160, 90,		"$UISETTINGS"
+	StaticTextCentered 160, 110,	"CONTROLS"
+	StaticTextCentered 160, 130,	"$SNDMNU_TITLE"
+	StaticTextCentered 160, 150,	"$MNU_PLAYERSETUP"
+	StaticTextCentered 160, 170,	"$ADVANCEDSETTINGS"
+	
+	PatchItem "TNT1A0",	"1",		"VideoSettings"
+	Linespacing 20
+	PatchItem "TNT1A0",	"2",		"UISettings"
+	Linespacing 20
+	PatchItem "TNT1A0",	"3",		""
+	Linespacing 20
+	PatchItem "TNT1A0",	"4",		"SoundOptions"
+	Linespacing 20
+	PatchItem "TNT1A0",	"5",		"NewPlayerMenu"
+	Linespacing 20
+	PatchItem "TNT1A0",	"6",		"OptionsMenuFull"
+}
+
+OptionMenu "VideoSettings"
+{
+	Title "$VIDEOSETTINGS"
+	
+	StaticText "Display"
+	StaticText ""
+	
+	Option "$VIDMNU_FULLSCREEN",				"vid_fullscreen", "YesNo"
+	Option "$VIDMNU_FORCEASPECT",				"vid_aspect", "ForceRatios"
+	SubMenu "$VIDMNU_RESPRESET",				CustomResolutionMenu
+	Command "$VIDMNU_APPLYW",					"menu_resolution_commit_changes 0"
+	Command "$VIDMNU_APPLYFS",					"menu_resolution_commit_changes 1"
+	StaticText ""
+	
+	Option "$DSPLYMNU_VSYNC",					"vid_vsync", "OnOff"
+	Option "$VIDMNU_MAXFPS",					"vid_maxfps", "MaxFps"
+	Option "$VIDMNU_PREFERBACKEND",				"vid_preferbackend", "PreferBackend"
+	StaticText ""
+	Option "$VIDMNU_RENDERMODE",				"vid_rendermode", "RenderMode"
+	IfOption(Mac)
+	{
+		Option "$VIDMNU_HIDPI",					"vid_hidpi", "YesNo"
+	}
+	IfOption(Windows)
+	{
+		Option "$DSPLYMNU_GPUSWITCH",			vid_gpuswitch, "GPUSwitch"
+	}
+	StaticText "Video"
+	StaticText ""
+	
+	Slider "$DSPLYMNU_FOV",						"fov",							75.0, 120.0, 0.1, 1
+	StaticText ""
+	
+	Option "$DSPLYMNU_CUSTOMINVERTMAP",			"cl_customizeinvulmap", "OnOff"
+	
+	Slider "$DSPLYMNU_GAMMA",					"vid_gamma",					0.75, 3.0, 0.05, 2
+	
+	Option "$DSPLYMNU_SPRITESHADOW",			"r_actorspriteshadow", "SpriteShadowModes"
+	Option "DOOM Renderer Mode",				"ClassicToggle", "onoff"
+	Option "$GORETOGGLE", "GoreToggle",			"GoreType"
+	Option "$GIBSFOREVER", "GibsStayForever",	"onoff"
+	Slider "$DSPLYMNU_QUAKEINTENSITY",			"r_quakeintensity", 0.0, 1.0, 0.05, 2
+}
+
+OptionMenu "UISettings"
+{
+	Title "$UISETTINGS"
+	
+	Option "$CAMRECOILTOGGLE", "CamRecoilToggle", "onoff"
+	//Option "$AURATOGGLE", "AuraToggle", "onoff"
+	//Option "Muzzle Flash Style", "Muzzle_Alpha", "MuzzleStyle"
+	StaticText ""
+	
+	Slider "$DSPLYMNU_MOVEBOB",				"movebob", 0, 1.0, 0.05, 2
+	Slider "$DSPLYMNU_STILLBOB",			"stillbob", 0, 1.0, 0.05, 2
+	Slider "$DSPLYMNU_BOBSPEED",			"wbobspeed", 0, 2.0, 0.1
+	Slider "$DSPLYMNU_BOBFIRE",				"wbobfire", 0, 1.0, 0.1
+	StaticText ""
+	
+	Option "$HUDMNU_CROSSHAIRON",			"crosshairon", "OnOff"
+	Option "$HUDMNU_CROSSHAIR",				"crosshair", "Crosshairs"
+	Option "$HUDMNU_FORCECROSSHAIR",		"crosshairforce", "OnOff"
+	Option "$HUDMNU_GROWCROSSHAIR",			"crosshairgrow", "OnOff"
+	ColorPicker "$HUDMNU_CROSSHAIRCOLOR", 	"crosshaircolor"
+	Option "$HUDMNU_CROSSHAIRHEALTH",		"crosshairhealth", "CrosshairHealthTypes"
+	Slider "$HUDMNU_CROSSHAIRSCALE",		"crosshairscale", 0.0, 2.0, 0.05, 2
+	StaticText ""
+	
+	StaticText "$OPTMNU_HUD"
+	ScaleSlider "$HUDMNU_UISCALE",				"uiscale", 0.0, 8.0, 1.0, "$SCALEMNU_ADAPT"
+	Option "$SCALEMNU_HUDASPECT", 				"hud_aspectscale", "OnOff"
+	Slider "$DSPLYMNU_SCREENSIZE",				"screenblocks", 				3.0, 12.0, 1.0, 0
 }
 
 OptionValue "MuzzleStyle"
@@ -31,23 +139,6 @@ OptionValue "GoreType"
 	0, "DOOM Classic"
 	1, "Quake-ish"
 	2, "$REALISTIC"
-}
-
-LISTMENU "MainMenu"
-{
-	Size "Clean"
-	
-	StaticPatch 94, -40, "M_DOOM"
-	Position 97, 72
-	//Postion 0, 72 (A Morden Look, maybe for a future Doom Equestria
-
-	TextItem "$MNU_NEWGAME", "1", "PlayerclassMenu"
-	TextItem "$MNU_OPTIONS", "2", "OptionsMenu"
-	TextItem "$EQUESTRIAOPTIONS", "3", "EquestriaOptions"
-	TextItem "$MNU_LOADGAME", "4", "LoadGameMenu"
-	TextItem "$MNU_SAVEGAME", "5", "SaveGameMenu"
-	TextItem "$MNU_INFO", "r", "ReadThisMenu"
-	TextItem "$MNU_QUITGAME", "q", "QuitMenu"
 }
 
 /*ListMenu "SkillMenu"

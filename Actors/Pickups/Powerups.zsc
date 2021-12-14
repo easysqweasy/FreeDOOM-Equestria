@@ -26,15 +26,16 @@ Class EquestriaBlurSphere : CustomInventory replaces BlurSphere
 	{
 		Height 40; Radius 20;
 
-		+COUNTITEM;
-		+VISIBILITYPULSE;
-		+FLOATBOB;
-		+NOGRAVITY;
-		+FORCEXYBILLBOARD;
+		+COUNTITEM
+		+VISIBILITYPULSE
+		+FLOATBOB
+		+NOGRAVITY
+		+FORCEXYBILLBOARD
 		
-		+INVENTORY.BIGPOWERUP;
-		+INVENTORY.AUTOACTIVATE;
-		+INVENTORY.ALWAYSPICKUP;
+		+INVENTORY.BIGPOWERUP
+		+INVENTORY.AUTOACTIVATE
+		+INVENTORY.ALWAYSPICKUP
+		+INVENTORY.NOSCREENFLASH
 		
 		Inventory.PickupMessage "$GOTINVIS"; // "Partial Invisibility"
 		Inventory.PickupSound "misc/p_pkup";
@@ -69,14 +70,15 @@ Class EquestriaInvulSphere : CustomInventory replaces InvulnerabilitySphere
 	{
 		Height 40; Radius 20;
 		
-		+COUNTITEM;
-		+FLOATBOB;
-		+NOGRAVITY;
-		+FORCEXYBILLBOARD;
+		+COUNTITEM
+		+FLOATBOB
+		+NOGRAVITY
+		+FORCEXYBILLBOARD
 		
-		+INVENTORY.BIGPOWERUP;
-		+INVENTORY.AUTOACTIVATE;
-		+INVENTORY.ALWAYSPICKUP;
+		+INVENTORY.BIGPOWERUP
+		+INVENTORY.AUTOACTIVATE
+		+INVENTORY.ALWAYSPICKUP
+		+INVENTORY.NOSCREENFLASH
 		
 		Inventory.PickupMessage "$GOTINVUL";
 		Inventory.PickupSound "misc/p_pkup";
@@ -104,13 +106,14 @@ Class EquestriaSoulSphere : CustomInventory replaces Soulsphere
 	{
 		Height 40; Radius 20;
 		
-		+COUNTITEM;
-		+FLOATBOB;
-		+NOGRAVITY;
-		+FORCEXYBILLBOARD;
+		+COUNTITEM
+		+FLOATBOB
+		+NOGRAVITY
+		+FORCEXYBILLBOARD
 		
-		+INVENTORY.AUTOACTIVATE;
-		+INVENTORY.ALWAYSPICKUP;
+		+INVENTORY.AUTOACTIVATE
+		+INVENTORY.ALWAYSPICKUP
+		+INVENTORY.NOSCREENFLASH
 		
 		Inventory.PickupMessage "$GOTSUPER";
 		Inventory.PickupSound "misc/p_pkup";
@@ -125,7 +128,7 @@ Class EquestriaSoulSphere : CustomInventory replaces Soulsphere
 		{
 			A_SpawnItem("SoulSpherePickup", 0, 10);
 			A_GiveInventory("SoulSphereHealth");
-			A_SetBlend("Blue", 0.5, 16);
+			ACS_NamedExecute("Screen_PickSoul");
 		}
 		Stop;
 	}
@@ -137,7 +140,7 @@ Class SoulSphereHealth : Health
 	{
 		Inventory.Amount 100;
 		Inventory.MaxAmount 200;
-		+INVENTORY.ALWAYSPICKUP;
+		+INVENTORY.ALWAYSPICKUP
 	}
 }
 
@@ -149,13 +152,14 @@ Class EquestriaMegaSphere : CustomInventory replaces Megasphere
 	{
 		Height 40; Radius 20;
 		
-		+COUNTITEM;
-		+FLOATBOB;
-		+NOGRAVITY;
-		+FORCEXYBILLBOARD;
+		+COUNTITEM
+		+FLOATBOB
+		+NOGRAVITY
+		+FORCEXYBILLBOARD
 		
-		+INVENTORY.AUTOACTIVATE;
-		+INVENTORY.ALWAYSPICKUP;
+		+INVENTORY.AUTOACTIVATE
+		+INVENTORY.ALWAYSPICKUP
+		+INVENTORY.NOSCREENFLASH
 		
 		Inventory.PickupMessage "$GOTMSPHERE";
 		Inventory.PickupSound "misc/p_pkup";
@@ -166,8 +170,8 @@ Class EquestriaMegaSphere : CustomInventory replaces Megasphere
 		MEGA ABCD 6 Bright;
 		Loop;
 	Pickup:
-		TNT1 A 0 A_GiveInventory("BlueArmorForMegasphere");
-		TNT1 A 0 A_GiveInventory("MegasphereHealth");
+		TNT1 A 0 A_GiveInventory("BlueArmorForMegasphere", 1);
+		TNT1 A 0 A_GiveInventory("MegasphereHealth", 1);
 		TNT1 A 0 A_SetBlend("Beige", 0.5, 16);
 		Stop;
 	}
@@ -179,8 +183,9 @@ Class EquestriaBerserk : Berserk replaces Berserk
 {
 	Default
 	{
-		+COUNTITEM;
-		+INVENTORY.ALWAYSPICKUP;
+		+COUNTITEM
+		+INVENTORY.ALWAYSPICKUP
+		+INVENTORY.NOSCREENFLASH
 		Inventory.PickupMessage "$GOTBERSERK";
 		Inventory.PickupSound "*xdeath";
 	}
@@ -227,7 +232,7 @@ Class BerserkEffect : PowerupGiver
 
 //Unholy Bible
 
-Class DemonicBible : PowerMorph replaces UnholyBible //Madness Shock, Demon Rune
+Class DemonicBible : PowerMorph replaces UnholyBible //Madness Shock, Demon Rune, Baroness of Hell
 {
 	Default
 	{

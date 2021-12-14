@@ -1,0 +1,97 @@
+#library "ScreenEffects"
+#include "zcommon.acs"
+
+Script "LowHealth" ENTER
+{
+	if (GetActorProperty (0, APROP_HEALTH) <= 25 && !CheckInventory("LowHealthCheck"))
+	{
+		GiveInventory("LowHealthCheck", 1);
+		
+		ACS_NamedExecute("BloodOnVisor", 0);
+		
+		//SetHudSize(430,300,0);
+		
+		SetFont("BIGFONT");
+		
+		HudMessage(l:"LOWHEALTH"; HUDMSG_TYPEON, 99, CR_RED, 1.5, 1.0, 3.5, 0.25, 1.0);
+	}
+	else if (GetActorProperty (0, APROP_HEALTH) > 25 && CheckInventory("LowHealthCheck"))
+	{
+		TakeInventory("LowHealthCheck", 999);
+	}
+	Delay (1);
+	
+	Restart;
+}
+
+Script "BloodOnVisor" (void)
+{
+	if (GetActorProperty (0, APROP_HEALTH) > 25)
+	{
+		Delay (1);
+		Terminate;
+	}
+	SetHudSize(960,720,0);
+	
+	SetFont("BLODSCRN");
+	
+	HudMessage(s:"A";HUDMSG_FADEINOUT,9,CR_UNTRANSLATED, 480.0, 360.0, 0.25, 0.0, 0.1);
+
+	Delay (1);
+	
+	Restart;
+}
+
+Script "PainVisor" (void)
+{
+	SetHudSize(960,720,0);
+	
+	if (GetActorProperty (0, APROP_HEALTH) > 50)
+	{
+		SetFont("PAINSCRN");
+		
+		HudMessage(s:"A";HUDMSG_FADEINOUT,8,CR_UNTRANSLATED, 480.0, 360.0, 0.75, 0.0, 0.5);
+		Terminate;
+	}
+	else if (GetActorProperty (0, APROP_HEALTH) <= 50)
+	{
+		SetFont("BLODSCRN");
+		
+		HudMessage(s:"A";HUDMSG_FADEINOUT,7,CR_UNTRANSLATED, 480.0, 360.0, 0.25, 0.0, 0.25, 0.5);
+		
+		SetFont("PAINSCRN");
+		
+		HudMessage(s:"A";HUDMSG_FADEINOUT,8,CR_UNTRANSLATED, 480.0, 360.0, 0.75, 0.0, 0.25);
+		Terminate;
+	}
+}
+
+/*					Pickups					*/
+
+Script "Screen_PickSoul" (void)
+{
+	SetHudSize(960,720,0);
+	
+	SetFont("SOULSCRN");
+	
+	HudMessage(s:"A";HUDMSG_FADEINOUT,10,CR_UNTRANSLATED, 480.0, 360.0, 0.1, 0.1, 0.25);
+	HudMessage(s:"A";HUDMSG_FADEINOUT,11,CR_UNTRANSLATED, 480.0, 360.0, 0.9, 0.9, 0.75);
+}
+
+Script "Screen_PickPotion" (void)
+{
+	SetHudSize(960,720,0);
+	
+	SetFont("MEDISCRN");
+	
+	HudMessage(s:"A";HUDMSG_FADEINOUT,10,CR_UNTRANSLATED, 480.0, 360.0, 0.1, 0.1, 0.25);
+}
+
+Script "Screen_PickGeneric" (void)
+{
+	SetHudSize(960,720,0);
+	
+	SetFont("GNRCSCRN");
+	
+	HudMessage(s:"A";HUDMSG_FADEINOUT,10,CR_UNTRANSLATED, 480.0, 360.0, 0.1, 0.1, 0.25);
+}

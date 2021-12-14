@@ -106,7 +106,7 @@ Class EquestriaRocket : Rocket replaces Rocket
 			
 			A_QuakeEx(4, 4, 4, 16, 0, 200, "", QF_SCALEDOWN, 0,0,0, 1);
 			
-			A_SpawnItemEx("ScorchFloorCheck", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION);
+			A_SpawnItemEx("ScorchFloorCheck");
 		}
 		
 		TNT1 AAAA 0 A_SpawnProjectile("SplashSmoke", random(-20, 20), random (-40, 40), random (0, 360), CMF_AIMDIRECTION, random(0, -90));

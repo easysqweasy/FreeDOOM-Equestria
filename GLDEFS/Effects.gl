@@ -65,3 +65,18 @@ object ShotgunPuff
 {
     frame PUFFA { light BPUFF1 }
 }
+
+Object ChainsawPuff
+{
+    frame PUFFA { light BPUFF1 }
+}
+	
+Object Player_BulletPuff
+{
+    frame PUFFA { light BPUFF1 }
+}
+
+Object Player_ShotgunPuff
+{
+    frame PUFFA { light BPUFF1 }
+}

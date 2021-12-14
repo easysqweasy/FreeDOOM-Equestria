@@ -216,7 +216,7 @@ Class PlasmaGunLight : Actor replaces PlasmaBall
 }
 
 Class PlasmaPuff : BerserkPuff
-{	Default{	+NoInteraction	}	}
+{	Default{	Alpha 0.6; +NoInteraction	}	}
 
 Class PlasmaSparkle : PuffSparkles
 {

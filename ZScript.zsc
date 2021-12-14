@@ -22,7 +22,6 @@ Class DebrisCore : Actor
 		-ACTIVATEIMPACT
 		-ACTIVATEPCROSS
 		
-		Radius 1; Height 1;
 		Damage 0;
 	}
 }

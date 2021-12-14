@@ -5,5 +5,5 @@ map TITLEMAP ""
 
 map DoomTest "Kinsie's Test Map"
 {
-	BorderTexture = "Flats/PlaceHolders/MSSINGT1.png"
+	BorderTexture = "MSSINGT1"
 }

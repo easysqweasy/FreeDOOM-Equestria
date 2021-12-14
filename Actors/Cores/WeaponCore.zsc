@@ -234,6 +234,8 @@ Class BulletTracer : FastProjectile
 		Damage 0;
 		RenderStyle "Add";
 		Alpha 0.75;
+		
+		Height 4; Radius 2;
 	}
 	States
 	{
