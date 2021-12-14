@@ -125,7 +125,7 @@ Class EquestriaSoulSphere : CustomInventory replaces Soulsphere
 		{
 			A_SpawnItem("SoulSpherePickup", 0, 10);
 			A_GiveInventory("SoulSphereHealth");
-			A_SetBlend("Blue", 0.5, 16);
+			ACS_NamedExecute("Screen_PickSoul");
 		}
 		Stop;
 	}
