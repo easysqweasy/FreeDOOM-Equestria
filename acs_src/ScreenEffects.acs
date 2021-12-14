@@ -13,7 +13,7 @@ Script "LowHealth" ENTER
 		
 		SetFont("BIGFONT");
 		
-		HudMessage(l:"LOWHEALTH"; HUDMSG_TYPEON, 99, CR_RED, 1.5, 1.0, 3.5, 0.1, 1.0);
+		HudMessage(l:"LOWHEALTH"; HUDMSG_TYPEON, 99, CR_RED, 1.5, 1.0, 3.5, 0.25, 1.0);
 	}
 	else if (GetActorProperty (0, APROP_HEALTH) > 25 && CheckInventory("LowHealthCheck"))
 	{
@@ -35,9 +35,47 @@ Script "BloodOnVisor" (void)
 	
 	SetFont("BLODSCRN");
 	
-	HudMessage(s:"A";HUDMSG_FADEINOUT,9,CR_UNTRANSLATED, 480.0, 360.0, 0.5, 0.0, 0.5);
+	HudMessage(s:"A";HUDMSG_FADEINOUT,9,CR_UNTRANSLATED, 480.0, 360.0, 0.25, 0.0, 0.1);
 
 	Delay (1);
 	
 	Restart;
+}
+
+Script "PainVisor" (void)
+{
+	int Health = GetActorProperty (0, APROP_HEALTH);
+	int MaxHealth = GetActorProperty (0, APROP_SPAWNHEALTH);
+	int Damage = GetActorProperty(0, APROP_DAMAGE);
+	
+	int PainOpacity = MaxHealth * Health / MaxHealth;
+	
+	//PrintBold (i:PainOpacity);
+	
+	SetHudSize(960,720,0);
+	
+	SetFont("PAINSCRN");
+	
+	HudMessage(s:"A";HUDMSG_FADEINOUT,9,CR_UNTRANSLATED, 480.0, 360.0, 0.75, 0.0, 0.5);
+}
+
+/*					Pickups					*/
+
+Script "Screen_PickSoul" (void)
+{
+	SetHudSize(960,720,0);
+	
+	SetFont("SOULSCRN");
+	
+	HudMessage(s:"A";HUDMSG_FADEINOUT,10,CR_UNTRANSLATED, 480.0, 360.0, 0.1, 0.1, 0.25);
+	HudMessage(s:"A";HUDMSG_FADEINOUT,11,CR_UNTRANSLATED, 480.0, 360.0, 0.9, 0.9, 0.75);
+}
+
+Script "Screen_PickPotion" (void)
+{
+	SetHudSize(960,720,0);
+	
+	SetFont("MEDISCRN");
+	
+	HudMessage(s:"A";HUDMSG_FADEINOUT,10,CR_UNTRANSLATED, 480.0, 360.0, 0.1, 0.1, 0.25);
 }

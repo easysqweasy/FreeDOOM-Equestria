@@ -26,15 +26,16 @@ Class EquestriaBlurSphere : CustomInventory replaces BlurSphere
 	{
 		Height 40; Radius 20;
 
-		+COUNTITEM;
-		+VISIBILITYPULSE;
-		+FLOATBOB;
-		+NOGRAVITY;
-		+FORCEXYBILLBOARD;
+		+COUNTITEM
+		+VISIBILITYPULSE
+		+FLOATBOB
+		+NOGRAVITY
+		+FORCEXYBILLBOARD
 		
-		+INVENTORY.BIGPOWERUP;
-		+INVENTORY.AUTOACTIVATE;
-		+INVENTORY.ALWAYSPICKUP;
+		+INVENTORY.BIGPOWERUP
+		+INVENTORY.AUTOACTIVATE
+		+INVENTORY.ALWAYSPICKUP
+		+INVENTORY.NOSCREENFLASH
 		
 		Inventory.PickupMessage "$GOTINVIS"; // "Partial Invisibility"
 		Inventory.PickupSound "misc/p_pkup";
@@ -69,14 +70,15 @@ Class EquestriaInvulSphere : CustomInventory replaces InvulnerabilitySphere
 	{
 		Height 40; Radius 20;
 		
-		+COUNTITEM;
-		+FLOATBOB;
-		+NOGRAVITY;
-		+FORCEXYBILLBOARD;
+		+COUNTITEM
+		+FLOATBOB
+		+NOGRAVITY
+		+FORCEXYBILLBOARD
 		
-		+INVENTORY.BIGPOWERUP;
-		+INVENTORY.AUTOACTIVATE;
-		+INVENTORY.ALWAYSPICKUP;
+		+INVENTORY.BIGPOWERUP
+		+INVENTORY.AUTOACTIVATE
+		+INVENTORY.ALWAYSPICKUP
+		+INVENTORY.NOSCREENFLASH
 		
 		Inventory.PickupMessage "$GOTINVUL";
 		Inventory.PickupSound "misc/p_pkup";
@@ -104,13 +106,14 @@ Class EquestriaSoulSphere : CustomInventory replaces Soulsphere
 	{
 		Height 40; Radius 20;
 		
-		+COUNTITEM;
-		+FLOATBOB;
-		+NOGRAVITY;
-		+FORCEXYBILLBOARD;
+		+COUNTITEM
+		+FLOATBOB
+		+NOGRAVITY
+		+FORCEXYBILLBOARD
 		
-		+INVENTORY.AUTOACTIVATE;
-		+INVENTORY.ALWAYSPICKUP;
+		+INVENTORY.AUTOACTIVATE
+		+INVENTORY.ALWAYSPICKUP
+		+INVENTORY.NOSCREENFLASH
 		
 		Inventory.PickupMessage "$GOTSUPER";
 		Inventory.PickupSound "misc/p_pkup";
@@ -137,7 +140,7 @@ Class SoulSphereHealth : Health
 	{
 		Inventory.Amount 100;
 		Inventory.MaxAmount 200;
-		+INVENTORY.ALWAYSPICKUP;
+		+INVENTORY.ALWAYSPICKUP
 	}
 }
 
@@ -149,13 +152,14 @@ Class EquestriaMegaSphere : CustomInventory replaces Megasphere
 	{
 		Height 40; Radius 20;
 		
-		+COUNTITEM;
-		+FLOATBOB;
-		+NOGRAVITY;
-		+FORCEXYBILLBOARD;
+		+COUNTITEM
+		+FLOATBOB
+		+NOGRAVITY
+		+FORCEXYBILLBOARD
 		
-		+INVENTORY.AUTOACTIVATE;
-		+INVENTORY.ALWAYSPICKUP;
+		+INVENTORY.AUTOACTIVATE
+		+INVENTORY.ALWAYSPICKUP
+		+INVENTORY.NOSCREENFLASH
 		
 		Inventory.PickupMessage "$GOTMSPHERE";
 		Inventory.PickupSound "misc/p_pkup";
@@ -179,8 +183,9 @@ Class EquestriaBerserk : Berserk replaces Berserk
 {
 	Default
 	{
-		+COUNTITEM;
-		+INVENTORY.ALWAYSPICKUP;
+		+COUNTITEM
+		+INVENTORY.ALWAYSPICKUP
+		+INVENTORY.NOSCREENFLASH
 		Inventory.PickupMessage "$GOTBERSERK";
 		Inventory.PickupSound "*xdeath";
 	}
