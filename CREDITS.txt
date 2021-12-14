@@ -71,3 +71,5 @@ David G Sprites
 NashDecals (Blood decals)
 
 Kinsie's Test Map: https://forum.zdoom.org/viewtopic.php?t=57221
+
+"Universal" fade-to-black on death : https://forum.zdoom.org/viewtopic.php?f=46&t=65028
