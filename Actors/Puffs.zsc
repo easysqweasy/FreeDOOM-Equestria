@@ -54,6 +54,7 @@ Class EquestriaBulletPuff : BulletPuff replaces BulletPuff
 		+FORCEXYBILLBOARD
 		-RANDOMIZE
 		+ROLLSPRITE +ROLLCENTER
+		-ALLOWPARTICLES
 	}
 	States
 	{
@@ -92,7 +93,7 @@ Class EquestriaBulletPuff : BulletPuff replaces BulletPuff
 }
 
 Class Player_BulletPuff : EquestriaBulletPuff
-{	Default	{	AttackSound "weapons/impact";	}	}
+{	Default	{	AttackSound "";	}	}
 
 Class ChainsawSparkles : PuffSparkles
 {
@@ -137,7 +138,6 @@ Class ShotgunPuff : EquestriaBulletPuff
 	}
 	States
 	{
-	
 	Spawn:
 		TNT1 A 0 NoDelay ACS_NamedExecute("CheckLiquid");
 		TNT1 A 0
@@ -162,7 +162,7 @@ Class ShotgunPuff : EquestriaBulletPuff
 }
 
 Class Player_ShotgunPuff : ShotgunPuff
-{	Default	{	AttackSound "weapons/impact";	}	}
+{	Default	{	AttackSound "";	}	}
 
 Class KickPuff : ShotgunPuff
 {
