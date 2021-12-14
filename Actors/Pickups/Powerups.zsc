@@ -170,8 +170,8 @@ Class EquestriaMegaSphere : CustomInventory replaces Megasphere
 		MEGA ABCDCBA 6 Bright;
 		Loop;
 	Pickup:
-		TNT1 A 0 A_GiveInventory("BlueArmorForMegasphere");
-		TNT1 A 0 A_GiveInventory("MegasphereHealth");
+		TNT1 A 0 A_GiveInventory("BlueArmorForMegasphere", 1);
+		TNT1 A 0 A_GiveInventory("MegasphereHealth", 1);
 		TNT1 A 0 A_SetBlend("Beige", 0.5, 16);
 		Stop;
 	}
@@ -232,7 +232,7 @@ Class BerserkEffect : PowerupGiver
 
 //Unholy Bible
 
-Class DemonicBible : PowerMorph replaces UnholyBible //Madness Shock, Demon Rune
+Class DemonicBible : PowerMorph replaces UnholyBible //Madness Shock, Demon Rune, Baroness of Hell
 {
 	Default
 	{
