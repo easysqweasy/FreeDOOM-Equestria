@@ -45,31 +45,3 @@ Script "CheckBrutalDoom" enter
 		HUDMSG_TYPEON | HUDMSG_PLAIN, 100, CR_ICE, 1.5, 0.8, 0);
 	}
 }
-
-Script "LowHealth" ENTER
-{
-	if (GetActorProperty (0, APROP_HEALTH) <= 25 && !CheckInventory("LowHealthCheck"))
-	{
-		GiveInventory("LowHealthCheck", 1);
-		
-		SetHudSize(430,300,0);
-		
-		SetFont("BIGFONT");
-		
-		HudMessage(l:"LOWHEALTH"; HUDMSG_TYPEON, 99, CR_RED, 215.0, 250.0, 5.0, 0.05, 1.0);
-	}
-	Delay (1);
-	
-	Restart;
-}
-
-Script "LowHealthClear" ENTER
-{
-	if (GetActorProperty (0, APROP_HEALTH) > 25 && CheckInventory("LowHealthCheck"))
-	{
-		TakeInventory("LowHealthCheck", 999);
-	}
-	Delay (1);
-	
-	Restart;
-}
