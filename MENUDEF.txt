@@ -103,7 +103,7 @@ ListMenu "EpisodeMenu"
 
 ListMenu "SkillMenu"
 {
-	StaticPatchCentered 160, 14, "$M_NEWGAME"
+	StaticPatchCentered 160, 14, "M_NGAME"
 	linespacing 16
 		
 	StaticPatchCentered 160, 38, "M_SKILL"
