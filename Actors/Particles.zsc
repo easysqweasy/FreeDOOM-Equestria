@@ -33,7 +33,7 @@ Class Smoke : Trails replaces RocketSmokeTrail
 {
 	Default
 	{
-		Height 1; Radius 2;
+		Height 1; Radius 1;
 		
 		Decal "Scorch";
 		
