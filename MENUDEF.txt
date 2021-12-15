@@ -1,30 +1,46 @@
-LISTMENU "MainMenu"
+ListMenu "MainMenu"
 {
 	Size "Clean"
 	
 	StaticPatchCentered 160, -40, "M_DOOM"
-	Position 95, 72
+
+	//Original code by Jimmy in ZDoom forums
+	StaticTextCentered 160, 75, "$SINGLEPLAYER"
+	StaticTextCentered 160, 100, "$MNU_OPTIONS"
+	/*StaticPatchCentered 75, 128, "Notlog"
+	StaticTextCentered 160, 125, "Bethesda.net" Why not?*/
+	StaticTextCentered 160, 125, "$MNU_INFO"
+	StaticTextCentered 160, 150, "$MNU_QUITGAME"
+
+	Linespacing 25
+	Position 80, 75
+	PatchItem "TNT1A0",	"1", "PlayMenu"
+	Position 115, 100
+	PatchItem "TNT1A0",	"3", "EquestriaOptions"
+	Position 135, 125
+	PatchItem "TNT1A0",	"4", "ReadThisMenu"
+	Position 105, 150
+	PatchItem "TNT1A0",	"5", "QuitMenu"
+	
+	//Dumb old note
 	//Postion 0, 72 (A Morden Look, maybe for a future Doom Equestria
+}
 
-	//by Jimmy in ZDoom forums
-	StaticTextCentered 160, 70, "$MNU_NEWGAME"
-	StaticTextCentered 160, 90, "$MNU_SAVEGAME"
-	StaticTextCentered 160, 110, "$MNU_LOADGAME"
-	StaticTextCentered 160, 130, "$MNU_OPTIONS"
-	StaticTextCentered 160, 150, "$MNU_INFO"
-	StaticTextCentered 160, 170, "$MNU_QUITGAME"
-
+ListMenu "PlayMenu"
+{
+	StaticTextCentered 160, 45, "$SINGLEPLAYER"
+	
+	StaticTextCentered 160, 80, "$NEWNEWGAME"
+	StaticTextCentered 160, 105, "$MNU_SAVEGAME"
+	StaticTextCentered 160, 130, "$MNU_LOADGAME"
+	
+	Linespacing 25
+	Position 105, 80
 	PatchItem "TNT1A0",	"1", "PlayerclassMenu"
-	Linespacing 20
-	PatchItem "TNT1A0",	"2", "SaveGameMenu"
-	Linespacing 20
-	PatchItem "TNT1A0",	"3", "LoadGameMenu"
-	Linespacing 20
-	PatchItem "TNT1A0",	"4", "EquestriaOptions"
-	Linespacing 20
-	PatchItem "TNT1A0",	"5", "ReadThisMenu"
-	Linespacing 20
-	PatchItem "TNT1A0",	"6", "QuitMenu"
+	Position 100, 105
+	PatchItem "TNT1A0",	"1", "SaveGameMenu"
+	Position 100, 130
+	PatchItem "TNT1A0",	"1", "LoadGameMenu"
 }
 
 ListMenu "EquestriaOptions"
@@ -32,26 +48,68 @@ ListMenu "EquestriaOptions"
 	Size "Clean"
 	
 	StaticTextCentered 160, 10,		"Options"
-	Position 65, 72
 
-	StaticTextCentered 160, 70,		"$VIDEOSETTINGS"
-	StaticTextCentered 160, 90,		"$UISETTINGS"
-	StaticTextCentered 160, 110,	"CONTROLS"
-	StaticTextCentered 160, 130,	"$SNDMNU_TITLE"
-	StaticTextCentered 160, 150,	"$MNU_PLAYERSETUP"
-	StaticTextCentered 160, 170,	"$ADVANCEDSETTINGS"
+	StaticTextCentered 160, 50,		"$AUDIOSETTINGS"
+	StaticTextCentered 160, 75,		"$VIDEOSETTINGS"
+	StaticTextCentered 160, 100,	"$MNU_PLAYERSETUP"
+	StaticTextCentered 160, 125,	"$UISETTINGS"
+	StaticTextCentered 160, 150,	"$CONTROLSETTINGS"
+	StaticTextCentered 160, 175,	"$ADVANCEDSETTINGS"
 	
-	PatchItem "TNT1A0",	"1",		"VideoSettings"
-	Linespacing 20
-	PatchItem "TNT1A0",	"2",		"UISettings"
-	Linespacing 20
-	PatchItem "TNT1A0",	"3",		""
-	Linespacing 20
-	PatchItem "TNT1A0",	"4",		"SoundOptions"
-	Linespacing 20
-	PatchItem "TNT1A0",	"5",		"NewPlayerMenu"
-	Linespacing 20
+	Linespacing 25
+	Position 130, 50
+	PatchItem "TNT1A0",	"1",		"SoundOptions"
+	Position 130, 75
+	PatchItem "TNT1A0",	"2",		"VideoSettings"
+	Position 85, 100
+	PatchItem "TNT1A0",	"3",		"NewPlayerMenu"
+	Position 75, 125
+	PatchItem "TNT1A0",	"4",		"UISettings"
+	Position 45, 150
+	PatchItem "TNT1A0",	"5",		"ControlSettings"
+	Position 95, 175
 	PatchItem "TNT1A0",	"6",		"OptionsMenuFull"
+}
+
+ListMenu "ControlSettings"
+{
+	Size "Clean"
+	
+	StaticTextCentered 160, 10,		"$CONTROLSETTINGS"
+
+	StaticTextCentered 160, 80,		"$OPTMNU_CONTROLS"
+	StaticTextCentered 160, 105,	"$OPTMNU_MOUSE"
+	StaticTextCentered 160, 130,	"$OPTMNU_JOYSTICK"
+	
+	Linespacing 20
+	Position 90, 80
+	PatchItem "TNT1A0",	"1",		"CustomizeControls"
+	Position 75, 105
+	PatchItem "TNT1A0",	"2",		"MouseOptions"
+	Position 45, 130
+	PatchItem "TNT1A0",	"3",		"JoystickOptions"
+}
+
+ListMenu "EpisodeMenu"
+{
+	Size "Clean"
+
+	NetgameMessage "$NEWGAME"
+
+	Position 48, 63
+	StaticPatchCentered 160, 38, "M_EPISOD"
+	linespacing 16
+}
+
+ListMenu "SkillMenu"
+{
+	StaticPatchCentered 160, 14, "$M_NEWGAME"
+	linespacing 16
+		
+	StaticPatchCentered 160, 38, "M_SKILL"
+	Position 48, 63
+		
+	CenterMenu
 }
 
 OptionMenu "VideoSettings"
@@ -81,30 +139,40 @@ OptionMenu "VideoSettings"
 	{
 		Option "$DSPLYMNU_GPUSWITCH",			vid_gpuswitch, "GPUSwitch"
 	}
+	
+	StaticText ""
 	StaticText "Video"
 	StaticText ""
 	
 	Slider "$DSPLYMNU_FOV",						"fov",							75.0, 120.0, 0.1, 1
 	StaticText ""
 	
-	Option "$DSPLYMNU_CUSTOMINVERTMAP",			"cl_customizeinvulmap", "OnOff"
+	//Option "$DSPLYMNU_CUSTOMINVERTMAP",			"cl_customizeinvulmap", "OnOff"
 	
 	Slider "$DSPLYMNU_GAMMA",					"vid_gamma",					0.75, 3.0, 0.05, 2
+	Slider "$DSPLYMNU_QUAKEINTENSITY",			"r_quakeintensity", 0.0, 1.0, 0.05, 2
+	StaticText ""
 	
-	Option "$DSPLYMNU_SPRITESHADOW",			"r_actorspriteshadow", "SpriteShadowModes"
 	Option "DOOM Renderer Mode",				"ClassicToggle", "onoff"
+	Option "$GLTEXMNU_ANISOTROPIC",		gl_texture_filter_anisotropic,	"Anisotropy"
+	Option "$DSPLYMNU_SPRITESHADOW",			"r_actorspriteshadow", "SpriteShadowModes"
 	Option "$GORETOGGLE", "GoreToggle",			"GoreType"
 	Option "$GIBSFOREVER", "GibsStayForever",	"onoff"
-	Slider "$DSPLYMNU_QUAKEINTENSITY",			"r_quakeintensity", 0.0, 1.0, 0.05, 2
+	
+	StaticText ""
+	Submenu "$DSPLYMNU_GLOPT", 			"OpenGLOptions"
+	Submenu "$DSPLYMNU_SWOPT", 			"SWROptions"
+	Submenu "$GLMNU_DYNLIGHT",			"GLLightOptions"
 }
 
 OptionMenu "UISettings"
 {
 	Title "$UISETTINGS"
 	
+	Submenu "$HUDMNU_FLASH", 				"FlashOptions"
+	
 	Option "$CAMRECOILTOGGLE", "CamRecoilToggle", "onoff"
 	//Option "$AURATOGGLE", "AuraToggle", "onoff"
-	//Option "Muzzle Flash Style", "Muzzle_Alpha", "MuzzleStyle"
 	StaticText ""
 	
 	Slider "$DSPLYMNU_MOVEBOB",				"movebob", 0, 1.0, 0.05, 2
@@ -127,7 +195,7 @@ OptionMenu "UISettings"
 	Option "$SCALEMNU_HUDASPECT", 				"hud_aspectscale", "OnOff"
 	Slider "$DSPLYMNU_SCREENSIZE",				"screenblocks", 				3.0, 12.0, 1.0, 0
 }
-
+	
 OptionValue "MuzzleStyle"
 {
 	0, "Classic Style"
@@ -141,7 +209,36 @@ OptionValue "GoreType"
 	2, "$REALISTIC"
 }
 
-/*ListMenu "SkillMenu"
+AddOptionMenu "NewPlayerMenu" 
+{
+	Position -115
+}
+AddOptionMenu "SoundOptions"
+{
+	Position -115
+}
+AddOptionMenu "AdvSoundOptions"
+{
+	Position -115
+}
+AddOptionMenu "ReverbEdit"
+{
+	Position -115
+}
+AddOptionMenu "OpenALSoundItems"
+{
+	Position -115
+}
+AddOptionMenu "MidiPlayerOptions"
+{
+	Position -115
+}
+AddOptionMenu "ModReplayerOptions"
+{
+	Position -115
+}
+
+/*ListMenu "SkillMenu" idk what this is
 {
 	IfGame(Doom, Chex)
 	{
