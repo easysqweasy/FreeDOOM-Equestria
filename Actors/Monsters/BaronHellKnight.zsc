@@ -6,6 +6,8 @@ Class EquestriaBaronofHell : BaronOfHell replaces BaronOfHell
 		BloodColor "darkgreen";
 		
 		+CastSpriteShadow;
+		
+		PainThreshold 5;
 	}
 	States
 	{
