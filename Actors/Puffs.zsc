@@ -133,7 +133,7 @@ Class ChainsawPuff : Player_BulletPuff
 		TNT1 A 0
 		{
 			bSPRITEFLIP = randompick(0, 1);
-			A_SetRoll(random(-359, 359));
+			A_SetRoll(random(0, 359));
 		}
 		
 		PUFF A random(5, 8) Bright;
