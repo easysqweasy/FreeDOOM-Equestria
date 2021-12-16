@@ -16,11 +16,11 @@ ListMenu "MainMenu"
 	Position 80, 75
 	PatchItem "TNT1A0",	"1", "PlayMenu"
 	Position 115, 100
-	PatchItem "TNT1A0",	"3", "EquestriaOptions"
+	PatchItem "TNT1A0",	"2", "EquestriaOptions"
 	Position 135, 125
-	PatchItem "TNT1A0",	"4", "ReadThisMenu"
+	PatchItem "TNT1A0",	"3", "ReadThisMenu"
 	Position 105, 150
-	PatchItem "TNT1A0",	"5", "QuitMenu"
+	PatchItem "TNT1A0",	"4", "QuitMenu"
 	
 	//Dumb old note
 	//Postion 0, 72 (A Morden Look, maybe for a future Doom Equestria
@@ -38,9 +38,9 @@ ListMenu "PlayMenu"
 	Position 105, 80
 	PatchItem "TNT1A0",	"1", "PlayerclassMenu"
 	Position 100, 105
-	PatchItem "TNT1A0",	"1", "SaveGameMenu"
+	PatchItem "TNT1A0",	"2", "SaveGameMenu"
 	Position 100, 130
-	PatchItem "TNT1A0",	"1", "LoadGameMenu"
+	PatchItem "TNT1A0",	"3", "LoadGameMenu"
 }
 
 ListMenu "EquestriaOptions"
