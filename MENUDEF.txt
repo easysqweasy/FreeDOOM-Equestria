@@ -153,13 +153,14 @@ OptionMenu "VideoSettings"
 	Slider "$DSPLYMNU_QUAKEINTENSITY",			"r_quakeintensity", 0.0, 1.0, 0.05, 2
 	StaticText ""
 	
-	Option "DOOM Renderer Mode",				"ClassicToggle", "onoff"
+	//Option "DOOM Renderer Mode",				"ClassicToggle", "onoff"
 	Option "$GLTEXMNU_ANISOTROPIC",		gl_texture_filter_anisotropic,	"Anisotropy"
 	Option "$DSPLYMNU_SPRITESHADOW",			"r_actorspriteshadow", "SpriteShadowModes"
 	Option "$GORETOGGLE", "GoreToggle",			"GoreType"
 	Option "$GIBSFOREVER", "GibsStayForever",	"onoff"
-	
+	Option "$FLOORDECALS",				"FlatDecals", "onoff"
 	StaticText ""
+	
 	Submenu "$DSPLYMNU_GLOPT", 			"OpenGLOptions"
 	Submenu "$DSPLYMNU_SWOPT", 			"SWROptions"
 	Submenu "$GLMNU_DYNLIGHT",			"GLLightOptions"
