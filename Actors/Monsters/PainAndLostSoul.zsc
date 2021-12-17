@@ -33,6 +33,8 @@ Class EquestriaLostSoul : LostSoul
 		
 		Height 30; Radius 15;
 		
+		DamageFactor "Plasma", 1.50;
+		
 		+CASTSPRITESHADOW
 		+FORCEXYBILLBOARD
 		+FLOATBOB
