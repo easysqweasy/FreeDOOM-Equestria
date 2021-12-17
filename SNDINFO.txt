@@ -18,19 +18,21 @@ world/sludgegloop	MUCK5
 
 /* Weapons */
 
-$random weapons/ricochet	{	weapons/ricochet1	weapons/ricochet2	weapons/ricochet3	}
-weapons/ricochet1 RIC1
-weapons/ricochet2 RIC2
-weapons/ricochet3 RIC3
+weapons/bfgshot		BFGSHOT
 
-weapons/impact RIC1
+$random weapons/ricochet	{	weapons/ricochet1	weapons/ricochet2	weapons/ricochet3	}
+weapons/ricochet1	RIC1
+weapons/ricochet2	RIC2
+weapons/ricochet3	RIC3
+
+weapons/impact		RIC1
 $attenuation weapons/impact 2
 
-weapons/chaingun DSCHAIN
+weapons/chaingun	DSCHAIN
 
 /* Pickups */
 
-pickup/skullkey dssklatk
+pickup/skullkey		dssklatk
 $pitchset pickup/skullkey 1.5
 
 pickup/potion "Sounds/Pickups/GetPotion.wav"
