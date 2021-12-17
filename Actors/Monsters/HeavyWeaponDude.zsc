@@ -6,7 +6,7 @@ Class EquestriaChaingunGuy : ChaingunGuy replaces ChaingunGuy
 		Radius 20; Height 56;
 		Mass 100;
 		Speed 8;
-		PainChance 170;
+		PainChance 170; PainThreshold 5;
 		
 		+CASTSPRITESHADOW;
 		+NOINFIGHTSPECIES;
@@ -31,7 +31,7 @@ Class EquestriaChaingunGuy : ChaingunGuy replaces ChaingunGuy
 	
 	Missile:
 		CPOS E 10 A_FaceTarget();
-		CPOS F 3 bright A_CustomBulletAttack(20, 10, 1, random(1,5)*3, "BulletPuff", 0, CBAF_NORANDOM, AAPTR_TARGET, "BulletTracer");
+		CPOS F 3 bright A_CustomBulletAttack(20, 10, 1, random(1,5)*2, "BulletPuff", 0, CBAF_NORANDOM, AAPTR_TARGET, "BulletTracer");
 		CPOS E 1 A_CPosRefire();
 		Goto Missile+1;
 	

@@ -1,6 +1,4 @@
 IWAD = "FREEDOOM2.WAD"
-STARTUPTITLE = "FreeDOOM Equestria - Public Alpha" 
-
-StartupSong = ""
+STARTUPTITLE = "FreeDOOM Equestria - Not-so-Public Alpha" 
 StartupType = "Hexen"
 StartupColors = "#550000", "#550000"

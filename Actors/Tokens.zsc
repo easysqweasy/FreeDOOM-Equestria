@@ -10,7 +10,3 @@ Class LowHealthCheck : InvToken	{}
 Class Vanish : InvToken	{}
 
 Class OverLiquid : InvToken	{}
-
-//ToDo
-
-Class PickedUpBerserk : InvToken	{} //To do in ACS or Overlays

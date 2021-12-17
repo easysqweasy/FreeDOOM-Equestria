@@ -230,7 +230,7 @@ Class BulletTracer : FastProjectile
 		+NOPAIN
 		+Bright
 		
-		Speed 200;
+		Speed 200; FastSpeed 400;
 		Damage 0;
 		RenderStyle "Add";
 		Alpha 0.75;

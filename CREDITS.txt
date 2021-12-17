@@ -1,4 +1,3 @@
-//Credits
 Credits goes to:
 Easysqweasy - Base idea and coding - @easysqweasy
 Ragedox - Helped with some stuff, some (old) code, Co-creator of DooM Equestria - @TheRagedox
@@ -6,3 +5,15 @@ Isaac Pony - Original Creator of DooM Equestria - @Isaac_Pony
 Komradvsky - Playtesting and some ideas - @Komradvsky
 Hasbro - My Little Pony
 FreeDooM - FreeDooM and also Quad Damage texture
+
+=====
+
+= Sounds =
+
+https://freesound.org/
+
+= Stuff from other mods =
+
+Kinsie's Test Map: https://forum.zdoom.org/viewtopic.php?t=57221
+
+"Universal" fade-to-black on death : https://forum.zdoom.org/viewtopic.php?f=46&t=65028

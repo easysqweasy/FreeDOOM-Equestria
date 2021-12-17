@@ -5,7 +5,7 @@ Class HealthPotion : CustomInventory replaces HealthBonus
 		//$Title Health Potion (1)
 		+COUNTITEM
 		+INVENTORY.ALWAYSPICKUP
-		+INVENTORY.NOSCREENFLASH
+		//+INVENTORY.NOSCREENFLASH
 		Inventory.MaxAmount 200;
 		Inventory.PickupMessage "$GOTHTHBONUS";
 		Inventory.PickupSound "pickup/potion";
@@ -19,7 +19,7 @@ Class HealthPotion : CustomInventory replaces HealthBonus
 		TNT1 A 0
 		{
 			A_GiveInventory("HealthBonus");
-			ACS_NamedExecute("Screen_PickPotion");
+			//ACS_NamedExecute("Screen_PickPotion");
 		}
 		Stop;
 	}

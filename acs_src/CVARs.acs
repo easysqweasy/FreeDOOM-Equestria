@@ -18,10 +18,5 @@ script "GibsStayForever" (void)
 
 script "FlatDecals" (void)
 {
-    SetResultValue(GetCVar("FlatDecals"));
-}
-
-script "Muzzle_Style" (void)
-{
-    SetResultValue(GetCVar("Muzzle_Style"));
+    SetResultValue(GetCVar("GibsStayForever"));
 }

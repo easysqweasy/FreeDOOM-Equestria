@@ -9,14 +9,14 @@ Class PossessedTrainer : Actor
 		Tag "$BURSTBAT";
 		Health 75;
 		
-		Radius 20;
-		Height 56;
+		Radius 20; Height 56;
 		
 		Mass 80;
-		Speed 15;
-		FastSpeed 20;
+		Speed 15; FastSpeed 20; FloatSpeed 8;
 		
-		PainChance 150;
+		PainChance 128; PainThreshold 10;
+		
+		ReactionTime 0;
 		
 		+FLOATBOB;
 		+CASTSPRITESHADOW;
