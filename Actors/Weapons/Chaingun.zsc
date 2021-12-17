@@ -47,8 +47,11 @@ Class EquestriaChaingun : DoomEquestriaWeapon replaces Chaingun
 	
 	Fire:
 		CHGG AB 9;
+		CHGG # 0 A_FireBullets(6, 6, -1, 4, "Player_BulletPuff", 1, 0, "BulletTracer", -8);
 		CHGG AB 6;
+		CHGG # 0 A_FireBullets(6, 6, -1, 4, "Player_BulletPuff", 1, 0, "BulletTracer", -8);
 		CHGG AB 3;
+		CHGG # 0 A_FireBullets(6, 6, -1, 4, "Player_BulletPuff", 1, 0, "BulletTracer", -8);
 		CHGG A 1 A_Refire;
 		Goto WindDown;
 		
