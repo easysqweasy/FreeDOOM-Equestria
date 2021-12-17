@@ -7,10 +7,6 @@ Class KickCheck : InvToken	{}
 
 Class LowHealthCheck : InvToken	{}
 
-Class Vanish : InvToken	{}
-
-Class OverLiquid : InvToken	{}
-
 //ToDo
 
 Class FoundHellPortal : InvToken {} //Season 1 End
