@@ -43,6 +43,7 @@ Class PossessedTrainer : Actor
 		Loop;
 
 	See:
+		CPOS A 0 A_AlertMonsters();
 		CPOS AABBCCDD 3 A_Chase();
 		Loop;
 	
