@@ -1,4 +1,4 @@
 IWAD = "DOOM2.WAD"
 STARTUPTITLE = "DOOM Equestria - Not-so-Public Alpha" 
 StartupType = "Hexen"
-StartupColors = "#3C4651", "#3C4651"
+StartupColors = "#FFFFFF", "#2a2e33"
