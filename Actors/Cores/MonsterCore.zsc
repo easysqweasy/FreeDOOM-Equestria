@@ -4,4 +4,4 @@ Class DoomEquestriaMonster : Actor
 	{
 		+CastSpriteShadow
 	}
-}
+} 
