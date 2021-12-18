@@ -138,7 +138,8 @@ Class PlasmaScorchLower : ScorchBase
 	States
 	{
 	Spawn:
-		TNT1 A 0 NoDelay ACS_NamedExecute("CheckLiquid");
+		TNT1 A 0 NoDelay A_JumpIf(CallACS("FlatDecals") == 0, "Vanish");
+		TNT1 A 0 ACS_NamedExecute("CheckLiquid");
 		
 		TNT1 A 0 A_SetRoll(random(0, 359));
 		TNT1 A 0 A_Jump(256, +5, +6);
