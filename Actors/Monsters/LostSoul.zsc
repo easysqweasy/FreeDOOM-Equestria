@@ -27,8 +27,6 @@ Class EquestriaLostSoul : LostSoul
 		
 		Speed 4;
 		
-		Species "PainSoul";
-		
 		RenderStyle "Normal";
 		
 		Height 30; Radius 15;
@@ -230,68 +228,6 @@ Class LostSoulCharge : Trails
 		Stop;
 	}
 }
-
-Class EquestriaPain : PainElemental replaces PainElemental
-{
-	Default
-	{
-		Species "PainSoul";
-		FloatBobStrength 0.25;
-		PainChance 100;
-		
-		+CASTSPRITESHADOW;
-		+FLOATBOB;
-		+FORCEXYBILLBOARD;
-		+DONTHARMSPECIES;
-		+AvoidMelee;
-		+DONTFALL;
-	}
-	States
-	{
-
-	Missile:
-		PAIN D 5 A_FaceTarget();
-		PAIN E 5 A_FaceTarget();
-		PAIN F 5 BRIGHT A_FaceTarget();
-		PAIN F 0 BRIGHT A_Jump(256, "Missile.Pony", "Missile.Unicorn", "Missile.Nirik");
-		Goto See;
-	
-		Missile.Pony:
-			PAIN F 0 BRIGHT A_PainAttack("PonyLostSoul");
-			Goto See;
-			
-		Missile.Unicorn:
-			PAIN F 0 BRIGHT A_PainAttack("UnicornLostSoul");
-			Goto See;
-			
-		Missile.Nirik:
-			PAIN F 0 BRIGHT A_PainAttack("NirikLostSoul");
-			Goto See;
-
-	Death:
-		PAIN H 8 Bright;
-		PAIN I 8 Bright A_Scream();
-		PAIN J 8 Bright;
-		PAIN K 8 Bright
-		{
-			A_QuakeEx(3, 3, 3, 4, 0, 500, "", 0,0,0,0, 1);
-			
-			A_SpawnItemEx("BloodExplosionSphere",0,0,32,0,0,0,0, SXF_TRANSFERPOINTERS);
-			A_SpawnItemEx("BloodExplosionSphere",0,0,32,0,0,0,0, SXF_TRANSFERPOINTERS);
-			A_SpawnItemEx("BloodExplosionSphere",0,0,32,0,0,0,0, SXF_TRANSFERPOINTERS);
-			A_SpawnItemEx("BloodExplosionSphere",0,0,32,0,0,0,0, SXF_TRANSFERPOINTERS);
-		}
-		PAIN L 8 Bright
-		{
-			A_PainAttack("PonyLostSoul", 90);
-			A_PainAttack("NirikLostSoul", 0);
-			A_PainAttack("UnicornLostSoul", -90);
-		}
-		PAIN M 8 Bright;
-		Stop;
-  }
-}
-
 
 /*actor DELostSoul : LostSoul replaces LostSoul
 {
