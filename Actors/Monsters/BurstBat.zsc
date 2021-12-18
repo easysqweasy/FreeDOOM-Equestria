@@ -1,4 +1,4 @@
-Class PossessedTrainer : Actor
+Class PossessedTrainer : DoomEquestriaMonster
 {
 	Default
 	{
@@ -12,19 +12,19 @@ Class PossessedTrainer : Actor
 		Radius 20; Height 56;
 		
 		Mass 80;
-		Speed 15; FastSpeed 20; FloatSpeed 8;
+		Speed 15; FloatSpeed 8;
 		
 		PainChance 128; PainThreshold 10;
 		
 		ReactionTime 0;
 		
-		+FLOATBOB;
-		+CASTSPRITESHADOW;
-		+FLOAT;
-		+NOGRAVITY;
-		+QUICKTORETALIATE;
-		+MISSILEMORE;
-		+AVOIDMELEE;
+		+FLOATBOB
+		+FLOAT
+		+NOGRAVITY
+		+QUICKTORETALIATE
+		+MISSILEMORE
+		+AVOIDMELEE
+		+BOSS
 		
 		SeeSound "female/sight";
 		AttackSound "weapons/chngun";
@@ -44,7 +44,7 @@ Class PossessedTrainer : Actor
 
 	See:
 		CPOS A 0 A_AlertMonsters();
-		CPOS AABBCCDD 3 A_Chase();
+		CPOS AABBCCDD 3 A_Chase("Melee", "Missile", CHF_FASTCHASE);
 		Loop;
 	
 	Kick:
