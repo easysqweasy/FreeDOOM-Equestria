@@ -158,7 +158,7 @@ OptionMenu "VideoSettings"
 	Option "$DSPLYMNU_SPRITESHADOW",			"r_actorspriteshadow", "SpriteShadowModes"
 	Option "$GORETOGGLE", "GoreToggle",			"GoreType"
 	Option "$GIBSFOREVER", "GibsStayForever",	"onoff"
-	Option "$FLOORDECALS",				"FlatDecals", "onoff"
+	//Option "$FLOORDECALS",				"FlatDecals", "onoff"
 	StaticText ""
 	
 	Submenu "$DSPLYMNU_GLOPT", 			"OpenGLOptions"
