@@ -64,3 +64,7 @@ DoomTorch/Burn		DSFIRLOP
 
 $limit DoomTorch/Burn 0
 $attenuation DoomTorch/Burn 4
+
+/*	Misc	*/
+
+misc/magic		DSMAGIC
