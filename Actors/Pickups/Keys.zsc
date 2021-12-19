@@ -4,8 +4,7 @@ Class EquestriaBlueSkull : BlueSkull replaces BlueSkull
 	{
 		Species "BlueSkull";
 		Inventory.PickupSound "pickup/skullkey";
-	}
-}
+}}
 
 Class EquestriaYellowSkull : YellowSkull replaces YellowSkull
 {
@@ -13,8 +12,7 @@ Class EquestriaYellowSkull : YellowSkull replaces YellowSkull
 	{
 		Species "YellowSkull";
 		Inventory.PickupSound "pickup/skullkey";
-	}
-}
+}}
 
 Class EquestriaRedSkull : RedSkull replaces RedSkull
 {
@@ -22,5 +20,25 @@ Class EquestriaRedSkull : RedSkull replaces RedSkull
 	{
 		Species "RedSkull";
 		Inventory.PickupSound "pickup/skullkey";
-	}
-}
+}}
+
+Class EquestriaBlueCard : BlueCard replaces BlueCard
+{
+	Default
+	{	+FORCEXYBILLBOARD
+		Species "BlueKey";
+}}
+
+Class EquestriaYellowCard : YellowCard replaces YellowCard
+{
+	Default
+	{	+FORCEXYBILLBOARD
+		Species "YellowCard";
+}}
+
+Class EquestriaRedCard : RedCard replaces RedCard
+{
+	Default
+	{	+FORCEXYBILLBOARD
+		Species "RedCard";
+}}

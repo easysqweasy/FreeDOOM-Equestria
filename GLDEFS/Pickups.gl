@@ -134,14 +134,14 @@ object ArmorBonus
 pulselight BLUECARD
 {
     color 0.0 0.0 0.5
-    size 10
-    secondarySize 20
+    size 5
+    secondarySize 15
     interval 2.0
 	attenuate 1
     offset 0 10 0
 }
 
-object BlueCard
+object EquestriaBlueCard
 {
     frame BKEY { light BLUECARD }
 }
@@ -165,14 +165,14 @@ object EquestriaBlueSkull
 pulselight YELLOWCARD
 {
     color 0.5 0.5 0.0
-    size 10
-    secondarySize 20
+    size 5
+    secondarySize 15
     interval 2.0
 	attenuate 1
     offset 0 10 0
 }
 
-object YellowCard
+object EquestriaYellowCard
 {
     frame YKEY { light YELLOWCARD }
 }
@@ -196,14 +196,14 @@ object EquestriaYellowSkull
 pulselight REDCARD
 {
     color 0.5 0.0 0.0
-    size 10
-    secondarySize 20
+    size 5
+    secondarySize 15
     interval 2.0
 	attenuate 1
     offset 0 10 0
 }
 
-object RedCard
+object EquestriaRedCard
 {
     frame RKEY { light REDCARD }
 }
