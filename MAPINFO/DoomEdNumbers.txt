@@ -15,7 +15,7 @@ DoomEdNums
 	
 	/* Monsters */
 
-	15000 = "PlasmaKirin"
+	15000 = "PossessedHacker"
 	15001 = "DemonNirik"
 	15002 = "DemonicDog"
 	15003 = "BossBaronofHell"

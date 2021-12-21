@@ -39,7 +39,7 @@ FN_HEAVY = "Heavy Weapon Dude";
 */
 BURSTBAT = "Possesed Trainer";
 
-TECHDUDE = "Hacker Leader";
+TECHDUDE = "Possessed Hacker";
 DEMONIRIK = "Demonic Nirik";
 OB_PLASMAKIRIN = "%o turned to dust by the Hacker Leader.";
 NIRIKILL = "%o was bitten by the Demonic Nirik.";
