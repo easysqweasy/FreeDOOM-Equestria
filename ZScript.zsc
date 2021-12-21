@@ -82,7 +82,7 @@ Class DebrisCore : Actor
 #include "Actors/Monsters/ZombiePony.zsc"
 #include "Actors/Monsters/ShotgunGuy.zsc"
 #include "Actors/Monsters/HeavyWeaponDude.zsc"
-#include "Actors/Monsters/BurstBat.zsc"
+#include "Actors/Monsters/PossessedTrainer.zsc"
 #include "Actors/Monsters/TechWeaponDudette.zsc"
 #include "Actors/Monsters/Pinky.zsc"
 #include "Actors/Monsters/Cyberdemon.zsc"
