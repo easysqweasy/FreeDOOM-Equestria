@@ -1,10 +1,10 @@
-Class PlasmaKirin : Actor
+Class PossessedHacker : Actor
 {
 	Default
 	{
 	Monster;
 	//$Category Monsters
-	//$Title Tech Weapon Dudette
+	//$Title Possessed Hacker
 		Tag "$TECHDUDE";
 		
 		Health 30;
