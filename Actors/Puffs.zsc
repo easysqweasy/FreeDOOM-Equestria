@@ -50,11 +50,8 @@ Class EquestriaBulletPuff : BulletPuff replaces BulletPuff
 		
 		AttackSound "weapons/ricochet";
 		
-		+NOTELEPORT
-		+FORCEXYBILLBOARD
-		-RANDOMIZE
-		+ROLLSPRITE +ROLLCENTER
-		-ALLOWPARTICLES
+		+NOTELEPORT +FORCEXYBILLBOARD	+ROLLSPRITE +ROLLCENTER
+		-ALLOWPARTICLES -RANDOMIZE
 	}
 	States
 	{
@@ -62,7 +59,6 @@ Class EquestriaBulletPuff : BulletPuff replaces BulletPuff
 	Spawn:
 		TNT1 A 0 NoDelay ACS_NamedExecute("CheckLiquid");
 		TNT1 AAA 0 A_SpawnProjectile("PuffSparkles", 0, 0, random (0, 359), CMF_AIMDIRECTION, random (0, 359));
-		TNT1 A 0 A_SpawnProjectile("BulletDecalCheck", 7,0,0, CMF_AIMDIRECTION, 90);
 		TNT1 A 0
 		{
 			bSPRITEFLIP = randompick(0, 1);
@@ -129,7 +125,6 @@ Class ChainsawPuff : Player_BulletPuff
 	Spawn:
 		TNT1 A 0 NoDelay ACS_NamedExecute("CheckLiquid");
 		TNT1 AAAAA 0 A_SpawnProjectile("ChainsawSparkles", 0, 0, random (0, 359), CMF_AIMDIRECTION, random (0, 359));
-		TNT1 A 0 A_SpawnProjectile("BulletDecalCheck", 7,0,0, CMF_AIMDIRECTION, 90);
 		TNT1 A 0
 		{
 			bSPRITEFLIP = randompick(0, 1);
@@ -147,17 +142,13 @@ Class ShotgunPuff : EquestriaBulletPuff
 {
 	Default
 	{
-		Scale 1;
+		Scale 1;	DamageType "Shotgun";
 	}
 	States
 	{
 	Spawn:
 		TNT1 A 0 NoDelay ACS_NamedExecute("CheckLiquid");
-		TNT1 A 0
-		{
-			A_SpawnProjectile("PuffSparkles", 0, 0, random (0, 359), CMF_AIMDIRECTION, random (0, 359));
-			A_SpawnProjectile("BulletDecalCheck", 7,0,0, CMF_AIMDIRECTION, 90);
-		}
+		TNT1 A 0 A_SpawnProjectile("PuffSparkles", 0, 0, random (0, 359), CMF_AIMDIRECTION, random (0, 359));
 		TNT1 A 0
 		{
 			bSPRITEFLIP = randompick(0, 1);
@@ -176,6 +167,9 @@ Class ShotgunPuff : EquestriaBulletPuff
 
 Class Player_ShotgunPuff : ShotgunPuff
 {	Default	{	AttackSound "";	}	}
+
+Class Player_SuperShotgunPuff : Player_ShotgunPuff
+{	Default	{	DamageType "SuperShotgun";	}	}
 
 Class KickPuff : ShotgunPuff
 {

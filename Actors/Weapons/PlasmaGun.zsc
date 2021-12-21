@@ -165,11 +165,7 @@ Class EquestriaPlasmaBall : PlasmaBall
 		Wait;
  
 	Death:
-		PLSE A 0
-		{
-			A_SpawnItem("PlasmaFloorCheck");
-			A_SpawnItem("PlasmaPuff");
-		}
+		PLSE A 0 A_SpawnItem("PlasmaPuff");
 		PLSS AAAA 0 A_SpawnProjectile("PlasmaSparkle", 0, 0, random (0, 359), CMF_AIMDIRECTION, random (0, 359));
 		PLSE ABC 4 Bright;
 		PLSE DE 4 A_FadeOut(0.1);

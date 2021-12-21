@@ -1,3 +1,4 @@
+/*
 Model "PlasmaScorch1"
 {
 	Path "Models"
@@ -37,7 +38,7 @@ Model "BFGLightning2"
 	ZOffset 0.2
 	FrameIndex NULL A 0 0
 }
-
+*/
 
 Model "BulletTracer"
 {
