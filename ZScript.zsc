@@ -59,7 +59,6 @@ Class DebrisCore : Actor
 #Include "Actors/Weapons/PlasmaGun.zsc"
 #Include "Actors/Weapons/BFG9000.zsc"
 #Include "Actors/Weapons/Chainsaw.zsc"
-#Include "Actors/Weapons/DumbWeapons.zsc"
 
 ////Items/PowerUps
 
