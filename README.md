@@ -23,7 +23,7 @@ Discord Server: https://discord.gg/xgzkMmayMz
 # Credits
 See "CREDITS.txt" for more detailed credits;
 
-= The DOOM franchise is owned by ID Sotfware and Bethesda ~~(and Microsoft?)~~ =
+= The DOOM franchise is owned by ID Sotfware, part of the ZeniMax Media Inc. Family (and Microsoft?) =
 = My Little Pony is owned by Hasbro =
 
 = Main idea by Isaac Pony =
