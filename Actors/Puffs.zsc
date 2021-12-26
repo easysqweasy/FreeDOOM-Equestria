@@ -40,18 +40,21 @@ Class PuffSparkles : DEParticles
 	}
 }
 
-Class EquestriaBulletPuff : BulletPuff replaces BulletPuff
+Class EquestriaBulletPuff : Actor replaces BulletPuff
 {
 	Default
 	{
 		Height 8; Radius 4;
-		Scale 0.75;
+		RenderStyle "Translucent"; Alpha 0.5;
 		VSpeed 1;
+		Mass 5;
+		Scale 0.75;
 		
 		AttackSound "weapons/ricochet";
 		
-		+NOTELEPORT +FORCEXYBILLBOARD	+ROLLSPRITE +ROLLCENTER
-		-ALLOWPARTICLES -RANDOMIZE
+		+NOGRAVITY +NOBLOCKMAP +NOTELEPORT
+		+FORCEXYBILLBOARD
+		+ROLLSPRITE +ROLLCENTER
 	}
 	States
 	{
