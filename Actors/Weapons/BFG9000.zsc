@@ -55,7 +55,7 @@ Class EquestriaBFG9K : DoomEquestriaWeapon replaces BFG9000
 			A_FireProjectile("EquestriaBFGBall");
 			A_StartSound("weapons/bfgshot");
 			A_WeaponOffset(0, 45, WOF_KEEPX | WOF_INTERPOLATE);
-			A_Overlay(2, "CamRecoil");
+			A_Overlay(3, "CamRecoil");
 			//A_SetBlend("green", 0.5, 16);
 		}
 		BFGG C 6;
