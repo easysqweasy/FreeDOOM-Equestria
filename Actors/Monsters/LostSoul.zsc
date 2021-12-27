@@ -99,6 +99,7 @@ Class PonyLostSoul : EquestriaLostSoul
 		{
 			A_SpawnProjectile("LostSoulFire", random(15, 30), 0, random(0, 360), 2, random(0, 360));
 		}
+		Super.Tick();
 	}
 }
 
