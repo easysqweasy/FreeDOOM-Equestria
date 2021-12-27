@@ -13,7 +13,6 @@ HARDSKILL = "UltraViolento";
 PLUSSKILL = "Violência instantânea";
 
 QUITMSG = "Você tem certeza que quer sair deste ótimo mod?";
-//QUITMSG4 = "Então você gosta mais de Fallout Equestria\ndo que de mim, né?"; por favor não me mata é uma piada
 QUITMSG9 = "Não vá agora, tem um vírus da Kirin te esperando no computador!";
 QUITMSG7 = "Vai, pode ir embora. Tô nem aí.";
 QUITMSG10 = "Se manda daqui e\nvolta pro teu\ndesenho animado infantil";

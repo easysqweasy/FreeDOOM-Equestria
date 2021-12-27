@@ -5,7 +5,7 @@ ListMenu "MainMenu"
 	StaticPatchCentered 160, -40, "M_DOOM"
 
 	//Original code by Jimmy in ZDoom forums
-	StaticTextCentered 160, 75, "$SINGLEPLAYER"
+	StaticTextCentered 160, 75, "$CAMPAIGN"
 	StaticTextCentered 160, 100, "$MNU_OPTIONS"
 	/*StaticPatchCentered 75, 128, "Notlog"
 	StaticTextCentered 160, 125, "Bethesda.net" Why not?*/
@@ -13,7 +13,7 @@ ListMenu "MainMenu"
 	StaticTextCentered 160, 150, "$MNU_QUITGAME"
 
 	Linespacing 25
-	Position 80, 75
+	Position 110, 75
 	PatchItem "TNT1A0",	"1", "PlayMenu"
 	Position 115, 100
 	PatchItem "TNT1A0",	"2", "EquestriaOptions"
@@ -28,7 +28,7 @@ ListMenu "MainMenu"
 
 ListMenu "PlayMenu"
 {
-	StaticTextCentered 160, 45, "$SINGLEPLAYER"
+	StaticTextCentered 160, 45, "$CAMPAIGN"
 	
 	StaticTextCentered 160, 80, "$NEWNEWGAME"
 	StaticTextCentered 160, 105, "$MNU_SAVEGAME"
@@ -97,7 +97,7 @@ ListMenu "EpisodeMenu"
 	NetgameMessage "$NEWGAME"
 
 	Position 48, 63
-	StaticPatchCentered 160, 38, "M_EPISOD"
+	StaticTextCentered 160, 38, "$MNU_EPISODE"
 	linespacing 16
 }
 

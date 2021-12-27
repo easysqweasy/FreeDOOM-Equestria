@@ -16,7 +16,6 @@ HARDSKILL = "Ultra-Violence";
 PLUSSKILL = "Instant-Violence";
 
 QUITMSG = "Are you sure you want to quit this great mod?";
-//QUITMSG4 = "you're trying to say you like Fallout Equestria\nbetter than me, right?"; pls dont kill me, its a joke
 QUITMSG9 = "Don't go now, there's a \nKirinware waiting at your computer!";
 QUITMSG10 = "Get out of here and\ngo back to your\ninfantile cartoon.";
 QUITMSG13 = "just leave.\nwhen you come back, there will be a \nnaughty bat waiting for you!";
