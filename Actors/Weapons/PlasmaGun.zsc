@@ -136,21 +136,30 @@ Class EquestriaPlasmaGun : DoomEquestriaWeapon replaces PlasmaRifle
 	}
 }
 		
-Class EquestriaPlasmaBall : PlasmaBall
+Class EquestriaPlasmaBall : Actor replaces PlasmaBall
 {
 	Default
 	{
+		Projectile;
+		
 		Decal "PlasmaScorch";
 		
+		Speed 25;
+		
+		Damage 5;
 		DamageType "Plasma";
 		
-		Radius 8;
-		Height 16;
+		Radius 8; Height 16;
 	  
-		+ROLLSPRITE;
-		+ROLLCENTER;
+		RenderStyle "Add";
 		
-		+FORCEXYBILLBOARD;
+		+RollSprite +RollCenter
+		+ForceXYBillBoard
+		+ZDoomTrans
+		
+		SeeSound "weapons/plasmaf";
+		DeathSound "weapons/plasmax";
+		Obituary "$OB_MPPLASMARIFLE";
 	}
 	States
 	{
