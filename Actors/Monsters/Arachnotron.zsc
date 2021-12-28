@@ -38,7 +38,7 @@ Class EquestriaAracPlasmaBall : EquestriaPlasmaBall replaces ArachnotronPlasma
 		Wait;
  
 	Death:
-		APLS A 0 A_SpawnItem("PlasmaPuff");
+		APLS A 0 A_SpawnItem("SmokePuff");
 		APLS AAAA 0 A_SpawnProjectile("AracPlasmaSparkle", 0, 0, random (0, 359), CMF_AIMDIRECTION, random (0, 359));
 		APLS ABC 4 Bright;
 		APLS DE 4 A_FadeOut(0.1);
