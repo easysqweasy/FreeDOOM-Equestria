@@ -2,6 +2,7 @@ Class EquestriaCacodemon : Cacodemon replaces Cacodemon
 {
 	Default
 	{
+		Height 50; Radius 25;
 		BloodColor "blue";
 		
 		+CASTSPRITESHADOW
@@ -9,33 +10,44 @@ Class EquestriaCacodemon : Cacodemon replaces Cacodemon
 		+FLOATBOB
 		FloatBobStrength 0.5;
 		
-		+MISSILEMORE
 		+FORCEXYBILLBOARD
-		
 	}
 	States
 	{
 
 	Spawn:
-		HEAD A 3
-		{
-			A_Chase();
-			return  A_JumpIfCloser(150, "Melee");
-		}
+		HEAD A 10 A_Look;
 		Loop;
+	See:
+		HEAD AAA 1 A_JumpIfCloser(150, "Melee");
+		#### # 0 A_Chase();
+		Loop;
+	
 	Melee:
-		HEAD BCDD 2 A_FaceTarget();
-		HEAD C 3 A_FaceTarget();
+		HEAD BCDD 2
+		{
+			A_Chase(null,null);
+			A_FaceTarget();
+		}
+		HEAD C 3
+		{
+			A_Chase(null,null);
+			A_FaceTarget();
+		}
 	Melee2:
 		HEAD C 3 A_Recoil(-15);
-		HEAD B 4 A_CustomMeleeAttack(10 * random(1, 6), "demon/melee", "skeleton/swing");
+		HEAD B 4;
 		
-		HEAD A 4 A_Stop();
+		HEAD A 8 A_CustomMeleeAttack(10 * random(1, 6), "demon/melee", "skeleton/swing");
+		HEAD A 0 A_Stop();
 		Goto See;
 	
 	Missile:
-		HEAD BC 5 A_FaceTarget();
-		HEAD C 0 A_JumpIfCloser(200, "Melee2");
+		HEAD BC 5
+		{
+			A_FaceTarget();
+			A_JumpIfCloser(150, "Melee2");
+		}
 		HEAD D 5 Bright A_SpawnProjectile("CacodemonBall", 25);
 		Goto See;
 	
