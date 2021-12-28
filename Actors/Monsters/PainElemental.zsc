@@ -7,7 +7,7 @@ Class EquestriaPainElemental : PainElemental replaces PainElemental
 		Tag "$FN_PAIN";
 				
 		Health 400;
-		Radius 31; Height 56;
+		Height 50; Radius 25;
 		Mass 400;
 		Speed 8;
 		PainChance 100;
