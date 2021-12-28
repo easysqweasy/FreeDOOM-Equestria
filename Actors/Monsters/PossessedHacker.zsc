@@ -30,7 +30,7 @@ Class PossessedHacker : Actor
 		DropItem "ArmorBonus";
 		DropItem "Cell", 64; //25% Chance of drop Cells
 		
-		MissileType "TechPlasmaBall";
+		MissileType "EquestriaPlasmaBall";
 	}
 	States
 	{
@@ -48,19 +48,19 @@ Class PossessedHacker : Actor
 		TECH F 2 Bright 
 		{
 			A_FaceTarget();
-			A_SpawnProjectile("TechPlasmaBall");
+			A_SpawnProjectile("EquestriaPlasmaBall");
 		}
 		TECH E 1;
 		TECH F 2 Bright 
 		{
 			A_FaceTarget();
-			A_SpawnProjectile("TechPlasmaBall");
+			A_SpawnProjectile("EquestriaPlasmaBall");
 		}
 		TECH E 1;
 		TECH F 2 Bright 
 		{
 			A_FaceTarget();
-			A_SpawnProjectile("TechPlasmaBall");
+			A_SpawnProjectile("EquestriaPlasmaBall");
 		}
 		TECH E 20;
 		TECH E 0 A_Jump(127, "AgainMissile");
@@ -71,19 +71,19 @@ Class PossessedHacker : Actor
 		TECH F 2 Bright 
 		{
 			A_FaceTarget();
-			A_SpawnProjectile("TechPlasmaBall");
+			A_SpawnProjectile("EquestriaPlasmaBall");
 		}
 		TECH E 1;
 		TECH F 2 Bright 
 		{
 			A_FaceTarget();
-			A_SpawnProjectile("TechPlasmaBall");
+			A_SpawnProjectile("EquestriaPlasmaBall");
 		}
 		TECH E 1;
 		TECH F 2 Bright 
 		{
 			A_FaceTarget();
-			A_SpawnProjectile("TechPlasmaBall");
+			A_SpawnProjectile("EquestriaPlasmaBall");
 		}
 		TECH E 20;
 		Goto See;

@@ -151,7 +151,7 @@ Class EquestriaPlasmaBall : Actor replaces PlasmaBall
 		
 		Radius 8; Height 16;
 	  
-		RenderStyle "Add";
+		RenderStyle "Add"; Alpha 0.5;
 		
 		+RollSprite +RollCenter
 		+ForceXYBillBoard
@@ -179,17 +179,6 @@ Class EquestriaPlasmaBall : Actor replaces PlasmaBall
 		PLSE ABC 4 Bright;
 		PLSE DE 4 A_FadeOut(0.1);
 		Stop;
-	}
-}
-
-Class TechPlasmaBall : EquestriaPlasmaBall
-{
-	Default
-	{
-		Radius 13;
-		Height 8;
-		
-		FastSpeed 30;
 	}
 }
 
