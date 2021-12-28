@@ -9,8 +9,8 @@ Class EquestriaBFG9K : DoomEquestriaWeapon replaces BFG9000
 		Weapon.BobSpeed 0.75;
 		
 		Weapon.SelectionOrder 9;
-		Weapon.AmmoUse 40;
-		Weapon.AmmoGive 40;
+		Weapon.AmmoUse 50;
+		Weapon.AmmoGive 50;
 		Weapon.AmmoType "Cell";
 		
 		+WEAPON.NOAUTOFIRE;
@@ -99,20 +99,28 @@ Class EquestriaBFG9K : DoomEquestriaWeapon replaces BFG9000
 	}
 }
 
-Class EquestriaBFGBall : BFGBall replaces BFGBall
+Class EquestriaBFGBall : Actor replaces BFGBall
 {
 	Default
 	{
+		Projectile;
+		
 		Height 36; Radius 18;
 		
+		Speed 25;
+		
+		Damage 15;
 		Decal "BFGScorch";
 		
 		RenderStyle "Add";
-		Alpha 1;
 		
 		+ForceXYBillBoard
 		+RollSprite +RollCenter
 		+Bright
+		+ZDoomTrans
+		
+		DeathSound "weapons/bfgx";
+		Obituary "$OB_MPBFG_BOOM";
 	}
 	States
 	{
@@ -136,6 +144,7 @@ Class EquestriaBFGBall : BFGBall replaces BFGBall
 		
 		BFE1 A 2 Bright
 		{
+			A_Explode(100, 256, 0);
 			A_SetRoll(0);
 			A_SetScale(2);
 			A_SpawnItem("BFGShockwave");
