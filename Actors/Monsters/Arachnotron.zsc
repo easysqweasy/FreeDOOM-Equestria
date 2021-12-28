@@ -2,14 +2,15 @@ Class EquestriaArachnotron : Arachnotron replaces Arachnotron
 {
 	Default
 	{
-		+CASTSPRITESHADOW;
+		+CastSpriteShadow
+		Translation "160:167=112:127";
 	}
 	States
 	{
 	
 	Missile:
-		BSPI A 20 bright A_FaceTarget();
-		BSPI G 4 bright A_SpawnProjectile("ArachnotronPlasma", 18, 4);
+		BSPI A 20 A_FaceTarget();
+		BSPI G 4 bright A_SpawnProjectile("EquestriaAracPlasmaBall", 18, 4);
 		BSPI H 4 bright;
 		BSPI H 1 bright A_SpidRefire();
 		Goto Missile+1;
@@ -17,41 +18,41 @@ Class EquestriaArachnotron : Arachnotron replaces Arachnotron
 	}
 }
 
-Class EquestriaArachnotronPlasma : ArachnotronPlasma replaces ArachnotronPlasma
+Class EquestriaAracPlasmaBall : EquestriaPlasmaBall replaces ArachnotronPlasma
 {
 	Default
 	{
-		+ROLLSPRITE; +ROLLCENTER;
+		SeeSound "baby/attack";
+		DeathSound "baby/shotx";
 	}
 	States
 	{
 	Spawn:
-		APLS A 0;
-		APLS A 0 A_SetRoll(random(-359, 359));
-	Projectile:
+		APLS A 0 NoDelay A_SpawnProjectile("AracPlasmaSparkle", 0, 0, random (0, 359), CMF_AIMDIRECTION, random (0, 359));
+		APLS A 0 A_SetRoll(random(0, 359));
 		APLS A 1 Bright
 		{
-			A_SpawnItemEx("AracPlasmaTrail");
+			A_SpawnItem("AracPlasmaTrail");
 			A_SetRoll((roll + 15), SPF_INTERPOLATE);
 		}
-		Loop;
+		Wait;
  
 	Death:
-		PLSE A 0 A_SpawnItem("PlasmaPuff");
-		//PLSS AAAA 0 A_SpawnProjectile("PlasmaSparkle", 0, 0, random (0, 359), CMF_AIMDIRECTION, random (0, 359));
-		PLSE ABC 4 Bright;
-		PLSE DE 4 A_FadeOut(0.1);
+		APLS A 0 A_SpawnItem("PlasmaPuff");
+		APLS AAAA 0 A_SpawnProjectile("AracPlasmaSparkle", 0, 0, random (0, 359), CMF_AIMDIRECTION, random (0, 359));
+		APLS ABC 4 Bright;
+		APLS DE 4 A_FadeOut(0.1);
 		Stop;
 	}
 }
 
-Class AracPlasmaTrail : Trails
+Class AracPlasmaTrail : PlasmaTrail
 {
 	States
 	{
 	Spawn:
 		APLS A 0;
-		APLS A 0 A_SetRoll(random(-359, 359));
+		APLS A 0 A_SetRoll(random(0, 359));
 	Trail:
 		APLS A 1 Bright
 		{
@@ -59,5 +60,19 @@ Class AracPlasmaTrail : Trails
 			A_FadeOut(0.1);
 		}
 		Loop;
+	}
+}
+
+Class AracPlasmaSparkle : PlasmaSparkle
+{
+	States
+	{
+	Spawn:
+		APLS A 0 NoDelay A_SetRoll(random(0, 359));
+		
+		APLS A random(15,25);
+		APLS AAAA 1 A_SetScale(Scale.X + 0.25, Scale.Y + 0.25);
+		APLS AAAA 1 A_SetScale(Scale.X - 0.25, Scale.Y - 0.25);
+		Stop;
 	}
 }
