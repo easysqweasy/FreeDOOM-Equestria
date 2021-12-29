@@ -142,8 +142,7 @@ map S1E9 lookup "SEWERS"
 	Music = "Music/Season1/S1E9.mid"
 	
 	OutsideFog = 200
-	
-	sky1 = "SKY1"
+
 	cluster = 1
 }
 
