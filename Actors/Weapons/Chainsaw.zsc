@@ -21,6 +21,7 @@ Class EquestriaChainsaw : DoomEquestriaWeapon replaces Chainsaw
 	States
 	{
 	Spawn:
+		TNT1 A 0 NoDelay { bSPRITEFLIP = RandomPick(0,1); }
 		CSAW A -1;
 		Stop;
 	
