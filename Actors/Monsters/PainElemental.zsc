@@ -28,7 +28,7 @@ Class EquestriaPainElemental : PainElemental replaces PainElemental
 		PAIN A 10 A_Look;
 		Loop;
 	See:
-		//PAIN # 0 A_Check
+		//PAIN # 0 A_CheckProximity("EquestriaRocket")
 		PAIN AABBCC 3 A_Chase;
 		Loop;
 		
@@ -40,15 +40,15 @@ Class EquestriaPainElemental : PainElemental replaces PainElemental
 		Goto See;
 	
 		Missile.Pony:
-			PAIN F 0 BRIGHT A_PainAttack("PonyLostSoul");
+			PAIN F 0 BRIGHT A_PainAttack("EquestriaLostSoul");
 			Goto See;
 			
 		Missile.Unicorn:
-			PAIN F 0 BRIGHT A_PainAttack("UnicornLostSoul");
+			PAIN F 0 BRIGHT A_PainAttack("UnicornSoul");
 			Goto See;
 			
 		Missile.Nirik:
-			PAIN F 0 BRIGHT A_PainAttack("NirikLostSoul");
+			PAIN F 0 BRIGHT A_SpawnProjectile("MissileNirikSoul");
 			Goto See;
 	
 	Pain:
@@ -71,9 +71,9 @@ Class EquestriaPainElemental : PainElemental replaces PainElemental
 		}
 		PAIN L 8 Bright
 		{
-			A_PainAttack("PonyLostSoul", 90);
-			A_PainAttack("NirikLostSoul", 0);
-			A_PainAttack("UnicornLostSoul", -90);
+			A_PainAttack("EquestriaLostSoul", 90);
+			A_PainAttack("NirikSoul", 0);
+			A_PainAttack("UnicornSoul", -90);
 		}
 		PAIN M 8 Bright;
 		Stop;

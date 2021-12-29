@@ -44,7 +44,7 @@ flickerlight LOSTSOUL_X4
 	attenuate 1
 }
 
-object PonyLostSoul
+object EquestriaLostSoul
 {
     frame SKULA { light LOSTSOUL    }
     frame SKULB { light LOSTSOUL    }
@@ -60,7 +60,7 @@ object PonyLostSoul
     frame SKULK { light LOSTSOUL_X4 }
 }
 
-object UnicornLostSoul
+object UnicornSoul
 {
     frame SKULA { light LOSTSOUL    }
     frame SKULB { light LOSTSOUL    }
@@ -76,7 +76,17 @@ object UnicornLostSoul
     frame SKULK { light LOSTSOUL_X4 }
 }
 
-object NirikLostSoul
+object NirikSoul
+{
+    frame SKUL { light DemonNirik    }
+	
+    frame SKULH { light LOSTSOUL_X1 }
+    frame SKULI { light LOSTSOUL_X2 }
+    frame SKULJ { light LOSTSOUL_X3 }
+    frame SKULK { light LOSTSOUL_X4 }
+}
+
+object MissileNirikSoul
 {
     frame SKUL { light DemonNirik    }
 	
