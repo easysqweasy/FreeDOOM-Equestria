@@ -9,14 +9,15 @@ Class EquestriaRifle : DoomEquestriaWeapon
 		Weapon.AmmoGive 30;
 		Weapon.AmmoType "Clip";
 		
-		Inventory.PickupMessage "$GOTCHAINGUN";
+		Inventory.PickupMessage "$GOTRIFLE";
 		Obituary "$OB_MPCHAINGUN";
-		Tag "$TAG_CHAINGUN";
+		Tag "Rifle";
 	}
 	States
 	{
 	Spawn:
-		MGUN A -1;
+		TNT1 A 0 NoDelay { bSPRITEFLIP = RandomPick(0,1); }
+		RFLE D -1;
 		Stop;
 		
 	Ready:

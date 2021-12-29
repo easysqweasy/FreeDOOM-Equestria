@@ -24,6 +24,8 @@ OTARMBONUS = "Picked up a Spiritual Armor.";
 GOTARMOR = "Picked up a Security Armor.";
 GOTMEGA = "Picked up a Combat Armor.";
 
+GOTRIFLE = "You got the rifle!";
+
 BERSERKFIST = "Berserked Hooves";
 GOTBERSERK = "Berserk! Let's punch out some demons!";
 
@@ -31,11 +33,6 @@ LOWHEALTH = "Low Health";
 
 /* Monsters */
 
-/*
-CC_ZOMBIE = "Former Soldier";
-CC_SHOTGUN = "Former Sergeant";
-FN_HEAVY = "Heavy Weapon Dude";
-*/
 BURSTBAT = "Possesed Trainer";
 
 TECHDUDE = "Possessed Hacker";
