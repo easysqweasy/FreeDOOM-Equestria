@@ -5,34 +5,34 @@ Class EquestriaBaronofHell : BaronOfHell replaces BaronOfHell
 		//$Sprite BOSSA2C8
 		BloodColor "darkgreen";
 		
-		+CastSpriteShadow;
+		+CastSpriteShadow
 		
 		PainThreshold 5;
 	}
 	States
 	{
 	Spawn:
-		IDLB CD 10 A_Look;
+		IDLB CD 10 A_Look();
 		Loop;
 	
 	Melee:
-		BOSS E 8 A_FaceTarget;
-		BOSS F 6 A_FaceTarget;
+		BOSS E 8 A_FaceTarget();
+		BOSS F 6 A_FaceTarget();
 		BOSS G 6 A_CustomMeleeAttack(10 * random(1, 8), "baron/melee", "skel/swing", "BruisersMelee");
 		Goto See;
 		
 	Missile:
-		BOSS EF 8 A_FaceTarget;
-		BOSS G 8 A_SpawnProjectile("BaronHellBall");
+		BOSS EF 8 A_FaceTarget();
+		BOSS G 8 A_SpawnProjectile("EquestriaBaronBall");
 		Goto See;
 	
 	Death:
 		"####" "#" 0 { bSPRITEFLIP = randompick(0, 1); }
 		
 		BOSS I 8;
-		BOSS J 8 A_Scream;
+		BOSS J 8 A_Scream();
 		BOSS K 8;
-		BOSS L 8 A_NoBlocking;
+		BOSS L 8 A_NoBlocking();
 		BOSS M 8;
 		BOSS N -1 A_BossDeath;
 		Stop;
@@ -41,9 +41,9 @@ Class EquestriaBaronofHell : BaronOfHell replaces BaronOfHell
 		"####" "#" 0 { bSPRITEFLIP = randompick(0, 1); }
 		
 		BOSS O 8;
-		BOSS P 8 A_Scream;
+		BOSS P 8 A_Scream();
 		BOSS Q 8;
-		BOSS R 8 A_NoBlocking;
+		BOSS R 8 A_NoBlocking();
 		BOSS ST 8;
 		BOSS U -1 A_BossDeath;
 		Stop;
@@ -54,9 +54,10 @@ Class EquestriaHellKnight : HellKnight replaces HellKnight
 {
 	Default
 	{
-		+CASTSPRITESHADOW;
+		+CASTSPRITESHADOW
 		
 		Speed 10;
+		PainThreshold 5;
 		PainChance 75;
 		BloodColor "green";
 	}
@@ -64,27 +65,27 @@ Class EquestriaHellKnight : HellKnight replaces HellKnight
 	{
 	
 	Spawn:
-		IDLB AB 10 A_Look;
+		IDLB AB 10 A_Look();
 		Loop;
  
 	Melee:
-		BOS2 E 8 A_FaceTarget;
-		BOS2 F 6 A_FaceTarget;
+		BOS2 E 8 A_FaceTarget();
+		BOS2 F 6 A_FaceTarget();
 		BOS2 G 6 A_CustomMeleeAttack(10 * random(1, 8), "baron/melee", "skel/swing", "BruisersMelee");
 		Goto See;
 		
 	Missile:
-		BOS2 EF 8 A_FaceTarget;
-		BOS2 G 8 A_SpawnProjectile("BaronHellBall");
+		BOS2 EF 8 A_FaceTarget();
+		BOS2 G 8 A_SpawnProjectile("KnightBall");
 		Goto See;
 	
 	Death:
 		TNT1 A 0 { bSPRITEFLIP = randompick(0, 1); }
 		
 		BOS2 I 8;
-		BOS2 J 8 A_Scream;
+		BOS2 J 8 A_Scream();
 		BOS2 K 8;
-		BOS2 L 8 A_NoBlocking;
+		BOS2 L 8 A_NoBlocking();
 		BOS2 MN 8;
 		BOS2 O -1;
 		Stop;
@@ -92,8 +93,8 @@ Class EquestriaHellKnight : HellKnight replaces HellKnight
 	XDeath:
 		TNT1 A 0 { bSPRITEFLIP = randompick(0, 1); }
 		
-		BOS2 P 5 A_Scream;
-		BOS2 Q 5 A_NoBlocking;
+		BOS2 P 5 A_Scream();
+		BOS2 Q 5 A_NoBlocking();
 		BOS2 R 5 A_XScream;
 		BOS2 STUVW 5;
 		BOS2 X -1;
@@ -102,15 +103,32 @@ Class EquestriaHellKnight : HellKnight replaces HellKnight
 }
 
 Class BossBaronofHell : EquestriaBaronofHell
-{
+{	Default	{	+MISSILEMORE	}
 	States
 	{
 	See:
 		BOSS A 1;
 		BOSS C 0 ACS_NamedExecuteAlways("BossHealthBar");
 	Chase:
-		BOSS AABBCCDD 3 A_Chase;
+		BOSS AABBCCDD 3 A_Chase();
 		Loop;
+		
+	Melee:
+	Missile:
+		BOSS A 0 A_Jump(128, "AltMissile");
+		BOSS EF 6 A_FaceTarget();
+		BOSS G 8 A_BruisAttack();
+		Goto Chase;
+		
+	AltMissile:
+		BOSS E 12 A_FaceTarget();
+		BOSS F 8 A_FaceTarget();
+		BOSS G 8
+		{
+			A_SpawnProjectile("KnightBall", 32, 0, -25, CMF_AIMOFFSET);
+			A_SpawnProjectile("KnightBall", 32, 0, 25, CMF_AIMOFFSET);
+		}
+		Goto Chase;
 	}
 }
 
@@ -123,30 +141,43 @@ Class EquestriaBaronBall : BaronBall replaces BaronBall
 		
 		Decal "BaronScorch";
 		
-		+ForceXYBillBoard;
+		+ForceXYBillBoard
 	}
-}
-
-Class KnightBall : EquestriaBaronBall
-{
 	States
 	{
 	Spawn:
-		BBAL AB 4 Bright;
-		Loop;
-	}
-}
-	
-Class BaronHellBall : EquestriaBaronBall
-{
-	States
-	{
-	Spawn:
-		BAL7 AB 4 Bright;
+		BAL7 AB 4 Bright A_SpawnItem("BaronBallTrail");
 		Loop;
  
 	Death:
 		BAL7 CD 6 Bright;
+		BAL7 E 1 Bright A_FadeOut(0.1);
+		Wait;
+	}
+}
+
+
+Class KnightBall : EquestriaBaronBall
+{
+	Default
+	{
+		Speed 20; FastSpeed 25;
+		Damage 6;
+	}
+	States
+	{
+	Spawn:
+		BBAL AB 4 Bright A_SpawnItem("BaronBallTrail");
+		Loop;
+	}
+}
+
+Class BaronBallTrail : Trails
+{	Default	{	RenderStyle	"Add";	}
+	States
+	{
+	Spawn:
+		BAL7 CD 3 Bright;
 		BAL7 E 1 Bright A_FadeOut(0.1);
 		Wait;
 	}
