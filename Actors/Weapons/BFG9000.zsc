@@ -110,7 +110,7 @@ Class EquestriaBFGBall : Actor replaces BFGBall
 		
 		Speed 25;
 		
-		Damage 15;
+		Damage 50;
 		Decal "BFGScorch";
 		
 		RenderStyle "Add";
