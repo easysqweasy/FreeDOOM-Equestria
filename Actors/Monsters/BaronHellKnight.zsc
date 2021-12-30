@@ -29,23 +29,23 @@ Class EquestriaBaronofHell : BaronOfHell replaces BaronOfHell
 	Death:
 		"####" "#" 0 { bSPRITEFLIP = randompick(0, 1); }
 		
-		BOSS I 8;
-		BOSS J 8 A_Scream();
-		BOSS K 8;
-		BOSS L 8 A_NoBlocking();
-		BOSS M 8;
-		BOSS N -1 A_BossDeath;
+		BOSD A 8;
+		BOSD B 8 A_Scream();
+		BOSD C 8;
+		BOSD D 8 A_NoBlocking();
+		BOSD E 8;
+		BOSD F -1 A_BossDeath;
 		Stop;
 		
 	XDeath:
 		"####" "#" 0 { bSPRITEFLIP = randompick(0, 1); }
 		
-		BOSS O 8;
-		BOSS P 8 A_Scream();
-		BOSS Q 8;
-		BOSS R 8 A_NoBlocking();
-		BOSS ST 8;
-		BOSS U -1 A_BossDeath;
+		BOSD G 8;
+		BOSD H 8 A_Scream();
+		BOSD I 8;
+		BOSD J 8 A_NoBlocking();
+		BOSD KL 8;
+		BOSD M -1 A_BossDeath;
 		Stop;
 	}
 }
@@ -121,9 +121,9 @@ Class BossBaronofHell : EquestriaBaronofHell
 		Goto Chase;
 		
 	AltMissile:
-		BOSS E 12 A_FaceTarget();
-		BOSS F 8 A_FaceTarget();
-		BOSS G 8
+		BOSS I 12 A_FaceTarget();
+		BOSS J 8 A_FaceTarget();
+		BOSS K 8
 		{
 			A_SpawnProjectile("KnightBall", 32, 0, -25, CMF_AIMOFFSET);
 			A_SpawnProjectile("KnightBall", 32, 0, 25, CMF_AIMOFFSET);
