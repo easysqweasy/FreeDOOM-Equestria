@@ -137,7 +137,7 @@ Class EquestriaPlasmaGun : DoomEquestriaWeapon replaces PlasmaRifle
 	}
 }
 		
-Class EquestriaPlasmaBall : Actor replaces PlasmaBall
+Class EquestriaPlasmaBall : Actor
 {
 	Default
 	{
