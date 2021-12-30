@@ -93,7 +93,7 @@ Class EquestriaRocket : Rocket replaces Rocket
 	States
 	{
 	Spawn:
-		MISL A 2 Bright A_SpawnItemEx("EquestriaRocketSmoke");
+		MISL A 2 Bright A_SpawnItem("EquestriaRocketSmoke");
 		Loop;
 		
 	Death:
@@ -117,7 +117,7 @@ Class EquestriaRocket : Rocket replaces Rocket
 }
 
 Class EquestriaRocketSmoke : Smoke replaces RocketSmokeTrail
-{	Default{	+NOINTERACTION	VSpeed 0.65;}
+{	Default{	+NOINTERACTION	VSpeed 0.65;	}
 	States
 	{
 	Spawn:
@@ -125,7 +125,7 @@ Class EquestriaRocketSmoke : Smoke replaces RocketSmokeTrail
 		RSMK A random(2,4)
 		{
 			bSPRITEFLIP = randompick(0, 1);
-			A_SetRoll(random(-359, 359));
+			A_SetRoll(random(0, 359));
 		}
 		RSMK A 2;
 		RSMK AAAAAAAAAABBBBBBBBCCCCCCDDDD 1
