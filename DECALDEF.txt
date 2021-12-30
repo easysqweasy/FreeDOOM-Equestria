@@ -25,26 +25,12 @@ Decal ShellDecal
 	LowerDecal ShellLowerDecal
 }
 
-Decal ChainsawDecal1
+Decal ChainsawDecal
 {
 	Pic BulletDecal
 	Shade "00 00 00"
-	Y-Scale 4.25 X-Scale 0.25
+	Y-Scale 2.5 X-Scale 0.25
 	RandomFlipY RandomFlipX
-}
-
-Decal ChainsawDecal2
-{
-	Pic BulletDecal
-	Shade "00 00 00"
-	Y-Scale 0.25 X-Scale 4.25
-	RandomFlipY RandomFlipX
-}
-
-DecalGroup ChainsawDecal
-{
-	ChainsawDecal1 1
-	ChainsawDecal2 1
 }
 
 Decal FireBallScorch1
@@ -200,18 +186,18 @@ decal BFGLightning2
 
 ////Weapons
 
-generator EquestriaPistol	ChipDecal
-generator EquestriaChainsaw	ChainsawDecal
-generator EquestriaShotgun	ShellDecal
-generator EquestriaSuperShotgun	ShellDecal
-generator EquestriaChaingun	ChipDecal
-generator EquestriaRifle	ChipDecal
+generator EquestriaPistol			ChipDecal
+generator EquestriaChainsaw			ChainsawDecal
+generator EquestriaShotgun			ShellDecal
+generator EquestriaSuperShotgun		ShellDecal
+generator EquestriaChaingun			ChipDecal
+generator EquestriaRifle			ChipDecal
 
 ////Monsters
 
 generator EquestriaZombieMan		ChipDecal
 generator EquestriaShotgunGuy		ShellDecal
 generator EquestriaChaingunGuy		ChipDecal
-generator WolfensteinSS		ChipDecal
+generator WolfensteinSS				ChipDecal
 generator EquestriaSpiderMastermind	ShellDecal
 generator EquestriaRevenantTracer	RevenantScorch
