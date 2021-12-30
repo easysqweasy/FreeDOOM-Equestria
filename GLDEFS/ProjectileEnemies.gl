@@ -142,7 +142,7 @@ object BaronBall
     frame BAL7E { light BARONBALL_X3 }
 }
 
-object BaronHellBall
+object EquestriaBaronBall
 {
 	frame BBALA { light BARONBALL    }
 	frame BBALB { light BARONBALL    }
