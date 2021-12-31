@@ -22,6 +22,7 @@ Class EquestriaAracPlasmaBall : EquestriaPlasmaBall replaces ArachnotronPlasma
 {
 	Default
 	{
+		Decal "ArachnotronScorch";
 		SeeSound "baby/attack";
 		DeathSound "baby/shotx";
 	}
