@@ -162,11 +162,17 @@ decal BFGScorch2
 	randomflipy
 }
 
+decalgroup BFGScorch
+{
+	BFGScorch1	1
+	BFGScorch2	1
+}
+
 Decal BFGLightning1
 {
 	pic BFGLITE1
 	shade "80 ff 80"
-	Y-Scale 1.5 X-Scale 1.5
+	Y-Scale 2 X-Scale 2
 	fullbright
 	randomflipx
 	animator GoAway2
@@ -177,12 +183,19 @@ decal BFGLightning2
 {
 	pic BFGLITE2
 	shade "80 ff 80"
-	Y-Scale 1.5 X-Scale 1.5
+	Y-Scale 2 X-Scale 2
 	fullbright
 	randomflipy
 	animator GoAway2
 	lowerdecal BFGScorch
 }
+
+decalgroup BFGLightning
+{
+	BFGLightning1	1
+	BFGLightning2	1
+}
+
 
 ////Weapons
 
