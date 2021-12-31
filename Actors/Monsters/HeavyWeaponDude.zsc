@@ -8,8 +8,7 @@ Class EquestriaChaingunGuy : ChaingunGuy replaces ChaingunGuy
 		Speed 8;
 		PainChance 170; PainThreshold 5;
 		
-		+CASTSPRITESHADOW;
-		+NOINFIGHTSPECIES;
+		+CastSpriteShadow
 		
 		//SeeSound "chainguy/sight";
 		//DeathSound "chainguy/death";
