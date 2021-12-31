@@ -24,7 +24,7 @@ object EquestriaExploBarrel
 // Tall red torch
 flickerlight2 BIGREDTORCH
 {
-    color 0.7 0.35 0.14
+    color 0.7 0.2 0.2
     size 90
     secondarySize 99
     interval 0.1
@@ -72,7 +72,7 @@ object BlueTorch
 // Small red torch
 flickerlight2 SMALLREDTORCH
 {
-    color 0.7 0.35 0.14
+    color 0.7 0.2 0.2
     size 72
     secondarySize 81
     interval 0.1

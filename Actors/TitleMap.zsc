@@ -12,7 +12,6 @@ Class TheHorse : TitleMapProps
 	Default
 	{
 		//$Category TitleMap and End Screens
-		Scale 0.50;
 	}
 	States
 	{
@@ -27,13 +26,26 @@ Class PoorImp : TitleMapProps
 	Default
 	{
 		//$Category TitleMap and End Screens
-		Scale 0.35;
 		+FORCEXYBILLBOARD
 	}
 	States
 	{
 	Spawn:
 		TMAP B -1;
+		Stop;
+	}
+}
+
+Class GoatHorse : TitleMapProps
+{	
+	Default
+	{
+		//$Category TitleMap and End Screens
+	}
+	States
+	{
+	Spawn:
+		TMAP C -1;
 		Stop;
 	}
 }

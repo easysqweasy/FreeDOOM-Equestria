@@ -5,6 +5,7 @@ gameinfo
 	DimColor = "00 00 00"
 	DimAmount = 0.5
 	DefaultDropStyle = 2
+	cursorpic = "cursor"
 }
 
 gamedefaults 
@@ -14,7 +15,7 @@ gamedefaults
 	ClipMidTextures
 	NoCrouch
 	DisableSkyboxAO
-	
+
 	Compat_Invisibility = 1
 	LightMode = 2
 	lightadditivesurfaces = 1
@@ -37,30 +38,30 @@ clearskills
 skill baby
 {
 	SpawnFilter = baby
-	
+
 	AutoUseHealth
 	AmmoFactor = 2
 	DamageFactor = 0.5
 	EasyBossBrain
-			   
+
 	Name = "$BABYSKILL"
-	Key = "i"
+	Key = "1"
 }
 
 skill easy
 {
 	SpawnFilter = easy
-	
+
 	EasyBossBrain
 	Name = "$EASYSKILL"
-	Key = "h"
+	Key = "2"
 }
 
 skill normal
 {
 	SpawnFilter = normal
-	
-	Key = "h"
+
+	Key = "3"
 	Name = "$NORMALSKILL"
 	DefaultSkill
 }
@@ -68,29 +69,29 @@ skill normal
 skill hard
 {
 	SpawnFilter = hard
-	
+
 	Name = "$HARDSKILL"
-	Key = "u"
+	Key = "4"
 }
 
 skill hardplus
 {
-   SpawnFilter = hard
-   
-   Name = "$PLUSSKILL"
-   Key = "f"
-   FastMonsters
+	SpawnFilter = hard
+
+	Name = "$PLUSSKILL"
+	Key = "5"
+	FastMonsters
 }
 
 skill nightmare
 {
 	SpawnFilter = Nightmare
 
-   AmmoFactor = 2
-   FastMonsters
-   DisableCheats
-   RespawnTime = 12 
-   PicName = "M_NMARE"
-   MustConfirm
-   Key = "n"
+	AmmoFactor = 2
+	FastMonsters
+	DisableCheats
+	RespawnTime = 12 
+	PicName = "M_NMARE"
+	MustConfirm
+	Key = "6"
 }

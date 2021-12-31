@@ -86,22 +86,6 @@ object NirikLostSoul
     frame SKULK { light LOSTSOUL_X4 }
 }
 
-pointlight SPECTRE
-{
-    color 0.5 0.5 0.5
-    size 72
-    offset 0 24 0
-    subtractive 1
-	attenuate 1
-}
-
-
-/*object EquestriaSpectre
-{
-    frame SPEC { light SPECTRE }
-}*/
-
-
 // Zombies
 flickerlight2 ZOMBIEATK
 {
@@ -166,7 +150,7 @@ object EquestriaChaingunGuy
     frame CPOSF { light ZOMBIEATK }
 }
 
-object PlasmaKirin
+object PossessedHacker
 {
     frame TECHF { light PLASMATK2 }
     frame TECHE { light PLASMATK }

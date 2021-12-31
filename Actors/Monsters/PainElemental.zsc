@@ -1,0 +1,94 @@
+Class EquestriaPainElemental : PainElemental replaces PainElemental
+{
+	Default
+	{
+		Monster;
+		
+		Tag "$FN_PAIN";
+				
+		Health 400;
+		Radius 31; Height 56;
+		Mass 400;
+		Speed 8;
+		PainChance 100;
+		FloatBobStrength 0.25;
+		
+		+CASTSPRITESHADOW
+		+NOGRAVITY +FLOAT  +FLOATBOB 
+		+FORCEXYBILLBOARD +AvoidMelee +DONTFALL
+		
+		SeeSound "pain/sight";
+		PainSound "pain/pain";
+		DeathSound "pain/death";
+		ActiveSound "pain/active";
+	}
+	States
+	{
+	Spawn:
+		PAIN A 10 A_Look;
+		Loop;
+	See:
+		//PAIN # 0 A_Check
+		PAIN AABBCC 3 A_Chase;
+		Loop;
+		
+	Missile:
+		PAIN D 5 A_FaceTarget();
+		PAIN E 5 A_FaceTarget();
+		PAIN F 5 BRIGHT A_FaceTarget();
+		PAIN F 0 BRIGHT A_Jump(256, "Missile.Pony", "Missile.Unicorn", "Missile.Nirik");
+		Goto See;
+	
+		Missile.Pony:
+			PAIN F 0 BRIGHT A_PainAttack("PonyLostSoul");
+			Goto See;
+			
+		Missile.Unicorn:
+			PAIN F 0 BRIGHT A_PainAttack("UnicornLostSoul");
+			Goto See;
+			
+		Missile.Nirik:
+			PAIN F 0 BRIGHT A_PainAttack("NirikLostSoul");
+			Goto See;
+	
+	Pain:
+		PAIN G 6;
+		PAIN G 6 A_Pain;
+		Goto See;
+		
+	Death:
+		PAIN H 8 Bright;
+		PAIN I 8 Bright A_Scream();
+		PAIN J 8 Bright;
+		PAIN K 8 Bright
+		{
+			A_QuakeEx(3, 3, 3, 4, 0, 500, "", 0,0,0,0, 1);
+			
+			A_SpawnItemEx("BloodExplosionSphere",0,0,32,0,0,0,0, SXF_TRANSFERPOINTERS);
+			A_SpawnItemEx("BloodExplosionSphere",0,0,32,0,0,0,0, SXF_TRANSFERPOINTERS);
+			A_SpawnItemEx("BloodExplosionSphere",0,0,32,0,0,0,0, SXF_TRANSFERPOINTERS);
+			A_SpawnItemEx("BloodExplosionSphere",0,0,32,0,0,0,0, SXF_TRANSFERPOINTERS);
+		}
+		PAIN L 8 Bright
+		{
+			A_PainAttack("PonyLostSoul", 90);
+			A_PainAttack("NirikLostSoul", 0);
+			A_PainAttack("UnicornLostSoul", -90);
+		}
+		PAIN M 8 Bright;
+		Stop;
+		
+	Raise:
+		PAIN MLKJIH 8;
+		Goto See;
+		
+	Crush:
+		PAIN H 8 BRIGHT;
+		PAIN I 8 BRIGHT A_Scream();
+		PAIN JK 8 BRIGHT;
+		PAIN L 8 BRIGHT A_Die();
+		PAIN M 8 BRIGHT;
+		Stop;
+	}
+}
+

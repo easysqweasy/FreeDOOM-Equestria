@@ -3,7 +3,7 @@ Class DEParticles : DebrisCore
 	Default
 	{
 		+NOGRAVITY;
-		//+THRUACTORS;
+		+THRUACTORS;
 		+DONTSPLASH;
 		+ExplodeOnWater;
 		+Randomize;

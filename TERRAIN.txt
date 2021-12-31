@@ -206,7 +206,6 @@ floor LAVA4 Lava
 floor NUKAGE1 Nukage
 floor NUKAGE2 Nukage
 floor NUKAGE3 Nukage
-floor NUKAGE4 Nukage
 
 floor RROCK01 LavaSmoke
 

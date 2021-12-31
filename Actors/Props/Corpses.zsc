@@ -1,9 +1,9 @@
-Class DeadPlasmaKirin : PlasmaKirin
+Class DeadPlasmaKirin : PossessedHacker
 {
 	Default
 	{
 		//$Category Decoration
-		Tag "Dead Hacker Leader";
+		Tag "Dead Hacker";
 		Skip_Super;
 		DropItem "None";
 	}

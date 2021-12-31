@@ -1,28 +1,28 @@
 // Floor lamp
-pointlight LAMP
+pulselight LAMP
 {
     color 1.0 1.0 0.8
-    size 84
+    size 65 secondarysize 75
     offset 0 44 0
 	attenuate 1
 }
 
-pointlight LAMP2
+pulselight LAMP2
 {
     color 0.8 0.8 1.0
-    size 84
+    size 75 secondarysize 86
     offset 0 44 0
 	attenuate 1
 }
 
-object Column
+object EquestriaColumn
 {
     frame COLUA { light LAMP }
 }
 
 object Column2
 {
-    frame LAM4 { light LAMP2 }
+    frame COLUC { light LAMP2 }
 }
 
 
@@ -30,10 +30,9 @@ object Column2
 pulselight SMALLLAMP
 {
     color 0.8 0.8 1.0
-    size 84
-    secondarySize 87
-    interval 0.4
-    offset 0 44 0
+    size 80 secondarysize 90
+    interval 0.5
+    offset 0 50 0
 	attenuate 1
 }
 
@@ -49,8 +48,8 @@ object EquestriaTechLamp2
 pulselight BIGLAMP
 {
     color 0.8 0.8 1.0
-    size 96
-    secondarySize 99
+    size 95
+    secondarySize 100
     interval 0.4
     offset 0 72 0
 	attenuate 1
