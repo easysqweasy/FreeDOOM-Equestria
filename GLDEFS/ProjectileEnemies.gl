@@ -175,50 +175,52 @@ object FatShot
 }
 
 // Arachnotron Fireball
-pointlight ARACHPLAS
+pulselight ARACHPLAS
 {
     color 0.6 1.0 0.4
-    size 84
+    size 20
+	secondarysize 40
+	interval 0.5
 	attenuate 1
 }
 
 flickerlight ARACHPLAS_X1
 {
     color 0.4 0.8 0.3
-    size 108
-    secondarySize 120
-    chance 0.3
+    size 30
+    secondarySize 55
+    chance 0.5
 	attenuate 1
 }
 
 flickerlight ARACHPLAS_X2
 {
     color 0.6 0.6 0.3
-    size 132
-    secondarySize 144
-    chance 0.3
+    size 35
+    secondarySize 60
+    chance 0.5
 	attenuate 1
 }
 
 flickerlight ARACHPLAS_X3
 {
     color 0.4 0.4 0.2
-    size 72
-    secondarySize 48
-    chance 0.3
+    size 15
+    secondarySize 20
+    chance 0.5
 	attenuate 1
 }
 
 flickerlight ARACHPLAS_X4
 {
     color 0.2 0.2 0.1
-    size 36
-    secondarySize 24
-    chance 0.3
+    size 5
+    secondarySize 10
+    chance 0.5
 	attenuate 1
 }
 
-object ArachnotronPlasma
+object EquestriaAracPlasmaBall
 {
     frame APLSA { light ARACHPLAS }
     frame APLSB { light ARACHPLAS }
