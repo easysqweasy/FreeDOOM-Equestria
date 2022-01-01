@@ -83,7 +83,7 @@ Class EquestriaPlasmaGun : DoomEquestriaWeapon replaces PlasmaRifle
 		PLSF B 3 Bright
 		{
 			A_WeaponOffset(0, 35, WOF_KEEPX | WOF_INTERPOLATE);
-			A_Light1();
+			A_Light2();
 		}
 		//I Don't know how i make a smooth animation with the original Doom Sprites
 		Goto LightDone;
