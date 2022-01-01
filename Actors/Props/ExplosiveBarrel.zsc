@@ -26,14 +26,14 @@ Class EquestriaExploBarrel : ExplosiveBarrel replaces ExplosiveBarrel
 	Death.BarrelExp:
 	XDeath.BarrelExp:
 	Death:
-		BAR1 AAAA 1 Bright A_SpawnProjectile("Smoke", random(16, 32), 0, random (0, 360), CMF_AIMDIRECTION, random (0, -180));
+		BAR1 AAAA 1 Bright A_SpawnProjectile("Smoke", random(0, 32), 0, random (0, 359), CMF_AIMDIRECTION, random (0, -180));
 
 		BAR1 AAAAA 1 Bright A_SetScale((Scale.X + 0.05), 1.0, 0, true);
 		BEXP AAAAA 1 Bright A_SetScale((Scale.X + 0.1), 1.0, 0, true);
 		
-		TNT1 AAAAAAAAAA 0 A_SpawnProjectile("Smoke", random(-32, 32), 0, random (0, 360), CMF_AIMDIRECTION, random (0, 360));
+		TNT1 AAAAAAAAAA 0 A_SpawnProjectile("Smoke", random(0, 32), 0, random (0, 359), CMF_AIMDIRECTION, random (0, 359));
 		
-		TNT1 BBBBBBBBBBBBBBB 0 A_SpawnProjectile("BarrelDebris", random(8, 16), 0, random (0, 360), CMF_AIMDIRECTION, random (-10, -90));
+		TNT1 BBBBBBBBBBBBBBB 0 A_SpawnProjectile("BarrelDebris", random(0, 32), 0, random (0, 359), CMF_AIMDIRECTION, random (-10, -90));
 		
 		BEXP B 5 Bright
 		{
@@ -45,7 +45,7 @@ Class EquestriaExploBarrel : ExplosiveBarrel replaces ExplosiveBarrel
 			bFORCEXYBILLBOARD = 1;
 		}
 		
-		TNT1 AAAA 0 A_SpawnProjectile("SplashSmoke", random(-20, 20), random (-40, 40), random (0, 360), CMF_AIMDIRECTION, random(0, -90));
+		TNT1 AAAA 0 A_SpawnProjectile("SplashSmoke", random(0, 32), random (-40, 40), random (0, 359), CMF_AIMDIRECTION, random(0, -90));
 		
 		BEXP CD 5;
 		BEXP E 1050 Bright A_BarrelDestroy();
@@ -59,14 +59,14 @@ Class EquestriaExploBarrel : ExplosiveBarrel replaces ExplosiveBarrel
 	XDeath:
 		BAR1 A 1 Bright;
 		
-		TNT1 AAAA 0 Bright A_SpawnProjectile("Smoke", random(16, 32), 0, random (0, 360), CMF_AIMDIRECTION, random (0, -180));
+		TNT1 AAAA 0 Bright A_SpawnProjectile("Smoke", random(0, 32), 0, random (0, 359), CMF_AIMDIRECTION, random (0, -180));
 		
 		BAR1 AAA 1 Bright A_SetScale((Scale.X + 0.20), 1.0, 0, true);
 		BEXP A 4 Bright;
 		
-		TNT1 AAAAAAAAAA 0 A_SpawnProjectile("Smoke", random(-32, 32), 0, random (0, 360), CMF_AIMDIRECTION, random (0, 360));
+		TNT1 AAAAAAAAAA 0 A_SpawnProjectile("Smoke", random(0, 32), 0, random (0, 359), CMF_AIMDIRECTION, random (0, 359));
 		
-		TNT1 BBBBBBBBBBBBBBBBBBBB 0 A_SpawnProjectile("BarrelDebris", random(8, 16), 0, random (0, 360), CMF_AIMDIRECTION, random (-10, -90));
+		TNT1 BBBBBBBBBBBBBBBBBBBB 0 A_SpawnProjectile("BarrelDebris", random(0, 32), 0, random (0, 359), CMF_AIMDIRECTION, random (-10, -90));
 		
 		BEXP B 5 Bright
 		{
@@ -78,10 +78,10 @@ Class EquestriaExploBarrel : ExplosiveBarrel replaces ExplosiveBarrel
 			bFORCEXYBILLBOARD = 1;
 		}
 		
-		TNT1 AAAA 0 A_SpawnProjectile("SplashSmoke", random(-20, 20), random (-40, 40), random (0, 360), CMF_AIMDIRECTION, random(0, -90));
+		TNT1 AAAA 0 A_SpawnProjectile("SplashSmoke", random(0, 32), random (-40, 40), random (0, 359), CMF_AIMDIRECTION, random(0, -90));
 		
 		BEXP CD 5;
-		BEXP E 1050 Bright A_BarrelDestroy();
+		BEXP E 1050 A_BarrelDestroy();
 		TNT1 A 5
 		{
 			bFORCEXYBILLBOARD = 0;
