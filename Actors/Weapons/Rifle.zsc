@@ -29,10 +29,10 @@ Class EquestriaRifle : DoomEquestriaWeapon
 		TNT1 A 0 A_TakeInventory("KickCheck", 999);
 		TNT1 A 0 A_JumpIf(health <= 0, "DeathCheck");
 		
-		RFLE A 1 A_Lower;
+		RFLE A 1 A_Lower();
 		Loop;
 	Select:
-		RFLE A 1 A_Raise;
+		RFLE A 1 A_Raise();
 		Loop;
 	Fire:
 		RFLE A 2
@@ -51,8 +51,8 @@ Class EquestriaRifle : DoomEquestriaWeapon
 		RFLE A 0 A_WeaponOffset(0, 32, WOF_INTERPOLATE | WOF_KEEPX);
 		Goto Ready;
 	Flash:
-		RFLE C 2 Bright A_Light1;
-		RFLE B 2 Bright A_Light2;
+		RFLE C 2 Bright;
+		RFLE B 2 Bright;
 		Goto LightDone;
 		
 	CamRecoil:
