@@ -80,17 +80,3 @@ Class Smoke : Trails replaces RocketSmokeTrail
 		}
 	}
 }
-
-Class SoulSpherePickup : DEParticles
-{
-	Default
-	{
-		+NoInteraction;
-	}
-	States
-	{
-	Spawn:
-		SOUL EFGH 6 Bright;
-		Stop;
-	}
-}
