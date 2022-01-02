@@ -30,6 +30,8 @@ $attenuation		weapons/impact	0.5
 
 weapons/chaingun	DSCHAIN
 
+misc/magic		DSMAGIC
+
 /* Pickups */
 
 pickup/skullkey		dssklatk
@@ -58,13 +60,9 @@ gore/impact1 GibImp1
 gore/impact2 GibImp2
 gore/impact3 GibImp3
 
-/* Decorations */
+/* World */
 
 DoomTorch/Burn		DSFIRLOP
 
 $limit DoomTorch/Burn 0
 $attenuation DoomTorch/Burn 4
-
-/*	Misc	*/
-
-misc/magic		DSMAGIC
