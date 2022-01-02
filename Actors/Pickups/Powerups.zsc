@@ -7,13 +7,13 @@ Class EquestriaComputerMap : Allmap replaces Allmap
 	{
 	Spawn:
 		PMAP A random( 10, 20) Bright;
-				PMAP E random( 1, 5) Bright;
+				PMAP E random(0, 10) Bright;
 		PMAP B random( 10, 20) Bright;
-				PMAP E random( 1, 5) Bright;
+				PMAP E random(0, 10) Bright;
 		PMAP C random( 10, 20) Bright;
-				PMAP E random( 1, 5) Bright;
+				PMAP E random(0, 10) Bright;
 		PMAP D random( 10, 20) Bright;
-				PMAP E random( 1, 5) Bright;
+				PMAP E random(0, 10) Bright;
 		Loop;
 	}
 }
@@ -23,7 +23,7 @@ Class EquestriaComputerMap : Allmap replaces Allmap
 Class EquestriaBlurSphere : CustomInventory replaces BlurSphere
 {
 	Default
-	{
+	{	
 		Height 40; Radius 20;
 
 		+COUNTITEM
