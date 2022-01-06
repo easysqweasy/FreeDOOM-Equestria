@@ -39,6 +39,7 @@ Class PossessedHacker : Actor
 		Loop;
 	
 	See:
+		//#### # 0 A_CheckProximity("Raise", "PossessedTrainer", 1024, 1);
 		TECH AABBCCDD 3 A_Chase();
 		Loop;
 	
@@ -64,6 +65,8 @@ Class PossessedHacker : Actor
 		TECH E 20 A_CposRefire();
 		Goto See;
 	
+	Pain.Kick:
+		#### # 0 A_Recoil(5);
 	Pain:
 		TECH G 3;
 		TECH G 3 A_Pain();
@@ -77,7 +80,6 @@ Class PossessedHacker : Actor
 		{
 			A_AlertMonsters();
 			A_Scream();
-			A_SpawnItem("NirikFire");
 		}
 		#### J 4 A_NoBlocking();
 		#### J 1 A_CheckFloor(1);
