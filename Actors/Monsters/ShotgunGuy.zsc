@@ -34,14 +34,16 @@ Class EquestriaShotgunGuy : DoomEquestriaMonster replaces ShotgunGuy
 		Loop;
 	
 	See:
-		SPOS AABBCCDD 3 A_Chase();
+		#### # 0 A_CheckProximity("See.Trainer", "PossessedTrainer", 1024, 1);
+		SPOS AABBCCDD 3 A_Chase(); 
 		Loop;
 	See.Trainer:
-		#### AABBCCDD 3 Fast
+		#### AABBCCDD 2
 		{
-			A_Chase("Melee", "Missile", CHF_FASTCHASE);
+			A_Chase("Melee", "Missile");
 			A_SpawnProjectile("DEWaterSplashChunk", random(32, 56), 0, random (0, 359), CMF_AIMDIRECTION, random (0, -180));
 		}
+		#### # 0 A_CheckProximity("See.Trainer", "PossessedTrainer", 1024, 1);
 		Goto See;
 		
 	Missile:
@@ -50,6 +52,8 @@ Class EquestriaShotgunGuy : DoomEquestriaMonster replaces ShotgunGuy
 		SPOS E 10;
 		Goto See;
 	
+	Pain.Kick:
+		#### # 0 A_Recoil(5);
 	Pain:
         SPOS G 3;
         SPOS G 3 A_Pain();
