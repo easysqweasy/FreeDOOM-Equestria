@@ -38,7 +38,7 @@ Class EquestriaZombieMan : DoomEquestriaMonster Replaces ZombieMan
         POSS AABBCCDD 4 A_Chase();
         Loop;
 	See.Trainer:
-		#### AABBCCDD 4 Fast
+		#### AABBCCDD 4
 		{
 			A_Chase("Melee", "Missile", CHF_FASTCHASE);
 			A_SpawnProjectile("DEWaterSplashChunk", random(32, 56), 0, random (0, 359), CMF_AIMDIRECTION, random (0, -180));
@@ -51,6 +51,8 @@ Class EquestriaZombieMan : DoomEquestriaMonster Replaces ZombieMan
         POSS E 8;
         Goto See;
     
+	Pain.Kick:
+		#### # 0 A_Recoil(5);
 	Pain:
         POSS G 3;
         POSS G 3 A_Pain();
