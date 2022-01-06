@@ -227,6 +227,7 @@ Class BulletTracer : FastProjectile
 		
 		+DONTSPLASH
 		+NOEXTREMEDEATH
+		+NOBLOOD
 		+NOPAIN
 		+Bright
 		
