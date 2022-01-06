@@ -53,7 +53,7 @@ pulselight BPUFF1
     color 1.0 0.8 0.2
     size 0
 	secondarysize 8
-	interval 0.15
+	interval 0.21
 }
 
 object EquestriaBulletPuff
@@ -76,7 +76,7 @@ pulselight ShotgunPuff
     color 1.0 0.5 0.2
     size 0
 	secondarysize 10
-	interval 0.13
+	interval 0.21
 }
 
 object ShotgunPuff
