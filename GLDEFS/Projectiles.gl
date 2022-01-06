@@ -6,6 +6,15 @@ pointlight ROCKET
 	attenuate 1
 }
 
+PulseLight ROCKETEXPL
+{
+    color 1.0 0.7 0.5
+    size 0
+    secondarySize 50
+    Interval 0.5
+	attenuate 1
+}
+
 flickerlight ROCKET_X1
 {
     color 1.0 0.7 0.5
