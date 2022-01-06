@@ -3,6 +3,7 @@
 Class Harbinger_of_Doom : Actor
 {}
 
+//It still needs to do gore and others
 Class SS_Soldier : WolfensteinSS Replaces WolfensteinSS
 {
 	Default
