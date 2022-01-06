@@ -35,7 +35,7 @@ map S1E2 lookup "NUCLEAR_PLANT"
 	sky1 = "SKY1"
 	cluster = 1
 	
-	BorderTexture = "STARGR2"
+	BorderTexture = "STARTAN2"
 }
 
 map S1E3 lookup "TOXIN_REFINERY"
@@ -51,7 +51,7 @@ map S1E3 lookup "TOXIN_REFINERY"
 	sky1 = "SKY1"
 	cluster = 1
 	
-	BorderTexture = "STARGR2"
+	BorderTexture = "STARG2"
 }
 
 map S1E4 lookup "COMMAND_CONTROL"
@@ -144,6 +144,8 @@ map S1E9 lookup "SEWERS"
 	OutsideFog = 200
 
 	cluster = 1
+	
+	BorderTexture = "TP6_2"
 }
 
 map S1E10 lookup "MILITARY_BASE"
