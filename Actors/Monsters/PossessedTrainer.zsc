@@ -12,7 +12,7 @@ Class PossessedTrainer : DoomEquestriaMonster
 		Radius 20; Height 56;
 		
 		Mass 80;
-		Speed 15; FloatSpeed 8;
+		Speed 10; FloatSpeed 8;
 		
 		PainChance 128; PainThreshold 10;
 		
@@ -48,8 +48,8 @@ Class PossessedTrainer : DoomEquestriaMonster
 		Loop;
 	
 	Kick:
-		SKUL C 10 Bright A_FaceTarget;
-		SKUL D 4 Bright A_SkullAttack;
+		SKUL C 10 Bright A_FaceTarget();
+		SKUL D 4 Bright A_SkullAttack();
 		SKUL CD 4 Bright;
 		Goto Missile+2;
 	
