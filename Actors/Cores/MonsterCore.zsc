@@ -3,5 +3,7 @@ Class DoomEquestriaMonster : Actor
 	Default
 	{
 		+CastSpriteShadow
+		
+		BloodType "EquestriaBlood";
 	}
 } 
