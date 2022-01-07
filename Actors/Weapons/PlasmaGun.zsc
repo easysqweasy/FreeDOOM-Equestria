@@ -175,10 +175,13 @@ Class EquestriaPlasmaBall : Actor
 		Wait;
  
 	Death:
-		PLSE A 0 A_SpawnItem("SmokePuff");
+		PLSE A 0
+		{
+			A_FadeIn(0.5, FTF_CLAMP);
+			A_SpawnItem("SmokePuff");
+		}
 		PLSS AAAA 0 A_SpawnProjectile("PlasmaSparkle", 0, 0, random (0, 359), CMF_AIMDIRECTION, random (0, 359));
-		PLSE ABC 4 Bright;
-		PLSE DE 4 A_FadeOut(0.1);
+		PLSE ABCDE 4 Bright A_FadeOut(0.15);
 		Stop;
 	}
 }
