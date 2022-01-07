@@ -1,10 +1,10 @@
-Class PuffSparkles : DEParticles
+Class PuffSparkles : DebrisCore
 {
 	Default
 	{
-		-NOGRAVITY
 		+Bright
 		+ThruActors
+		+DontSplash
 		
 		BounceType "Doom";
 		
