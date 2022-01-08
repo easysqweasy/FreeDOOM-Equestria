@@ -44,11 +44,11 @@ Class SplashSmoke : Actor
 {
 	Default
 	{
-		Radius 2; Height 4;
+		Radius 1; Height 2;
 		RenderStyle "Translucent";
 		Alpha 0.7;
 	
-		Speed 1.5; VSpeed 1.5;
+		Speed 1; Gravity -0.75;
 	
 		+NOBLOCKMAP
 		+NoInteraction
