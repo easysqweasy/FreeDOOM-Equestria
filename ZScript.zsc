@@ -2,6 +2,10 @@ Version "4.7.1"
 
 Class DebrisCore : Actor
 {
+	int rollspd;
+	
+	property RollSpeed: rollspd;
+	
 	Default
 	{
 		+MISSILE
@@ -14,11 +18,22 @@ Class DebrisCore : Actor
 		+CANNOTPUSH
 		+NOBLOCKMONST
 		+CANPASS
-		+ROLLSPRITE +ROLLCENTER
 		+THRUACTORS
 	  
 		-ACTIVATEIMPACT -ACTIVATEPCROSS
-		-SOLID	
+		-SOLID
+		
+		+ROLLSPRITE +ROLLCENTER
+		
+		DebrisCore.RollSpeed 15;
+	}
+	override void Tick()
+	{
+		if (InStateSequence(CurState, ResolveState("Roll")) && !isFrozen())
+		{
+			A_SetRoll((roll + rollspd), SPF_INTERPOLATE);
+		}
+		Super.Tick();
 	}
 }
 
