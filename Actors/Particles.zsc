@@ -5,7 +5,6 @@ Class DEParticles : DebrisCore
 		+NOGRAVITY;
 		+THRUACTORS;
 		+DONTSPLASH;
-		+ExplodeOnWater;
 		+Randomize;
 	}
 }
@@ -14,8 +13,6 @@ Class Trails : DEParticles
 {
 	Default
 	{
-		Height 0; Radius 0;
-		
 		Scale 0.75;
 		RenderStyle "Add";
 		Alpha 0.75;
@@ -33,9 +30,7 @@ Class Smoke : Trails replaces RocketSmokeTrail
 {
 	Default
 	{
-		Height 1; Radius 1;
-		
-		Decal "Scorch";
+		Height 2; Radius 1;
 		
 		RenderStyle "Translucent";
 		
@@ -43,12 +38,13 @@ Class Smoke : Trails replaces RocketSmokeTrail
 		
 		Speed 7;
 		
-		Scale 0.50;
+		Scale 0.5;
 		
-		Gravity 0.50;
+		Gravity -0.05;
 		
 		-NoInteraction
 		-NOCLIP
+		-NOGRAVITY
 		
 		+MoveWithSector
 	}
