@@ -13,7 +13,7 @@ Class EquestriaBFG9K : DoomEquestriaWeapon replaces BFG9000
 		Weapon.AmmoGive 50;
 		Weapon.AmmoType "Cell";
 		
-		+WEAPON.NOAUTOFIRE;
+		+WEAPON.NOAUTOFIRE
 		
 		Inventory.PickupMessage "$GOTBFG9000";
 		
@@ -78,7 +78,7 @@ Class EquestriaBFG9K : DoomEquestriaWeapon replaces BFG9000
 		Goto LightDone;
 	
 	Shake:
-		TNT1 A 0 A_JumpIf(callACS("CamRecoilToggle")==0, 2);
+		TNT1 A 0 A_JumpIf(GetCVar("CamRecoilToggle") == 0, "Off");
 		TNT1 A 0 A_QuakeEx(6, 3, 6, 20, 0, 1, "", QF_SCALEUP | QF_RELATIVE);
 		
 		TNT1 AAAA 1 A_WeaponOffset(frandom(-1.5, 1.5), frandom(28, 32), WOF_INTERPOLATE);
@@ -87,7 +87,7 @@ Class EquestriaBFG9K : DoomEquestriaWeapon replaces BFG9000
 		Stop;
 
 	CamRecoil:
-		TNT1 A 0 A_JumpIf(callACS("CamRecoilToggle")==0, "Off");
+		TNT1 A 0 A_JumpIf(GetCVar("CamRecoilToggle") == 0, "Off");
 		TNT1 A 0 A_ZoomFactor(0.85, ZOOM_INSTANT | ZOOM_NOSCALETURNING);
 
 		TNT1 A 2 A_SetPitch(pitch-6, SPF_INTERPOLATE);
@@ -129,13 +129,9 @@ Class EquestriaBFGBall : Actor replaces BFGBall
 		BFS1 A 0 NoDelay A_SetRoll(random(0, 359));
 		BFS1 AAAAAAAAAAAAAAA 0 A_SpawnProjectile("BFGSparkles", 0, 0, random (0, 359), CMF_AIMDIRECTION, random (0, 359));
 		BFS1 AAAAA 1 A_SetRoll(roll + random(-75, 75), SPF_INTERPOLATE);
+	
 	Projectile:
-		BFS1 A 1
-		{
-			A_SetRoll(roll + random(-45, 45), SPF_INTERPOLATE);
-			A_SpawnProjectile("BFGSparkles", 0, 0, random (0, 359), CMF_AIMDIRECTION, random (0, 359));
-			A_SpawnItem("BFGTrail",0,0,0);
-		}
+		BFS1 A random(1, 4) A_SetRoll(roll + random(-45, 45), SPF_INTERPOLATE);
 		Loop;
 	
 	Death:
@@ -148,7 +144,7 @@ Class EquestriaBFGBall : Actor replaces BFGBall
 			A_SetScale(2);
 			A_SpawnItem("BFGShockwave");
 						
-			A_QuakeEx(8, 8, 8, 35, 0, 1000, "world/quake", QF_SCALEDOWN, 0,0,0, 1);
+			A_QuakeEx(9, 9, 9, 35, 0, 1000, "world/quake", QF_SCALEDOWN,0,0,0,1);
 		}
 		BFE1 BCD 2;
 		BFE1 E 8 A_BFGSpray();
@@ -156,10 +152,20 @@ Class EquestriaBFGBall : Actor replaces BFGBall
 		BFE1 K 1 A_FadeOut(0.1);
 		Wait;
 	}
+		
+	override void Tick()
+	{
+		if (InStateSequence(CurState, ResolveState("Projectile")) && !isFrozen())
+		{
+			A_SpawnProjectile("BFGSparkles", 0, 0, random (0, 359), CMF_AIMDIRECTION, random (0, 359));
+			A_SpawnItem("BFGTrail");
+		}
+		Super.Tick();
+	}
 }
 
 Class EquestriaBFGExtra : BFGExtra replaces BFGExtra
-{	Default { +ForceXYBillBoard; }
+{	Default { +ForceXYBillBoard }
 	States
 	{
 	Spawn:
@@ -190,8 +196,6 @@ Class BFGShockwave : Actor
 	{
 		+FORCEXYBILLBOARD
 		+NOINTERACTION
-		+NOGRAVITY
-		+NOCLIP
 		
 		RenderStyle "Add"; Alpha 0.5;
 	}
@@ -208,7 +212,6 @@ Class BFGSparkles : PuffSparkles
 {
 	Default
 	{
-		+NOGRAVITY
 		+NOINTERACTION
 		Scale 1;
 		Speed 15;

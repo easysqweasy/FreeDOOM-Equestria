@@ -23,7 +23,7 @@ Class EquestriaRifle : DoomEquestriaWeapon
 	Ready:
 		TNT1 A 0 A_JumpIfInventory("KickCheck", 1, "Kick.Normal");
 		
-		RFLE A 1 A_WeaponReady;
+		RFLE A 1 A_WeaponReady();
 		Loop;
 	Deselect:
 		TNT1 A 0 A_TakeInventory("KickCheck", 999);
@@ -63,7 +63,7 @@ Class EquestriaRifle : DoomEquestriaWeapon
 		Goto LightDone;
 		
 	CamRecoil:
-		TNT1 A 0 A_JumpIf(callACS("CamRecoilToggle")==0, "Off");
+		TNT1 A 0 A_JumpIf(GetCVar("CamRecoilToggle") == 0, "Off");
 		
 		TNT1 A 0 A_ZoomFactor(0.998, ZOOM_NOSCALETURNING);
 		TNT1 AA 1 A_SetPitch(pitch-0.25);
