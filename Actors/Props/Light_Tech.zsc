@@ -5,40 +5,31 @@ Class EquestriaTechLamp : TechLamp replaces TechLamp
 	Default
 	{
 		//$NotAngled
-	
-		//$Arg0 Destroyed
-		//$Arg0Enum falsetrue
 		Health 5;
 		
 		DamageFactor "Plasma", 0.05;
 		
-		Radius 16; Height 80; DeathHeight 80; ProjectilePassHeight -16;
+		Radius 5.5; Height 80; DeathHeight 80; ProjectilePassHeight -16;
 		
-		+SOLID
 		+NOTAUTOAIMED
+		+SOLID
 		+DONTTHRUST
 		+SHOOTABLE
 		+NOBLOOD
-		+DONTGIB //Remove when XDeath is done
 		+RANDOMIZE
 		+NOICEDEATH
+		+DONTGIB
 	}
 	States
 	{
 	Spawn:
-		TLMP ABCD 4 Bright A_JumpIf(Args[0]>1, "Destroyed");
+		TLMP ABCD 4 Bright;
 		Loop;
 		
 	Death:
-		TNT1 AAAAAAAAAAAAAAAAAAAA 0 A_SpawnProjectile("PuffSparkles", 70, 0, random (0, 360), 2, random (0, 360));
-	Destroyed:
+		TNT1 AAAAAAAAAAAAAAAAAAAA 0 A_SpawnProjectile("PuffSparkles", 70, 0, random (0, 359), CMF_AIMDIRECTION, random (0, 359));
 		TLMP D -1;
 		Stop;
-		
-	/*XDeath: //Make it be affected by the Realistic Gore and Quake-Ish type setting
-		TNT1 BBBBB 0 A_SpawnProjectile("BarrelDebris", random(16, 75), 0, random (0, 360), CMF_AIMDIRECTION, random (-10, -90));
-		TLMP D -1;
-		Stop;*/
 	}
 }
 
@@ -47,15 +38,12 @@ Class EquestriaTechLamp2 : EquestriaTechLamp replaces TechLamp2
 	Default
 	{
 		//$NotAngled
-		
-		//$Arg0 Destroyed
-		//$Arg0Enum falsetrue
-		Height 60;
+		Height 60; DeathHeight 60;
 	}
 	States
 	{
 	Spawn:
-		TLP2 ABCD 4 Bright A_JumpIf(Args[0]>1, "Destroyed");
+		TLP2 ABCD 4 Bright;
 		Loop;
 	}
 }
@@ -63,9 +51,6 @@ Class EquestriaTechLamp2 : EquestriaTechLamp replaces TechLamp2
 Class TallColumn : EquestriaTechLamp
 {
 	//$NotAngled
-	
-	//$Arg0 Destroyed
-	//$Arg0Enum falsetrue
 	States
 	{
 	Spawn:
@@ -83,12 +68,11 @@ Class EquestriaColumn : Column replaces Column
 	
 		//$NotAngled
 	
-		//$Arg0 Destroyed
-		//$Arg0Enum falsetrue
-	
 		//$Category Light sources
 	
 		Health 5;
+		
+		Radius 5.5; Height 48; DeathHeight 48; ProjectilePassHeight -16;
 		
 		DamageFactor "Plasma", 0.05;
 		
@@ -97,7 +81,7 @@ Class EquestriaColumn : Column replaces Column
 		+DONTTHRUST
 		+SHOOTABLE
 		+NOBLOOD
-		+DONTGIB //Remove when XDeath is done
+		+DONTGIB
 		+RANDOMIZE
 		+NOICEDEATH
 	}
@@ -105,11 +89,10 @@ Class EquestriaColumn : Column replaces Column
 	States
 	{
 	Spawn:
-		COLU A 1 Bright A_JumpIf(Args[0]>1, "Destroyed");
+		COLU A 1 Bright;
 		Loop;
 	Death:
 		TNT1 AAAAAAAAAAAAAAAAAAAA 0 A_SpawnProjectile("PuffSparkles", 70, 0, random (0, 360), 2, random (0, 360));
-	Destroyed:
 		COLU B -1;
 		Stop;
 	}
@@ -121,15 +104,10 @@ Class Column2 : Column
 	{
 	//$Title Column 2
 	
-	//$Arg0 Destroyed
-	//$Arg0Enum falsetrue
-	
 	//$NotAngled
 	//$Category Light sources
 
-		ProjectilePassHeight -16;
-		Radius 11; Height 46;
-		+SOLID;
+		Height 47; Radius 5.5;
 	}
 	States
 	{
@@ -146,12 +124,9 @@ Class BigLampshade1 : Actor
 	{
 	//$NotAngled
 	//$Category Light sources
-	
-	//$Arg0 Destroyed
-	//$Arg0Enum falsetrue
 		Radius 9; Height 55;
 		ProjectilePassHeight -16;
-		+SOLID;
+		+SOLID
 	}
 	States
 	{
@@ -183,10 +158,9 @@ Class CeilingLamp1 : Actor
 	{
 	//$NotAngled
 	//$Category Light sources
-		Radius 10; Height 35;
-		+SOLID;
-		+NOGRAVITY;
-		+SPAWNCEILING;
+		Radius 11.5; Height 35;
+		+NOGRAVITY
+		+SPAWNCEILING
 	}
 	States
 	{
@@ -207,10 +181,10 @@ Class EquestriaWallTorch : Actor
 	//$IsDecoration
 	//$NotAngled
 	
-		+RANDOMIZE;
-		+NOBLOCKMAP;
-		+NOGRAVITY;
-		+FIXMAPTHINGPOS;
+		+RANDOMIZE
+		+NOBLOCKMAP
+		+NOGRAVITY
+		+FIXMAPTHINGPOS
 		Radius 6.5; Height 10;
 	}
 	States
