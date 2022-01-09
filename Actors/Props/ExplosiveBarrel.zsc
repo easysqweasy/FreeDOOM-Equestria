@@ -31,9 +31,9 @@ Class EquestriaExploBarrel : ExplosiveBarrel replaces ExplosiveBarrel
 		BAR1 AAAAA 1 Bright A_SetScale(Scale.X + 0.05, 1.0, 1, true);
 		BEXP AAAAA 1 Bright A_SetScale(Scale.X + 0.2, Scale.Y + 0.025);
 		
-		TNT1 AAAAAAAAAA 0 A_SpawnProjectile("Smoke", random(0, 32), 0, random (0, 359), CMF_AIMDIRECTION, random (0, 359));
+		TNT1 AAAAAAAAAA 0 A_SpawnProjectile("Smoke", random(0, 32), random(-20, 20), random (0, 359), CMF_AIMDIRECTION, random (0, 359));
 		
-		TNT1 BBBBBBBBBBBBBBB 0 A_SpawnProjectile("BarrelDebris", random(0, 32), 0, random (0, 359), CMF_AIMDIRECTION, random (-10, -90));
+		TNT1 BBBBBBBBBBBBBBB 0 A_SpawnProjectile("BarrelDebris", random(0, 32), random(-20, 20), random (0, 359), CMF_AIMDIRECTION, random (-10, -90));
 		
 		BEXP B 6 Bright
 		{
@@ -68,9 +68,9 @@ Class EquestriaExploBarrel : ExplosiveBarrel replaces ExplosiveBarrel
 		BAR1 AAA 1 Bright A_SetScale(Scale.X + 0.4, Scale.Y + 0.025);
 		BEXP A 4 Bright;
 		
-		TNT1 AAAAAAAAAA 0 A_SpawnProjectile("Smoke", random(0, 32), 0, random (0, 359), CMF_AIMDIRECTION, random (0, 359));
+		TNT1 AAAAAAAAAA 0 A_SpawnProjectile("Smoke", random(0, 32), random(-20, 20), random (0, 359), CMF_AIMDIRECTION, random (0, 359));
 		
-		TNT1 BBBBBBBBBBBBBBBBBBBB 0 A_SpawnProjectile("BarrelDebris", random(0, 32), 0, random (0, 359), CMF_AIMDIRECTION, random (-10, -90));
+		TNT1 BBBBBBBBBBBBBBBBBBBB 0 A_SpawnProjectile("BarrelDebris", random(0, 32), random(-20, 20), random (0, 359), CMF_AIMDIRECTION, random (-10, -90));
 		
 		BEXP B 8 Bright
 		{
