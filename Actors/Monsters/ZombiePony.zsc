@@ -101,16 +101,7 @@ Class EquestriaZombieMan : DoomEquestriaMonster Replaces ZombieMan
 		"####" "#" 0 { bSPRITEFLIP = randompick(0, 1); }
 
 		POSS M 5
-		{
-			/*for (int i = 0; i < 3; i++)
-			{
-				A_SpawnProjectile("GibGore1", random(8, 32), 0, random (0, 359), CMF_AIMDIRECTION, random (0, -180));
-				A_SpawnProjectile("GibGore2", random(8, 32), 0, random (0, 359), CMF_AIMDIRECTION, random (0, -180));
-				A_SpawnProjectile("GibGore3", random(8, 32), 0, random (0, 359), CMF_AIMDIRECTION, random (0, -180));
-				
-				A_SpawnProjectile("TinyGibGore1", random(8, 32), 0, random (0, 359), CMF_AIMDIRECTION, random (0, -180));
-				A_SpawnProjectile("TinyGibGore2", random(8, 32), 0, random (0, 359), CMF_AIMDIRECTION, random (0, -180));
-			}*/
+		{	
 			A_SpawnItemEx("XDeathGibber",0,0,0,0,0,0,0, SXF_TRANSFERPOINTERS);
 			A_SpawnItemEx("BloodExplosionSphere",0,0,0,0,0,0,0, SXF_TRANSFERPOINTERS);
 			A_XScream();
