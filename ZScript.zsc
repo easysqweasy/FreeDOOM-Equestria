@@ -3,7 +3,7 @@ Version "4.7.1"
 Class DebrisCore : Actor
 {
 	int rollspd;
-	
+
 	property RollSpeed: rollspd;
 	
 	Default
@@ -115,4 +115,5 @@ Class DebrisCore : Actor
 #include "Actors/Props/Flat_Sprites/Flat_Facility.zsc"
 #include "Actors/Props/Flat_Sprites/Flat_Blood.zsc"
 
-#include "Actors/Props/Light_Sources/Light_Sources.zsc"
+#include "Actors/Props/Light_Tech.zsc"
+#include "Actors/Props/Light_Hell.zsc"
