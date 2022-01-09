@@ -1,0 +1,36 @@
+class EquestriaShortBlueTorch : Actor replaces ShortBlueTorch
+{
+	Default
+	{
+		Radius 5;
+		Height 37;
+		ProjectilePassHeight -16;
+		+SOLID
+	}
+	States
+	{
+	Spawn:
+		SMBT ABCD 4 BRIGHT;
+		Loop;
+	}
+}
+
+class EquestriaShortGreenTorch : EquestriaShortBlueTorch replaces ShortGreenTorch
+{
+	States
+	{
+	Spawn:
+		SMGT ABCD 4 BRIGHT;
+		Loop;
+	}
+}
+
+class EquestriaShortRedTorch : EquestriaShortBlueTorch replaces ShortRedTorch
+{
+	States
+	{
+	Spawn:
+		SMRT ABCD 4 BRIGHT;
+		Loop;
+	}
+}
