@@ -80,7 +80,7 @@ flickerlight2 SMALLREDTORCH
 	attenuate 1
 }
 
-object ShortRedTorch
+object EquestriaShortRedTorch
 {
     frame SMRT { light SMALLREDTORCH }
 }
@@ -96,7 +96,7 @@ flickerlight2 SMALLGREENTORCH
 	attenuate 1
 }
 
-object ShortGreenTorch
+object EquestriaShortGreenTorch
 {
     frame SMGT { light SMALLGREENTORCH }
 }
@@ -112,7 +112,7 @@ flickerlight2 SMALLBLUETORCH
 	attenuate 1
 }
 
-object ShortBlueTorch
+object EquestriaShortBlueTorch
 {
     frame SMBT { light SMALLBLUETORCH }
 }
