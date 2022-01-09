@@ -206,7 +206,7 @@ OptionValue "MuzzleStyle"
 OptionValue "GoreType"
 {
 	0, "DOOM Classic"
-	1, "Quake-ish"
+	1, "$SIMPLISTIC"
 	2, "$REALISTIC"
 }
 
