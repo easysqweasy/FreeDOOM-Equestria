@@ -25,15 +25,20 @@ Class EquestriaRifle : DoomEquestriaWeapon
 		
 		RFLE A 1 A_WeaponReady();
 		Loop;
+		
 	Deselect:
 		TNT1 A 0 A_TakeInventory("KickCheck", 999);
 		TNT1 A 0 A_JumpIf(health <= 0, "DeathCheck");
 		
 		RFLE A 1 A_Lower();
 		Loop;
+		
 	Select:
+		TNT1 A 0 A_SetCrossHair(2);
+		
 		RFLE A 1 A_Raise();
 		Loop;
+		
 	Fire:
 		RFLE A 2
 		{
