@@ -32,7 +32,7 @@ flickerlight2 BIGREDTORCH
 	attenuate 1
 }
 
-object RedTorch
+object EquestriaRedTorch
 {
     frame TRED { light BIGREDTORCH }
 }
@@ -48,7 +48,7 @@ flickerlight2 BIGGREENTORCH
 	attenuate 1
 }
 
-object GreenTorch
+object EquestriaGreenTorch
 {
     frame TGRN { light BIGGREENTORCH }
 }
@@ -64,7 +64,7 @@ flickerlight2 BIGBLUETORCH
 	attenuate 1
 }
 
-object BlueTorch
+object EquestriaBlueTorch
 {
     frame TBLU { light BIGBLUETORCH }
 }
