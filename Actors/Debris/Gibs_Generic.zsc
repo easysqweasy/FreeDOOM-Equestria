@@ -38,7 +38,9 @@ Class GibsCore : DebrisCore
 		Loop;
 	
 	Death:
-		#### # 350 A_JumpIf(GetCVar("GibsStayForever") == 0, "FadeOut");
+	Crash:
+		#### # 350;
+		#### # 0 A_JumpIf(GetCVar("GibsStayForever") == 0, "FadeOut");
 		#### # 0; //A_JumpIf(GetCVar("GibsStayForever") == 2, "CheckSight");
 		Loop;
 		
