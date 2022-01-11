@@ -9,6 +9,7 @@ Class DebrisCore : Actor
 	Default
 	{
 		+MISSILE
+		+CORPSE
 		+NOBLOCKMAP
 		+NOTAUTOAIMED
 		+DROPOFF
