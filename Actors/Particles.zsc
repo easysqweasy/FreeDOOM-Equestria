@@ -2,10 +2,10 @@ Class DEParticles : DebrisCore
 {
 	Default
 	{
-		+NOGRAVITY;
-		+THRUACTORS;
-		+DONTSPLASH;
-		+Randomize;
+		+NOGRAVITY
+		+THRUACTORS
+		+DONTSPLASH
+		+Randomize
 	}
 }
 
@@ -17,16 +17,11 @@ Class Trails : DEParticles
 		RenderStyle "Add";
 		Alpha 0.75;
 		
-		-Missile;
-		
-		-MOVEWITHSECTOR;
-		+DONTSPLASH;
-		
-		+NoInteraction;
+		+NoInteraction
 	}
 }
 
-Class Smoke : Trails replaces RocketSmokeTrail
+Class Smoke : DEParticles replaces RocketSmokeTrail
 {
 	Default
 	{
@@ -41,21 +36,14 @@ Class Smoke : Trails replaces RocketSmokeTrail
 		Scale 0.5;
 		
 		Gravity -0.05;
-		
-		-NoInteraction
-		-NOCLIP
-		-NOGRAVITY
-		
-		+MoveWithSector
 	}
 	States
 	{
 	Spawn:
-		TNT1 A 0;
-		RSMK A random(2,4)
+		RSMK A random(2,4) NoDelay
 		{
 			bSPRITEFLIP = randompick(0, 1);
-			A_SetRoll(random(-359, 359));
+			A_SetRoll(random(0, 359));
 		}
 		RSMK A 2;
 		RSMK AAAAAAAAAABBBBBBBBCCCCCCDDDD 1
@@ -68,7 +56,7 @@ Class Smoke : Trails replaces RocketSmokeTrail
 	}
 	
 	Override void Tick()
-		{
+	{
 		Super.Tick();
 		if (!isFrozen())
 		{
