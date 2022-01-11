@@ -96,9 +96,7 @@ Class EquestriaRocket : Rocket replaces Rocket
 		MISL A 2 Bright A_SpawnItem("EquestriaRocketSmoke");
 		Loop;
 		
-	Death:
-		//MISL B 0 A_SetRoll(random(-359, 359))
-		
+	Death: 
 		TNT1 AAAAAAAAAA 0 A_SpawnProjectile("RocketSparkle", 0, 0, random (0, 359), CMF_AIMDIRECTION, random (0, 359));
 		TNT1 AAAAAAAA 0 A_SpawnProjectile("Smoke", 0, 0, random (0, 359), CMF_AIMDIRECTION, random (0, 359));
 
@@ -117,7 +115,7 @@ Class EquestriaRocket : Rocket replaces Rocket
 }
 
 Class EquestriaRocketSmoke : Smoke replaces RocketSmokeTrail
-{	Default{	+NOINTERACTION	VSpeed 0.65;	}
+{	Default { +NOINTERACTION }
 	States
 	{
 	Spawn:
