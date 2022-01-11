@@ -33,7 +33,7 @@ Class Broom : DoomEquestriaWeapon
 		Wait;
   
 	Select:
-		BROO A 0 A_SetCrosshair(8);
+		BROO A 0 A_TakeInventory("KickCheck", 999);
 		
 		BROO A 1 A_Raise;
 		Wait;
