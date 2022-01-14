@@ -2,11 +2,10 @@ Class DEParticles : DebrisCore
 {
 	Default
 	{
-		+NOGRAVITY;
-		+THRUACTORS;
-		+DONTSPLASH;
-		+ExplodeOnWater;
-		+Randomize;
+		+NOGRAVITY
+		+THRUACTORS
+		+DONTSPLASH
+		+Randomize
 	}
 }
 
@@ -14,52 +13,40 @@ Class Trails : DEParticles
 {
 	Default
 	{
-		Height 0; Radius 0;
-		
 		Scale 0.75;
 		RenderStyle "Add";
 		Alpha 0.75;
 		
-		-Missile;
-		
-		-MOVEWITHSECTOR;
-		+DONTSPLASH;
-		
-		+NoInteraction;
+		+NoInteraction
 	}
 }
 
-Class Smoke : Trails replaces RocketSmokeTrail
+Class Smoke : DEParticles replaces RocketSmokeTrail
 {
 	Default
 	{
-		Height 1; Radius 1;
-		
-		Decal "Scorch";
+		Height 2; Radius 1;
 		
 		RenderStyle "Translucent";
 		
 		Alpha 0.75;
 		
-		Speed 7;
+		Speed 15;
 		
-		Scale 0.50;
+		Scale 0.5;
 		
-		Gravity 0.50;
+		Gravity -0.25;
 		
-		-NoInteraction
-		-NOCLIP
-		
-		+MoveWithSector
+		-Missile
+		-NoGravity
 	}
 	States
 	{
 	Spawn:
-		TNT1 A 0;
-		RSMK A random(2,4)
+		RSMK A random(2,4) NoDelay
 		{
 			bSPRITEFLIP = randompick(0, 1);
-			A_SetRoll(random(-359, 359));
+			A_SetRoll(random(0, 359));
 		}
 		RSMK A 2;
 		RSMK AAAAAAAAAABBBBBBBBCCCCCCDDDD 1
@@ -72,25 +59,46 @@ Class Smoke : Trails replaces RocketSmokeTrail
 	}
 	
 	Override void Tick()
-		{
+	{
 		Super.Tick();
 		if (!isFrozen())
 		{
-			A_ScaleVelocity(0.95);
+			A_ScaleVelocity(0.8);
 		}
 	}
 }
 
-Class SoulSpherePickup : DEParticles
+Class ExplosionSmoke : Smoke
 {
 	Default
 	{
-		+NoInteraction;
+		Height 2; Radius 1;
+		
+		RenderStyle "Translucent";
+		
+		Alpha 0.75;
+		
+		Speed 7;
+		
+		Scale 0.5;
+		
+		Gravity -0.05;
 	}
 	States
 	{
 	Spawn:
-		SOUL EFGH 6 Bright;
-		Stop;
+		RSMK A random(2,4) NoDelay
+		{
+			bSPRITEFLIP = randompick(0, 1);
+			A_SetRoll(random(0, 359));
+		}
+		RSMK A 2;
+		RSMK AAAAAAAAAABBBBBBBBCCCCCCDDDD 1
+		{
+			A_FadeOut(0.02);
+			A_SetScale(Scale.X + 0.025, Scale.Y + 0.025);
+		}
+		RSMK E 1 A_FadeOut(0.05);
+		Wait;
 	}
 }

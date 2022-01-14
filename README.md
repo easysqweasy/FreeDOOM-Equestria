@@ -1,4 +1,6 @@
-# FreeDOOM Equestria for GZDoom and LZDoom
+# FreeDOOM Equestria (Pre-Alpha) for GZDoom and LZDoom
+
+# The mod is still in the beginning, there are a lot of placeholders and unfinished things!
 
 This is the **development** version, so it may contain bugs and errors;
 **Updates** can happen at **any time**, this version does ***NOT represent*** the final version;
@@ -17,7 +19,7 @@ Discord Server: https://discord.gg/xgzkMmayMz
 # Credits
 See "CREDITS.txt" for more detailed credits;
 
-= The DOOM franchise is owned by ID Sotfware and Bethesda ~~(and Microsoft?)~~ =
+= The DOOM franchise is owned by ID Sotfware, part of the ZeniMax Media Inc. Family (and Microsoft?) =
 = FreeDooM is by the FreeDooM community project =
 = My Little Pony is owned by Hasbro =
 

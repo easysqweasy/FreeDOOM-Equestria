@@ -2,7 +2,7 @@ Class EquestriaFloatingSkull : FloatingSkull replaces FloatingSkull
 {
 	Default
 	{
-		+FLOATBOB; FloatBobStrength 0.5;
+		+FLOATBOB FloatBobStrength 0.5;
 	
 		Radius 15; Height 50;
 	}
@@ -15,9 +15,9 @@ Class EquestriaEvilEye : EvilEye replaces EvilEye
 	//$NotAngle
 	//$Category "Decoration/Hell"
 	//$Title Evil Eye
-		+FORCEXYBILLBOARD;;
-		+NOGRAVITY;;
-		+FLOATBOB;;
+		+FORCEXYBILLBOARD
+		+NOGRAVITY
+		+FLOATBOB
 	}
 	States
 	{
@@ -36,10 +36,8 @@ Class EvilEye2 : Actor
 	{
 		//$NotAngled
 		//$Category "Decoration/Hell"
-		Radius 16;
-		Height 54;
-		ProjectilePassHeight -16;
-		+SOLID;
+		Radius 16; Height 54; ProjectilePassHeight -16;
+		+SOLID
 	}
 	States
 	{
@@ -50,108 +48,70 @@ Class EvilEye2 : Actor
 }
 
 Class DemonSkull : Actor
-{
-//$NotAngled
-//$Category "Decoration/Hell"
+{	Default
+	{
+		//$NotAngled
+		//$Category "Decoration/Hell/Big Skulls"
+	}
 	States
 	{
 	Spawn:
-		HEDA A -1;
+		SKLL A 0;
 		Stop;
-	}
-}
+}}
+
 Class DemonSkull2 : DemonSkull
 {
 	States
 	{
 	Spawn:
-		HEDB A -1;
+		SKLL B -1;
 		Stop;
-	}
-}
+}}
+
 Class DemonSkull3 : DemonSkull
 {
 	States
 	{
 	Spawn:
-		HEDC A -1;
+		SKLL C -1;
 		Stop;
-	}
-}
+}}
+
 Class DemonSkull4 : DemonSkull
 {
 	States
 	{
 	Spawn:
-		HEDD A -1;
+		SKLL D -1;
 		Stop;
-	}
-}
+}}
+
 Class DemonSkull5 : DemonSkull
 {
 	States
 	{
 	Spawn:
-		HEDE A -1;
+		SKLL E -1;
 		Stop;
-	}
-}
+}}
+
 Class DemonSkull6 : DemonSkull
 {
 	States
 	{
 	Spawn:
-		HEDF A -1;
+		SKLL F -1;
 		Stop;
-  }
-}
-Class DemonSkull7 : DemonSkull
-{
-	States
-	{
-	Spawn:
-		MSKL A -1;
-		Stop;
-	}
-}
-Class DemonSkull8 : DemonSkull
-{
-	States
-	{
-	Spawn:
-		MSKL B -1;
-		Stop;
-	}
-}
-Class DemonSkull9  : DemonSkull
-{
-	States
-	{
-	Spawn:
-		MSKL C -1;
-		Stop;
-	}
-}
-Class DemonSkull10 : DemonSkull
-{
-	States
-	{
-	Spawn:
-		MSKL D -1;
-		Stop;
-	}
-}
+}}
 
 Class BaronStatue1 : Actor
 {
 	Default
 	{
 		//$Category "Decoration/Hell"
-		+FloorClip;
-		+Solid;
-		ProjectilePassHeight -16;
-		Height 86;
-		Radius 26;
+		+FloorClip +Solid
+		Height 86; Radius 26; ProjectilePassHeight -16;
 	}
 	States
 	{
@@ -166,17 +126,26 @@ Class BaronStatue2 : BaronStatue1
 	States
 	{
 	Spawn:
-		BRSM A -1;
+		BRST B -1;
 		Stop;
-	}
-}
+}}
+
+Class BaronStatue3 : BaronStatue1
+{
+	States
+	{
+	Spawn:
+		BRST C -1;
+		Stop;
+}}
+
 Class DemonArm : Actor
 {
 	Default
 	{
 	//$NotAngled
 	//$Category "Decoration/Hell"
-		+FloorClip;
+		+FloorClip
 	}
 	States
 	{

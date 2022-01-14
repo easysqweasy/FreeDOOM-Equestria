@@ -1,42 +1,45 @@
 [enu default]
 
-STARTUP1 = "========== You are playing the Github version of DOOM Equestria Alpha ==========";
-STARTUP2 = "This mod was made by Redyusedom, read the credits for more information";
-STARTUP3 = "By Isaac, Ragedox and the Team Redyusedom, stay tuned for more news!";
-STARTUP4 = "======================== This is NOT a children's game! ========================";
+STARTUP1 = "Github ===================== Ragedox/DOOM-Equestria ===================== Github";
+STARTUP2 = "========== You are playing the Github version of DOOM Equestria Alpha ==========";
+STARTUP3 = "This mod was made by Redyusedom, read the credits for more information";
+STARTUP4 = "By Isaac, Ragedox and the Team Redyusedom, stay tuned for more news!";
+STARTUP5 = "======================== This is NOT a children's game! ========================";
+STARTUP6 = "Github ===================== Ragedox/DOOM-Equestria ===================== Github";
 
-WARNING = "WARNING!";
-NOKIDS = "This is NOT a children's game!";
-MAYCONTAIN = "May contain images and content sensitive\nfor some audiences, such as\nBlood, Gore and Extreme Violence.";
+WARNING	= 		"WARNING!";
+NOKIDS = 		"This is NOT a children's game!";
+MAYCONTAIN = 	"May contain images and content sensitive\nfor some audiences, such as\nBlood, Gore and Extreme Violence.";
 
-BABYSKILL = "I'm a Little Pony";
-EASYSKILL = "Hey, not too rough";
-NORMALSKILL = "Hurt me plenty";
-HARDSKILL = "Ultra-Violence";
-PLUSSKILL = "Instant-Violence";
+BABYSKILL =		 "I'm a Little Pony";
+EASYSKILL = 	"Hey, not too rough";
+NORMALSKILL = 	"Hurt me plenty";
+HARDSKILL = 	"Ultra-Violence";
+PLUSSKILL = 	"Instant-Violence";
 
-QUITMSG = "Are you sure you want to quit this great mod?";
-//QUITMSG4 = "you're trying to say you like Fallout Equestria\nbetter than me, right?"; pls dont kill me, its a joke
-QUITMSG9 = "Don't go now, there's a \nKirinware waiting at your computer!";
-QUITMSG10 = "Get out of here and\ngo back to your\ninfantile cartoon.";
-QUITMSG13 = "just leave.\nwhen you come back, there will be a \nnaughty bat waiting for you!";
+QUITMSG = 		"Are you sure you want to quit this great mod?";
+QUITMSG9 = 		"Don't go now, there's a\nKirinware waiting at your computer!";
+QUITMSG10 = 	"Get out of here and go back to your\ninfantile cartoon.";
+QUITMSG13 = 	"just leave.\nwhen you come back, there will be a\nnaughty bat waiting for you!";
 
-OTARMBONUS = "Picked up a Spiritual Armor.";
-GOTARMOR = "Picked up a Security Armor.";
-GOTMEGA = "Picked up a Combat Armor.";
+QUITGAME1 = 	"I am sorry if this mod is too Brony for you";
+QUITGAME2 = 	"I don't want this mod to support Brutal Doom";
+QUITGAME3 = 	"You're not going to do what I'm thinking\nare you?";
+QUITGAME4 = 	"Maybe you felt hurt by these\ntotally serious, heavy and mean messages\nplease get the hell out of here";
 
-BERSERKFIST = "Berserked Hooves";
-GOTBERSERK = "Berserk! Let's punch out some demons!";
+OTARMBONUS = 	"Picked up a Spiritual Armor.";
+GOTARMOR = 		"Picked up a Security Armor.";
+GOTMEGA = 		"Picked up a Combat Armor.";
 
-LOWHEALTH = "Low Health";
+GOTRIFLE = 		"You got the rifle!";
+
+BERSERKFIST = 	"Berserked Hooves";
+GOTBERSERK = 	"Berserk! Let's punch out some demons!";
+
+LOWHEALTH = 	"Low Health";
 
 /* Monsters */
 
-/*
-CC_ZOMBIE = "Former Soldier";
-CC_SHOTGUN = "Former Sergeant";
-FN_HEAVY = "Heavy Weapon Dude";
-*/
 BURSTBAT = "Possesed Trainer";
 
 TECHDUDE = "Possessed Hacker";

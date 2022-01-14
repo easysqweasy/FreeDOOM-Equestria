@@ -3,7 +3,7 @@ Class EquestriaSpiderMastermind : SpiderMastermind replaces SpiderMastermind
 	Default
 	{
 		PainChance "BFGSplash", 10;
-		DamageFactor "BFGSplash", 0.15;
+		DamageFactor "BFGSplash", 0.5;
 		
 		+CASTSPRITESHADOW;
 		+AVOIDMELEE;

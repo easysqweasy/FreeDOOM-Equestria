@@ -2,18 +2,18 @@ Class EquestriaBackpack : Backpack replaces Backpack
 {	Default {	Inventory.PickupSound "pickup/backpack";	}}
 
 Class EquestriaComputerMap : Allmap replaces Allmap
-{
+{	Default { +RANDOMIZE }
 	States
 	{
 	Spawn:
 		PMAP A random( 10, 20) Bright;
-				PMAP E random( 1, 5) Bright;
+				PMAP E random(0, 10) Bright;
 		PMAP B random( 10, 20) Bright;
-				PMAP E random( 1, 5) Bright;
+				PMAP E random(0, 10) Bright;
 		PMAP C random( 10, 20) Bright;
-				PMAP E random( 1, 5) Bright;
+				PMAP E random(0, 10) Bright;
 		PMAP D random( 10, 20) Bright;
-				PMAP E random( 1, 5) Bright;
+				PMAP E random(0, 10) Bright;
 		Loop;
 	}
 }
@@ -23,7 +23,7 @@ Class EquestriaComputerMap : Allmap replaces Allmap
 Class EquestriaBlurSphere : CustomInventory replaces BlurSphere
 {
 	Default
-	{
+	{	
 		Height 40; Radius 20;
 
 		+COUNTITEM
@@ -31,6 +31,7 @@ Class EquestriaBlurSphere : CustomInventory replaces BlurSphere
 		+FLOATBOB
 		+NOGRAVITY
 		+FORCEXYBILLBOARD
+		+RANDOMIZE
 		
 		+INVENTORY.BIGPOWERUP
 		+INVENTORY.AUTOACTIVATE
@@ -51,16 +52,13 @@ Class EquestriaBlurSphere : CustomInventory replaces BlurSphere
 	Pickup:
 		TNT1 A 0
 		{
-			A_GiveInventory("BlurSphereInventory");
+			A_GiveInventory("BlurSphere");
 			A_SetBlend("Red", 0.5, 16, "Blue");
 		}
 		TNT1 A 0 ACS_NamedExecute("BlurMugshot");
 		Stop;
 	}
 }
-
-Class BlurSphereInventory : BlurSphere
-{	Default {	RenderStyle "Shaded";	}}
 
 //Invulnerability Sphere
 
@@ -74,6 +72,7 @@ Class EquestriaInvulSphere : CustomInventory replaces InvulnerabilitySphere
 		+FLOATBOB
 		+NOGRAVITY
 		+FORCEXYBILLBOARD
+		+RANDOMIZE
 		
 		+INVENTORY.BIGPOWERUP
 		+INVENTORY.AUTOACTIVATE
@@ -97,7 +96,7 @@ Class EquestriaInvulSphere : CustomInventory replaces InvulnerabilitySphere
 }
 
 Class InvulSphereInventory : InvulnerabilitySphere
-{	Default	{	Powerup.Color "GoldMap", 1;	}}
+{	Default	{ Powerup.Color "GoldMap", 1;	}}
 
 //SoulSphere
 Class EquestriaSoulSphere : CustomInventory replaces Soulsphere
@@ -110,6 +109,7 @@ Class EquestriaSoulSphere : CustomInventory replaces Soulsphere
 		+FLOATBOB
 		+NOGRAVITY
 		+FORCEXYBILLBOARD
+		+RANDOMIZE
 		
 		+INVENTORY.AUTOACTIVATE
 		+INVENTORY.ALWAYSPICKUP
@@ -126,7 +126,6 @@ Class EquestriaSoulSphere : CustomInventory replaces Soulsphere
 	Pickup:
 		TNT1 A 0
 		{
-			A_SpawnItem("SoulSpherePickup", 0, 10);
 			A_GiveInventory("SoulSphereHealth");
 			ACS_NamedExecute("Screen_PickSoul");
 		}
@@ -156,6 +155,7 @@ Class EquestriaMegaSphere : CustomInventory replaces Megasphere
 		+FLOATBOB
 		+NOGRAVITY
 		+FORCEXYBILLBOARD
+		+RANDOMIZE
 		
 		+INVENTORY.AUTOACTIVATE
 		+INVENTORY.ALWAYSPICKUP
@@ -237,7 +237,8 @@ Class DemonicBible : PowerMorph replaces UnholyBible //Madness Shock, Demon Rune
 	Default
 	{
 	//$Category "Decoration/Power Ups"
-		+ForceXYBillboard;
+	//$Title Unholy Bible
+		+ForceXYBillboard
 	}
 	States
 	{

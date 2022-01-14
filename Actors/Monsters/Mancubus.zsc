@@ -42,17 +42,20 @@ Class EquestriaFatShot : FatShot replaces FatShot
 	States
 	{
 	Spawn:
-		MANF AB 4 Bright A_SpawnItemEx("FireBallTrail", 0,0,0,0,0,0,0, SXF_TRANSFERSCALE);
+		MANF AB 4 Bright
+		{
+			A_SpawnItem("EquestriaRocketSmoke");
+			A_SpawnItemEx("FireBallTrail", 0,0,0,0,0,0,0, SXF_TRANSFERSCALE);
+		}
 		Loop;
 		
 	Death:
-		TNT1 A 0;
-		TNT1 AA 0 A_SpawnProjectile("SplashSmoke", random(-20, 20), random (-40, 40), random (0, 360), CMF_BADPITCH | CMF_ABSOLUTEPITCH, random(0, 90));
-		TNT1 BBBB 0 A_SpawnProjectile("Smoke", random(-32, 32), 0, random (0, 360), CMF_BADPITCH | CMF_ABSOLUTEPITCH, random (0, 359));
-		
+		TNT1 AAAAAA 0 A_SpawnProjectile("Smoke", random(-32, 32), 0, random (0, 359), CMF_AIMDIRECTION, random (0, 359));
+		TNT1 AAAA 0 A_SpawnProjectile("SplashSmoke", random(-20, 20), random (-40, 40), random (0, 359), CMF_AIMDIRECTION, random(0, -90));
+
 		MISL B random(5, 8) Bright A_QuakeEx(4, 4, 4, 8, 0, 175, "", QF_SCALEDOWN, 0,0,0, 1);
 		MISL C 5 Bright;
 		MISL D 1 Bright A_FadeOut(0.1);
-		Stop;
+		Wait;
 	}
 }

@@ -1,9 +1,13 @@
 [enu default]
 
-SINGLEPLAYER = "Single Player";
+CAMPAIGN = "Campaign";
 NEWNEWGAME = "New Game";
+MNU_EPISODE = "Which Season?";
 
-AUDIOSETTINGS =			"Audio";	SNDMNU_TITLE =			"Audio Settings";	ADVSNDMNU_TITLE =  "Advanced Audio Settings";
+AUDIOSETTINGS =			"Audio";
+SNDMNU_TITLE =			"Audio Settings";
+ADVSNDMNU_TITLE =  		"Advanced Audio Settings";
+
 VIDEOSETTINGS = 		"Video";
 UISETTINGS = 			"User Interface";
 CONTROLSETTINGS =		"Customize Controls";
@@ -14,10 +18,15 @@ CAMRECOILTOGGLE = 		"Camera Recoil";
 AURATOGGLE = 			"Magic Auras on Weapons";
 
 GORETOGGLE = 			"Gore Type";
-REALISTIC = 			"Realistic";
+SIMPLISTIC =			"Simplistic";
+REALISTIC = 			"Cartoon";
 GIBSFOREVER = 			"Gibs stay down forever";
 
 [ptb pt br]
+
+CAMPAIGN =				"Campanha";
+NEWNEWGAME = 			"Novo Jogo";
+MNU_EPISODE = 			"Qual Temporada?";
 
 AUDIOSETTINGS =			"Áudio"
 VIDEOSETTINGS = 		"Vídeo";

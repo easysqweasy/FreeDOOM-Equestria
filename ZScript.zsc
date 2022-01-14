@@ -2,27 +2,39 @@ Version "4.7.1"
 
 Class DebrisCore : Actor
 {
+	int rollspd;
+
+	property RollSpeed: rollspd;
+	
 	Default
 	{
 		+MISSILE
+		+CORPSE
 		+NOBLOCKMAP
 		+NOTAUTOAIMED
 		+DROPOFF
 		+NOTELEPORT
 		+FORCEXYBILLBOARD
-		+FLOORCLIP
 		+MOVEWITHSECTOR
 		+CANNOTPUSH
-		+SKYEXPLODE
 		+NOBLOCKMONST
 		+CANPASS
+		+THRUACTORS
+	  
+		-ACTIVATEIMPACT -ACTIVATEPCROSS
+		-SOLID
 		
 		+ROLLSPRITE +ROLLCENTER
-	  
-		-ACTIVATEIMPACT
-		-ACTIVATEPCROSS
 		
-		Damage 0;
+		DebrisCore.RollSpeed 15;
+	}
+	override void Tick()
+	{
+		if (InStateSequence(CurState, ResolveState("Roll")) && !isFrozen())
+		{
+			A_SetRoll((roll + rollspd), SPF_INTERPOLATE);
+		}
+		Super.Tick();
 	}
 }
 
@@ -102,4 +114,5 @@ Class DebrisCore : Actor
 #include "Actors/Props/Flat_Sprites/Flat_Facility.zsc"
 #include "Actors/Props/Flat_Sprites/Flat_Blood.zsc"
 
-#include "Actors/Props/Light_Sources/Light_Sources.zsc"
+#include "Actors/Props/Light_Tech.zsc"
+#include "Actors/Props/Light_Hell.zsc"

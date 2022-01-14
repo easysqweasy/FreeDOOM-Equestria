@@ -1,11 +1,12 @@
 gameinfo
 {
-	intermissionmusic = "Music/INTER1.mid"
+	IntermissionMusic = "Music/INTER1.mid"
 	AddEventHandlers = "DeathFadeBootstrap"
 	DimColor = "00 00 00"
 	DimAmount = 0.5
 	DefaultDropStyle = 2
-	cursorpic = "cursor"
+	CursorPic = "cursor"
+	AddQuitMessages = "$QUITGAME1", "$QUITGAME2", "$QUITGAME3", "$QUITGAME4"
 }
 
 gamedefaults 

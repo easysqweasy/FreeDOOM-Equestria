@@ -4,7 +4,7 @@ Class Bush1 : Actor
 	{
 	//$NotAngled
 	//$Category "Decoration/Nature"
-		Radius 12; Height 24;
+		Radius 10; Height 20;
 		ProjectilePassHeight -16;
 		+SOLID;
 	}
@@ -42,8 +42,7 @@ Class BushTall : Actor
 		{
 	//$NotAngled
 	//$Category "Decoration/Nature"
-		Radius 12;
-		Height 46;
+		Radius 10; Height 20;
 		+SOLID;
 	}
 	States
