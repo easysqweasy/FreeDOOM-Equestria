@@ -81,7 +81,7 @@ Class EquestriaBlood : Blood replaces Blood
 		
 	Bounce.Wall:
 	Death:
-		BLUD B 10 A_SprayDecal("BloodSplat", 128);
+		BLUD B 10 A_SprayDecal("BloodSplat", 10);
 		Stop;
 		
 	Crash:
