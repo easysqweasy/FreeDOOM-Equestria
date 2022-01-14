@@ -18,7 +18,7 @@ class EquestriaBlueTorch : Actor replaces BlueTorch
 {
 	Default
 	{
-		Radius 5; Height 68;
+		Radius 2; Height 60;
 		ProjectilePassHeight -16;
 		+SOLID
 	}
@@ -71,5 +71,21 @@ class EquestriaRedTorch : EquestriaBlueTorch replaces RedTorch
 	Spawn:
 		TRED ABCD 4 BRIGHT;
 		Loop;
+	}
+}
+
+// Candelabra
+
+class EquestriaCandelabra : Candelabra replaces Candelabra
+{
+	Default
+	{
+		Radius 10;
+	}
+	States
+	{
+	Spawn:
+		CBRA A -1 BRIGHT;
+		Stop;
 	}
 }
