@@ -1,0 +1,41 @@
+GitHub Repository: https://github.com/easysqweasy/FreeDOOM-Equestria
+
+= The DOOM franchise is owned by ID Sotfware, part of the ZeniMax Media Inc. Family (and Microsoft?) =
+= FreeDooM is by the FreeDooM community project =
+= My Little Pony is owned by Hasbro =
+
+= Main idea by Easysqweasy =
+
+= DOOM Equestria owners =
+Ragedox, Isaac Pony
+
+= Code =
+Ragedox, SuperWillGaming, Easysqweasy
+
+= Sprites =
+Ragedox, JoeyTD
+
+= Special Thanks =
+Komradvsky
+
+=====
+
+Easysqweasy (Twitter: @easysqweasy)
+Ragedox (Twitter: @TheRagedox)
+IsaacPony( Twitter: @Isaac_Pony)
+JoeyTD (Twitter: @beardeddoomguy)
+SuperWillGaming (Twitter: @njsw88)
+
+= Sounds =
+
+https://freesound.org/
+
+3P Sound Pack
+
+= Stuff from other mods =
+
+NashDecals (Blood decals)
+
+Kinsie's Test Map: https://forum.zdoom.org/viewtopic.php?t=57221
+
+"Universal" fade-to-black on death : https://forum.zdoom.org/viewtopic.php?f=46&t=65028
