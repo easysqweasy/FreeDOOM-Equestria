@@ -31,11 +31,14 @@ Class Smoke : DEParticles replaces RocketSmokeTrail
 		
 		Alpha 0.75;
 		
-		Speed 7;
+		Speed 15;
 		
 		Scale 0.5;
 		
-		Gravity -0.05;
+		Gravity -0.25;
+		
+		-Missile
+		-NoGravity
 	}
 	States
 	{
@@ -60,7 +63,42 @@ Class Smoke : DEParticles replaces RocketSmokeTrail
 		Super.Tick();
 		if (!isFrozen())
 		{
-			A_ScaleVelocity(0.95);
+			A_ScaleVelocity(0.8);
 		}
+	}
+}
+
+Class ExplosionSmoke : Smoke
+{
+	Default
+	{
+		Height 2; Radius 1;
+		
+		RenderStyle "Translucent";
+		
+		Alpha 0.75;
+		
+		Speed 7;
+		
+		Scale 0.5;
+		
+		Gravity -0.05;
+	}
+	States
+	{
+	Spawn:
+		RSMK A random(2,4) NoDelay
+		{
+			bSPRITEFLIP = randompick(0, 1);
+			A_SetRoll(random(0, 359));
+		}
+		RSMK A 2;
+		RSMK AAAAAAAAAABBBBBBBBCCCCCCDDDD 1
+		{
+			A_FadeOut(0.02);
+			A_SetScale(Scale.X + 0.025, Scale.Y + 0.025);
+		}
+		RSMK E 1 A_FadeOut(0.05);
+		Wait;
 	}
 }
