@@ -46,13 +46,13 @@ Class EquestriaBulletPuff : Actor replaces BulletPuff
 	{
 		Height 8; Radius 4;
 		RenderStyle "Translucent"; Alpha 0.5;
-		VSpeed 1;
+		Gravity 0.05;
 		Mass 5;
 		Scale 0.75;
 		
 		AttackSound "weapons/ricochet";
 		
-		+NOGRAVITY +NOBLOCKMAP +NOTELEPORT
+		+NOBLOCKMAP +NOTELEPORT
 		+FORCEXYBILLBOARD
 		+ROLLSPRITE +ROLLCENTER
 	}
