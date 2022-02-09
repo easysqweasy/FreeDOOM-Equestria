@@ -37,7 +37,6 @@ Class EquestriaLostSoul : LostSoul
 		+FORCEXYBILLBOARD
 		+FLOATBOB
 		-COUNTKILL
-		+NOBLOOD
 		+Bright
 	}
 	States
@@ -246,7 +245,6 @@ Class MissileNirikSoul : FastProjectile
 		+CASTSPRITESHADOW
 		+FORCEXYBILLBOARD
 		-COUNTKILL
-		+NOBLOOD
 		+Bright
 		
 		AttackSound "skull/melee";

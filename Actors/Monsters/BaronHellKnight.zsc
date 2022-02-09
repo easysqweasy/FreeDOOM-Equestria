@@ -3,7 +3,7 @@ Class EquestriaBaronofHell : BaronOfHell replaces BaronOfHell
 	Default
 	{
 		//$Sprite BOSSA2C8
-		BloodColor "darkgreen";
+		BloodColor "green";
 		
 		+CastSpriteShadow
 		
@@ -59,7 +59,6 @@ Class EquestriaHellKnight : HellKnight replaces HellKnight
 		Speed 10;
 		PainThreshold 5;
 		PainChance 75;
-		BloodColor "green";
 	}
 	States
 	{
