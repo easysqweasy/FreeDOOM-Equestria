@@ -9,7 +9,7 @@ Class EquestriaImp : DoomImp Replaces DoomImp
 	States
 	{
 	Spawn:
-		IDLI AB 10 A_Look();
+		TROO AB 10 A_Look();
 		Loop;
 	
 	See:

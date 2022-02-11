@@ -6,11 +6,12 @@ Class EquestriaCyberdemon : Cyberdemon replaces Cyberdemon
 		+CASTSPRITESHADOW;
 		//Health 5000;
 		Mass 1500;
+		BloodColor "purple";
 	}
 	States
 	{
 	Spawn:
-		IDLY AB 10 A_Look();
+		CYBR AB 10 A_Look();
 		Loop;
 		
 	 Missile:

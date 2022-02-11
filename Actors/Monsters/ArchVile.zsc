@@ -7,7 +7,7 @@ Class EquestriaArchVile : ArchVile replaces Archvile
 	States
 	{
 	Spawn:
-		IDLV AB 5 A_Look;
+		VILE AB 5 A_Look;
 		Loop;
 	}
 }

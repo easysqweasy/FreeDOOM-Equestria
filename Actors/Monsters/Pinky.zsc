@@ -7,7 +7,7 @@ Class Pinky : Demon replaces Demon
 	States
 	{
 	Spawn:
-		IDLP AB 10 A_Look();
+		SARG AB 10 A_Look();
 		Loop;
 	}
 }

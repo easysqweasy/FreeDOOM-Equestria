@@ -12,7 +12,7 @@ Class EquestriaBaronofHell : BaronOfHell replaces BaronOfHell
 	States
 	{
 	Spawn:
-		IDLB CD 10 A_Look();
+		BOSS CD 10 A_Look();
 		Loop;
 	
 	Melee:
@@ -29,12 +29,12 @@ Class EquestriaBaronofHell : BaronOfHell replaces BaronOfHell
 	Death:
 		"####" "#" 0 { bSPRITEFLIP = randompick(0, 1); }
 		
-		BOSD A 8;
-		BOSD B 8 A_Scream();
-		BOSD C 8;
-		BOSD D 8 A_NoBlocking();
-		BOSD E 8;
-		BOSD F -1 A_BossDeath;
+		BOSS H 8;
+		BOSS I 8 A_Scream();
+		BOSS J 8;
+		BOSS K 8 A_NoBlocking();
+		BOSS LMN 8;
+		BOSS O -1 A_BossDeath;
 		Stop;
 		
 	XDeath:
@@ -64,7 +64,7 @@ Class EquestriaHellKnight : HellKnight replaces HellKnight
 	{
 	
 	Spawn:
-		IDLB AB 10 A_Look();
+		BOS2 AB 10 A_Look();
 		Loop;
  
 	Melee:
