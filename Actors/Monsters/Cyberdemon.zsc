@@ -6,7 +6,6 @@ Class EquestriaCyberdemon : Cyberdemon replaces Cyberdemon
 		+CASTSPRITESHADOW;
 		//Health 5000;
 		Mass 1500;
-		BloodColor "purple";
 	}
 	States
 	{
